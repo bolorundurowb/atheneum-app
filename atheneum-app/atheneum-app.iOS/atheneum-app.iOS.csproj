@@ -87,32 +87,32 @@
         <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="Main.cs"/>
-        <Compile Include="AppDelegate.cs"/>
-        <None Include="Entitlements.plist"/>
-        <None Include="Info.plist"/>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Main.cs" />
+        <Compile Include="AppDelegate.cs" />
+        <None Include="Entitlements.plist" />
+        <None Include="Info.plist" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-        <InterfaceDefinition Include="Resources\LaunchScreen.storyboard"/>
+        <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
             <Visible>false</Visible>
         </ImageAsset>
     </ItemGroup>
     <ItemGroup>
-        <Reference Include="System"/>
-        <Reference Include="System.Xml"/>
-        <Reference Include="System.Core"/>
-        <Reference Include="Xamarin.iOS"/>
+        <Reference Include="System" />
+        <Reference Include="System.Xml" />
+        <Reference Include="System.Core" />
+        <Reference Include="Xamarin.iOS" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640"/>
+        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\atheneum_app\atheneum_app.csproj">
-            <Project>{5D8AF30D-C412-4F31-A822-9E7D72E1FBFF}</Project>
-            <Name>atheneum_app</Name>
-        </ProjectReference>
+      <ProjectReference Include="..\atheneum-app\atheneum-app.csproj">
+        <Project>{df65d052-c7b4-4ce5-b404-37da4ae3423a}</Project>
+        <Name>atheneum-app</Name>
+      </ProjectReference>
     </ItemGroup>
-    <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets"/>
+    <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace atheneum_app.Android
 {
-    [Activity(Label = "atheneum_app", Theme = "@style/MainTheme", MainLauncher = true,
+    [Activity(Label = "Atheneum", Theme = "@style/MainTheme", MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
