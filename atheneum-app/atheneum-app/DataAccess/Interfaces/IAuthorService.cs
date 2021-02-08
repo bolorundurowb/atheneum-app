@@ -5,9 +5,9 @@ using Refit;
 
 namespace atheneum_app.DataAccess.Interfaces
 {
-    public interface IPublisherService
+    public interface IAuthorService
     {
-        [Get("/publishers")]
-        Task<IEnumerable<PublisherViewModel>> GetAll();
+        [Get("/authors")]
+        Task<IEnumerable<AuthorViewModel>> GetAll();
     }
 }
