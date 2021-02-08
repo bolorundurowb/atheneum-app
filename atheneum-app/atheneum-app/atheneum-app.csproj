@@ -15,6 +15,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="DataAccess" />
+      <Folder Include="DataAccess\Interfaces" />
     </ItemGroup>
 </Project>
