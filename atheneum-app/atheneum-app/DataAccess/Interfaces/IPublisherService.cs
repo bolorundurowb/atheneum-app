@@ -8,6 +8,7 @@ namespace atheneum_app.DataAccess.Interfaces
     public interface IPublisherService
     {
         [Get("/publishers")]
+        [Headers("Authorization: Bearer")]
         Task<IEnumerable<PublisherViewModel>> GetAll();
     }
 }

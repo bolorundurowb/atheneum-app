@@ -8,9 +8,11 @@ namespace atheneum_app.DataAccess.Interfaces
     public interface IUserService
     {
         [Get("/users/current")]
+        [Headers("Authorization: Bearer")]
         Task<UserViewModel> GetProfile();
 
         [Put("/users/current")]
+        [Headers("Authorization: Bearer")]
         Task<UserViewModel> UpdateProfile([Body] UserProfileUpdateBindingModel payload);
     }
 }
