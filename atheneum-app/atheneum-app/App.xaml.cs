@@ -1,8 +1,9 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("NY.otf", Alias = "NY")]
+[assembly: ExportFont("SFPro.ttf", Alias = "SF")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-
 namespace atheneum_app
 {
     public partial class App : Application
