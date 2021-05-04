@@ -1,8 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="atheneum_app.App">
     <Application.Resources>
-
+        <Style x:Key="PageStyle" TargetType="ContentPage">
+            <Setter Property="BackgroundColor" Value="#12140C" />
+            <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
+        </Style>
     </Application.Resources>
 </Application>

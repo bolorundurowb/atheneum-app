@@ -17,14 +17,21 @@
 
     <ItemGroup>
         <PackageReference Include="Refit" Version="6.0.38" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
         <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Resources\Fonts\NY.otf" />
-      <EmbeddedResource Include="Resources\Fonts\NY.otf" />
       <None Remove="Resources\Fonts\SFPro.ttf" />
-      <EmbeddedResource Include="Resources\Fonts\SFPro.ttf" />
+      <None Remove="Resources\Fonts\OpenSansBold.ttf" />
+      <None Remove="Resources\Fonts\OpenSansRegular.ttf" />
+      <None Remove="Resources\Fonts\SFProBold.otf" />
+      <EmbeddedResource Include="Resources\Fonts\SFProBold.otf" />
+      <None Remove="Resources\Fonts\SFProRegular.otf" />
+      <EmbeddedResource Include="Resources\Fonts\SFProRegular.otf" />
+      <None Remove="Resources\Fonts\SFProThin.otf" />
+      <EmbeddedResource Include="Resources\Fonts\SFProThin.otf" />
     </ItemGroup>
 </Project>

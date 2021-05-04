@@ -2,7 +2,9 @@
 using Xamarin.Forms.Xaml;
 
 [assembly: ExportFont("NY.otf", Alias = "NY")]
-[assembly: ExportFont("SFPro.ttf", Alias = "SF")]
+[assembly: ExportFont("SFProRegular.otf", Alias = "SF")]
+[assembly: ExportFont("SFProThin.otf", Alias = "SFThin")]
+[assembly: ExportFont("SFProBold.otf", Alias = "SFBold")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace atheneum_app
 {
