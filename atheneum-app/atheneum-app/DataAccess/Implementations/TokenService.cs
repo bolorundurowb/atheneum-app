@@ -3,7 +3,7 @@ using Xamarin.Essentials;
 
 namespace atheneum_app.DataAccess.Implementations
 {
-    public class TokenClient
+    public class TokenService
     {
         private const string AuthTokenKey = "Atheneum_Token";
         private const string AuthExpiryKey = "Atheneum_Expiry";
