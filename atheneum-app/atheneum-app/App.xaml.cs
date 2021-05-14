@@ -25,14 +25,14 @@ namespace atheneum_app
             {
                 mainPage = new NavigationPage(new MainPage())
                 {
-                    BarBackgroundColor = Color.FromHex("#000000")
+                    BarBackgroundColor = Color.FromHex(Constants.DarkColor)
                 };
             }
             else
             {
                 mainPage = new NavigationPage(new Login())
                 {
-                    BarBackgroundColor = Color.FromHex("#000000")
+                    BarBackgroundColor = Color.FromHex(Constants.DarkColor)
                 };
             }
 
