@@ -57,6 +57,7 @@
     <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.8" /></ItemGroup>
     <ItemGroup>
         <Compile Include="MainActivity.cs" />
+        <Compile Include="Renderers\CustomEntryRenderer.cs" />
         <Compile Include="Resources\Resource.Designer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
