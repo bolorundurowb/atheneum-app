@@ -6,12 +6,70 @@
     <Application.Resources>
         <Color x:Key="DarkColour">#12140C</Color>
         <Color x:Key="PrimaryColour">#800020</Color>
-        <Color x:Key="PrimaryTextColour">#F5F5F3</Color>
-        <Color x:Key="InputBackgroundColour">#E5E5E2</Color>
+        <Color x:Key="PrimaryAccentColour">#0D2738</Color>
+        <Color x:Key="SecondaryAccentColour">#EFAB53</Color>
+        <Color x:Key="PrimaryTextColour">#CACACA</Color>
+        <Color x:Key="InputBackgroundColour">#252525</Color>
         
         <Style x:Key="PageStyle" TargetType="ContentPage">
-            <Setter Property="BackgroundColor" Value="#12140C" />
+            <Setter Property="BackgroundColor" Value="{StaticResource DarkColour}" />
+            <Setter Property="Padding" Value="20" />
             <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
+        </Style>
+        
+        <Style x:Key="PageHeaderStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontFamily" Value="SFBold" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0, 0, 0, 5" />
+        </Style>
+        
+        <Style x:Key="PageSubHeaderStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontFamily" Value="SF" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0, 0, 0, 25" />
+        </Style>
+        
+        <Style x:Key="EntryFrameStyle" TargetType="Frame">
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="BackgroundColor" Value="{StaticResource InputBackgroundColour}" />
+            <Setter Property="Margin" Value="0, 5, 0, 5" />
+            <Setter Property="Padding" Value="10, 5, 10, 5" />
+        </Style>
+        
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="{StaticResource PrimaryTextColour}" />
+            <Setter Property="PlaceholderColor" Value="#8C8C8C" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontFamily" Value="SF" />
+        </Style>
+        
+        <Style x:Key="SubActionStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontFamily" Value="SFThin" />
+            <Setter Property="Margin" Value="0, 7, 5, 0" />
+        </Style>
+        
+        <Style x:Key="AdditionalActionStyle" TargetType="Label" BasedOn="{StaticResource SubActionStyle}">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="Margin" Value="0, 0, 0, 10" />
+        </Style>
+        
+        <Style x:Key="PrimaryActionButton" TargetType="Button">
+            <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColour}" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="FontFamily" Value="SFBold" />
+            <Setter Property="Margin" Value="0, 12, 5, 0" />
         </Style>
     </Application.Resources>
 </Application>

@@ -6,25 +6,46 @@
              Style="{StaticResource PageStyle}">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand">
                 <Label
-                    Text="Welcome Back"></Label>
+                    Text="Welcome Back"
+                    Style="{StaticResource PageHeaderStyle}" />
                 <Label
-                    Text="Please log in!"></Label>
-                
+                    Text="Please log in!"
+                    Style="{StaticResource PageSubHeaderStyle}" />
+
                 <StackLayout>
-                    <Entry
-                        Placeholder="Email Address"></Entry>
-                    <Entry
-                        Placeholder="Password"></Entry>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            Placeholder="Email Address"
+                            Keyboard="Email"
+                            IsTextPredictionEnabled="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            Placeholder="Password"
+                            IsPassword="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
                 </StackLayout>
-                
+
                 <Label
-                    Text="Forgot Password?"></Label>
+                    Text="Forgot Password?"
+                    Style="{StaticResource SubActionStyle}" />
+
+                <Button
+                    Text="Login"
+                    Style="{StaticResource PrimaryActionButton}" />
             </StackLayout>
-                
+
             <Label
-                Text="Dont have an account? Sign Up!"></Label>
+                Text="Dont have an account? Sign Up!"
+                Style="{StaticResource AdditionalActionStyle}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
