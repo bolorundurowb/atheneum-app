@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using atheneum_app.DataAccess.Implementations;
@@ -30,13 +31,13 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(email))
             {
-                await DisplayAlert("Error", "An email address is required.", "Ok");
+                Toasts.DisplayError( "An email address is required.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                await DisplayAlert("Error", "A password is required.", "Ok");
+                Toasts.DisplayError("A password is required.");
                 return;
             }
 
@@ -55,6 +56,14 @@ namespace atheneum_app.Views.Auth
                 // send to home page
                 Navigation.InsertPageBefore(new MainPage(), this);
                 await Navigation.PopAsync();
+            }
+            catch (ApiException ex) when(ex.StatusCode is HttpStatusCode.BadRequest)
+            {
+                var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
+
+                Toasts.DisplayError(error?.Message?.Length > 0
+                    ? error.Message[0]
+                    : "Sorry, an error occurred when logging you in. Try again later.");
             }
             catch (ApiException ex)
             {

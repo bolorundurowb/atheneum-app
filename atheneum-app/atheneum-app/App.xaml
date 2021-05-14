@@ -23,8 +23,8 @@
             <Setter Property="IsRunning" Value="True" />
             <Setter Property="HorizontalOptions" Value="Center" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-            <Setter Property="WidthRequest" Value="20" />
-            <Setter Property="HeightRequest" Value="20" />
+            <Setter Property="WidthRequest" Value="25" />
+            <Setter Property="HeightRequest" Value="25" />
         </Style>
         
         <Style x:Key="PageHeaderStyle" TargetType="Label">
