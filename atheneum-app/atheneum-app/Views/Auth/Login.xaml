@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="atheneum_app.Views.Auth.Login"
+             Style="{StaticResource PageStyle}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Welcome Back"
+                    Style="{StaticResource PageHeaderStyle}" />
+                <Label
+                    Text="Please log in!"
+                    Style="{StaticResource PageSubHeaderStyle}" />
+
+                <StackLayout>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtEmail"
+                            Placeholder="Email Address"
+                            Keyboard="Email"
+                            IsTextPredictionEnabled="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtPassword"
+                            Placeholder="Password"
+                            IsPassword="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                </StackLayout>
+
+                <Label
+                    Text="Forgot Password?"
+                    Style="{StaticResource SubActionStyle}" />
+
+                <Button
+                    x:Name="btnLogin"
+                    Text="Login"
+                    Style="{StaticResource PrimaryActionButton}"
+                    Clicked="AttemptLogin" />
+
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    Style="{StaticResource ProgressStyle}"
+                    IsVisible="False" />
+            </StackLayout>
+
+            <Label
+                Text="Dont have an account? Sign Up!"
+                Style="{StaticResource AdditionalActionStyle}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

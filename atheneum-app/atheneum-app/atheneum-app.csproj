@@ -16,6 +16,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
         <PackageReference Include="Refit" Version="6.0.38" />
         <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
         <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
@@ -33,5 +34,12 @@
       <EmbeddedResource Include="Resources\Fonts\SFProRegular.otf" />
       <None Remove="Resources\Fonts\SFProThin.otf" />
       <EmbeddedResource Include="Resources\Fonts\SFProThin.otf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\MainPage.xaml.cs">
+        <DependentUpon>MainPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 </Project>
