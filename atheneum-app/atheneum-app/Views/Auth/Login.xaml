@@ -20,6 +20,7 @@
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
+                            x:Name="txtEmail"
                             Placeholder="Email Address"
                             Keyboard="Email"
                             IsTextPredictionEnabled="True"
@@ -28,6 +29,7 @@
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
+                            x:Name="txtPassword"
                             Placeholder="Password"
                             IsPassword="True"
                             Style="{StaticResource EntryStyle}" />
@@ -39,8 +41,15 @@
                     Style="{StaticResource SubActionStyle}" />
 
                 <Button
+                    x:Name="btnLogin"
                     Text="Login"
-                    Style="{StaticResource PrimaryActionButton}" />
+                    Style="{StaticResource PrimaryActionButton}"
+                    Clicked="AttemptLogin" />
+
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    Style="{StaticResource ProgressStyle}"
+                    IsVisible="False" />
             </StackLayout>
 
             <Label
