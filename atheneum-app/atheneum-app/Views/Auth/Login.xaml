@@ -37,7 +37,7 @@
                 </StackLayout>
 
                 <Label
-                    Text="Forgot Password?"
+                    Text="Forgot password?"
                     Style="{StaticResource SubActionStyle}" />
 
                 <Button
@@ -54,7 +54,7 @@
 
             <Label
                 x:Name="lblSignUp"
-                Text="Dont have an account? Sign Up!"
+                Text="Don't have an account? Sign up!"
                 Style="{StaticResource AdditionalActionStyle}" />
         </StackLayout>
     </ContentPage.Content>

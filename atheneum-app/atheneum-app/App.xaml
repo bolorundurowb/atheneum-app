@@ -29,7 +29,7 @@
         
         <Style x:Key="PageHeaderStyle" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
-            <Setter Property="FontSize" Value="30" />
+            <Setter Property="FontSize" Value="35" />
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontFamily" Value="SFBold" />
             <Setter Property="HorizontalTextAlignment" Value="Center" />
@@ -38,8 +38,8 @@
         
         <Style x:Key="PageSubHeaderStyle" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="FontFamily" Value="SF" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="SFThin" />
             <Setter Property="HorizontalTextAlignment" Value="Center" />
             <Setter Property="Margin" Value="0, 0, 0, 25" />
         </Style>
@@ -61,8 +61,9 @@
         <Style x:Key="SubActionStyle" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
-            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="SFThin" />
+            <!-- <Setter Property="FontFamily" Value="SF" /> -->
             <Setter Property="Margin" Value="0, 7, 5, 0" />
         </Style>
         

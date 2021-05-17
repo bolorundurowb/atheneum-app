@@ -18,14 +18,7 @@ namespace atheneum_app.Views.Auth
         {
             InitializeComponent();
             _authClient = new AuthService();
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            var signUpTapRecognizer = new TapGestureRecognizer();
-            signUpTapRecognizer.Tapped += async (sender, e) => { await Navigation.PushAsync(new Register()); };
-            lblSignUp.GestureRecognizers.Add(signUpTapRecognizer);
+            AddGestureRecognizers();
         }
 
         protected async void AttemptLogin(object sender, EventArgs e)
@@ -82,6 +75,13 @@ namespace atheneum_app.Views.Auth
                 btnLogin.IsVisible = true;
                 prgLoading.IsVisible = false;
             }
+        }
+
+        private void AddGestureRecognizers()
+        {
+            var signUpTapRecognizer = new TapGestureRecognizer();
+            signUpTapRecognizer.Tapped += async (sender, e) => { await Navigation.PushAsync(new Register()); };
+            lblSignUp.GestureRecognizers.Add(signUpTapRecognizer);
         }
     }
 }
