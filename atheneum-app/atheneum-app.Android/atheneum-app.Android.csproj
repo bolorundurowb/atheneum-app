@@ -58,6 +58,7 @@
     <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.8" /></ItemGroup>
     <ItemGroup>
         <Compile Include="MainActivity.cs" />
+        <Compile Include="Renderers\AndroidNavigationRenderer.cs" />
         <Compile Include="Renderers\CustomEntryRenderer.cs" />
         <Compile Include="Resources\Resource.Designer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +87,9 @@
         <Project>{df65d052-c7b4-4ce5-b404-37da4ae3423a}</Project>
         <Name>atheneum-app</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <AndroidAsset Include="Assets\sfbold.otf" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

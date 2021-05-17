@@ -10,18 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace atheneum_app.Views.Auth
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class Register : ContentPage
     {
         private readonly AuthService _authClient;
 
-        public Login()
+        public Register()
         {
             InitializeComponent();
             _authClient = new AuthService();
             AddGestureRecognizers();
         }
 
-        protected async void AttemptLogin(object sender, EventArgs e)
+        protected async void AttemptRegister(object sender, EventArgs e)
         {
             var email = txtEmail.Text;
             var password = txtPassword.Text;
@@ -38,20 +38,20 @@ namespace atheneum_app.Views.Auth
                 return;
             }
 
-            btnLogin.IsVisible = false;
+            btnRegister.IsVisible = false;
             prgLoading.IsVisible = true;
 
             try
             {
-                var response = await _authClient.Login(email, password);
+                var response = await _authClient.Register(email, password);
 
                 var tokenClient = new TokenService();
                 tokenClient.SetAuth(response.FullName, email, response.AuthToken);
 
-                Toasts.DisplaySuccess("Login successfully.");
+                Toasts.DisplaySuccess("Registered successfully.");
 
                 // send to home page
-                Navigation.InsertPageBefore(new MainPage(), this);
+                Application.Current.MainPage = new NavigationPage(new MainPage());
                 await Navigation.PopAsync();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
@@ -60,7 +60,7 @@ namespace atheneum_app.Views.Auth
 
                 Toasts.DisplayError(error?.Message?.Length > 0
                     ? error.Message[0]
-                    : "Sorry, an error occurred when logging you in. Try again later.");
+                    : "Sorry, an error occurred when registering you. Try again later.");
             }
             catch (ApiException ex)
             {
@@ -68,20 +68,20 @@ namespace atheneum_app.Views.Auth
 
                 Toasts.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
-                    : "Sorry, an error occurred when logging you in. Try again later.");
+                    : "Sorry, an error occurred when registering you. Try again later.");
             }
             finally
             {
-                btnLogin.IsVisible = true;
+                btnRegister.IsVisible = true;
                 prgLoading.IsVisible = false;
             }
         }
 
         private void AddGestureRecognizers()
         {
-            var signUpTapRecognizer = new TapGestureRecognizer();
-            signUpTapRecognizer.Tapped += async (sender, e) => { await Navigation.PushAsync(new Register()); };
-            lblSignUp.GestureRecognizers.Add(signUpTapRecognizer);
+            var loginTapRecognizer = new TapGestureRecognizer();
+            loginTapRecognizer.Tapped += async (sender, e) => { await Navigation.PopAsync(); };
+            lblLogin.GestureRecognizers.Add(loginTapRecognizer);
         }
     }
 }

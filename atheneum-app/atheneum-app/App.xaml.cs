@@ -3,7 +3,6 @@ using atheneum_app.Views.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: ExportFont("NY.otf", Alias = "NY")]
 [assembly: ExportFont("SFProRegular.otf", Alias = "SF")]
 [assembly: ExportFont("SFProThin.otf", Alias = "SFThin")]
 [assembly: ExportFont("SFProBold.otf", Alias = "SFBold")]
@@ -25,14 +24,16 @@ namespace atheneum_app
             {
                 mainPage = new NavigationPage(new MainPage())
                 {
-                    BarBackgroundColor = Color.FromHex(Constants.DarkColor)
+                    BarBackgroundColor = Color.FromHex(Constants.DarkColour),
+                    BarTextColor = Color.FromHex(Constants.PrimaryAccentColour)
                 };
             }
             else
             {
                 mainPage = new NavigationPage(new Login())
                 {
-                    BarBackgroundColor = Color.FromHex(Constants.DarkColor)
+                    BarBackgroundColor = Color.FromHex(Constants.DarkColour),
+                    BarTextColor = Color.FromHex(Constants.PrimaryAccentColour)
                 };
             }
 

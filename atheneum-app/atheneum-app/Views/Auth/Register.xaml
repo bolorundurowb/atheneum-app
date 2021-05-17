@@ -2,18 +2,20 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="atheneum_app.Views.Auth.Login"
+             x:Class="atheneum_app.Views.Auth.Register"
+             NavigationPage.HasNavigationBar="True"
              Style="{StaticResource PageStyle}">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
+                Margin="0, -20, 0, 0"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="FillAndExpand">
                 <Label
-                    Text="Welcome Back"
+                    Text="We Are Happy To Have You"
                     Style="{StaticResource PageHeaderStyle}" />
                 <Label
-                    Text="Please log in!"
+                    Text="Please sign up!"
                     Style="{StaticResource PageSubHeaderStyle}" />
 
                 <StackLayout>
@@ -36,15 +38,11 @@
                     </Frame>
                 </StackLayout>
 
-                <Label
-                    Text="Forgot password?"
-                    Style="{StaticResource SubActionStyle}" />
-
                 <Button
-                    x:Name="btnLogin"
-                    Text="Login"
+                    x:Name="btnRegister"
+                    Text="Register"
                     Style="{StaticResource PrimaryActionButton}"
-                    Clicked="AttemptLogin" />
+                    Clicked="AttemptRegister"/>
 
                 <ActivityIndicator
                     x:Name="prgLoading"
@@ -53,8 +51,8 @@
             </StackLayout>
 
             <Label
-                x:Name="lblSignUp"
-                Text="Don't have an account? Sign up!"
+                x:Name="lblLogin"
+                Text="Already have an account? Login!"
                 Style="{StaticResource AdditionalActionStyle}" />
         </StackLayout>
     </ContentPage.Content>
