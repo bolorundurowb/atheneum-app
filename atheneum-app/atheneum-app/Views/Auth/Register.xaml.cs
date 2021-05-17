@@ -51,7 +51,7 @@ namespace atheneum_app.Views.Auth
                 Toasts.DisplaySuccess("Registered successfully.");
 
                 // send to home page
-                Navigation.InsertPageBefore(new MainPage(), this);
+                Application.Current.MainPage = new NavigationPage(new MainPage());
                 await Navigation.PopAsync();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
