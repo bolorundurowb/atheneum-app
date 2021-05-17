@@ -41,7 +41,8 @@
                 <Button
                     x:Name="btnRegister"
                     Text="Register"
-                    Style="{StaticResource PrimaryActionButton}" />
+                    Style="{StaticResource PrimaryActionButton}"
+                    Clicked="AttemptRegister"/>
 
                 <ActivityIndicator
                     x:Name="prgLoading"
