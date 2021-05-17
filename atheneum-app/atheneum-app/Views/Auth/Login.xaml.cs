@@ -1,9 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using atheneum_app.DataAccess.Implementations;
 using atheneum_app.Models.View;
 using atheneum_app.Utils;
@@ -24,6 +20,14 @@ namespace atheneum_app.Views.Auth
             _authClient = new AuthService();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            var signUpTapRecognizer = new TapGestureRecognizer();
+            signUpTapRecognizer.Tapped += async (sender, e) => { await Navigation.PushAsync(new Register()); };
+            lblSignUp.GestureRecognizers.Add(signUpTapRecognizer);
+        }
+
         protected async void AttemptLogin(object sender, EventArgs e)
         {
             var email = txtEmail.Text;
@@ -31,7 +35,7 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(email))
             {
-                Toasts.DisplayError( "An email address is required.");
+                Toasts.DisplayError("An email address is required.");
                 return;
             }
 
@@ -50,14 +54,14 @@ namespace atheneum_app.Views.Auth
 
                 var tokenClient = new TokenService();
                 tokenClient.SetAuth(response.FullName, email, response.AuthToken);
-                
+
                 Toasts.DisplaySuccess("Login successfully.");
 
                 // send to home page
                 Navigation.InsertPageBefore(new MainPage(), this);
                 await Navigation.PopAsync();
             }
-            catch (ApiException ex) when(ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 

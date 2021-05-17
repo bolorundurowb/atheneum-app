@@ -53,6 +53,7 @@
             </StackLayout>
 
             <Label
+                x:Name="lblSignUp"
                 Text="Dont have an account? Sign Up!"
                 Style="{StaticResource AdditionalActionStyle}" />
         </StackLayout>
