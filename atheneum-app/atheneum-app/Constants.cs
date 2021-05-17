@@ -4,8 +4,10 @@
     {
         public const string BaseUrl = "https://atheneum01.herokuapp.com";
 
-        public const string PrimaryColor = "#800020";
+        public const string PrimaryColour = "#800020";
         
-        public const string DarkColor = "#12140C";
+        public const string DarkColour = "#12140C";
+        
+        public const string PrimaryAccentColour = "#EFAB53";
     }
 }

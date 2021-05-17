@@ -35,7 +35,7 @@ namespace atheneum_app.Android.Renderers
             }
             
             var textView = (AppCompatTextView) e.Child;
-            textView.Typeface = Typeface.CreateFromAsset(Context?.Assets, "GorditaBold.otf");
+            textView.Typeface = Typeface.CreateFromAsset(Context?.Assets, "sfbold.otf");
             _toolbar.ChildViewAdded -= Toolbar_ChildViewAdded;
         }
     }

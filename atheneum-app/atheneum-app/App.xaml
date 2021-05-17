@@ -6,8 +6,8 @@
     <Application.Resources>
         <Color x:Key="DarkColour">#12140C</Color>
         <Color x:Key="PrimaryColour">#800020</Color>
-        <Color x:Key="PrimaryAccentColour">#0D2738</Color>
-        <Color x:Key="SecondaryAccentColour">#EFAB53</Color>
+        <Color x:Key="PrimaryAccentColour">#EFAB53</Color>
+        <Color x:Key="SecondaryAccentColour">#0D2738</Color>
         <Color x:Key="PrimaryTextColour">#CACACA</Color>
         <Color x:Key="InputBackgroundColour">#252525</Color>
         
@@ -18,7 +18,7 @@
         </Style>
 
         <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
-            <Setter Property="Color" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="Color" Value="{StaticResource PrimaryAccentColour}" />
             <Setter Property="BackgroundColor" Value="Transparent" />
             <Setter Property="IsRunning" Value="True" />
             <Setter Property="HorizontalOptions" Value="Center" />
@@ -28,7 +28,7 @@
         </Style>
         
         <Style x:Key="PageHeaderStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
             <Setter Property="FontSize" Value="35" />
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontFamily" Value="SFBold" />
@@ -37,7 +37,7 @@
         </Style>
         
         <Style x:Key="PageSubHeaderStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
             <Setter Property="FontSize" Value="20" />
             <Setter Property="FontFamily" Value="SFThin" />
             <Setter Property="HorizontalTextAlignment" Value="Center" />
@@ -59,7 +59,7 @@
         </Style>
         
         <Style x:Key="SubActionStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource SecondaryAccentColour}" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="SFThin" />
