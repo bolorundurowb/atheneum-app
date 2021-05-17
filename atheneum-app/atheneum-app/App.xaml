@@ -63,7 +63,6 @@
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="SFThin" />
-            <!-- <Setter Property="FontFamily" Value="SF" /> -->
             <Setter Property="Margin" Value="0, 7, 5, 0" />
         </Style>
         
