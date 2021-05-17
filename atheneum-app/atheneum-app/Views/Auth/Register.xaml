@@ -7,9 +7,52 @@
              Style="{StaticResource PageStyle}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout
+                Margin="0, -20, 0, 0"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="We Are Happy To Have You"
+                    Style="{StaticResource PageHeaderStyle}" />
+                <Label
+                    Text="Please sign up!"
+                    Style="{StaticResource PageSubHeaderStyle}" />
+
+                <StackLayout>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtEmail"
+                            Placeholder="Email Address"
+                            Keyboard="Email"
+                            IsTextPredictionEnabled="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtPassword"
+                            Placeholder="Password"
+                            IsPassword="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                </StackLayout>
+
+                <Button
+                    x:Name="btnRegister"
+                    Text="Register"
+                    Style="{StaticResource PrimaryActionButton}" />
+
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    Style="{StaticResource ProgressStyle}"
+                    IsVisible="False" />
+            </StackLayout>
+
+            <Label
+                x:Name="lblLogin"
+                Text="Already have an account? Login!"
+                Style="{StaticResource AdditionalActionStyle}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
