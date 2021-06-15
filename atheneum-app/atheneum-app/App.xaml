@@ -5,6 +5,7 @@
              x:Class="atheneum_app.App">
     <Application.Resources>
         <Color x:Key="DarkColour">#12140C</Color>
+        <Color x:Key="LightColour">#FEFEFE</Color>
         <Color x:Key="PrimaryColour">#800020</Color>
         <Color x:Key="PrimaryAccentColour">#EFAB53</Color>
         <Color x:Key="SecondaryAccentColour">#0D2738</Color>
@@ -12,7 +13,7 @@
         <Color x:Key="InputBackgroundColour">#252525</Color>
         
         <Style x:Key="PageStyle" TargetType="ContentPage">
-            <Setter Property="BackgroundColor" Value="{StaticResource DarkColour}" />
+            <Setter Property="BackgroundColor" Value="{StaticResource LightColour}" />
             <Setter Property="Padding" Value="20" />
             <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
         </Style>

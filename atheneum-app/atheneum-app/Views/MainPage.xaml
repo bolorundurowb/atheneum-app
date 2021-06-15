@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:atheneum_app"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             x:Class="atheneum_app.MainPage"
-             Style="{StaticResource PageStyle}">
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:atheneum_app"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="atheneum_app.MainPage"
+    Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <ResourceDictionary>
             <ControlTemplate x:Key="TabItemTemplate">
@@ -36,41 +38,45 @@
             </ControlTemplate>
         </ResourceDictionary>
     </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <Grid>
+            <xct:TabView
+                TabStripPlacement="Bottom"
+                TabStripBackgroundColor="Blue"
+                TabStripHeight="60"
+                TabIndicatorColor="Yellow"
+                TabContentBackgroundColor="Yellow">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"
-               FontFamily="SF" />
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"
-               FontFamily="SFThin" />
-        <Label Text="Welcome to Xamarin.Forms!"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"
-               FontFamily="SFBold" />
+                <xct:TabViewItem
+                    Icon="triangle.png"
+                    Text="Tab 1"
+                    TextColor="White"
+                    TextColorSelected="Yellow"
+                    FontSize="12">
+                    <Grid 
+                        BackgroundColor="Gray">
+                        <Label
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Text="TabContent1" />
+                    </Grid>
+                </xct:TabViewItem>
 
-
-        <xct:TabView
-            Grid.Row="1"
-            HorizontalOptions="Center"
-            TabStripHeight="80"
-            TabStripPlacement="Bottom">
-            <xct:TabViewItem ControlTemplate="{StaticResource TabItemTemplate}" Icon="home.png" />
-            <xct:TabViewItem ControlTemplate="{StaticResource TabItemTemplate}" Icon="home.png" />
-            <xct:TabViewItem ControlTemplate="{StaticResource FabTabItemTemplate}" Icon="home.png" />
-            <xct:TabViewItem ControlTemplate="{StaticResource TabItemTemplate}" Icon="home.png" />
-            <xct:TabViewItem ControlTemplate="{StaticResource TabItemTemplate}" Icon="home.png" />
-        </xct:TabView>
-
-
-        <BoxView
-            x:Name="FadeBox"
-            Grid.RowSpan="2"
-            InputTransparent="True"
-            Opacity="0"
-            Color="Black" />
-    </StackLayout>
+                <xct:TabViewItem
+                    Icon="circle.png"
+                    Text="Tab 2"
+                    TextColor="White"
+                    TextColorSelected="Yellow"
+                    FontSize="12">
+                    <Grid>
+                        <Label    
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Text="TabContent2" />
+                    </Grid>
+                </xct:TabViewItem>
+            </xct:TabView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

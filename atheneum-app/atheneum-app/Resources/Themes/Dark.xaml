@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="atheneum_app.Resources.Themes.Dark">
+    <Color x:Key="PageBackgroundColour">#000000</Color>
+    <Color x:Key="PrimaryColour">#800020</Color>
+    <Color x:Key="SecondaryColour">#005254</Color>
+    <Color x:Key="PrimaryTextColour">#FFFFFF</Color>
+    <Color x:Key="SubTextColour">#8F8F8F</Color>
+    <Color x:Key="InputTextColour">#FFFFFF</Color>
+    <Color x:Key="InputBackgroundColour">#2E2E30</Color>
+</ResourceDictionary>
