@@ -11,7 +11,7 @@
     <Color x:Key="SecondaryColour">#FEFEFE</Color>
     <Color x:Key="TertiaryColour">#F5F6EE</Color>
     <Color x:Key="DarkTertiaryColour">#BCC08F</Color>
-    <Color x:Key="AccentColour">#800020</Color>
+    <Color x:Key="AccentColour">#2D7472</Color>
     <Color x:Key="SubTextColour">#4A4A4A</Color>
     <Color x:Key="InputTextColour">#000000</Color>
     <Color x:Key="InputBackgroundColour">#CACACA</Color>

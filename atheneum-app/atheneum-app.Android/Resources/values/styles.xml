@@ -17,13 +17,13 @@
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <item name="colorAccent">#0D2738</item>
-    <item name="android:windowBackground">#12140C</item>
+    <item name="android:windowBackground">#111111</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
     <item name="windowActionModeOverlay">true</item>
 
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
-    <item name="android:fontFamily">@font/sfregular</item>
+    <item name="android:fontFamily">@font/proxima</item>
   </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">

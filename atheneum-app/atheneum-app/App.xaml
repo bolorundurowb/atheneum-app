@@ -8,8 +8,16 @@
         <ResourceDictionary Source="Resources/Themes/Light.xaml" />
 
         <Style x:Key="PageStyle" TargetType="ContentPage">
-            <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColour}" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColour}" />
             <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
+        </Style>
+        
+        <Style x:Key="PageHdrStyleStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontFamily" Value="Fredericka" />
+            <Setter Property="TextTransform" Value="Lowercase" />
         </Style>
 
         <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
@@ -27,7 +35,7 @@
             <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="FontSize" Value="35" />
             <Setter Property="FontAttributes" Value="Bold" />
-            <Setter Property="FontFamily" Value="SFBold" />
+            <Setter Property="FontFamily" Value="Playfair" />
             <Setter Property="HorizontalTextAlignment" Value="Center" />
             <Setter Property="Margin" Value="0, 0, 0, 5" />
         </Style>
@@ -48,14 +56,14 @@
         </Style>
 
         <Style x:Key="EntryStyle" TargetType="Entry">
-            <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColour}" />
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="PlaceholderColor" Value="#8C8C8C" />
             <Setter Property="FontSize" Value="18" />
             <Setter Property="FontFamily" Value="SF" />
         </Style>
 
         <Style x:Key="SubActionStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource SecondaryColour}" />
+            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="SF" />
@@ -72,10 +80,27 @@
             <Setter Property="TextColor" Value="White" />
             <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="HorizontalOptions" Value="Fill" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="CornerRadius" Value="5" />
-            <Setter Property="FontFamily" Value="SFBold" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="FontFamily" Value="proxima" />
             <Setter Property="Margin" Value="0, 12, 5, 0" />
+        </Style>
+
+        <Style x:Key="BaseBtnStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="{DynamicResource SecondaryColour}" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColour}" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="FontFamily" Value="proxima" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+            <Setter Property="Margin" Value="0, 12, 5, 0" />
+        </Style>
+
+        <Style x:Key="BaseLblStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontFamily" Value="proxima" />
+            <Setter Property="TextTransform" Value="Lowercase" />
         </Style>
     </Application.Resources>
 </Application>
