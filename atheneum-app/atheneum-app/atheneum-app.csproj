@@ -31,9 +31,12 @@
       <None Remove="Resources\Fonts\SFProBold.otf" />
       <EmbeddedResource Include="Resources\Fonts\SFProBold.otf" />
       <None Remove="Resources\Fonts\SFProRegular.otf" />
-      <EmbeddedResource Include="Resources\Fonts\SFProRegular.otf" />
       <None Remove="Resources\Fonts\SFProThin.otf" />
-      <EmbeddedResource Include="Resources\Fonts\SFProThin.otf" />
+      <None Remove="Resources\Fonts\proxima.otf" />
+      <EmbeddedResource Include="Resources\Fonts\proxima.otf" />
+      <None Remove="Resources\Fonts\playfair.ttf" />
+      <None Remove="Resources\Fonts\fredericka.ttf" />
+      <EmbeddedResource Include="Resources\Fonts\fredericka.ttf" />
     </ItemGroup>
 
     <ItemGroup>
