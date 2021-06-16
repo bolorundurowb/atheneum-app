@@ -19,20 +19,24 @@
             <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
             <Setter Property="Margin" Value="0, -10,  0, 10" />
         </Style>
+
+        <Style x:Key="BackBtnStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
+            <Setter Property="BorderColor" Value="{DynamicResource InputBorderColour}" />
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="BorderWidth" Value="1" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="WidthRequest" Value="50" />
+            <Setter Property="FontFamily" Value="FAS" />
+            <Setter Property="Text" Value="&#xf060;" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+        </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <Button
-                BackgroundColor="Transparent"
-                BorderColor="{DynamicResource InputBorderColour}"
-                BorderWidth="1"
-                CornerRadius="12"
-                HorizontalOptions="Start"
-                FontFamily="FAS"
-                Text="&#xf060;"
-                FontSize="20"
-                WidthRequest="50"
-                TextColor="{DynamicResource PrimaryColour}"
+                Style="{StaticResource BackBtnStyle}"
                 Clicked="GoToLogin"/>
             <StackLayout
                 Margin="0, -20, 0, 0"
