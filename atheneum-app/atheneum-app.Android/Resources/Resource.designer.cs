@@ -19584,7 +19584,7 @@ namespace atheneum_app.Android
 		{
 			
 			// aapt resource value: 0x7F080000
-			public const int sfregular = 2131230720;
+			public const int proxima = 2131230720;
 			
 			static Font()
 			{
