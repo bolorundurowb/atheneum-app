@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="atheneum_app.Views.Auth.Login"
-             Style="{StaticResource PageStyle}">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="atheneum_app.Views.Auth.Login"
+    Padding="20"
+    Style="{StaticResource PageStyle}">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
@@ -52,10 +54,18 @@
                     IsVisible="False" />
             </StackLayout>
 
-            <Label
-                x:Name="lblSignUp"
-                Text="Don't have an account? Sign up!"
-                Style="{StaticResource AdditionalActionStyle}" />
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="CenterAndExpand">
+                <Label
+                    Text="Don't have an account?"
+                    Style="{StaticResource AdditionalActionStyle}" />
+                <Label
+                    x:Name="lblSignUp"
+                    Text="Sign up!"
+                    Margin="10, 0, 0, 0"
+                    Style="{StaticResource AdditionalActionStyle}" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

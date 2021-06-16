@@ -1,25 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="atheneum_app.App">
+<Application
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="atheneum_app.App">
     <Application.Resources>
-        <Color x:Key="DarkColour">#12140C</Color>
-        <Color x:Key="LightColour">#FEFEFE</Color>
-        <Color x:Key="PrimaryColour">#800020</Color>
-        <Color x:Key="PrimaryAccentColour">#EFAB53</Color>
-        <Color x:Key="SecondaryAccentColour">#0D2738</Color>
-        <Color x:Key="PrimaryTextColour">#CACACA</Color>
-        <Color x:Key="InputBackgroundColour">#252525</Color>
-        
+        <ResourceDictionary Source="Resources/Themes/Light.xaml" />
+
         <Style x:Key="PageStyle" TargetType="ContentPage">
-            <Setter Property="BackgroundColor" Value="{StaticResource LightColour}" />
-            <Setter Property="Padding" Value="20" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource PageBackgroundColour}" />
             <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
         </Style>
 
         <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
-            <Setter Property="Color" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="Color" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="BackgroundColor" Value="Transparent" />
             <Setter Property="IsRunning" Value="True" />
             <Setter Property="HorizontalOptions" Value="Center" />
@@ -28,55 +22,55 @@
             <Setter Property="HeightRequest" Value="27" />
             <Setter Property="Margin" Value="0, 10, 0, 0" />
         </Style>
-        
+
         <Style x:Key="PageHeaderStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="FontSize" Value="35" />
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontFamily" Value="SFBold" />
             <Setter Property="HorizontalTextAlignment" Value="Center" />
             <Setter Property="Margin" Value="0, 0, 0, 5" />
         </Style>
-        
+
         <Style x:Key="PageSubHeaderStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="FontSize" Value="20" />
             <Setter Property="FontFamily" Value="SFThin" />
             <Setter Property="HorizontalTextAlignment" Value="Center" />
             <Setter Property="Margin" Value="0, 0, 0, 25" />
         </Style>
-        
+
         <Style x:Key="EntryFrameStyle" TargetType="Frame">
             <Setter Property="CornerRadius" Value="5" />
-            <Setter Property="BackgroundColor" Value="{StaticResource InputBackgroundColour}" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource InputBackgroundColour}" />
             <Setter Property="Margin" Value="0, 5, 0, 5" />
             <Setter Property="Padding" Value="10, 5, 10, 5" />
         </Style>
-        
+
         <Style x:Key="EntryStyle" TargetType="Entry">
-            <Setter Property="TextColor" Value="{StaticResource PrimaryTextColour}" />
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColour}" />
             <Setter Property="PlaceholderColor" Value="#8C8C8C" />
             <Setter Property="FontSize" Value="18" />
             <Setter Property="FontFamily" Value="SF" />
         </Style>
-        
+
         <Style x:Key="SubActionStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="TextColor" Value="{DynamicResource SecondaryColour}" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
             <Setter Property="FontSize" Value="15" />
-            <Setter Property="FontFamily" Value="SFThin" />
+            <Setter Property="FontFamily" Value="SF" />
             <Setter Property="Margin" Value="0, 7, 5, 0" />
         </Style>
-        
+
         <Style x:Key="AdditionalActionStyle" TargetType="Label" BasedOn="{StaticResource SubActionStyle}">
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="VerticalOptions" Value="End" />
             <Setter Property="Margin" Value="0, 0, 0, 10" />
         </Style>
-        
+
         <Style x:Key="PrimaryActionButton" TargetType="Button">
-            <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
-            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColour}" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColour}" />
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="CornerRadius" Value="5" />

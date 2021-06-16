@@ -7,11 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     x:Class="atheneum_app.Resources.Themes.Light">
-    <Color x:Key="PageBackgroundColour">#FAFAFA</Color>
-    <Color x:Key="PrimaryColour">#800020</Color>
-    <Color x:Key="SecondaryColour">#005254</Color>
-    <Color x:Key="PrimaryTextColour">#12140C</Color>
+    <Color x:Key="PrimaryColour">#111111</Color>
+    <Color x:Key="SecondaryColour">#FEFEFE</Color>
+    <Color x:Key="TertiaryColour">#F5F6EE</Color>
+    <Color x:Key="DarkTertiaryColour">#BCC08F</Color>
+    <Color x:Key="AccentColour">#800020</Color>
     <Color x:Key="SubTextColour">#4A4A4A</Color>
-    <Color x:Key="InputTextColour">#FFFFFF</Color>
-    <Color x:Key="InputBackgroundColour">#2E2E30</Color>
+    <Color x:Key="InputTextColour">#000000</Color>
+    <Color x:Key="InputBackgroundColour">#CACACA</Color>
 </ResourceDictionary>
