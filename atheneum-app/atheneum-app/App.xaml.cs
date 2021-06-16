@@ -3,10 +3,12 @@ using atheneum_app.Views.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: ExportFont("SFProRegular.otf", Alias = "SF")]
-[assembly: ExportFont("SFProThin.otf", Alias = "SFThin")]
-[assembly: ExportFont("SFProBold.otf", Alias = "SFBold")]
+[assembly: ExportFont("proxima.otf", Alias = "Proxima")]
+[assembly: ExportFont("fredericka.ttf", Alias = "Fredericka")]
+[assembly: ExportFont("faregular.otf", Alias = "FAR")]
+[assembly: ExportFont("fasolid.otf", Alias = "FAS")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
 namespace atheneum_app
 {
     public partial class App : Application
@@ -20,6 +22,7 @@ namespace atheneum_app
             var isLoggedIn = tokenClient.IsLoggedIn();
 
             NavigationPage mainPage;
+
             if (isLoggedIn)
             {
                 mainPage = new NavigationPage(new MainPage())
