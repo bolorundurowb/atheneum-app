@@ -18,7 +18,6 @@ namespace atheneum_app.Views.Auth
         {
             InitializeComponent();
             _authClient = new AuthService();
-            AddGestureRecognizers();
         }
 
         protected async void AttemptLogin(object sender, EventArgs e)
@@ -77,11 +76,9 @@ namespace atheneum_app.Views.Auth
             }
         }
 
-        private void AddGestureRecognizers()
+        protected async void GoToRegister(object sender, EventArgs e)
         {
-            var signUpTapRecognizer = new TapGestureRecognizer();
-            signUpTapRecognizer.Tapped += async (sender, e) => { await Navigation.PushAsync(new Register()); };
-            lblSignUp.GestureRecognizers.Add(signUpTapRecognizer);
+            await Navigation.PushAsync(new Register());
         }
     }
 }

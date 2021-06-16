@@ -15,4 +15,5 @@
     <Color x:Key="SubTextColour">#C6C6C6</Color>
     <Color x:Key="InputTextColour">#FFFFFF</Color>
     <Color x:Key="InputBackgroundColour">#2E2E30</Color>
+    <Color x:Key="InputBorderColour">#F4F4F4</Color>
 </ResourceDictionary>

@@ -8,10 +8,22 @@
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <Style x:Key="LoginBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
+        
         <Style x:Key="ForgotPasswordLblStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
             <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
             <Setter Property="Margin" Value="0, 7, 5, 0" />
+        </Style>
+        
+        <Style x:Key="SignUpLblStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
+            <Setter Property="HorizontalOptions" Value="End" />
+            <Setter Property="Margin" Value="7,  0, 0, 0" />
+        </Style>
+        
+        <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
+            <Setter Property="Margin" Value="0, -10,  0, 10" />
         </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -20,22 +32,18 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="FillAndExpand">
                 <Label
-                    Text="Welcome Back"
-                    Style="{StaticResource PageHdrStyleStyle}" />
+                    Text="Welcome to"
+                    Style="{StaticResource BasePageHdrStyleStyle}" />
                 <Label
-                    Text="Welcome Back"
-                    TextColor="{DynamicResource AccentColour}"
+                    Text="Athenuem"
                     Style="{StaticResource PageHdrStyleStyle}" />
-                <Label
-                    Text="Please log in!"
-                    Style="{StaticResource PageSubHeaderStyle}" />
 
                 <StackLayout>
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
                             x:Name="txtEmail"
-                            Placeholder="Email Address"
+                            Placeholder="email address"
                             Keyboard="Email"
                             IsTextPredictionEnabled="True"
                             Style="{StaticResource EntryStyle}" />
@@ -44,7 +52,7 @@
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
                             x:Name="txtPassword"
-                            Placeholder="Password"
+                            Placeholder="password"
                             IsPassword="True"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
@@ -56,8 +64,7 @@
 
                 <Button
                     x:Name="btnLogin"
-                    Text="login"
-                    TextTransform="Lowercase"
+                    Text="Login"
                     Style="{StaticResource LoginBtnStyle}"
                     Clicked="AttemptLogin" />
 
@@ -65,19 +72,26 @@
                     x:Name="prgLoading"
                     Style="{StaticResource ProgressStyle}"
                     IsVisible="False" />
-            </StackLayout>
 
-            <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="CenterAndExpand">
-                <Label
-                    Text="Don't have an account?"
-                    Style="{StaticResource AdditionalActionStyle}" />
-                <Label
-                    x:Name="lblSignUp"
-                    Text="Sign up!"
-                    Margin="10, 0, 0, 0"
-                    Style="{StaticResource AdditionalActionStyle}" />
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="0, 10, 0, 0">
+                    <Label
+                        Text="Don't have an account?"
+                        Style="{StaticResource BaseLblStyle}" />
+                    <Label
+                        x:Name="lblSignUp"
+                        Text="Join Us!"
+                        Margin="10, 0, 0, 0"
+                        Style="{StaticResource SignUpLblStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                NumberOfTapsRequired="1"
+                                Tapped="GoToRegister"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
