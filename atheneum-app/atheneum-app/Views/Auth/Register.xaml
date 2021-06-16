@@ -22,6 +22,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
+            <Button></Button>
             <StackLayout
                 Margin="0, -20, 0, 0"
                 VerticalOptions="CenterAndExpand"

@@ -37,6 +37,12 @@
       <None Remove="Resources\Fonts\playfair.ttf" />
       <None Remove="Resources\Fonts\fredericka.ttf" />
       <EmbeddedResource Include="Resources\Fonts\fredericka.ttf" />
+      <None Remove="Resources\Fonts\fabrand.otf" />
+      <EmbeddedResource Include="Resources\Fonts\fabrand.otf" />
+      <None Remove="Resources\Fonts\faregular.otf" />
+      <EmbeddedResource Include="Resources\Fonts\faregular.otf" />
+      <None Remove="Resources\Fonts\fasolid.otf" />
+      <EmbeddedResource Include="Resources\Fonts\fasolid.otf" />
     </ItemGroup>
 
     <ItemGroup>
