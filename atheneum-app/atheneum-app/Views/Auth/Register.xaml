@@ -22,7 +22,18 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
-            <Button></Button>
+            <Button
+                BackgroundColor="Transparent"
+                BorderColor="{DynamicResource InputBorderColour}"
+                BorderWidth="1"
+                CornerRadius="12"
+                HorizontalOptions="Start"
+                FontFamily="FAS"
+                Text="&#xf060;"
+                FontSize="20"
+                WidthRequest="50"
+                TextColor="{DynamicResource PrimaryColour}"
+                Clicked="GoToLogin"/>
             <StackLayout
                 Margin="0, -20, 0, 0"
                 VerticalOptions="CenterAndExpand"
