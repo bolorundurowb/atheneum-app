@@ -81,14 +81,13 @@
                         Text="Don't have an account?"
                         Style="{StaticResource BaseLblStyle}" />
                     <Label
-                        x:Name="lblSignUp"
                         Text="Join Us!"
                         Margin="10, 0, 0, 0"
                         Style="{StaticResource SignUpLblStyle}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer
                                 NumberOfTapsRequired="1"
-                                Tapped="GoToRegister"></TapGestureRecognizer>
+                                Tapped="GoToRegister" />
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>

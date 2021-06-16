@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="atheneum_app.Views.Auth.Register"
-             NavigationPage.HasNavigationBar="True"
-             Style="{StaticResource PageStyle}">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="atheneum_app.Views.Auth.Register"
+    Padding="20"
+    Style="{StaticResource PageStyle}">
+    <ContentPage.Resources>
+        <Style x:Key="RegisterBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
+
+        <Style x:Key="LoginLblStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
+            <Setter Property="HorizontalOptions" Value="End" />
+            <Setter Property="Margin" Value="7,  0, 0, 0" />
+        </Style>
+
+        <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
+            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
+            <Setter Property="Margin" Value="0, -10,  0, 10" />
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
@@ -12,11 +27,11 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="FillAndExpand">
                 <Label
-                    Text="We Are Happy To Have You"
-                    Style="{StaticResource PageHeaderStyle}" />
+                    Text="Create a new"
+                    Style="{StaticResource BasePageHdrStyleStyle}" />
                 <Label
-                    Text="Please sign up!"
-                    Style="{StaticResource PageSubHeaderStyle}" />
+                    Text="Account"
+                    Style="{StaticResource PageHdrStyleStyle}" />
 
                 <StackLayout>
                     <Frame
@@ -41,19 +56,33 @@
                 <Button
                     x:Name="btnRegister"
                     Text="Register"
-                    Style="{StaticResource PrimaryActionButton}"
-                    Clicked="AttemptRegister"/>
+                    Style="{StaticResource RegisterBtnStyle}"
+                    Clicked="AttemptRegister" />
 
                 <ActivityIndicator
                     x:Name="prgLoading"
-                    Style="{StaticResource ProgressStyle}"
-                    IsVisible="False" />
-            </StackLayout>
+                    IsVisible="False"
+                    Style="{StaticResource ProgressStyle}" />
 
-            <Label
-                x:Name="lblLogin"
-                Text="Already have an account? Login!"
-                Style="{StaticResource AdditionalActionStyle}" />
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="0, 10, 0, 0">
+                    <Label
+                        Text="Already have an account?"
+                        Style="{StaticResource BaseLblStyle}" />
+
+                    <Label
+                        Text="Login!"
+                        Style="{StaticResource LoginLblStyle}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                NumberOfTapsRequired="1"
+                                Tapped="GoToLogin" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
