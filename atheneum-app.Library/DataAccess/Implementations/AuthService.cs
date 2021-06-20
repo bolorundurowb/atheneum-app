@@ -1,10 +1,9 @@
 ﻿using System.Threading.Tasks;
-using atheneum_app.DataAccess.Interfaces;
-using atheneum_app.Models.Binding;
-using atheneum_app.Models.View;
-using Refit;
+using atheneum_app.Library.DataAccess.Interfaces;
+using atheneum_app.Library.Models.Binding;
+using atheneum_app.Library.Models.View;
 
-namespace atheneum_app.DataAccess.Implementations
+namespace atheneum_app.Library.DataAccess.Implementations
 {
     public sealed class AuthService
     {

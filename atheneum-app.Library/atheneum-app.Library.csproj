@@ -1,8 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>atheneum_app.Library</RootNamespace>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <NeutralLanguage>en-NG</NeutralLanguage>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Refit" Version="6.0.38"/>
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace atheneum_app.Models.View
+namespace atheneum_app.Library.Models.View
 {
     public class BookViewModel
     {

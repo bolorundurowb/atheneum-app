@@ -1,6 +1,6 @@
-﻿namespace atheneum_app.Models.View
+﻿namespace atheneum_app.Library.Models.View
 {
-    public class AuthorViewModel
+    public class PublisherViewModel
     {
         public string _id { get; set; }
 

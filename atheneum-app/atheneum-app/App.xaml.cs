@@ -1,6 +1,4 @@
-﻿using atheneum_app.DataAccess.Implementations;
-using atheneum_app.Views.Auth;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: ExportFont("proxima.otf", Alias = "Proxima")]
@@ -8,7 +6,6 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("faregular.otf", Alias = "FAR")]
 [assembly: ExportFont("fasolid.otf", Alias = "FAS")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-
 namespace atheneum_app
 {
     public partial class App : Application

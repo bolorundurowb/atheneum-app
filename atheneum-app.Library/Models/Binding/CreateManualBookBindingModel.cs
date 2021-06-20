@@ -1,4 +1,4 @@
-﻿namespace atheneum_app.Models.Binding
+﻿namespace atheneum_app.Library.Models.Binding
 {
     public class CreateManualBookBindingModel
     {

@@ -1,7 +1,6 @@
 using System;
-using Xamarin.Essentials;
 
-namespace atheneum_app.DataAccess.Implementations
+namespace atheneum_app.Library.DataAccess.Implementations
 {
     public class TokenService
     {
