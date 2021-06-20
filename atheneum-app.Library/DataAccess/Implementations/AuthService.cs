@@ -34,5 +34,14 @@ namespace atheneum_app.Library.DataAccess.Implementations
             };
             return _authService.Register(bm);
         }
+
+        public Task<MessageViewModel> ForgotPassword(string emailAddress)
+        {
+            var bm = new ForgotPasswordBindingModel
+            {
+                EmailAddress = emailAddress
+            };
+            return _authService.ForgotPassword(bm);
+        }
     }
 }
