@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Views.Auth;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: ExportFont("proxima.otf", Alias = "Proxima")]
@@ -22,19 +24,11 @@ namespace atheneum_app
 
             if (isLoggedIn)
             {
-                mainPage = new NavigationPage(new MainPage())
-                {
-                    BarBackgroundColor = Color.FromHex(Constants.DarkColour),
-                    BarTextColor = Color.FromHex(Constants.PrimaryAccentColour)
-                };
+                mainPage = new NavigationPage(new MainPage());
             }
             else
             {
-                mainPage = new NavigationPage(new Login())
-                {
-                    BarBackgroundColor = Color.FromHex(Constants.DarkColour),
-                    BarTextColor = Color.FromHex(Constants.PrimaryAccentColour)
-                };
+                mainPage = new NavigationPage(new Login());
             }
 
             MainPage = mainPage;

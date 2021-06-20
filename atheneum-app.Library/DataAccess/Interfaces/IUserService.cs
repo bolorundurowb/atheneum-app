@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using atheneum_app.Library.Models.Binding;
 using atheneum_app.Library.Models.View;
+using Refit;
 
 namespace atheneum_app.Library.DataAccess.Interfaces
 {
