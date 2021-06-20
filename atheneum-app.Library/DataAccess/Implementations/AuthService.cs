@@ -2,6 +2,7 @@
 using atheneum_app.Library.DataAccess.Interfaces;
 using atheneum_app.Library.Models.Binding;
 using atheneum_app.Library.Models.View;
+using Refit;
 
 namespace atheneum_app.Library.DataAccess.Implementations
 {
@@ -11,7 +12,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public AuthService()
         {
-            _authService = RestService.For<IAuthService>(Constants.BaseUrl);
+            _authService = RestService.For<IAuthService>(Constants.V1BaseUrl);
         }
 
         public Task<AuthViewModel> Login(string emailAddress, string password)
