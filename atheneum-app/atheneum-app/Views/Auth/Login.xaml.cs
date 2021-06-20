@@ -80,5 +80,10 @@ namespace atheneum_app.Views.Auth
         {
             await Navigation.PushAsync(new Register());
         }
+
+        protected async void GoToForgotPassword(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ForgotPassword());
+        }
     }
 }
