@@ -76,6 +76,10 @@
           <SubType>Designer</SubType>
           <Generator>MSBuild:UpdateGeneratedFiles</Generator>
         </AndroidResource>
+        <AndroidResource Include="Resources\values\drawable\ic_app_icon.png">
+          <SubType>Designer</SubType>
+          <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+        </AndroidResource>
         <AndroidResource Include="Resources\values\styles.xml" />
         <AndroidResource Include="Resources\values\colors.xml" />
     </ItemGroup>

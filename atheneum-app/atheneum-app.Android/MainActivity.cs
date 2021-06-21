@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace atheneum_app.Android
 {
-    [Activity(Label = "Atheneum", Theme = "@style/MainTheme", MainLauncher = true,
+    [Activity(Label = "Atheneum", Theme = "@style/MainTheme", MainLauncher = true, Icon = "@drawable/ic_app_icon",
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity
     {
