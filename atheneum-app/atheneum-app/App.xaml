@@ -5,15 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.App">
     <Application.Resources>
-        <ResourceDictionary Source="Resources/Themes/Light.xaml" />
+        <ResourceDictionary Source="Resources/Styles/Colours.xaml" />
 
         <Style x:Key="PageStyle" TargetType="ContentPage">
-            <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColour}" />
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark= {StaticResource DarkColour}, Light={StaticResource LightColour}}" />
             <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
         </Style>
 
         <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
-            <Setter Property="Color" Value="{DynamicResource PrimaryColour}" />
+            <Setter Property="Color" Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="BackgroundColor" Value="Transparent" />
             <Setter Property="IsRunning" Value="True" />
             <Setter Property="HorizontalOptions" Value="Center" />
@@ -23,64 +24,23 @@
             <Setter Property="Margin" Value="0, 10, 0, 0" />
         </Style>
 
-        <Style x:Key="PageHeaderStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
-            <Setter Property="FontSize" Value="35" />
-            <Setter Property="FontAttributes" Value="Bold" />
-            <Setter Property="FontFamily" Value="Playfair" />
-            <Setter Property="HorizontalTextAlignment" Value="Center" />
-            <Setter Property="Margin" Value="0, 0, 0, 5" />
-        </Style>
-
-        <Style x:Key="PageSubHeaderStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="FontFamily" Value="SFThin" />
-            <Setter Property="HorizontalTextAlignment" Value="Center" />
-            <Setter Property="Margin" Value="0, 0, 0, 25" />
-        </Style>
-
         <Style x:Key="EntryFrameStyle" TargetType="Frame">
             <Setter Property="CornerRadius" Value="12" />
-            <Setter Property="BackgroundColor" Value="{DynamicResource InputBackgroundColour}" />
+            <Setter Property="BackgroundColor"  Value="{AppThemeBinding Dark= {StaticResource DarkInputBackgroundColour}, Light= {StaticResource LightInputBackgroundColour}}" />
             <Setter Property="Margin" Value="0, 5, 0, 5" />
             <Setter Property="Padding" Value="10, 5, 10, 5" />
-            <Setter Property="BorderColor" Value="{DynamicResource InputBorderColour}" />
+            <Setter Property="BorderColor"  Value="{AppThemeBinding Dark= {StaticResource DarkBorderColour}, Light= {StaticResource LightBorderColour}}" />
         </Style>
 
         <Style x:Key="EntryStyle" TargetType="Entry">
-            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
-            <Setter Property="PlaceholderColor" Value="{DynamicResource SubTextColour}" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkInputTextColour}, Light={StaticResource LightInputTextColour}}" />
+            <Setter Property="PlaceholderColor" Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="FontFamily" Value="Proxima" />
         </Style>
 
-        <Style x:Key="SubActionStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
-            <Setter Property="HorizontalOptions" Value="EndAndExpand" />
-            <Setter Property="FontSize" Value="15" />
-            <Setter Property="FontFamily" Value="SF" />
-            <Setter Property="Margin" Value="0, 7, 5, 0" />
-        </Style>
-
-        <Style x:Key="AdditionalActionStyle" TargetType="Label" BasedOn="{StaticResource SubActionStyle}">
-            <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
-            <Setter Property="VerticalOptions" Value="End" />
-            <Setter Property="Margin" Value="0, 0, 0, 10" />
-        </Style>
-
-        <Style x:Key="PrimaryActionButton" TargetType="Button">
-            <Setter Property="TextColor" Value="White" />
-            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColour}" />
-            <Setter Property="HorizontalOptions" Value="Fill" />
-            <Setter Property="FontSize" Value="14" />
-            <Setter Property="CornerRadius" Value="12" />
-            <Setter Property="FontFamily" Value="proxima" />
-            <Setter Property="Margin" Value="0, 12, 5, 0" />
-        </Style>
-        
         <Style x:Key="BasePageHdrStyleStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
             <Setter Property="FontSize" Value="40" />
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontFamily" Value="Fredericka" />
@@ -88,8 +48,8 @@
         </Style>
 
         <Style x:Key="BaseBtnStyle" TargetType="Button">
-            <Setter Property="TextColor" Value="{DynamicResource SecondaryColour}" />
-            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColour}" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="CornerRadius" Value="12" />
