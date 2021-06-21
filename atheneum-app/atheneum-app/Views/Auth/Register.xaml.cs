@@ -1,7 +1,7 @@
 using System;
 using System.Net;
-using atheneum_app.DataAccess.Implementations;
-using atheneum_app.Models.View;
+using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
 using Xamarin.Forms;

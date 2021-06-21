@@ -10,27 +10,9 @@
         <Style x:Key="RegisterBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
 
         <Style x:Key="LoginLblStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
             <Setter Property="HorizontalOptions" Value="End" />
             <Setter Property="Margin" Value="7,  0, 0, 0" />
-        </Style>
-
-        <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
-            <Setter Property="TextColor" Value="{DynamicResource AccentColour}" />
-            <Setter Property="Margin" Value="0, -10,  0, 10" />
-        </Style>
-
-        <Style x:Key="BackBtnStyle" TargetType="Button">
-            <Setter Property="TextColor" Value="{DynamicResource PrimaryColour}" />
-            <Setter Property="BorderColor" Value="{DynamicResource InputBorderColour}" />
-            <Setter Property="BackgroundColor" Value="Transparent" />
-            <Setter Property="BorderWidth" Value="1" />
-            <Setter Property="CornerRadius" Value="12" />
-            <Setter Property="WidthRequest" Value="50" />
-            <Setter Property="FontFamily" Value="FAS" />
-            <Setter Property="Text" Value="&#xf060;" />
-            <Setter Property="FontSize" Value="20" />
-            <Setter Property="HorizontalOptions" Value="Start" />
         </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -38,6 +20,7 @@
             <Button
                 Style="{StaticResource BackBtnStyle}"
                 Clicked="GoToLogin"/>
+            
             <StackLayout
                 Margin="0, -20, 0, 0"
                 VerticalOptions="CenterAndExpand"

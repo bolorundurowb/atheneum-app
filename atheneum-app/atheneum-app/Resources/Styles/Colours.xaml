@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="atheneum_app.Resources.Styles.Colours">
+    <Color x:Key="LightColour">#FEFEFE</Color>
+    <Color x:Key="DarkColour">#111111</Color>
+    <Color x:Key="PrimaryAccentColour">#008080</Color>
+    <Color x:Key="SecondaryAccentColour">#F5F6EE</Color>
+    <Color x:Key="DarkSecondaryAccentColour">#BCC08F</Color>
+    <Color x:Key="LightSubTextColour">#8C8C8C</Color>
+    <Color x:Key="DarkSubTextColour">#C6C6C6</Color>
+    <Color x:Key="LightInputTextColour">#000000</Color>
+    <Color x:Key="DarkInputTextColour">#FFFFFF</Color>
+    <Color x:Key="LightInputBackgroundColour">#F9F9F9</Color>
+    <Color x:Key="DarkInputBackgroundColour">#2E2E30</Color>
+    <Color x:Key="LightBorderColour">#F4F4F4</Color>
+    <Color x:Key="DarkBorderColour">#040404</Color>
+</ResourceDictionary>

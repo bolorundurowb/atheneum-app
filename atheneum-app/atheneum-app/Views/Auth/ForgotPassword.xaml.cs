@@ -10,20 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace atheneum_app.Views.Auth
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class ForgotPassword : ContentPage
     {
         private readonly AuthService _authClient;
-
-        public Login()
+        
+        public ForgotPassword()
         {
             InitializeComponent();
             _authClient = new AuthService();
         }
 
-        protected async void AttemptLogin(object sender, EventArgs e)
+        protected async void AttemptRequest(object sender, EventArgs e)
         {
             var email = txtEmail.Text;
-            var password = txtPassword.Text;
 
             if (string.IsNullOrWhiteSpace(email))
             {
@@ -31,27 +30,16 @@ namespace atheneum_app.Views.Auth
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(password))
-            {
-                Toasts.DisplayError("A password is required.");
-                return;
-            }
-
-            btnLogin.IsVisible = false;
+            btnRequest.IsVisible = false;
             prgLoading.IsVisible = true;
 
             try
             {
-                var response = await _authClient.Login(email, password);
+                var response = await _authClient.ForgotPassword(email);
+                Toasts.DisplaySuccess(response.Message);
 
-                var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FullName, email, response.AuthToken);
-
-                Toasts.DisplaySuccess("Login successfully.");
-
-                // send to home page
-                Navigation.InsertPageBefore(new MainPage(), this);
-                await Navigation.PopAsync();
+                // TODO: send to home page
+                
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
@@ -59,7 +47,7 @@ namespace atheneum_app.Views.Auth
 
                 Toasts.DisplayError(error?.Message?.Length > 0
                     ? error.Message[0]
-                    : "Sorry, an error occurred when logging you in. Try again later.");
+                    : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }
             catch (ApiException ex)
             {
@@ -67,23 +55,18 @@ namespace atheneum_app.Views.Auth
 
                 Toasts.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
-                    : "Sorry, an error occurred when logging you in. Try again later.");
+                    : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }
             finally
             {
-                btnLogin.IsVisible = true;
+                btnRequest.IsVisible = true;
                 prgLoading.IsVisible = false;
             }
         }
 
-        protected async void GoToRegister(object sender, EventArgs e)
+        protected async void GoToLogin(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Register());
-        }
-
-        protected async void GoToForgotPassword(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ForgotPassword());
+            await Navigation.PopAsync();
         }
     }
 }

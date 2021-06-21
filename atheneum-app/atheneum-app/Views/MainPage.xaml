@@ -10,14 +10,23 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <ControlTemplate x:Key="TabItemTemplate">
-                <Grid RowSpacing="0">
+                <Grid RowDefinitions="2*, *" RowSpacing="0">
                     <Image
+                        Grid.Row="0"
                         Margin="6"
                         HeightRequest="24"
                         HorizontalOptions="Center"
                         Source="{TemplateBinding CurrentIcon}"
                         VerticalOptions="Center"
                         WidthRequest="24" />
+                    <Label
+                        Grid.RowSpan="1"
+                        Margin="0, 10, 0, 0"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        Text="Hello"
+                        TextColor="White"
+                        FontSize="Small"/>
                 </Grid>
             </ControlTemplate>
 
