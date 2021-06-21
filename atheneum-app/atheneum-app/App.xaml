@@ -8,7 +8,8 @@
         <ResourceDictionary Source="Resources/Styles/Colours.xaml" />
 
         <Style x:Key="BasePageHdrStyleStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
             <Setter Property="FontSize" Value="40" />
             <Setter Property="FontAttributes" Value="Bold" />
             <Setter Property="FontFamily" Value="Fredericka" />
@@ -16,8 +17,10 @@
         </Style>
 
         <Style x:Key="BaseBtnStyle" TargetType="Button">
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
-            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Fill" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="CornerRadius" Value="12" />
@@ -30,7 +33,8 @@
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="proxima" />
             <Setter Property="TextTransform" Value="Lowercase" />
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
         </Style>
 
         <Style x:Key="PageStyle" TargetType="ContentPage">
@@ -40,7 +44,8 @@
         </Style>
 
         <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
-            <Setter Property="Color" Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
+            <Setter Property="Color"
+                    Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="BackgroundColor" Value="Transparent" />
             <Setter Property="IsRunning" Value="True" />
             <Setter Property="HorizontalOptions" Value="Center" />
@@ -52,15 +57,19 @@
 
         <Style x:Key="EntryFrameStyle" TargetType="Frame">
             <Setter Property="CornerRadius" Value="12" />
-            <Setter Property="BackgroundColor"  Value="{AppThemeBinding Dark= {StaticResource DarkInputBackgroundColour}, Light= {StaticResource LightInputBackgroundColour}}" />
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark= {StaticResource DarkInputBackgroundColour}, Light= {StaticResource LightInputBackgroundColour}}" />
             <Setter Property="Margin" Value="0, 5, 0, 5" />
             <Setter Property="Padding" Value="10, 5, 10, 5" />
-            <Setter Property="BorderColor"  Value="{AppThemeBinding Dark= {StaticResource DarkBorderColour}, Light= {StaticResource LightBorderColour}}" />
+            <Setter Property="BorderColor"
+                    Value="{AppThemeBinding Dark= {StaticResource DarkBorderColour}, Light= {StaticResource LightBorderColour}}" />
         </Style>
 
         <Style x:Key="EntryStyle" TargetType="Entry">
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkInputTextColour}, Light={StaticResource LightInputTextColour}}" />
-            <Setter Property="PlaceholderColor" Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkInputTextColour}, Light={StaticResource LightInputTextColour}}" />
+            <Setter Property="PlaceholderColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="FontFamily" Value="Proxima" />
         </Style>
@@ -71,8 +80,10 @@
         </Style>
 
         <Style x:Key="BackBtnStyle" TargetType="Button">
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
-            <Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource DarkBorderColour}, Light={StaticResource LightBorderColour}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="BorderColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkBorderColour}, Light={StaticResource LightBorderColour}}" />
             <Setter Property="BackgroundColor" Value="Transparent" />
             <Setter Property="BorderWidth" Value="1" />
             <Setter Property="CornerRadius" Value="12" />

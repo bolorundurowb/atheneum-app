@@ -84,6 +84,7 @@
         <AndroidResource Include="Resources\values\drawable\ic_white_logo.png" />
         <AndroidResource Include="Resources\values\styles.xml" />
         <AndroidResource Include="Resources\values\colors.xml" />
+        <AndroidResource Include="Resources\values\themes.xml" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\atheneum-app\atheneum-app.csproj">
