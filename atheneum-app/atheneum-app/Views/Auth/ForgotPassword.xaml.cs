@@ -11,5 +11,10 @@ namespace atheneum_app.Views.Auth
         {
             InitializeComponent();
         }
+
+        protected async void GoToLogin(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }
