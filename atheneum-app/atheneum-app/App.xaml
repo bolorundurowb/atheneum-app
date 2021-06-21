@@ -30,6 +30,7 @@
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="proxima" />
             <Setter Property="TextTransform" Value="Lowercase" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
         </Style>
 
         <Style x:Key="PageStyle" TargetType="ContentPage">
