@@ -32,6 +32,11 @@ namespace atheneum_app
             }
 
             MainPage = mainPage;
+            
+            // listen for theme changes
+            Current.UserAppTheme = Current.RequestedTheme;
+            Current.RequestedThemeChanged +=
+                (sender, args) => Current.UserAppTheme = args.RequestedTheme;
         }
 
         protected override void OnStart()

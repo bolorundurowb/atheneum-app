@@ -20,11 +20,6 @@
             <Setter Property="HorizontalOptions" Value="End" />
             <Setter Property="Margin" Value="7,  0, 0, 0" />
         </Style>
-
-        <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
-            <Setter Property="Margin" Value="0, -10,  0, 10" />
-        </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
@@ -76,8 +71,8 @@
 
                 <ActivityIndicator
                     x:Name="prgLoading"
-                    Style="{StaticResource ProgressStyle}"
-                    IsVisible="False" />
+                    IsVisible="False"
+                    Style="{StaticResource ProgressStyle}" />
 
                 <StackLayout
                     Orientation="Horizontal"

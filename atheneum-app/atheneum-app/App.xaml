@@ -7,6 +7,31 @@
     <Application.Resources>
         <ResourceDictionary Source="Resources/Styles/Colours.xaml" />
 
+        <Style x:Key="BasePageHdrStyleStyle" TargetType="Label">
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontFamily" Value="Fredericka" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+        </Style>
+
+        <Style x:Key="BaseBtnStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="CornerRadius" Value="12" />
+            <Setter Property="FontFamily" Value="proxima" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+            <Setter Property="Margin" Value="0, 12, 5, 0" />
+        </Style>
+
+        <Style x:Key="BaseLblStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontFamily" Value="proxima" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+        </Style>
+
         <Style x:Key="PageStyle" TargetType="ContentPage">
             <Setter Property="BackgroundColor"
                     Value="{AppThemeBinding Dark= {StaticResource DarkColour}, Light={StaticResource LightColour}}" />
@@ -39,29 +64,9 @@
             <Setter Property="FontFamily" Value="Proxima" />
         </Style>
 
-        <Style x:Key="BasePageHdrStyleStyle" TargetType="Label">
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
-            <Setter Property="FontSize" Value="40" />
-            <Setter Property="FontAttributes" Value="Bold" />
-            <Setter Property="FontFamily" Value="Fredericka" />
-            <Setter Property="TextTransform" Value="Lowercase" />
-        </Style>
-
-        <Style x:Key="BaseBtnStyle" TargetType="Button">
-            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
-            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
-            <Setter Property="HorizontalOptions" Value="Fill" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="CornerRadius" Value="12" />
-            <Setter Property="FontFamily" Value="proxima" />
-            <Setter Property="TextTransform" Value="Lowercase" />
-            <Setter Property="Margin" Value="0, 12, 5, 0" />
-        </Style>
-
-        <Style x:Key="BaseLblStyle" TargetType="Label">
-            <Setter Property="FontSize" Value="15" />
-            <Setter Property="FontFamily" Value="proxima" />
-            <Setter Property="TextTransform" Value="Lowercase" />
+        <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="Margin" Value="0, -10,  0, 10" />
         </Style>
     </Application.Resources>
 </Application>
