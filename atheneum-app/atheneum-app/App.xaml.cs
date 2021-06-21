@@ -1,4 +1,4 @@
-﻿using atheneum_app.DataAccess.Implementations;
+﻿using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Views.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,7 +8,6 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("faregular.otf", Alias = "FAR")]
 [assembly: ExportFont("fasolid.otf", Alias = "FAS")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-
 namespace atheneum_app
 {
     public partial class App : Application
@@ -25,22 +24,19 @@ namespace atheneum_app
 
             if (isLoggedIn)
             {
-                mainPage = new NavigationPage(new MainPage())
-                {
-                    BarBackgroundColor = Color.FromHex(Constants.DarkColour),
-                    BarTextColor = Color.FromHex(Constants.PrimaryAccentColour)
-                };
+                mainPage = new NavigationPage(new MainPage());
             }
             else
             {
-                mainPage = new NavigationPage(new Login())
-                {
-                    BarBackgroundColor = Color.FromHex(Constants.DarkColour),
-                    BarTextColor = Color.FromHex(Constants.PrimaryAccentColour)
-                };
+                mainPage = new NavigationPage(new Login());
             }
 
             MainPage = mainPage;
+            
+            // listen for theme changes
+            Current.UserAppTheme = Current.RequestedTheme;
+            Current.RequestedThemeChanged +=
+                (sender, args) => Current.UserAppTheme = args.RequestedTheme;
         }
 
         protected override void OnStart()
