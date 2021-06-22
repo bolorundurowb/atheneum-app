@@ -32,7 +32,9 @@ namespace atheneum_app.Android
             // set the bottom bar colour
             if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
             {
-                Window?.SetNavigationBarColor(isInDarkMode ? Color.Black : new Color(240, 240, 240));
+                var colourCode = isInDarkMode ? 17 : 254;
+                var colour = new Color(colourCode, colourCode, colourCode);
+                Window?.SetNavigationBarColor(colour);
             }
         }
     }

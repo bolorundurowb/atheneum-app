@@ -43,13 +43,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\atheneum-app.Library\atheneum-app.Library.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Update="Views\MainPage.xaml.cs">
         <DependentUpon>MainPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\atheneum-app.Library\atheneum-app.Library.csproj" />
     </ItemGroup>
 </Project>
