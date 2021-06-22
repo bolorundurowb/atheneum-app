@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>atheneum_app</RootNamespace>
+        <Company>bolorundurowb</Company>
+        <Product>Atheneum</Product>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <NeutralLanguage>en-NG</NeutralLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>pdbonly</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Fonts\NY.otf" />
+      <None Remove="Resources\Fonts\SFPro.ttf" />
+      <None Remove="Resources\Fonts\OpenSansBold.ttf" />
+      <None Remove="Resources\Fonts\OpenSansRegular.ttf" />
+      <None Remove="Resources\Fonts\SFProBold.otf" />
+      <EmbeddedResource Include="Resources\Fonts\SFProBold.otf" />
+      <None Remove="Resources\Fonts\SFProRegular.otf" />
+      <None Remove="Resources\Fonts\SFProThin.otf" />
+      <None Remove="Resources\Fonts\proxima.otf" />
+      <EmbeddedResource Include="Resources\Fonts\proxima.otf" />
+      <None Remove="Resources\Fonts\playfair.ttf" />
+      <None Remove="Resources\Fonts\fredericka.ttf" />
+      <EmbeddedResource Include="Resources\Fonts\fredericka.ttf" />
+      <None Remove="Resources\Fonts\fabrand.otf" />
+      <EmbeddedResource Include="Resources\Fonts\fabrand.otf" />
+      <None Remove="Resources\Fonts\faregular.otf" />
+      <EmbeddedResource Include="Resources\Fonts\faregular.otf" />
+      <None Remove="Resources\Fonts\fasolid.otf" />
+      <EmbeddedResource Include="Resources\Fonts\fasolid.otf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\atheneum-app.Library\atheneum-app.Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\MainPage.xaml.cs">
+        <DependentUpon>MainPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+</Project>
