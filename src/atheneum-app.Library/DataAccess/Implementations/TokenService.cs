@@ -9,7 +9,8 @@ namespace atheneum_app.Library.DataAccess.Implementations
         private const string AuthExpiryKey = "Atheneum_Expiry";
         private const string AuthLoggedInAtKey = "Atheneum_LoggedInAt";
         private const string AuthEmailKey = "Atheneum_Email";
-        private const string AuthFullNameKey = "Atheneum_FullName";
+        private const string AuthFirstNameKey = "Atheneum_FirstName";
+        private const string AuthLastNameKey = "Atheneum_LastName";
 
         public void Logout()
         {
@@ -51,11 +52,12 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return Preferences.Get(AuthLoggedInAtKey, DateTime.MinValue);
         }
 
-        public void SetAuth(string fullName, string emailAddress, string token)
+        public void SetAuth(string firstName, string lastName, string emailAddress, string token)
         {
             var expiresAt = DateTime.UtcNow.AddDays(7);
 
-            Preferences.Set(AuthFullNameKey, fullName);
+            Preferences.Set(AuthFirstNameKey, firstName);
+            Preferences.Set(AuthLastNameKey, lastName);
             Preferences.Set(AuthEmailKey, emailAddress);
             Preferences.Set(AuthTokenKey, token);
             Preferences.Set(AuthExpiryKey, expiresAt);

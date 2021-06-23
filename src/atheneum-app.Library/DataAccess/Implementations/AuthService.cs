@@ -25,10 +25,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return _authService.Login(bm);
         }
 
-        public Task<AuthViewModel> Register(string emailAddress, string password)
+        public Task<AuthViewModel> Register(string fullName, string emailAddress, string password)
         {
             var bm = new RegisterBindingModel
             {
+                FullName = fullName,
                 EmailAddress = emailAddress,
                 Password = password
             };

@@ -22,8 +22,10 @@ namespace atheneum_app.Views.Auth
 
         protected async void AttemptRegister(object sender, EventArgs e)
         {
+            var fullName = txtFullName.Text;
             var email = txtEmail.Text;
             var password = txtPassword.Text;
+            var confirmPassword = txtConfirmPassword.Text;
 
             if (string.IsNullOrWhiteSpace(email))
             {
@@ -37,17 +39,29 @@ namespace atheneum_app.Views.Auth
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                Toasts.DisplayError("A password confirmation is required.");
+                return;
+            }
+
+            if (password != confirmPassword)
+            {
+                Toasts.DisplayError("The password and confirmation don't match.");
+                return;
+            }
+
             btnRegister.IsVisible = false;
             prgLoading.IsVisible = true;
 
             try
             {
-                var response = await _authClient.Register(email, password);
+                var response = await _authClient.Register(fullName, email, password);
 
                 var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FullName, email, response.AuthToken);
+                tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
 
-                Toasts.DisplaySuccess("Registered successfully.");
+                Toasts.DisplaySuccess("Account created successfully.");
 
                 // send to home page
                 Application.Current.MainPage = new NavigationPage(new MainPage());
