@@ -76,7 +76,7 @@ namespace atheneum_app.Views.Auth
             }
         }
 
-        protected async void GoToLogin(object sender, EventArgs e)
+        protected async void GoBack(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
         }

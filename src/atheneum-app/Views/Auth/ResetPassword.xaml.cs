@@ -19,5 +19,10 @@ namespace atheneum_app.Views.Auth
             InitializeComponent();
             _emailAddress = emailAddress;
         }
+
+        protected async void GoBack(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }
