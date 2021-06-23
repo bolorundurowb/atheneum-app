@@ -35,17 +35,23 @@
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
+                            x:Name="txtFullName"
+                            Placeholder="full name"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
                             x:Name="txtEmail"
-                            Placeholder="Email Address"
+                            Placeholder="email address"
                             Keyboard="Email"
-                            IsTextPredictionEnabled="True"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
                             x:Name="txtPassword"
-                            Placeholder="Password"
+                            Placeholder="password"
                             IsPassword="True"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
