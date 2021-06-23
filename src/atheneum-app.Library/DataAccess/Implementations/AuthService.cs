@@ -43,5 +43,15 @@ namespace atheneum_app.Library.DataAccess.Implementations
             };
             return _authService.ForgotPassword(bm);
         }
+
+        public Task<MessageViewModel> ResetPassword(string emailAddress, string resetCode)
+        {
+            var bm = new ResetPasswordBindingModel
+            {
+                EmailAddress = emailAddress,
+                ResetCode = resetCode
+            };
+            return _authService.ResettPassword(bm);
+        }
     }
 }
