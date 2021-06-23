@@ -55,6 +55,14 @@
                             IsPassword="True"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtConfirmPassword"
+                            Placeholder="confirm password"
+                            IsPassword="True"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
                 </StackLayout>
 
                 <Button
