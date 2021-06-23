@@ -41,6 +41,7 @@
             <Setter Property="BackgroundColor"
                     Value="{AppThemeBinding Dark= {StaticResource DarkColour}, Light={StaticResource LightColour}}" />
             <Setter Property="NavigationPage.HasNavigationBar" Value="False" />
+            <Setter Property="Padding" Value="20" />
         </Style>
 
         <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
@@ -72,6 +73,8 @@
                     Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="IsTextPredictionEnabled" Value="True" />
+            <Setter Property="Keyboard" Value="Text" />
         </Style>
 
         <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">

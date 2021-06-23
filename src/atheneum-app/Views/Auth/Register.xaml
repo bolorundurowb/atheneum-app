@@ -4,7 +4,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.Views.Auth.Register"
-    Padding="20"
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <Style x:Key="RegisterBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
@@ -19,7 +18,7 @@
         <StackLayout>
             <Button
                 Style="{StaticResource BackBtnStyle}"
-                Clicked="GoToLogin"/>
+                Clicked="GoBack"/>
             
             <StackLayout
                 Margin="0, -20, 0, 0"
@@ -77,7 +76,7 @@
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer
                                 NumberOfTapsRequired="1"
-                                Tapped="GoToLogin" />
+                                Tapped="GoBack" />
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>
