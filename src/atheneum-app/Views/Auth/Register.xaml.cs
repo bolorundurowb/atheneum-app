@@ -56,7 +56,7 @@ namespace atheneum_app.Views.Auth
 
             try
             {
-                var response = await _authClient.Register(email, password);
+                var response = await _authClient.Register(fullName, email, password);
 
                 var tokenClient = new TokenService();
                 tokenClient.SetAuth(response.FullName, email, response.AuthToken);
