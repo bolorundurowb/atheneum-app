@@ -22,8 +22,10 @@ namespace atheneum_app.Views.Auth
 
         protected async void AttemptRegister(object sender, EventArgs e)
         {
+            var fullName = txtFullName.Text;
             var email = txtEmail.Text;
             var password = txtPassword.Text;
+            var confirmPassword = txtConfirmPassword.Text;
 
             if (string.IsNullOrWhiteSpace(email))
             {
@@ -34,6 +36,18 @@ namespace atheneum_app.Views.Auth
             if (string.IsNullOrWhiteSpace(password))
             {
                 Toasts.DisplayError("A password is required.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                Toasts.DisplayError("A password confirmation is required.");
+                return;
+            }
+
+            if (password != confirmPassword)
+            {
+                Toasts.DisplayError("The password and confirmation don't match.");
                 return;
             }
 
