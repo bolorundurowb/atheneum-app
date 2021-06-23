@@ -1,0 +1,9 @@
+﻿namespace atheneum_app.Library.Models.Binding
+{
+    public class ResetPasswordBindingModel
+    {
+        public string EmailAddress { get; set; }
+
+        public string ResetCode { get; set; }
+    }
+}

@@ -15,5 +15,8 @@ namespace atheneum_app.Library.DataAccess.Interfaces
 
         [Post("/auth/forgot-password")]
         Task<MessageViewModel> ForgotPassword([Body] ForgotPasswordBindingModel payload);
+
+        [Post("/auth/reset-password")]
+        Task<MessageViewModel> ResettPassword([Body] ResetPasswordBindingModel payload);
     }
 }
