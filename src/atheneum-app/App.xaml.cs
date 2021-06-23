@@ -1,4 +1,5 @@
 ﻿using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Views;
 using atheneum_app.Views.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

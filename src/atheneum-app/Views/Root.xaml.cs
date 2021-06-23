@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace atheneum_app
+namespace atheneum_app.Views
 {
     public partial class Root : ContentPage
     {
