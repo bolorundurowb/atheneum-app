@@ -2,9 +2,9 @@
 
 namespace atheneum_app
 {
-    public partial class MainPage : ContentPage
+    public partial class Root : ContentPage
     {
-        public MainPage()
+        public Root()
         {
             InitializeComponent();
         }

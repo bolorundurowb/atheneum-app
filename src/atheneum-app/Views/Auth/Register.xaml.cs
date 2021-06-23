@@ -64,7 +64,7 @@ namespace atheneum_app.Views.Auth
                 Toasts.DisplaySuccess("Account created successfully.");
 
                 // send to home page
-                Application.Current.MainPage = new NavigationPage(new MainPage());
+                Application.Current.MainPage = new NavigationPage(new Root());
                 await Navigation.PopAsync();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)

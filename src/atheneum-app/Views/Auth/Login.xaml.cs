@@ -45,12 +45,12 @@ namespace atheneum_app.Views.Auth
                 var response = await _authClient.Login(email, password);
 
                 var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FullName, email, response.AuthToken);
+                tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
 
                 Toasts.DisplaySuccess("Login successfully.");
 
                 // send to home page
-                Navigation.InsertPageBefore(new MainPage(), this);
+                Navigation.InsertPageBefore(new Root(), this);
                 await Navigation.PopAsync();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)

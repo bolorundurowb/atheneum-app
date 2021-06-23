@@ -3,9 +3,8 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:atheneum_app"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-    x:Class="atheneum_app.MainPage"
+    x:Class="atheneum_app.Root"
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -73,7 +72,7 @@
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
-                    Icon="circle.png"
+                    Icon="home.png"
                     Text="Tab 2"
                     TextColor="White"
                     TextColorSelected="Yellow"

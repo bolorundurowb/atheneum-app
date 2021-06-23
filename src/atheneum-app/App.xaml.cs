@@ -24,7 +24,7 @@ namespace atheneum_app
 
             if (isLoggedIn)
             {
-                mainPage = new NavigationPage(new MainPage());
+                mainPage = new NavigationPage(new Root());
             }
             else
             {
