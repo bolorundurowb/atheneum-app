@@ -12,9 +12,12 @@ namespace atheneum_app.Views.Auth
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResetPassword : ContentPage
     {
-        public ResetPassword()
+        private readonly string _emailAddress;
+        
+        public ResetPassword(string emailAddress)
         {
             InitializeComponent();
+            _emailAddress = emailAddress;
         }
     }
 }

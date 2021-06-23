@@ -13,7 +13,7 @@ namespace atheneum_app.Views.Auth
     public partial class ForgotPassword : ContentPage
     {
         private readonly AuthService _authClient;
-        
+
         public ForgotPassword()
         {
             InitializeComponent();
@@ -38,8 +38,7 @@ namespace atheneum_app.Views.Auth
                 var response = await _authClient.ForgotPassword(email);
                 Toasts.DisplaySuccess(response.Message);
 
-                // TODO: send to home page
-                
+                await Navigation.PushAsync(new ResetPassword(email));
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
