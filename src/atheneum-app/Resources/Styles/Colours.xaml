@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.Resources.Styles.Colours">
-    <Color x:Key="LightColour">#FEFEFE</Color>
+    <Color x:Key="LightColour">#FDFDFD</Color>
     <Color x:Key="DarkColour">#111111</Color>
     <Color x:Key="PrimaryAccentColour">#008080</Color>
     <Color x:Key="SecondaryAccentColour">#F5F6EE</Color>
