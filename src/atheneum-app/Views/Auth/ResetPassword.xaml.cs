@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,6 +13,17 @@ namespace atheneum_app.Views.Auth
         {
             InitializeComponent();
             _emailAddress = emailAddress;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            txtEmail.Text = _emailAddress;
+        }
+
+        protected async void Reset(object sender, EventArgs e)
+        {
+            
         }
 
         protected async void GoBack(object sender, EventArgs e)

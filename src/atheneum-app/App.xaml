@@ -73,6 +73,8 @@
                     Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="IsTextPredictionEnabled" Value="True" />
+            <Setter Property="Keyboard" Value="Text" />
         </Style>
 
         <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
