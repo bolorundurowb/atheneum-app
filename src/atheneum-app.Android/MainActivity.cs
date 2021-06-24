@@ -9,8 +9,6 @@ using Color = Android.Graphics.Color;
 
 namespace atheneum_app.Android
 {
-    // [Activity(Theme = "@style/MainTheme",
-    //     ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode)]
     [Activity(Label = "Atheneum", Icon = "@drawable/ic_app_icon", Theme = "@style/SplashTheme",
         MainLauncher = true, NoHistory = true, LaunchMode = LaunchMode.SingleTop,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode)]
