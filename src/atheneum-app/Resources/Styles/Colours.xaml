@@ -8,6 +8,7 @@
     <Color x:Key="PrimaryAccentColour">#008080</Color>
     <Color x:Key="SecondaryAccentColour">#F5F6EE</Color>
     <Color x:Key="DarkSecondaryAccentColour">#BCC08F</Color>
+    <Color x:Key="TertiaryAccentColour">#800020</Color>
     <Color x:Key="LightSubTextColour">#8C8C8C</Color>
     <Color x:Key="DarkSubTextColour">#C6C6C6</Color>
     <Color x:Key="LightInputTextColour">#000000</Color>
