@@ -4,6 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
     x:Class="atheneum_app.Views.Root"
     Padding="0"
     BackgroundColor="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}"
@@ -48,31 +49,19 @@
 
             <ControlTemplate x:Key="FabTabItemTemplate">
                 <Grid>
-                    <Frame
-                        CornerRadius="13"
-                        Padding="0"
-                        Margin="10"
-                        HeightRequest="40"
-                        WidthRequest="40"
-                        BackgroundColor="{StaticResource TertiaryAccentColour}">
-                        <Label
-                            HorizontalOptions="Center"
-                            InputTransparent="True"
-                            VerticalOptions="Center" />
-                    </Frame>
+                    <ImageButton
+                        Margin="6"
+                        Padding="10"
+                        BackgroundColor="{StaticResource TertiaryAccentColour}"
+                        CornerRadius="16"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        InputTransparent="True"
+                        Source="{TemplateBinding CurrentIcon}"
+                        VerticalOptions="Center"
+                        WidthRequest="50" />
                 </Grid>
             </ControlTemplate>
-
-            <DataTemplate x:Key="NavbarItemTemplate">
-                <StackLayout
-                    Orientation="Vertical">
-                    <Label
-                        TextColor="Black"
-                        Text="Hello" />
-                    <Label
-                        Text="World" />
-                </StackLayout>
-            </DataTemplate>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -87,6 +76,8 @@
 
                 <xct:TabViewItem
                     Text="Home"
+                    Icon="{extensions:IconSourceExtensions ic_home_light}"
+                    IconSelected="{extensions:IconSourceExtensions ic_home_light_active}"
                     TextColor="{AppThemeBinding Dark={StaticResource DarkNavbarTextColour}, Light={StaticResource LightNavbarTextColour}}"
                     FontFamily="Proxima"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
@@ -110,6 +101,7 @@
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
+                    Icon="{extensions:IconSourceExtensions ic_add}"
                     ControlTemplate="{StaticResource FabTabItemTemplate}" />
 
                 <xct:TabViewItem

@@ -40,6 +40,12 @@
       <EmbeddedResource Include="Resources\Fonts\faregular.otf" />
       <None Remove="Resources\Fonts\fasolid.otf" />
       <EmbeddedResource Include="Resources\Fonts\fasolid.otf" />
+      <None Remove="Resources\Icons\ic_plus.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_add.png" />
+      <None Remove="Resources\Icons\ic_home_light.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_home_light.png" />
+      <None Remove="Resources\Icons\ic_home_light_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_home_light_active.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -51,9 +57,5 @@
 
     <ItemGroup>
       <ProjectReference Include="..\atheneum-app.Library\atheneum-app.Library.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Resources\Icons" />
     </ItemGroup>
 </Project>
