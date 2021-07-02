@@ -59,6 +59,14 @@
       <EmbeddedResource Include="Resources\Icons\ic_wishlist_light_active.png" />
       <None Remove="Resources\Icons\ic_wishlist_light.png" />
       <EmbeddedResource Include="Resources\Icons\ic_wishlist_light.png" />
+      <None Remove="Resources\Icons\ic_books_dark.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_books_dark.png" />
+      <None Remove="Resources\Icons\ic_books_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_books_dark_active.png" />
+      <None Remove="Resources\Icons\ic_books_light.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_books_light.png" />
+      <None Remove="Resources\Icons\ic_books_light_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_books_light_active.png" />
     </ItemGroup>
 
     <ItemGroup>
