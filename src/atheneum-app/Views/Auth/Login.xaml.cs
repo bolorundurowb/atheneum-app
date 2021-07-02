@@ -27,13 +27,13 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(email))
             {
-                Toasts.DisplayError("An email address is required.");
+                ToastService.DisplayError("An email address is required.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                Toasts.DisplayError("A password is required.");
+                ToastService.DisplayError("A password is required.");
                 return;
             }
 
@@ -47,7 +47,7 @@ namespace atheneum_app.Views.Auth
                 var tokenClient = new TokenService();
                 tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
 
-                Toasts.DisplaySuccess("Login successfully.");
+                ToastService.DisplaySuccess("Login successfully.");
 
                 // send to home page
                 Navigation.InsertPageBefore(new Root(), this);
@@ -57,7 +57,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 
-                Toasts.DisplayError(error?.Message?.Length > 0
+                ToastService.DisplayError(error?.Message?.Length > 0
                     ? error.Message[0]
                     : "Sorry, an error occurred when logging you in. Try again later.");
             }
@@ -65,7 +65,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
 
-                Toasts.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
+                ToastService.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
                     : "Sorry, an error occurred when logging you in. Try again later.");
             }

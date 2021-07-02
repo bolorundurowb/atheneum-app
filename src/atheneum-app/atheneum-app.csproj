@@ -52,4 +52,8 @@
     <ItemGroup>
       <ProjectReference Include="..\atheneum-app.Library\atheneum-app.Library.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\Icons" />
+    </ItemGroup>
 </Project>

@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace atheneum_app.Utils
 {
-    internal static class Toasts
+    internal static class ToastService
     {
         public static void DisplayError(string message)
         {

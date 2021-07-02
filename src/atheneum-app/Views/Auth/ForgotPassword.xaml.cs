@@ -26,7 +26,7 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(email))
             {
-                Toasts.DisplayError("An email address is required.");
+                ToastService.DisplayError("An email address is required.");
                 return;
             }
 
@@ -36,7 +36,7 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.ForgotPassword(email);
-                Toasts.DisplaySuccess(response.Message);
+                ToastService.DisplaySuccess(response.Message);
 
                 // go 
                 await Navigation.PushAsync(new ResetPassword(email));
@@ -45,7 +45,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 
-                Toasts.DisplayError(error?.Message?.Length > 0
+                ToastService.DisplayError(error?.Message?.Length > 0
                     ? error.Message[0]
                     : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }
@@ -53,7 +53,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
 
-                Toasts.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
+                ToastService.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
                     : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }
