@@ -85,7 +85,7 @@
                     Text="Home"
                     ControlTemplate="{StaticResource TabItemTemplate}"
                     Icon="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home_dark}, Light={extensions:IconSourceExtensions ic_home_light}}"
-                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home_dark_active}, Light={extensions:IconSourceExtensions ic_home_light}}"
+                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home_dark_active}, Light={extensions:IconSourceExtensions ic_home_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource DarkNavbarTextColour}, Light={StaticResource LightNavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <Grid>
