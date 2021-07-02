@@ -7,12 +7,11 @@
     xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
     x:Class="atheneum_app.Views.Root"
     Padding="0"
-    BackgroundColor="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}"
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="NavbarBackgroundStyle" TargetType="BoxView">
-                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="CornerRadius" Value="15" />
                 <Setter Property="Margin" Value="10, 0, 10, 5" />
                 <Setter Property="Color"
                         Value="{AppThemeBinding Dark={StaticResource DarkNavbarBackgroundColour}, Light={StaticResource LightNavbarBackgroundColour}}" />
@@ -74,17 +73,15 @@
 
     <ContentPage.Content>
         <Grid>
-            <xct:TabView
-                Style="{StaticResource NavbarStyle}">
+            <xct:TabView Style="{StaticResource NavbarStyle}">
                 <xct:TabView.TabStripBackgroundView>
-                    <BoxView
-                        Style="{StaticResource NavbarBackgroundStyle}" />
+                    <BoxView Style="{StaticResource NavbarBackgroundStyle}" />
                 </xct:TabView.TabStripBackgroundView>
 
                 <xct:TabViewItem
                     Text="Home"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home}, Light={extensions:IconSourceExtensions ic_home}}"
+                    Icon="{extensions:IconSourceExtensions ic_home}"
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home_dark_active}, Light={extensions:IconSourceExtensions ic_home_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
@@ -99,7 +96,7 @@
                 <xct:TabViewItem
                     Text="Books"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_books}, Light={extensions:IconSourceExtensions ic_books}}"
+                    Icon="{extensions:IconSourceExtensions ic_books}"
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_books_dark_active}, Light={extensions:IconSourceExtensions ic_books_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
@@ -118,7 +115,7 @@
                 <xct:TabViewItem
                     Text="WishList"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_wishlist}, Light={extensions:IconSourceExtensions ic_wishlist}}"
+                    Icon="{extensions:IconSourceExtensions ic_wishlist}"
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_wishlist_dark_active}, Light={extensions:IconSourceExtensions ic_wishlist_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
@@ -133,7 +130,7 @@
                 <xct:TabViewItem
                     Text="Profile"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_profile}, Light={extensions:IconSourceExtensions ic_profile}}"
+                    Icon="{extensions:IconSourceExtensions ic_profile}"
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_profile_dark_active}, Light={extensions:IconSourceExtensions ic_profile_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">

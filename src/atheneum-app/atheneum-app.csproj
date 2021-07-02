@@ -40,27 +40,25 @@
       <EmbeddedResource Include="Resources\Icons\ic_home_light_active.png" />
       <None Remove="Resources\Icons\ic_home_dark.png" />
       <None Remove="Resources\Icons\ic_home_dark_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_home_dark_active.png" />
       <None Remove="Resources\Icons\ic_profile_dark.png" />
       <None Remove="Resources\Icons\ic_profile_dark_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_profile_dark_active.png" />
       <None Remove="Resources\Icons\ic_profile_light.png" />
       <None Remove="Resources\Icons\ic_profile_light_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_profile_light_active.png" />
-      <None Remove="Resources\Icons\ic_wishlist_dark_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_wishlist_dark_active.png" />
       <None Remove="Resources\Icons\ic_wishlist_dark.png" />
       <None Remove="Resources\Icons\ic_wishlist_light_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_wishlist_light_active.png" />
       <None Remove="Resources\Icons\ic_wishlist_light.png" />
       <EmbeddedResource Include="Resources\Icons\ic_wishlist.png" />
       <None Remove="Resources\Icons\ic_books_dark.png" />
-      <None Remove="Resources\Icons\ic_books_dark_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_books_dark_active.png" />
       <None Remove="Resources\Icons\ic_books_light.png" />
       <EmbeddedResource Include="Resources\Icons\ic_books.png" />
       <None Remove="Resources\Icons\ic_books_light_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_books_light_active.png" />
+      <None Remove="Resources\Icons\ic_books_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_books_dark_active.png" />
+      <None Remove="Resources\Icons\ic_wishlist_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_wishlist_dark_active.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -72,5 +70,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\atheneum-app.Library\atheneum-app.Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Icons\ic_home_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_dark_active.png" />
     </ItemGroup>
 </Project>

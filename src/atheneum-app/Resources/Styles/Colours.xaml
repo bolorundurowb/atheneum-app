@@ -20,8 +20,8 @@
     
     <!-- Navbar Styles -->
     <Color x:Key="LightNavbarBackgroundColour">#F9F9F9</Color>
-    <Color x:Key="DarkNavbarBackgroundColour">#171717</Color>
-    <Color x:Key="NavbarTextColour">#C4C4C4</Color>
+    <Color x:Key="DarkNavbarBackgroundColour">#272727</Color>
+    <Color x:Key="NavbarTextColour">#CACACA</Color>
     <Color x:Key="LightNavbarActiveTextColour">#767676</Color>
-    <Color x:Key="DarkNavbarActiveTextColour">#DADADA</Color>
+    <Color x:Key="DarkNavbarActiveTextColour">#FAFAFA</Color>
 </ResourceDictionary>
