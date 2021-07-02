@@ -4,10 +4,11 @@ using atheneum_app.Views.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("fasolid.otf", Alias = "FAS")]
+[assembly: ExportFont("faregular.otf", Alias = "FAR")]
 [assembly: ExportFont("proxima.otf", Alias = "Proxima")]
 [assembly: ExportFont("fredericka.ttf", Alias = "Fredericka")]
-[assembly: ExportFont("faregular.otf", Alias = "FAR")]
-[assembly: ExportFont("fasolid.otf", Alias = "FAS")]
+[assembly: ExportFont("proximabold.otf", Alias = "ProximaBold")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace atheneum_app
 {

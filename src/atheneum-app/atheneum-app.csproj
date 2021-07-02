@@ -21,17 +21,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Resources\Fonts\NY.otf" />
-      <None Remove="Resources\Fonts\SFPro.ttf" />
-      <None Remove="Resources\Fonts\OpenSansBold.ttf" />
-      <None Remove="Resources\Fonts\OpenSansRegular.ttf" />
-      <None Remove="Resources\Fonts\SFProBold.otf" />
-      <EmbeddedResource Include="Resources\Fonts\SFProBold.otf" />
-      <None Remove="Resources\Fonts\SFProRegular.otf" />
-      <None Remove="Resources\Fonts\SFProThin.otf" />
       <None Remove="Resources\Fonts\proxima.otf" />
       <EmbeddedResource Include="Resources\Fonts\proxima.otf" />
-      <None Remove="Resources\Fonts\playfair.ttf" />
+      <None Remove="Resources\Fonts\proximabold.otf" />
+      <EmbeddedResource Include="Resources\Fonts\proximabold.otf" />
       <None Remove="Resources\Fonts\fredericka.ttf" />
       <EmbeddedResource Include="Resources\Fonts\fredericka.ttf" />
       <None Remove="Resources\Fonts\fabrand.otf" />
@@ -46,6 +39,18 @@
       <EmbeddedResource Include="Resources\Icons\ic_home_light.png" />
       <None Remove="Resources\Icons\ic_home_light_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_home_light_active.png" />
+      <None Remove="Resources\Icons\ic_home_dark.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_home_dark.png" />
+      <None Remove="Resources\Icons\ic_home_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_home_dark_active.png" />
+      <None Remove="Resources\Icons\ic_profile_dark.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_dark.png" />
+      <None Remove="Resources\Icons\ic_profile_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_dark_active.png" />
+      <None Remove="Resources\Icons\ic_profile_light.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_light.png" />
+      <None Remove="Resources\Icons\ic_profile_light_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_light_active.png" />
     </ItemGroup>
 
     <ItemGroup>
