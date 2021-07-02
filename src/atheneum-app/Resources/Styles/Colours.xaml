@@ -21,8 +21,7 @@
     <!-- Navbar Styles -->
     <Color x:Key="LightNavbarBackgroundColour">#F9F9F9</Color>
     <Color x:Key="DarkNavbarBackgroundColour">#171717</Color>
-    <Color x:Key="LightNavbarTextColour">#C4C4C4</Color>
-    <Color x:Key="DarkNavbarTextColour">#3E3E3E</Color>
+    <Color x:Key="NavbarTextColour">#C4C4C4</Color>
     <Color x:Key="LightNavbarActiveTextColour">#767676</Color>
-    <Color x:Key="DarkNavbarActiveTextColour">#030303</Color>
+    <Color x:Key="DarkNavbarActiveTextColour">#DADADA</Color>
 </ResourceDictionary>
