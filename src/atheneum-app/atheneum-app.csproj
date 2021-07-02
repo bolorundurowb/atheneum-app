@@ -34,46 +34,49 @@
       <None Remove="Resources\Fonts\fasolid.otf" />
       <EmbeddedResource Include="Resources\Fonts\fasolid.otf" />
       <None Remove="Resources\Icons\ic_plus.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Icons\ic_add.png" />
       <EmbeddedResource Include="Resources\Icons\ic_add.png" />
-      <None Remove="Resources\Icons\ic_home_light.png" />
+      
+      <None Remove="Resources\Icons\ic_home.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_home.png" />
       <None Remove="Resources\Icons\ic_home_light_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_home_light_active.png" />
-      <None Remove="Resources\Icons\ic_home_dark.png" />
       <None Remove="Resources\Icons\ic_home_dark_active.png" />
-      <None Remove="Resources\Icons\ic_profile_dark.png" />
-      <None Remove="Resources\Icons\ic_profile_dark_active.png" />
-      <None Remove="Resources\Icons\ic_profile_light.png" />
-      <None Remove="Resources\Icons\ic_profile_light_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_profile_light_active.png" />
-      <None Remove="Resources\Icons\ic_wishlist_dark.png" />
-      <None Remove="Resources\Icons\ic_wishlist_light_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_wishlist_light_active.png" />
-      <None Remove="Resources\Icons\ic_wishlist_light.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_wishlist.png" />
-      <None Remove="Resources\Icons\ic_books_dark.png" />
-      <None Remove="Resources\Icons\ic_books_light.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_home_dark_active.png" />
+      
+      <None Remove="Resources\Icons\ic_books.png" />
       <EmbeddedResource Include="Resources\Icons\ic_books.png" />
       <None Remove="Resources\Icons\ic_books_light_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_books_light_active.png" />
       <None Remove="Resources\Icons\ic_books_dark_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_books_dark_active.png" />
+      
+      <None Remove="Resources\Icons\ic_profile.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile.png" />
+      <None Remove="Resources\Icons\ic_profile_light_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_light_active.png" />
+      <None Remove="Resources\Icons\ic_profile_dark_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_profile_dark_active.png" />
+      
+      <None Remove="Resources\Icons\ic_wishlist.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_wishlist.png" />
+      <None Remove="Resources\Icons\ic_wishlist_light_active.png" />
+      <EmbeddedResource Include="Resources\Icons\ic_wishlist_light_active.png" />
       <None Remove="Resources\Icons\ic_wishlist_dark_active.png" />
       <EmbeddedResource Include="Resources\Icons\ic_wishlist_dark_active.png" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Update="Views\Root.xaml.cs">
-        <DependentUpon>MainPage.xaml</DependentUpon>
+        <DependentUpon>Root.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\atheneum-app.Library\atheneum-app.Library.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Include="Resources\Icons\ic_home_dark_active.png" />
-      <EmbeddedResource Include="Resources\Icons\ic_profile_dark_active.png" />
     </ItemGroup>
 </Project>
