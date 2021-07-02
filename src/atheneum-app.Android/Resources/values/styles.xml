@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <style name="MainTheme" parent="MainTheme.Base" />
+  <style name="MainTheme" parent="MainTheme.Base">
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:windowLightNavigationBar">true</item>
+    <item name="android:windowBackground">#FEFEFE</item>
+    <item name="android:colorPrimaryDark">#FEFEFE</item>
+  </style>
   
   <!-- Base theme applied no matter what API -->
   <style name="MainTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
@@ -28,11 +33,8 @@
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#2D7472</item>
   </style>
-
-  <style name="SplashTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowActionBar">false</item>
-    <item name="android:windowFullscreen">true</item>
-    <item name="android:windowContentOverlay">@null</item>
+  
+  <style name="SplashTheme" parent="MainTheme">
+    <item name="android:windowBackground">@drawable/splash_screen_light</item>
   </style>
 </resources>

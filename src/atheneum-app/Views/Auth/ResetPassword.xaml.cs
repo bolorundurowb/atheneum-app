@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
+using atheneum_app.Library;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
@@ -37,37 +38,37 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(resetCode))
             {
-                Toasts.DisplayError("A reset code is required.");
+                ToastService.DisplayError("A reset code is required.");
                 return;
             }
 
             if (resetCode.Length != Constants.ResetCodeLength)
             {
-                Toasts.DisplayError($"Reset code must be {Constants.ResetCodeLength} digits long.");
+                ToastService.DisplayError($"Reset code must be {Constants.ResetCodeLength} digits long.");
                 return;
             }
 
             if (!resetCode.All(char.IsDigit))
             {
-                Toasts.DisplayError("Reset code can only contain digits.");
+                ToastService.DisplayError("Reset code can only contain digits.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                Toasts.DisplayError("A password is required.");
+                ToastService.DisplayError("A password is required.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(confirmPassword))
             {
-                Toasts.DisplayError("A password confirmation is required.");
+                ToastService.DisplayError("A password confirmation is required.");
                 return;
             }
 
             if (password != confirmPassword)
             {
-                Toasts.DisplayError("The password and confirmation don't match.");
+                ToastService.DisplayError("The password and confirmation don't match.");
                 return;
             }
 
@@ -77,7 +78,7 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.ResetPassword(_emailAddress, resetCode, password);
-                Toasts.DisplaySuccess(response.Message);
+                ToastService.DisplaySuccess(response.Message);
 
                 // go back to login
                 Navigation.InsertPageBefore(new Login(), this);
@@ -87,7 +88,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 
-                Toasts.DisplayError(error?.Message?.Length > 0
+                ToastService.DisplayError(error?.Message?.Length > 0
                     ? error.Message[0]
                     : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }
@@ -95,7 +96,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
 
-                Toasts.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
+                ToastService.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
                     : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }

@@ -29,25 +29,25 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(email))
             {
-                Toasts.DisplayError("An email address is required.");
+                ToastService.DisplayError("An email address is required.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                Toasts.DisplayError("A password is required.");
+                ToastService.DisplayError("A password is required.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(confirmPassword))
             {
-                Toasts.DisplayError("A password confirmation is required.");
+                ToastService.DisplayError("A password confirmation is required.");
                 return;
             }
 
             if (password != confirmPassword)
             {
-                Toasts.DisplayError("The password and confirmation don't match.");
+                ToastService.DisplayError("The password and confirmation don't match.");
                 return;
             }
 
@@ -61,17 +61,17 @@ namespace atheneum_app.Views.Auth
                 var tokenClient = new TokenService();
                 tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
 
-                Toasts.DisplaySuccess("Account created successfully.");
+                ToastService.DisplaySuccess("Account created successfully.");
 
                 // send to home page
-                Application.Current.MainPage = new NavigationPage(new MainPage());
+                Application.Current.MainPage = new NavigationPage(new Root());
                 await Navigation.PopAsync();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 
-                Toasts.DisplayError(error?.Message?.Length > 0
+                ToastService.DisplayError(error?.Message?.Length > 0
                     ? error.Message[0]
                     : "Sorry, an error occurred when registering you. Try again later.");
             }
@@ -79,7 +79,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
 
-                Toasts.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
+                ToastService.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
                     : "Sorry, an error occurred when registering you. Try again later.");
             }
