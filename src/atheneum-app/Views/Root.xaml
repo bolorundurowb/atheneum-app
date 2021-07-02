@@ -10,6 +10,21 @@
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <ResourceDictionary>
+            <Style x:Key="NavbarBackgroundStyle" TargetType="BoxView">
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Margin" Value="10, 0, 10, 5" />
+                <Setter Property="Color"
+                        Value="{AppThemeBinding Dark={StaticResource DarkNavbarBackgroundColour}, Light={StaticResource LightNavbarBackgroundColour}}" />
+            </Style>
+
+            <Style x:Key="NavbarStyle" TargetType="xct:TabView">
+                <Setter Property="TabStripHeight" Value="80" />
+                <Setter Property="IsSwipeEnabled" Value="False" />
+                <Setter Property="TabStripPlacement" Value="Bottom" />
+                <Setter Property="TabStripBackgroundColor" Value="Transparent" />
+                <Setter Property="TabContentBackgroundColor" Value="Transparent" />
+            </Style>
+
             <ControlTemplate x:Key="TabItemTemplate">
                 <Grid RowDefinitions="2*, *" RowSpacing="0" Padding="8">
                     <Label
@@ -18,63 +33,63 @@
                         FontFamily="FAS"
                         Text="&#xf015;"
                         FontSize="24"
-                        TextColor="{StaticResource LightColour}" />
+                        TextColor="{AppThemeBinding Dark={StaticResource DarkNavbarTextColour}, Light={StaticResource LightNavbarTextColour}}" />
                     <Label
                         Grid.Row="1"
                         HorizontalOptions="Center"
                         VerticalOptions="End"
                         Text="{TemplateBinding Text}"
-                        TextTransform="Uppercase"
                         FontSize="Small"
                         FontFamily="Proxima"
                         Margin="0, 5, 0, 0"
-                        TextColor="{StaticResource LightColour}" />
+                        TextColor="{AppThemeBinding Dark={StaticResource DarkNavbarTextColour}, Light={StaticResource LightNavbarTextColour}}" />
                 </Grid>
             </ControlTemplate>
 
             <ControlTemplate x:Key="FabTabItemTemplate">
                 <Grid>
                     <Frame
-                        HorizontalOptions="Fill"
-                        VerticalOptions="Fill"
                         CornerRadius="13"
-                        Padding="13"
-                        Margin="6"
-                        HeightRequest="50"
-                        WidthRequest="50"
+                        Padding="0"
+                        Margin="10"
+                        HeightRequest="40"
+                        WidthRequest="40"
                         BackgroundColor="{StaticResource TertiaryAccentColour}">
                         <Label
                             HorizontalOptions="Center"
                             InputTransparent="True"
                             VerticalOptions="Center" />
                     </Frame>
-                    <!-- <ImageButton -->
-                    <!--     Margin="6" -->
-                    <!--     Padding="13" -->
-                    <!--     BackgroundColor="{StaticResource TertiaryAccentColour}" -->
-                    <!--     CornerRadius="13" -->
-                    <!--     HeightRequest="50" -->
-                    <!--     HorizontalOptions="Center" -->
-                    <!--     InputTransparent="True" -->
-                    <!--     Source="{TemplateBinding CurrentIcon}" -->
-                    <!--     VerticalOptions="Center" -->
-                    <!--     WidthRequest="50" /> -->
                 </Grid>
             </ControlTemplate>
+
+            <DataTemplate x:Key="NavbarItemTemplate">
+                <StackLayout
+                    Orientation="Vertical">
+                    <Label
+                        TextColor="Black"
+                        Text="Hello" />
+                    <Label
+                        Text="World" />
+                </StackLayout>
+            </DataTemplate>
         </ResourceDictionary>
     </ContentPage.Resources>
 
     <ContentPage.Content>
         <Grid>
             <xct:TabView
-                TabStripHeight="60"
-                TabStripPlacement="Bottom"
-                TabStripBackgroundColor="{StaticResource DarkColour}"
-                TabIndicatorColor="{StaticResource PrimaryAccentColour}"
-                TabContentBackgroundColor="Transparent">
+                Style="{StaticResource NavbarStyle}">
+                <xct:TabView.TabStripBackgroundView>
+                    <BoxView
+                        Style="{StaticResource NavbarBackgroundStyle}" />
+                </xct:TabView.TabStripBackgroundView>
+
                 <xct:TabViewItem
-                    Text="Hello"
-                    ControlTemplate="{StaticResource TabItemTemplate}">
+                    Text="Home"
+                    TextColor="{AppThemeBinding Dark={StaticResource DarkNavbarTextColour}, Light={StaticResource LightNavbarTextColour}}"
+                    FontFamily="Proxima"
+                    TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <Grid>
                         <Label
                             HorizontalOptions="Center"
@@ -84,12 +99,13 @@
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
+                    Text="Hello"
                     ControlTemplate="{StaticResource TabItemTemplate}">
                     <Grid>
                         <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Text="TabContent1" />
+                            Text="TabContent2" />
                     </Grid>
                 </xct:TabViewItem>
 
@@ -102,7 +118,7 @@
                         <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Text="TabContent1" />
+                            Text="TabContent4" />
                     </Grid>
                 </xct:TabViewItem>
 
@@ -112,7 +128,7 @@
                         <Label
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            Text="TabContent1" />
+                            Text="TabContent5" />
                     </Grid>
                 </xct:TabViewItem>
             </xct:TabView>

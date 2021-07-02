@@ -17,4 +17,12 @@
     <Color x:Key="DarkInputBackgroundColour">#2E2E30</Color>
     <Color x:Key="LightBorderColour">#F4F4F4</Color>
     <Color x:Key="DarkBorderColour">#040404</Color>
+    
+    <!-- Navbar Styles -->
+    <Color x:Key="LightNavbarBackgroundColour">#F9F9F9</Color>
+    <Color x:Key="DarkNavbarBackgroundColour">#171717</Color>
+    <Color x:Key="LightNavbarTextColour">#C4C4C4</Color>
+    <Color x:Key="DarkNavbarTextColour">#3E3E3E</Color>
+    <Color x:Key="LightNavbarActiveTextColour">#767676</Color>
+    <Color x:Key="DarkNavbarActiveTextColour">#030303</Color>
 </ResourceDictionary>
