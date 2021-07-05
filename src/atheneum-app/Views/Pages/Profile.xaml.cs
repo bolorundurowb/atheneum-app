@@ -24,7 +24,8 @@ namespace atheneum_app.Views.Pages
             _userService = new UserService();
             
             // try to load user data on creation (no way to destroy it though
-            LoadData().ConfigureAwait(false).GetAwaiter().GetResult();
+            // LoadData().ConfigureAwait(false).GetAwaiter().GetResult();
+            LoadData();
         }
 
         private async Task LoadData()
