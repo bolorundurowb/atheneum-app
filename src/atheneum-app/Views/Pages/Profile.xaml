@@ -5,6 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.Views.Pages.Profile"
     Style="{StaticResource ViewPageStyle}">
+    <ContentView.Resources>
+        <Style x:Key="FieldLblStyle" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="FontFamily" Value="ProximaBold" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="0, 10, 0, 5" />
+        </Style>
+    </ContentView.Resources>
     <ContentView.Content>
         <StackLayout
             Orientation="Vertical"
@@ -16,7 +26,18 @@
 
             <ActivityIndicator
                 x:Name="prgLoading"
+                IsVisible="False"
                 Style="{StaticResource ProgressStyle}" />
+            
+            <StackLayout
+                x:Name="stkContent"
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    Text="First Name"
+                    Style="{StaticResource FieldLblStyle}"/>
+            </StackLayout>
         </StackLayout>
     </ContentView.Content>
 </ContentView>

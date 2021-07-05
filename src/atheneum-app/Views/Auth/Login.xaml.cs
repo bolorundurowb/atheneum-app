@@ -22,6 +22,7 @@ namespace atheneum_app.Views.Auth
 
         protected async void AttemptLogin(object sender, EventArgs e)
         {
+            const string genericErrorMessage = "Sorry, an error occurred when logging you in. Try again later.";
             var email = txtEmail.Text;
             var password = txtPassword.Text;
 
@@ -47,7 +48,7 @@ namespace atheneum_app.Views.Auth
                 var tokenClient = new TokenService();
                 tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
 
-                ToastService.Success("Login successfully.");
+                ToastService.Success("Logged in successfully.");
 
                 // send to home page
                 Navigation.InsertPageBefore(new Root(), this);
@@ -57,17 +58,13 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 
-                ToastService.Error(error?.Message?.Length > 0
-                    ? error.Message[0]
-                    : "Sorry, an error occurred when logging you in. Try again later.");
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
 
-                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message)
-                    ? error.Message
-                    : "Sorry, an error occurred when logging you in. Try again later.");
+                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : genericErrorMessage);
             }
             finally
             {

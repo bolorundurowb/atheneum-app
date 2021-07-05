@@ -11,7 +11,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public UserService()
         {
-            _userService = RestService.For<IUserService>(Constants.V1BaseUrl);
+            var tokenClient = new TokenService();
+            _userService = RestService.For<IUserService>(Constants.V1BaseUrl, new RefitSettings()
+            {
+                AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
+            });
         }
 
         public Task<UserViewModel> GetProfile()
