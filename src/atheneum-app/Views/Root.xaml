@@ -4,6 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:pages="clr-namespace:atheneum_app.Views.Pages;assembly=atheneum-app"
     xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
     x:Class="atheneum_app.Views.Root"
     Padding="0"
@@ -134,12 +135,9 @@
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_profile_dark_active}, Light={extensions:IconSourceExtensions ic_profile_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
-                    <Grid>
-                        <Label
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Text="TabContent5" />
-                    </Grid>
+                    <xct:TabViewItem.Content>
+                        <pages:Profile></pages:Profile>
+                    </xct:TabViewItem.Content>
                 </xct:TabViewItem>
             </xct:TabView>
         </Grid>
