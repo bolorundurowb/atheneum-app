@@ -16,5 +16,10 @@ namespace atheneum_app.Views.Pages
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            // base
+        }
     }
 }

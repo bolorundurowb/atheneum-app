@@ -10,10 +10,13 @@
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
-            <Label Text="Hello, world!"
-                   TextColor="White"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+            <Label
+                Text="Profile"
+                Style="{StaticResource PageHdrStyleStyle}" />
+
+            <ActivityIndicator
+                x:Name="prgLoading"
+                Style="{StaticResource ProgressStyle}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>
