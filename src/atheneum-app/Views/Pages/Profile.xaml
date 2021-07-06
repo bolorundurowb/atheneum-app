@@ -6,22 +6,28 @@
     x:Class="atheneum_app.Views.Pages.Profile"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
+        <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button"/>
+        
+        <Style x:Key="UpdatePrgStyle" BasedOn="{StaticResource ProgressStyle}" TargetType="ActivityIndicator">
+            <Setter Property="VerticalOptions" Value="Start" />
+        </Style>
+
         <Style x:Key="FieldLblStyle" TargetType="Label">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontSize" Value="14" />
             <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
-        
+
         <Style x:Key="DataLblStyle" TargetType="Label">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="Proxima" />
-            <Setter Property="FontSize" Value="24" />
-            <Setter Property="Margin" Value="5, 10, 0, 0" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="5, 10, 0, 10" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
@@ -48,7 +54,7 @@
                 <Label
                     x:Name="lblId"
                     Style="{StaticResource DataLblStyle}" />
-                
+
                 <Label
                     Text="First Name"
                     Style="{StaticResource FieldLblStyle}" />
@@ -61,7 +67,7 @@
                         IsTextPredictionEnabled="True"
                         Style="{StaticResource EntryStyle}" />
                 </Frame>
-                
+
                 <Label
                     Text="Last Name"
                     Style="{StaticResource FieldLblStyle}" />
@@ -74,7 +80,7 @@
                         IsTextPredictionEnabled="True"
                         Style="{StaticResource EntryStyle}" />
                 </Frame>
-                
+
                 <Label
                     Text="Email Address"
                     Style="{StaticResource FieldLblStyle}" />
@@ -91,13 +97,13 @@
                 <Button
                     x:Name="btnUpdateProfile"
                     Text="Update Profile"
-                    Style="{StaticResource BaseBtnStyle}"
-                    Clicked="UpdateProfile"/>
+                    Style="{StaticResource UpdateBtnStyle}"
+                    Clicked="UpdateProfile" />
 
                 <ActivityIndicator
                     x:Name="prgUpdateProfile"
                     IsVisible="False"
-                    Style="{StaticResource ProgressStyle}" />
+                    Style="{StaticResource UpdatePrgStyle}" />
             </StackLayout>
         </StackLayout>
     </ContentView.Content>
