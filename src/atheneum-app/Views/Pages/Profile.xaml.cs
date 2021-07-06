@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
@@ -22,20 +19,18 @@ namespace atheneum_app.Views.Pages
         {
             InitializeComponent();
             _userService = new UserService();
-            
-            // try to load user data on creation (no way to destroy it though
-            // LoadData().ConfigureAwait(false).GetAwaiter().GetResult();
-            LoadData();
         }
 
-        private async Task LoadData()
+        public async Task LoadData()
         {
             const string genericErrorMessage = "Sorry, an error occurred when retrieving your information. try again later.";
+            stkContent.IsVisible = false;
+            prgLoading.IsVisible = true;
             
             try
             {
                 var user = await _userService.GetProfile();
-                
+                DisplayUser(user); 
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
@@ -53,6 +48,20 @@ namespace atheneum_app.Views.Pages
                 stkContent.IsVisible = true;
                 prgLoading.IsVisible = false;
             }
+        }
+
+        protected async void UpdateProfile(object sender, EventArgs e)
+        {
+            prgLoading.IsVisible = true;
+            
+        }
+
+        private void DisplayUser(UserViewModel user)
+        {
+            lblId.Text = user.Id;
+            txtFirstName.Text = user.FirstName;
+            txtLastName.Text = user.LastName;
+            txtEmail.Text = user.EmailAddress;
         }
     }
 }

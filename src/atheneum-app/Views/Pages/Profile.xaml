@@ -3,7 +3,6 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:atheneum_app.Controls;assembly=atheneum-app"
     x:Class="atheneum_app.Views.Pages.Profile"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
@@ -11,12 +10,18 @@
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Start" />
-            <Setter Property="FontFamily" Value="ProximaBold" />
+            <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="FontSize" Value="16" />
-            <Setter Property="Margin" Value="0, 10, 0, 5" />
+            <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
-        <Style x:Key="FieldInputStyle" TargetType="controls:Input">
-            <Setter Property="Margin" Value="0, 0, 0, 10" />
+        
+        <Style x:Key="DataLblStyle" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
@@ -30,7 +35,6 @@
 
             <ActivityIndicator
                 x:Name="prgLoading"
-                IsVisible="False"
                 Style="{StaticResource ProgressStyle}" />
 
             <StackLayout
@@ -39,44 +43,56 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
                 <Label
-                    Text="First Name"
+                    Text="Id"
                     Style="{StaticResource FieldLblStyle}" />
-
                 <Label
                     x:Name="lblId"
-                    Style="{StaticResource FieldInputStyle}" />
+                    Style="{StaticResource DataLblStyle}" />
                 
                 <Label
                     Text="First Name"
                     Style="{StaticResource FieldLblStyle}" />
-
-                <controls:Input
-                    Keyboard="Text"
-                    Placeholder="segun"
-                    Style="{StaticResource FieldInputStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtFirstName"
+                        Keyboard="Text"
+                        Placeholder="first name"
+                        IsTextPredictionEnabled="True"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
                 
                 <Label
                     Text="Last Name"
                     Style="{StaticResource FieldLblStyle}" />
-
-                <controls:Input
-                    Keyboard="Text"
-                    Placeholder="smart"
-                    Style="{StaticResource FieldInputStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtLastName"
+                        Keyboard="Text"
+                        Placeholder="last name"
+                        IsTextPredictionEnabled="True"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
                 
                 <Label
-                    Text="Email"
+                    Text="Email Address"
                     Style="{StaticResource FieldLblStyle}" />
-
-                <controls:Input
-                    Keyboard="Email"
-                    Placeholder="segun@smart.org"
-                    Style="{StaticResource FieldInputStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtEmail"
+                        Keyboard="Email"
+                        IsReadOnly="True"
+                        Placeholder="email address"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
                 <Button
                     x:Name="btnUpdateProfile"
                     Text="Update Profile"
-                    Style="{StaticResource BaseBtnStyle}" />
+                    Style="{StaticResource BaseBtnStyle}"
+                    Clicked="UpdateProfile"/>
 
                 <ActivityIndicator
                     x:Name="prgUpdateProfile"
