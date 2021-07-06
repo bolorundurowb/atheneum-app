@@ -14,7 +14,7 @@ namespace atheneum_app.Views.Pages
     public partial class Profile : ContentView
     {
         private readonly UserService _userService;
-        
+
         public Profile()
         {
             InitializeComponent();
@@ -23,14 +23,15 @@ namespace atheneum_app.Views.Pages
 
         public async Task LoadData()
         {
-            const string genericErrorMessage = "Sorry, an error occurred when retrieving your information. Try again later.";
+            const string genericErrorMessage =
+                "Sorry, an error occurred when retrieving your information. Try again later.";
             stkContent.IsVisible = false;
             prgLoading.IsVisible = true;
-            
+
             try
             {
                 var user = await _userService.GetProfile();
-                DisplayUser(user); 
+                DisplayUser(user);
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
@@ -51,13 +52,16 @@ namespace atheneum_app.Views.Pages
 
         protected async void UpdateProfile(object sender, EventArgs e)
         {
-            const string genericErrorMessage = "Sorry, an error occurred when updating your information. Try again later.";
+            const string genericErrorMessage =
+                "Sorry, an error occurred when updating your information. Try again later.";
             prgUpdateProfile.IsVisible = true;
             btnUpdateProfile.IsVisible = false;
 
             try
             {
-
+                var firstName = txtFirstName.Text;
+                var lastName = txtLastName.Text;
+                await _userService.UpdateProfile(firstName, lastName);
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
