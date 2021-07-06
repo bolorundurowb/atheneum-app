@@ -66,6 +66,9 @@ namespace atheneum_app.Views.Pages
                 // update the details locally
                 var tokenService = new TokenService();
                 tokenService.SetUserDetails(user.FirstName, user.LastName);
+                
+                // notify user
+                ToastService.Success("Profile updated successfully.");
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
