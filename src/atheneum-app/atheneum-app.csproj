@@ -34,6 +34,7 @@
       <None Remove="Resources\Fonts\fasolid.otf" />
       <EmbeddedResource Include="Resources\Fonts\fasolid.otf" />
       <None Remove="Resources\Icons\ic_plus.png" />
+      <None Remove="Resources\Icons\ic_barcode_scan.png" />
     </ItemGroup>
 
     <ItemGroup>

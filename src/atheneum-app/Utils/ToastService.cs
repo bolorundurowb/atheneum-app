@@ -5,17 +5,17 @@ namespace atheneum_app.Utils
 {
     internal static class ToastService
     {
-        public static void DisplayError(string message)
+        public static void Error(string message)
         {
             Display(message, "#AA0B0F");
         }
         
-        public static void DisplaySuccess(string message)
+        public static void Success(string message)
         {
             Display(message, "#4D9947");
         }
         
-        public static void DisplayInfo(string message)
+        public static void Info(string message)
         {
             Display(message, "#49ABE8");
         }

@@ -38,37 +38,37 @@ namespace atheneum_app.Views.Auth
 
             if (string.IsNullOrWhiteSpace(resetCode))
             {
-                ToastService.DisplayError("A reset code is required.");
+                ToastService.Error("A reset code is required.");
                 return;
             }
 
             if (resetCode.Length != Constants.ResetCodeLength)
             {
-                ToastService.DisplayError($"Reset code must be {Constants.ResetCodeLength} digits long.");
+                ToastService.Error($"Reset code must be {Constants.ResetCodeLength} digits long.");
                 return;
             }
 
             if (!resetCode.All(char.IsDigit))
             {
-                ToastService.DisplayError("Reset code can only contain digits.");
+                ToastService.Error("Reset code can only contain digits.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(password))
             {
-                ToastService.DisplayError("A password is required.");
+                ToastService.Error("A password is required.");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(confirmPassword))
             {
-                ToastService.DisplayError("A password confirmation is required.");
+                ToastService.Error("A password confirmation is required.");
                 return;
             }
 
             if (password != confirmPassword)
             {
-                ToastService.DisplayError("The password and confirmation don't match.");
+                ToastService.Error("The password and confirmation don't match.");
                 return;
             }
 
@@ -78,7 +78,7 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.ResetPassword(_emailAddress, resetCode, password);
-                ToastService.DisplaySuccess(response.Message);
+                ToastService.Success(response.Message);
 
                 // go back to login
                 Navigation.InsertPageBefore(new Login(), this);
@@ -88,7 +88,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 
-                ToastService.DisplayError(error?.Message?.Length > 0
+                ToastService.Error(error?.Message?.Length > 0
                     ? error.Message[0]
                     : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }
@@ -96,7 +96,7 @@ namespace atheneum_app.Views.Auth
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
 
-                ToastService.DisplayError(!string.IsNullOrWhiteSpace(error?.Message)
+                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message)
                     ? error.Message
                     : "Sorry, an error occurred when requesting a reset code. Try again later.");
             }

@@ -8,5 +8,11 @@ namespace atheneum_app.Views
         {
             InitializeComponent();
         }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+           await  pageProfile.LoadData();
+        }
     }
 }

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="atheneum_app.Views.Pages.Profile"
+    Style="{StaticResource ViewPageStyle}">
+    <ContentView.Resources>
+        <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button"/>
+        
+        <Style x:Key="UpdatePrgStyle" BasedOn="{StaticResource ProgressStyle}" TargetType="ActivityIndicator">
+            <Setter Property="VerticalOptions" Value="Start" />
+        </Style>
+
+        <Style x:Key="FieldLblStyle" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="FontFamily" Value="ProximaBold" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin" Value="5, 10, 0, 5" />
+        </Style>
+
+        <Style x:Key="DataLblStyle" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
+            <Setter Property="HorizontalOptions" Value="Start" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="5, 10, 0, 10" />
+        </Style>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Label
+                Text="Profile"
+                Style="{StaticResource PageHdrStyleStyle}" />
+
+            <ActivityIndicator
+                x:Name="prgLoading"
+                Style="{StaticResource ProgressStyle}" />
+
+            <StackLayout
+                x:Name="stkContent"
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    Text="Id"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Label
+                    x:Name="lblId"
+                    Style="{StaticResource DataLblStyle}" />
+
+                <Label
+                    Text="First Name"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtFirstName"
+                        Keyboard="Text"
+                        Placeholder="first name"
+                        IsTextPredictionEnabled="True"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
+
+                <Label
+                    Text="Last Name"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtLastName"
+                        Keyboard="Text"
+                        Placeholder="last name"
+                        IsTextPredictionEnabled="True"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
+
+                <Label
+                    Text="Email Address"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtEmail"
+                        Keyboard="Email"
+                        IsReadOnly="True"
+                        Placeholder="email address"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
+
+                <Button
+                    x:Name="btnUpdateProfile"
+                    Text="Update Profile"
+                    Style="{StaticResource UpdateBtnStyle}"
+                    Clicked="UpdateProfile" />
+
+                <ActivityIndicator
+                    x:Name="prgUpdateProfile"
+                    IsVisible="False"
+                    Style="{StaticResource UpdatePrgStyle}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
