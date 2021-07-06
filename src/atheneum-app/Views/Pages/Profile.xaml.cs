@@ -23,7 +23,7 @@ namespace atheneum_app.Views.Pages
 
         public async Task LoadData()
         {
-            const string genericErrorMessage = "Sorry, an error occurred when retrieving your information. try again later.";
+            const string genericErrorMessage = "Sorry, an error occurred when retrieving your information. Try again later.";
             stkContent.IsVisible = false;
             prgLoading.IsVisible = true;
             
@@ -35,7 +35,6 @@ namespace atheneum_app.Views.Pages
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
             }
             catch (ApiException ex)
@@ -52,8 +51,29 @@ namespace atheneum_app.Views.Pages
 
         protected async void UpdateProfile(object sender, EventArgs e)
         {
-            prgLoading.IsVisible = true;
-            
+            const string genericErrorMessage = "Sorry, an error occurred when updating your information. Try again later.";
+            prgUpdateProfile.IsVisible = true;
+            btnUpdateProfile.IsVisible = false;
+
+            try
+            {
+
+            }
+            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            {
+                var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
+            }
+            catch (ApiException ex)
+            {
+                var error = await ex.GetContentAsAsync<ErrorViewModel>();
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message : genericErrorMessage);
+            }
+            finally
+            {
+                btnUpdateProfile.IsVisible = true;
+                prgUpdateProfile.IsVisible = false;
+            }
         }
 
         private void DisplayUser(UserViewModel user)
