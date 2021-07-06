@@ -61,7 +61,11 @@ namespace atheneum_app.Views.Pages
             {
                 var firstName = txtFirstName.Text;
                 var lastName = txtLastName.Text;
-                await _userService.UpdateProfile(firstName, lastName);
+                var user = await _userService.UpdateProfile(firstName, lastName);
+                
+                // update the details locally
+                var tokenService = new TokenService();
+                tokenService.SetUserDetails(user.FirstName, user.LastName);
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

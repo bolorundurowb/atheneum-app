@@ -55,13 +55,19 @@ namespace atheneum_app.Library.DataAccess.Implementations
         public void SetAuth(string firstName, string lastName, string emailAddress, string token)
         {
             var expiresAt = DateTime.UtcNow.AddDays(7);
-
-            Preferences.Set(AuthFirstNameKey, firstName);
-            Preferences.Set(AuthLastNameKey, lastName);
+            
             Preferences.Set(AuthEmailKey, emailAddress);
             Preferences.Set(AuthTokenKey, token);
             Preferences.Set(AuthExpiryKey, expiresAt);
             Preferences.Set(AuthLoggedInAtKey, DateTime.UtcNow);
+
+            SetUserDetails(firstName, lastName);
+        }
+
+        public void SetUserDetails(string firstName, string lastName)
+        {
+            Preferences.Set(AuthFirstNameKey, firstName);
+            Preferences.Set(AuthLastNameKey, lastName);
         }
     }
 }
