@@ -14,5 +14,9 @@ namespace atheneum_app.Library.DataAccess.Interfaces
         [Put("/users/current")]
         [Headers("Authorization: Bearer")]
         Task<UserViewModel> UpdateProfile([Body] UserProfileUpdateBindingModel payload);
+
+        [Put("/users/current/passwords")]
+        [Headers("Authorization: Bearer")]
+        Task<MessageViewModel> UpdatePassword([Body] PasswordUpdateBindingModel payload);
     }
 }

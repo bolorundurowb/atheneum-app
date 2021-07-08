@@ -31,8 +31,19 @@ namespace atheneum_app.Library.DataAccess.Implementations
                 FirstName = firstName,
                 LastName = lastName
             };
-            
+
             return _userService.UpdateProfile(bm);
+        }
+
+        public Task<MessageViewModel> UpdatePassword(string currentPassword, string newPassword)
+        {
+            var bm = new PasswordUpdateBindingModel
+            {
+                CurrentPassword = currentPassword,
+                NewPassword = newPassword
+            };
+
+            return _userService.UpdatePassword(bm);
         }
     }
 }

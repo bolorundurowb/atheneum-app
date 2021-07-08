@@ -6,9 +6,9 @@
     x:Class="atheneum_app.Views.Pages.Profile"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
-        <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button"/>
-        
-        <Style x:Key="UpdatePrgStyle" BasedOn="{StaticResource ProgressStyle}" TargetType="ActivityIndicator">
+        <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
+
+        <Style x:Key="ProfilePrgStyle" BasedOn="{StaticResource BasePrgStyle}" TargetType="ActivityIndicator">
             <Setter Property="VerticalOptions" Value="Start" />
         </Style>
 
@@ -18,7 +18,8 @@
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="FontSize" Value="14" />
-            <Setter Property="Margin" Value="5, 10, 0, 5" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+            <Setter Property="Margin" Value="5, 10, 0, 0" />
         </Style>
 
         <Style x:Key="DataLblStyle" TargetType="Label">
@@ -27,29 +28,28 @@
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="FontSize" Value="18" />
-            <Setter Property="Margin" Value="5, 10, 0, 10" />
+            <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
-        <StackLayout
+        <ScrollView
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
-            <Label
-                Text="Profile"
-                Style="{StaticResource PageHdrStyleStyle}" />
-
-            <ActivityIndicator
-                x:Name="prgLoading"
-                Style="{StaticResource ProgressStyle}" />
-
             <StackLayout
-                x:Name="stkContent"
                 Orientation="Vertical"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
                 <Label
-                    Text="Id"
+                    Text="Profile"
+                    Style="{StaticResource PageHdrStyleStyle}" />
+
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    Style="{StaticResource ProfilePrgStyle}" />
+
+                <Label
+                    Text="Account Id"
                     Style="{StaticResource FieldLblStyle}" />
                 <Label
                     x:Name="lblId"
@@ -103,8 +103,68 @@
                 <ActivityIndicator
                     x:Name="prgUpdateProfile"
                     IsVisible="False"
-                    Style="{StaticResource UpdatePrgStyle}" />
+                    Style="{StaticResource ProfilePrgStyle}" />
+
+                <Label
+                    Text="Passwords"
+                    Margin="0, 15, 0, 0"
+                    Style="{StaticResource PageHdrStyleStyle}" />
+
+                <Label
+                    Text="Current Password"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtCurrentPassword"
+                        IsPassword="True"
+                        Placeholder="current password"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
+
+                <Label
+                    Text="New Password"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtNewPassword"
+                        IsPassword="True"
+                        Placeholder="new password"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
+
+                <Label
+                    Text="Confirm New Password"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtConfirmNewPassword"
+                        IsPassword="True"
+                        Placeholder="confirm new password"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
+
+                <Button
+                    x:Name="btnUpdatePassword"
+                    Text="Update Password"
+                    Style="{StaticResource UpdateBtnStyle}"
+                    Clicked="UpdatePassword" />
+
+                <ActivityIndicator
+                    x:Name="prgUpdatePassword"
+                    IsVisible="False"
+                    Style="{StaticResource ProfilePrgStyle}" />
+
+                <BoxView
+                    Opacity="0"
+                    Color="Black"
+                    HeightRequest="80"
+                    InputTransparent="True"
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" />
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentView.Content>
 </ContentView>
