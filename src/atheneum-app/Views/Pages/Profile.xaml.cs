@@ -138,8 +138,8 @@ namespace atheneum_app.Views.Pages
             }
             finally
             {
-                prgUpdatePassword.IsVisible = true;
-                btnUpdatePassword.IsVisible = false;
+                btnUpdatePassword.IsVisible = true;
+                prgUpdatePassword.IsVisible = false;
             }
         }
 
