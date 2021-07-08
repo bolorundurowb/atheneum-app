@@ -156,6 +156,14 @@
                     x:Name="prgUpdatePassword"
                     IsVisible="False"
                     Style="{StaticResource ProfilePrgStyle}" />
+
+                <BoxView
+                    Opacity="0"
+                    Color="Black"
+                    HeightRequest="80"
+                    InputTransparent="True"
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" />
             </StackLayout>
         </ScrollView>
     </ContentView.Content>
