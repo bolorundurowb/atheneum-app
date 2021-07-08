@@ -18,7 +18,7 @@
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="FontSize" Value="14" />
-            <Setter Property="Margin" Value="5, 10, 0, 5" />
+            <Setter Property="Margin" Value="5, 10, 0, 0" />
         </Style>
 
         <Style x:Key="DataLblStyle" TargetType="Label">
@@ -27,7 +27,7 @@
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="FontSize" Value="18" />
-            <Setter Property="Margin" Value="5, 10, 0, 10" />
+            <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
@@ -44,7 +44,7 @@
                 Style="{StaticResource ProfilePrgStyle}" />
 
             <Label
-                Text="Id"
+                Text="Account Id"
                 Style="{StaticResource FieldLblStyle}" />
             <Label
                 x:Name="lblId"
@@ -97,6 +97,58 @@
 
             <ActivityIndicator
                 x:Name="prgUpdateProfile"
+                IsVisible="False"
+                Style="{StaticResource ProfilePrgStyle}" />
+            
+            <Label
+                Text="Passwords"
+                Margin="0, 15, 0, 0"
+                Style="{StaticResource PageHdrStyleStyle}" />
+
+            <Label
+                Text="Current Password"
+                Style="{StaticResource FieldLblStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtCurrentPassword"
+                    IsPassword="True"
+                    Placeholder="current password"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+
+            <Label
+                Text="New Password"
+                Style="{StaticResource FieldLblStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtNewPassword"
+                    IsPassword="True"
+                    Placeholder="new password"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+
+            <Label
+                Text="Confirm New Password"
+                Style="{StaticResource FieldLblStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtConfirmNewPassword"
+                    IsPassword="True"
+                    Placeholder="confirm new password"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+
+            <Button
+                x:Name="btnUpdatePassword"
+                Text="Update Profile"
+                Style="{StaticResource UpdateBtnStyle}"
+                Clicked="UpdateProfile" />
+
+            <ActivityIndicator
+                x:Name="prgUpdatePassword"
                 IsVisible="False"
                 Style="{StaticResource ProfilePrgStyle}" />
         </StackLayout>
