@@ -25,7 +25,6 @@ namespace atheneum_app.Views.Pages
         {
             const string genericErrorMessage =
                 "Sorry, an error occurred when retrieving your information. Try again later.";
-            stkContent.IsVisible = false;
             prgLoading.IsVisible = true;
 
             try
@@ -45,7 +44,6 @@ namespace atheneum_app.Views.Pages
             }
             finally
             {
-                stkContent.IsVisible = true;
                 prgLoading.IsVisible = false;
             }
         }

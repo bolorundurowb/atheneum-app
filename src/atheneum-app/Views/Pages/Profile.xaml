@@ -6,9 +6,9 @@
     x:Class="atheneum_app.Views.Pages.Profile"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
-        <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button"/>
-        
-        <Style x:Key="UpdatePrgStyle" BasedOn="{StaticResource ProgressStyle}" TargetType="ActivityIndicator">
+        <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
+
+        <Style x:Key="ProfilePrgStyle" BasedOn="{StaticResource BasePrgStyle}" TargetType="ActivityIndicator">
             <Setter Property="VerticalOptions" Value="Start" />
         </Style>
 
@@ -41,70 +41,64 @@
 
             <ActivityIndicator
                 x:Name="prgLoading"
-                Style="{StaticResource ProgressStyle}" />
+                Style="{StaticResource ProfilePrgStyle}" />
 
-            <StackLayout
-                x:Name="stkContent"
-                Orientation="Vertical"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
-                <Label
-                    Text="Id"
-                    Style="{StaticResource FieldLblStyle}" />
-                <Label
-                    x:Name="lblId"
-                    Style="{StaticResource DataLblStyle}" />
+            <Label
+                Text="Id"
+                Style="{StaticResource FieldLblStyle}" />
+            <Label
+                x:Name="lblId"
+                Style="{StaticResource DataLblStyle}" />
 
-                <Label
-                    Text="First Name"
-                    Style="{StaticResource FieldLblStyle}" />
-                <Frame
-                    Style="{StaticResource EntryFrameStyle}">
-                    <Entry
-                        x:Name="txtFirstName"
-                        Keyboard="Text"
-                        Placeholder="first name"
-                        IsTextPredictionEnabled="True"
-                        Style="{StaticResource EntryStyle}" />
-                </Frame>
+            <Label
+                Text="First Name"
+                Style="{StaticResource FieldLblStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtFirstName"
+                    Keyboard="Text"
+                    Placeholder="first name"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
 
-                <Label
-                    Text="Last Name"
-                    Style="{StaticResource FieldLblStyle}" />
-                <Frame
-                    Style="{StaticResource EntryFrameStyle}">
-                    <Entry
-                        x:Name="txtLastName"
-                        Keyboard="Text"
-                        Placeholder="last name"
-                        IsTextPredictionEnabled="True"
-                        Style="{StaticResource EntryStyle}" />
-                </Frame>
+            <Label
+                Text="Last Name"
+                Style="{StaticResource FieldLblStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtLastName"
+                    Keyboard="Text"
+                    Placeholder="last name"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
 
-                <Label
-                    Text="Email Address"
-                    Style="{StaticResource FieldLblStyle}" />
-                <Frame
-                    Style="{StaticResource EntryFrameStyle}">
-                    <Entry
-                        x:Name="txtEmail"
-                        Keyboard="Email"
-                        IsReadOnly="True"
-                        Placeholder="email address"
-                        Style="{StaticResource EntryStyle}" />
-                </Frame>
+            <Label
+                Text="Email Address"
+                Style="{StaticResource FieldLblStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtEmail"
+                    Keyboard="Email"
+                    IsReadOnly="True"
+                    Placeholder="email address"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
 
-                <Button
-                    x:Name="btnUpdateProfile"
-                    Text="Update Profile"
-                    Style="{StaticResource UpdateBtnStyle}"
-                    Clicked="UpdateProfile" />
+            <Button
+                x:Name="btnUpdateProfile"
+                Text="Update Profile"
+                Style="{StaticResource UpdateBtnStyle}"
+                Clicked="UpdateProfile" />
 
-                <ActivityIndicator
-                    x:Name="prgUpdateProfile"
-                    IsVisible="False"
-                    Style="{StaticResource UpdatePrgStyle}" />
-            </StackLayout>
+            <ActivityIndicator
+                x:Name="prgUpdateProfile"
+                IsVisible="False"
+                Style="{StaticResource ProfilePrgStyle}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

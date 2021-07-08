@@ -51,7 +51,7 @@
             <Setter Property="Padding" Value="20" />
         </Style>
 
-        <Style x:Key="ProgressStyle" TargetType="ActivityIndicator">
+        <Style x:Key="BasePrgStyle" TargetType="ActivityIndicator">
             <Setter Property="Color"
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="BackgroundColor" Value="Transparent" />
