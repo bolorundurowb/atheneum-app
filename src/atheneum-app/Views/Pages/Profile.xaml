@@ -18,6 +18,7 @@
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextTransform" Value="Lowercase" />
             <Setter Property="Margin" Value="5, 10, 0, 0" />
         </Style>
 
@@ -32,129 +33,130 @@
     </ContentView.Resources>
     <ContentView.Content>
         <ScrollView
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand">
-            <StackLayout
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
-            <Label
-                Text="Profile"
-                Style="{StaticResource PageHdrStyleStyle}" />
+            <StackLayout
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    Text="Profile"
+                    Style="{StaticResource PageHdrStyleStyle}" />
 
-            <ActivityIndicator
-                x:Name="prgLoading"
-                Style="{StaticResource ProfilePrgStyle}" />
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    Style="{StaticResource ProfilePrgStyle}" />
 
-            <Label
-                Text="Account Id"
-                Style="{StaticResource FieldLblStyle}" />
-            <Label
-                x:Name="lblId"
-                Style="{StaticResource DataLblStyle}" />
+                <Label
+                    Text="Account Id"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Label
+                    x:Name="lblId"
+                    Style="{StaticResource DataLblStyle}" />
 
-            <Label
-                Text="First Name"
-                Style="{StaticResource FieldLblStyle}" />
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtFirstName"
-                    Keyboard="Text"
-                    Placeholder="first name"
-                    IsTextPredictionEnabled="True"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
+                <Label
+                    Text="First Name"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtFirstName"
+                        Keyboard="Text"
+                        Placeholder="first name"
+                        IsTextPredictionEnabled="True"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
-            <Label
-                Text="Last Name"
-                Style="{StaticResource FieldLblStyle}" />
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtLastName"
-                    Keyboard="Text"
-                    Placeholder="last name"
-                    IsTextPredictionEnabled="True"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
+                <Label
+                    Text="Last Name"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtLastName"
+                        Keyboard="Text"
+                        Placeholder="last name"
+                        IsTextPredictionEnabled="True"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
-            <Label
-                Text="Email Address"
-                Style="{StaticResource FieldLblStyle}" />
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtEmail"
-                    Keyboard="Email"
-                    IsReadOnly="True"
-                    Placeholder="email address"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
+                <Label
+                    Text="Email Address"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtEmail"
+                        Keyboard="Email"
+                        IsReadOnly="True"
+                        Placeholder="email address"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
-            <Button
-                x:Name="btnUpdateProfile"
-                Text="Update Profile"
-                Style="{StaticResource UpdateBtnStyle}"
-                Clicked="UpdateProfile" />
+                <Button
+                    x:Name="btnUpdateProfile"
+                    Text="Update Profile"
+                    Style="{StaticResource UpdateBtnStyle}"
+                    Clicked="UpdateProfile" />
 
-            <ActivityIndicator
-                x:Name="prgUpdateProfile"
-                IsVisible="False"
-                Style="{StaticResource ProfilePrgStyle}" />
-            
-            <Label
-                Text="Passwords"
-                Margin="0, 15, 0, 0"
-                Style="{StaticResource PageHdrStyleStyle}" />
+                <ActivityIndicator
+                    x:Name="prgUpdateProfile"
+                    IsVisible="False"
+                    Style="{StaticResource ProfilePrgStyle}" />
 
-            <Label
-                Text="Current Password"
-                Style="{StaticResource FieldLblStyle}" />
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtCurrentPassword"
-                    IsPassword="True"
-                    Placeholder="current password"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
+                <Label
+                    Text="Passwords"
+                    Margin="0, 15, 0, 0"
+                    Style="{StaticResource PageHdrStyleStyle}" />
 
-            <Label
-                Text="New Password"
-                Style="{StaticResource FieldLblStyle}" />
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtNewPassword"
-                    IsPassword="True"
-                    Placeholder="new password"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
+                <Label
+                    Text="Current Password"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtCurrentPassword"
+                        IsPassword="True"
+                        Placeholder="current password"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
-            <Label
-                Text="Confirm New Password"
-                Style="{StaticResource FieldLblStyle}" />
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtConfirmNewPassword"
-                    IsPassword="True"
-                    Placeholder="confirm new password"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
+                <Label
+                    Text="New Password"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtNewPassword"
+                        IsPassword="True"
+                        Placeholder="new password"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
-            <Button
-                x:Name="btnUpdatePassword"
-                Text="Update Password"
-                Style="{StaticResource UpdateBtnStyle}"
-                Clicked="UpdatePassword" />
+                <Label
+                    Text="Confirm New Password"
+                    Style="{StaticResource FieldLblStyle}" />
+                <Frame
+                    Style="{StaticResource EntryFrameStyle}">
+                    <Entry
+                        x:Name="txtConfirmNewPassword"
+                        IsPassword="True"
+                        Placeholder="confirm new password"
+                        Style="{StaticResource EntryStyle}" />
+                </Frame>
 
-            <ActivityIndicator
-                x:Name="prgUpdatePassword"
-                IsVisible="False"
-                Style="{StaticResource ProfilePrgStyle}" />
-        </StackLayout>
+                <Button
+                    x:Name="btnUpdatePassword"
+                    Text="Update Password"
+                    Style="{StaticResource UpdateBtnStyle}"
+                    Clicked="UpdatePassword" />
+
+                <ActivityIndicator
+                    x:Name="prgUpdatePassword"
+                    IsVisible="False"
+                    Style="{StaticResource ProfilePrgStyle}" />
+            </StackLayout>
         </ScrollView>
     </ContentView.Content>
 </ContentView>
