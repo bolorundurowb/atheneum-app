@@ -31,7 +31,10 @@
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
-        <StackLayout
+        <ScrollView
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
@@ -143,14 +146,15 @@
 
             <Button
                 x:Name="btnUpdatePassword"
-                Text="Update Profile"
+                Text="Update Password"
                 Style="{StaticResource UpdateBtnStyle}"
-                Clicked="UpdateProfile" />
+                Clicked="UpdatePassword" />
 
             <ActivityIndicator
                 x:Name="prgUpdatePassword"
                 IsVisible="False"
                 Style="{StaticResource ProfilePrgStyle}" />
         </StackLayout>
+        </ScrollView>
     </ContentView.Content>
 </ContentView>
