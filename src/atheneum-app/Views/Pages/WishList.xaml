@@ -8,10 +8,30 @@
     <ContentView.Resources>
     </ContentView.Resources>
     <ContentView.Content>
-        <StackLayout>
-            <Label Text="Hello, world!"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                Orientation="Vertical"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <Label
+                    Text="Wish List"
+                    Style="{StaticResource PageHdrStyleStyle}" />
+
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    Style="{StaticResource SlimPrgStyle}" />
+
+                <BoxView
+                    Opacity="0"
+                    Color="Black"
+                    HeightRequest="80"
+                    InputTransparent="True"
+                    VerticalOptions="Start"
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </ScrollView>
     </ContentView.Content>
 </ContentView>
