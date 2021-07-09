@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.ObjectModel;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
@@ -14,6 +15,7 @@ namespace atheneum_app.Views.Pages
     public partial class WishList : ContentView
     {
         private readonly WishListService _wishListService;
+        public ObservableCollection<WishListViewModel> WishListItems;
         
         public WishList()
         {
@@ -33,7 +35,8 @@ namespace atheneum_app.Views.Pages
 
                 if (wishlist.Any())
                 {
-                    
+                    WishListItems = new ObservableCollection<WishListViewModel>(wishlist);
+                    lstWishList.IsVisible = true;
                 }
                 else
                 {

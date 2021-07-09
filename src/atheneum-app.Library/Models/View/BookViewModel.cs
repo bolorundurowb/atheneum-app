@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using Refit;
 
 namespace atheneum_app.Library.Models.View
 {
     public class BookViewModel
     {
-        public string _id { get; set; }
+        [AliasAs("_id")]
+        public string Id { get; set; }
 
         public string ExternalId { get; set; }
 

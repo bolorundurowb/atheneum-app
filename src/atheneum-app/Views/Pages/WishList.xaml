@@ -37,6 +37,16 @@
                     IsVisible="False"
                     Text="You have no items on your wish list. Feel free to add some!"
                     Style="{StaticResource NoItemsLblStyle}" />
+                
+                <CollectionView
+                    x:Name="lstWishList"
+                    IsVisible="False"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    ItemsLayout="VerticalGrid, 2"
+                    ItemsSource="{Binding WishListItems}">
+                    
+                </CollectionView>
 
                 <BoxView
                     Opacity="0"

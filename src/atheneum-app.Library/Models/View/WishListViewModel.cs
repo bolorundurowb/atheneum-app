@@ -1,8 +1,11 @@
-﻿namespace atheneum_app.Library.Models.View
+﻿using Refit;
+
+namespace atheneum_app.Library.Models.View
 {
     public class WishListViewModel
     {
-        public string _id { get; set; }
+        [AliasAs("_id")]
+        public string Id { get; set; }
         
         public string Title { get; set; }
         
