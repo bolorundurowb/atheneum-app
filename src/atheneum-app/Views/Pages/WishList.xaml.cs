@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
@@ -29,6 +30,15 @@ namespace atheneum_app.Views.Pages
             try
             {
                 var wishlist = await _wishListService.GetAll();
+
+                if (wishlist.Any())
+                {
+                    
+                }
+                else
+                {
+                    lblNoItems.IsVisible = true;
+                }
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
