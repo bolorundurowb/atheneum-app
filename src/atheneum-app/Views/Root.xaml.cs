@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using atheneum_app.Utils;
+using Xamarin.Forms;
 
 namespace atheneum_app.Views
 {
@@ -13,12 +15,19 @@ namespace atheneum_app.Views
         {
             base.OnAppearing();
 
-            // load profile page data
-            await pageProfile.LoadData();
+            try
+            {
+                // load profile page data
+                await pageProfile.LoadData();
 
 
-            // load the wishlist page data
-            await pageWishList.LoadData();
+                // load the wishlist page data
+                await pageWishList.LoadData();
+            }
+            catch (Exception ex)
+            {
+                ToastService.Error(ex.Message);
+            }
         }
     }
 }
