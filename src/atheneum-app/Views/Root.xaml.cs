@@ -12,7 +12,13 @@ namespace atheneum_app.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-           await  pageProfile.LoadData();
+
+            // load profile page data
+            await pageProfile.LoadData();
+
+
+            // load the wishlist page data
+            await pageWishList.LoadData();
         }
     }
 }

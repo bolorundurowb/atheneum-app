@@ -6,6 +6,14 @@
     x:Class="atheneum_app.Views.Pages.WishList"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
+        <Style x:Key="NoItemsLblStyle" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="Margin" Value="5, 10, 0, 5" />
+        </Style>
     </ContentView.Resources>
     <ContentView.Content>
         <ScrollView
@@ -23,6 +31,11 @@
                 <ActivityIndicator
                     x:Name="prgLoading"
                     Style="{StaticResource SlimPrgStyle}" />
+                
+                <Label
+                    x:Name="lblNoItems"
+                    Text="You have no items on your wish list. Feel free to add some!"
+                    Style="{StaticResource NoItemsLblStyle}"/>
 
                 <BoxView
                     Opacity="0"
