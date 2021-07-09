@@ -120,12 +120,9 @@
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_wishlist_dark_active}, Light={extensions:IconSourceExtensions ic_wishlist_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
-                    <Grid>
-                        <Label
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Text="TabContent4" />
-                    </Grid>
+                    <xct:TabViewItem.Content>
+                        <pages:WishList x:Name="pageWishList" />
+                    </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
