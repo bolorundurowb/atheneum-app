@@ -11,6 +11,8 @@ namespace atheneum_app.Library.Models.View
         
         public string AuthorName { get; set; }
         
+        public string CoverArt { get; set; }
+        
         public string Isbn { get; set; }
     }
 }
