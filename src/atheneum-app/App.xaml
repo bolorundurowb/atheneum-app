@@ -104,5 +104,9 @@
             <Setter Property="FontSize" Value="20" />
             <Setter Property="HorizontalOptions" Value="Start" />
         </Style>
+        
+        <Style x:Key="SlimPrgStyle" BasedOn="{StaticResource BasePrgStyle}" TargetType="ActivityIndicator">
+            <Setter Property="VerticalOptions" Value="Start" />
+        </Style>
     </Application.Resources>
 </Application>

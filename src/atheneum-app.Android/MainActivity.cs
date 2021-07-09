@@ -3,6 +3,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Content.Res;
 using Android.OS;
+using FFImageLoading.Forms.Platform;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Color = Android.Graphics.Color;
@@ -20,7 +21,9 @@ namespace atheneum_app.Android
             ToolbarResource = Resource.Layout.Toolbar;
             SetTheme(Resource.Style.MainTheme);
             base.OnCreate(savedInstanceState);
+            CachedImageRenderer.Init(true);
             Forms.Init(this, savedInstanceState);
+            CachedImageRenderer.InitImageViewHandler();
             UserDialogs.Init(this);
             LoadApplication(new App());
 

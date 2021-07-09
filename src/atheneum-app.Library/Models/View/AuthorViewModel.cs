@@ -1,8 +1,11 @@
-﻿namespace atheneum_app.Library.Models.View
+﻿using Refit;
+
+namespace atheneum_app.Library.Models.View
 {
     public class AuthorViewModel
     {
-        public string _id { get; set; }
+        [AliasAs("_id")]
+        public string Id { get; set; }
 
         public string Name { get; set; }
     }
