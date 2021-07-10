@@ -31,6 +31,15 @@
             <Setter Property="Margin" Value="0, 12, 5, 0" />
         </Style>
 
+        <Style x:Key="BaseInvBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
+            <Setter Property="BorderColor"
+                    Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+        </Style>
+
         <Style x:Key="BaseLblStyle" TargetType="Label">
             <Setter Property="FontSize" Value="15" />
             <Setter Property="FontFamily" Value="Proxima" />
@@ -117,7 +126,7 @@
             <Setter Property="HasShadow" Value="False" />
             <Setter Property="VerticalOptions" Value="FillAndExpand" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-            <Setter Property="BackgroundColor" Value="{StaticResource LightColour}" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
         </Style>
         
         <Style x:Key="ModalStyle" TargetType="xct:Popup">
@@ -126,12 +135,9 @@
             <Setter Property="BackgroundColor" Value="Transparent" />
         </Style>
         
-        <Style x:Key="ModalHdrStyle" TargetType="Label">
+        <Style x:Key="ModalHdrStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
             <Setter Property="TextColor" Value="{StaticResource TertiaryAccentColour}" />
-            <Setter Property="HorizontalOptions" Value="CenterAndExpand" /><Setter Property="FontSize" Value="40" />
-            <Setter Property="FontAttributes" Value="Bold" />
-            <Setter Property="FontFamily" Value="Fredericka" />
-            <Setter Property="TextTransform" Value="Lowercase" />
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="Margin" Value="0, 5, 0, 10" />
         </Style>
     </Application.Resources>

@@ -40,10 +40,18 @@
                     Style="{StaticResource EntryStyle}" />
             </Frame>
 
-            <Button
-                x:Name="btnAtt"
-                Text="Add To List"
-                Style="{StaticResource BaseBtnStyle}" />
+            <StackLayout
+                x:Name="stkBtns"
+                Orientation="Horizontal">
+                <Button
+                    Text="Add To List"
+                    Style="{StaticResource BaseBtnStyle}"
+                    Clicked="Add"/>
+                <Button
+                    Text="Cancel"
+                    Style="{StaticResource BaseInvBtnStyle}"
+                    Clicked="Cancel"/>
+            </StackLayout>
 
             <ActivityIndicator
                 x:Name="prgAdding"
