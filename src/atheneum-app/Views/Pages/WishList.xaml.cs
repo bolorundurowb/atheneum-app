@@ -41,7 +41,7 @@ namespace atheneum_app.Views.Pages
                 if (wishlist.Any())
                 {
                     WishListItems = new ObservableCollection<WishListViewModel>(wishlist);
-                    lstWishList.IsVisible = true;
+                    lstWishList.ItemsSource = WishListItems;
                 }
                 else
                 {
@@ -80,6 +80,7 @@ namespace atheneum_app.Views.Pages
 
             // add the result in
             WishListItems.Insert(0, result);
+            lstWishList.ItemsSource = WishListItems;
         }
 
         private async void Refreshing(object sender, EventArgs e)
