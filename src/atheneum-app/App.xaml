@@ -23,12 +23,12 @@
                     Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
             <Setter Property="BackgroundColor"
                     Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
-            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="CornerRadius" Value="12" />
             <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="TextTransform" Value="Lowercase" />
-            <Setter Property="Margin" Value="0, 12, 5, 0" />
+            <Setter Property="Margin" Value="0, 12, 0, 5" />
         </Style>
 
         <Style x:Key="BaseInvBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button">
@@ -38,6 +38,7 @@
                     Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
             <Setter Property="BorderColor"
                     Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="BorderWidth" Value="1" />
         </Style>
 
         <Style x:Key="BaseLblStyle" TargetType="Label">
@@ -96,7 +97,7 @@
         </Style>
 
         <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightPrimaryAccentColour}, Light={StaticResource PrimaryAccentColour}}" />
             <Setter Property="Margin" Value="0, -10,  0, 10" />
         </Style>
 
@@ -126,7 +127,7 @@
             <Setter Property="HasShadow" Value="False" />
             <Setter Property="VerticalOptions" Value="FillAndExpand" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />
         </Style>
         
         <Style x:Key="ModalStyle" TargetType="xct:Popup">
@@ -136,7 +137,7 @@
         </Style>
         
         <Style x:Key="ModalHdrStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
-            <Setter Property="TextColor" Value="{StaticResource TertiaryAccentColour}" />
+            <Setter Property="TextColor" Value="{AppThemeBinding Dark={StaticResource LightTertiaryAccentColour}, Light={StaticResource TertiaryAccentColour}}" />
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="Margin" Value="0, 5, 0, 10" />
         </Style>

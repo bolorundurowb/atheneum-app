@@ -18,7 +18,7 @@ namespace atheneum_app.Views.Pages
     public partial class WishList : ContentView
     {
         private readonly WishListService _wishListService;
-        public ObservableCollection<WishListViewModel> WishListItems;
+        public ObservableCollection<WishListViewModel> WishListItems = new ObservableCollection<WishListViewModel>(Enumerable.Empty<WishListViewModel>());
         
         public WishList()
         {
@@ -64,7 +64,20 @@ namespace atheneum_app.Views.Pages
 
         protected async void Add(object sender, EventArgs e)
         {
-           var result = await Navigation.ShowPopupAsync(new AddWishList());
+           var result = await Navigation.ShowPopupAsync(new AddWishList()) as WishListViewModel;
+
+           if (result == null)
+           {
+               ToastService.Info("Modal dismissed.");
+               return;
+           }
+           
+           // hide the no items label if it is visible
+           lblNoItems.IsVisible = false;
+           lstWishList.IsVisible = true;
+           
+           // add the result in
+           WishListItems.Insert(0, result);
         }
     }
 }
