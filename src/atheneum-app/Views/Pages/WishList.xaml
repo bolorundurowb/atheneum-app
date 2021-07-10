@@ -51,10 +51,10 @@
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
-        <ScrollView
-            Orientation="Vertical"
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand">
+        <!-- <ScrollView -->
+        <!--     Orientation="Vertical" -->
+        <!--     HorizontalOptions="FillAndExpand" -->
+        <!--     VerticalOptions="FillAndExpand"> -->
             <StackLayout
                 Orientation="Vertical"
                 HorizontalOptions="FillAndExpand"
@@ -74,51 +74,53 @@
                         Clicked="Add"/>
                 </StackLayout>
 
-                <ActivityIndicator
-                    x:Name="prgLoading"
-                    Style="{StaticResource SlimPrgStyle}" />
-
                 <Label
                     x:Name="lblNoItems"
                     IsVisible="False"
                     Text="You have no items on your wish list. Feel free to add some!"
                     Style="{StaticResource NoItemsLblStyle}" />
 
-                <CollectionView
-                    x:Name="lstWishList"
-                    IsVisible="False"
+                <RefreshView
+                    x:Name="rfsWishList"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
-                    ItemsLayout="VerticalGrid, 3"
-                    ItemsSource="{Binding WishListItems}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout
-                                HorizontalOptions="FillAndExpand"
-                                VerticalOptions="FillAndExpand"
-                                Padding="10">
-                                <Frame
-                                    Padding="0"
-                                    IsClippedToBounds="True"
-                                    CornerRadius="10">
-                                    <ff:CachedImage
-                                        HorizontalOptions="FillAndExpand"
-                                        DownsampleToViewSize="True"
-                                        Aspect="AspectFill"
-                                        RetryCount="1"
-                                        RetryDelay="1000"
-                                        Source="{Binding CoverArt}" />
-                                </Frame>
-                                <Label
-                                    Text="{Binding Title}"
-                                    Style="{StaticResource BookTitleLblStyle}" />
-                                <Label
-                                    Text="{Binding AuthorName}"
-                                    Style="{StaticResource BookAuthorLblStyle}" />
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                    Refreshing="Refreshing">
+                    <CollectionView
+                        x:Name="lstWishList"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        ItemsLayout="VerticalGrid, 3"
+                        ItemsSource="{Binding WishListItems}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="FillAndExpand"
+                                    Padding="10">
+                                    <Frame
+                                        Padding="0"
+                                        IsClippedToBounds="True"
+                                        CornerRadius="10"
+                                        BackgroundColor="White">
+                                        <ff:CachedImage
+                                            HorizontalOptions="FillAndExpand"
+                                            DownsampleToViewSize="True"
+                                            Aspect="AspectFill"
+                                            RetryCount="1"
+                                            RetryDelay="1000"
+                                            Source="{Binding CoverArt}" />
+                                    </Frame>
+                                    <Label
+                                        Text="{Binding Title}"
+                                        Style="{StaticResource BookTitleLblStyle}" />
+                                    <Label
+                                        Text="{Binding AuthorName}"
+                                        Style="{StaticResource BookAuthorLblStyle}" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </RefreshView>
 
                 <BoxView
                     Opacity="0"
@@ -128,6 +130,6 @@
                     VerticalOptions="Start"
                     HorizontalOptions="FillAndExpand" />
             </StackLayout>
-        </ScrollView>
+        <!-- </ScrollView> -->
     </ContentView.Content>
 </ContentView>

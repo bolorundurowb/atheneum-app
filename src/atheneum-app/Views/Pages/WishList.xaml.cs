@@ -17,9 +17,11 @@ namespace atheneum_app.Views.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WishList : ContentView
     {
+        public ObservableCollection<WishListViewModel> WishListItems =
+            new ObservableCollection<WishListViewModel>(Enumerable.Empty<WishListViewModel>());
+
         private readonly WishListService _wishListService;
-        public ObservableCollection<WishListViewModel> WishListItems = new ObservableCollection<WishListViewModel>(Enumerable.Empty<WishListViewModel>());
-        
+
         public WishList()
         {
             InitializeComponent();
@@ -30,8 +32,8 @@ namespace atheneum_app.Views.Pages
         {
             const string genericErrorMessage =
                 "Sorry, an error occurred when retrieving your wish list. Try again later.";
-            prgLoading.IsVisible = true;
-            
+            rfsWishList.IsRefreshing = true;
+
             try
             {
                 var wishlist = await _wishListService.GetAll();
@@ -58,26 +60,31 @@ namespace atheneum_app.Views.Pages
             }
             finally
             {
-                prgLoading.IsVisible = false;
+                rfsWishList.IsRefreshing = false;
             }
         }
 
         protected async void Add(object sender, EventArgs e)
         {
-           var result = await Navigation.ShowPopupAsync(new AddWishList()) as WishListViewModel;
+            var result = await Navigation.ShowPopupAsync(new AddWishList()) as WishListViewModel;
 
-           if (result == null)
-           {
-               ToastService.Info("Modal dismissed.");
-               return;
-           }
-           
-           // hide the no items label if it is visible
-           lblNoItems.IsVisible = false;
-           lstWishList.IsVisible = true;
-           
-           // add the result in
-           WishListItems.Insert(0, result);
+            if (result == null)
+            {
+                ToastService.Info("Modal dismissed.");
+                return;
+            }
+
+            // hide the no items label if it is visible
+            lblNoItems.IsVisible = false;
+            lstWishList.IsVisible = true;
+
+            // add the result in
+            WishListItems.Insert(0, result);
+        }
+
+        private async void Refreshing(object sender, EventArgs e)
+        {
+            await LoadData();
         }
     }
 }
