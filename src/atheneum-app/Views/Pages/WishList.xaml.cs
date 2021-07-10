@@ -1,10 +1,12 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
+using atheneum_app.Views.Modals;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -57,6 +59,11 @@ namespace atheneum_app.Views.Pages
             {
                 prgLoading.IsVisible = false;
             }
+        }
+
+        protected async void Add(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new AddWishList());
         }
     }
 }

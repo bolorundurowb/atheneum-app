@@ -70,7 +70,8 @@
                     
                     <Button
                         Text="Add"
-                        Style="{StaticResource AddBtnStyle}"/>
+                        Style="{StaticResource AddBtnStyle}"
+                        Clicked="Add"/>
                 </StackLayout>
 
                 <ActivityIndicator
