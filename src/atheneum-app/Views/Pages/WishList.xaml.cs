@@ -8,6 +8,7 @@ using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Modals;
 using Refit;
+using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -63,7 +64,7 @@ namespace atheneum_app.Views.Pages
 
         protected async void Add(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new AddWishList());
+           var result = await Navigation.ShowPopupAsync(new AddWishList());
         }
     }
 }

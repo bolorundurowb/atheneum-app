@@ -1,21 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<ContentPage
+<xct:Popup
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     x:Class="atheneum_app.Views.Modals.AddWishList"
-    BackgroundColor="Transparent">
-    <ContentPage.Content>
-        <Frame
-            BackgroundColor="{StaticResource LightColour}"
-            WidthRequest="200"
-            HeightRequest="500"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            CornerRadius="20">
-            <StackLayout>
-                <Label Text="Hello World"></Label>
-            </StackLayout>
-        </Frame>
-    </ContentPage.Content>
-</ContentPage>
+    Style="{StaticResource ModalStyle}">
+    <Frame
+        Style="{StaticResource ModalFrmStyle}">
+        <StackLayout>
+            <Label
+                Text="Add To Wish List"
+                Style="{StaticResource ModalHdrStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtTitle"
+                    Placeholder="book title"
+                    Keyboard="Text"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtAuthor"
+                    Placeholder="author name"
+                    Keyboard="Text"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtIsbn"
+                    Placeholder="isbn"
+                    Keyboard="Text"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+
+            <Button
+                x:Name="btnAtt"
+                Text="Add To List"
+                Style="{StaticResource BaseBtnStyle}" />
+
+            <ActivityIndicator
+                x:Name="prgAdding"
+                IsVisible="False"
+                Style="{StaticResource BasePrgStyle}" />
+        </StackLayout>
+    </Frame>
+</xct:Popup>
