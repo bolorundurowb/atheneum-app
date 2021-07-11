@@ -101,12 +101,9 @@
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_books_dark_active}, Light={extensions:IconSourceExtensions ic_books_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
-                    <Grid>
-                        <Label
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Text="TabContent1" />
-                    </Grid>
+                    <xct:TabViewItem.Content>
+                        <pages:Books x:Name="pageBooks" />
+                    </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
                 <xct:TabViewItem

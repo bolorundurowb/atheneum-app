@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace atheneum_app.Views.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Books : ContentPage
+    public partial class Books : ContentView
     {
         public Books()
         {
