@@ -78,14 +78,6 @@
         <DependentUpon>Root.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
-      <Compile Update="Resources\Styles\Labels.xaml.cs">
-        <DependentUpon>Labels.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-      <Compile Update="Resources\Styles\Buttons.xaml.cs">
-        <DependentUpon>Buttons.xaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
     </ItemGroup>
 
     <ItemGroup>

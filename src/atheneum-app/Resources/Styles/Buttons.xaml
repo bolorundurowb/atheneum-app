@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xaml-comp compile="true" ?>
 
 <ResourceDictionary
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.Resources.Styles.Buttons">
+    <ResourceDictionary Source="Colours.xaml" />
+
     <Style x:Key="BaseBtnStyle" TargetType="Button">
         <Setter Property="TextColor"
                 Value="{AppThemeBinding Dark={StaticResource DarkColour}, Light={StaticResource LightColour}}" />

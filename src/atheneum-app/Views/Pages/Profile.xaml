@@ -6,6 +6,8 @@
     x:Class="atheneum_app.Views.Pages.Profile"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
+        <ResourceDictionary Source="../../Resources/Styles/Buttons.xaml" />
+
         <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
 
         <Style x:Key="FieldLblStyle" TargetType="Label">

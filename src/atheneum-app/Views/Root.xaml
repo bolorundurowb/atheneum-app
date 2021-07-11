@@ -95,14 +95,14 @@
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
-                    Text="Books"
+                    Text="Library"
                     ControlTemplate="{StaticResource TabItemTemplate}"
                     Icon="{extensions:IconSourceExtensions ic_books}"
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_books_dark_active}, Light={extensions:IconSourceExtensions ic_books_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
-                        <pages:Books x:Name="pageBooks" />
+                        <pages:Library x:Name="pageBooks" />
                     </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 

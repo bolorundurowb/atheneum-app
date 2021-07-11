@@ -7,7 +7,6 @@
     x:Class="atheneum_app.Views.Pages.WishList"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
-
         <Style x:Key="AddBtnStyle" TargetType="Button">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />

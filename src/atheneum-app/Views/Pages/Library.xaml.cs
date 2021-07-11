@@ -6,40 +6,38 @@ using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
-using atheneum_app.Views.Modals;
 using Refit;
-using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace atheneum_app.Views.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WishList : ContentView
+    public partial class Library : ContentView
     {
-        public ObservableCollection<WishListViewModel> WishListItems = new ObservableCollection<WishListViewModel>();
-        private readonly WishListService _wishListService;
+        public ObservableCollection<BookViewModel> Books = new ObservableCollection<BookViewModel>();
+        private readonly BookService _bookService;
 
-        public WishList()
+        public Library()
         {
             InitializeComponent();
-            _wishListService = new WishListService();
+            _bookService = new BookService();
         }
 
         public async Task LoadData()
         {
             const string genericErrorMessage =
-                "Sorry, an error occurred when retrieving your wish list. Try again later.";
-            rfsWishList.IsRefreshing = true;
+                "Sorry, an error occurred when retrieving your library. Try again later.";
+            rfsLibrary.IsRefreshing = true;
 
             try
             {
-                var wishlist = await _wishListService.GetAll();
+                var books = await _bookService.GetAll();
 
-                if (wishlist.Any())
+                if (books.Any())
                 {
-                    WishListItems = new ObservableCollection<WishListViewModel>(wishlist);
-                    lstWishList.ItemsSource = WishListItems;
+                    Books = new ObservableCollection<BookViewModel>(books);
+                    lstBooks.ItemsSource = Books;
                 }
                 else
                 {
@@ -58,27 +56,8 @@ namespace atheneum_app.Views.Pages
             }
             finally
             {
-                rfsWishList.IsRefreshing = false;
+                rfsLibrary.IsRefreshing = false;
             }
-        }
-
-        protected async void Add(object sender, EventArgs e)
-        {
-            var result = await Navigation.ShowPopupAsync(new AddWishList()) as WishListViewModel;
-
-            if (result == null)
-            {
-                ToastService.Info("Modal dismissed.");
-                return;
-            }
-
-            // hide the no items label if it is visible
-            lblNoItems.IsVisible = false;
-            lstWishList.IsVisible = true;
-
-            // add the result in
-            WishListItems.Insert(0, result);
-            lstWishList.ItemsSource = WishListItems;
         }
 
         protected async void Refreshing(object sender, EventArgs e)
