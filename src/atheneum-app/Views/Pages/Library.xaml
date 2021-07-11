@@ -1,61 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    x:Class="atheneum_app.Views.Pages.WishList"
+    x:Class="atheneum_app.Views.Pages.Library"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
-        <Style x:Key="AddBtnStyle" TargetType="Button">
-            <Setter Property="TextColor"
-                    Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
-            <Setter Property="BackgroundColor"
-                    Value="{AppThemeBinding Dark= {StaticResource DarkSecondaryAccentColour}, Light= {StaticResource SecondaryAccentColour}}" />
-            <Setter Property="BorderColor"
-                    Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
-            <Setter Property="BorderWidth" Value="2" />
-            <Setter Property="HorizontalOptions" Value="End" />
-            <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="TextTransform" Value="Lowercase" />
-            <Setter Property="CornerRadius" Value="10" />
-            <Setter Property="HeightRequest" Value="40" />
-        </Style>
     </ContentView.Resources>
     <ContentView.Content>
         <StackLayout
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
-            <StackLayout
-                Orientation="Horizontal"
-                HorizontalOptions="FillAndExpand">
-                <Label
-                    Text="Wish List"
-                    HorizontalOptions="StartAndExpand"
-                    VerticalOptions="Center"
-                    Style="{StaticResource PageHdrStyleStyle}" />
-
-                <Button
-                    Text="Add"
-                    Style="{StaticResource AddBtnStyle}"
-                    Clicked="Add" />
-            </StackLayout>
+            <Label
+                Text="Library"
+                HorizontalOptions="StartAndExpand"
+                VerticalOptions="Center"
+                Style="{StaticResource PageHdrStyleStyle}" />
 
             <Label
                 x:Name="lblNoItems"
                 IsVisible="False"
-                Text="You have no items on your wish list. Feel free to add some!"
+                Text="You have no books in your library. Feel free to add some!"
                 Style="{StaticResource NoItemsLblStyle}" />
 
             <RefreshView
-                x:Name="rfsWishList"
+                x:Name="rfsLibrary"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
                 Refreshing="Refreshing">
                 <CollectionView
-                    x:Name="lstWishList"
+                    x:Name="lstBooks"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
                     ItemsLayout="VerticalGrid, 3">
@@ -90,7 +67,7 @@
                                             Text="{Binding Title}"
                                             Style="{StaticResource BookTitleLblStyle}" />
                                         <Label
-                                            Text="{Binding AuthorName}"
+                                            Text="{Binding PrimaryAuthorName}"
                                             Style="{StaticResource BookAuthorLblStyle}" />
                                     </StackLayout>
                                 </Frame>

@@ -17,12 +17,14 @@ namespace atheneum_app.Views
 
             try
             {
-                // load profile page data
-                await pageProfile.LoadData();
-
+                // load the library page data
+                await pageLibrary.LoadData();
 
                 // load the wishlist page data
                 await pageWishList.LoadData();
+
+                // load profile page data
+                await pageProfile.LoadData();
             }
             catch (Exception ex)
             {

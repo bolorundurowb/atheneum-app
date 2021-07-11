@@ -95,18 +95,15 @@
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
-                    Text="Books"
+                    Text="Library"
                     ControlTemplate="{StaticResource TabItemTemplate}"
                     Icon="{extensions:IconSourceExtensions ic_books}"
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_books_dark_active}, Light={extensions:IconSourceExtensions ic_books_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
-                    <Grid>
-                        <Label
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Text="TabContent1" />
-                    </Grid>
+                    <xct:TabViewItem.Content>
+                        <pages:Library x:Name="pageLibrary" />
+                    </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
