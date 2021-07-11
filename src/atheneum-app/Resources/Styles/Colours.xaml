@@ -3,22 +3,29 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.Resources.Styles.Colours">
+    <!-- App Colours -->
     <Color x:Key="LightColour">#FDFDFD</Color>
     <Color x:Key="DarkColour">#111111</Color>
     <Color x:Key="PrimaryAccentColour">#008080</Color>
+    <Color x:Key="LightPrimaryAccentColour">#32b2b2</Color>
     <Color x:Key="SecondaryAccentColour">#F5F6EE</Color>
     <Color x:Key="DarkSecondaryAccentColour">#BCC08F</Color>
     <Color x:Key="TertiaryAccentColour">#800020</Color>
+    <Color x:Key="LightTertiaryAccentColour">#b23252</Color>
+
+    <!-- Text Colours -->
     <Color x:Key="LightSubTextColour">#8C8C8C</Color>
     <Color x:Key="DarkSubTextColour">#C6C6C6</Color>
+
+    <!-- Input Colours -->
     <Color x:Key="LightInputTextColour">#000000</Color>
     <Color x:Key="DarkInputTextColour">#FFFFFF</Color>
     <Color x:Key="LightInputBackgroundColour">#F9F9F9</Color>
     <Color x:Key="DarkInputBackgroundColour">#2E2E30</Color>
     <Color x:Key="LightBorderColour">#F4F4F4</Color>
     <Color x:Key="DarkBorderColour">#040404</Color>
-    
-    <!-- Navbar Styles -->
+
+    <!-- Navbar Colours -->
     <Color x:Key="LightNavbarBackgroundColour">#F9F9F9</Color>
     <Color x:Key="DarkNavbarBackgroundColour">#272727</Color>
     <Color x:Key="NavbarTextColour">#CACACA</Color>

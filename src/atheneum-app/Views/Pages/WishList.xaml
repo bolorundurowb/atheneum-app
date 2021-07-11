@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     x:Class="atheneum_app.Views.Pages.WishList"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
@@ -21,35 +21,56 @@
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="StartAndExpand" />
             <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="Margin" Value="0, 10, 0, 0" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="MaxLines" Value="2" />
+            <Setter Property="Margin" Value="10, 5, 10, 0" />
         </Style>
 
         <Style x:Key="BookAuthorLblStyle" TargetType="Label">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource DarkSubTextColour}, Light= {StaticResource LightSubTextColour}}" />
-            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
             <Setter Property="FontFamily" Value="Proxima" />
-            <Setter Property="FontSize" Value="16" />
-            <Setter Property="Margin" Value="0, 10, 0, 0" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="MaxLines" Value="1" />
+            <Setter Property="Margin" Value="10, 3, 10, 0" />
+        </Style>
+
+        <Style x:Key="AddBtnStyle" TargetType="Button">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark= {StaticResource DarkSecondaryAccentColour}, Light= {StaticResource SecondaryAccentColour}}" />
+            <Setter Property="BorderColor"
+                    Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
+            <Setter Property="BorderWidth" Value="2" />
+            <Setter Property="HorizontalOptions" Value="End" />
+            <Setter Property="FontFamily" Value="ProximaBold" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="HeightRequest" Value="40" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
-        <ScrollView
-            Orientation="Vertical"
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand">
             <StackLayout
                 Orientation="Vertical"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
-                <Label
-                    Text="Wish List"
-                    Style="{StaticResource PageHdrStyleStyle}" />
-
-                <ActivityIndicator
-                    x:Name="prgLoading"
-                    Style="{StaticResource SlimPrgStyle}" />
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand">
+                    <Label
+                        Text="Wish List"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="Center"
+                        Style="{StaticResource PageHdrStyleStyle}" />
+                    
+                    <Button
+                        Text="Add"
+                        Style="{StaticResource AddBtnStyle}"
+                        Clicked="Add"/>
+                </StackLayout>
 
                 <Label
                     x:Name="lblNoItems"
@@ -57,41 +78,56 @@
                     Text="You have no items on your wish list. Feel free to add some!"
                     Style="{StaticResource NoItemsLblStyle}" />
 
-                <CollectionView
-                    x:Name="lstWishList"
-                    IsVisible="False"
+                <RefreshView
+                    x:Name="rfsWishList"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
-                    ItemsLayout="VerticalGrid, 3"
-                    ItemsSource="{Binding WishListItems}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout
-                                HorizontalOptions="FillAndExpand"
-                                VerticalOptions="FillAndExpand"
-                                Padding="10">
-                                <Frame
-                                    Padding="0"
-                                    IsClippedToBounds="True"
-                                    CornerRadius="10">
-                                    <ff:CachedImage
-                                        HorizontalOptions="FillAndExpand"
-                                        DownsampleToViewSize="True"
-                                        Aspect="AspectFill"
-                                        RetryCount="1"
-                                        RetryDelay="1000"
-                                        Source="{Binding CoverArt}" />
-                                </Frame>
-                                <Label
-                                    Text="{Binding Title}"
-                                    Style="{StaticResource BookTitleLblStyle}" />
-                                <Label
-                                    Text="{Binding AuthorName}"
-                                    Style="{StaticResource BookAuthorLblStyle}" />
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                    Refreshing="Refreshing">
+                    <CollectionView
+                        x:Name="lstWishList"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        ItemsLayout="VerticalGrid, 3">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                               <StackLayout
+                                   Padding="5"
+                                   HeightRequest="235"
+                                   BackgroundColor="Transparent"
+                                   HorizontalOptions="FillAndExpand">
+                                   <Frame
+                                       Padding="0"
+                                       CornerRadius="10"
+                                       HorizontalOptions="FillAndExpand"
+                                       VerticalOptions="FillAndExpand"
+                                       BackgroundColor="{AppThemeBinding Dark={StaticResource DarkNavbarBackgroundColour}, Light={StaticResource LightNavbarBackgroundColour}}">
+                                       <StackLayout>
+                                           <yummy:PancakeView
+                                               Padding="0"
+                                               IsClippedToBounds="True"
+                                               CornerRadius="5, 5, 0, 0">
+                                               <ff:CachedImage
+                                                   HeightRequest="160"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   DownsampleToViewSize="True"
+                                                   Aspect="AspectFill"
+                                                   RetryCount="1"
+                                                   RetryDelay="1000"
+                                                   Source="{Binding CoverArt}" />
+                                           </yummy:PancakeView>
+                                           <Label
+                                               Text="{Binding Title}"
+                                               Style="{StaticResource BookTitleLblStyle}" />
+                                           <Label
+                                               Text="{Binding AuthorName}"
+                                               Style="{StaticResource BookAuthorLblStyle}" />
+                                       </StackLayout>
+                                   </Frame>
+                               </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </RefreshView>
 
                 <BoxView
                     Opacity="0"
@@ -101,6 +137,5 @@
                     VerticalOptions="Start"
                     HorizontalOptions="FillAndExpand" />
             </StackLayout>
-        </ScrollView>
     </ContentView.Content>
 </ContentView>
