@@ -2,7 +2,10 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="atheneum_app.Views.Pages.Books">
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="atheneum_app.Views.Pages.Books"
+    Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
     </ContentView.Resources>
     <ContentView.Content>
