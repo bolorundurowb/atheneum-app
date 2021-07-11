@@ -7,8 +7,5 @@
         public static string V1BaseUrl = $"{BaseUrl}/v1";
 
         public const int ResetCodeLength = 6;
-
-        public const string DefaultBookCoverUrl =
-            "https://res.cloudinary.com/dg2dgzbt4/image/upload/v1625842121/external_assets/open_source/icons/default-book-cover.png";
     }
 }
