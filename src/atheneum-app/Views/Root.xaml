@@ -102,7 +102,7 @@
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
-                        <pages:Library x:Name="pageBooks" />
+                        <pages:Library x:Name="pageLibrary" />
                     </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
