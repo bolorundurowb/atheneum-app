@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using Refit;
 
 namespace atheneum_app.Library.Models.View
 {
     public class BookViewModel
     {
-        [AliasAs("_id")] 
+        [JsonPropertyName("_id")]
         public string Id { get; set; }
 
         public string ExternalId { get; set; }

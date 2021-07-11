@@ -21,7 +21,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public Task<IEnumerable<BookViewModel>> GetAll()
         {
-            return _bookService.GetAll();
+            return _bookService.GetAll(0, 30);
         }
     }
 }

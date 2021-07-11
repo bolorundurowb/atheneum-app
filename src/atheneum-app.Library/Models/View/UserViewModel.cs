@@ -1,10 +1,10 @@
-﻿using Refit;
+﻿using System.Text.Json.Serialization;
 
 namespace atheneum_app.Library.Models.View
 {
     public class UserViewModel
     {
-        [AliasAs("_id")]
+        [JsonPropertyName("_id")]
         public string Id { get; set; }
 
         public string FirstName { get; set; }
