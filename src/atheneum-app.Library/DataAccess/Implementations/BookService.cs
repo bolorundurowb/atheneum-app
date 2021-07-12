@@ -25,7 +25,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return _bookService.GetAll(0, 30);
         }
 
-        public Task<BookViewModel> AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
+        public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
         {
             return _bookService.AddByIsbn(new CreateIsbnBookBindingModel
             {

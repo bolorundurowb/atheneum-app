@@ -52,8 +52,14 @@ namespace atheneum_app.Views
         {
             const string genericErrorMessage =
                 "Sorry, an error occurred when adding the book to your library. Try again later.";
-            var page = sender as Scanner;
-            var result = page?.ScanResult;
+            var scanner = sender as Scanner;
+            var result = scanner?.ScanResult;
+
+            if (scanner != null)
+            {
+                // try disconnecting the event handler
+                scanner.Disappearing -= ScannerOnDisappearing;
+            }
 
             if (string.IsNullOrEmpty(result))
             {
@@ -63,8 +69,15 @@ namespace atheneum_app.Views
 
             try
             {
+                // notify the user
+                ToastService.Info($"Scanned ISBN: {result}. Adding to your library...");
+                
+                // call the service
                 await _bookService.AddByIsbn(result);
                 ToastService.Success("Book successfully added to your library");
+                
+                // refresh the library
+                await pageLibrary.LoadData();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

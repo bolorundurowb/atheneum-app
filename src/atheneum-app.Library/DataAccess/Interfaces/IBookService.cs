@@ -14,7 +14,7 @@ namespace atheneum_app.Library.DataAccess.Interfaces
 
         [Post("/books/isbn")]
         [Headers("Authorization: Bearer")]
-        Task<BookViewModel> AddByIsbn([Body] CreateIsbnBookBindingModel payload);
+        Task AddByIsbn([Body] CreateIsbnBookBindingModel payload);
 
         [Post("/books/manual")]
         [Headers("Authorization: Bearer")]
