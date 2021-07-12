@@ -16,11 +16,12 @@
                     Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
             <Setter Property="BorderWidth" Value="2" />
             <Setter Property="HorizontalOptions" Value="End" />
+            <Setter Property="VerticalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="FontSize" Value="18" />
             <Setter Property="TextTransform" Value="Lowercase" />
             <Setter Property="CornerRadius" Value="10" />
-            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="HeightRequest" Value="35" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
