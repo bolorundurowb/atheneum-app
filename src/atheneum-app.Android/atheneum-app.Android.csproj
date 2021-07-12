@@ -58,13 +58,15 @@
         <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0.8" />
         <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.2.4" />
         <PackageReference Include="Xamarin.AndroidX.Palette" Version="1.0.0.7" />
-    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.8" /></ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.8" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" /></ItemGroup>
     <ItemGroup>
         <Compile Include="MainActivity.cs" />
         <Compile Include="Renderers\AndroidNavigationRenderer.cs" />
         <Compile Include="Renderers\CustomEntryRenderer.cs" />
         <Compile Include="Resources\Resource.Designer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Services\Implementations\BarcodeScanService.cs" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Resources\AboutResources.txt" />

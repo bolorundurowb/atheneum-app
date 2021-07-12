@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace atheneum_app.Library.Services.Interfaces
+namespace atheneum_app.Services.Interfaces
 {
     public interface IBarcodeScanService
     {

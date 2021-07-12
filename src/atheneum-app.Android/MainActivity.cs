@@ -3,10 +3,12 @@ using Android.App;
 using Android.Content.PM;
 using Android.Content.Res;
 using Android.OS;
+using Android.Runtime;
 using FFImageLoading.Forms.Platform;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Color = Android.Graphics.Color;
+using Platform = Xamarin.Essentials.Platform;
 
 namespace atheneum_app.Android
 {
@@ -19,8 +21,10 @@ namespace atheneum_app.Android
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            
             SetTheme(Resource.Style.MainTheme);
             base.OnCreate(savedInstanceState);
+            
             CachedImageRenderer.Init(true);
             Forms.Init(this, savedInstanceState);
             CachedImageRenderer.InitImageViewHandler();
@@ -37,6 +41,13 @@ namespace atheneum_app.Android
                 var colour = new Color(colourCode, colourCode, colourCode);
                 Window?.SetNavigationBarColor(colour);
             }
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
+            [GeneratedEnum] Permission[] grantResults)
+        {
+            Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }
