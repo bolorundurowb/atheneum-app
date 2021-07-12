@@ -22,18 +22,8 @@ namespace atheneum_app
             var tokenClient = new TokenService();
             var isLoggedIn = tokenClient.IsLoggedIn();
 
-            NavigationPage mainPage;
-
-            if (isLoggedIn)
-            {
-                mainPage = new NavigationPage(new Root());
-            }
-            else
-            {
-                mainPage = new NavigationPage(new Login());
-            }
-
-            MainPage = mainPage;
+            var page = isLoggedIn ? (ContentPage) new Root() : new Login();
+            MainPage = new NavigationPage(page);
         }
 
         protected override void OnStart()

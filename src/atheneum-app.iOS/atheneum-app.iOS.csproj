@@ -89,7 +89,6 @@
     <ItemGroup>
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
-        <Compile Include="Services\Implementations\BarcodeScanService.cs" />
         <None Include="Entitlements.plist" />
         <None Include="Info.plist" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,7 +113,7 @@
         <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
         <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
-        <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+        <PackageReference Include="ZXing.Net.Mobile.Forms" Version="3.0.0-beta5" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\atheneum-app\atheneum-app.csproj">

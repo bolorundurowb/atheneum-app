@@ -2,8 +2,8 @@
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
-using atheneum_app.Services.Interfaces;
 using atheneum_app.Utils;
+using atheneum_app.Views.Pages;
 using Refit;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
@@ -43,17 +43,24 @@ namespace atheneum_app.Views
 
         protected async void Scan(object sender, TabTappedEventArgs e)
         {
+            var scanner = new Scanner();
+            scanner.Disappearing += ScannerOnDisappearing;
+            await Navigation.PushAsync(scanner);
+        }
+
+        private async void ScannerOnDisappearing(object sender, EventArgs e)
+        {
             const string genericErrorMessage =
                 "Sorry, an error occurred when adding the book to your library. Try again later.";
-            var scanner = DependencyService.Get<IBarcodeScanService>();
-            var result = await scanner.ScanAsync();
+            var page = sender as Scanner;
+            var result = page?.ScanResult;
 
             if (string.IsNullOrEmpty(result))
             {
                 ToastService.Warn("Scan did not return a result.");
                 return;
             }
-            
+
             try
             {
                 await _bookService.AddByIsbn(result);
