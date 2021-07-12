@@ -48,12 +48,12 @@ namespace atheneum_app.Views
             var scanner = DependencyService.Get<IBarcodeScanService>();
             var result = await scanner.ScanAsync();
 
-            if (!string.IsNullOrEmpty(result))
+            if (string.IsNullOrEmpty(result))
             {
                 ToastService.Warn("Scan did not return a result.");
                 return;
             }
-
+            
             try
             {
                 await _bookService.AddByIsbn(result);
