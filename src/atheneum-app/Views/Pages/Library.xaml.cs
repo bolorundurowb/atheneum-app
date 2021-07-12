@@ -38,9 +38,12 @@ namespace atheneum_app.Views.Pages
                 {
                     Books = new ObservableCollection<BookViewModel>(books);
                     lstBooks.ItemsSource = Books;
+                    lblNoItems.IsVisible = false;
                 }
                 else
                 {
+                    Books.Clear();
+                    lstBooks.ItemsSource = Books;
                     lblNoItems.IsVisible = true;
                 }
             }

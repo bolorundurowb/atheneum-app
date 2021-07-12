@@ -12,11 +12,11 @@ namespace atheneum_app.Library.DataAccess.Interfaces
         [Headers("Authorization: Bearer")]
         Task<IEnumerable<BookViewModel>> GetAll([AliasAs("skip")] int skip, [AliasAs("limit")] int limit);
 
-        [Get("/books/isbn")]
+        [Post("/books/isbn")]
         [Headers("Authorization: Bearer")]
-        Task<BookViewModel> AddByIsbn([Body] CreateIsbnBookBindingModel payload);
+        Task AddByIsbn([Body] CreateIsbnBookBindingModel payload);
 
-        [Get("/books/manual")]
+        [Post("/books/manual")]
         [Headers("Authorization: Bearer")]
         Task<BookViewModel> AddManual([Body] CreateManualBookBindingModel payload);
 

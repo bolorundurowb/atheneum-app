@@ -1,8 +1,8 @@
-﻿using Acr.UserDialogs;
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.Content.Res;
 using Android.OS;
+using Android.Runtime;
 using FFImageLoading.Forms.Platform;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -19,12 +19,16 @@ namespace atheneum_app.Android
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            
             SetTheme(Resource.Style.MainTheme);
             base.OnCreate(savedInstanceState);
+            
             CachedImageRenderer.Init(true);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
             Forms.Init(this, savedInstanceState);
             CachedImageRenderer.InitImageViewHandler();
-            UserDialogs.Init(this);
+            Acr.UserDialogs.UserDialogs.Init(this);
             LoadApplication(new App());
 
             // set the bottom bar colour
@@ -33,10 +37,16 @@ namespace atheneum_app.Android
                 var mode = Resources?.Configuration?.UiMode & UiMode.NightMask;
                 var isInDarkMode = mode == UiMode.NightYes;
                 var colourCode = isInDarkMode ? 17 : 254;
-                // var colourCode = 17;
                 var colour = new Color(colourCode, colourCode, colourCode);
                 Window?.SetNavigationBarColor(colour);
             }
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions,
+            [GeneratedEnum] Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

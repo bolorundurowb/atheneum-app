@@ -24,6 +24,7 @@ namespace atheneum_app.iOS
             CachedImageRenderer.Init();
             Forms.Init();
             CachedImageRenderer.InitImageSourceHandler();
+            ZXing.Net.Mobile.Forms.iOS.Platform.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

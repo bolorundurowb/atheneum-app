@@ -16143,6 +16143,4339 @@ namespace atheneum_app.Android
 			global::Xamarin.Forms.Platform.Resource.Xml.standalone_badge_gravity_bottom_start = global::atheneum_app.Android.Resource.Xml.standalone_badge_gravity_bottom_start;
 			global::Xamarin.Forms.Platform.Resource.Xml.standalone_badge_gravity_top_start = global::atheneum_app.Android.Resource.Xml.standalone_badge_gravity_top_start;
 			global::Xamarin.Forms.Platform.Resource.Xml.standalone_badge_offset = global::atheneum_app.Android.Resource.Xml.standalone_badge_offset;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_fade_in = global::atheneum_app.Android.Resource.Animation.abc_fade_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_fade_out = global::atheneum_app.Android.Resource.Animation.abc_fade_out;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_grow_fade_in_from_bottom = global::atheneum_app.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_popup_enter = global::atheneum_app.Android.Resource.Animation.abc_popup_enter;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_popup_exit = global::atheneum_app.Android.Resource.Animation.abc_popup_exit;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_shrink_fade_out_from_bottom = global::atheneum_app.Android.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_slide_in_bottom = global::atheneum_app.Android.Resource.Animation.abc_slide_in_bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_slide_in_top = global::atheneum_app.Android.Resource.Animation.abc_slide_in_top;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_slide_out_bottom = global::atheneum_app.Android.Resource.Animation.abc_slide_out_bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_slide_out_top = global::atheneum_app.Android.Resource.Animation.abc_slide_out_top;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_tooltip_enter = global::atheneum_app.Android.Resource.Animation.abc_tooltip_enter;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.abc_tooltip_exit = global::atheneum_app.Android.Resource.Animation.abc_tooltip_exit;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_bottom_sheet_slide_in = global::atheneum_app.Android.Resource.Animation.design_bottom_sheet_slide_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_bottom_sheet_slide_out = global::atheneum_app.Android.Resource.Animation.design_bottom_sheet_slide_out;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_snackbar_in = global::atheneum_app.Android.Resource.Animation.design_snackbar_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.design_snackbar_out = global::atheneum_app.Android.Resource.Animation.design_snackbar_out;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.EnterFromLeft = global::atheneum_app.Android.Resource.Animation.EnterFromLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.EnterFromRight = global::atheneum_app.Android.Resource.Animation.EnterFromRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.ExitToLeft = global::atheneum_app.Android.Resource.Animation.ExitToLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Animation.ExitToRight = global::atheneum_app.Android.Resource.Animation.ExitToRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.design_appbar_state_list_animator = global::atheneum_app.Android.Resource.Animator.design_appbar_state_list_animator;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.design_fab_hide_motion_spec = global::atheneum_app.Android.Resource.Animator.design_fab_hide_motion_spec;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.design_fab_show_motion_spec = global::atheneum_app.Android.Resource.Animator.design_fab_show_motion_spec;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_btn_state_list_anim = global::atheneum_app.Android.Resource.Animator.mtrl_btn_state_list_anim;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::atheneum_app.Android.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_chip_state_list_anim = global::atheneum_app.Android.Resource.Animator.mtrl_chip_state_list_anim;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_fab_hide_motion_spec = global::atheneum_app.Android.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_fab_show_motion_spec = global::atheneum_app.Android.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::atheneum_app.Android.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::ZXing.Net.Mobile.Forms.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::atheneum_app.Android.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarDivider = global::atheneum_app.Android.Resource.Attribute.actionBarDivider;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarItemBackground = global::atheneum_app.Android.Resource.Attribute.actionBarItemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarPopupTheme = global::atheneum_app.Android.Resource.Attribute.actionBarPopupTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarSize = global::atheneum_app.Android.Resource.Attribute.actionBarSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarSplitStyle = global::atheneum_app.Android.Resource.Attribute.actionBarSplitStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarStyle = global::atheneum_app.Android.Resource.Attribute.actionBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarTabBarStyle = global::atheneum_app.Android.Resource.Attribute.actionBarTabBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarTabStyle = global::atheneum_app.Android.Resource.Attribute.actionBarTabStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarTabTextStyle = global::atheneum_app.Android.Resource.Attribute.actionBarTabTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarTheme = global::atheneum_app.Android.Resource.Attribute.actionBarTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionBarWidgetTheme = global::atheneum_app.Android.Resource.Attribute.actionBarWidgetTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionButtonStyle = global::atheneum_app.Android.Resource.Attribute.actionButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionDropDownStyle = global::atheneum_app.Android.Resource.Attribute.actionDropDownStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionLayout = global::atheneum_app.Android.Resource.Attribute.actionLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionMenuTextAppearance = global::atheneum_app.Android.Resource.Attribute.actionMenuTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionMenuTextColor = global::atheneum_app.Android.Resource.Attribute.actionMenuTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeBackground = global::atheneum_app.Android.Resource.Attribute.actionModeBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeCloseButtonStyle = global::atheneum_app.Android.Resource.Attribute.actionModeCloseButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeCloseDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeCloseDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeCopyDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeCopyDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeCutDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeCutDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeFindDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeFindDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModePasteDrawable = global::atheneum_app.Android.Resource.Attribute.actionModePasteDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModePopupWindowStyle = global::atheneum_app.Android.Resource.Attribute.actionModePopupWindowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeSelectAllDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeSelectAllDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeShareDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeShareDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeSplitBackground = global::atheneum_app.Android.Resource.Attribute.actionModeSplitBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeStyle = global::atheneum_app.Android.Resource.Attribute.actionModeStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionModeWebSearchDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeWebSearchDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionOverflowButtonStyle = global::atheneum_app.Android.Resource.Attribute.actionOverflowButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionOverflowMenuStyle = global::atheneum_app.Android.Resource.Attribute.actionOverflowMenuStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionProviderClass = global::atheneum_app.Android.Resource.Attribute.actionProviderClass;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.actionViewClass = global::atheneum_app.Android.Resource.Attribute.actionViewClass;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.activityChooserViewStyle = global::atheneum_app.Android.Resource.Attribute.activityChooserViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.alertDialogButtonGroupStyle = global::atheneum_app.Android.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.alertDialogCenterButtons = global::atheneum_app.Android.Resource.Attribute.alertDialogCenterButtons;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.alertDialogStyle = global::atheneum_app.Android.Resource.Attribute.alertDialogStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.alertDialogTheme = global::atheneum_app.Android.Resource.Attribute.alertDialogTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.allowStacking = global::atheneum_app.Android.Resource.Attribute.allowStacking;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.alpha = global::atheneum_app.Android.Resource.Attribute.alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.alphabeticModifiers = global::atheneum_app.Android.Resource.Attribute.alphabeticModifiers;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.arrowHeadLength = global::atheneum_app.Android.Resource.Attribute.arrowHeadLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.arrowShaftLength = global::atheneum_app.Android.Resource.Attribute.arrowShaftLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.autoCompleteTextViewStyle = global::atheneum_app.Android.Resource.Attribute.autoCompleteTextViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.autoSizeMaxTextSize = global::atheneum_app.Android.Resource.Attribute.autoSizeMaxTextSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.autoSizeMinTextSize = global::atheneum_app.Android.Resource.Attribute.autoSizeMinTextSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.autoSizePresetSizes = global::atheneum_app.Android.Resource.Attribute.autoSizePresetSizes;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.autoSizeStepGranularity = global::atheneum_app.Android.Resource.Attribute.autoSizeStepGranularity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.autoSizeTextType = global::atheneum_app.Android.Resource.Attribute.autoSizeTextType;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.background = global::atheneum_app.Android.Resource.Attribute.background;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.backgroundSplit = global::atheneum_app.Android.Resource.Attribute.backgroundSplit;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.backgroundStacked = global::atheneum_app.Android.Resource.Attribute.backgroundStacked;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.backgroundTint = global::atheneum_app.Android.Resource.Attribute.backgroundTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.backgroundTintMode = global::atheneum_app.Android.Resource.Attribute.backgroundTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.barLength = global::atheneum_app.Android.Resource.Attribute.barLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.behavior_autoHide = global::atheneum_app.Android.Resource.Attribute.behavior_autoHide;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.behavior_fitToContents = global::atheneum_app.Android.Resource.Attribute.behavior_fitToContents;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.behavior_hideable = global::atheneum_app.Android.Resource.Attribute.behavior_hideable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.behavior_overlapTop = global::atheneum_app.Android.Resource.Attribute.behavior_overlapTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.behavior_peekHeight = global::atheneum_app.Android.Resource.Attribute.behavior_peekHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.behavior_skipCollapsed = global::atheneum_app.Android.Resource.Attribute.behavior_skipCollapsed;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.borderlessButtonStyle = global::atheneum_app.Android.Resource.Attribute.borderlessButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.borderWidth = global::atheneum_app.Android.Resource.Attribute.borderWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.bottomAppBarStyle = global::atheneum_app.Android.Resource.Attribute.bottomAppBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.bottomNavigationStyle = global::atheneum_app.Android.Resource.Attribute.bottomNavigationStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.bottomSheetDialogTheme = global::atheneum_app.Android.Resource.Attribute.bottomSheetDialogTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.bottomSheetStyle = global::atheneum_app.Android.Resource.Attribute.bottomSheetStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxBackgroundColor = global::atheneum_app.Android.Resource.Attribute.boxBackgroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxBackgroundMode = global::atheneum_app.Android.Resource.Attribute.boxBackgroundMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxCollapsedPaddingTop = global::atheneum_app.Android.Resource.Attribute.boxCollapsedPaddingTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxCornerRadiusBottomEnd = global::atheneum_app.Android.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxCornerRadiusBottomStart = global::atheneum_app.Android.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxCornerRadiusTopEnd = global::atheneum_app.Android.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxCornerRadiusTopStart = global::atheneum_app.Android.Resource.Attribute.boxCornerRadiusTopStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxStrokeColor = global::atheneum_app.Android.Resource.Attribute.boxStrokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.boxStrokeWidth = global::atheneum_app.Android.Resource.Attribute.boxStrokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarNegativeButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarNeutralButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarPositiveButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonBarStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonCompat = global::atheneum_app.Android.Resource.Attribute.buttonCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonGravity = global::atheneum_app.Android.Resource.Attribute.buttonGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonIconDimen = global::atheneum_app.Android.Resource.Attribute.buttonIconDimen;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonPanelSideLayout = global::atheneum_app.Android.Resource.Attribute.buttonPanelSideLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonStyle = global::atheneum_app.Android.Resource.Attribute.buttonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonStyleSmall = global::atheneum_app.Android.Resource.Attribute.buttonStyleSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonTint = global::atheneum_app.Android.Resource.Attribute.buttonTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.buttonTintMode = global::atheneum_app.Android.Resource.Attribute.buttonTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardBackgroundColor = global::atheneum_app.Android.Resource.Attribute.cardBackgroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardCornerRadius = global::atheneum_app.Android.Resource.Attribute.cardCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardElevation = global::atheneum_app.Android.Resource.Attribute.cardElevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardMaxElevation = global::atheneum_app.Android.Resource.Attribute.cardMaxElevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardPreventCornerOverlap = global::atheneum_app.Android.Resource.Attribute.cardPreventCornerOverlap;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardUseCompatPadding = global::atheneum_app.Android.Resource.Attribute.cardUseCompatPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cardViewStyle = global::atheneum_app.Android.Resource.Attribute.cardViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.checkboxStyle = global::atheneum_app.Android.Resource.Attribute.checkboxStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.checkedChip = global::atheneum_app.Android.Resource.Attribute.checkedChip;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.checkedIcon = global::atheneum_app.Android.Resource.Attribute.checkedIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.checkedIconEnabled = global::atheneum_app.Android.Resource.Attribute.checkedIconEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.checkedIconVisible = global::atheneum_app.Android.Resource.Attribute.checkedIconVisible;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.checkedTextViewStyle = global::atheneum_app.Android.Resource.Attribute.checkedTextViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipBackgroundColor = global::atheneum_app.Android.Resource.Attribute.chipBackgroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipCornerRadius = global::atheneum_app.Android.Resource.Attribute.chipCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipEndPadding = global::atheneum_app.Android.Resource.Attribute.chipEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipGroupStyle = global::atheneum_app.Android.Resource.Attribute.chipGroupStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipIcon = global::atheneum_app.Android.Resource.Attribute.chipIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipIconEnabled = global::atheneum_app.Android.Resource.Attribute.chipIconEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipIconSize = global::atheneum_app.Android.Resource.Attribute.chipIconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipIconTint = global::atheneum_app.Android.Resource.Attribute.chipIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipIconVisible = global::atheneum_app.Android.Resource.Attribute.chipIconVisible;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipMinHeight = global::atheneum_app.Android.Resource.Attribute.chipMinHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipSpacing = global::atheneum_app.Android.Resource.Attribute.chipSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipSpacingHorizontal = global::atheneum_app.Android.Resource.Attribute.chipSpacingHorizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipSpacingVertical = global::atheneum_app.Android.Resource.Attribute.chipSpacingVertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipStandaloneStyle = global::atheneum_app.Android.Resource.Attribute.chipStandaloneStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipStartPadding = global::atheneum_app.Android.Resource.Attribute.chipStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipStrokeColor = global::atheneum_app.Android.Resource.Attribute.chipStrokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipStrokeWidth = global::atheneum_app.Android.Resource.Attribute.chipStrokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.chipStyle = global::atheneum_app.Android.Resource.Attribute.chipStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIcon = global::atheneum_app.Android.Resource.Attribute.closeIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIconEnabled = global::atheneum_app.Android.Resource.Attribute.closeIconEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIconEndPadding = global::atheneum_app.Android.Resource.Attribute.closeIconEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIconSize = global::atheneum_app.Android.Resource.Attribute.closeIconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIconStartPadding = global::atheneum_app.Android.Resource.Attribute.closeIconStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIconTint = global::atheneum_app.Android.Resource.Attribute.closeIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeIconVisible = global::atheneum_app.Android.Resource.Attribute.closeIconVisible;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.closeItemLayout = global::atheneum_app.Android.Resource.Attribute.closeItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.collapseContentDescription = global::atheneum_app.Android.Resource.Attribute.collapseContentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.collapsedTitleGravity = global::atheneum_app.Android.Resource.Attribute.collapsedTitleGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.collapsedTitleTextAppearance = global::atheneum_app.Android.Resource.Attribute.collapsedTitleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.collapseIcon = global::atheneum_app.Android.Resource.Attribute.collapseIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.color = global::atheneum_app.Android.Resource.Attribute.color;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorAccent = global::atheneum_app.Android.Resource.Attribute.colorAccent;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorBackgroundFloating = global::atheneum_app.Android.Resource.Attribute.colorBackgroundFloating;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorButtonNormal = global::atheneum_app.Android.Resource.Attribute.colorButtonNormal;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorControlActivated = global::atheneum_app.Android.Resource.Attribute.colorControlActivated;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorControlHighlight = global::atheneum_app.Android.Resource.Attribute.colorControlHighlight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorControlNormal = global::atheneum_app.Android.Resource.Attribute.colorControlNormal;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorError = global::atheneum_app.Android.Resource.Attribute.colorError;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorPrimary = global::atheneum_app.Android.Resource.Attribute.colorPrimary;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorPrimaryDark = global::atheneum_app.Android.Resource.Attribute.colorPrimaryDark;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorSecondary = global::atheneum_app.Android.Resource.Attribute.colorSecondary;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.colorSwitchThumbNormal = global::atheneum_app.Android.Resource.Attribute.colorSwitchThumbNormal;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.commitIcon = global::atheneum_app.Android.Resource.Attribute.commitIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentDescription = global::atheneum_app.Android.Resource.Attribute.contentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentInsetEnd = global::atheneum_app.Android.Resource.Attribute.contentInsetEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentInsetEndWithActions = global::atheneum_app.Android.Resource.Attribute.contentInsetEndWithActions;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentInsetLeft = global::atheneum_app.Android.Resource.Attribute.contentInsetLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentInsetRight = global::atheneum_app.Android.Resource.Attribute.contentInsetRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentInsetStart = global::atheneum_app.Android.Resource.Attribute.contentInsetStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentInsetStartWithNavigation = global::atheneum_app.Android.Resource.Attribute.contentInsetStartWithNavigation;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentPadding = global::atheneum_app.Android.Resource.Attribute.contentPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentPaddingBottom = global::atheneum_app.Android.Resource.Attribute.contentPaddingBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentPaddingLeft = global::atheneum_app.Android.Resource.Attribute.contentPaddingLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentPaddingRight = global::atheneum_app.Android.Resource.Attribute.contentPaddingRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentPaddingTop = global::atheneum_app.Android.Resource.Attribute.contentPaddingTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.contentScrim = global::atheneum_app.Android.Resource.Attribute.contentScrim;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.controlBackground = global::atheneum_app.Android.Resource.Attribute.controlBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.coordinatorLayoutStyle = global::atheneum_app.Android.Resource.Attribute.coordinatorLayoutStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.cornerRadius = global::atheneum_app.Android.Resource.Attribute.cornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.counterEnabled = global::atheneum_app.Android.Resource.Attribute.counterEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.counterMaxLength = global::atheneum_app.Android.Resource.Attribute.counterMaxLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.counterOverflowTextAppearance = global::atheneum_app.Android.Resource.Attribute.counterOverflowTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.counterTextAppearance = global::atheneum_app.Android.Resource.Attribute.counterTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.customNavigationLayout = global::atheneum_app.Android.Resource.Attribute.customNavigationLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.defaultQueryHint = global::atheneum_app.Android.Resource.Attribute.defaultQueryHint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dialogCornerRadius = global::atheneum_app.Android.Resource.Attribute.dialogCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dialogPreferredPadding = global::atheneum_app.Android.Resource.Attribute.dialogPreferredPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dialogTheme = global::atheneum_app.Android.Resource.Attribute.dialogTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.displayOptions = global::atheneum_app.Android.Resource.Attribute.displayOptions;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.divider = global::atheneum_app.Android.Resource.Attribute.divider;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dividerHorizontal = global::atheneum_app.Android.Resource.Attribute.dividerHorizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dividerPadding = global::atheneum_app.Android.Resource.Attribute.dividerPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dividerVertical = global::atheneum_app.Android.Resource.Attribute.dividerVertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableBottomCompat = global::atheneum_app.Android.Resource.Attribute.drawableBottomCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableEndCompat = global::atheneum_app.Android.Resource.Attribute.drawableEndCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableLeftCompat = global::atheneum_app.Android.Resource.Attribute.drawableLeftCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableRightCompat = global::atheneum_app.Android.Resource.Attribute.drawableRightCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableSize = global::atheneum_app.Android.Resource.Attribute.drawableSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableStartCompat = global::atheneum_app.Android.Resource.Attribute.drawableStartCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableTint = global::atheneum_app.Android.Resource.Attribute.drawableTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableTintMode = global::atheneum_app.Android.Resource.Attribute.drawableTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawableTopCompat = global::atheneum_app.Android.Resource.Attribute.drawableTopCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.drawerArrowStyle = global::atheneum_app.Android.Resource.Attribute.drawerArrowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dropdownListPreferredItemHeight = global::atheneum_app.Android.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.dropDownListViewStyle = global::atheneum_app.Android.Resource.Attribute.dropDownListViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.editTextBackground = global::atheneum_app.Android.Resource.Attribute.editTextBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.editTextColor = global::atheneum_app.Android.Resource.Attribute.editTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.editTextStyle = global::atheneum_app.Android.Resource.Attribute.editTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.elevation = global::atheneum_app.Android.Resource.Attribute.elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.enforceMaterialTheme = global::atheneum_app.Android.Resource.Attribute.enforceMaterialTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.enforceTextAppearance = global::atheneum_app.Android.Resource.Attribute.enforceTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.errorEnabled = global::atheneum_app.Android.Resource.Attribute.errorEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.errorTextAppearance = global::atheneum_app.Android.Resource.Attribute.errorTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandActivityOverflowButtonDrawable = global::atheneum_app.Android.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expanded = global::atheneum_app.Android.Resource.Attribute.expanded;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleGravity = global::atheneum_app.Android.Resource.Attribute.expandedTitleGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleMargin = global::atheneum_app.Android.Resource.Attribute.expandedTitleMargin;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleMarginBottom = global::atheneum_app.Android.Resource.Attribute.expandedTitleMarginBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleMarginEnd = global::atheneum_app.Android.Resource.Attribute.expandedTitleMarginEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleMarginStart = global::atheneum_app.Android.Resource.Attribute.expandedTitleMarginStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleMarginTop = global::atheneum_app.Android.Resource.Attribute.expandedTitleMarginTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.expandedTitleTextAppearance = global::atheneum_app.Android.Resource.Attribute.expandedTitleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fabAlignmentMode = global::atheneum_app.Android.Resource.Attribute.fabAlignmentMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fabCradleMargin = global::atheneum_app.Android.Resource.Attribute.fabCradleMargin;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fabCradleRoundedCornerRadius = global::atheneum_app.Android.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fabCradleVerticalOffset = global::atheneum_app.Android.Resource.Attribute.fabCradleVerticalOffset;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fabCustomSize = global::atheneum_app.Android.Resource.Attribute.fabCustomSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fabSize = global::atheneum_app.Android.Resource.Attribute.fabSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fastScrollEnabled = global::atheneum_app.Android.Resource.Attribute.fastScrollEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::atheneum_app.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::atheneum_app.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fastScrollVerticalThumbDrawable = global::atheneum_app.Android.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fastScrollVerticalTrackDrawable = global::atheneum_app.Android.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.firstBaselineToTopHeight = global::atheneum_app.Android.Resource.Attribute.firstBaselineToTopHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.floatingActionButtonStyle = global::atheneum_app.Android.Resource.Attribute.floatingActionButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.font = global::atheneum_app.Android.Resource.Attribute.font;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontFamily = global::atheneum_app.Android.Resource.Attribute.fontFamily;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontProviderAuthority = global::atheneum_app.Android.Resource.Attribute.fontProviderAuthority;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontProviderCerts = global::atheneum_app.Android.Resource.Attribute.fontProviderCerts;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontProviderFetchStrategy = global::atheneum_app.Android.Resource.Attribute.fontProviderFetchStrategy;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontProviderFetchTimeout = global::atheneum_app.Android.Resource.Attribute.fontProviderFetchTimeout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontProviderPackage = global::atheneum_app.Android.Resource.Attribute.fontProviderPackage;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontProviderQuery = global::atheneum_app.Android.Resource.Attribute.fontProviderQuery;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontStyle = global::atheneum_app.Android.Resource.Attribute.fontStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontVariationSettings = global::atheneum_app.Android.Resource.Attribute.fontVariationSettings;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.fontWeight = global::atheneum_app.Android.Resource.Attribute.fontWeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.foregroundInsidePadding = global::atheneum_app.Android.Resource.Attribute.foregroundInsidePadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.gapBetweenBars = global::atheneum_app.Android.Resource.Attribute.gapBetweenBars;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.goIcon = global::atheneum_app.Android.Resource.Attribute.goIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.headerLayout = global::atheneum_app.Android.Resource.Attribute.headerLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.height = global::atheneum_app.Android.Resource.Attribute.height;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.helperText = global::atheneum_app.Android.Resource.Attribute.helperText;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.helperTextEnabled = global::atheneum_app.Android.Resource.Attribute.helperTextEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.helperTextTextAppearance = global::atheneum_app.Android.Resource.Attribute.helperTextTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hideMotionSpec = global::atheneum_app.Android.Resource.Attribute.hideMotionSpec;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hideOnContentScroll = global::atheneum_app.Android.Resource.Attribute.hideOnContentScroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hideOnScroll = global::atheneum_app.Android.Resource.Attribute.hideOnScroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hintAnimationEnabled = global::atheneum_app.Android.Resource.Attribute.hintAnimationEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hintEnabled = global::atheneum_app.Android.Resource.Attribute.hintEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hintTextAppearance = global::atheneum_app.Android.Resource.Attribute.hintTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.homeAsUpIndicator = global::atheneum_app.Android.Resource.Attribute.homeAsUpIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.homeLayout = global::atheneum_app.Android.Resource.Attribute.homeLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.hoveredFocusedTranslationZ = global::atheneum_app.Android.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.icon = global::atheneum_app.Android.Resource.Attribute.icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconEndPadding = global::atheneum_app.Android.Resource.Attribute.iconEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconGravity = global::atheneum_app.Android.Resource.Attribute.iconGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconifiedByDefault = global::atheneum_app.Android.Resource.Attribute.iconifiedByDefault;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconPadding = global::atheneum_app.Android.Resource.Attribute.iconPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconSize = global::atheneum_app.Android.Resource.Attribute.iconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconStartPadding = global::atheneum_app.Android.Resource.Attribute.iconStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconTint = global::atheneum_app.Android.Resource.Attribute.iconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.iconTintMode = global::atheneum_app.Android.Resource.Attribute.iconTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.imageButtonStyle = global::atheneum_app.Android.Resource.Attribute.imageButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.indeterminateProgressStyle = global::atheneum_app.Android.Resource.Attribute.indeterminateProgressStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.initialActivityCount = global::atheneum_app.Android.Resource.Attribute.initialActivityCount;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.insetForeground = global::atheneum_app.Android.Resource.Attribute.insetForeground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.isLightTheme = global::atheneum_app.Android.Resource.Attribute.isLightTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemBackground = global::atheneum_app.Android.Resource.Attribute.itemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemHorizontalPadding = global::atheneum_app.Android.Resource.Attribute.itemHorizontalPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemHorizontalTranslationEnabled = global::atheneum_app.Android.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemIconPadding = global::atheneum_app.Android.Resource.Attribute.itemIconPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemIconSize = global::atheneum_app.Android.Resource.Attribute.itemIconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemIconTint = global::atheneum_app.Android.Resource.Attribute.itemIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemPadding = global::atheneum_app.Android.Resource.Attribute.itemPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemSpacing = global::atheneum_app.Android.Resource.Attribute.itemSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemTextAppearance = global::atheneum_app.Android.Resource.Attribute.itemTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemTextAppearanceActive = global::atheneum_app.Android.Resource.Attribute.itemTextAppearanceActive;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemTextAppearanceInactive = global::atheneum_app.Android.Resource.Attribute.itemTextAppearanceInactive;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.itemTextColor = global::atheneum_app.Android.Resource.Attribute.itemTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.keylines = global::atheneum_app.Android.Resource.Attribute.keylines;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.labelVisibilityMode = global::atheneum_app.Android.Resource.Attribute.labelVisibilityMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.lastBaselineToBottomHeight = global::atheneum_app.Android.Resource.Attribute.lastBaselineToBottomHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout = global::atheneum_app.Android.Resource.Attribute.layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layoutManager = global::atheneum_app.Android.Resource.Attribute.layoutManager;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_anchor = global::atheneum_app.Android.Resource.Attribute.layout_anchor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_anchorGravity = global::atheneum_app.Android.Resource.Attribute.layout_anchorGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_behavior = global::atheneum_app.Android.Resource.Attribute.layout_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_collapseMode = global::atheneum_app.Android.Resource.Attribute.layout_collapseMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_collapseParallaxMultiplier = global::atheneum_app.Android.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_dodgeInsetEdges = global::atheneum_app.Android.Resource.Attribute.layout_dodgeInsetEdges;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_insetEdge = global::atheneum_app.Android.Resource.Attribute.layout_insetEdge;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_keyline = global::atheneum_app.Android.Resource.Attribute.layout_keyline;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_scrollFlags = global::atheneum_app.Android.Resource.Attribute.layout_scrollFlags;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.layout_scrollInterpolator = global::atheneum_app.Android.Resource.Attribute.layout_scrollInterpolator;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.liftOnScroll = global::atheneum_app.Android.Resource.Attribute.liftOnScroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.lineHeight = global::atheneum_app.Android.Resource.Attribute.lineHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.lineSpacing = global::atheneum_app.Android.Resource.Attribute.lineSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listChoiceBackgroundIndicator = global::atheneum_app.Android.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::atheneum_app.Android.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::atheneum_app.Android.Resource.Attribute.listChoiceIndicatorSingleAnimated;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listDividerAlertDialog = global::atheneum_app.Android.Resource.Attribute.listDividerAlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listItemLayout = global::atheneum_app.Android.Resource.Attribute.listItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listLayout = global::atheneum_app.Android.Resource.Attribute.listLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listMenuViewStyle = global::atheneum_app.Android.Resource.Attribute.listMenuViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPopupWindowStyle = global::atheneum_app.Android.Resource.Attribute.listPopupWindowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemHeight = global::atheneum_app.Android.Resource.Attribute.listPreferredItemHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemHeightLarge = global::atheneum_app.Android.Resource.Attribute.listPreferredItemHeightLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemHeightSmall = global::atheneum_app.Android.Resource.Attribute.listPreferredItemHeightSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingEnd = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingLeft = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingRight = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.listPreferredItemPaddingStart = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.logo = global::atheneum_app.Android.Resource.Attribute.logo;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.logoDescription = global::atheneum_app.Android.Resource.Attribute.logoDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.materialButtonStyle = global::atheneum_app.Android.Resource.Attribute.materialButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.materialCardViewStyle = global::atheneum_app.Android.Resource.Attribute.materialCardViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.maxActionInlineWidth = global::atheneum_app.Android.Resource.Attribute.maxActionInlineWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.maxButtonHeight = global::atheneum_app.Android.Resource.Attribute.maxButtonHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.maxImageSize = global::atheneum_app.Android.Resource.Attribute.maxImageSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.measureWithLargestChild = global::atheneum_app.Android.Resource.Attribute.measureWithLargestChild;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.menu = global::atheneum_app.Android.Resource.Attribute.menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.multiChoiceItemLayout = global::atheneum_app.Android.Resource.Attribute.multiChoiceItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.navigationContentDescription = global::atheneum_app.Android.Resource.Attribute.navigationContentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.navigationIcon = global::atheneum_app.Android.Resource.Attribute.navigationIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.navigationMode = global::atheneum_app.Android.Resource.Attribute.navigationMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.navigationViewStyle = global::atheneum_app.Android.Resource.Attribute.navigationViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.numericModifiers = global::atheneum_app.Android.Resource.Attribute.numericModifiers;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.overlapAnchor = global::atheneum_app.Android.Resource.Attribute.overlapAnchor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.paddingBottomNoButtons = global::atheneum_app.Android.Resource.Attribute.paddingBottomNoButtons;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.paddingEnd = global::atheneum_app.Android.Resource.Attribute.paddingEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.paddingStart = global::atheneum_app.Android.Resource.Attribute.paddingStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.paddingTopNoTitle = global::atheneum_app.Android.Resource.Attribute.paddingTopNoTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.panelBackground = global::atheneum_app.Android.Resource.Attribute.panelBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.panelMenuListTheme = global::atheneum_app.Android.Resource.Attribute.panelMenuListTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.panelMenuListWidth = global::atheneum_app.Android.Resource.Attribute.panelMenuListWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.passwordToggleContentDescription = global::atheneum_app.Android.Resource.Attribute.passwordToggleContentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.passwordToggleDrawable = global::atheneum_app.Android.Resource.Attribute.passwordToggleDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.passwordToggleEnabled = global::atheneum_app.Android.Resource.Attribute.passwordToggleEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.passwordToggleTint = global::atheneum_app.Android.Resource.Attribute.passwordToggleTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.passwordToggleTintMode = global::atheneum_app.Android.Resource.Attribute.passwordToggleTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.popupMenuStyle = global::atheneum_app.Android.Resource.Attribute.popupMenuStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.popupTheme = global::atheneum_app.Android.Resource.Attribute.popupTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.popupWindowStyle = global::atheneum_app.Android.Resource.Attribute.popupWindowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.preserveIconSpacing = global::atheneum_app.Android.Resource.Attribute.preserveIconSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.pressedTranslationZ = global::atheneum_app.Android.Resource.Attribute.pressedTranslationZ;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.progressBarPadding = global::atheneum_app.Android.Resource.Attribute.progressBarPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.progressBarStyle = global::atheneum_app.Android.Resource.Attribute.progressBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.queryBackground = global::atheneum_app.Android.Resource.Attribute.queryBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.queryHint = global::atheneum_app.Android.Resource.Attribute.queryHint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.radioButtonStyle = global::atheneum_app.Android.Resource.Attribute.radioButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ratingBarStyle = global::atheneum_app.Android.Resource.Attribute.ratingBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ratingBarStyleIndicator = global::atheneum_app.Android.Resource.Attribute.ratingBarStyleIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ratingBarStyleSmall = global::atheneum_app.Android.Resource.Attribute.ratingBarStyleSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.recyclerViewStyle = global::atheneum_app.Android.Resource.Attribute.recyclerViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.reverseLayout = global::atheneum_app.Android.Resource.Attribute.reverseLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.rippleColor = global::atheneum_app.Android.Resource.Attribute.rippleColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.scrimAnimationDuration = global::atheneum_app.Android.Resource.Attribute.scrimAnimationDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.scrimBackground = global::atheneum_app.Android.Resource.Attribute.scrimBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.scrimVisibleHeightTrigger = global::atheneum_app.Android.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.searchHintIcon = global::atheneum_app.Android.Resource.Attribute.searchHintIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.searchIcon = global::atheneum_app.Android.Resource.Attribute.searchIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.searchViewStyle = global::atheneum_app.Android.Resource.Attribute.searchViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.seekBarStyle = global::atheneum_app.Android.Resource.Attribute.seekBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.selectableItemBackground = global::atheneum_app.Android.Resource.Attribute.selectableItemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.selectableItemBackgroundBorderless = global::atheneum_app.Android.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.showAsAction = global::atheneum_app.Android.Resource.Attribute.showAsAction;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.showDividers = global::atheneum_app.Android.Resource.Attribute.showDividers;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.showMotionSpec = global::atheneum_app.Android.Resource.Attribute.showMotionSpec;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.showText = global::atheneum_app.Android.Resource.Attribute.showText;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.showTitle = global::atheneum_app.Android.Resource.Attribute.showTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.singleChoiceItemLayout = global::atheneum_app.Android.Resource.Attribute.singleChoiceItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.singleLine = global::atheneum_app.Android.Resource.Attribute.singleLine;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.singleSelection = global::atheneum_app.Android.Resource.Attribute.singleSelection;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.snackbarButtonStyle = global::atheneum_app.Android.Resource.Attribute.snackbarButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.snackbarStyle = global::atheneum_app.Android.Resource.Attribute.snackbarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.spanCount = global::atheneum_app.Android.Resource.Attribute.spanCount;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.spinBars = global::atheneum_app.Android.Resource.Attribute.spinBars;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.spinnerDropDownItemStyle = global::atheneum_app.Android.Resource.Attribute.spinnerDropDownItemStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.spinnerStyle = global::atheneum_app.Android.Resource.Attribute.spinnerStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.splitTrack = global::atheneum_app.Android.Resource.Attribute.splitTrack;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.srcCompat = global::atheneum_app.Android.Resource.Attribute.srcCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.stackFromEnd = global::atheneum_app.Android.Resource.Attribute.stackFromEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.state_above_anchor = global::atheneum_app.Android.Resource.Attribute.state_above_anchor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.state_collapsed = global::atheneum_app.Android.Resource.Attribute.state_collapsed;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.state_collapsible = global::atheneum_app.Android.Resource.Attribute.state_collapsible;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.state_liftable = global::atheneum_app.Android.Resource.Attribute.state_liftable;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.state_lifted = global::atheneum_app.Android.Resource.Attribute.state_lifted;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.statusBarBackground = global::atheneum_app.Android.Resource.Attribute.statusBarBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.statusBarScrim = global::atheneum_app.Android.Resource.Attribute.statusBarScrim;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.strokeColor = global::atheneum_app.Android.Resource.Attribute.strokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.strokeWidth = global::atheneum_app.Android.Resource.Attribute.strokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.subMenuArrow = global::atheneum_app.Android.Resource.Attribute.subMenuArrow;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.submitBackground = global::atheneum_app.Android.Resource.Attribute.submitBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.subtitle = global::atheneum_app.Android.Resource.Attribute.subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.subtitleTextAppearance = global::atheneum_app.Android.Resource.Attribute.subtitleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.subtitleTextColor = global::atheneum_app.Android.Resource.Attribute.subtitleTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.subtitleTextStyle = global::atheneum_app.Android.Resource.Attribute.subtitleTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.suggestionRowLayout = global::atheneum_app.Android.Resource.Attribute.suggestionRowLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.switchMinWidth = global::atheneum_app.Android.Resource.Attribute.switchMinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.switchPadding = global::atheneum_app.Android.Resource.Attribute.switchPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.switchStyle = global::atheneum_app.Android.Resource.Attribute.switchStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.switchTextAppearance = global::atheneum_app.Android.Resource.Attribute.switchTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabBackground = global::atheneum_app.Android.Resource.Attribute.tabBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabContentStart = global::atheneum_app.Android.Resource.Attribute.tabContentStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabGravity = global::atheneum_app.Android.Resource.Attribute.tabGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIconTint = global::atheneum_app.Android.Resource.Attribute.tabIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIconTintMode = global::atheneum_app.Android.Resource.Attribute.tabIconTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIndicator = global::atheneum_app.Android.Resource.Attribute.tabIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIndicatorAnimationDuration = global::atheneum_app.Android.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIndicatorColor = global::atheneum_app.Android.Resource.Attribute.tabIndicatorColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIndicatorFullWidth = global::atheneum_app.Android.Resource.Attribute.tabIndicatorFullWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIndicatorGravity = global::atheneum_app.Android.Resource.Attribute.tabIndicatorGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabIndicatorHeight = global::atheneum_app.Android.Resource.Attribute.tabIndicatorHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabInlineLabel = global::atheneum_app.Android.Resource.Attribute.tabInlineLabel;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabMaxWidth = global::atheneum_app.Android.Resource.Attribute.tabMaxWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabMinWidth = global::atheneum_app.Android.Resource.Attribute.tabMinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabMode = global::atheneum_app.Android.Resource.Attribute.tabMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabPadding = global::atheneum_app.Android.Resource.Attribute.tabPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabPaddingBottom = global::atheneum_app.Android.Resource.Attribute.tabPaddingBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabPaddingEnd = global::atheneum_app.Android.Resource.Attribute.tabPaddingEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabPaddingStart = global::atheneum_app.Android.Resource.Attribute.tabPaddingStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabPaddingTop = global::atheneum_app.Android.Resource.Attribute.tabPaddingTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabRippleColor = global::atheneum_app.Android.Resource.Attribute.tabRippleColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabSelectedTextColor = global::atheneum_app.Android.Resource.Attribute.tabSelectedTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabStyle = global::atheneum_app.Android.Resource.Attribute.tabStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabTextAppearance = global::atheneum_app.Android.Resource.Attribute.tabTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabTextColor = global::atheneum_app.Android.Resource.Attribute.tabTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tabUnboundedRipple = global::atheneum_app.Android.Resource.Attribute.tabUnboundedRipple;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAllCaps = global::atheneum_app.Android.Resource.Attribute.textAllCaps;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceBody1 = global::atheneum_app.Android.Resource.Attribute.textAppearanceBody1;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceBody2 = global::atheneum_app.Android.Resource.Attribute.textAppearanceBody2;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceButton = global::atheneum_app.Android.Resource.Attribute.textAppearanceButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceCaption = global::atheneum_app.Android.Resource.Attribute.textAppearanceCaption;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceHeadline1 = global::atheneum_app.Android.Resource.Attribute.textAppearanceHeadline1;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceHeadline2 = global::atheneum_app.Android.Resource.Attribute.textAppearanceHeadline2;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceHeadline3 = global::atheneum_app.Android.Resource.Attribute.textAppearanceHeadline3;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceHeadline4 = global::atheneum_app.Android.Resource.Attribute.textAppearanceHeadline4;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceHeadline5 = global::atheneum_app.Android.Resource.Attribute.textAppearanceHeadline5;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceHeadline6 = global::atheneum_app.Android.Resource.Attribute.textAppearanceHeadline6;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceLargePopupMenu = global::atheneum_app.Android.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceListItem = global::atheneum_app.Android.Resource.Attribute.textAppearanceListItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceListItemSecondary = global::atheneum_app.Android.Resource.Attribute.textAppearanceListItemSecondary;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceListItemSmall = global::atheneum_app.Android.Resource.Attribute.textAppearanceListItemSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceOverline = global::atheneum_app.Android.Resource.Attribute.textAppearanceOverline;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearancePopupMenuHeader = global::atheneum_app.Android.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceSearchResultSubtitle = global::atheneum_app.Android.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceSearchResultTitle = global::atheneum_app.Android.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceSmallPopupMenu = global::atheneum_app.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceSubtitle1 = global::atheneum_app.Android.Resource.Attribute.textAppearanceSubtitle1;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textAppearanceSubtitle2 = global::atheneum_app.Android.Resource.Attribute.textAppearanceSubtitle2;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textColorAlertDialogListItem = global::atheneum_app.Android.Resource.Attribute.textColorAlertDialogListItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textColorSearchUrl = global::atheneum_app.Android.Resource.Attribute.textColorSearchUrl;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textEndPadding = global::atheneum_app.Android.Resource.Attribute.textEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textInputStyle = global::atheneum_app.Android.Resource.Attribute.textInputStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textLocale = global::atheneum_app.Android.Resource.Attribute.textLocale;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.textStartPadding = global::atheneum_app.Android.Resource.Attribute.textStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.theme = global::atheneum_app.Android.Resource.Attribute.theme;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.thickness = global::atheneum_app.Android.Resource.Attribute.thickness;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.thumbTextPadding = global::atheneum_app.Android.Resource.Attribute.thumbTextPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.thumbTint = global::atheneum_app.Android.Resource.Attribute.thumbTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.thumbTintMode = global::atheneum_app.Android.Resource.Attribute.thumbTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tickMark = global::atheneum_app.Android.Resource.Attribute.tickMark;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tickMarkTint = global::atheneum_app.Android.Resource.Attribute.tickMarkTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tickMarkTintMode = global::atheneum_app.Android.Resource.Attribute.tickMarkTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tint = global::atheneum_app.Android.Resource.Attribute.tint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tintMode = global::atheneum_app.Android.Resource.Attribute.tintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.title = global::atheneum_app.Android.Resource.Attribute.title;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleEnabled = global::atheneum_app.Android.Resource.Attribute.titleEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleMargin = global::atheneum_app.Android.Resource.Attribute.titleMargin;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleMarginBottom = global::atheneum_app.Android.Resource.Attribute.titleMarginBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleMarginEnd = global::atheneum_app.Android.Resource.Attribute.titleMarginEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleMargins = global::atheneum_app.Android.Resource.Attribute.titleMargins;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleMarginStart = global::atheneum_app.Android.Resource.Attribute.titleMarginStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleMarginTop = global::atheneum_app.Android.Resource.Attribute.titleMarginTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleTextAppearance = global::atheneum_app.Android.Resource.Attribute.titleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleTextColor = global::atheneum_app.Android.Resource.Attribute.titleTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.titleTextStyle = global::atheneum_app.Android.Resource.Attribute.titleTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.toolbarId = global::atheneum_app.Android.Resource.Attribute.toolbarId;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.toolbarNavigationButtonStyle = global::atheneum_app.Android.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.toolbarStyle = global::atheneum_app.Android.Resource.Attribute.toolbarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tooltipForegroundColor = global::atheneum_app.Android.Resource.Attribute.tooltipForegroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tooltipFrameBackground = global::atheneum_app.Android.Resource.Attribute.tooltipFrameBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.tooltipText = global::atheneum_app.Android.Resource.Attribute.tooltipText;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.track = global::atheneum_app.Android.Resource.Attribute.track;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.trackTint = global::atheneum_app.Android.Resource.Attribute.trackTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.trackTintMode = global::atheneum_app.Android.Resource.Attribute.trackTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.ttcIndex = global::atheneum_app.Android.Resource.Attribute.ttcIndex;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.useCompatPadding = global::atheneum_app.Android.Resource.Attribute.useCompatPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.viewInflaterClass = global::atheneum_app.Android.Resource.Attribute.viewInflaterClass;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.voiceIcon = global::atheneum_app.Android.Resource.Attribute.voiceIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowActionBar = global::atheneum_app.Android.Resource.Attribute.windowActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowActionBarOverlay = global::atheneum_app.Android.Resource.Attribute.windowActionBarOverlay;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowActionModeOverlay = global::atheneum_app.Android.Resource.Attribute.windowActionModeOverlay;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowFixedHeightMajor = global::atheneum_app.Android.Resource.Attribute.windowFixedHeightMajor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowFixedHeightMinor = global::atheneum_app.Android.Resource.Attribute.windowFixedHeightMinor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowFixedWidthMajor = global::atheneum_app.Android.Resource.Attribute.windowFixedWidthMajor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowFixedWidthMinor = global::atheneum_app.Android.Resource.Attribute.windowFixedWidthMinor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowMinWidthMajor = global::atheneum_app.Android.Resource.Attribute.windowMinWidthMajor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowMinWidthMinor = global::atheneum_app.Android.Resource.Attribute.windowMinWidthMinor;
+			global::ZXing.Net.Mobile.Forms.Resource.Attribute.windowNoTitle = global::atheneum_app.Android.Resource.Attribute.windowNoTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Boolean.abc_action_bar_embed_tabs = global::atheneum_app.Android.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::ZXing.Net.Mobile.Forms.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::atheneum_app.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::ZXing.Net.Mobile.Forms.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::atheneum_app.Android.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_background_cache_hint_selector_material_dark = global::atheneum_app.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_background_cache_hint_selector_material_light = global::atheneum_app.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_btn_colored_borderless_text_material = global::atheneum_app.Android.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_btn_colored_text_material = global::atheneum_app.Android.Resource.Color.abc_btn_colored_text_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_color_highlight_material = global::atheneum_app.Android.Resource.Color.abc_color_highlight_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_hint_foreground_material_dark = global::atheneum_app.Android.Resource.Color.abc_hint_foreground_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_hint_foreground_material_light = global::atheneum_app.Android.Resource.Color.abc_hint_foreground_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_primary_text_disable_only_material_dark = global::atheneum_app.Android.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_primary_text_disable_only_material_light = global::atheneum_app.Android.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_primary_text_material_dark = global::atheneum_app.Android.Resource.Color.abc_primary_text_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_primary_text_material_light = global::atheneum_app.Android.Resource.Color.abc_primary_text_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_search_url_text = global::atheneum_app.Android.Resource.Color.abc_search_url_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_search_url_text_normal = global::atheneum_app.Android.Resource.Color.abc_search_url_text_normal;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_search_url_text_pressed = global::atheneum_app.Android.Resource.Color.abc_search_url_text_pressed;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_search_url_text_selected = global::atheneum_app.Android.Resource.Color.abc_search_url_text_selected;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_secondary_text_material_dark = global::atheneum_app.Android.Resource.Color.abc_secondary_text_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_secondary_text_material_light = global::atheneum_app.Android.Resource.Color.abc_secondary_text_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_tint_btn_checkable = global::atheneum_app.Android.Resource.Color.abc_tint_btn_checkable;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_tint_default = global::atheneum_app.Android.Resource.Color.abc_tint_default;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_tint_edittext = global::atheneum_app.Android.Resource.Color.abc_tint_edittext;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_tint_seek_thumb = global::atheneum_app.Android.Resource.Color.abc_tint_seek_thumb;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_tint_spinner = global::atheneum_app.Android.Resource.Color.abc_tint_spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.abc_tint_switch_track = global::atheneum_app.Android.Resource.Color.abc_tint_switch_track;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.accent_material_dark = global::atheneum_app.Android.Resource.Color.accent_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.accent_material_light = global::atheneum_app.Android.Resource.Color.accent_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.background_floating_material_dark = global::atheneum_app.Android.Resource.Color.background_floating_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.background_floating_material_light = global::atheneum_app.Android.Resource.Color.background_floating_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.background_material_dark = global::atheneum_app.Android.Resource.Color.background_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.background_material_light = global::atheneum_app.Android.Resource.Color.background_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.bright_foreground_disabled_material_dark = global::atheneum_app.Android.Resource.Color.bright_foreground_disabled_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.bright_foreground_disabled_material_light = global::atheneum_app.Android.Resource.Color.bright_foreground_disabled_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.bright_foreground_inverse_material_dark = global::atheneum_app.Android.Resource.Color.bright_foreground_inverse_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.bright_foreground_inverse_material_light = global::atheneum_app.Android.Resource.Color.bright_foreground_inverse_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.bright_foreground_material_dark = global::atheneum_app.Android.Resource.Color.bright_foreground_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.bright_foreground_material_light = global::atheneum_app.Android.Resource.Color.bright_foreground_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.browser_actions_bg_grey = global::atheneum_app.Android.Resource.Color.browser_actions_bg_grey;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.browser_actions_divider_color = global::atheneum_app.Android.Resource.Color.browser_actions_divider_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.browser_actions_text_color = global::atheneum_app.Android.Resource.Color.browser_actions_text_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.browser_actions_title_color = global::atheneum_app.Android.Resource.Color.browser_actions_title_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.button_material_dark = global::atheneum_app.Android.Resource.Color.button_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.button_material_light = global::atheneum_app.Android.Resource.Color.button_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.cardview_dark_background = global::atheneum_app.Android.Resource.Color.cardview_dark_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.cardview_light_background = global::atheneum_app.Android.Resource.Color.cardview_light_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.cardview_shadow_end_color = global::atheneum_app.Android.Resource.Color.cardview_shadow_end_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.cardview_shadow_start_color = global::atheneum_app.Android.Resource.Color.cardview_shadow_start_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_bottom_navigation_shadow_color = global::atheneum_app.Android.Resource.Color.design_bottom_navigation_shadow_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_default_color_primary = global::atheneum_app.Android.Resource.Color.design_default_color_primary;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_default_color_primary_dark = global::atheneum_app.Android.Resource.Color.design_default_color_primary_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_error = global::atheneum_app.Android.Resource.Color.design_error;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_shadow_end_color = global::atheneum_app.Android.Resource.Color.design_fab_shadow_end_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_shadow_mid_color = global::atheneum_app.Android.Resource.Color.design_fab_shadow_mid_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_shadow_start_color = global::atheneum_app.Android.Resource.Color.design_fab_shadow_start_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_stroke_end_inner_color = global::atheneum_app.Android.Resource.Color.design_fab_stroke_end_inner_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_stroke_end_outer_color = global::atheneum_app.Android.Resource.Color.design_fab_stroke_end_outer_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_stroke_top_inner_color = global::atheneum_app.Android.Resource.Color.design_fab_stroke_top_inner_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_fab_stroke_top_outer_color = global::atheneum_app.Android.Resource.Color.design_fab_stroke_top_outer_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.design_snackbar_background_color = global::atheneum_app.Android.Resource.Color.design_snackbar_background_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.dim_foreground_disabled_material_dark = global::atheneum_app.Android.Resource.Color.dim_foreground_disabled_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.dim_foreground_disabled_material_light = global::atheneum_app.Android.Resource.Color.dim_foreground_disabled_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.dim_foreground_material_dark = global::atheneum_app.Android.Resource.Color.dim_foreground_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.dim_foreground_material_light = global::atheneum_app.Android.Resource.Color.dim_foreground_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.error_color_material_dark = global::atheneum_app.Android.Resource.Color.error_color_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.error_color_material_light = global::atheneum_app.Android.Resource.Color.error_color_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.foreground_material_dark = global::atheneum_app.Android.Resource.Color.foreground_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.foreground_material_light = global::atheneum_app.Android.Resource.Color.foreground_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.highlighted_text_material_dark = global::atheneum_app.Android.Resource.Color.highlighted_text_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.highlighted_text_material_light = global::atheneum_app.Android.Resource.Color.highlighted_text_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_blue_grey_800 = global::atheneum_app.Android.Resource.Color.material_blue_grey_800;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_blue_grey_900 = global::atheneum_app.Android.Resource.Color.material_blue_grey_900;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_blue_grey_950 = global::atheneum_app.Android.Resource.Color.material_blue_grey_950;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_deep_teal_200 = global::atheneum_app.Android.Resource.Color.material_deep_teal_200;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_deep_teal_500 = global::atheneum_app.Android.Resource.Color.material_deep_teal_500;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_100 = global::atheneum_app.Android.Resource.Color.material_grey_100;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_300 = global::atheneum_app.Android.Resource.Color.material_grey_300;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_50 = global::atheneum_app.Android.Resource.Color.material_grey_50;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_600 = global::atheneum_app.Android.Resource.Color.material_grey_600;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_800 = global::atheneum_app.Android.Resource.Color.material_grey_800;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_850 = global::atheneum_app.Android.Resource.Color.material_grey_850;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.material_grey_900 = global::atheneum_app.Android.Resource.Color.material_grey_900;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::atheneum_app.Android.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_bottom_nav_item_tint = global::atheneum_app.Android.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_bg_color_selector = global::atheneum_app.Android.Resource.Color.mtrl_btn_bg_color_selector;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_ripple_color = global::atheneum_app.Android.Resource.Color.mtrl_btn_ripple_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_stroke_color_selector = global::atheneum_app.Android.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_text_btn_ripple_color = global::atheneum_app.Android.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_text_color_disabled = global::atheneum_app.Android.Resource.Color.mtrl_btn_text_color_disabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_text_color_selector = global::atheneum_app.Android.Resource.Color.mtrl_btn_text_color_selector;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_btn_transparent_bg_color = global::atheneum_app.Android.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_chip_background_color = global::atheneum_app.Android.Resource.Color.mtrl_chip_background_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_chip_close_icon_tint = global::atheneum_app.Android.Resource.Color.mtrl_chip_close_icon_tint;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_chip_text_color = global::atheneum_app.Android.Resource.Color.mtrl_chip_text_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_fab_ripple_color = global::atheneum_app.Android.Resource.Color.mtrl_fab_ripple_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_scrim_color = global::atheneum_app.Android.Resource.Color.mtrl_scrim_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_tabs_colored_ripple_color = global::atheneum_app.Android.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_tabs_icon_color_selector = global::atheneum_app.Android.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::atheneum_app.Android.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::atheneum_app.Android.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_tabs_ripple_color = global::atheneum_app.Android.Resource.Color.mtrl_tabs_ripple_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_textinput_default_box_stroke_color = global::atheneum_app.Android.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_textinput_disabled_color = global::atheneum_app.Android.Resource.Color.mtrl_textinput_disabled_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::atheneum_app.Android.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::atheneum_app.Android.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.mtrl_text_btn_text_color_selector = global::atheneum_app.Android.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.notification_action_color_filter = global::atheneum_app.Android.Resource.Color.notification_action_color_filter;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.notification_icon_bg_color = global::atheneum_app.Android.Resource.Color.notification_icon_bg_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.notification_material_background_media_default_color = global::atheneum_app.Android.Resource.Color.notification_material_background_media_default_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_dark_material_dark = global::atheneum_app.Android.Resource.Color.primary_dark_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_dark_material_light = global::atheneum_app.Android.Resource.Color.primary_dark_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_material_dark = global::atheneum_app.Android.Resource.Color.primary_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_material_light = global::atheneum_app.Android.Resource.Color.primary_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_text_default_material_dark = global::atheneum_app.Android.Resource.Color.primary_text_default_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_text_default_material_light = global::atheneum_app.Android.Resource.Color.primary_text_default_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_text_disabled_material_dark = global::atheneum_app.Android.Resource.Color.primary_text_disabled_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.primary_text_disabled_material_light = global::atheneum_app.Android.Resource.Color.primary_text_disabled_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.ripple_material_dark = global::atheneum_app.Android.Resource.Color.ripple_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.ripple_material_light = global::atheneum_app.Android.Resource.Color.ripple_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.secondary_text_default_material_dark = global::atheneum_app.Android.Resource.Color.secondary_text_default_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.secondary_text_default_material_light = global::atheneum_app.Android.Resource.Color.secondary_text_default_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.secondary_text_disabled_material_dark = global::atheneum_app.Android.Resource.Color.secondary_text_disabled_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.secondary_text_disabled_material_light = global::atheneum_app.Android.Resource.Color.secondary_text_disabled_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.switch_thumb_disabled_material_dark = global::atheneum_app.Android.Resource.Color.switch_thumb_disabled_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.switch_thumb_disabled_material_light = global::atheneum_app.Android.Resource.Color.switch_thumb_disabled_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.switch_thumb_material_dark = global::atheneum_app.Android.Resource.Color.switch_thumb_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.switch_thumb_material_light = global::atheneum_app.Android.Resource.Color.switch_thumb_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.switch_thumb_normal_material_dark = global::atheneum_app.Android.Resource.Color.switch_thumb_normal_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.switch_thumb_normal_material_light = global::atheneum_app.Android.Resource.Color.switch_thumb_normal_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.tooltip_background_dark = global::atheneum_app.Android.Resource.Color.tooltip_background_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Color.tooltip_background_light = global::atheneum_app.Android.Resource.Color.tooltip_background_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_content_inset_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_default_height_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_default_height_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_default_padding_end_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_default_padding_start_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_elevation_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_elevation_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_stacked_max_height = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_button_min_height_material = global::atheneum_app.Android.Resource.Dimension.abc_action_button_min_height_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_button_min_width_material = global::atheneum_app.Android.Resource.Dimension.abc_action_button_min_width_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_action_button_min_width_overflow_material = global::atheneum_app.Android.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_alert_dialog_button_bar_height = global::atheneum_app.Android.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_alert_dialog_button_dimen = global::atheneum_app.Android.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_button_inset_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_button_inset_vertical_material = global::atheneum_app.Android.Resource.Dimension.abc_button_inset_vertical_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_button_padding_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_button_padding_vertical_material = global::atheneum_app.Android.Resource.Dimension.abc_button_padding_vertical_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::atheneum_app.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_config_prefDialogWidth = global::atheneum_app.Android.Resource.Dimension.abc_config_prefDialogWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_control_corner_material = global::atheneum_app.Android.Resource.Dimension.abc_control_corner_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_control_inset_material = global::atheneum_app.Android.Resource.Dimension.abc_control_inset_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_control_padding_material = global::atheneum_app.Android.Resource.Dimension.abc_control_padding_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_corner_radius_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_fixed_height_major = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_fixed_height_minor = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_fixed_width_major = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_fixed_width_minor = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::atheneum_app.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::atheneum_app.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_min_width_major = global::atheneum_app.Android.Resource.Dimension.abc_dialog_min_width_major;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_min_width_minor = global::atheneum_app.Android.Resource.Dimension.abc_dialog_min_width_minor;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_padding_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_padding_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_padding_top_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_padding_top_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dialog_title_divider_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_title_divider_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_disabled_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_disabled_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dropdownitem_icon_width = global::atheneum_app.Android.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dropdownitem_text_padding_left = global::atheneum_app.Android.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_dropdownitem_text_padding_right = global::atheneum_app.Android.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_edit_text_inset_bottom_material = global::atheneum_app.Android.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_edit_text_inset_top_material = global::atheneum_app.Android.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_floating_window_z = global::atheneum_app.Android.Resource.Dimension.abc_floating_window_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_height_large_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_height_large_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_height_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_height_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_height_small_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_height_small_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_list_item_padding_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_panel_menu_list_width = global::atheneum_app.Android.Resource.Dimension.abc_panel_menu_list_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_progress_bar_height_material = global::atheneum_app.Android.Resource.Dimension.abc_progress_bar_height_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_search_view_preferred_height = global::atheneum_app.Android.Resource.Dimension.abc_search_view_preferred_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_search_view_preferred_width = global::atheneum_app.Android.Resource.Dimension.abc_search_view_preferred_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_seekbar_track_background_height_material = global::atheneum_app.Android.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_seekbar_track_progress_height_material = global::atheneum_app.Android.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_select_dialog_padding_start_material = global::atheneum_app.Android.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_switch_padding = global::atheneum_app.Android.Resource.Dimension.abc_switch_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_body_1_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_body_1_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_body_2_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_body_2_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_button_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_button_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_caption_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_caption_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_display_1_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_1_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_display_2_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_2_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_display_3_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_3_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_display_4_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_4_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_headline_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_headline_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_large_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_large_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_medium_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_medium_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_menu_header_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_menu_header_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_menu_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_menu_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_small_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_small_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_subhead_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_subhead_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::atheneum_app.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_title_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_title_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.abc_text_size_title_material_toolbar = global::atheneum_app.Android.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.browser_actions_context_menu_max_width = global::atheneum_app.Android.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.browser_actions_context_menu_min_padding = global::atheneum_app.Android.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.cardview_compat_inset_shadow = global::atheneum_app.Android.Resource.Dimension.cardview_compat_inset_shadow;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.cardview_default_elevation = global::atheneum_app.Android.Resource.Dimension.cardview_default_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.cardview_default_radius = global::atheneum_app.Android.Resource.Dimension.cardview_default_radius;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_button_inset_horizontal_material = global::atheneum_app.Android.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_button_inset_vertical_material = global::atheneum_app.Android.Resource.Dimension.compat_button_inset_vertical_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_button_padding_horizontal_material = global::atheneum_app.Android.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_button_padding_vertical_material = global::atheneum_app.Android.Resource.Dimension.compat_button_padding_vertical_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_control_corner_material = global::atheneum_app.Android.Resource.Dimension.compat_control_corner_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_notification_large_icon_max_height = global::atheneum_app.Android.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.compat_notification_large_icon_max_width = global::atheneum_app.Android.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_appbar_elevation = global::atheneum_app.Android.Resource.Dimension.design_appbar_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_active_text_size = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_elevation = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_height = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_icon_size = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_item_max_width = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_item_min_width = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_margin = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_shadow_height = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_navigation_text_size = global::atheneum_app.Android.Resource.Dimension.design_bottom_navigation_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_sheet_modal_elevation = global::atheneum_app.Android.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_bottom_sheet_peek_height_min = global::atheneum_app.Android.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_border_width = global::atheneum_app.Android.Resource.Dimension.design_fab_border_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_elevation = global::atheneum_app.Android.Resource.Dimension.design_fab_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_image_size = global::atheneum_app.Android.Resource.Dimension.design_fab_image_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_size_mini = global::atheneum_app.Android.Resource.Dimension.design_fab_size_mini;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_size_normal = global::atheneum_app.Android.Resource.Dimension.design_fab_size_normal;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_translation_z_hovered_focused = global::atheneum_app.Android.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_fab_translation_z_pressed = global::atheneum_app.Android.Resource.Dimension.design_fab_translation_z_pressed;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_elevation = global::atheneum_app.Android.Resource.Dimension.design_navigation_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_icon_padding = global::atheneum_app.Android.Resource.Dimension.design_navigation_icon_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_icon_size = global::atheneum_app.Android.Resource.Dimension.design_navigation_icon_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_item_horizontal_padding = global::atheneum_app.Android.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_item_icon_padding = global::atheneum_app.Android.Resource.Dimension.design_navigation_item_icon_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_max_width = global::atheneum_app.Android.Resource.Dimension.design_navigation_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_padding_bottom = global::atheneum_app.Android.Resource.Dimension.design_navigation_padding_bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_navigation_separator_vertical_padding = global::atheneum_app.Android.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_action_inline_max_width = global::atheneum_app.Android.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_background_corner_radius = global::atheneum_app.Android.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_elevation = global::atheneum_app.Android.Resource.Dimension.design_snackbar_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::atheneum_app.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_max_width = global::atheneum_app.Android.Resource.Dimension.design_snackbar_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_min_width = global::atheneum_app.Android.Resource.Dimension.design_snackbar_min_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_padding_horizontal = global::atheneum_app.Android.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_padding_vertical = global::atheneum_app.Android.Resource.Dimension.design_snackbar_padding_vertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::atheneum_app.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_snackbar_text_size = global::atheneum_app.Android.Resource.Dimension.design_snackbar_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_tab_max_width = global::atheneum_app.Android.Resource.Dimension.design_tab_max_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_tab_scrollable_min_width = global::atheneum_app.Android.Resource.Dimension.design_tab_scrollable_min_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_tab_text_size = global::atheneum_app.Android.Resource.Dimension.design_tab_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_tab_text_size_2line = global::atheneum_app.Android.Resource.Dimension.design_tab_text_size_2line;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.design_textinput_caption_translate_y = global::atheneum_app.Android.Resource.Dimension.design_textinput_caption_translate_y;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.disabled_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.disabled_alpha_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.disabled_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.disabled_alpha_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.fastscroll_default_thickness = global::atheneum_app.Android.Resource.Dimension.fastscroll_default_thickness;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.fastscroll_margin = global::atheneum_app.Android.Resource.Dimension.fastscroll_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.fastscroll_minimum_range = global::atheneum_app.Android.Resource.Dimension.fastscroll_minimum_range;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.highlight_alpha_material_colored = global::atheneum_app.Android.Resource.Dimension.highlight_alpha_material_colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.highlight_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.highlight_alpha_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.highlight_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.highlight_alpha_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.hint_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.hint_alpha_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.hint_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.hint_alpha_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.hint_pressed_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.hint_pressed_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::atheneum_app.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::atheneum_app.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::atheneum_app.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::atheneum_app.Android.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::atheneum_app.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::atheneum_app.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::atheneum_app.Android.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_bottomappbar_height = global::atheneum_app.Android.Resource.Dimension.mtrl_bottomappbar_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_corner_radius = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_corner_radius;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_disabled_elevation = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_disabled_z = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_disabled_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_elevation = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_focused_z = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_focused_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_hovered_z = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_hovered_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_icon_padding = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_icon_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_inset = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_inset;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_letter_spacing = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_padding_bottom = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_padding_left = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_padding_left;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_padding_right = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_padding_right;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_padding_top = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_padding_top;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_pressed_z = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_pressed_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_stroke_size = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_stroke_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_text_size = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_btn_z = global::atheneum_app.Android.Resource.Dimension.mtrl_btn_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_card_elevation = global::atheneum_app.Android.Resource.Dimension.mtrl_card_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_card_spacing = global::atheneum_app.Android.Resource.Dimension.mtrl_card_spacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_chip_pressed_translation_z = global::atheneum_app.Android.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_chip_text_size = global::atheneum_app.Android.Resource.Dimension.mtrl_chip_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_fab_elevation = global::atheneum_app.Android.Resource.Dimension.mtrl_fab_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::atheneum_app.Android.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_fab_translation_z_pressed = global::atheneum_app.Android.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_navigation_elevation = global::atheneum_app.Android.Resource.Dimension.mtrl_navigation_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::atheneum_app.Android.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_navigation_item_icon_padding = global::atheneum_app.Android.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::atheneum_app.Android.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_snackbar_margin = global::atheneum_app.Android.Resource.Dimension.mtrl_snackbar_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::atheneum_app.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::atheneum_app.Android.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::atheneum_app.Android.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::atheneum_app.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::atheneum_app.Android.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::atheneum_app.Android.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.mtrl_toolbar_default_height = global::atheneum_app.Android.Resource.Dimension.mtrl_toolbar_default_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_action_icon_size = global::atheneum_app.Android.Resource.Dimension.notification_action_icon_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_action_text_size = global::atheneum_app.Android.Resource.Dimension.notification_action_text_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_big_circle_margin = global::atheneum_app.Android.Resource.Dimension.notification_big_circle_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_content_margin_start = global::atheneum_app.Android.Resource.Dimension.notification_content_margin_start;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_large_icon_height = global::atheneum_app.Android.Resource.Dimension.notification_large_icon_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_large_icon_width = global::atheneum_app.Android.Resource.Dimension.notification_large_icon_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_main_column_padding_top = global::atheneum_app.Android.Resource.Dimension.notification_main_column_padding_top;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_media_narrow_margin = global::atheneum_app.Android.Resource.Dimension.notification_media_narrow_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_right_icon_size = global::atheneum_app.Android.Resource.Dimension.notification_right_icon_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_right_side_padding_top = global::atheneum_app.Android.Resource.Dimension.notification_right_side_padding_top;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_small_icon_background_padding = global::atheneum_app.Android.Resource.Dimension.notification_small_icon_background_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_small_icon_size_as_large = global::atheneum_app.Android.Resource.Dimension.notification_small_icon_size_as_large;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_subtext_size = global::atheneum_app.Android.Resource.Dimension.notification_subtext_size;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_top_pad = global::atheneum_app.Android.Resource.Dimension.notification_top_pad;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.notification_top_pad_large_text = global::atheneum_app.Android.Resource.Dimension.notification_top_pad_large_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_corner_radius = global::atheneum_app.Android.Resource.Dimension.tooltip_corner_radius;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_horizontal_padding = global::atheneum_app.Android.Resource.Dimension.tooltip_horizontal_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_margin = global::atheneum_app.Android.Resource.Dimension.tooltip_margin;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::atheneum_app.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_precise_anchor_threshold = global::atheneum_app.Android.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_vertical_padding = global::atheneum_app.Android.Resource.Dimension.tooltip_vertical_padding;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_y_offset_non_touch = global::atheneum_app.Android.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::ZXing.Net.Mobile.Forms.Resource.Dimension.tooltip_y_offset_touch = global::atheneum_app.Android.Resource.Dimension.tooltip_y_offset_touch;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_action_bar_item_background_material = global::atheneum_app.Android.Resource.Drawable.abc_action_bar_item_background_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_borderless_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_borderless_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_material_anim = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_material_anim;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_colored_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_colored_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_default_mtrl_shape = global::atheneum_app.Android.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_material_anim = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_material_anim;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::atheneum_app.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::atheneum_app.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_cab_background_internal_bg = global::atheneum_app.Android.Resource.Drawable.abc_cab_background_internal_bg;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_cab_background_top_material = global::atheneum_app.Android.Resource.Drawable.abc_cab_background_top_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_control_background_material = global::atheneum_app.Android.Resource.Drawable.abc_control_background_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_dialog_material_background = global::atheneum_app.Android.Resource.Drawable.abc_dialog_material_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_edit_text_material = global::atheneum_app.Android.Resource.Drawable.abc_edit_text_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_ab_back_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_ab_back_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::atheneum_app.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_clear_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_clear_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_go_search_api_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_go_search_api_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_menu_overflow_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_search_api_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_search_api_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ic_voice_search_api_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_item_background_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_item_background_holo_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_item_background_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_item_background_holo_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_divider_material = global::atheneum_app.Android.Resource.Drawable.abc_list_divider_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_divider_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_focused_holo = global::atheneum_app.Android.Resource.Drawable.abc_list_focused_holo;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_longpressed_holo = global::atheneum_app.Android.Resource.Drawable.abc_list_longpressed_holo;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_pressed_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_pressed_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_pressed_holo_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_selector_disabled_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_selector_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_holo_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_list_selector_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_holo_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::atheneum_app.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_popup_background_mtrl_mult = global::atheneum_app.Android.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ratingbar_indicator_material = global::atheneum_app.Android.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ratingbar_material = global::atheneum_app.Android.Resource.Drawable.abc_ratingbar_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_ratingbar_small_material = global::atheneum_app.Android.Resource.Drawable.abc_ratingbar_small_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_seekbar_thumb_material = global::atheneum_app.Android.Resource.Drawable.abc_seekbar_thumb_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_seekbar_tick_mark_material = global::atheneum_app.Android.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_seekbar_track_material = global::atheneum_app.Android.Resource.Drawable.abc_seekbar_track_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::atheneum_app.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_spinner_textfield_background_material = global::atheneum_app.Android.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_switch_thumb_material = global::atheneum_app.Android.Resource.Drawable.abc_switch_thumb_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_switch_track_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_tab_indicator_material = global::atheneum_app.Android.Resource.Drawable.abc_tab_indicator_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_textfield_search_material = global::atheneum_app.Android.Resource.Drawable.abc_textfield_search_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_text_cursor_material = global::atheneum_app.Android.Resource.Drawable.abc_text_cursor_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.abc_vector_test = global::atheneum_app.Android.Resource.Drawable.abc_vector_test;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.avd_hide_password = global::atheneum_app.Android.Resource.Drawable.avd_hide_password;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.avd_show_password = global::atheneum_app.Android.Resource.Drawable.avd_show_password;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_checked_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_off_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_radio_off_mtrl;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_on_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_radio_on_mtrl;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_bottom_navigation_item_background = global::atheneum_app.Android.Resource.Drawable.design_bottom_navigation_item_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_fab_background = global::atheneum_app.Android.Resource.Drawable.design_fab_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_ic_visibility = global::atheneum_app.Android.Resource.Drawable.design_ic_visibility;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_ic_visibility_off = global::atheneum_app.Android.Resource.Drawable.design_ic_visibility_off;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_password_eye = global::atheneum_app.Android.Resource.Drawable.design_password_eye;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.design_snackbar_background = global::atheneum_app.Android.Resource.Drawable.design_snackbar_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.ic_mtrl_chip_checked_black = global::atheneum_app.Android.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.ic_mtrl_chip_checked_circle = global::atheneum_app.Android.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.ic_mtrl_chip_close_circle = global::atheneum_app.Android.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.mtrl_tabs_default_indicator = global::atheneum_app.Android.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.navigation_empty_icon = global::atheneum_app.Android.Resource.Drawable.navigation_empty_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_action_background = global::atheneum_app.Android.Resource.Drawable.notification_action_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_bg = global::atheneum_app.Android.Resource.Drawable.notification_bg;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_bg_low = global::atheneum_app.Android.Resource.Drawable.notification_bg_low;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_bg_low_normal = global::atheneum_app.Android.Resource.Drawable.notification_bg_low_normal;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_bg_low_pressed = global::atheneum_app.Android.Resource.Drawable.notification_bg_low_pressed;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_bg_normal = global::atheneum_app.Android.Resource.Drawable.notification_bg_normal;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_bg_normal_pressed = global::atheneum_app.Android.Resource.Drawable.notification_bg_normal_pressed;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_icon_background = global::atheneum_app.Android.Resource.Drawable.notification_icon_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_template_icon_bg = global::atheneum_app.Android.Resource.Drawable.notification_template_icon_bg;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_template_icon_low_bg = global::atheneum_app.Android.Resource.Drawable.notification_template_icon_low_bg;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notification_tile_bg = global::atheneum_app.Android.Resource.Drawable.notification_tile_bg;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.notify_panel_notification_icon_bg = global::atheneum_app.Android.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.tooltip_frame_dark = global::atheneum_app.Android.Resource.Drawable.tooltip_frame_dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Drawable.tooltip_frame_light = global::atheneum_app.Android.Resource.Drawable.tooltip_frame_light;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_action_clickable_span = global::atheneum_app.Android.Resource.Id.accessibility_action_clickable_span;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_0 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_0;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_1 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_1;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_10 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_10;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_11 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_11;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_12 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_12;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_13 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_13;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_14 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_14;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_15 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_15;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_16 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_16;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_17 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_17;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_18 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_18;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_19 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_19;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_2 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_2;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_20 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_20;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_21 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_21;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_22 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_22;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_23 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_23;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_24 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_24;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_25 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_25;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_26 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_26;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_27 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_27;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_28 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_28;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_29 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_29;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_3 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_3;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_30 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_30;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_31 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_31;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_4 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_4;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_5 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_5;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_6 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_6;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_7 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_7;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_8 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_8;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.accessibility_custom_action_9 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_9;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action0 = global::atheneum_app.Android.Resource.Id.action0;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.actions = global::atheneum_app.Android.Resource.Id.actions;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar = global::atheneum_app.Android.Resource.Id.action_bar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar_activity_content = global::atheneum_app.Android.Resource.Id.action_bar_activity_content;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar_container = global::atheneum_app.Android.Resource.Id.action_bar_container;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar_root = global::atheneum_app.Android.Resource.Id.action_bar_root;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar_spinner = global::atheneum_app.Android.Resource.Id.action_bar_spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar_subtitle = global::atheneum_app.Android.Resource.Id.action_bar_subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_bar_title = global::atheneum_app.Android.Resource.Id.action_bar_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_container = global::atheneum_app.Android.Resource.Id.action_container;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_context_bar = global::atheneum_app.Android.Resource.Id.action_context_bar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_divider = global::atheneum_app.Android.Resource.Id.action_divider;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_image = global::atheneum_app.Android.Resource.Id.action_image;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_menu_divider = global::atheneum_app.Android.Resource.Id.action_menu_divider;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_menu_presenter = global::atheneum_app.Android.Resource.Id.action_menu_presenter;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_mode_bar = global::atheneum_app.Android.Resource.Id.action_mode_bar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_mode_bar_stub = global::atheneum_app.Android.Resource.Id.action_mode_bar_stub;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_mode_close_button = global::atheneum_app.Android.Resource.Id.action_mode_close_button;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.action_text = global::atheneum_app.Android.Resource.Id.action_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.activity_chooser_view_content = global::atheneum_app.Android.Resource.Id.activity_chooser_view_content;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.add = global::atheneum_app.Android.Resource.Id.add;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.alertTitle = global::atheneum_app.Android.Resource.Id.alertTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.all = global::atheneum_app.Android.Resource.Id.all;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.ALT = global::atheneum_app.Android.Resource.Id.ALT;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.always = global::atheneum_app.Android.Resource.Id.always;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.async = global::atheneum_app.Android.Resource.Id.async;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.auto = global::atheneum_app.Android.Resource.Id.auto;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.beginning = global::atheneum_app.Android.Resource.Id.beginning;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.blocking = global::atheneum_app.Android.Resource.Id.blocking;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.bottom = global::atheneum_app.Android.Resource.Id.bottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.bottomtab_navarea = global::atheneum_app.Android.Resource.Id.bottomtab_navarea;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.bottomtab_tabbar = global::atheneum_app.Android.Resource.Id.bottomtab_tabbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.browser_actions_header_text = global::atheneum_app.Android.Resource.Id.browser_actions_header_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.browser_actions_menu_items = global::atheneum_app.Android.Resource.Id.browser_actions_menu_items;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.browser_actions_menu_item_icon = global::atheneum_app.Android.Resource.Id.browser_actions_menu_item_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.browser_actions_menu_item_text = global::atheneum_app.Android.Resource.Id.browser_actions_menu_item_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.browser_actions_menu_view = global::atheneum_app.Android.Resource.Id.browser_actions_menu_view;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.buttonPanel = global::atheneum_app.Android.Resource.Id.buttonPanel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.cancel_action = global::atheneum_app.Android.Resource.Id.cancel_action;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.center = global::atheneum_app.Android.Resource.Id.center;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.center_horizontal = global::atheneum_app.Android.Resource.Id.center_horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.center_vertical = global::atheneum_app.Android.Resource.Id.center_vertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.checkbox = global::atheneum_app.Android.Resource.Id.checkbox;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.@checked = global::atheneum_app.Android.Resource.Id.@checked;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.chronometer = global::atheneum_app.Android.Resource.Id.chronometer;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.clip_horizontal = global::atheneum_app.Android.Resource.Id.clip_horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.clip_vertical = global::atheneum_app.Android.Resource.Id.clip_vertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.collapseActionView = global::atheneum_app.Android.Resource.Id.collapseActionView;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.container = global::atheneum_app.Android.Resource.Id.container;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.content = global::atheneum_app.Android.Resource.Id.content;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.contentFrame = global::atheneum_app.Android.Resource.Id.contentFrame;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.contentPanel = global::atheneum_app.Android.Resource.Id.contentPanel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.coordinator = global::atheneum_app.Android.Resource.Id.coordinator;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.CTRL = global::atheneum_app.Android.Resource.Id.CTRL;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.custom = global::atheneum_app.Android.Resource.Id.custom;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.customPanel = global::atheneum_app.Android.Resource.Id.customPanel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.decor_content_parent = global::atheneum_app.Android.Resource.Id.decor_content_parent;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.default_activity_button = global::atheneum_app.Android.Resource.Id.default_activity_button;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.design_bottom_sheet = global::atheneum_app.Android.Resource.Id.design_bottom_sheet;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.design_menu_item_action_area = global::atheneum_app.Android.Resource.Id.design_menu_item_action_area;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.design_menu_item_action_area_stub = global::atheneum_app.Android.Resource.Id.design_menu_item_action_area_stub;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.design_menu_item_text = global::atheneum_app.Android.Resource.Id.design_menu_item_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.design_navigation_view = global::atheneum_app.Android.Resource.Id.design_navigation_view;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.dialog_button = global::atheneum_app.Android.Resource.Id.dialog_button;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.disableHome = global::atheneum_app.Android.Resource.Id.disableHome;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.edit_query = global::atheneum_app.Android.Resource.Id.edit_query;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.end = global::atheneum_app.Android.Resource.Id.end;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.end_padder = global::atheneum_app.Android.Resource.Id.end_padder;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.enterAlways = global::atheneum_app.Android.Resource.Id.enterAlways;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.enterAlwaysCollapsed = global::atheneum_app.Android.Resource.Id.enterAlwaysCollapsed;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.exitUntilCollapsed = global::atheneum_app.Android.Resource.Id.exitUntilCollapsed;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.expanded_menu = global::atheneum_app.Android.Resource.Id.expanded_menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.expand_activities_button = global::atheneum_app.Android.Resource.Id.expand_activities_button;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.fill = global::atheneum_app.Android.Resource.Id.fill;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.filled = global::atheneum_app.Android.Resource.Id.filled;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.fill_horizontal = global::atheneum_app.Android.Resource.Id.fill_horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.fill_vertical = global::atheneum_app.Android.Resource.Id.fill_vertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.@fixed = global::atheneum_app.Android.Resource.Id.@fixed;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.flyoutcontent_appbar = global::atheneum_app.Android.Resource.Id.flyoutcontent_appbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.forever = global::atheneum_app.Android.Resource.Id.forever;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.FUNCTION = global::atheneum_app.Android.Resource.Id.FUNCTION;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.ghost_view = global::atheneum_app.Android.Resource.Id.ghost_view;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.ghost_view_holder = global::atheneum_app.Android.Resource.Id.ghost_view_holder;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.group_divider = global::atheneum_app.Android.Resource.Id.group_divider;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.home = global::atheneum_app.Android.Resource.Id.home;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.homeAsUp = global::atheneum_app.Android.Resource.Id.homeAsUp;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.icon = global::atheneum_app.Android.Resource.Id.icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.icon_group = global::atheneum_app.Android.Resource.Id.icon_group;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.ifRoom = global::atheneum_app.Android.Resource.Id.ifRoom;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.image = global::atheneum_app.Android.Resource.Id.image;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.info = global::atheneum_app.Android.Resource.Id.info;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.italic = global::atheneum_app.Android.Resource.Id.italic;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.item_touch_helper_previous_elevation = global::atheneum_app.Android.Resource.Id.item_touch_helper_previous_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.labeled = global::atheneum_app.Android.Resource.Id.labeled;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.largeLabel = global::atheneum_app.Android.Resource.Id.largeLabel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.left = global::atheneum_app.Android.Resource.Id.left;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.line1 = global::atheneum_app.Android.Resource.Id.line1;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.line3 = global::atheneum_app.Android.Resource.Id.line3;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.listMode = global::atheneum_app.Android.Resource.Id.listMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.list_item = global::atheneum_app.Android.Resource.Id.list_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.main_appbar = global::atheneum_app.Android.Resource.Id.main_appbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.main_tablayout = global::atheneum_app.Android.Resource.Id.main_tablayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.main_toolbar = global::atheneum_app.Android.Resource.Id.main_toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.main_viewpager = global::atheneum_app.Android.Resource.Id.main_viewpager;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.masked = global::atheneum_app.Android.Resource.Id.masked;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.media_actions = global::atheneum_app.Android.Resource.Id.media_actions;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.message = global::atheneum_app.Android.Resource.Id.message;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.META = global::atheneum_app.Android.Resource.Id.META;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.middle = global::atheneum_app.Android.Resource.Id.middle;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.mini = global::atheneum_app.Android.Resource.Id.mini;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.mtrl_child_content_container = global::atheneum_app.Android.Resource.Id.mtrl_child_content_container;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.mtrl_internal_children_alpha_tag = global::atheneum_app.Android.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.multiply = global::atheneum_app.Android.Resource.Id.multiply;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.navigation_header_container = global::atheneum_app.Android.Resource.Id.navigation_header_container;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.never = global::atheneum_app.Android.Resource.Id.never;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.none = global::atheneum_app.Android.Resource.Id.none;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.normal = global::atheneum_app.Android.Resource.Id.normal;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.notification_background = global::atheneum_app.Android.Resource.Id.notification_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.notification_main_column = global::atheneum_app.Android.Resource.Id.notification_main_column;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.notification_main_column_container = global::atheneum_app.Android.Resource.Id.notification_main_column_container;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.off = global::atheneum_app.Android.Resource.Id.off;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.on = global::atheneum_app.Android.Resource.Id.on;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.outline = global::atheneum_app.Android.Resource.Id.outline;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.parallax = global::atheneum_app.Android.Resource.Id.parallax;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.parentPanel = global::atheneum_app.Android.Resource.Id.parentPanel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.parent_matrix = global::atheneum_app.Android.Resource.Id.parent_matrix;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.pin = global::atheneum_app.Android.Resource.Id.pin;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.progress_circular = global::atheneum_app.Android.Resource.Id.progress_circular;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.progress_horizontal = global::atheneum_app.Android.Resource.Id.progress_horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.radio = global::atheneum_app.Android.Resource.Id.radio;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.right = global::atheneum_app.Android.Resource.Id.right;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.right_icon = global::atheneum_app.Android.Resource.Id.right_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.right_side = global::atheneum_app.Android.Resource.Id.right_side;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.save_non_transition_alpha = global::atheneum_app.Android.Resource.Id.save_non_transition_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.save_overlay_view = global::atheneum_app.Android.Resource.Id.save_overlay_view;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.screen = global::atheneum_app.Android.Resource.Id.screen;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.scroll = global::atheneum_app.Android.Resource.Id.scroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.scrollable = global::atheneum_app.Android.Resource.Id.scrollable;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.scrollIndicatorDown = global::atheneum_app.Android.Resource.Id.scrollIndicatorDown;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.scrollIndicatorUp = global::atheneum_app.Android.Resource.Id.scrollIndicatorUp;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.scrollView = global::atheneum_app.Android.Resource.Id.scrollView;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_badge = global::atheneum_app.Android.Resource.Id.search_badge;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_bar = global::atheneum_app.Android.Resource.Id.search_bar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_button = global::atheneum_app.Android.Resource.Id.search_button;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_close_btn = global::atheneum_app.Android.Resource.Id.search_close_btn;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_edit_frame = global::atheneum_app.Android.Resource.Id.search_edit_frame;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_go_btn = global::atheneum_app.Android.Resource.Id.search_go_btn;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_mag_icon = global::atheneum_app.Android.Resource.Id.search_mag_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_plate = global::atheneum_app.Android.Resource.Id.search_plate;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_src_text = global::atheneum_app.Android.Resource.Id.search_src_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.search_voice_btn = global::atheneum_app.Android.Resource.Id.search_voice_btn;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.selected = global::atheneum_app.Android.Resource.Id.selected;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.select_dialog_listview = global::atheneum_app.Android.Resource.Id.select_dialog_listview;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.shellcontent_appbar = global::atheneum_app.Android.Resource.Id.shellcontent_appbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.shellcontent_toolbar = global::atheneum_app.Android.Resource.Id.shellcontent_toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.SHIFT = global::atheneum_app.Android.Resource.Id.SHIFT;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.shortcut = global::atheneum_app.Android.Resource.Id.shortcut;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.showCustom = global::atheneum_app.Android.Resource.Id.showCustom;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.showHome = global::atheneum_app.Android.Resource.Id.showHome;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.showTitle = global::atheneum_app.Android.Resource.Id.showTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.sliding_tabs = global::atheneum_app.Android.Resource.Id.sliding_tabs;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.smallLabel = global::atheneum_app.Android.Resource.Id.smallLabel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.snackbar_action = global::atheneum_app.Android.Resource.Id.snackbar_action;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.snackbar_text = global::atheneum_app.Android.Resource.Id.snackbar_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.snap = global::atheneum_app.Android.Resource.Id.snap;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.snapMargins = global::atheneum_app.Android.Resource.Id.snapMargins;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.spacer = global::atheneum_app.Android.Resource.Id.spacer;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.split_action_bar = global::atheneum_app.Android.Resource.Id.split_action_bar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.src_atop = global::atheneum_app.Android.Resource.Id.src_atop;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.src_in = global::atheneum_app.Android.Resource.Id.src_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.src_over = global::atheneum_app.Android.Resource.Id.src_over;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.start = global::atheneum_app.Android.Resource.Id.start;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.status_bar_latest_event_content = global::atheneum_app.Android.Resource.Id.status_bar_latest_event_content;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.stretch = global::atheneum_app.Android.Resource.Id.stretch;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.submenuarrow = global::atheneum_app.Android.Resource.Id.submenuarrow;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.submit_area = global::atheneum_app.Android.Resource.Id.submit_area;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.SYM = global::atheneum_app.Android.Resource.Id.SYM;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tabMode = global::atheneum_app.Android.Resource.Id.tabMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_actions = global::atheneum_app.Android.Resource.Id.tag_accessibility_actions;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_clickable_spans = global::atheneum_app.Android.Resource.Id.tag_accessibility_clickable_spans;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_heading = global::atheneum_app.Android.Resource.Id.tag_accessibility_heading;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_accessibility_pane_title = global::atheneum_app.Android.Resource.Id.tag_accessibility_pane_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_screen_reader_focusable = global::atheneum_app.Android.Resource.Id.tag_screen_reader_focusable;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_transition_group = global::atheneum_app.Android.Resource.Id.tag_transition_group;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_unhandled_key_event_manager = global::atheneum_app.Android.Resource.Id.tag_unhandled_key_event_manager;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.tag_unhandled_key_listeners = global::atheneum_app.Android.Resource.Id.tag_unhandled_key_listeners;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.text = global::atheneum_app.Android.Resource.Id.text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.text2 = global::atheneum_app.Android.Resource.Id.text2;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.textinput_counter = global::atheneum_app.Android.Resource.Id.textinput_counter;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.textinput_error = global::atheneum_app.Android.Resource.Id.textinput_error;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.textinput_helper_text = global::atheneum_app.Android.Resource.Id.textinput_helper_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.textSpacerNoButtons = global::atheneum_app.Android.Resource.Id.textSpacerNoButtons;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.textSpacerNoTitle = global::atheneum_app.Android.Resource.Id.textSpacerNoTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.textStart = global::atheneum_app.Android.Resource.Id.textStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.time = global::atheneum_app.Android.Resource.Id.time;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.title = global::atheneum_app.Android.Resource.Id.title;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.titleDividerNoCustom = global::atheneum_app.Android.Resource.Id.titleDividerNoCustom;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.title_template = global::atheneum_app.Android.Resource.Id.title_template;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.toolbar = global::atheneum_app.Android.Resource.Id.toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.top = global::atheneum_app.Android.Resource.Id.top;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.topPanel = global::atheneum_app.Android.Resource.Id.topPanel;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.touch_outside = global::atheneum_app.Android.Resource.Id.touch_outside;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_current_scene = global::atheneum_app.Android.Resource.Id.transition_current_scene;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_layout_save = global::atheneum_app.Android.Resource.Id.transition_layout_save;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_position = global::atheneum_app.Android.Resource.Id.transition_position;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_scene_layoutid_cache = global::atheneum_app.Android.Resource.Id.transition_scene_layoutid_cache;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.transition_transform = global::atheneum_app.Android.Resource.Id.transition_transform;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.@unchecked = global::atheneum_app.Android.Resource.Id.@unchecked;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.uniform = global::atheneum_app.Android.Resource.Id.uniform;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.unlabeled = global::atheneum_app.Android.Resource.Id.unlabeled;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.up = global::atheneum_app.Android.Resource.Id.up;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.useLogo = global::atheneum_app.Android.Resource.Id.useLogo;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.view_offset_helper = global::atheneum_app.Android.Resource.Id.view_offset_helper;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.visible = global::atheneum_app.Android.Resource.Id.visible;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.withText = global::atheneum_app.Android.Resource.Id.withText;
+			global::ZXing.Net.Mobile.Forms.Resource.Id.wrap_content = global::atheneum_app.Android.Resource.Id.wrap_content;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.abc_config_activityDefaultDur = global::atheneum_app.Android.Resource.Integer.abc_config_activityDefaultDur;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.abc_config_activityShortDur = global::atheneum_app.Android.Resource.Integer.abc_config_activityShortDur;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.app_bar_elevation_anim_duration = global::atheneum_app.Android.Resource.Integer.app_bar_elevation_anim_duration;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.bottom_sheet_slide_duration = global::atheneum_app.Android.Resource.Integer.bottom_sheet_slide_duration;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.cancel_button_image_alpha = global::atheneum_app.Android.Resource.Integer.cancel_button_image_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.config_tooltipAnimTime = global::atheneum_app.Android.Resource.Integer.config_tooltipAnimTime;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.design_snackbar_text_max_lines = global::atheneum_app.Android.Resource.Integer.design_snackbar_text_max_lines;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.design_tab_indicator_anim_duration_ms = global::atheneum_app.Android.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.hide_password_duration = global::atheneum_app.Android.Resource.Integer.hide_password_duration;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.mtrl_btn_anim_delay_ms = global::atheneum_app.Android.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.mtrl_btn_anim_duration_ms = global::atheneum_app.Android.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.mtrl_chip_anim_duration = global::atheneum_app.Android.Resource.Integer.mtrl_chip_anim_duration;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::atheneum_app.Android.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.show_password_duration = global::atheneum_app.Android.Resource.Integer.show_password_duration;
+			global::ZXing.Net.Mobile.Forms.Resource.Integer.status_bar_notification_info_maxnum = global::atheneum_app.Android.Resource.Integer.status_bar_notification_info_maxnum;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.fast_out_slow_in = global::atheneum_app.Android.Resource.Interpolator.fast_out_slow_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_fast_out_linear_in = global::atheneum_app.Android.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_fast_out_slow_in = global::atheneum_app.Android.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_linear = global::atheneum_app.Android.Resource.Interpolator.mtrl_linear;
+			global::ZXing.Net.Mobile.Forms.Resource.Interpolator.mtrl_linear_out_slow_in = global::atheneum_app.Android.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_action_bar_title_item = global::atheneum_app.Android.Resource.Layout.abc_action_bar_title_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_action_bar_up_container = global::atheneum_app.Android.Resource.Layout.abc_action_bar_up_container;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_action_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_action_menu_item_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_action_menu_layout = global::atheneum_app.Android.Resource.Layout.abc_action_menu_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_action_mode_bar = global::atheneum_app.Android.Resource.Layout.abc_action_mode_bar;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_action_mode_close_item_material = global::atheneum_app.Android.Resource.Layout.abc_action_mode_close_item_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_activity_chooser_view = global::atheneum_app.Android.Resource.Layout.abc_activity_chooser_view;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_activity_chooser_view_list_item = global::atheneum_app.Android.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_alert_dialog_button_bar_material = global::atheneum_app.Android.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_alert_dialog_material = global::atheneum_app.Android.Resource.Layout.abc_alert_dialog_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_alert_dialog_title_material = global::atheneum_app.Android.Resource.Layout.abc_alert_dialog_title_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_cascading_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_cascading_menu_item_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_dialog_title_material = global::atheneum_app.Android.Resource.Layout.abc_dialog_title_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_expanded_menu_layout = global::atheneum_app.Android.Resource.Layout.abc_expanded_menu_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_list_menu_item_checkbox = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_checkbox;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_list_menu_item_icon = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_list_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_list_menu_item_radio = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_radio;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_popup_menu_header_item_layout = global::atheneum_app.Android.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_popup_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_popup_menu_item_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_screen_content_include = global::atheneum_app.Android.Resource.Layout.abc_screen_content_include;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_screen_simple = global::atheneum_app.Android.Resource.Layout.abc_screen_simple;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_screen_simple_overlay_action_mode = global::atheneum_app.Android.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_screen_toolbar = global::atheneum_app.Android.Resource.Layout.abc_screen_toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_search_dropdown_item_icons_2line = global::atheneum_app.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_search_view = global::atheneum_app.Android.Resource.Layout.abc_search_view;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_select_dialog_material = global::atheneum_app.Android.Resource.Layout.abc_select_dialog_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.abc_tooltip = global::atheneum_app.Android.Resource.Layout.abc_tooltip;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.BottomTabLayout = global::atheneum_app.Android.Resource.Layout.BottomTabLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.browser_actions_context_menu_page = global::atheneum_app.Android.Resource.Layout.browser_actions_context_menu_page;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.browser_actions_context_menu_row = global::atheneum_app.Android.Resource.Layout.browser_actions_context_menu_row;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.custom_dialog = global::atheneum_app.Android.Resource.Layout.custom_dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_bottom_navigation_item = global::atheneum_app.Android.Resource.Layout.design_bottom_navigation_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_bottom_sheet_dialog = global::atheneum_app.Android.Resource.Layout.design_bottom_sheet_dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_layout_snackbar = global::atheneum_app.Android.Resource.Layout.design_layout_snackbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_layout_snackbar_include = global::atheneum_app.Android.Resource.Layout.design_layout_snackbar_include;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_layout_tab_icon = global::atheneum_app.Android.Resource.Layout.design_layout_tab_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_layout_tab_text = global::atheneum_app.Android.Resource.Layout.design_layout_tab_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_menu_item_action_area = global::atheneum_app.Android.Resource.Layout.design_menu_item_action_area;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_item = global::atheneum_app.Android.Resource.Layout.design_navigation_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_item_header = global::atheneum_app.Android.Resource.Layout.design_navigation_item_header;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_item_separator = global::atheneum_app.Android.Resource.Layout.design_navigation_item_separator;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_item_subheader = global::atheneum_app.Android.Resource.Layout.design_navigation_item_subheader;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_menu = global::atheneum_app.Android.Resource.Layout.design_navigation_menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.design_navigation_menu_item = global::atheneum_app.Android.Resource.Layout.design_navigation_menu_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.FallbackTabbarDoNotUse = global::atheneum_app.Android.Resource.Layout.FallbackTabbarDoNotUse;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.FallbackToolbarDoNotUse = global::atheneum_app.Android.Resource.Layout.FallbackToolbarDoNotUse;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.FlyoutContent = global::atheneum_app.Android.Resource.Layout.FlyoutContent;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.mtrl_layout_snackbar = global::atheneum_app.Android.Resource.Layout.mtrl_layout_snackbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.mtrl_layout_snackbar_include = global::atheneum_app.Android.Resource.Layout.mtrl_layout_snackbar_include;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_action = global::atheneum_app.Android.Resource.Layout.notification_action;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_action_tombstone = global::atheneum_app.Android.Resource.Layout.notification_action_tombstone;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_media_action = global::atheneum_app.Android.Resource.Layout.notification_media_action;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_media_cancel_action = global::atheneum_app.Android.Resource.Layout.notification_media_cancel_action;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_big_media = global::atheneum_app.Android.Resource.Layout.notification_template_big_media;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_big_media_custom = global::atheneum_app.Android.Resource.Layout.notification_template_big_media_custom;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_big_media_narrow = global::atheneum_app.Android.Resource.Layout.notification_template_big_media_narrow;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_big_media_narrow_custom = global::atheneum_app.Android.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_custom_big = global::atheneum_app.Android.Resource.Layout.notification_template_custom_big;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_icon_group = global::atheneum_app.Android.Resource.Layout.notification_template_icon_group;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_lines_media = global::atheneum_app.Android.Resource.Layout.notification_template_lines_media;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_media = global::atheneum_app.Android.Resource.Layout.notification_template_media;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_media_custom = global::atheneum_app.Android.Resource.Layout.notification_template_media_custom;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_part_chronometer = global::atheneum_app.Android.Resource.Layout.notification_template_part_chronometer;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.notification_template_part_time = global::atheneum_app.Android.Resource.Layout.notification_template_part_time;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.RootLayout = global::atheneum_app.Android.Resource.Layout.RootLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.select_dialog_item_material = global::atheneum_app.Android.Resource.Layout.select_dialog_item_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.select_dialog_multichoice_material = global::atheneum_app.Android.Resource.Layout.select_dialog_multichoice_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.select_dialog_singlechoice_material = global::atheneum_app.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.ShellContent = global::atheneum_app.Android.Resource.Layout.ShellContent;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.support_simple_spinner_dropdown_item = global::atheneum_app.Android.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.Tabbar = global::atheneum_app.Android.Resource.Layout.Tabbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.Toolbar = global::atheneum_app.Android.Resource.Layout.Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.zxingscanneractivitylayout = global::atheneum_app.Android.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Layout.zxingscannerfragmentlayout = global::atheneum_app.Android.Resource.Layout.zxingscannerfragmentlayout;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_action_bar_home_description = global::atheneum_app.Android.Resource.String.abc_action_bar_home_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_action_bar_up_description = global::atheneum_app.Android.Resource.String.abc_action_bar_up_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_action_menu_overflow_description = global::atheneum_app.Android.Resource.String.abc_action_menu_overflow_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_action_mode_done = global::atheneum_app.Android.Resource.String.abc_action_mode_done;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_activitychooserview_choose_application = global::atheneum_app.Android.Resource.String.abc_activitychooserview_choose_application;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_activity_chooser_view_see_all = global::atheneum_app.Android.Resource.String.abc_activity_chooser_view_see_all;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_capital_off = global::atheneum_app.Android.Resource.String.abc_capital_off;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_capital_on = global::atheneum_app.Android.Resource.String.abc_capital_on;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_alt_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_alt_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_ctrl_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_delete_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_delete_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_enter_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_enter_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_function_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_function_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_meta_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_meta_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_shift_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_shift_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_space_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_space_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_menu_sym_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_sym_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_prepend_shortcut_label = global::atheneum_app.Android.Resource.String.abc_prepend_shortcut_label;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_searchview_description_clear = global::atheneum_app.Android.Resource.String.abc_searchview_description_clear;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_searchview_description_query = global::atheneum_app.Android.Resource.String.abc_searchview_description_query;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_searchview_description_search = global::atheneum_app.Android.Resource.String.abc_searchview_description_search;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_searchview_description_submit = global::atheneum_app.Android.Resource.String.abc_searchview_description_submit;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_searchview_description_voice = global::atheneum_app.Android.Resource.String.abc_searchview_description_voice;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_search_hint = global::atheneum_app.Android.Resource.String.abc_search_hint;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_shareactionprovider_share_with = global::atheneum_app.Android.Resource.String.abc_shareactionprovider_share_with;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_shareactionprovider_share_with_application = global::atheneum_app.Android.Resource.String.abc_shareactionprovider_share_with_application;
+			global::ZXing.Net.Mobile.Forms.Resource.String.abc_toolbar_collapse_description = global::atheneum_app.Android.Resource.String.abc_toolbar_collapse_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.appbar_scrolling_view_behavior = global::atheneum_app.Android.Resource.String.appbar_scrolling_view_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.String.bottom_sheet_behavior = global::atheneum_app.Android.Resource.String.bottom_sheet_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.String.character_counter_content_description = global::atheneum_app.Android.Resource.String.character_counter_content_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.character_counter_pattern = global::atheneum_app.Android.Resource.String.character_counter_pattern;
+			global::ZXing.Net.Mobile.Forms.Resource.String.fab_transformation_scrim_behavior = global::atheneum_app.Android.Resource.String.fab_transformation_scrim_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.String.fab_transformation_sheet_behavior = global::atheneum_app.Android.Resource.String.fab_transformation_sheet_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.String.hide_bottom_view_on_scroll_behavior = global::atheneum_app.Android.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.String.mtrl_chip_close_icon_content_description = global::atheneum_app.Android.Resource.String.mtrl_chip_close_icon_content_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.password_toggle_content_description = global::atheneum_app.Android.Resource.String.password_toggle_content_description;
+			global::ZXing.Net.Mobile.Forms.Resource.String.path_password_eye = global::atheneum_app.Android.Resource.String.path_password_eye;
+			global::ZXing.Net.Mobile.Forms.Resource.String.path_password_eye_mask_strike_through = global::atheneum_app.Android.Resource.String.path_password_eye_mask_strike_through;
+			global::ZXing.Net.Mobile.Forms.Resource.String.path_password_eye_mask_visible = global::atheneum_app.Android.Resource.String.path_password_eye_mask_visible;
+			global::ZXing.Net.Mobile.Forms.Resource.String.path_password_strike_through = global::atheneum_app.Android.Resource.String.path_password_strike_through;
+			global::ZXing.Net.Mobile.Forms.Resource.String.search_menu_title = global::atheneum_app.Android.Resource.String.search_menu_title;
+			global::ZXing.Net.Mobile.Forms.Resource.String.status_bar_notification_info_overflow = global::atheneum_app.Android.Resource.String.status_bar_notification_info_overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.AlertDialog_AppCompat = global::atheneum_app.Android.Resource.Style.AlertDialog_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.AlertDialog_AppCompat_Light = global::atheneum_app.Android.Resource.Style.AlertDialog_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Animation_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Animation_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Animation_AppCompat_DropDownUp = global::atheneum_app.Android.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Animation_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.Animation_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Animation_Design_BottomSheetDialog = global::atheneum_app.Android.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_AlertDialog_AppCompat = global::atheneum_app.Android.Resource.Style.Base_AlertDialog_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_AlertDialog_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Animation_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::atheneum_app.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Animation_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_CardView = global::atheneum_app.Android.Resource.Style.Base_CardView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::atheneum_app.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_DialogWindowTitle_AppCompat = global::atheneum_app.Android.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Button = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V21_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V22_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V22_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V22_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V23_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V23_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V23_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V26_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V26_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V26_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V28_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V28_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V28_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::atheneum_app.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActionMode = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Button = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Button_Small = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_EditText = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ImageButton = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ListView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_SearchView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_SeekBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Spinner = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_TextView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_TextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_Design_TabLayout = global::atheneum_app.Android.Resource.Style.Base_Widget_Design_TabLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_MaterialComponents_Chip = global::atheneum_app.Android.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::atheneum_app.Android.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::atheneum_app.Android.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.CardView = global::atheneum_app.Android.Resource.Style.CardView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.CardView_Dark = global::atheneum_app.Android.Resource.Style.CardView_Dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.CardView_Light = global::atheneum_app.Android.Resource.Style.CardView_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_MaterialComponents = global::atheneum_app.Android.Resource.Style.Platform_MaterialComponents;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_MaterialComponents_Light = global::atheneum_app.Android.Resource.Style.Platform_MaterialComponents_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::atheneum_app.Android.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::atheneum_app.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_V21_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_V21_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_V21_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_V21_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_V25_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_V25_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_V25_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_V25_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Platform_Widget_AppCompat_Spinner = global::atheneum_app.Android.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::atheneum_app.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::atheneum_app.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Body1 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Body2 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Button = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Caption = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Display1 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Display2 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Display3 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Display4 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Headline = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Large = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Large;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Medium = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Menu = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Small = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Subhead = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Info = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Media = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Time = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_Counter = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_Counter;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_Counter_Overflow = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_Error = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_Error;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_HelperText = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_HelperText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_Hint = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_Hint;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_Snackbar_Message = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Design_Tab = global::atheneum_app.Android.Resource.Style.TextAppearance_Design_Tab;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Button = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Caption = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Chip = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Overline = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::atheneum_app.Android.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::atheneum_app.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_AppCompat_Light = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::atheneum_app.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Theme_AppCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_CompactMenu = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_AppCompat_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_Design = global::atheneum_app.Android.Resource.Style.Theme_Design;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_Design_BottomSheetDialog = global::atheneum_app.Android.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_Design_Light = global::atheneum_app.Android.Resource.Style.Theme_Design_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::atheneum_app.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_Design_Light_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_Design_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_Design_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Bridge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_CompactMenu = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Dialog = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::atheneum_app.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActionMode = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ActivityChooserView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Button = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ButtonBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Button_Borderless = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Button_Colored = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Button_Small = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_EditText = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_EditText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ImageButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ImageButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_SearchView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ListMenuView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ListPopupWindow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ListView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ListView_DropDown = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ListView_Menu = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_PopupMenu = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_PopupWindow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ProgressBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_RatingBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_RatingBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_RatingBar_Small = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_SearchView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SearchView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_SeekBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SeekBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_TextView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_TextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Compat_NotificationActionContainer = global::atheneum_app.Android.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Compat_NotificationActionText = global::atheneum_app.Android.Resource.Style.Widget_Compat_NotificationActionText;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_AppBarLayout = global::atheneum_app.Android.Resource.Style.Widget_Design_AppBarLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_BottomNavigationView = global::atheneum_app.Android.Resource.Style.Widget_Design_BottomNavigationView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_BottomSheet_Modal = global::atheneum_app.Android.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_CollapsingToolbar = global::atheneum_app.Android.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_FloatingActionButton = global::atheneum_app.Android.Resource.Style.Widget_Design_FloatingActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_NavigationView = global::atheneum_app.Android.Resource.Style.Widget_Design_NavigationView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::atheneum_app.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_Snackbar = global::atheneum_app.Android.Resource.Style.Widget_Design_Snackbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_TabLayout = global::atheneum_app.Android.Resource.Style.Widget_Design_TabLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Design_TextInputLayout = global::atheneum_app.Android.Resource.Style.Widget_Design_TextInputLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_Icon = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_CardView = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_CardView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_ChipGroup = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Chip_Action = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_NavigationView = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Snackbar = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TabLayout = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_MaterialComponents_Toolbar = global::atheneum_app.Android.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Style.Widget_Support_CoordinatorLayout = global::atheneum_app.Android.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar = global::atheneum_app.Android.Resource.Styleable.ActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBarLayout = global::atheneum_app.Android.Resource.Styleable.ActionBarLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::atheneum_app.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_background = global::atheneum_app.Android.Resource.Styleable.ActionBar_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_backgroundSplit = global::atheneum_app.Android.Resource.Styleable.ActionBar_backgroundSplit;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_backgroundStacked = global::atheneum_app.Android.Resource.Styleable.ActionBar_backgroundStacked;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_contentInsetEnd = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_contentInsetLeft = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_contentInsetRight = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_contentInsetStart = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_customNavigationLayout = global::atheneum_app.Android.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_displayOptions = global::atheneum_app.Android.Resource.Styleable.ActionBar_displayOptions;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_divider = global::atheneum_app.Android.Resource.Styleable.ActionBar_divider;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_elevation = global::atheneum_app.Android.Resource.Styleable.ActionBar_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_height = global::atheneum_app.Android.Resource.Styleable.ActionBar_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_hideOnContentScroll = global::atheneum_app.Android.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_homeAsUpIndicator = global::atheneum_app.Android.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_homeLayout = global::atheneum_app.Android.Resource.Styleable.ActionBar_homeLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_icon = global::atheneum_app.Android.Resource.Styleable.ActionBar_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_itemPadding = global::atheneum_app.Android.Resource.Styleable.ActionBar_itemPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_logo = global::atheneum_app.Android.Resource.Styleable.ActionBar_logo;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_navigationMode = global::atheneum_app.Android.Resource.Styleable.ActionBar_navigationMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_popupTheme = global::atheneum_app.Android.Resource.Styleable.ActionBar_popupTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_progressBarPadding = global::atheneum_app.Android.Resource.Styleable.ActionBar_progressBarPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_progressBarStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_progressBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_subtitle = global::atheneum_app.Android.Resource.Styleable.ActionBar_subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_subtitleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_title = global::atheneum_app.Android.Resource.Styleable.ActionBar_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionBar_titleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_titleTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMenuItemView = global::atheneum_app.Android.Resource.Styleable.ActionMenuItemView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMenuItemView_android_minWidth = global::atheneum_app.Android.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMenuView = global::atheneum_app.Android.Resource.Styleable.ActionMenuView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode = global::atheneum_app.Android.Resource.Styleable.ActionMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode_background = global::atheneum_app.Android.Resource.Styleable.ActionMode_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode_backgroundSplit = global::atheneum_app.Android.Resource.Styleable.ActionMode_backgroundSplit;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode_closeItemLayout = global::atheneum_app.Android.Resource.Styleable.ActionMode_closeItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode_height = global::atheneum_app.Android.Resource.Styleable.ActionMode_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode_subtitleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActionMode_titleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionMode_titleTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActivityChooserView = global::atheneum_app.Android.Resource.Styleable.ActivityChooserView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::atheneum_app.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ActivityChooserView_initialActivityCount = global::atheneum_app.Android.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog = global::atheneum_app.Android.Resource.Styleable.AlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_android_layout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_android_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_buttonIconDimen = global::atheneum_app.Android.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_listItemLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_listItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_listLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_listLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_showTitle = global::atheneum_app.Android.Resource.Styleable.AlertDialog_showTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableItem = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableTransition = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout = global::atheneum_app.Android.Resource.Styleable.AppBarLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayoutStates = global::atheneum_app.Android.Resource.Styleable.AppBarLayoutStates;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::atheneum_app.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::atheneum_app.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayoutStates_state_liftable = global::atheneum_app.Android.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayoutStates_state_lifted = global::atheneum_app.Android.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_android_background = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_android_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_elevation = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_expanded = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_expanded;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_Layout = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppBarLayout_liftOnScroll = global::atheneum_app.Android.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatImageView = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatImageView_android_src = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_android_src;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatImageView_srcCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatImageView_tint = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_tint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatImageView_tintMode = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_tintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatSeekBar = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatSeekBar_android_thumb = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatSeekBar_tickMark = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_android_textAppearance = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableTint = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableTintMode = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableTopCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_fontFamily = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_fontVariationSettings;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_lineHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_textAllCaps = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTextView_textLocale = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_textLocale;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarDivider = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarSize = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_checkboxStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorAccent = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorControlActivated = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorControlNormal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorError = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorError;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorPrimary = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_controlBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dialogTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dividerVertical = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_editTextBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_editTextColor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_editTextStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_panelBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_searchViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_seekBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_spinnerStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_switchStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_toolbarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowActionBar = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.AppCompatTheme_windowNoTitle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar = global::atheneum_app.Android.Resource.Styleable.BottomAppBar;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar_backgroundTint = global::atheneum_app.Android.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::atheneum_app.Android.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar_fabCradleMargin = global::atheneum_app.Android.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::atheneum_app.Android.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::atheneum_app.Android.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomAppBar_hideOnScroll = global::atheneum_app.Android.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_elevation = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemBackground = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemIconSize = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemIconTint = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_itemTextColor = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomNavigationView_menu = global::atheneum_app.Android.Resource.Styleable.BottomNavigationView_menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomSheetBehavior_Layout = global::atheneum_app.Android.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::atheneum_app.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::atheneum_app.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::atheneum_app.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::atheneum_app.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ButtonBarLayout = global::atheneum_app.Android.Resource.Styleable.ButtonBarLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ButtonBarLayout_allowStacking = global::atheneum_app.Android.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView = global::atheneum_app.Android.Resource.Styleable.CardView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_android_minHeight = global::atheneum_app.Android.Resource.Styleable.CardView_android_minHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_android_minWidth = global::atheneum_app.Android.Resource.Styleable.CardView_android_minWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_cardBackgroundColor = global::atheneum_app.Android.Resource.Styleable.CardView_cardBackgroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_cardCornerRadius = global::atheneum_app.Android.Resource.Styleable.CardView_cardCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_cardElevation = global::atheneum_app.Android.Resource.Styleable.CardView_cardElevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_cardMaxElevation = global::atheneum_app.Android.Resource.Styleable.CardView_cardMaxElevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_cardPreventCornerOverlap = global::atheneum_app.Android.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_cardUseCompatPadding = global::atheneum_app.Android.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_contentPadding = global::atheneum_app.Android.Resource.Styleable.CardView_contentPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_contentPaddingBottom = global::atheneum_app.Android.Resource.Styleable.CardView_contentPaddingBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_contentPaddingLeft = global::atheneum_app.Android.Resource.Styleable.CardView_contentPaddingLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_contentPaddingRight = global::atheneum_app.Android.Resource.Styleable.CardView_contentPaddingRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CardView_contentPaddingTop = global::atheneum_app.Android.Resource.Styleable.CardView_contentPaddingTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip = global::atheneum_app.Android.Resource.Styleable.Chip;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup = global::atheneum_app.Android.Resource.Styleable.ChipGroup;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup_checkedChip = global::atheneum_app.Android.Resource.Styleable.ChipGroup_checkedChip;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup_chipSpacing = global::atheneum_app.Android.Resource.Styleable.ChipGroup_chipSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::atheneum_app.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup_chipSpacingVertical = global::atheneum_app.Android.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup_singleLine = global::atheneum_app.Android.Resource.Styleable.ChipGroup_singleLine;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ChipGroup_singleSelection = global::atheneum_app.Android.Resource.Styleable.ChipGroup_singleSelection;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_android_checkable = global::atheneum_app.Android.Resource.Styleable.Chip_android_checkable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_android_ellipsize = global::atheneum_app.Android.Resource.Styleable.Chip_android_ellipsize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_android_maxWidth = global::atheneum_app.Android.Resource.Styleable.Chip_android_maxWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_android_text = global::atheneum_app.Android.Resource.Styleable.Chip_android_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_android_textAppearance = global::atheneum_app.Android.Resource.Styleable.Chip_android_textAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_checkedIcon = global::atheneum_app.Android.Resource.Styleable.Chip_checkedIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_checkedIconEnabled = global::atheneum_app.Android.Resource.Styleable.Chip_checkedIconEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_checkedIconVisible = global::atheneum_app.Android.Resource.Styleable.Chip_checkedIconVisible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipBackgroundColor = global::atheneum_app.Android.Resource.Styleable.Chip_chipBackgroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipCornerRadius = global::atheneum_app.Android.Resource.Styleable.Chip_chipCornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipEndPadding = global::atheneum_app.Android.Resource.Styleable.Chip_chipEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipIcon = global::atheneum_app.Android.Resource.Styleable.Chip_chipIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipIconEnabled = global::atheneum_app.Android.Resource.Styleable.Chip_chipIconEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipIconSize = global::atheneum_app.Android.Resource.Styleable.Chip_chipIconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipIconTint = global::atheneum_app.Android.Resource.Styleable.Chip_chipIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipIconVisible = global::atheneum_app.Android.Resource.Styleable.Chip_chipIconVisible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipMinHeight = global::atheneum_app.Android.Resource.Styleable.Chip_chipMinHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipStartPadding = global::atheneum_app.Android.Resource.Styleable.Chip_chipStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipStrokeColor = global::atheneum_app.Android.Resource.Styleable.Chip_chipStrokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_chipStrokeWidth = global::atheneum_app.Android.Resource.Styleable.Chip_chipStrokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIcon = global::atheneum_app.Android.Resource.Styleable.Chip_closeIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIconEnabled = global::atheneum_app.Android.Resource.Styleable.Chip_closeIconEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIconEndPadding = global::atheneum_app.Android.Resource.Styleable.Chip_closeIconEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIconSize = global::atheneum_app.Android.Resource.Styleable.Chip_closeIconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIconStartPadding = global::atheneum_app.Android.Resource.Styleable.Chip_closeIconStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIconTint = global::atheneum_app.Android.Resource.Styleable.Chip_closeIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_closeIconVisible = global::atheneum_app.Android.Resource.Styleable.Chip_closeIconVisible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_hideMotionSpec = global::atheneum_app.Android.Resource.Styleable.Chip_hideMotionSpec;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_iconEndPadding = global::atheneum_app.Android.Resource.Styleable.Chip_iconEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_iconStartPadding = global::atheneum_app.Android.Resource.Styleable.Chip_iconStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_rippleColor = global::atheneum_app.Android.Resource.Styleable.Chip_rippleColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_showMotionSpec = global::atheneum_app.Android.Resource.Styleable.Chip_showMotionSpec;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_textEndPadding = global::atheneum_app.Android.Resource.Styleable.Chip_textEndPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Chip_textStartPadding = global::atheneum_app.Android.Resource.Styleable.Chip_textStartPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_Layout = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_title = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::atheneum_app.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ColorStateListItem = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ColorStateListItem_alpha = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ColorStateListItem_android_alpha = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ColorStateListItem_android_color = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem_android_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton = global::atheneum_app.Android.Resource.Styleable.CompoundButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_android_button = global::atheneum_app.Android.Resource.Styleable.CompoundButton_android_button;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_buttonCompat = global::atheneum_app.Android.Resource.Styleable.CompoundButton_buttonCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_buttonTint = global::atheneum_app.Android.Resource.Styleable.CompoundButton_buttonTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CompoundButton_buttonTintMode = global::atheneum_app.Android.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_keylines = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_keylines;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_barLength = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_color = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_drawableSize = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_spinBars = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.DrawerArrowToggle_thickness = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_backgroundTint = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_borderWidth = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_elevation = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_fabCustomSize = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_fabSize = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_fabSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_maxImageSize = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_rippleColor = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_showMotionSpec = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FloatingActionButton_useCompatPadding = global::atheneum_app.Android.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FlowLayout = global::atheneum_app.Android.Resource.Styleable.FlowLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FlowLayout_itemSpacing = global::atheneum_app.Android.Resource.Styleable.FlowLayout_itemSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FlowLayout_lineSpacing = global::atheneum_app.Android.Resource.Styleable.FlowLayout_lineSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily = global::atheneum_app.Android.Resource.Styleable.FontFamily;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_android_font = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_font;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_android_fontStyle = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_android_fontWeight = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_font = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_font;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_fontStyle = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_fontWeight = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamilyFont_ttcIndex = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily_fontProviderAuthority = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily_fontProviderCerts = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily_fontProviderPackage = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.FontFamily_fontProviderQuery = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ForegroundLinearLayout = global::atheneum_app.Android.Resource.Styleable.ForegroundLinearLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::atheneum_app.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::atheneum_app.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::atheneum_app.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor = global::atheneum_app.Android.Resource.Styleable.GradientColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColorItem = global::atheneum_app.Android.Resource.Styleable.GradientColorItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColorItem_android_color = global::atheneum_app.Android.Resource.Styleable.GradientColorItem_android_color;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColorItem_android_offset = global::atheneum_app.Android.Resource.Styleable.GradientColorItem_android_offset;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_centerColor = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_centerColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_centerX = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_centerX;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_centerY = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_centerY;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_endColor = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_endColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_endX = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_endX;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_endY = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_endY;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_gradientRadius = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_startColor = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_startColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_startX = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_startX;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_startY = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_startY;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_tileMode = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_tileMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.GradientColor_android_type = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_type;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_android_gravity = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_android_orientation = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_divider = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_divider;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_Layout = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.LinearLayoutCompat_showDividers = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ListPopupWindow = global::atheneum_app.Android.Resource.Styleable.ListPopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::atheneum_app.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::atheneum_app.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton = global::atheneum_app.Android.Resource.Styleable.MaterialButton;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_android_insetBottom = global::atheneum_app.Android.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_android_insetLeft = global::atheneum_app.Android.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_android_insetRight = global::atheneum_app.Android.Resource.Styleable.MaterialButton_android_insetRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_android_insetTop = global::atheneum_app.Android.Resource.Styleable.MaterialButton_android_insetTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_backgroundTint = global::atheneum_app.Android.Resource.Styleable.MaterialButton_backgroundTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_backgroundTintMode = global::atheneum_app.Android.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_cornerRadius = global::atheneum_app.Android.Resource.Styleable.MaterialButton_cornerRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_icon = global::atheneum_app.Android.Resource.Styleable.MaterialButton_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_iconGravity = global::atheneum_app.Android.Resource.Styleable.MaterialButton_iconGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_iconPadding = global::atheneum_app.Android.Resource.Styleable.MaterialButton_iconPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_iconSize = global::atheneum_app.Android.Resource.Styleable.MaterialButton_iconSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_iconTint = global::atheneum_app.Android.Resource.Styleable.MaterialButton_iconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_iconTintMode = global::atheneum_app.Android.Resource.Styleable.MaterialButton_iconTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_rippleColor = global::atheneum_app.Android.Resource.Styleable.MaterialButton_rippleColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_strokeColor = global::atheneum_app.Android.Resource.Styleable.MaterialButton_strokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialButton_strokeWidth = global::atheneum_app.Android.Resource.Styleable.MaterialButton_strokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialCardView = global::atheneum_app.Android.Resource.Styleable.MaterialCardView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialCardView_strokeColor = global::atheneum_app.Android.Resource.Styleable.MaterialCardView_strokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MaterialCardView_strokeWidth = global::atheneum_app.Android.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup = global::atheneum_app.Android.Resource.Styleable.MenuGroup;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup_android_checkableBehavior = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup_android_enabled = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_enabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup_android_id = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_id;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup_android_menuCategory = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup_android_orderInCategory = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuGroup_android_visible = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_visible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem = global::atheneum_app.Android.Resource.Styleable.MenuItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_actionLayout = global::atheneum_app.Android.Resource.Styleable.MenuItem_actionLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_actionProviderClass = global::atheneum_app.Android.Resource.Styleable.MenuItem_actionProviderClass;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_actionViewClass = global::atheneum_app.Android.Resource.Styleable.MenuItem_actionViewClass;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_alphabeticModifiers = global::atheneum_app.Android.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_checkable = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_checkable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_checked = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_checked;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_enabled = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_enabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_icon = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_id = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_id;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_menuCategory = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_menuCategory;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_numericShortcut = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_onClick = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_onClick;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_orderInCategory = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_title = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_titleCondensed = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_android_visible = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_visible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_contentDescription = global::atheneum_app.Android.Resource.Styleable.MenuItem_contentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_iconTint = global::atheneum_app.Android.Resource.Styleable.MenuItem_iconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_iconTintMode = global::atheneum_app.Android.Resource.Styleable.MenuItem_iconTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_numericModifiers = global::atheneum_app.Android.Resource.Styleable.MenuItem_numericModifiers;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_showAsAction = global::atheneum_app.Android.Resource.Styleable.MenuItem_showAsAction;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuItem_tooltipText = global::atheneum_app.Android.Resource.Styleable.MenuItem_tooltipText;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView = global::atheneum_app.Android.Resource.Styleable.MenuView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_headerBackground = global::atheneum_app.Android.Resource.Styleable.MenuView_android_headerBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_horizontalDivider = global::atheneum_app.Android.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_itemBackground = global::atheneum_app.Android.Resource.Styleable.MenuView_android_itemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::atheneum_app.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_itemTextAppearance = global::atheneum_app.Android.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_verticalDivider = global::atheneum_app.Android.Resource.Styleable.MenuView_android_verticalDivider;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_android_windowAnimationStyle = global::atheneum_app.Android.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_preserveIconSpacing = global::atheneum_app.Android.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.MenuView_subMenuArrow = global::atheneum_app.Android.Resource.Styleable.MenuView_subMenuArrow;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView = global::atheneum_app.Android.Resource.Styleable.NavigationView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_android_background = global::atheneum_app.Android.Resource.Styleable.NavigationView_android_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::atheneum_app.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_android_maxWidth = global::atheneum_app.Android.Resource.Styleable.NavigationView_android_maxWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_elevation = global::atheneum_app.Android.Resource.Styleable.NavigationView_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_headerLayout = global::atheneum_app.Android.Resource.Styleable.NavigationView_headerLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_itemBackground = global::atheneum_app.Android.Resource.Styleable.NavigationView_itemBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_itemHorizontalPadding = global::atheneum_app.Android.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_itemIconPadding = global::atheneum_app.Android.Resource.Styleable.NavigationView_itemIconPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_itemIconTint = global::atheneum_app.Android.Resource.Styleable.NavigationView_itemIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_itemTextAppearance = global::atheneum_app.Android.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_itemTextColor = global::atheneum_app.Android.Resource.Styleable.NavigationView_itemTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.NavigationView_menu = global::atheneum_app.Android.Resource.Styleable.NavigationView_menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.PopupWindow = global::atheneum_app.Android.Resource.Styleable.PopupWindow;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.PopupWindowBackgroundState = global::atheneum_app.Android.Resource.Styleable.PopupWindowBackgroundState;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::atheneum_app.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::atheneum_app.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.PopupWindow_android_popupBackground = global::atheneum_app.Android.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.PopupWindow_overlapAnchor = global::atheneum_app.Android.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecycleListView = global::atheneum_app.Android.Resource.Styleable.RecycleListView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::atheneum_app.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::atheneum_app.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView = global::atheneum_app.Android.Resource.Styleable.RecyclerView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_android_clipToPadding = global::atheneum_app.Android.Resource.Styleable.RecyclerView_android_clipToPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_android_descendantFocusability = global::atheneum_app.Android.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_android_orientation = global::atheneum_app.Android.Resource.Styleable.RecyclerView_android_orientation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_fastScrollEnabled = global::atheneum_app.Android.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::atheneum_app.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::atheneum_app.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::atheneum_app.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::atheneum_app.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_layoutManager = global::atheneum_app.Android.Resource.Styleable.RecyclerView_layoutManager;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_reverseLayout = global::atheneum_app.Android.Resource.Styleable.RecyclerView_reverseLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_spanCount = global::atheneum_app.Android.Resource.Styleable.RecyclerView_spanCount;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.RecyclerView_stackFromEnd = global::atheneum_app.Android.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ScrimInsetsFrameLayout = global::atheneum_app.Android.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::atheneum_app.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ScrollingViewBehavior_Layout = global::atheneum_app.Android.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::atheneum_app.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView = global::atheneum_app.Android.Resource.Styleable.SearchView;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_android_focusable = global::atheneum_app.Android.Resource.Styleable.SearchView_android_focusable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_android_imeOptions = global::atheneum_app.Android.Resource.Styleable.SearchView_android_imeOptions;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_android_inputType = global::atheneum_app.Android.Resource.Styleable.SearchView_android_inputType;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_android_maxWidth = global::atheneum_app.Android.Resource.Styleable.SearchView_android_maxWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_closeIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_closeIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_commitIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_commitIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_defaultQueryHint = global::atheneum_app.Android.Resource.Styleable.SearchView_defaultQueryHint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_goIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_goIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_iconifiedByDefault = global::atheneum_app.Android.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_layout = global::atheneum_app.Android.Resource.Styleable.SearchView_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_queryBackground = global::atheneum_app.Android.Resource.Styleable.SearchView_queryBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_queryHint = global::atheneum_app.Android.Resource.Styleable.SearchView_queryHint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_searchHintIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_searchHintIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_searchIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_searchIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_submitBackground = global::atheneum_app.Android.Resource.Styleable.SearchView_submitBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_suggestionRowLayout = global::atheneum_app.Android.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SearchView_voiceIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_voiceIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Snackbar = global::atheneum_app.Android.Resource.Styleable.Snackbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SnackbarLayout = global::atheneum_app.Android.Resource.Styleable.SnackbarLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SnackbarLayout_android_maxWidth = global::atheneum_app.Android.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SnackbarLayout_elevation = global::atheneum_app.Android.Resource.Styleable.SnackbarLayout_elevation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::atheneum_app.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Snackbar_snackbarButtonStyle = global::atheneum_app.Android.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Snackbar_snackbarStyle = global::atheneum_app.Android.Resource.Styleable.Snackbar_snackbarStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Spinner = global::atheneum_app.Android.Resource.Styleable.Spinner;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Spinner_android_dropDownWidth = global::atheneum_app.Android.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Spinner_android_entries = global::atheneum_app.Android.Resource.Styleable.Spinner_android_entries;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Spinner_android_popupBackground = global::atheneum_app.Android.Resource.Styleable.Spinner_android_popupBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Spinner_android_prompt = global::atheneum_app.Android.Resource.Styleable.Spinner_android_prompt;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Spinner_popupTheme = global::atheneum_app.Android.Resource.Styleable.Spinner_popupTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable = global::atheneum_app.Android.Resource.Styleable.StateListDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawableItem = global::atheneum_app.Android.Resource.Styleable.StateListDrawableItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawableItem_android_drawable = global::atheneum_app.Android.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable_android_constantSize = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable_android_dither = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_dither;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable_android_variablePadding = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.StateListDrawable_android_visible = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_visible;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat = global::atheneum_app.Android.Resource.Styleable.SwitchCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_android_textOff = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_android_textOff;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_android_textOn = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_android_textOn;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_android_thumb = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_android_thumb;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_showText = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_showText;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_splitTrack = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_splitTrack;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_switchMinWidth = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_switchPadding = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_switchPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_switchTextAppearance = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_thumbTextPadding = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_thumbTint = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_thumbTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_thumbTintMode = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_track = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_track;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_trackTint = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_trackTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.SwitchCompat_trackTintMode = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabItem = global::atheneum_app.Android.Resource.Styleable.TabItem;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabItem_android_icon = global::atheneum_app.Android.Resource.Styleable.TabItem_android_icon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabItem_android_layout = global::atheneum_app.Android.Resource.Styleable.TabItem_android_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabItem_android_text = global::atheneum_app.Android.Resource.Styleable.TabItem_android_text;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout = global::atheneum_app.Android.Resource.Styleable.TabLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabBackground = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabBackground;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabContentStart = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabContentStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabGravity = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIconTint = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIconTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIconTintMode = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIndicator = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIndicator;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIndicatorColor = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIndicatorGravity = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabIndicatorHeight = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabInlineLabel = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabMaxWidth = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabMinWidth = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabMinWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabMode = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabPadding = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabPadding;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabPaddingBottom = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabPaddingEnd = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabPaddingStart = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabPaddingTop = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabRippleColor = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabRippleColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabSelectedTextColor = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabTextAppearance = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabTextColor = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TabLayout_tabUnboundedRipple = global::atheneum_app.Android.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance = global::atheneum_app.Android.Resource.Styleable.TextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_fontFamily = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_shadowColor = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_shadowDx = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_shadowDy = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_shadowRadius = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textColor = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textColorHint = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textColorLink = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textFontWeight = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textFontWeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textSize = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textSize;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_textStyle = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textStyle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_android_typeface = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_typeface;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_fontFamily = global::atheneum_app.Android.Resource.Styleable.TextAppearance_fontFamily;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.TextAppearance_fontVariationSettings;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_textAllCaps = global::atheneum_app.Android.Resource.Styleable.TextAppearance_textAllCaps;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextAppearance_textLocale = global::atheneum_app.Android.Resource.Styleable.TextAppearance_textLocale;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout = global::atheneum_app.Android.Resource.Styleable.TextInputLayout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_android_hint = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_android_hint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_android_textColorHint = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxStrokeColor = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_counterEnabled = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_counterMaxLength = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_counterTextAppearance = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_errorEnabled = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_errorTextAppearance = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_helperText = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_helperText;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_helperTextEnabled = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_hintEnabled = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_hintTextAppearance = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_passwordToggleTint = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::atheneum_app.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ThemeEnforcement = global::atheneum_app.Android.Resource.Styleable.ThemeEnforcement;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::atheneum_app.Android.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::atheneum_app.Android.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::atheneum_app.Android.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar = global::atheneum_app.Android.Resource.Styleable.Toolbar;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_android_gravity = global::atheneum_app.Android.Resource.Styleable.Toolbar_android_gravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_android_minHeight = global::atheneum_app.Android.Resource.Styleable.Toolbar_android_minHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_buttonGravity = global::atheneum_app.Android.Resource.Styleable.Toolbar_buttonGravity;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_collapseContentDescription = global::atheneum_app.Android.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_collapseIcon = global::atheneum_app.Android.Resource.Styleable.Toolbar_collapseIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_contentInsetEnd = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_contentInsetLeft = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_contentInsetRight = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetRight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_contentInsetStart = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_logo = global::atheneum_app.Android.Resource.Styleable.Toolbar_logo;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_logoDescription = global::atheneum_app.Android.Resource.Styleable.Toolbar_logoDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_maxButtonHeight = global::atheneum_app.Android.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_menu = global::atheneum_app.Android.Resource.Styleable.Toolbar_menu;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_navigationContentDescription = global::atheneum_app.Android.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_navigationIcon = global::atheneum_app.Android.Resource.Styleable.Toolbar_navigationIcon;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_popupTheme = global::atheneum_app.Android.Resource.Styleable.Toolbar_popupTheme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_subtitle = global::atheneum_app.Android.Resource.Styleable.Toolbar_subtitle;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_subtitleTextAppearance = global::atheneum_app.Android.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_subtitleTextColor = global::atheneum_app.Android.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_title = global::atheneum_app.Android.Resource.Styleable.Toolbar_title;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleMargin = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMargin;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleMarginBottom = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleMarginEnd = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleMargins = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMargins;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleMarginStart = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleMarginTop = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginTop;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleTextAppearance = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.Toolbar_titleTextColor = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleTextColor;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.View = global::atheneum_app.Android.Resource.Styleable.View;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewBackgroundHelper = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewBackgroundHelper_android_background = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewStubCompat = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewStubCompat_android_id = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat_android_id;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewStubCompat_android_inflatedId = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.ViewStubCompat_android_layout = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat_android_layout;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.View_android_focusable = global::atheneum_app.Android.Resource.Styleable.View_android_focusable;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.View_android_theme = global::atheneum_app.Android.Resource.Styleable.View_android_theme;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.View_paddingEnd = global::atheneum_app.Android.Resource.Styleable.View_paddingEnd;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.View_paddingStart = global::atheneum_app.Android.Resource.Styleable.View_paddingStart;
+			global::ZXing.Net.Mobile.Forms.Resource.Styleable.View_theme = global::atheneum_app.Android.Resource.Styleable.View_theme;
+			global::ZXing.Net.Mobile.Forms.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::atheneum_app.Android.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_fade_in = global::atheneum_app.Android.Resource.Animation.abc_fade_in;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_fade_out = global::atheneum_app.Android.Resource.Animation.abc_fade_out;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_grow_fade_in_from_bottom = global::atheneum_app.Android.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_popup_enter = global::atheneum_app.Android.Resource.Animation.abc_popup_enter;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_popup_exit = global::atheneum_app.Android.Resource.Animation.abc_popup_exit;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_shrink_fade_out_from_bottom = global::atheneum_app.Android.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_slide_in_bottom = global::atheneum_app.Android.Resource.Animation.abc_slide_in_bottom;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_slide_in_top = global::atheneum_app.Android.Resource.Animation.abc_slide_in_top;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_slide_out_bottom = global::atheneum_app.Android.Resource.Animation.abc_slide_out_bottom;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_slide_out_top = global::atheneum_app.Android.Resource.Animation.abc_slide_out_top;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_tooltip_enter = global::atheneum_app.Android.Resource.Animation.abc_tooltip_enter;
+			global::ZXing.Net.Mobile.Resource.Animation.abc_tooltip_exit = global::atheneum_app.Android.Resource.Animation.abc_tooltip_exit;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::atheneum_app.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::ZXing.Net.Mobile.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::atheneum_app.Android.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarDivider = global::atheneum_app.Android.Resource.Attribute.actionBarDivider;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarItemBackground = global::atheneum_app.Android.Resource.Attribute.actionBarItemBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarPopupTheme = global::atheneum_app.Android.Resource.Attribute.actionBarPopupTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarSize = global::atheneum_app.Android.Resource.Attribute.actionBarSize;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarSplitStyle = global::atheneum_app.Android.Resource.Attribute.actionBarSplitStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarStyle = global::atheneum_app.Android.Resource.Attribute.actionBarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarTabBarStyle = global::atheneum_app.Android.Resource.Attribute.actionBarTabBarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarTabStyle = global::atheneum_app.Android.Resource.Attribute.actionBarTabStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarTabTextStyle = global::atheneum_app.Android.Resource.Attribute.actionBarTabTextStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarTheme = global::atheneum_app.Android.Resource.Attribute.actionBarTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionBarWidgetTheme = global::atheneum_app.Android.Resource.Attribute.actionBarWidgetTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionButtonStyle = global::atheneum_app.Android.Resource.Attribute.actionButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionDropDownStyle = global::atheneum_app.Android.Resource.Attribute.actionDropDownStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionLayout = global::atheneum_app.Android.Resource.Attribute.actionLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionMenuTextAppearance = global::atheneum_app.Android.Resource.Attribute.actionMenuTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionMenuTextColor = global::atheneum_app.Android.Resource.Attribute.actionMenuTextColor;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeBackground = global::atheneum_app.Android.Resource.Attribute.actionModeBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeCloseButtonStyle = global::atheneum_app.Android.Resource.Attribute.actionModeCloseButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeCloseDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeCloseDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeCopyDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeCopyDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeCutDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeCutDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeFindDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeFindDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModePasteDrawable = global::atheneum_app.Android.Resource.Attribute.actionModePasteDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModePopupWindowStyle = global::atheneum_app.Android.Resource.Attribute.actionModePopupWindowStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeSelectAllDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeSelectAllDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeShareDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeShareDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeSplitBackground = global::atheneum_app.Android.Resource.Attribute.actionModeSplitBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeStyle = global::atheneum_app.Android.Resource.Attribute.actionModeStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionModeWebSearchDrawable = global::atheneum_app.Android.Resource.Attribute.actionModeWebSearchDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionOverflowButtonStyle = global::atheneum_app.Android.Resource.Attribute.actionOverflowButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionOverflowMenuStyle = global::atheneum_app.Android.Resource.Attribute.actionOverflowMenuStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionProviderClass = global::atheneum_app.Android.Resource.Attribute.actionProviderClass;
+			global::ZXing.Net.Mobile.Resource.Attribute.actionViewClass = global::atheneum_app.Android.Resource.Attribute.actionViewClass;
+			global::ZXing.Net.Mobile.Resource.Attribute.activityChooserViewStyle = global::atheneum_app.Android.Resource.Attribute.activityChooserViewStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.alertDialogButtonGroupStyle = global::atheneum_app.Android.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.alertDialogCenterButtons = global::atheneum_app.Android.Resource.Attribute.alertDialogCenterButtons;
+			global::ZXing.Net.Mobile.Resource.Attribute.alertDialogStyle = global::atheneum_app.Android.Resource.Attribute.alertDialogStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.alertDialogTheme = global::atheneum_app.Android.Resource.Attribute.alertDialogTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.allowStacking = global::atheneum_app.Android.Resource.Attribute.allowStacking;
+			global::ZXing.Net.Mobile.Resource.Attribute.alpha = global::atheneum_app.Android.Resource.Attribute.alpha;
+			global::ZXing.Net.Mobile.Resource.Attribute.alphabeticModifiers = global::atheneum_app.Android.Resource.Attribute.alphabeticModifiers;
+			global::ZXing.Net.Mobile.Resource.Attribute.arrowHeadLength = global::atheneum_app.Android.Resource.Attribute.arrowHeadLength;
+			global::ZXing.Net.Mobile.Resource.Attribute.arrowShaftLength = global::atheneum_app.Android.Resource.Attribute.arrowShaftLength;
+			global::ZXing.Net.Mobile.Resource.Attribute.autoCompleteTextViewStyle = global::atheneum_app.Android.Resource.Attribute.autoCompleteTextViewStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.autoSizeMaxTextSize = global::atheneum_app.Android.Resource.Attribute.autoSizeMaxTextSize;
+			global::ZXing.Net.Mobile.Resource.Attribute.autoSizeMinTextSize = global::atheneum_app.Android.Resource.Attribute.autoSizeMinTextSize;
+			global::ZXing.Net.Mobile.Resource.Attribute.autoSizePresetSizes = global::atheneum_app.Android.Resource.Attribute.autoSizePresetSizes;
+			global::ZXing.Net.Mobile.Resource.Attribute.autoSizeStepGranularity = global::atheneum_app.Android.Resource.Attribute.autoSizeStepGranularity;
+			global::ZXing.Net.Mobile.Resource.Attribute.autoSizeTextType = global::atheneum_app.Android.Resource.Attribute.autoSizeTextType;
+			global::ZXing.Net.Mobile.Resource.Attribute.background = global::atheneum_app.Android.Resource.Attribute.background;
+			global::ZXing.Net.Mobile.Resource.Attribute.backgroundSplit = global::atheneum_app.Android.Resource.Attribute.backgroundSplit;
+			global::ZXing.Net.Mobile.Resource.Attribute.backgroundStacked = global::atheneum_app.Android.Resource.Attribute.backgroundStacked;
+			global::ZXing.Net.Mobile.Resource.Attribute.backgroundTint = global::atheneum_app.Android.Resource.Attribute.backgroundTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.backgroundTintMode = global::atheneum_app.Android.Resource.Attribute.backgroundTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.barLength = global::atheneum_app.Android.Resource.Attribute.barLength;
+			global::ZXing.Net.Mobile.Resource.Attribute.borderlessButtonStyle = global::atheneum_app.Android.Resource.Attribute.borderlessButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarNegativeButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarNeutralButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarPositiveButtonStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonBarStyle = global::atheneum_app.Android.Resource.Attribute.buttonBarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonCompat = global::atheneum_app.Android.Resource.Attribute.buttonCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonGravity = global::atheneum_app.Android.Resource.Attribute.buttonGravity;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonIconDimen = global::atheneum_app.Android.Resource.Attribute.buttonIconDimen;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonPanelSideLayout = global::atheneum_app.Android.Resource.Attribute.buttonPanelSideLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonStyle = global::atheneum_app.Android.Resource.Attribute.buttonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonStyleSmall = global::atheneum_app.Android.Resource.Attribute.buttonStyleSmall;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonTint = global::atheneum_app.Android.Resource.Attribute.buttonTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.buttonTintMode = global::atheneum_app.Android.Resource.Attribute.buttonTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.checkboxStyle = global::atheneum_app.Android.Resource.Attribute.checkboxStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.checkedTextViewStyle = global::atheneum_app.Android.Resource.Attribute.checkedTextViewStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.closeIcon = global::atheneum_app.Android.Resource.Attribute.closeIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.closeItemLayout = global::atheneum_app.Android.Resource.Attribute.closeItemLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.collapseContentDescription = global::atheneum_app.Android.Resource.Attribute.collapseContentDescription;
+			global::ZXing.Net.Mobile.Resource.Attribute.collapseIcon = global::atheneum_app.Android.Resource.Attribute.collapseIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.color = global::atheneum_app.Android.Resource.Attribute.color;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorAccent = global::atheneum_app.Android.Resource.Attribute.colorAccent;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorBackgroundFloating = global::atheneum_app.Android.Resource.Attribute.colorBackgroundFloating;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorButtonNormal = global::atheneum_app.Android.Resource.Attribute.colorButtonNormal;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorControlActivated = global::atheneum_app.Android.Resource.Attribute.colorControlActivated;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorControlHighlight = global::atheneum_app.Android.Resource.Attribute.colorControlHighlight;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorControlNormal = global::atheneum_app.Android.Resource.Attribute.colorControlNormal;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorError = global::atheneum_app.Android.Resource.Attribute.colorError;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorPrimary = global::atheneum_app.Android.Resource.Attribute.colorPrimary;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorPrimaryDark = global::atheneum_app.Android.Resource.Attribute.colorPrimaryDark;
+			global::ZXing.Net.Mobile.Resource.Attribute.colorSwitchThumbNormal = global::atheneum_app.Android.Resource.Attribute.colorSwitchThumbNormal;
+			global::ZXing.Net.Mobile.Resource.Attribute.commitIcon = global::atheneum_app.Android.Resource.Attribute.commitIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentDescription = global::atheneum_app.Android.Resource.Attribute.contentDescription;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentInsetEnd = global::atheneum_app.Android.Resource.Attribute.contentInsetEnd;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentInsetEndWithActions = global::atheneum_app.Android.Resource.Attribute.contentInsetEndWithActions;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentInsetLeft = global::atheneum_app.Android.Resource.Attribute.contentInsetLeft;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentInsetRight = global::atheneum_app.Android.Resource.Attribute.contentInsetRight;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentInsetStart = global::atheneum_app.Android.Resource.Attribute.contentInsetStart;
+			global::ZXing.Net.Mobile.Resource.Attribute.contentInsetStartWithNavigation = global::atheneum_app.Android.Resource.Attribute.contentInsetStartWithNavigation;
+			global::ZXing.Net.Mobile.Resource.Attribute.controlBackground = global::atheneum_app.Android.Resource.Attribute.controlBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.coordinatorLayoutStyle = global::atheneum_app.Android.Resource.Attribute.coordinatorLayoutStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.customNavigationLayout = global::atheneum_app.Android.Resource.Attribute.customNavigationLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.defaultQueryHint = global::atheneum_app.Android.Resource.Attribute.defaultQueryHint;
+			global::ZXing.Net.Mobile.Resource.Attribute.dialogCornerRadius = global::atheneum_app.Android.Resource.Attribute.dialogCornerRadius;
+			global::ZXing.Net.Mobile.Resource.Attribute.dialogPreferredPadding = global::atheneum_app.Android.Resource.Attribute.dialogPreferredPadding;
+			global::ZXing.Net.Mobile.Resource.Attribute.dialogTheme = global::atheneum_app.Android.Resource.Attribute.dialogTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.displayOptions = global::atheneum_app.Android.Resource.Attribute.displayOptions;
+			global::ZXing.Net.Mobile.Resource.Attribute.divider = global::atheneum_app.Android.Resource.Attribute.divider;
+			global::ZXing.Net.Mobile.Resource.Attribute.dividerHorizontal = global::atheneum_app.Android.Resource.Attribute.dividerHorizontal;
+			global::ZXing.Net.Mobile.Resource.Attribute.dividerPadding = global::atheneum_app.Android.Resource.Attribute.dividerPadding;
+			global::ZXing.Net.Mobile.Resource.Attribute.dividerVertical = global::atheneum_app.Android.Resource.Attribute.dividerVertical;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableBottomCompat = global::atheneum_app.Android.Resource.Attribute.drawableBottomCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableEndCompat = global::atheneum_app.Android.Resource.Attribute.drawableEndCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableLeftCompat = global::atheneum_app.Android.Resource.Attribute.drawableLeftCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableRightCompat = global::atheneum_app.Android.Resource.Attribute.drawableRightCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableSize = global::atheneum_app.Android.Resource.Attribute.drawableSize;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableStartCompat = global::atheneum_app.Android.Resource.Attribute.drawableStartCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableTint = global::atheneum_app.Android.Resource.Attribute.drawableTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableTintMode = global::atheneum_app.Android.Resource.Attribute.drawableTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawableTopCompat = global::atheneum_app.Android.Resource.Attribute.drawableTopCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.drawerArrowStyle = global::atheneum_app.Android.Resource.Attribute.drawerArrowStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.dropdownListPreferredItemHeight = global::atheneum_app.Android.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.dropDownListViewStyle = global::atheneum_app.Android.Resource.Attribute.dropDownListViewStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.editTextBackground = global::atheneum_app.Android.Resource.Attribute.editTextBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.editTextColor = global::atheneum_app.Android.Resource.Attribute.editTextColor;
+			global::ZXing.Net.Mobile.Resource.Attribute.editTextStyle = global::atheneum_app.Android.Resource.Attribute.editTextStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.elevation = global::atheneum_app.Android.Resource.Attribute.elevation;
+			global::ZXing.Net.Mobile.Resource.Attribute.expandActivityOverflowButtonDrawable = global::atheneum_app.Android.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::ZXing.Net.Mobile.Resource.Attribute.firstBaselineToTopHeight = global::atheneum_app.Android.Resource.Attribute.firstBaselineToTopHeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.font = global::atheneum_app.Android.Resource.Attribute.font;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontFamily = global::atheneum_app.Android.Resource.Attribute.fontFamily;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontProviderAuthority = global::atheneum_app.Android.Resource.Attribute.fontProviderAuthority;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontProviderCerts = global::atheneum_app.Android.Resource.Attribute.fontProviderCerts;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontProviderFetchStrategy = global::atheneum_app.Android.Resource.Attribute.fontProviderFetchStrategy;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontProviderFetchTimeout = global::atheneum_app.Android.Resource.Attribute.fontProviderFetchTimeout;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontProviderPackage = global::atheneum_app.Android.Resource.Attribute.fontProviderPackage;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontProviderQuery = global::atheneum_app.Android.Resource.Attribute.fontProviderQuery;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontStyle = global::atheneum_app.Android.Resource.Attribute.fontStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontVariationSettings = global::atheneum_app.Android.Resource.Attribute.fontVariationSettings;
+			global::ZXing.Net.Mobile.Resource.Attribute.fontWeight = global::atheneum_app.Android.Resource.Attribute.fontWeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.gapBetweenBars = global::atheneum_app.Android.Resource.Attribute.gapBetweenBars;
+			global::ZXing.Net.Mobile.Resource.Attribute.goIcon = global::atheneum_app.Android.Resource.Attribute.goIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.height = global::atheneum_app.Android.Resource.Attribute.height;
+			global::ZXing.Net.Mobile.Resource.Attribute.hideOnContentScroll = global::atheneum_app.Android.Resource.Attribute.hideOnContentScroll;
+			global::ZXing.Net.Mobile.Resource.Attribute.homeAsUpIndicator = global::atheneum_app.Android.Resource.Attribute.homeAsUpIndicator;
+			global::ZXing.Net.Mobile.Resource.Attribute.homeLayout = global::atheneum_app.Android.Resource.Attribute.homeLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.icon = global::atheneum_app.Android.Resource.Attribute.icon;
+			global::ZXing.Net.Mobile.Resource.Attribute.iconifiedByDefault = global::atheneum_app.Android.Resource.Attribute.iconifiedByDefault;
+			global::ZXing.Net.Mobile.Resource.Attribute.iconTint = global::atheneum_app.Android.Resource.Attribute.iconTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.iconTintMode = global::atheneum_app.Android.Resource.Attribute.iconTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.imageButtonStyle = global::atheneum_app.Android.Resource.Attribute.imageButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.indeterminateProgressStyle = global::atheneum_app.Android.Resource.Attribute.indeterminateProgressStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.initialActivityCount = global::atheneum_app.Android.Resource.Attribute.initialActivityCount;
+			global::ZXing.Net.Mobile.Resource.Attribute.isLightTheme = global::atheneum_app.Android.Resource.Attribute.isLightTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.itemPadding = global::atheneum_app.Android.Resource.Attribute.itemPadding;
+			global::ZXing.Net.Mobile.Resource.Attribute.keylines = global::atheneum_app.Android.Resource.Attribute.keylines;
+			global::ZXing.Net.Mobile.Resource.Attribute.lastBaselineToBottomHeight = global::atheneum_app.Android.Resource.Attribute.lastBaselineToBottomHeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout = global::atheneum_app.Android.Resource.Attribute.layout;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout_anchor = global::atheneum_app.Android.Resource.Attribute.layout_anchor;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout_anchorGravity = global::atheneum_app.Android.Resource.Attribute.layout_anchorGravity;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout_behavior = global::atheneum_app.Android.Resource.Attribute.layout_behavior;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout_dodgeInsetEdges = global::atheneum_app.Android.Resource.Attribute.layout_dodgeInsetEdges;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout_insetEdge = global::atheneum_app.Android.Resource.Attribute.layout_insetEdge;
+			global::ZXing.Net.Mobile.Resource.Attribute.layout_keyline = global::atheneum_app.Android.Resource.Attribute.layout_keyline;
+			global::ZXing.Net.Mobile.Resource.Attribute.lineHeight = global::atheneum_app.Android.Resource.Attribute.lineHeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.listChoiceBackgroundIndicator = global::atheneum_app.Android.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::ZXing.Net.Mobile.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::atheneum_app.Android.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::ZXing.Net.Mobile.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::atheneum_app.Android.Resource.Attribute.listChoiceIndicatorSingleAnimated;
+			global::ZXing.Net.Mobile.Resource.Attribute.listDividerAlertDialog = global::atheneum_app.Android.Resource.Attribute.listDividerAlertDialog;
+			global::ZXing.Net.Mobile.Resource.Attribute.listItemLayout = global::atheneum_app.Android.Resource.Attribute.listItemLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.listLayout = global::atheneum_app.Android.Resource.Attribute.listLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.listMenuViewStyle = global::atheneum_app.Android.Resource.Attribute.listMenuViewStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPopupWindowStyle = global::atheneum_app.Android.Resource.Attribute.listPopupWindowStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemHeight = global::atheneum_app.Android.Resource.Attribute.listPreferredItemHeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemHeightLarge = global::atheneum_app.Android.Resource.Attribute.listPreferredItemHeightLarge;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemHeightSmall = global::atheneum_app.Android.Resource.Attribute.listPreferredItemHeightSmall;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingEnd = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingEnd;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingLeft = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingRight = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingRight;
+			global::ZXing.Net.Mobile.Resource.Attribute.listPreferredItemPaddingStart = global::atheneum_app.Android.Resource.Attribute.listPreferredItemPaddingStart;
+			global::ZXing.Net.Mobile.Resource.Attribute.logo = global::atheneum_app.Android.Resource.Attribute.logo;
+			global::ZXing.Net.Mobile.Resource.Attribute.logoDescription = global::atheneum_app.Android.Resource.Attribute.logoDescription;
+			global::ZXing.Net.Mobile.Resource.Attribute.maxButtonHeight = global::atheneum_app.Android.Resource.Attribute.maxButtonHeight;
+			global::ZXing.Net.Mobile.Resource.Attribute.measureWithLargestChild = global::atheneum_app.Android.Resource.Attribute.measureWithLargestChild;
+			global::ZXing.Net.Mobile.Resource.Attribute.menu = global::atheneum_app.Android.Resource.Attribute.menu;
+			global::ZXing.Net.Mobile.Resource.Attribute.multiChoiceItemLayout = global::atheneum_app.Android.Resource.Attribute.multiChoiceItemLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.navigationContentDescription = global::atheneum_app.Android.Resource.Attribute.navigationContentDescription;
+			global::ZXing.Net.Mobile.Resource.Attribute.navigationIcon = global::atheneum_app.Android.Resource.Attribute.navigationIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.navigationMode = global::atheneum_app.Android.Resource.Attribute.navigationMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.numericModifiers = global::atheneum_app.Android.Resource.Attribute.numericModifiers;
+			global::ZXing.Net.Mobile.Resource.Attribute.overlapAnchor = global::atheneum_app.Android.Resource.Attribute.overlapAnchor;
+			global::ZXing.Net.Mobile.Resource.Attribute.paddingBottomNoButtons = global::atheneum_app.Android.Resource.Attribute.paddingBottomNoButtons;
+			global::ZXing.Net.Mobile.Resource.Attribute.paddingEnd = global::atheneum_app.Android.Resource.Attribute.paddingEnd;
+			global::ZXing.Net.Mobile.Resource.Attribute.paddingStart = global::atheneum_app.Android.Resource.Attribute.paddingStart;
+			global::ZXing.Net.Mobile.Resource.Attribute.paddingTopNoTitle = global::atheneum_app.Android.Resource.Attribute.paddingTopNoTitle;
+			global::ZXing.Net.Mobile.Resource.Attribute.panelBackground = global::atheneum_app.Android.Resource.Attribute.panelBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.panelMenuListTheme = global::atheneum_app.Android.Resource.Attribute.panelMenuListTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.panelMenuListWidth = global::atheneum_app.Android.Resource.Attribute.panelMenuListWidth;
+			global::ZXing.Net.Mobile.Resource.Attribute.popupMenuStyle = global::atheneum_app.Android.Resource.Attribute.popupMenuStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.popupTheme = global::atheneum_app.Android.Resource.Attribute.popupTheme;
+			global::ZXing.Net.Mobile.Resource.Attribute.popupWindowStyle = global::atheneum_app.Android.Resource.Attribute.popupWindowStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.preserveIconSpacing = global::atheneum_app.Android.Resource.Attribute.preserveIconSpacing;
+			global::ZXing.Net.Mobile.Resource.Attribute.progressBarPadding = global::atheneum_app.Android.Resource.Attribute.progressBarPadding;
+			global::ZXing.Net.Mobile.Resource.Attribute.progressBarStyle = global::atheneum_app.Android.Resource.Attribute.progressBarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.queryBackground = global::atheneum_app.Android.Resource.Attribute.queryBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.queryHint = global::atheneum_app.Android.Resource.Attribute.queryHint;
+			global::ZXing.Net.Mobile.Resource.Attribute.radioButtonStyle = global::atheneum_app.Android.Resource.Attribute.radioButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.ratingBarStyle = global::atheneum_app.Android.Resource.Attribute.ratingBarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.ratingBarStyleIndicator = global::atheneum_app.Android.Resource.Attribute.ratingBarStyleIndicator;
+			global::ZXing.Net.Mobile.Resource.Attribute.ratingBarStyleSmall = global::atheneum_app.Android.Resource.Attribute.ratingBarStyleSmall;
+			global::ZXing.Net.Mobile.Resource.Attribute.searchHintIcon = global::atheneum_app.Android.Resource.Attribute.searchHintIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.searchIcon = global::atheneum_app.Android.Resource.Attribute.searchIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.searchViewStyle = global::atheneum_app.Android.Resource.Attribute.searchViewStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.seekBarStyle = global::atheneum_app.Android.Resource.Attribute.seekBarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.selectableItemBackground = global::atheneum_app.Android.Resource.Attribute.selectableItemBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.selectableItemBackgroundBorderless = global::atheneum_app.Android.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::ZXing.Net.Mobile.Resource.Attribute.showAsAction = global::atheneum_app.Android.Resource.Attribute.showAsAction;
+			global::ZXing.Net.Mobile.Resource.Attribute.showDividers = global::atheneum_app.Android.Resource.Attribute.showDividers;
+			global::ZXing.Net.Mobile.Resource.Attribute.showText = global::atheneum_app.Android.Resource.Attribute.showText;
+			global::ZXing.Net.Mobile.Resource.Attribute.showTitle = global::atheneum_app.Android.Resource.Attribute.showTitle;
+			global::ZXing.Net.Mobile.Resource.Attribute.singleChoiceItemLayout = global::atheneum_app.Android.Resource.Attribute.singleChoiceItemLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.spinBars = global::atheneum_app.Android.Resource.Attribute.spinBars;
+			global::ZXing.Net.Mobile.Resource.Attribute.spinnerDropDownItemStyle = global::atheneum_app.Android.Resource.Attribute.spinnerDropDownItemStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.spinnerStyle = global::atheneum_app.Android.Resource.Attribute.spinnerStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.splitTrack = global::atheneum_app.Android.Resource.Attribute.splitTrack;
+			global::ZXing.Net.Mobile.Resource.Attribute.srcCompat = global::atheneum_app.Android.Resource.Attribute.srcCompat;
+			global::ZXing.Net.Mobile.Resource.Attribute.state_above_anchor = global::atheneum_app.Android.Resource.Attribute.state_above_anchor;
+			global::ZXing.Net.Mobile.Resource.Attribute.statusBarBackground = global::atheneum_app.Android.Resource.Attribute.statusBarBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.subMenuArrow = global::atheneum_app.Android.Resource.Attribute.subMenuArrow;
+			global::ZXing.Net.Mobile.Resource.Attribute.submitBackground = global::atheneum_app.Android.Resource.Attribute.submitBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.subtitle = global::atheneum_app.Android.Resource.Attribute.subtitle;
+			global::ZXing.Net.Mobile.Resource.Attribute.subtitleTextAppearance = global::atheneum_app.Android.Resource.Attribute.subtitleTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Attribute.subtitleTextColor = global::atheneum_app.Android.Resource.Attribute.subtitleTextColor;
+			global::ZXing.Net.Mobile.Resource.Attribute.subtitleTextStyle = global::atheneum_app.Android.Resource.Attribute.subtitleTextStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.suggestionRowLayout = global::atheneum_app.Android.Resource.Attribute.suggestionRowLayout;
+			global::ZXing.Net.Mobile.Resource.Attribute.switchMinWidth = global::atheneum_app.Android.Resource.Attribute.switchMinWidth;
+			global::ZXing.Net.Mobile.Resource.Attribute.switchPadding = global::atheneum_app.Android.Resource.Attribute.switchPadding;
+			global::ZXing.Net.Mobile.Resource.Attribute.switchStyle = global::atheneum_app.Android.Resource.Attribute.switchStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.switchTextAppearance = global::atheneum_app.Android.Resource.Attribute.switchTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAllCaps = global::atheneum_app.Android.Resource.Attribute.textAllCaps;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceLargePopupMenu = global::atheneum_app.Android.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceListItem = global::atheneum_app.Android.Resource.Attribute.textAppearanceListItem;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceListItemSecondary = global::atheneum_app.Android.Resource.Attribute.textAppearanceListItemSecondary;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceListItemSmall = global::atheneum_app.Android.Resource.Attribute.textAppearanceListItemSmall;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearancePopupMenuHeader = global::atheneum_app.Android.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceSearchResultSubtitle = global::atheneum_app.Android.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceSearchResultTitle = global::atheneum_app.Android.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::ZXing.Net.Mobile.Resource.Attribute.textAppearanceSmallPopupMenu = global::atheneum_app.Android.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::ZXing.Net.Mobile.Resource.Attribute.textColorAlertDialogListItem = global::atheneum_app.Android.Resource.Attribute.textColorAlertDialogListItem;
+			global::ZXing.Net.Mobile.Resource.Attribute.textColorSearchUrl = global::atheneum_app.Android.Resource.Attribute.textColorSearchUrl;
+			global::ZXing.Net.Mobile.Resource.Attribute.textLocale = global::atheneum_app.Android.Resource.Attribute.textLocale;
+			global::ZXing.Net.Mobile.Resource.Attribute.theme = global::atheneum_app.Android.Resource.Attribute.theme;
+			global::ZXing.Net.Mobile.Resource.Attribute.thickness = global::atheneum_app.Android.Resource.Attribute.thickness;
+			global::ZXing.Net.Mobile.Resource.Attribute.thumbTextPadding = global::atheneum_app.Android.Resource.Attribute.thumbTextPadding;
+			global::ZXing.Net.Mobile.Resource.Attribute.thumbTint = global::atheneum_app.Android.Resource.Attribute.thumbTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.thumbTintMode = global::atheneum_app.Android.Resource.Attribute.thumbTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.tickMark = global::atheneum_app.Android.Resource.Attribute.tickMark;
+			global::ZXing.Net.Mobile.Resource.Attribute.tickMarkTint = global::atheneum_app.Android.Resource.Attribute.tickMarkTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.tickMarkTintMode = global::atheneum_app.Android.Resource.Attribute.tickMarkTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.tint = global::atheneum_app.Android.Resource.Attribute.tint;
+			global::ZXing.Net.Mobile.Resource.Attribute.tintMode = global::atheneum_app.Android.Resource.Attribute.tintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.title = global::atheneum_app.Android.Resource.Attribute.title;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleMargin = global::atheneum_app.Android.Resource.Attribute.titleMargin;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleMarginBottom = global::atheneum_app.Android.Resource.Attribute.titleMarginBottom;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleMarginEnd = global::atheneum_app.Android.Resource.Attribute.titleMarginEnd;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleMargins = global::atheneum_app.Android.Resource.Attribute.titleMargins;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleMarginStart = global::atheneum_app.Android.Resource.Attribute.titleMarginStart;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleMarginTop = global::atheneum_app.Android.Resource.Attribute.titleMarginTop;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleTextAppearance = global::atheneum_app.Android.Resource.Attribute.titleTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleTextColor = global::atheneum_app.Android.Resource.Attribute.titleTextColor;
+			global::ZXing.Net.Mobile.Resource.Attribute.titleTextStyle = global::atheneum_app.Android.Resource.Attribute.titleTextStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.toolbarNavigationButtonStyle = global::atheneum_app.Android.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.toolbarStyle = global::atheneum_app.Android.Resource.Attribute.toolbarStyle;
+			global::ZXing.Net.Mobile.Resource.Attribute.tooltipForegroundColor = global::atheneum_app.Android.Resource.Attribute.tooltipForegroundColor;
+			global::ZXing.Net.Mobile.Resource.Attribute.tooltipFrameBackground = global::atheneum_app.Android.Resource.Attribute.tooltipFrameBackground;
+			global::ZXing.Net.Mobile.Resource.Attribute.tooltipText = global::atheneum_app.Android.Resource.Attribute.tooltipText;
+			global::ZXing.Net.Mobile.Resource.Attribute.track = global::atheneum_app.Android.Resource.Attribute.track;
+			global::ZXing.Net.Mobile.Resource.Attribute.trackTint = global::atheneum_app.Android.Resource.Attribute.trackTint;
+			global::ZXing.Net.Mobile.Resource.Attribute.trackTintMode = global::atheneum_app.Android.Resource.Attribute.trackTintMode;
+			global::ZXing.Net.Mobile.Resource.Attribute.ttcIndex = global::atheneum_app.Android.Resource.Attribute.ttcIndex;
+			global::ZXing.Net.Mobile.Resource.Attribute.viewInflaterClass = global::atheneum_app.Android.Resource.Attribute.viewInflaterClass;
+			global::ZXing.Net.Mobile.Resource.Attribute.voiceIcon = global::atheneum_app.Android.Resource.Attribute.voiceIcon;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowActionBar = global::atheneum_app.Android.Resource.Attribute.windowActionBar;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowActionBarOverlay = global::atheneum_app.Android.Resource.Attribute.windowActionBarOverlay;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowActionModeOverlay = global::atheneum_app.Android.Resource.Attribute.windowActionModeOverlay;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowFixedHeightMajor = global::atheneum_app.Android.Resource.Attribute.windowFixedHeightMajor;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowFixedHeightMinor = global::atheneum_app.Android.Resource.Attribute.windowFixedHeightMinor;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowFixedWidthMajor = global::atheneum_app.Android.Resource.Attribute.windowFixedWidthMajor;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowFixedWidthMinor = global::atheneum_app.Android.Resource.Attribute.windowFixedWidthMinor;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowMinWidthMajor = global::atheneum_app.Android.Resource.Attribute.windowMinWidthMajor;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowMinWidthMinor = global::atheneum_app.Android.Resource.Attribute.windowMinWidthMinor;
+			global::ZXing.Net.Mobile.Resource.Attribute.windowNoTitle = global::atheneum_app.Android.Resource.Attribute.windowNoTitle;
+			global::ZXing.Net.Mobile.Resource.Boolean.abc_action_bar_embed_tabs = global::atheneum_app.Android.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::ZXing.Net.Mobile.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::atheneum_app.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::ZXing.Net.Mobile.Resource.Color.abc_background_cache_hint_selector_material_dark = global::atheneum_app.Android.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.abc_background_cache_hint_selector_material_light = global::atheneum_app.Android.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.abc_btn_colored_borderless_text_material = global::atheneum_app.Android.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::ZXing.Net.Mobile.Resource.Color.abc_btn_colored_text_material = global::atheneum_app.Android.Resource.Color.abc_btn_colored_text_material;
+			global::ZXing.Net.Mobile.Resource.Color.abc_color_highlight_material = global::atheneum_app.Android.Resource.Color.abc_color_highlight_material;
+			global::ZXing.Net.Mobile.Resource.Color.abc_hint_foreground_material_dark = global::atheneum_app.Android.Resource.Color.abc_hint_foreground_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.abc_hint_foreground_material_light = global::atheneum_app.Android.Resource.Color.abc_hint_foreground_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.abc_primary_text_disable_only_material_dark = global::atheneum_app.Android.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.abc_primary_text_disable_only_material_light = global::atheneum_app.Android.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.abc_primary_text_material_dark = global::atheneum_app.Android.Resource.Color.abc_primary_text_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.abc_primary_text_material_light = global::atheneum_app.Android.Resource.Color.abc_primary_text_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.abc_search_url_text = global::atheneum_app.Android.Resource.Color.abc_search_url_text;
+			global::ZXing.Net.Mobile.Resource.Color.abc_search_url_text_normal = global::atheneum_app.Android.Resource.Color.abc_search_url_text_normal;
+			global::ZXing.Net.Mobile.Resource.Color.abc_search_url_text_pressed = global::atheneum_app.Android.Resource.Color.abc_search_url_text_pressed;
+			global::ZXing.Net.Mobile.Resource.Color.abc_search_url_text_selected = global::atheneum_app.Android.Resource.Color.abc_search_url_text_selected;
+			global::ZXing.Net.Mobile.Resource.Color.abc_secondary_text_material_dark = global::atheneum_app.Android.Resource.Color.abc_secondary_text_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.abc_secondary_text_material_light = global::atheneum_app.Android.Resource.Color.abc_secondary_text_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.abc_tint_btn_checkable = global::atheneum_app.Android.Resource.Color.abc_tint_btn_checkable;
+			global::ZXing.Net.Mobile.Resource.Color.abc_tint_default = global::atheneum_app.Android.Resource.Color.abc_tint_default;
+			global::ZXing.Net.Mobile.Resource.Color.abc_tint_edittext = global::atheneum_app.Android.Resource.Color.abc_tint_edittext;
+			global::ZXing.Net.Mobile.Resource.Color.abc_tint_seek_thumb = global::atheneum_app.Android.Resource.Color.abc_tint_seek_thumb;
+			global::ZXing.Net.Mobile.Resource.Color.abc_tint_spinner = global::atheneum_app.Android.Resource.Color.abc_tint_spinner;
+			global::ZXing.Net.Mobile.Resource.Color.abc_tint_switch_track = global::atheneum_app.Android.Resource.Color.abc_tint_switch_track;
+			global::ZXing.Net.Mobile.Resource.Color.accent_material_dark = global::atheneum_app.Android.Resource.Color.accent_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.accent_material_light = global::atheneum_app.Android.Resource.Color.accent_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.background_floating_material_dark = global::atheneum_app.Android.Resource.Color.background_floating_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.background_floating_material_light = global::atheneum_app.Android.Resource.Color.background_floating_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.background_material_dark = global::atheneum_app.Android.Resource.Color.background_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.background_material_light = global::atheneum_app.Android.Resource.Color.background_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.bright_foreground_disabled_material_dark = global::atheneum_app.Android.Resource.Color.bright_foreground_disabled_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.bright_foreground_disabled_material_light = global::atheneum_app.Android.Resource.Color.bright_foreground_disabled_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.bright_foreground_inverse_material_dark = global::atheneum_app.Android.Resource.Color.bright_foreground_inverse_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.bright_foreground_inverse_material_light = global::atheneum_app.Android.Resource.Color.bright_foreground_inverse_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.bright_foreground_material_dark = global::atheneum_app.Android.Resource.Color.bright_foreground_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.bright_foreground_material_light = global::atheneum_app.Android.Resource.Color.bright_foreground_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.browser_actions_bg_grey = global::atheneum_app.Android.Resource.Color.browser_actions_bg_grey;
+			global::ZXing.Net.Mobile.Resource.Color.browser_actions_divider_color = global::atheneum_app.Android.Resource.Color.browser_actions_divider_color;
+			global::ZXing.Net.Mobile.Resource.Color.browser_actions_text_color = global::atheneum_app.Android.Resource.Color.browser_actions_text_color;
+			global::ZXing.Net.Mobile.Resource.Color.browser_actions_title_color = global::atheneum_app.Android.Resource.Color.browser_actions_title_color;
+			global::ZXing.Net.Mobile.Resource.Color.button_material_dark = global::atheneum_app.Android.Resource.Color.button_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.button_material_light = global::atheneum_app.Android.Resource.Color.button_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.dim_foreground_disabled_material_dark = global::atheneum_app.Android.Resource.Color.dim_foreground_disabled_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.dim_foreground_disabled_material_light = global::atheneum_app.Android.Resource.Color.dim_foreground_disabled_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.dim_foreground_material_dark = global::atheneum_app.Android.Resource.Color.dim_foreground_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.dim_foreground_material_light = global::atheneum_app.Android.Resource.Color.dim_foreground_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.error_color_material_dark = global::atheneum_app.Android.Resource.Color.error_color_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.error_color_material_light = global::atheneum_app.Android.Resource.Color.error_color_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.foreground_material_dark = global::atheneum_app.Android.Resource.Color.foreground_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.foreground_material_light = global::atheneum_app.Android.Resource.Color.foreground_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.highlighted_text_material_dark = global::atheneum_app.Android.Resource.Color.highlighted_text_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.highlighted_text_material_light = global::atheneum_app.Android.Resource.Color.highlighted_text_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.material_blue_grey_800 = global::atheneum_app.Android.Resource.Color.material_blue_grey_800;
+			global::ZXing.Net.Mobile.Resource.Color.material_blue_grey_900 = global::atheneum_app.Android.Resource.Color.material_blue_grey_900;
+			global::ZXing.Net.Mobile.Resource.Color.material_blue_grey_950 = global::atheneum_app.Android.Resource.Color.material_blue_grey_950;
+			global::ZXing.Net.Mobile.Resource.Color.material_deep_teal_200 = global::atheneum_app.Android.Resource.Color.material_deep_teal_200;
+			global::ZXing.Net.Mobile.Resource.Color.material_deep_teal_500 = global::atheneum_app.Android.Resource.Color.material_deep_teal_500;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_100 = global::atheneum_app.Android.Resource.Color.material_grey_100;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_300 = global::atheneum_app.Android.Resource.Color.material_grey_300;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_50 = global::atheneum_app.Android.Resource.Color.material_grey_50;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_600 = global::atheneum_app.Android.Resource.Color.material_grey_600;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_800 = global::atheneum_app.Android.Resource.Color.material_grey_800;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_850 = global::atheneum_app.Android.Resource.Color.material_grey_850;
+			global::ZXing.Net.Mobile.Resource.Color.material_grey_900 = global::atheneum_app.Android.Resource.Color.material_grey_900;
+			global::ZXing.Net.Mobile.Resource.Color.notification_action_color_filter = global::atheneum_app.Android.Resource.Color.notification_action_color_filter;
+			global::ZXing.Net.Mobile.Resource.Color.notification_icon_bg_color = global::atheneum_app.Android.Resource.Color.notification_icon_bg_color;
+			global::ZXing.Net.Mobile.Resource.Color.primary_dark_material_dark = global::atheneum_app.Android.Resource.Color.primary_dark_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.primary_dark_material_light = global::atheneum_app.Android.Resource.Color.primary_dark_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.primary_material_dark = global::atheneum_app.Android.Resource.Color.primary_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.primary_material_light = global::atheneum_app.Android.Resource.Color.primary_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.primary_text_default_material_dark = global::atheneum_app.Android.Resource.Color.primary_text_default_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.primary_text_default_material_light = global::atheneum_app.Android.Resource.Color.primary_text_default_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.primary_text_disabled_material_dark = global::atheneum_app.Android.Resource.Color.primary_text_disabled_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.primary_text_disabled_material_light = global::atheneum_app.Android.Resource.Color.primary_text_disabled_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.ripple_material_dark = global::atheneum_app.Android.Resource.Color.ripple_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.ripple_material_light = global::atheneum_app.Android.Resource.Color.ripple_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.secondary_text_default_material_dark = global::atheneum_app.Android.Resource.Color.secondary_text_default_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.secondary_text_default_material_light = global::atheneum_app.Android.Resource.Color.secondary_text_default_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.secondary_text_disabled_material_dark = global::atheneum_app.Android.Resource.Color.secondary_text_disabled_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.secondary_text_disabled_material_light = global::atheneum_app.Android.Resource.Color.secondary_text_disabled_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.switch_thumb_disabled_material_dark = global::atheneum_app.Android.Resource.Color.switch_thumb_disabled_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.switch_thumb_disabled_material_light = global::atheneum_app.Android.Resource.Color.switch_thumb_disabled_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.switch_thumb_material_dark = global::atheneum_app.Android.Resource.Color.switch_thumb_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.switch_thumb_material_light = global::atheneum_app.Android.Resource.Color.switch_thumb_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.switch_thumb_normal_material_dark = global::atheneum_app.Android.Resource.Color.switch_thumb_normal_material_dark;
+			global::ZXing.Net.Mobile.Resource.Color.switch_thumb_normal_material_light = global::atheneum_app.Android.Resource.Color.switch_thumb_normal_material_light;
+			global::ZXing.Net.Mobile.Resource.Color.tooltip_background_dark = global::atheneum_app.Android.Resource.Color.tooltip_background_dark;
+			global::ZXing.Net.Mobile.Resource.Color.tooltip_background_light = global::atheneum_app.Android.Resource.Color.tooltip_background_light;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_content_inset_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_default_height_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_default_height_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_default_padding_end_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_default_padding_start_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_elevation_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_elevation_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_stacked_max_height = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::atheneum_app.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_button_min_height_material = global::atheneum_app.Android.Resource.Dimension.abc_action_button_min_height_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_button_min_width_material = global::atheneum_app.Android.Resource.Dimension.abc_action_button_min_width_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_action_button_min_width_overflow_material = global::atheneum_app.Android.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_alert_dialog_button_bar_height = global::atheneum_app.Android.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_alert_dialog_button_dimen = global::atheneum_app.Android.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_button_inset_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_button_inset_vertical_material = global::atheneum_app.Android.Resource.Dimension.abc_button_inset_vertical_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_button_padding_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_button_padding_vertical_material = global::atheneum_app.Android.Resource.Dimension.abc_button_padding_vertical_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::atheneum_app.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_config_prefDialogWidth = global::atheneum_app.Android.Resource.Dimension.abc_config_prefDialogWidth;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_control_corner_material = global::atheneum_app.Android.Resource.Dimension.abc_control_corner_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_control_inset_material = global::atheneum_app.Android.Resource.Dimension.abc_control_inset_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_control_padding_material = global::atheneum_app.Android.Resource.Dimension.abc_control_padding_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_corner_radius_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_fixed_height_major = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_fixed_height_minor = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_fixed_width_major = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_fixed_width_minor = global::atheneum_app.Android.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::atheneum_app.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::atheneum_app.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_min_width_major = global::atheneum_app.Android.Resource.Dimension.abc_dialog_min_width_major;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_min_width_minor = global::atheneum_app.Android.Resource.Dimension.abc_dialog_min_width_minor;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_padding_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_padding_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_padding_top_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_padding_top_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dialog_title_divider_material = global::atheneum_app.Android.Resource.Dimension.abc_dialog_title_divider_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_disabled_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_disabled_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dropdownitem_icon_width = global::atheneum_app.Android.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dropdownitem_text_padding_left = global::atheneum_app.Android.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_dropdownitem_text_padding_right = global::atheneum_app.Android.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_edit_text_inset_bottom_material = global::atheneum_app.Android.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_edit_text_inset_top_material = global::atheneum_app.Android.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_floating_window_z = global::atheneum_app.Android.Resource.Dimension.abc_floating_window_z;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_height_large_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_height_large_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_height_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_height_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_height_small_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_height_small_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_list_item_padding_horizontal_material = global::atheneum_app.Android.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_panel_menu_list_width = global::atheneum_app.Android.Resource.Dimension.abc_panel_menu_list_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_progress_bar_height_material = global::atheneum_app.Android.Resource.Dimension.abc_progress_bar_height_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_search_view_preferred_height = global::atheneum_app.Android.Resource.Dimension.abc_search_view_preferred_height;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_search_view_preferred_width = global::atheneum_app.Android.Resource.Dimension.abc_search_view_preferred_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_seekbar_track_background_height_material = global::atheneum_app.Android.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_seekbar_track_progress_height_material = global::atheneum_app.Android.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_select_dialog_padding_start_material = global::atheneum_app.Android.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_switch_padding = global::atheneum_app.Android.Resource.Dimension.abc_switch_padding;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_body_1_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_body_1_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_body_2_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_body_2_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_button_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_button_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_caption_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_caption_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_display_1_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_1_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_display_2_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_2_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_display_3_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_3_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_display_4_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_display_4_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_headline_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_headline_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_large_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_large_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_medium_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_medium_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_menu_header_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_menu_header_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_menu_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_menu_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_small_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_small_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_subhead_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_subhead_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::atheneum_app.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_title_material = global::atheneum_app.Android.Resource.Dimension.abc_text_size_title_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.abc_text_size_title_material_toolbar = global::atheneum_app.Android.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::ZXing.Net.Mobile.Resource.Dimension.browser_actions_context_menu_max_width = global::atheneum_app.Android.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.browser_actions_context_menu_min_padding = global::atheneum_app.Android.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_button_inset_horizontal_material = global::atheneum_app.Android.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_button_inset_vertical_material = global::atheneum_app.Android.Resource.Dimension.compat_button_inset_vertical_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_button_padding_horizontal_material = global::atheneum_app.Android.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_button_padding_vertical_material = global::atheneum_app.Android.Resource.Dimension.compat_button_padding_vertical_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_control_corner_material = global::atheneum_app.Android.Resource.Dimension.compat_control_corner_material;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_notification_large_icon_max_height = global::atheneum_app.Android.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::ZXing.Net.Mobile.Resource.Dimension.compat_notification_large_icon_max_width = global::atheneum_app.Android.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.disabled_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.disabled_alpha_material_dark;
+			global::ZXing.Net.Mobile.Resource.Dimension.disabled_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.disabled_alpha_material_light;
+			global::ZXing.Net.Mobile.Resource.Dimension.highlight_alpha_material_colored = global::atheneum_app.Android.Resource.Dimension.highlight_alpha_material_colored;
+			global::ZXing.Net.Mobile.Resource.Dimension.highlight_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.highlight_alpha_material_dark;
+			global::ZXing.Net.Mobile.Resource.Dimension.highlight_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.highlight_alpha_material_light;
+			global::ZXing.Net.Mobile.Resource.Dimension.hint_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.hint_alpha_material_dark;
+			global::ZXing.Net.Mobile.Resource.Dimension.hint_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.hint_alpha_material_light;
+			global::ZXing.Net.Mobile.Resource.Dimension.hint_pressed_alpha_material_dark = global::atheneum_app.Android.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::ZXing.Net.Mobile.Resource.Dimension.hint_pressed_alpha_material_light = global::atheneum_app.Android.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_action_icon_size = global::atheneum_app.Android.Resource.Dimension.notification_action_icon_size;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_action_text_size = global::atheneum_app.Android.Resource.Dimension.notification_action_text_size;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_big_circle_margin = global::atheneum_app.Android.Resource.Dimension.notification_big_circle_margin;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_content_margin_start = global::atheneum_app.Android.Resource.Dimension.notification_content_margin_start;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_large_icon_height = global::atheneum_app.Android.Resource.Dimension.notification_large_icon_height;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_large_icon_width = global::atheneum_app.Android.Resource.Dimension.notification_large_icon_width;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_main_column_padding_top = global::atheneum_app.Android.Resource.Dimension.notification_main_column_padding_top;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_media_narrow_margin = global::atheneum_app.Android.Resource.Dimension.notification_media_narrow_margin;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_right_icon_size = global::atheneum_app.Android.Resource.Dimension.notification_right_icon_size;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_right_side_padding_top = global::atheneum_app.Android.Resource.Dimension.notification_right_side_padding_top;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_small_icon_background_padding = global::atheneum_app.Android.Resource.Dimension.notification_small_icon_background_padding;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_small_icon_size_as_large = global::atheneum_app.Android.Resource.Dimension.notification_small_icon_size_as_large;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_subtext_size = global::atheneum_app.Android.Resource.Dimension.notification_subtext_size;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_top_pad = global::atheneum_app.Android.Resource.Dimension.notification_top_pad;
+			global::ZXing.Net.Mobile.Resource.Dimension.notification_top_pad_large_text = global::atheneum_app.Android.Resource.Dimension.notification_top_pad_large_text;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_corner_radius = global::atheneum_app.Android.Resource.Dimension.tooltip_corner_radius;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_horizontal_padding = global::atheneum_app.Android.Resource.Dimension.tooltip_horizontal_padding;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_margin = global::atheneum_app.Android.Resource.Dimension.tooltip_margin;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::atheneum_app.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_precise_anchor_threshold = global::atheneum_app.Android.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_vertical_padding = global::atheneum_app.Android.Resource.Dimension.tooltip_vertical_padding;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_y_offset_non_touch = global::atheneum_app.Android.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::ZXing.Net.Mobile.Resource.Dimension.tooltip_y_offset_touch = global::atheneum_app.Android.Resource.Dimension.tooltip_y_offset_touch;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_action_bar_item_background_material = global::atheneum_app.Android.Resource.Drawable.abc_action_bar_item_background_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_borderless_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_borderless_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_material_anim = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_material_anim;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::atheneum_app.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_colored_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_colored_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_default_mtrl_shape = global::atheneum_app.Android.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_material = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_material_anim = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_material_anim;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::atheneum_app.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::atheneum_app.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::atheneum_app.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_cab_background_internal_bg = global::atheneum_app.Android.Resource.Drawable.abc_cab_background_internal_bg;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_cab_background_top_material = global::atheneum_app.Android.Resource.Drawable.abc_cab_background_top_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_control_background_material = global::atheneum_app.Android.Resource.Drawable.abc_control_background_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_dialog_material_background = global::atheneum_app.Android.Resource.Drawable.abc_dialog_material_background;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_edit_text_material = global::atheneum_app.Android.Resource.Drawable.abc_edit_text_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_ab_back_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_ab_back_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::atheneum_app.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_clear_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_clear_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_go_search_api_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_go_search_api_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_menu_overflow_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_search_api_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_search_api_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ic_voice_search_api_material = global::atheneum_app.Android.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_item_background_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_item_background_holo_dark;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_item_background_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_item_background_holo_light;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_divider_material = global::atheneum_app.Android.Resource.Drawable.abc_list_divider_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_divider_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_focused_holo = global::atheneum_app.Android.Resource.Drawable.abc_list_focused_holo;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_longpressed_holo = global::atheneum_app.Android.Resource.Drawable.abc_list_longpressed_holo;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_pressed_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_pressed_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_pressed_holo_light;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_selector_disabled_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_selector_holo_dark = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_holo_dark;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_list_selector_holo_light = global::atheneum_app.Android.Resource.Drawable.abc_list_selector_holo_light;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::atheneum_app.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_popup_background_mtrl_mult = global::atheneum_app.Android.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ratingbar_indicator_material = global::atheneum_app.Android.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ratingbar_material = global::atheneum_app.Android.Resource.Drawable.abc_ratingbar_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_ratingbar_small_material = global::atheneum_app.Android.Resource.Drawable.abc_ratingbar_small_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_seekbar_thumb_material = global::atheneum_app.Android.Resource.Drawable.abc_seekbar_thumb_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_seekbar_tick_mark_material = global::atheneum_app.Android.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_seekbar_track_material = global::atheneum_app.Android.Resource.Drawable.abc_seekbar_track_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::atheneum_app.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_spinner_textfield_background_material = global::atheneum_app.Android.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_switch_thumb_material = global::atheneum_app.Android.Resource.Drawable.abc_switch_thumb_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_switch_track_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_tab_indicator_material = global::atheneum_app.Android.Resource.Drawable.abc_tab_indicator_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::atheneum_app.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_textfield_search_material = global::atheneum_app.Android.Resource.Drawable.abc_textfield_search_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_text_cursor_material = global::atheneum_app.Android.Resource.Drawable.abc_text_cursor_material;
+			global::ZXing.Net.Mobile.Resource.Drawable.abc_vector_test = global::atheneum_app.Android.Resource.Drawable.abc_vector_test;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_checked_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_off_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_radio_off_mtrl;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_on_mtrl = global::atheneum_app.Android.Resource.Drawable.btn_radio_on_mtrl;
+			global::ZXing.Net.Mobile.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::atheneum_app.Android.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_action_background = global::atheneum_app.Android.Resource.Drawable.notification_action_background;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg = global::atheneum_app.Android.Resource.Drawable.notification_bg;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg_low = global::atheneum_app.Android.Resource.Drawable.notification_bg_low;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg_low_normal = global::atheneum_app.Android.Resource.Drawable.notification_bg_low_normal;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg_low_pressed = global::atheneum_app.Android.Resource.Drawable.notification_bg_low_pressed;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg_normal = global::atheneum_app.Android.Resource.Drawable.notification_bg_normal;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_bg_normal_pressed = global::atheneum_app.Android.Resource.Drawable.notification_bg_normal_pressed;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_icon_background = global::atheneum_app.Android.Resource.Drawable.notification_icon_background;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_template_icon_bg = global::atheneum_app.Android.Resource.Drawable.notification_template_icon_bg;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_template_icon_low_bg = global::atheneum_app.Android.Resource.Drawable.notification_template_icon_low_bg;
+			global::ZXing.Net.Mobile.Resource.Drawable.notification_tile_bg = global::atheneum_app.Android.Resource.Drawable.notification_tile_bg;
+			global::ZXing.Net.Mobile.Resource.Drawable.notify_panel_notification_icon_bg = global::atheneum_app.Android.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::ZXing.Net.Mobile.Resource.Drawable.tooltip_frame_dark = global::atheneum_app.Android.Resource.Drawable.tooltip_frame_dark;
+			global::ZXing.Net.Mobile.Resource.Drawable.tooltip_frame_light = global::atheneum_app.Android.Resource.Drawable.tooltip_frame_light;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_action_clickable_span = global::atheneum_app.Android.Resource.Id.accessibility_action_clickable_span;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_0 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_0;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_1 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_1;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_10 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_10;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_11 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_11;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_12 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_12;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_13 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_13;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_14 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_14;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_15 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_15;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_16 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_16;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_17 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_17;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_18 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_18;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_19 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_19;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_2 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_2;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_20 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_20;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_21 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_21;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_22 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_22;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_23 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_23;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_24 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_24;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_25 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_25;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_26 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_26;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_27 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_27;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_28 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_28;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_29 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_29;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_3 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_3;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_30 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_30;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_31 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_31;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_4 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_4;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_5 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_5;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_6 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_6;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_7 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_7;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_8 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_8;
+			global::ZXing.Net.Mobile.Resource.Id.accessibility_custom_action_9 = global::atheneum_app.Android.Resource.Id.accessibility_custom_action_9;
+			global::ZXing.Net.Mobile.Resource.Id.actions = global::atheneum_app.Android.Resource.Id.actions;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar = global::atheneum_app.Android.Resource.Id.action_bar;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar_activity_content = global::atheneum_app.Android.Resource.Id.action_bar_activity_content;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar_container = global::atheneum_app.Android.Resource.Id.action_bar_container;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar_root = global::atheneum_app.Android.Resource.Id.action_bar_root;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar_spinner = global::atheneum_app.Android.Resource.Id.action_bar_spinner;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar_subtitle = global::atheneum_app.Android.Resource.Id.action_bar_subtitle;
+			global::ZXing.Net.Mobile.Resource.Id.action_bar_title = global::atheneum_app.Android.Resource.Id.action_bar_title;
+			global::ZXing.Net.Mobile.Resource.Id.action_container = global::atheneum_app.Android.Resource.Id.action_container;
+			global::ZXing.Net.Mobile.Resource.Id.action_context_bar = global::atheneum_app.Android.Resource.Id.action_context_bar;
+			global::ZXing.Net.Mobile.Resource.Id.action_divider = global::atheneum_app.Android.Resource.Id.action_divider;
+			global::ZXing.Net.Mobile.Resource.Id.action_image = global::atheneum_app.Android.Resource.Id.action_image;
+			global::ZXing.Net.Mobile.Resource.Id.action_menu_divider = global::atheneum_app.Android.Resource.Id.action_menu_divider;
+			global::ZXing.Net.Mobile.Resource.Id.action_menu_presenter = global::atheneum_app.Android.Resource.Id.action_menu_presenter;
+			global::ZXing.Net.Mobile.Resource.Id.action_mode_bar = global::atheneum_app.Android.Resource.Id.action_mode_bar;
+			global::ZXing.Net.Mobile.Resource.Id.action_mode_bar_stub = global::atheneum_app.Android.Resource.Id.action_mode_bar_stub;
+			global::ZXing.Net.Mobile.Resource.Id.action_mode_close_button = global::atheneum_app.Android.Resource.Id.action_mode_close_button;
+			global::ZXing.Net.Mobile.Resource.Id.action_text = global::atheneum_app.Android.Resource.Id.action_text;
+			global::ZXing.Net.Mobile.Resource.Id.activity_chooser_view_content = global::atheneum_app.Android.Resource.Id.activity_chooser_view_content;
+			global::ZXing.Net.Mobile.Resource.Id.add = global::atheneum_app.Android.Resource.Id.add;
+			global::ZXing.Net.Mobile.Resource.Id.alertTitle = global::atheneum_app.Android.Resource.Id.alertTitle;
+			global::ZXing.Net.Mobile.Resource.Id.all = global::atheneum_app.Android.Resource.Id.all;
+			global::ZXing.Net.Mobile.Resource.Id.ALT = global::atheneum_app.Android.Resource.Id.ALT;
+			global::ZXing.Net.Mobile.Resource.Id.always = global::atheneum_app.Android.Resource.Id.always;
+			global::ZXing.Net.Mobile.Resource.Id.async = global::atheneum_app.Android.Resource.Id.async;
+			global::ZXing.Net.Mobile.Resource.Id.beginning = global::atheneum_app.Android.Resource.Id.beginning;
+			global::ZXing.Net.Mobile.Resource.Id.blocking = global::atheneum_app.Android.Resource.Id.blocking;
+			global::ZXing.Net.Mobile.Resource.Id.bottom = global::atheneum_app.Android.Resource.Id.bottom;
+			global::ZXing.Net.Mobile.Resource.Id.browser_actions_header_text = global::atheneum_app.Android.Resource.Id.browser_actions_header_text;
+			global::ZXing.Net.Mobile.Resource.Id.browser_actions_menu_items = global::atheneum_app.Android.Resource.Id.browser_actions_menu_items;
+			global::ZXing.Net.Mobile.Resource.Id.browser_actions_menu_item_icon = global::atheneum_app.Android.Resource.Id.browser_actions_menu_item_icon;
+			global::ZXing.Net.Mobile.Resource.Id.browser_actions_menu_item_text = global::atheneum_app.Android.Resource.Id.browser_actions_menu_item_text;
+			global::ZXing.Net.Mobile.Resource.Id.browser_actions_menu_view = global::atheneum_app.Android.Resource.Id.browser_actions_menu_view;
+			global::ZXing.Net.Mobile.Resource.Id.buttonPanel = global::atheneum_app.Android.Resource.Id.buttonPanel;
+			global::ZXing.Net.Mobile.Resource.Id.center = global::atheneum_app.Android.Resource.Id.center;
+			global::ZXing.Net.Mobile.Resource.Id.center_horizontal = global::atheneum_app.Android.Resource.Id.center_horizontal;
+			global::ZXing.Net.Mobile.Resource.Id.center_vertical = global::atheneum_app.Android.Resource.Id.center_vertical;
+			global::ZXing.Net.Mobile.Resource.Id.checkbox = global::atheneum_app.Android.Resource.Id.checkbox;
+			global::ZXing.Net.Mobile.Resource.Id.@checked = global::atheneum_app.Android.Resource.Id.@checked;
+			global::ZXing.Net.Mobile.Resource.Id.chronometer = global::atheneum_app.Android.Resource.Id.chronometer;
+			global::ZXing.Net.Mobile.Resource.Id.clip_horizontal = global::atheneum_app.Android.Resource.Id.clip_horizontal;
+			global::ZXing.Net.Mobile.Resource.Id.clip_vertical = global::atheneum_app.Android.Resource.Id.clip_vertical;
+			global::ZXing.Net.Mobile.Resource.Id.collapseActionView = global::atheneum_app.Android.Resource.Id.collapseActionView;
+			global::ZXing.Net.Mobile.Resource.Id.content = global::atheneum_app.Android.Resource.Id.content;
+			global::ZXing.Net.Mobile.Resource.Id.contentFrame = global::atheneum_app.Android.Resource.Id.contentFrame;
+			global::ZXing.Net.Mobile.Resource.Id.contentPanel = global::atheneum_app.Android.Resource.Id.contentPanel;
+			global::ZXing.Net.Mobile.Resource.Id.CTRL = global::atheneum_app.Android.Resource.Id.CTRL;
+			global::ZXing.Net.Mobile.Resource.Id.custom = global::atheneum_app.Android.Resource.Id.custom;
+			global::ZXing.Net.Mobile.Resource.Id.customPanel = global::atheneum_app.Android.Resource.Id.customPanel;
+			global::ZXing.Net.Mobile.Resource.Id.decor_content_parent = global::atheneum_app.Android.Resource.Id.decor_content_parent;
+			global::ZXing.Net.Mobile.Resource.Id.default_activity_button = global::atheneum_app.Android.Resource.Id.default_activity_button;
+			global::ZXing.Net.Mobile.Resource.Id.dialog_button = global::atheneum_app.Android.Resource.Id.dialog_button;
+			global::ZXing.Net.Mobile.Resource.Id.disableHome = global::atheneum_app.Android.Resource.Id.disableHome;
+			global::ZXing.Net.Mobile.Resource.Id.edit_query = global::atheneum_app.Android.Resource.Id.edit_query;
+			global::ZXing.Net.Mobile.Resource.Id.end = global::atheneum_app.Android.Resource.Id.end;
+			global::ZXing.Net.Mobile.Resource.Id.expanded_menu = global::atheneum_app.Android.Resource.Id.expanded_menu;
+			global::ZXing.Net.Mobile.Resource.Id.expand_activities_button = global::atheneum_app.Android.Resource.Id.expand_activities_button;
+			global::ZXing.Net.Mobile.Resource.Id.fill = global::atheneum_app.Android.Resource.Id.fill;
+			global::ZXing.Net.Mobile.Resource.Id.fill_horizontal = global::atheneum_app.Android.Resource.Id.fill_horizontal;
+			global::ZXing.Net.Mobile.Resource.Id.fill_vertical = global::atheneum_app.Android.Resource.Id.fill_vertical;
+			global::ZXing.Net.Mobile.Resource.Id.forever = global::atheneum_app.Android.Resource.Id.forever;
+			global::ZXing.Net.Mobile.Resource.Id.FUNCTION = global::atheneum_app.Android.Resource.Id.FUNCTION;
+			global::ZXing.Net.Mobile.Resource.Id.group_divider = global::atheneum_app.Android.Resource.Id.group_divider;
+			global::ZXing.Net.Mobile.Resource.Id.home = global::atheneum_app.Android.Resource.Id.home;
+			global::ZXing.Net.Mobile.Resource.Id.homeAsUp = global::atheneum_app.Android.Resource.Id.homeAsUp;
+			global::ZXing.Net.Mobile.Resource.Id.icon = global::atheneum_app.Android.Resource.Id.icon;
+			global::ZXing.Net.Mobile.Resource.Id.icon_group = global::atheneum_app.Android.Resource.Id.icon_group;
+			global::ZXing.Net.Mobile.Resource.Id.ifRoom = global::atheneum_app.Android.Resource.Id.ifRoom;
+			global::ZXing.Net.Mobile.Resource.Id.image = global::atheneum_app.Android.Resource.Id.image;
+			global::ZXing.Net.Mobile.Resource.Id.info = global::atheneum_app.Android.Resource.Id.info;
+			global::ZXing.Net.Mobile.Resource.Id.italic = global::atheneum_app.Android.Resource.Id.italic;
+			global::ZXing.Net.Mobile.Resource.Id.left = global::atheneum_app.Android.Resource.Id.left;
+			global::ZXing.Net.Mobile.Resource.Id.line1 = global::atheneum_app.Android.Resource.Id.line1;
+			global::ZXing.Net.Mobile.Resource.Id.line3 = global::atheneum_app.Android.Resource.Id.line3;
+			global::ZXing.Net.Mobile.Resource.Id.listMode = global::atheneum_app.Android.Resource.Id.listMode;
+			global::ZXing.Net.Mobile.Resource.Id.list_item = global::atheneum_app.Android.Resource.Id.list_item;
+			global::ZXing.Net.Mobile.Resource.Id.message = global::atheneum_app.Android.Resource.Id.message;
+			global::ZXing.Net.Mobile.Resource.Id.META = global::atheneum_app.Android.Resource.Id.META;
+			global::ZXing.Net.Mobile.Resource.Id.middle = global::atheneum_app.Android.Resource.Id.middle;
+			global::ZXing.Net.Mobile.Resource.Id.multiply = global::atheneum_app.Android.Resource.Id.multiply;
+			global::ZXing.Net.Mobile.Resource.Id.never = global::atheneum_app.Android.Resource.Id.never;
+			global::ZXing.Net.Mobile.Resource.Id.none = global::atheneum_app.Android.Resource.Id.none;
+			global::ZXing.Net.Mobile.Resource.Id.normal = global::atheneum_app.Android.Resource.Id.normal;
+			global::ZXing.Net.Mobile.Resource.Id.notification_background = global::atheneum_app.Android.Resource.Id.notification_background;
+			global::ZXing.Net.Mobile.Resource.Id.notification_main_column = global::atheneum_app.Android.Resource.Id.notification_main_column;
+			global::ZXing.Net.Mobile.Resource.Id.notification_main_column_container = global::atheneum_app.Android.Resource.Id.notification_main_column_container;
+			global::ZXing.Net.Mobile.Resource.Id.off = global::atheneum_app.Android.Resource.Id.off;
+			global::ZXing.Net.Mobile.Resource.Id.on = global::atheneum_app.Android.Resource.Id.on;
+			global::ZXing.Net.Mobile.Resource.Id.parentPanel = global::atheneum_app.Android.Resource.Id.parentPanel;
+			global::ZXing.Net.Mobile.Resource.Id.progress_circular = global::atheneum_app.Android.Resource.Id.progress_circular;
+			global::ZXing.Net.Mobile.Resource.Id.progress_horizontal = global::atheneum_app.Android.Resource.Id.progress_horizontal;
+			global::ZXing.Net.Mobile.Resource.Id.radio = global::atheneum_app.Android.Resource.Id.radio;
+			global::ZXing.Net.Mobile.Resource.Id.right = global::atheneum_app.Android.Resource.Id.right;
+			global::ZXing.Net.Mobile.Resource.Id.right_icon = global::atheneum_app.Android.Resource.Id.right_icon;
+			global::ZXing.Net.Mobile.Resource.Id.right_side = global::atheneum_app.Android.Resource.Id.right_side;
+			global::ZXing.Net.Mobile.Resource.Id.screen = global::atheneum_app.Android.Resource.Id.screen;
+			global::ZXing.Net.Mobile.Resource.Id.scrollIndicatorDown = global::atheneum_app.Android.Resource.Id.scrollIndicatorDown;
+			global::ZXing.Net.Mobile.Resource.Id.scrollIndicatorUp = global::atheneum_app.Android.Resource.Id.scrollIndicatorUp;
+			global::ZXing.Net.Mobile.Resource.Id.scrollView = global::atheneum_app.Android.Resource.Id.scrollView;
+			global::ZXing.Net.Mobile.Resource.Id.search_badge = global::atheneum_app.Android.Resource.Id.search_badge;
+			global::ZXing.Net.Mobile.Resource.Id.search_bar = global::atheneum_app.Android.Resource.Id.search_bar;
+			global::ZXing.Net.Mobile.Resource.Id.search_button = global::atheneum_app.Android.Resource.Id.search_button;
+			global::ZXing.Net.Mobile.Resource.Id.search_close_btn = global::atheneum_app.Android.Resource.Id.search_close_btn;
+			global::ZXing.Net.Mobile.Resource.Id.search_edit_frame = global::atheneum_app.Android.Resource.Id.search_edit_frame;
+			global::ZXing.Net.Mobile.Resource.Id.search_go_btn = global::atheneum_app.Android.Resource.Id.search_go_btn;
+			global::ZXing.Net.Mobile.Resource.Id.search_mag_icon = global::atheneum_app.Android.Resource.Id.search_mag_icon;
+			global::ZXing.Net.Mobile.Resource.Id.search_plate = global::atheneum_app.Android.Resource.Id.search_plate;
+			global::ZXing.Net.Mobile.Resource.Id.search_src_text = global::atheneum_app.Android.Resource.Id.search_src_text;
+			global::ZXing.Net.Mobile.Resource.Id.search_voice_btn = global::atheneum_app.Android.Resource.Id.search_voice_btn;
+			global::ZXing.Net.Mobile.Resource.Id.select_dialog_listview = global::atheneum_app.Android.Resource.Id.select_dialog_listview;
+			global::ZXing.Net.Mobile.Resource.Id.SHIFT = global::atheneum_app.Android.Resource.Id.SHIFT;
+			global::ZXing.Net.Mobile.Resource.Id.shortcut = global::atheneum_app.Android.Resource.Id.shortcut;
+			global::ZXing.Net.Mobile.Resource.Id.showCustom = global::atheneum_app.Android.Resource.Id.showCustom;
+			global::ZXing.Net.Mobile.Resource.Id.showHome = global::atheneum_app.Android.Resource.Id.showHome;
+			global::ZXing.Net.Mobile.Resource.Id.showTitle = global::atheneum_app.Android.Resource.Id.showTitle;
+			global::ZXing.Net.Mobile.Resource.Id.spacer = global::atheneum_app.Android.Resource.Id.spacer;
+			global::ZXing.Net.Mobile.Resource.Id.split_action_bar = global::atheneum_app.Android.Resource.Id.split_action_bar;
+			global::ZXing.Net.Mobile.Resource.Id.src_atop = global::atheneum_app.Android.Resource.Id.src_atop;
+			global::ZXing.Net.Mobile.Resource.Id.src_in = global::atheneum_app.Android.Resource.Id.src_in;
+			global::ZXing.Net.Mobile.Resource.Id.src_over = global::atheneum_app.Android.Resource.Id.src_over;
+			global::ZXing.Net.Mobile.Resource.Id.start = global::atheneum_app.Android.Resource.Id.start;
+			global::ZXing.Net.Mobile.Resource.Id.submenuarrow = global::atheneum_app.Android.Resource.Id.submenuarrow;
+			global::ZXing.Net.Mobile.Resource.Id.submit_area = global::atheneum_app.Android.Resource.Id.submit_area;
+			global::ZXing.Net.Mobile.Resource.Id.SYM = global::atheneum_app.Android.Resource.Id.SYM;
+			global::ZXing.Net.Mobile.Resource.Id.tabMode = global::atheneum_app.Android.Resource.Id.tabMode;
+			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_actions = global::atheneum_app.Android.Resource.Id.tag_accessibility_actions;
+			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_clickable_spans = global::atheneum_app.Android.Resource.Id.tag_accessibility_clickable_spans;
+			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_heading = global::atheneum_app.Android.Resource.Id.tag_accessibility_heading;
+			global::ZXing.Net.Mobile.Resource.Id.tag_accessibility_pane_title = global::atheneum_app.Android.Resource.Id.tag_accessibility_pane_title;
+			global::ZXing.Net.Mobile.Resource.Id.tag_screen_reader_focusable = global::atheneum_app.Android.Resource.Id.tag_screen_reader_focusable;
+			global::ZXing.Net.Mobile.Resource.Id.tag_transition_group = global::atheneum_app.Android.Resource.Id.tag_transition_group;
+			global::ZXing.Net.Mobile.Resource.Id.tag_unhandled_key_event_manager = global::atheneum_app.Android.Resource.Id.tag_unhandled_key_event_manager;
+			global::ZXing.Net.Mobile.Resource.Id.tag_unhandled_key_listeners = global::atheneum_app.Android.Resource.Id.tag_unhandled_key_listeners;
+			global::ZXing.Net.Mobile.Resource.Id.text = global::atheneum_app.Android.Resource.Id.text;
+			global::ZXing.Net.Mobile.Resource.Id.text2 = global::atheneum_app.Android.Resource.Id.text2;
+			global::ZXing.Net.Mobile.Resource.Id.textSpacerNoButtons = global::atheneum_app.Android.Resource.Id.textSpacerNoButtons;
+			global::ZXing.Net.Mobile.Resource.Id.textSpacerNoTitle = global::atheneum_app.Android.Resource.Id.textSpacerNoTitle;
+			global::ZXing.Net.Mobile.Resource.Id.time = global::atheneum_app.Android.Resource.Id.time;
+			global::ZXing.Net.Mobile.Resource.Id.title = global::atheneum_app.Android.Resource.Id.title;
+			global::ZXing.Net.Mobile.Resource.Id.titleDividerNoCustom = global::atheneum_app.Android.Resource.Id.titleDividerNoCustom;
+			global::ZXing.Net.Mobile.Resource.Id.title_template = global::atheneum_app.Android.Resource.Id.title_template;
+			global::ZXing.Net.Mobile.Resource.Id.top = global::atheneum_app.Android.Resource.Id.top;
+			global::ZXing.Net.Mobile.Resource.Id.topPanel = global::atheneum_app.Android.Resource.Id.topPanel;
+			global::ZXing.Net.Mobile.Resource.Id.@unchecked = global::atheneum_app.Android.Resource.Id.@unchecked;
+			global::ZXing.Net.Mobile.Resource.Id.uniform = global::atheneum_app.Android.Resource.Id.uniform;
+			global::ZXing.Net.Mobile.Resource.Id.up = global::atheneum_app.Android.Resource.Id.up;
+			global::ZXing.Net.Mobile.Resource.Id.useLogo = global::atheneum_app.Android.Resource.Id.useLogo;
+			global::ZXing.Net.Mobile.Resource.Id.withText = global::atheneum_app.Android.Resource.Id.withText;
+			global::ZXing.Net.Mobile.Resource.Id.wrap_content = global::atheneum_app.Android.Resource.Id.wrap_content;
+			global::ZXing.Net.Mobile.Resource.Integer.abc_config_activityDefaultDur = global::atheneum_app.Android.Resource.Integer.abc_config_activityDefaultDur;
+			global::ZXing.Net.Mobile.Resource.Integer.abc_config_activityShortDur = global::atheneum_app.Android.Resource.Integer.abc_config_activityShortDur;
+			global::ZXing.Net.Mobile.Resource.Integer.cancel_button_image_alpha = global::atheneum_app.Android.Resource.Integer.cancel_button_image_alpha;
+			global::ZXing.Net.Mobile.Resource.Integer.config_tooltipAnimTime = global::atheneum_app.Android.Resource.Integer.config_tooltipAnimTime;
+			global::ZXing.Net.Mobile.Resource.Integer.status_bar_notification_info_maxnum = global::atheneum_app.Android.Resource.Integer.status_bar_notification_info_maxnum;
+			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::atheneum_app.Android.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::ZXing.Net.Mobile.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::atheneum_app.Android.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::ZXing.Net.Mobile.Resource.Interpolator.fast_out_slow_in = global::atheneum_app.Android.Resource.Interpolator.fast_out_slow_in;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_action_bar_title_item = global::atheneum_app.Android.Resource.Layout.abc_action_bar_title_item;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_action_bar_up_container = global::atheneum_app.Android.Resource.Layout.abc_action_bar_up_container;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_action_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_action_menu_item_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_action_menu_layout = global::atheneum_app.Android.Resource.Layout.abc_action_menu_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_action_mode_bar = global::atheneum_app.Android.Resource.Layout.abc_action_mode_bar;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_action_mode_close_item_material = global::atheneum_app.Android.Resource.Layout.abc_action_mode_close_item_material;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_activity_chooser_view = global::atheneum_app.Android.Resource.Layout.abc_activity_chooser_view;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_activity_chooser_view_list_item = global::atheneum_app.Android.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_alert_dialog_button_bar_material = global::atheneum_app.Android.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_alert_dialog_material = global::atheneum_app.Android.Resource.Layout.abc_alert_dialog_material;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_alert_dialog_title_material = global::atheneum_app.Android.Resource.Layout.abc_alert_dialog_title_material;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_cascading_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_cascading_menu_item_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_dialog_title_material = global::atheneum_app.Android.Resource.Layout.abc_dialog_title_material;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_expanded_menu_layout = global::atheneum_app.Android.Resource.Layout.abc_expanded_menu_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_list_menu_item_checkbox = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_checkbox;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_list_menu_item_icon = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_icon;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_list_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_list_menu_item_radio = global::atheneum_app.Android.Resource.Layout.abc_list_menu_item_radio;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_popup_menu_header_item_layout = global::atheneum_app.Android.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_popup_menu_item_layout = global::atheneum_app.Android.Resource.Layout.abc_popup_menu_item_layout;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_screen_content_include = global::atheneum_app.Android.Resource.Layout.abc_screen_content_include;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_screen_simple = global::atheneum_app.Android.Resource.Layout.abc_screen_simple;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_screen_simple_overlay_action_mode = global::atheneum_app.Android.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_screen_toolbar = global::atheneum_app.Android.Resource.Layout.abc_screen_toolbar;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_search_dropdown_item_icons_2line = global::atheneum_app.Android.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_search_view = global::atheneum_app.Android.Resource.Layout.abc_search_view;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_select_dialog_material = global::atheneum_app.Android.Resource.Layout.abc_select_dialog_material;
+			global::ZXing.Net.Mobile.Resource.Layout.abc_tooltip = global::atheneum_app.Android.Resource.Layout.abc_tooltip;
+			global::ZXing.Net.Mobile.Resource.Layout.browser_actions_context_menu_page = global::atheneum_app.Android.Resource.Layout.browser_actions_context_menu_page;
+			global::ZXing.Net.Mobile.Resource.Layout.browser_actions_context_menu_row = global::atheneum_app.Android.Resource.Layout.browser_actions_context_menu_row;
+			global::ZXing.Net.Mobile.Resource.Layout.custom_dialog = global::atheneum_app.Android.Resource.Layout.custom_dialog;
+			global::ZXing.Net.Mobile.Resource.Layout.notification_action = global::atheneum_app.Android.Resource.Layout.notification_action;
+			global::ZXing.Net.Mobile.Resource.Layout.notification_action_tombstone = global::atheneum_app.Android.Resource.Layout.notification_action_tombstone;
+			global::ZXing.Net.Mobile.Resource.Layout.notification_template_custom_big = global::atheneum_app.Android.Resource.Layout.notification_template_custom_big;
+			global::ZXing.Net.Mobile.Resource.Layout.notification_template_icon_group = global::atheneum_app.Android.Resource.Layout.notification_template_icon_group;
+			global::ZXing.Net.Mobile.Resource.Layout.notification_template_part_chronometer = global::atheneum_app.Android.Resource.Layout.notification_template_part_chronometer;
+			global::ZXing.Net.Mobile.Resource.Layout.notification_template_part_time = global::atheneum_app.Android.Resource.Layout.notification_template_part_time;
+			global::ZXing.Net.Mobile.Resource.Layout.select_dialog_item_material = global::atheneum_app.Android.Resource.Layout.select_dialog_item_material;
+			global::ZXing.Net.Mobile.Resource.Layout.select_dialog_multichoice_material = global::atheneum_app.Android.Resource.Layout.select_dialog_multichoice_material;
+			global::ZXing.Net.Mobile.Resource.Layout.select_dialog_singlechoice_material = global::atheneum_app.Android.Resource.Layout.select_dialog_singlechoice_material;
+			global::ZXing.Net.Mobile.Resource.Layout.support_simple_spinner_dropdown_item = global::atheneum_app.Android.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::ZXing.Net.Mobile.Resource.Layout.zxingscanneractivitylayout = global::atheneum_app.Android.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Net.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::atheneum_app.Android.Resource.Layout.zxingscannerfragmentlayout;
+			global::ZXing.Net.Mobile.Resource.String.abc_action_bar_home_description = global::atheneum_app.Android.Resource.String.abc_action_bar_home_description;
+			global::ZXing.Net.Mobile.Resource.String.abc_action_bar_up_description = global::atheneum_app.Android.Resource.String.abc_action_bar_up_description;
+			global::ZXing.Net.Mobile.Resource.String.abc_action_menu_overflow_description = global::atheneum_app.Android.Resource.String.abc_action_menu_overflow_description;
+			global::ZXing.Net.Mobile.Resource.String.abc_action_mode_done = global::atheneum_app.Android.Resource.String.abc_action_mode_done;
+			global::ZXing.Net.Mobile.Resource.String.abc_activitychooserview_choose_application = global::atheneum_app.Android.Resource.String.abc_activitychooserview_choose_application;
+			global::ZXing.Net.Mobile.Resource.String.abc_activity_chooser_view_see_all = global::atheneum_app.Android.Resource.String.abc_activity_chooser_view_see_all;
+			global::ZXing.Net.Mobile.Resource.String.abc_capital_off = global::atheneum_app.Android.Resource.String.abc_capital_off;
+			global::ZXing.Net.Mobile.Resource.String.abc_capital_on = global::atheneum_app.Android.Resource.String.abc_capital_on;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_alt_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_alt_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_ctrl_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_delete_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_delete_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_enter_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_enter_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_function_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_function_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_meta_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_meta_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_shift_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_shift_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_space_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_space_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_menu_sym_shortcut_label = global::atheneum_app.Android.Resource.String.abc_menu_sym_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_prepend_shortcut_label = global::atheneum_app.Android.Resource.String.abc_prepend_shortcut_label;
+			global::ZXing.Net.Mobile.Resource.String.abc_searchview_description_clear = global::atheneum_app.Android.Resource.String.abc_searchview_description_clear;
+			global::ZXing.Net.Mobile.Resource.String.abc_searchview_description_query = global::atheneum_app.Android.Resource.String.abc_searchview_description_query;
+			global::ZXing.Net.Mobile.Resource.String.abc_searchview_description_search = global::atheneum_app.Android.Resource.String.abc_searchview_description_search;
+			global::ZXing.Net.Mobile.Resource.String.abc_searchview_description_submit = global::atheneum_app.Android.Resource.String.abc_searchview_description_submit;
+			global::ZXing.Net.Mobile.Resource.String.abc_searchview_description_voice = global::atheneum_app.Android.Resource.String.abc_searchview_description_voice;
+			global::ZXing.Net.Mobile.Resource.String.abc_search_hint = global::atheneum_app.Android.Resource.String.abc_search_hint;
+			global::ZXing.Net.Mobile.Resource.String.abc_shareactionprovider_share_with = global::atheneum_app.Android.Resource.String.abc_shareactionprovider_share_with;
+			global::ZXing.Net.Mobile.Resource.String.abc_shareactionprovider_share_with_application = global::atheneum_app.Android.Resource.String.abc_shareactionprovider_share_with_application;
+			global::ZXing.Net.Mobile.Resource.String.abc_toolbar_collapse_description = global::atheneum_app.Android.Resource.String.abc_toolbar_collapse_description;
+			global::ZXing.Net.Mobile.Resource.String.search_menu_title = global::atheneum_app.Android.Resource.String.search_menu_title;
+			global::ZXing.Net.Mobile.Resource.String.status_bar_notification_info_overflow = global::atheneum_app.Android.Resource.String.status_bar_notification_info_overflow;
+			global::ZXing.Net.Mobile.Resource.Style.AlertDialog_AppCompat = global::atheneum_app.Android.Resource.Style.AlertDialog_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.AlertDialog_AppCompat_Light = global::atheneum_app.Android.Resource.Style.AlertDialog_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Animation_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Animation_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Animation_AppCompat_DropDownUp = global::atheneum_app.Android.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::ZXing.Net.Mobile.Resource.Style.Animation_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.Animation_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Resource.Style.Base_AlertDialog_AppCompat = global::atheneum_app.Android.Resource.Style.Base_AlertDialog_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_AlertDialog_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Animation_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::atheneum_app.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Animation_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::atheneum_app.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_DialogWindowTitle_AppCompat = global::atheneum_app.Android.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Button = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Large = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Small = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::atheneum_app.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V21_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V21_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V22_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V22_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V22_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V23_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V23_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V23_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V26_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V26_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V26_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V28_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V28_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V28_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::atheneum_app.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::ZXing.Net.Mobile.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionButton = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActionMode = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Button = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Button_Small = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_EditText = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ImageButton = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ListView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_RatingBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_SearchView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_SeekBar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Spinner = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_TextView = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_TextView;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::atheneum_app.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_ThemeOverlay_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::atheneum_app.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_V21_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_V21_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_V21_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_V21_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_V25_AppCompat = global::atheneum_app.Android.Resource.Style.Platform_V25_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_V25_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Platform_V25_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Platform_Widget_AppCompat_Spinner = global::atheneum_app.Android.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::atheneum_app.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::ZXing.Net.Mobile.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::atheneum_app.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::ZXing.Net.Mobile.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::atheneum_app.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::ZXing.Net.Mobile.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Body1 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Body2 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Button = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Button;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Caption = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Display1 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Display2 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Display3 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Display4 = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Headline = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Large = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Large;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Medium = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Menu = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Small = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Small;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Subhead = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Title;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Tooltip = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Compat_Notification = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Compat_Notification_Info = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Compat_Notification_Time = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Compat_Notification_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::atheneum_app.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::atheneum_app.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::ZXing.Net.Mobile.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::atheneum_app.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dark = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.ThemeOverlay_AppCompat_Light = global::atheneum_app.Android.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat = global::atheneum_app.Android.Resource.Style.Theme_AppCompat;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_CompactMenu = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Dialog = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light_Dialog = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Theme_AppCompat_NoActionBar = global::atheneum_app.Android.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionButton;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActionMode = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActionMode;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ActivityChooserView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Button = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ButtonBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Button_Borderless = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Button_Colored = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Button_Small = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Button_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_EditText = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_EditText;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ImageButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ImageButton;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionButton = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_SearchView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ListMenuView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ListPopupWindow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ListView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ListView_DropDown = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ListView_Menu = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_PopupMenu = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_PopupWindow = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ProgressBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_RatingBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_RatingBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_RatingBar_Small = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_SearchView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SearchView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_SeekBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SeekBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_TextView = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_TextView;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Toolbar = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Toolbar;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::atheneum_app.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_Compat_NotificationActionContainer = global::atheneum_app.Android.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_Compat_NotificationActionText = global::atheneum_app.Android.Resource.Style.Widget_Compat_NotificationActionText;
+			global::ZXing.Net.Mobile.Resource.Style.Widget_Support_CoordinatorLayout = global::atheneum_app.Android.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar = global::atheneum_app.Android.Resource.Styleable.ActionBar;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBarLayout = global::atheneum_app.Android.Resource.Styleable.ActionBarLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::atheneum_app.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_background = global::atheneum_app.Android.Resource.Styleable.ActionBar_background;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_backgroundSplit = global::atheneum_app.Android.Resource.Styleable.ActionBar_backgroundSplit;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_backgroundStacked = global::atheneum_app.Android.Resource.Styleable.ActionBar_backgroundStacked;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_contentInsetEnd = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_contentInsetLeft = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_contentInsetRight = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetRight;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_contentInsetStart = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetStart;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::atheneum_app.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_customNavigationLayout = global::atheneum_app.Android.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_displayOptions = global::atheneum_app.Android.Resource.Styleable.ActionBar_displayOptions;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_divider = global::atheneum_app.Android.Resource.Styleable.ActionBar_divider;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_elevation = global::atheneum_app.Android.Resource.Styleable.ActionBar_elevation;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_height = global::atheneum_app.Android.Resource.Styleable.ActionBar_height;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_hideOnContentScroll = global::atheneum_app.Android.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_homeAsUpIndicator = global::atheneum_app.Android.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_homeLayout = global::atheneum_app.Android.Resource.Styleable.ActionBar_homeLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_icon = global::atheneum_app.Android.Resource.Styleable.ActionBar_icon;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_itemPadding = global::atheneum_app.Android.Resource.Styleable.ActionBar_itemPadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_logo = global::atheneum_app.Android.Resource.Styleable.ActionBar_logo;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_navigationMode = global::atheneum_app.Android.Resource.Styleable.ActionBar_navigationMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_popupTheme = global::atheneum_app.Android.Resource.Styleable.ActionBar_popupTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_progressBarPadding = global::atheneum_app.Android.Resource.Styleable.ActionBar_progressBarPadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_progressBarStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_progressBarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_subtitle = global::atheneum_app.Android.Resource.Styleable.ActionBar_subtitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_subtitleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_title = global::atheneum_app.Android.Resource.Styleable.ActionBar_title;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionBar_titleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionBar_titleTextStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMenuItemView = global::atheneum_app.Android.Resource.Styleable.ActionMenuItemView;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMenuItemView_android_minWidth = global::atheneum_app.Android.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMenuView = global::atheneum_app.Android.Resource.Styleable.ActionMenuView;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode = global::atheneum_app.Android.Resource.Styleable.ActionMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode_background = global::atheneum_app.Android.Resource.Styleable.ActionMode_background;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode_backgroundSplit = global::atheneum_app.Android.Resource.Styleable.ActionMode_backgroundSplit;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode_closeItemLayout = global::atheneum_app.Android.Resource.Styleable.ActionMode_closeItemLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode_height = global::atheneum_app.Android.Resource.Styleable.ActionMode_height;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode_subtitleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActionMode_titleTextStyle = global::atheneum_app.Android.Resource.Styleable.ActionMode_titleTextStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActivityChooserView = global::atheneum_app.Android.Resource.Styleable.ActivityChooserView;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::atheneum_app.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.ActivityChooserView_initialActivityCount = global::atheneum_app.Android.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog = global::atheneum_app.Android.Resource.Styleable.AlertDialog;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_android_layout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_android_layout;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_buttonIconDimen = global::atheneum_app.Android.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_listItemLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_listItemLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_listLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_listLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_showTitle = global::atheneum_app.Android.Resource.Styleable.AlertDialog_showTitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::atheneum_app.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableItem = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableTransition = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::ZXing.Net.Mobile.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::atheneum_app.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatImageView = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatImageView_android_src = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_android_src;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatImageView_srcCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatImageView_tint = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_tint;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatImageView_tintMode = global::atheneum_app.Android.Resource.Styleable.AppCompatImageView_tintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatSeekBar = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatSeekBar_android_thumb = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatSeekBar_tickMark = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::atheneum_app.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::atheneum_app.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_android_textAppearance = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableTint = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableTintMode = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_drawableTopCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_fontFamily = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_fontVariationSettings;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_lineHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_textAllCaps = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTextView_textLocale = global::atheneum_app.Android.Resource.Styleable.AppCompatTextView_textLocale;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarDivider = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarSize = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_checkboxStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorAccent = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorControlActivated = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorControlNormal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorError = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorError;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorPrimary = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_controlBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dialogTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dividerVertical = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_editTextBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_editTextColor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_editTextStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_panelBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_searchViewStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_seekBarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_spinnerStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_switchStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_toolbarStyle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowActionBar = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::ZXing.Net.Mobile.Resource.Styleable.AppCompatTheme_windowNoTitle = global::atheneum_app.Android.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.ButtonBarLayout = global::atheneum_app.Android.Resource.Styleable.ButtonBarLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.ButtonBarLayout_allowStacking = global::atheneum_app.Android.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::ZXing.Net.Mobile.Resource.Styleable.ColorStateListItem = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.ColorStateListItem_alpha = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem_alpha;
+			global::ZXing.Net.Mobile.Resource.Styleable.ColorStateListItem_android_alpha = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::ZXing.Net.Mobile.Resource.Styleable.ColorStateListItem_android_color = global::atheneum_app.Android.Resource.Styleable.ColorStateListItem_android_color;
+			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton = global::atheneum_app.Android.Resource.Styleable.CompoundButton;
+			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_android_button = global::atheneum_app.Android.Resource.Styleable.CompoundButton_android_button;
+			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_buttonCompat = global::atheneum_app.Android.Resource.Styleable.CompoundButton_buttonCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_buttonTint = global::atheneum_app.Android.Resource.Styleable.CompoundButton_buttonTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.CompoundButton_buttonTintMode = global::atheneum_app.Android.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_keylines = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_keylines;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::ZXing.Net.Mobile.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::atheneum_app.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_barLength = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_color = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_color;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_drawableSize = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_spinBars = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::ZXing.Net.Mobile.Resource.Styleable.DrawerArrowToggle_thickness = global::atheneum_app.Android.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily = global::atheneum_app.Android.Resource.Styleable.FontFamily;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_android_font = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_font;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_android_fontStyle = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_android_fontWeight = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_font = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_font;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_fontStyle = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_fontWeight = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamilyFont_ttcIndex = global::atheneum_app.Android.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily_fontProviderAuthority = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily_fontProviderCerts = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily_fontProviderPackage = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::ZXing.Net.Mobile.Resource.Styleable.FontFamily_fontProviderQuery = global::atheneum_app.Android.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor = global::atheneum_app.Android.Resource.Styleable.GradientColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColorItem = global::atheneum_app.Android.Resource.Styleable.GradientColorItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColorItem_android_color = global::atheneum_app.Android.Resource.Styleable.GradientColorItem_android_color;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColorItem_android_offset = global::atheneum_app.Android.Resource.Styleable.GradientColorItem_android_offset;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_centerColor = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_centerColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_centerX = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_centerX;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_centerY = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_centerY;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_endColor = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_endColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_endX = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_endX;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_endY = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_endY;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_gradientRadius = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_startColor = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_startColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_startX = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_startX;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_startY = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_startY;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_tileMode = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_tileMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.GradientColor_android_type = global::atheneum_app.Android.Resource.Styleable.GradientColor_android_type;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_android_gravity = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_android_orientation = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_divider = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_divider;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_Layout = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::ZXing.Net.Mobile.Resource.Styleable.LinearLayoutCompat_showDividers = global::atheneum_app.Android.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::ZXing.Net.Mobile.Resource.Styleable.ListPopupWindow = global::atheneum_app.Android.Resource.Styleable.ListPopupWindow;
+			global::ZXing.Net.Mobile.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::atheneum_app.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::ZXing.Net.Mobile.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::atheneum_app.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup = global::atheneum_app.Android.Resource.Styleable.MenuGroup;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup_android_checkableBehavior = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup_android_enabled = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_enabled;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup_android_id = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_id;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup_android_menuCategory = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup_android_orderInCategory = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuGroup_android_visible = global::atheneum_app.Android.Resource.Styleable.MenuGroup_android_visible;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem = global::atheneum_app.Android.Resource.Styleable.MenuItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_actionLayout = global::atheneum_app.Android.Resource.Styleable.MenuItem_actionLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_actionProviderClass = global::atheneum_app.Android.Resource.Styleable.MenuItem_actionProviderClass;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_actionViewClass = global::atheneum_app.Android.Resource.Styleable.MenuItem_actionViewClass;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_alphabeticModifiers = global::atheneum_app.Android.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_checkable = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_checkable;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_checked = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_checked;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_enabled = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_enabled;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_icon = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_icon;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_id = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_id;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_menuCategory = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_menuCategory;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_numericShortcut = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_onClick = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_onClick;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_orderInCategory = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_title = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_title;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_titleCondensed = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_android_visible = global::atheneum_app.Android.Resource.Styleable.MenuItem_android_visible;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_contentDescription = global::atheneum_app.Android.Resource.Styleable.MenuItem_contentDescription;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_iconTint = global::atheneum_app.Android.Resource.Styleable.MenuItem_iconTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_iconTintMode = global::atheneum_app.Android.Resource.Styleable.MenuItem_iconTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_numericModifiers = global::atheneum_app.Android.Resource.Styleable.MenuItem_numericModifiers;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_showAsAction = global::atheneum_app.Android.Resource.Styleable.MenuItem_showAsAction;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuItem_tooltipText = global::atheneum_app.Android.Resource.Styleable.MenuItem_tooltipText;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView = global::atheneum_app.Android.Resource.Styleable.MenuView;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_headerBackground = global::atheneum_app.Android.Resource.Styleable.MenuView_android_headerBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_horizontalDivider = global::atheneum_app.Android.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_itemBackground = global::atheneum_app.Android.Resource.Styleable.MenuView_android_itemBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::atheneum_app.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_itemTextAppearance = global::atheneum_app.Android.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_verticalDivider = global::atheneum_app.Android.Resource.Styleable.MenuView_android_verticalDivider;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_android_windowAnimationStyle = global::atheneum_app.Android.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_preserveIconSpacing = global::atheneum_app.Android.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::ZXing.Net.Mobile.Resource.Styleable.MenuView_subMenuArrow = global::atheneum_app.Android.Resource.Styleable.MenuView_subMenuArrow;
+			global::ZXing.Net.Mobile.Resource.Styleable.PopupWindow = global::atheneum_app.Android.Resource.Styleable.PopupWindow;
+			global::ZXing.Net.Mobile.Resource.Styleable.PopupWindowBackgroundState = global::atheneum_app.Android.Resource.Styleable.PopupWindowBackgroundState;
+			global::ZXing.Net.Mobile.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::atheneum_app.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::ZXing.Net.Mobile.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::atheneum_app.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.PopupWindow_android_popupBackground = global::atheneum_app.Android.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.PopupWindow_overlapAnchor = global::atheneum_app.Android.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::ZXing.Net.Mobile.Resource.Styleable.RecycleListView = global::atheneum_app.Android.Resource.Styleable.RecycleListView;
+			global::ZXing.Net.Mobile.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::atheneum_app.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::ZXing.Net.Mobile.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::atheneum_app.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView = global::atheneum_app.Android.Resource.Styleable.SearchView;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_android_focusable = global::atheneum_app.Android.Resource.Styleable.SearchView_android_focusable;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_android_imeOptions = global::atheneum_app.Android.Resource.Styleable.SearchView_android_imeOptions;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_android_inputType = global::atheneum_app.Android.Resource.Styleable.SearchView_android_inputType;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_android_maxWidth = global::atheneum_app.Android.Resource.Styleable.SearchView_android_maxWidth;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_closeIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_closeIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_commitIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_commitIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_defaultQueryHint = global::atheneum_app.Android.Resource.Styleable.SearchView_defaultQueryHint;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_goIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_goIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_iconifiedByDefault = global::atheneum_app.Android.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_layout = global::atheneum_app.Android.Resource.Styleable.SearchView_layout;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_queryBackground = global::atheneum_app.Android.Resource.Styleable.SearchView_queryBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_queryHint = global::atheneum_app.Android.Resource.Styleable.SearchView_queryHint;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_searchHintIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_searchHintIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_searchIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_searchIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_submitBackground = global::atheneum_app.Android.Resource.Styleable.SearchView_submitBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_suggestionRowLayout = global::atheneum_app.Android.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::ZXing.Net.Mobile.Resource.Styleable.SearchView_voiceIcon = global::atheneum_app.Android.Resource.Styleable.SearchView_voiceIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.Spinner = global::atheneum_app.Android.Resource.Styleable.Spinner;
+			global::ZXing.Net.Mobile.Resource.Styleable.Spinner_android_dropDownWidth = global::atheneum_app.Android.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::ZXing.Net.Mobile.Resource.Styleable.Spinner_android_entries = global::atheneum_app.Android.Resource.Styleable.Spinner_android_entries;
+			global::ZXing.Net.Mobile.Resource.Styleable.Spinner_android_popupBackground = global::atheneum_app.Android.Resource.Styleable.Spinner_android_popupBackground;
+			global::ZXing.Net.Mobile.Resource.Styleable.Spinner_android_prompt = global::atheneum_app.Android.Resource.Styleable.Spinner_android_prompt;
+			global::ZXing.Net.Mobile.Resource.Styleable.Spinner_popupTheme = global::atheneum_app.Android.Resource.Styleable.Spinner_popupTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable = global::atheneum_app.Android.Resource.Styleable.StateListDrawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawableItem = global::atheneum_app.Android.Resource.Styleable.StateListDrawableItem;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawableItem_android_drawable = global::atheneum_app.Android.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable_android_constantSize = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable_android_dither = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_dither;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable_android_variablePadding = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.StateListDrawable_android_visible = global::atheneum_app.Android.Resource.Styleable.StateListDrawable_android_visible;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat = global::atheneum_app.Android.Resource.Styleable.SwitchCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_android_textOff = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_android_textOff;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_android_textOn = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_android_textOn;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_android_thumb = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_android_thumb;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_showText = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_showText;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_splitTrack = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_splitTrack;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_switchMinWidth = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_switchPadding = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_switchPadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_switchTextAppearance = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_thumbTextPadding = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_thumbTint = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_thumbTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_thumbTintMode = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_track = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_track;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_trackTint = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_trackTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.SwitchCompat_trackTintMode = global::atheneum_app.Android.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance = global::atheneum_app.Android.Resource.Styleable.TextAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_fontFamily = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_shadowColor = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_shadowDx = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_shadowDy = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_shadowRadius = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textColor = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textColorHint = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textColorLink = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textFontWeight = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textFontWeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textSize = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textSize;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_textStyle = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_textStyle;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_android_typeface = global::atheneum_app.Android.Resource.Styleable.TextAppearance_android_typeface;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_fontFamily = global::atheneum_app.Android.Resource.Styleable.TextAppearance_fontFamily;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_fontVariationSettings = global::atheneum_app.Android.Resource.Styleable.TextAppearance_fontVariationSettings;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_textAllCaps = global::atheneum_app.Android.Resource.Styleable.TextAppearance_textAllCaps;
+			global::ZXing.Net.Mobile.Resource.Styleable.TextAppearance_textLocale = global::atheneum_app.Android.Resource.Styleable.TextAppearance_textLocale;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar = global::atheneum_app.Android.Resource.Styleable.Toolbar;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_android_gravity = global::atheneum_app.Android.Resource.Styleable.Toolbar_android_gravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_android_minHeight = global::atheneum_app.Android.Resource.Styleable.Toolbar_android_minHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_buttonGravity = global::atheneum_app.Android.Resource.Styleable.Toolbar_buttonGravity;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_collapseContentDescription = global::atheneum_app.Android.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_collapseIcon = global::atheneum_app.Android.Resource.Styleable.Toolbar_collapseIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_contentInsetEnd = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_contentInsetLeft = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_contentInsetRight = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetRight;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_contentInsetStart = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetStart;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::atheneum_app.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_logo = global::atheneum_app.Android.Resource.Styleable.Toolbar_logo;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_logoDescription = global::atheneum_app.Android.Resource.Styleable.Toolbar_logoDescription;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_maxButtonHeight = global::atheneum_app.Android.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_menu = global::atheneum_app.Android.Resource.Styleable.Toolbar_menu;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_navigationContentDescription = global::atheneum_app.Android.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_navigationIcon = global::atheneum_app.Android.Resource.Styleable.Toolbar_navigationIcon;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_popupTheme = global::atheneum_app.Android.Resource.Styleable.Toolbar_popupTheme;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_subtitle = global::atheneum_app.Android.Resource.Styleable.Toolbar_subtitle;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_subtitleTextAppearance = global::atheneum_app.Android.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_subtitleTextColor = global::atheneum_app.Android.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_title = global::atheneum_app.Android.Resource.Styleable.Toolbar_title;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleMargin = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMargin;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleMarginBottom = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleMarginEnd = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleMargins = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMargins;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleMarginStart = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginStart;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleMarginTop = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleMarginTop;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleTextAppearance = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::ZXing.Net.Mobile.Resource.Styleable.Toolbar_titleTextColor = global::atheneum_app.Android.Resource.Styleable.Toolbar_titleTextColor;
+			global::ZXing.Net.Mobile.Resource.Styleable.View = global::atheneum_app.Android.Resource.Styleable.View;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewBackgroundHelper = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewBackgroundHelper_android_background = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::atheneum_app.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewStubCompat = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewStubCompat_android_id = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat_android_id;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewStubCompat_android_inflatedId = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::ZXing.Net.Mobile.Resource.Styleable.ViewStubCompat_android_layout = global::atheneum_app.Android.Resource.Styleable.ViewStubCompat_android_layout;
+			global::ZXing.Net.Mobile.Resource.Styleable.View_android_focusable = global::atheneum_app.Android.Resource.Styleable.View_android_focusable;
+			global::ZXing.Net.Mobile.Resource.Styleable.View_android_theme = global::atheneum_app.Android.Resource.Styleable.View_android_theme;
+			global::ZXing.Net.Mobile.Resource.Styleable.View_paddingEnd = global::atheneum_app.Android.Resource.Styleable.View_paddingEnd;
+			global::ZXing.Net.Mobile.Resource.Styleable.View_paddingStart = global::atheneum_app.Android.Resource.Styleable.View_paddingStart;
+			global::ZXing.Net.Mobile.Resource.Styleable.View_theme = global::atheneum_app.Android.Resource.Styleable.View_theme;
+			global::ZXing.Net.Mobile.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::atheneum_app.Android.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 		}
 		
 		public partial class Animation
@@ -22547,859 +26880,862 @@ namespace atheneum_app.Android
 			public const int content = 2131296377;
 			
 			// aapt resource value: 0x7F09007A
-			public const int contentPanel = 2131296378;
+			public const int contentFrame = 2131296378;
 			
 			// aapt resource value: 0x7F09007B
-			public const int contiguous = 2131296379;
+			public const int contentPanel = 2131296379;
 			
 			// aapt resource value: 0x7F09007C
-			public const int coordinator = 2131296380;
+			public const int contiguous = 2131296380;
 			
 			// aapt resource value: 0x7F09007D
-			public const int cos = 2131296381;
+			public const int coordinator = 2131296381;
 			
 			// aapt resource value: 0x7F09007E
-			public const int counterclockwise = 2131296382;
+			public const int cos = 2131296382;
+			
+			// aapt resource value: 0x7F09007F
+			public const int counterclockwise = 2131296383;
 			
 			// aapt resource value: 0x7F090003
 			public const int CTRL = 2131296259;
 			
-			// aapt resource value: 0x7F09007F
-			public const int custom = 2131296383;
-			
 			// aapt resource value: 0x7F090080
-			public const int customPanel = 2131296384;
+			public const int custom = 2131296384;
 			
 			// aapt resource value: 0x7F090081
-			public const int cut = 2131296385;
+			public const int customPanel = 2131296385;
 			
 			// aapt resource value: 0x7F090082
-			public const int date_picker_actions = 2131296386;
+			public const int cut = 2131296386;
 			
 			// aapt resource value: 0x7F090083
-			public const int decelerate = 2131296387;
+			public const int date_picker_actions = 2131296387;
 			
 			// aapt resource value: 0x7F090084
-			public const int decelerateAndComplete = 2131296388;
+			public const int decelerate = 2131296388;
 			
 			// aapt resource value: 0x7F090085
-			public const int decor_content_parent = 2131296389;
+			public const int decelerateAndComplete = 2131296389;
 			
 			// aapt resource value: 0x7F090086
-			public const int default_activity_button = 2131296390;
+			public const int decor_content_parent = 2131296390;
 			
 			// aapt resource value: 0x7F090087
-			public const int deltaRelative = 2131296391;
+			public const int default_activity_button = 2131296391;
 			
 			// aapt resource value: 0x7F090088
-			public const int dependency_ordering = 2131296392;
+			public const int deltaRelative = 2131296392;
 			
 			// aapt resource value: 0x7F090089
-			public const int design_bottom_sheet = 2131296393;
+			public const int dependency_ordering = 2131296393;
 			
 			// aapt resource value: 0x7F09008A
-			public const int design_menu_item_action_area = 2131296394;
+			public const int design_bottom_sheet = 2131296394;
 			
 			// aapt resource value: 0x7F09008B
-			public const int design_menu_item_action_area_stub = 2131296395;
+			public const int design_menu_item_action_area = 2131296395;
 			
 			// aapt resource value: 0x7F09008C
-			public const int design_menu_item_text = 2131296396;
+			public const int design_menu_item_action_area_stub = 2131296396;
 			
 			// aapt resource value: 0x7F09008D
-			public const int design_navigation_view = 2131296397;
+			public const int design_menu_item_text = 2131296397;
 			
 			// aapt resource value: 0x7F09008E
-			public const int dialog_button = 2131296398;
+			public const int design_navigation_view = 2131296398;
 			
 			// aapt resource value: 0x7F09008F
-			public const int dimensions = 2131296399;
+			public const int dialog_button = 2131296399;
 			
 			// aapt resource value: 0x7F090090
-			public const int direct = 2131296400;
+			public const int dimensions = 2131296400;
 			
 			// aapt resource value: 0x7F090091
-			public const int disableHome = 2131296401;
+			public const int direct = 2131296401;
 			
 			// aapt resource value: 0x7F090092
-			public const int disablePostScroll = 2131296402;
+			public const int disableHome = 2131296402;
 			
 			// aapt resource value: 0x7F090093
-			public const int disableScroll = 2131296403;
+			public const int disablePostScroll = 2131296403;
 			
 			// aapt resource value: 0x7F090094
-			public const int disjoint = 2131296404;
+			public const int disableScroll = 2131296404;
 			
 			// aapt resource value: 0x7F090095
-			public const int dragDown = 2131296405;
+			public const int disjoint = 2131296405;
 			
 			// aapt resource value: 0x7F090096
-			public const int dragEnd = 2131296406;
+			public const int dragDown = 2131296406;
 			
 			// aapt resource value: 0x7F090097
-			public const int dragLeft = 2131296407;
+			public const int dragEnd = 2131296407;
 			
 			// aapt resource value: 0x7F090098
-			public const int dragRight = 2131296408;
+			public const int dragLeft = 2131296408;
 			
 			// aapt resource value: 0x7F090099
-			public const int dragStart = 2131296409;
+			public const int dragRight = 2131296409;
 			
 			// aapt resource value: 0x7F09009A
-			public const int dragUp = 2131296410;
+			public const int dragStart = 2131296410;
 			
 			// aapt resource value: 0x7F09009B
-			public const int dropdown_menu = 2131296411;
+			public const int dragUp = 2131296411;
 			
 			// aapt resource value: 0x7F09009C
-			public const int easeIn = 2131296412;
+			public const int dropdown_menu = 2131296412;
 			
 			// aapt resource value: 0x7F09009D
-			public const int easeInOut = 2131296413;
+			public const int easeIn = 2131296413;
 			
 			// aapt resource value: 0x7F09009E
-			public const int easeOut = 2131296414;
+			public const int easeInOut = 2131296414;
 			
 			// aapt resource value: 0x7F09009F
-			public const int edit_query = 2131296415;
+			public const int easeOut = 2131296415;
 			
 			// aapt resource value: 0x7F0900A0
-			public const int elastic = 2131296416;
+			public const int edit_query = 2131296416;
 			
 			// aapt resource value: 0x7F0900A1
-			public const int end = 2131296417;
+			public const int elastic = 2131296417;
 			
 			// aapt resource value: 0x7F0900A2
-			public const int endToStart = 2131296418;
+			public const int end = 2131296418;
 			
 			// aapt resource value: 0x7F0900A3
-			public const int end_padder = 2131296419;
+			public const int endToStart = 2131296419;
 			
 			// aapt resource value: 0x7F0900A4
-			public const int enterAlways = 2131296420;
+			public const int end_padder = 2131296420;
 			
 			// aapt resource value: 0x7F0900A5
-			public const int enterAlwaysCollapsed = 2131296421;
+			public const int enterAlways = 2131296421;
 			
 			// aapt resource value: 0x7F0900A6
-			public const int exitUntilCollapsed = 2131296422;
-			
-			// aapt resource value: 0x7F0900A8
-			public const int expanded_menu = 2131296424;
+			public const int enterAlwaysCollapsed = 2131296422;
 			
 			// aapt resource value: 0x7F0900A7
-			public const int expand_activities_button = 2131296423;
+			public const int exitUntilCollapsed = 2131296423;
 			
 			// aapt resource value: 0x7F0900A9
-			public const int fade = 2131296425;
+			public const int expanded_menu = 2131296425;
+			
+			// aapt resource value: 0x7F0900A8
+			public const int expand_activities_button = 2131296424;
 			
 			// aapt resource value: 0x7F0900AA
-			public const int fill = 2131296426;
-			
-			// aapt resource value: 0x7F0900AD
-			public const int filled = 2131296429;
+			public const int fade = 2131296426;
 			
 			// aapt resource value: 0x7F0900AB
-			public const int fill_horizontal = 2131296427;
-			
-			// aapt resource value: 0x7F0900AC
-			public const int fill_vertical = 2131296428;
+			public const int fill = 2131296427;
 			
 			// aapt resource value: 0x7F0900AE
-			public const int fitToContents = 2131296430;
+			public const int filled = 2131296430;
+			
+			// aapt resource value: 0x7F0900AC
+			public const int fill_horizontal = 2131296428;
+			
+			// aapt resource value: 0x7F0900AD
+			public const int fill_vertical = 2131296429;
 			
 			// aapt resource value: 0x7F0900AF
-			public const int @fixed = 2131296431;
+			public const int fitToContents = 2131296431;
 			
 			// aapt resource value: 0x7F0900B0
-			public const int flip = 2131296432;
+			public const int @fixed = 2131296432;
 			
 			// aapt resource value: 0x7F0900B1
-			public const int floating = 2131296433;
+			public const int flip = 2131296433;
 			
 			// aapt resource value: 0x7F0900B2
-			public const int flyoutcontent_appbar = 2131296434;
+			public const int floating = 2131296434;
 			
 			// aapt resource value: 0x7F0900B3
-			public const int forever = 2131296435;
+			public const int flyoutcontent_appbar = 2131296435;
 			
 			// aapt resource value: 0x7F0900B4
-			public const int fragment_container_view_tag = 2131296436;
+			public const int forever = 2131296436;
+			
+			// aapt resource value: 0x7F0900B5
+			public const int fragment_container_view_tag = 2131296437;
 			
 			// aapt resource value: 0x7F090004
 			public const int FUNCTION = 2131296260;
 			
-			// aapt resource value: 0x7F0900B5
-			public const int ghost_view = 2131296437;
-			
 			// aapt resource value: 0x7F0900B6
-			public const int ghost_view_holder = 2131296438;
+			public const int ghost_view = 2131296438;
 			
 			// aapt resource value: 0x7F0900B7
-			public const int gone = 2131296439;
+			public const int ghost_view_holder = 2131296439;
 			
 			// aapt resource value: 0x7F0900B8
-			public const int graph = 2131296440;
+			public const int gone = 2131296440;
 			
 			// aapt resource value: 0x7F0900B9
-			public const int graph_wrap = 2131296441;
-			
-			// aapt resource value: 0x7F0900BB
-			public const int grouping = 2131296443;
-			
-			// aapt resource value: 0x7F0900BC
-			public const int groups = 2131296444;
+			public const int graph = 2131296441;
 			
 			// aapt resource value: 0x7F0900BA
-			public const int group_divider = 2131296442;
+			public const int graph_wrap = 2131296442;
+			
+			// aapt resource value: 0x7F0900BC
+			public const int grouping = 2131296444;
 			
 			// aapt resource value: 0x7F0900BD
-			public const int guideline = 2131296445;
+			public const int groups = 2131296445;
+			
+			// aapt resource value: 0x7F0900BB
+			public const int group_divider = 2131296443;
 			
 			// aapt resource value: 0x7F0900BE
-			public const int header_title = 2131296446;
+			public const int guideline = 2131296446;
 			
 			// aapt resource value: 0x7F0900BF
-			public const int hideable = 2131296447;
+			public const int header_title = 2131296447;
 			
 			// aapt resource value: 0x7F0900C0
-			public const int home = 2131296448;
+			public const int hideable = 2131296448;
 			
 			// aapt resource value: 0x7F0900C1
-			public const int homeAsUp = 2131296449;
+			public const int home = 2131296449;
 			
 			// aapt resource value: 0x7F0900C2
-			public const int honorRequest = 2131296450;
+			public const int homeAsUp = 2131296450;
 			
 			// aapt resource value: 0x7F0900C3
-			public const int icon = 2131296451;
+			public const int honorRequest = 2131296451;
 			
 			// aapt resource value: 0x7F0900C4
-			public const int icon_group = 2131296452;
+			public const int icon = 2131296452;
 			
 			// aapt resource value: 0x7F0900C5
-			public const int ifRoom = 2131296453;
+			public const int icon_group = 2131296453;
 			
 			// aapt resource value: 0x7F0900C6
-			public const int ignore = 2131296454;
+			public const int ifRoom = 2131296454;
 			
 			// aapt resource value: 0x7F0900C7
-			public const int ignoreRequest = 2131296455;
+			public const int ignore = 2131296455;
 			
 			// aapt resource value: 0x7F0900C8
-			public const int image = 2131296456;
+			public const int ignoreRequest = 2131296456;
 			
 			// aapt resource value: 0x7F0900C9
-			public const int info = 2131296457;
+			public const int image = 2131296457;
 			
 			// aapt resource value: 0x7F0900CA
-			public const int invisible = 2131296458;
+			public const int info = 2131296458;
 			
 			// aapt resource value: 0x7F0900CB
-			public const int inward = 2131296459;
+			public const int invisible = 2131296459;
 			
 			// aapt resource value: 0x7F0900CC
-			public const int italic = 2131296460;
+			public const int inward = 2131296460;
 			
 			// aapt resource value: 0x7F0900CD
-			public const int item_touch_helper_previous_elevation = 2131296461;
+			public const int italic = 2131296461;
 			
 			// aapt resource value: 0x7F0900CE
-			public const int jumpToEnd = 2131296462;
+			public const int item_touch_helper_previous_elevation = 2131296462;
 			
 			// aapt resource value: 0x7F0900CF
-			public const int jumpToStart = 2131296463;
-			
-			// aapt resource value: 0x7F0900D1
-			public const int labeled = 2131296465;
+			public const int jumpToEnd = 2131296463;
 			
 			// aapt resource value: 0x7F0900D0
-			public const int labelGroup = 2131296464;
+			public const int jumpToStart = 2131296464;
 			
 			// aapt resource value: 0x7F0900D2
-			public const int largeLabel = 2131296466;
+			public const int labeled = 2131296466;
+			
+			// aapt resource value: 0x7F0900D1
+			public const int labelGroup = 2131296465;
 			
 			// aapt resource value: 0x7F0900D3
-			public const int layout = 2131296467;
+			public const int largeLabel = 2131296467;
 			
 			// aapt resource value: 0x7F0900D4
-			public const int left = 2131296468;
+			public const int layout = 2131296468;
 			
 			// aapt resource value: 0x7F0900D5
-			public const int leftToRight = 2131296469;
+			public const int left = 2131296469;
 			
 			// aapt resource value: 0x7F0900D6
-			public const int line1 = 2131296470;
+			public const int leftToRight = 2131296470;
 			
 			// aapt resource value: 0x7F0900D7
-			public const int line3 = 2131296471;
+			public const int line1 = 2131296471;
 			
 			// aapt resource value: 0x7F0900D8
-			public const int linear = 2131296472;
+			public const int line3 = 2131296472;
 			
 			// aapt resource value: 0x7F0900D9
-			public const int listMode = 2131296473;
+			public const int linear = 2131296473;
 			
 			// aapt resource value: 0x7F0900DA
-			public const int list_item = 2131296474;
+			public const int listMode = 2131296474;
 			
 			// aapt resource value: 0x7F0900DB
-			public const int loadingImage = 2131296475;
+			public const int list_item = 2131296475;
 			
 			// aapt resource value: 0x7F0900DC
-			public const int loadingProgressBar = 2131296476;
+			public const int loadingImage = 2131296476;
 			
 			// aapt resource value: 0x7F0900DD
-			public const int loadingProgressWheel = 2131296477;
+			public const int loadingProgressBar = 2131296477;
 			
 			// aapt resource value: 0x7F0900DE
-			public const int main_appbar = 2131296478;
+			public const int loadingProgressWheel = 2131296478;
 			
 			// aapt resource value: 0x7F0900DF
-			public const int main_tablayout = 2131296479;
+			public const int main_appbar = 2131296479;
 			
 			// aapt resource value: 0x7F0900E0
-			public const int main_toolbar = 2131296480;
+			public const int main_tablayout = 2131296480;
 			
 			// aapt resource value: 0x7F0900E1
-			public const int main_viewpager = 2131296481;
+			public const int main_toolbar = 2131296481;
 			
 			// aapt resource value: 0x7F0900E2
-			public const int masked = 2131296482;
+			public const int main_viewpager = 2131296482;
 			
 			// aapt resource value: 0x7F0900E3
-			public const int material_clock_display = 2131296483;
+			public const int masked = 2131296483;
 			
 			// aapt resource value: 0x7F0900E4
-			public const int material_clock_face = 2131296484;
+			public const int material_clock_display = 2131296484;
 			
 			// aapt resource value: 0x7F0900E5
-			public const int material_clock_hand = 2131296485;
+			public const int material_clock_face = 2131296485;
 			
 			// aapt resource value: 0x7F0900E6
-			public const int material_clock_period_am_button = 2131296486;
+			public const int material_clock_hand = 2131296486;
 			
 			// aapt resource value: 0x7F0900E7
-			public const int material_clock_period_pm_button = 2131296487;
+			public const int material_clock_period_am_button = 2131296487;
 			
 			// aapt resource value: 0x7F0900E8
-			public const int material_clock_period_toggle = 2131296488;
+			public const int material_clock_period_pm_button = 2131296488;
 			
 			// aapt resource value: 0x7F0900E9
-			public const int material_hour_text_input = 2131296489;
+			public const int material_clock_period_toggle = 2131296489;
 			
 			// aapt resource value: 0x7F0900EA
-			public const int material_hour_tv = 2131296490;
+			public const int material_hour_text_input = 2131296490;
 			
 			// aapt resource value: 0x7F0900EB
-			public const int material_label = 2131296491;
+			public const int material_hour_tv = 2131296491;
 			
 			// aapt resource value: 0x7F0900EC
-			public const int material_minute_text_input = 2131296492;
+			public const int material_label = 2131296492;
 			
 			// aapt resource value: 0x7F0900ED
-			public const int material_minute_tv = 2131296493;
+			public const int material_minute_text_input = 2131296493;
 			
 			// aapt resource value: 0x7F0900EE
-			public const int material_textinput_timepicker = 2131296494;
+			public const int material_minute_tv = 2131296494;
 			
 			// aapt resource value: 0x7F0900EF
-			public const int material_timepicker_cancel_button = 2131296495;
+			public const int material_textinput_timepicker = 2131296495;
 			
 			// aapt resource value: 0x7F0900F0
-			public const int material_timepicker_container = 2131296496;
+			public const int material_timepicker_cancel_button = 2131296496;
 			
 			// aapt resource value: 0x7F0900F1
-			public const int material_timepicker_edit_text = 2131296497;
+			public const int material_timepicker_container = 2131296497;
 			
 			// aapt resource value: 0x7F0900F2
-			public const int material_timepicker_mode_button = 2131296498;
+			public const int material_timepicker_edit_text = 2131296498;
 			
 			// aapt resource value: 0x7F0900F3
-			public const int material_timepicker_ok_button = 2131296499;
+			public const int material_timepicker_mode_button = 2131296499;
 			
 			// aapt resource value: 0x7F0900F4
-			public const int material_timepicker_view = 2131296500;
+			public const int material_timepicker_ok_button = 2131296500;
 			
 			// aapt resource value: 0x7F0900F5
-			public const int material_value_index = 2131296501;
+			public const int material_timepicker_view = 2131296501;
 			
 			// aapt resource value: 0x7F0900F6
-			public const int media_actions = 2131296502;
+			public const int material_value_index = 2131296502;
 			
 			// aapt resource value: 0x7F0900F7
-			public const int media_controller_compat_view_tag = 2131296503;
+			public const int media_actions = 2131296503;
 			
 			// aapt resource value: 0x7F0900F8
-			public const int message = 2131296504;
+			public const int media_controller_compat_view_tag = 2131296504;
+			
+			// aapt resource value: 0x7F0900F9
+			public const int message = 2131296505;
 			
 			// aapt resource value: 0x7F090005
 			public const int META = 2131296261;
 			
-			// aapt resource value: 0x7F0900F9
-			public const int middle = 2131296505;
-			
 			// aapt resource value: 0x7F0900FA
-			public const int mini = 2131296506;
+			public const int middle = 2131296506;
 			
 			// aapt resource value: 0x7F0900FB
-			public const int month_grid = 2131296507;
+			public const int mini = 2131296507;
 			
 			// aapt resource value: 0x7F0900FC
-			public const int month_navigation_bar = 2131296508;
+			public const int month_grid = 2131296508;
 			
 			// aapt resource value: 0x7F0900FD
-			public const int month_navigation_fragment_toggle = 2131296509;
+			public const int month_navigation_bar = 2131296509;
 			
 			// aapt resource value: 0x7F0900FE
-			public const int month_navigation_next = 2131296510;
+			public const int month_navigation_fragment_toggle = 2131296510;
 			
 			// aapt resource value: 0x7F0900FF
-			public const int month_navigation_previous = 2131296511;
+			public const int month_navigation_next = 2131296511;
 			
 			// aapt resource value: 0x7F090100
-			public const int month_title = 2131296512;
+			public const int month_navigation_previous = 2131296512;
 			
 			// aapt resource value: 0x7F090101
-			public const int motion_base = 2131296513;
+			public const int month_title = 2131296513;
 			
 			// aapt resource value: 0x7F090102
-			public const int mr_art = 2131296514;
+			public const int motion_base = 2131296514;
 			
 			// aapt resource value: 0x7F090103
-			public const int mr_cast_checkbox = 2131296515;
+			public const int mr_art = 2131296515;
 			
 			// aapt resource value: 0x7F090104
-			public const int mr_cast_close_button = 2131296516;
+			public const int mr_cast_checkbox = 2131296516;
 			
 			// aapt resource value: 0x7F090105
-			public const int mr_cast_divider = 2131296517;
+			public const int mr_cast_close_button = 2131296517;
 			
 			// aapt resource value: 0x7F090106
-			public const int mr_cast_group_icon = 2131296518;
+			public const int mr_cast_divider = 2131296518;
 			
 			// aapt resource value: 0x7F090107
-			public const int mr_cast_group_name = 2131296519;
+			public const int mr_cast_group_icon = 2131296519;
 			
 			// aapt resource value: 0x7F090108
-			public const int mr_cast_group_progress_bar = 2131296520;
+			public const int mr_cast_group_name = 2131296520;
 			
 			// aapt resource value: 0x7F090109
-			public const int mr_cast_header_name = 2131296521;
+			public const int mr_cast_group_progress_bar = 2131296521;
 			
 			// aapt resource value: 0x7F09010A
-			public const int mr_cast_list = 2131296522;
+			public const int mr_cast_header_name = 2131296522;
 			
 			// aapt resource value: 0x7F09010B
-			public const int mr_cast_meta_art = 2131296523;
+			public const int mr_cast_list = 2131296523;
 			
 			// aapt resource value: 0x7F09010C
-			public const int mr_cast_meta_background = 2131296524;
+			public const int mr_cast_meta_art = 2131296524;
 			
 			// aapt resource value: 0x7F09010D
-			public const int mr_cast_meta_black_scrim = 2131296525;
+			public const int mr_cast_meta_background = 2131296525;
 			
 			// aapt resource value: 0x7F09010E
-			public const int mr_cast_meta_subtitle = 2131296526;
+			public const int mr_cast_meta_black_scrim = 2131296526;
 			
 			// aapt resource value: 0x7F09010F
-			public const int mr_cast_meta_title = 2131296527;
+			public const int mr_cast_meta_subtitle = 2131296527;
 			
 			// aapt resource value: 0x7F090110
-			public const int mr_cast_mute_button = 2131296528;
+			public const int mr_cast_meta_title = 2131296528;
 			
 			// aapt resource value: 0x7F090111
-			public const int mr_cast_route_icon = 2131296529;
+			public const int mr_cast_mute_button = 2131296529;
 			
 			// aapt resource value: 0x7F090112
-			public const int mr_cast_route_name = 2131296530;
+			public const int mr_cast_route_icon = 2131296530;
 			
 			// aapt resource value: 0x7F090113
-			public const int mr_cast_route_progress_bar = 2131296531;
+			public const int mr_cast_route_name = 2131296531;
 			
 			// aapt resource value: 0x7F090114
-			public const int mr_cast_stop_button = 2131296532;
+			public const int mr_cast_route_progress_bar = 2131296532;
 			
 			// aapt resource value: 0x7F090115
-			public const int mr_cast_volume_layout = 2131296533;
+			public const int mr_cast_stop_button = 2131296533;
 			
 			// aapt resource value: 0x7F090116
-			public const int mr_cast_volume_slider = 2131296534;
+			public const int mr_cast_volume_layout = 2131296534;
 			
 			// aapt resource value: 0x7F090117
-			public const int mr_chooser_list = 2131296535;
+			public const int mr_cast_volume_slider = 2131296535;
 			
 			// aapt resource value: 0x7F090118
-			public const int mr_chooser_route_desc = 2131296536;
+			public const int mr_chooser_list = 2131296536;
 			
 			// aapt resource value: 0x7F090119
-			public const int mr_chooser_route_icon = 2131296537;
+			public const int mr_chooser_route_desc = 2131296537;
 			
 			// aapt resource value: 0x7F09011A
-			public const int mr_chooser_route_name = 2131296538;
+			public const int mr_chooser_route_icon = 2131296538;
 			
 			// aapt resource value: 0x7F09011B
-			public const int mr_chooser_route_progress_bar = 2131296539;
+			public const int mr_chooser_route_name = 2131296539;
 			
 			// aapt resource value: 0x7F09011C
-			public const int mr_chooser_title = 2131296540;
+			public const int mr_chooser_route_progress_bar = 2131296540;
 			
 			// aapt resource value: 0x7F09011D
-			public const int mr_close = 2131296541;
+			public const int mr_chooser_title = 2131296541;
 			
 			// aapt resource value: 0x7F09011E
-			public const int mr_control_divider = 2131296542;
+			public const int mr_close = 2131296542;
 			
 			// aapt resource value: 0x7F09011F
-			public const int mr_control_playback_ctrl = 2131296543;
+			public const int mr_control_divider = 2131296543;
 			
 			// aapt resource value: 0x7F090120
-			public const int mr_control_subtitle = 2131296544;
+			public const int mr_control_playback_ctrl = 2131296544;
 			
 			// aapt resource value: 0x7F090121
-			public const int mr_control_title = 2131296545;
+			public const int mr_control_subtitle = 2131296545;
 			
 			// aapt resource value: 0x7F090122
-			public const int mr_control_title_container = 2131296546;
+			public const int mr_control_title = 2131296546;
 			
 			// aapt resource value: 0x7F090123
-			public const int mr_custom_control = 2131296547;
+			public const int mr_control_title_container = 2131296547;
 			
 			// aapt resource value: 0x7F090124
-			public const int mr_default_control = 2131296548;
+			public const int mr_custom_control = 2131296548;
 			
 			// aapt resource value: 0x7F090125
-			public const int mr_dialog_area = 2131296549;
+			public const int mr_default_control = 2131296549;
 			
 			// aapt resource value: 0x7F090126
-			public const int mr_expandable_area = 2131296550;
+			public const int mr_dialog_area = 2131296550;
 			
 			// aapt resource value: 0x7F090127
-			public const int mr_group_expand_collapse = 2131296551;
+			public const int mr_expandable_area = 2131296551;
 			
 			// aapt resource value: 0x7F090128
-			public const int mr_group_volume_route_name = 2131296552;
+			public const int mr_group_expand_collapse = 2131296552;
 			
 			// aapt resource value: 0x7F090129
-			public const int mr_media_main_control = 2131296553;
+			public const int mr_group_volume_route_name = 2131296553;
 			
 			// aapt resource value: 0x7F09012A
-			public const int mr_name = 2131296554;
+			public const int mr_media_main_control = 2131296554;
 			
 			// aapt resource value: 0x7F09012B
-			public const int mr_picker_close_button = 2131296555;
+			public const int mr_name = 2131296555;
 			
 			// aapt resource value: 0x7F09012C
-			public const int mr_picker_header_name = 2131296556;
+			public const int mr_picker_close_button = 2131296556;
 			
 			// aapt resource value: 0x7F09012D
-			public const int mr_picker_list = 2131296557;
+			public const int mr_picker_header_name = 2131296557;
 			
 			// aapt resource value: 0x7F09012E
-			public const int mr_picker_route_icon = 2131296558;
+			public const int mr_picker_list = 2131296558;
 			
 			// aapt resource value: 0x7F09012F
-			public const int mr_picker_route_name = 2131296559;
+			public const int mr_picker_route_icon = 2131296559;
 			
 			// aapt resource value: 0x7F090130
-			public const int mr_picker_route_progress_bar = 2131296560;
+			public const int mr_picker_route_name = 2131296560;
 			
 			// aapt resource value: 0x7F090131
-			public const int mr_playback_control = 2131296561;
+			public const int mr_picker_route_progress_bar = 2131296561;
 			
 			// aapt resource value: 0x7F090132
-			public const int mr_title_bar = 2131296562;
+			public const int mr_playback_control = 2131296562;
 			
 			// aapt resource value: 0x7F090133
-			public const int mr_volume_control = 2131296563;
+			public const int mr_title_bar = 2131296563;
 			
 			// aapt resource value: 0x7F090134
-			public const int mr_volume_group_list = 2131296564;
+			public const int mr_volume_control = 2131296564;
 			
 			// aapt resource value: 0x7F090135
-			public const int mr_volume_item_icon = 2131296565;
+			public const int mr_volume_group_list = 2131296565;
 			
 			// aapt resource value: 0x7F090136
-			public const int mr_volume_slider = 2131296566;
+			public const int mr_volume_item_icon = 2131296566;
 			
 			// aapt resource value: 0x7F090137
-			public const int mtrl_anchor_parent = 2131296567;
-			
-			// aapt resource value: 0x7F090139
-			public const int mtrl_calendar_days_of_week = 2131296569;
+			public const int mr_volume_slider = 2131296567;
 			
 			// aapt resource value: 0x7F090138
-			public const int mtrl_calendar_day_selector_frame = 2131296568;
+			public const int mtrl_anchor_parent = 2131296568;
 			
 			// aapt resource value: 0x7F09013A
-			public const int mtrl_calendar_frame = 2131296570;
+			public const int mtrl_calendar_days_of_week = 2131296570;
+			
+			// aapt resource value: 0x7F090139
+			public const int mtrl_calendar_day_selector_frame = 2131296569;
 			
 			// aapt resource value: 0x7F09013B
-			public const int mtrl_calendar_main_pane = 2131296571;
+			public const int mtrl_calendar_frame = 2131296571;
 			
 			// aapt resource value: 0x7F09013C
-			public const int mtrl_calendar_months = 2131296572;
+			public const int mtrl_calendar_main_pane = 2131296572;
 			
 			// aapt resource value: 0x7F09013D
-			public const int mtrl_calendar_selection_frame = 2131296573;
+			public const int mtrl_calendar_months = 2131296573;
 			
 			// aapt resource value: 0x7F09013E
-			public const int mtrl_calendar_text_input_frame = 2131296574;
+			public const int mtrl_calendar_selection_frame = 2131296574;
 			
 			// aapt resource value: 0x7F09013F
-			public const int mtrl_calendar_year_selector_frame = 2131296575;
+			public const int mtrl_calendar_text_input_frame = 2131296575;
 			
 			// aapt resource value: 0x7F090140
-			public const int mtrl_card_checked_layer_id = 2131296576;
+			public const int mtrl_calendar_year_selector_frame = 2131296576;
 			
 			// aapt resource value: 0x7F090141
-			public const int mtrl_child_content_container = 2131296577;
+			public const int mtrl_card_checked_layer_id = 2131296577;
 			
 			// aapt resource value: 0x7F090142
-			public const int mtrl_internal_children_alpha_tag = 2131296578;
+			public const int mtrl_child_content_container = 2131296578;
 			
 			// aapt resource value: 0x7F090143
-			public const int mtrl_motion_snapshot_view = 2131296579;
+			public const int mtrl_internal_children_alpha_tag = 2131296579;
 			
 			// aapt resource value: 0x7F090144
-			public const int mtrl_picker_fullscreen = 2131296580;
+			public const int mtrl_motion_snapshot_view = 2131296580;
 			
 			// aapt resource value: 0x7F090145
-			public const int mtrl_picker_header = 2131296581;
+			public const int mtrl_picker_fullscreen = 2131296581;
 			
 			// aapt resource value: 0x7F090146
-			public const int mtrl_picker_header_selection_text = 2131296582;
+			public const int mtrl_picker_header = 2131296582;
 			
 			// aapt resource value: 0x7F090147
-			public const int mtrl_picker_header_title_and_selection = 2131296583;
+			public const int mtrl_picker_header_selection_text = 2131296583;
 			
 			// aapt resource value: 0x7F090148
-			public const int mtrl_picker_header_toggle = 2131296584;
+			public const int mtrl_picker_header_title_and_selection = 2131296584;
 			
 			// aapt resource value: 0x7F090149
-			public const int mtrl_picker_text_input_date = 2131296585;
+			public const int mtrl_picker_header_toggle = 2131296585;
 			
 			// aapt resource value: 0x7F09014A
-			public const int mtrl_picker_text_input_range_end = 2131296586;
+			public const int mtrl_picker_text_input_date = 2131296586;
 			
 			// aapt resource value: 0x7F09014B
-			public const int mtrl_picker_text_input_range_start = 2131296587;
+			public const int mtrl_picker_text_input_range_end = 2131296587;
 			
 			// aapt resource value: 0x7F09014C
-			public const int mtrl_picker_title_text = 2131296588;
+			public const int mtrl_picker_text_input_range_start = 2131296588;
 			
 			// aapt resource value: 0x7F09014D
-			public const int mtrl_view_tag_bottom_padding = 2131296589;
+			public const int mtrl_picker_title_text = 2131296589;
 			
 			// aapt resource value: 0x7F09014E
-			public const int multiply = 2131296590;
+			public const int mtrl_view_tag_bottom_padding = 2131296590;
 			
 			// aapt resource value: 0x7F09014F
-			public const int navigation_header_container = 2131296591;
+			public const int multiply = 2131296591;
 			
 			// aapt resource value: 0x7F090150
-			public const int never = 2131296592;
-			
-			// aapt resource value: 0x7F090152
-			public const int none = 2131296594;
-			
-			// aapt resource value: 0x7F090153
-			public const int normal = 2131296595;
+			public const int navigation_header_container = 2131296592;
 			
 			// aapt resource value: 0x7F090151
-			public const int noScroll = 2131296593;
+			public const int never = 2131296593;
+			
+			// aapt resource value: 0x7F090153
+			public const int none = 2131296595;
 			
 			// aapt resource value: 0x7F090154
-			public const int notification_background = 2131296596;
+			public const int normal = 2131296596;
+			
+			// aapt resource value: 0x7F090152
+			public const int noScroll = 2131296594;
 			
 			// aapt resource value: 0x7F090155
-			public const int notification_main_column = 2131296597;
+			public const int notification_background = 2131296597;
 			
 			// aapt resource value: 0x7F090156
-			public const int notification_main_column_container = 2131296598;
+			public const int notification_main_column = 2131296598;
+			
+			// aapt resource value: 0x7F090157
+			public const int notification_main_column_container = 2131296599;
 			
 			// aapt resource value: 0x7F090006
 			public const int NO_DEBUG = 2131296262;
 			
-			// aapt resource value: 0x7F090157
-			public const int off = 2131296599;
-			
 			// aapt resource value: 0x7F090158
-			public const int on = 2131296600;
+			public const int off = 2131296600;
 			
 			// aapt resource value: 0x7F090159
-			public const int outline = 2131296601;
+			public const int on = 2131296601;
 			
 			// aapt resource value: 0x7F09015A
-			public const int outward = 2131296602;
+			public const int outline = 2131296602;
 			
 			// aapt resource value: 0x7F09015B
-			public const int packed = 2131296603;
+			public const int outward = 2131296603;
 			
 			// aapt resource value: 0x7F09015C
-			public const int parallax = 2131296604;
+			public const int packed = 2131296604;
 			
 			// aapt resource value: 0x7F09015D
-			public const int parent = 2131296605;
+			public const int parallax = 2131296605;
 			
 			// aapt resource value: 0x7F09015E
-			public const int parentPanel = 2131296606;
+			public const int parent = 2131296606;
 			
 			// aapt resource value: 0x7F09015F
-			public const int parentRelative = 2131296607;
+			public const int parentPanel = 2131296607;
 			
 			// aapt resource value: 0x7F090160
-			public const int parent_matrix = 2131296608;
+			public const int parentRelative = 2131296608;
 			
 			// aapt resource value: 0x7F090161
-			public const int password_toggle = 2131296609;
+			public const int parent_matrix = 2131296609;
 			
 			// aapt resource value: 0x7F090162
-			public const int path = 2131296610;
+			public const int password_toggle = 2131296610;
 			
 			// aapt resource value: 0x7F090163
-			public const int pathRelative = 2131296611;
+			public const int path = 2131296611;
 			
 			// aapt resource value: 0x7F090164
-			public const int peekHeight = 2131296612;
+			public const int pathRelative = 2131296612;
 			
 			// aapt resource value: 0x7F090165
-			public const int percent = 2131296613;
+			public const int peekHeight = 2131296613;
 			
 			// aapt resource value: 0x7F090166
-			public const int pin = 2131296614;
+			public const int percent = 2131296614;
 			
 			// aapt resource value: 0x7F090167
-			public const int position = 2131296615;
+			public const int pin = 2131296615;
 			
 			// aapt resource value: 0x7F090168
-			public const int postLayout = 2131296616;
+			public const int position = 2131296616;
 			
 			// aapt resource value: 0x7F090169
-			public const int progress_circular = 2131296617;
+			public const int postLayout = 2131296617;
 			
 			// aapt resource value: 0x7F09016A
-			public const int progress_horizontal = 2131296618;
+			public const int progress_circular = 2131296618;
 			
 			// aapt resource value: 0x7F09016B
-			public const int radio = 2131296619;
+			public const int progress_horizontal = 2131296619;
 			
 			// aapt resource value: 0x7F09016C
-			public const int ratio = 2131296620;
+			public const int radio = 2131296620;
 			
 			// aapt resource value: 0x7F09016D
-			public const int rectangles = 2131296621;
+			public const int ratio = 2131296621;
 			
 			// aapt resource value: 0x7F09016E
-			public const int reverseSawtooth = 2131296622;
+			public const int rectangles = 2131296622;
 			
 			// aapt resource value: 0x7F09016F
-			public const int right = 2131296623;
+			public const int reverseSawtooth = 2131296623;
 			
 			// aapt resource value: 0x7F090170
-			public const int rightToLeft = 2131296624;
+			public const int right = 2131296624;
 			
 			// aapt resource value: 0x7F090171
-			public const int right_icon = 2131296625;
+			public const int rightToLeft = 2131296625;
 			
 			// aapt resource value: 0x7F090172
-			public const int right_side = 2131296626;
+			public const int right_icon = 2131296626;
 			
 			// aapt resource value: 0x7F090173
-			public const int rounded = 2131296627;
+			public const int right_side = 2131296627;
 			
 			// aapt resource value: 0x7F090174
-			public const int row_index_key = 2131296628;
+			public const int rounded = 2131296628;
 			
 			// aapt resource value: 0x7F090175
-			public const int save_non_transition_alpha = 2131296629;
+			public const int row_index_key = 2131296629;
 			
 			// aapt resource value: 0x7F090176
-			public const int save_overlay_view = 2131296630;
+			public const int save_non_transition_alpha = 2131296630;
 			
 			// aapt resource value: 0x7F090177
-			public const int sawtooth = 2131296631;
+			public const int save_overlay_view = 2131296631;
 			
 			// aapt resource value: 0x7F090178
-			public const int scale = 2131296632;
+			public const int sawtooth = 2131296632;
 			
 			// aapt resource value: 0x7F090179
-			public const int screen = 2131296633;
+			public const int scale = 2131296633;
 			
 			// aapt resource value: 0x7F09017A
-			public const int scroll = 2131296634;
-			
-			// aapt resource value: 0x7F09017E
-			public const int scrollable = 2131296638;
+			public const int screen = 2131296634;
 			
 			// aapt resource value: 0x7F09017B
-			public const int scrollIndicatorDown = 2131296635;
-			
-			// aapt resource value: 0x7F09017C
-			public const int scrollIndicatorUp = 2131296636;
-			
-			// aapt resource value: 0x7F09017D
-			public const int scrollView = 2131296637;
+			public const int scroll = 2131296635;
 			
 			// aapt resource value: 0x7F09017F
-			public const int search_badge = 2131296639;
+			public const int scrollable = 2131296639;
+			
+			// aapt resource value: 0x7F09017C
+			public const int scrollIndicatorDown = 2131296636;
+			
+			// aapt resource value: 0x7F09017D
+			public const int scrollIndicatorUp = 2131296637;
+			
+			// aapt resource value: 0x7F09017E
+			public const int scrollView = 2131296638;
 			
 			// aapt resource value: 0x7F090180
-			public const int search_bar = 2131296640;
+			public const int search_badge = 2131296640;
 			
 			// aapt resource value: 0x7F090181
-			public const int search_button = 2131296641;
+			public const int search_bar = 2131296641;
 			
 			// aapt resource value: 0x7F090182
-			public const int search_close_btn = 2131296642;
+			public const int search_button = 2131296642;
 			
 			// aapt resource value: 0x7F090183
-			public const int search_edit_frame = 2131296643;
+			public const int search_close_btn = 2131296643;
 			
 			// aapt resource value: 0x7F090184
-			public const int search_go_btn = 2131296644;
+			public const int search_edit_frame = 2131296644;
 			
 			// aapt resource value: 0x7F090185
-			public const int search_mag_icon = 2131296645;
+			public const int search_go_btn = 2131296645;
 			
 			// aapt resource value: 0x7F090186
-			public const int search_plate = 2131296646;
+			public const int search_mag_icon = 2131296646;
 			
 			// aapt resource value: 0x7F090187
-			public const int search_src_text = 2131296647;
+			public const int search_plate = 2131296647;
 			
 			// aapt resource value: 0x7F090188
-			public const int search_voice_btn = 2131296648;
-			
-			// aapt resource value: 0x7F09018A
-			public const int selected = 2131296650;
-			
-			// aapt resource value: 0x7F09018B
-			public const int selection_type = 2131296651;
+			public const int search_src_text = 2131296648;
 			
 			// aapt resource value: 0x7F090189
-			public const int select_dialog_listview = 2131296649;
+			public const int search_voice_btn = 2131296649;
+			
+			// aapt resource value: 0x7F09018B
+			public const int selected = 2131296651;
 			
 			// aapt resource value: 0x7F09018C
-			public const int shellcontent_appbar = 2131296652;
+			public const int selection_type = 2131296652;
+			
+			// aapt resource value: 0x7F09018A
+			public const int select_dialog_listview = 2131296650;
 			
 			// aapt resource value: 0x7F09018D
-			public const int shellcontent_toolbar = 2131296653;
+			public const int shellcontent_appbar = 2131296653;
+			
+			// aapt resource value: 0x7F09018E
+			public const int shellcontent_toolbar = 2131296654;
 			
 			// aapt resource value: 0x7F090007
 			public const int SHIFT = 2131296263;
 			
-			// aapt resource value: 0x7F09018E
-			public const int shortcut = 2131296654;
-			
 			// aapt resource value: 0x7F09018F
-			public const int showCustom = 2131296655;
+			public const int shortcut = 2131296655;
 			
 			// aapt resource value: 0x7F090190
-			public const int showHome = 2131296656;
+			public const int showCustom = 2131296656;
 			
 			// aapt resource value: 0x7F090191
-			public const int showTitle = 2131296657;
+			public const int showHome = 2131296657;
+			
+			// aapt resource value: 0x7F090192
+			public const int showTitle = 2131296658;
 			
 			// aapt resource value: 0x7F090008
 			public const int SHOW_ALL = 2131296264;
@@ -23410,230 +27746,230 @@ namespace atheneum_app.Android
 			// aapt resource value: 0x7F09000A
 			public const int SHOW_PROGRESS = 2131296266;
 			
-			// aapt resource value: 0x7F090192
-			public const int sin = 2131296658;
-			
 			// aapt resource value: 0x7F090193
-			public const int skipCollapsed = 2131296659;
+			public const int sin = 2131296659;
 			
 			// aapt resource value: 0x7F090194
-			public const int slide = 2131296660;
+			public const int skipCollapsed = 2131296660;
 			
 			// aapt resource value: 0x7F090195
-			public const int sliding_tabs = 2131296661;
+			public const int slide = 2131296661;
 			
 			// aapt resource value: 0x7F090196
-			public const int smallLabel = 2131296662;
+			public const int sliding_tabs = 2131296662;
 			
 			// aapt resource value: 0x7F090197
-			public const int snackbar_action = 2131296663;
+			public const int smallLabel = 2131296663;
 			
 			// aapt resource value: 0x7F090198
-			public const int snackbar_text = 2131296664;
+			public const int snackbar_action = 2131296664;
 			
 			// aapt resource value: 0x7F090199
-			public const int snap = 2131296665;
+			public const int snackbar_text = 2131296665;
 			
 			// aapt resource value: 0x7F09019A
-			public const int snapMargins = 2131296666;
+			public const int snap = 2131296666;
 			
 			// aapt resource value: 0x7F09019B
-			public const int spacer = 2131296667;
+			public const int snapMargins = 2131296667;
 			
 			// aapt resource value: 0x7F09019C
-			public const int special_effects_controller_view_tag = 2131296668;
+			public const int spacer = 2131296668;
 			
 			// aapt resource value: 0x7F09019D
-			public const int spline = 2131296669;
+			public const int special_effects_controller_view_tag = 2131296669;
 			
 			// aapt resource value: 0x7F09019E
-			public const int split_action_bar = 2131296670;
+			public const int spline = 2131296670;
 			
 			// aapt resource value: 0x7F09019F
-			public const int spread = 2131296671;
+			public const int split_action_bar = 2131296671;
 			
 			// aapt resource value: 0x7F0901A0
-			public const int spread_inside = 2131296672;
+			public const int spread = 2131296672;
 			
 			// aapt resource value: 0x7F0901A1
-			public const int square = 2131296673;
+			public const int spread_inside = 2131296673;
 			
 			// aapt resource value: 0x7F0901A2
-			public const int src_atop = 2131296674;
+			public const int square = 2131296674;
 			
 			// aapt resource value: 0x7F0901A3
-			public const int src_in = 2131296675;
+			public const int src_atop = 2131296675;
 			
 			// aapt resource value: 0x7F0901A4
-			public const int src_over = 2131296676;
+			public const int src_in = 2131296676;
 			
 			// aapt resource value: 0x7F0901A5
-			public const int standard = 2131296677;
+			public const int src_over = 2131296677;
 			
 			// aapt resource value: 0x7F0901A6
-			public const int start = 2131296678;
+			public const int standard = 2131296678;
 			
 			// aapt resource value: 0x7F0901A7
-			public const int startHorizontal = 2131296679;
+			public const int start = 2131296679;
 			
 			// aapt resource value: 0x7F0901A8
-			public const int startToEnd = 2131296680;
+			public const int startHorizontal = 2131296680;
 			
 			// aapt resource value: 0x7F0901A9
-			public const int startVertical = 2131296681;
+			public const int startToEnd = 2131296681;
 			
 			// aapt resource value: 0x7F0901AA
-			public const int staticLayout = 2131296682;
+			public const int startVertical = 2131296682;
 			
 			// aapt resource value: 0x7F0901AB
-			public const int staticPostLayout = 2131296683;
+			public const int staticLayout = 2131296683;
 			
 			// aapt resource value: 0x7F0901AC
-			public const int status_bar_latest_event_content = 2131296684;
+			public const int staticPostLayout = 2131296684;
 			
 			// aapt resource value: 0x7F0901AD
-			public const int stop = 2131296685;
+			public const int status_bar_latest_event_content = 2131296685;
 			
 			// aapt resource value: 0x7F0901AE
-			public const int stretch = 2131296686;
+			public const int stop = 2131296686;
 			
 			// aapt resource value: 0x7F0901AF
-			public const int submenuarrow = 2131296687;
+			public const int stretch = 2131296687;
 			
 			// aapt resource value: 0x7F0901B0
-			public const int submit_area = 2131296688;
+			public const int submenuarrow = 2131296688;
+			
+			// aapt resource value: 0x7F0901B1
+			public const int submit_area = 2131296689;
 			
 			// aapt resource value: 0x7F09000B
 			public const int SYM = 2131296267;
 			
-			// aapt resource value: 0x7F0901B1
-			public const int tabMode = 2131296689;
-			
 			// aapt resource value: 0x7F0901B2
-			public const int tag_accessibility_actions = 2131296690;
+			public const int tabMode = 2131296690;
 			
 			// aapt resource value: 0x7F0901B3
-			public const int tag_accessibility_clickable_spans = 2131296691;
+			public const int tag_accessibility_actions = 2131296691;
 			
 			// aapt resource value: 0x7F0901B4
-			public const int tag_accessibility_heading = 2131296692;
+			public const int tag_accessibility_clickable_spans = 2131296692;
 			
 			// aapt resource value: 0x7F0901B5
-			public const int tag_accessibility_pane_title = 2131296693;
+			public const int tag_accessibility_heading = 2131296693;
 			
 			// aapt resource value: 0x7F0901B6
-			public const int tag_on_apply_window_listener = 2131296694;
+			public const int tag_accessibility_pane_title = 2131296694;
 			
 			// aapt resource value: 0x7F0901B7
-			public const int tag_on_receive_content_listener = 2131296695;
+			public const int tag_on_apply_window_listener = 2131296695;
 			
 			// aapt resource value: 0x7F0901B8
-			public const int tag_on_receive_content_mime_types = 2131296696;
+			public const int tag_on_receive_content_listener = 2131296696;
 			
 			// aapt resource value: 0x7F0901B9
-			public const int tag_screen_reader_focusable = 2131296697;
+			public const int tag_on_receive_content_mime_types = 2131296697;
 			
 			// aapt resource value: 0x7F0901BA
-			public const int tag_state_description = 2131296698;
+			public const int tag_screen_reader_focusable = 2131296698;
 			
 			// aapt resource value: 0x7F0901BB
-			public const int tag_transition_group = 2131296699;
+			public const int tag_state_description = 2131296699;
 			
 			// aapt resource value: 0x7F0901BC
-			public const int tag_unhandled_key_event_manager = 2131296700;
+			public const int tag_transition_group = 2131296700;
 			
 			// aapt resource value: 0x7F0901BD
-			public const int tag_unhandled_key_listeners = 2131296701;
+			public const int tag_unhandled_key_event_manager = 2131296701;
 			
 			// aapt resource value: 0x7F0901BE
-			public const int tag_window_insets_animation_callback = 2131296702;
+			public const int tag_unhandled_key_listeners = 2131296702;
 			
 			// aapt resource value: 0x7F0901BF
-			public const int test_checkbox_android_button_tint = 2131296703;
+			public const int tag_window_insets_animation_callback = 2131296703;
 			
 			// aapt resource value: 0x7F0901C0
-			public const int test_checkbox_app_button_tint = 2131296704;
+			public const int test_checkbox_android_button_tint = 2131296704;
 			
 			// aapt resource value: 0x7F0901C1
-			public const int test_radiobutton_android_button_tint = 2131296705;
+			public const int test_checkbox_app_button_tint = 2131296705;
 			
 			// aapt resource value: 0x7F0901C2
-			public const int test_radiobutton_app_button_tint = 2131296706;
+			public const int test_radiobutton_android_button_tint = 2131296706;
 			
 			// aapt resource value: 0x7F0901C3
-			public const int text = 2131296707;
+			public const int test_radiobutton_app_button_tint = 2131296707;
 			
 			// aapt resource value: 0x7F0901C4
-			public const int text2 = 2131296708;
+			public const int text = 2131296708;
 			
 			// aapt resource value: 0x7F0901C5
-			public const int textEnd = 2131296709;
-			
-			// aapt resource value: 0x7F0901CE
-			public const int textinput_counter = 2131296718;
-			
-			// aapt resource value: 0x7F0901CF
-			public const int textinput_error = 2131296719;
-			
-			// aapt resource value: 0x7F0901D0
-			public const int textinput_helper_text = 2131296720;
-			
-			// aapt resource value: 0x7F0901D1
-			public const int textinput_placeholder = 2131296721;
-			
-			// aapt resource value: 0x7F0901D2
-			public const int textinput_prefix_text = 2131296722;
-			
-			// aapt resource value: 0x7F0901D3
-			public const int textinput_suffix_text = 2131296723;
+			public const int text2 = 2131296709;
 			
 			// aapt resource value: 0x7F0901C6
-			public const int textSpacerNoButtons = 2131296710;
+			public const int textEnd = 2131296710;
 			
-			// aapt resource value: 0x7F0901C7
-			public const int textSpacerNoTitle = 2131296711;
+			// aapt resource value: 0x7F0901CF
+			public const int textinput_counter = 2131296719;
 			
-			// aapt resource value: 0x7F0901C8
-			public const int textStart = 2131296712;
+			// aapt resource value: 0x7F0901D0
+			public const int textinput_error = 2131296720;
 			
-			// aapt resource value: 0x7F0901C9
-			public const int textTop = 2131296713;
+			// aapt resource value: 0x7F0901D1
+			public const int textinput_helper_text = 2131296721;
 			
-			// aapt resource value: 0x7F0901CA
-			public const int textViewStatus = 2131296714;
+			// aapt resource value: 0x7F0901D2
+			public const int textinput_placeholder = 2131296722;
 			
-			// aapt resource value: 0x7F0901CB
-			public const int text_input_end_icon = 2131296715;
-			
-			// aapt resource value: 0x7F0901CC
-			public const int text_input_error_icon = 2131296716;
-			
-			// aapt resource value: 0x7F0901CD
-			public const int text_input_start_icon = 2131296717;
+			// aapt resource value: 0x7F0901D3
+			public const int textinput_prefix_text = 2131296723;
 			
 			// aapt resource value: 0x7F0901D4
-			public const int time = 2131296724;
+			public const int textinput_suffix_text = 2131296724;
+			
+			// aapt resource value: 0x7F0901C7
+			public const int textSpacerNoButtons = 2131296711;
+			
+			// aapt resource value: 0x7F0901C8
+			public const int textSpacerNoTitle = 2131296712;
+			
+			// aapt resource value: 0x7F0901C9
+			public const int textStart = 2131296713;
+			
+			// aapt resource value: 0x7F0901CA
+			public const int textTop = 2131296714;
+			
+			// aapt resource value: 0x7F0901CB
+			public const int textViewStatus = 2131296715;
+			
+			// aapt resource value: 0x7F0901CC
+			public const int text_input_end_icon = 2131296716;
+			
+			// aapt resource value: 0x7F0901CD
+			public const int text_input_error_icon = 2131296717;
+			
+			// aapt resource value: 0x7F0901CE
+			public const int text_input_start_icon = 2131296718;
 			
 			// aapt resource value: 0x7F0901D5
-			public const int title = 2131296725;
+			public const int time = 2131296725;
 			
 			// aapt resource value: 0x7F0901D6
-			public const int titleDividerNoCustom = 2131296726;
+			public const int title = 2131296726;
 			
 			// aapt resource value: 0x7F0901D7
-			public const int title_template = 2131296727;
+			public const int titleDividerNoCustom = 2131296727;
 			
 			// aapt resource value: 0x7F0901D8
-			public const int toggle = 2131296728;
+			public const int title_template = 2131296728;
 			
 			// aapt resource value: 0x7F0901D9
-			public const int toolbar = 2131296729;
+			public const int toggle = 2131296729;
 			
 			// aapt resource value: 0x7F0901DA
-			public const int top = 2131296730;
+			public const int toolbar = 2131296730;
 			
 			// aapt resource value: 0x7F0901DB
-			public const int topPanel = 2131296731;
+			public const int top = 2131296731;
+			
+			// aapt resource value: 0x7F0901DC
+			public const int topPanel = 2131296732;
 			
 			// aapt resource value: 0x7F09000C
 			public const int TOP_END = 2131296268;
@@ -23641,83 +27977,83 @@ namespace atheneum_app.Android
 			// aapt resource value: 0x7F09000D
 			public const int TOP_START = 2131296269;
 			
-			// aapt resource value: 0x7F0901DC
-			public const int touch_outside = 2131296732;
-			
 			// aapt resource value: 0x7F0901DD
-			public const int transitionToEnd = 2131296733;
+			public const int touch_outside = 2131296733;
 			
 			// aapt resource value: 0x7F0901DE
-			public const int transitionToStart = 2131296734;
+			public const int transitionToEnd = 2131296734;
 			
 			// aapt resource value: 0x7F0901DF
-			public const int transition_current_scene = 2131296735;
+			public const int transitionToStart = 2131296735;
 			
 			// aapt resource value: 0x7F0901E0
-			public const int transition_layout_save = 2131296736;
+			public const int transition_current_scene = 2131296736;
 			
 			// aapt resource value: 0x7F0901E1
-			public const int transition_position = 2131296737;
+			public const int transition_layout_save = 2131296737;
 			
 			// aapt resource value: 0x7F0901E2
-			public const int transition_scene_layoutid_cache = 2131296738;
+			public const int transition_position = 2131296738;
 			
 			// aapt resource value: 0x7F0901E3
-			public const int transition_transform = 2131296739;
+			public const int transition_scene_layoutid_cache = 2131296739;
 			
 			// aapt resource value: 0x7F0901E4
-			public const int triangle = 2131296740;
+			public const int transition_transform = 2131296740;
 			
 			// aapt resource value: 0x7F0901E5
-			public const int @unchecked = 2131296741;
+			public const int triangle = 2131296741;
 			
 			// aapt resource value: 0x7F0901E6
-			public const int uniform = 2131296742;
+			public const int @unchecked = 2131296742;
 			
 			// aapt resource value: 0x7F0901E7
-			public const int unlabeled = 2131296743;
+			public const int uniform = 2131296743;
 			
 			// aapt resource value: 0x7F0901E8
-			public const int up = 2131296744;
+			public const int unlabeled = 2131296744;
 			
 			// aapt resource value: 0x7F0901E9
-			public const int useLogo = 2131296745;
+			public const int up = 2131296745;
 			
 			// aapt resource value: 0x7F0901EA
-			public const int view_offset_helper = 2131296746;
+			public const int useLogo = 2131296746;
 			
 			// aapt resource value: 0x7F0901EB
-			public const int view_tree_lifecycle_owner = 2131296747;
+			public const int view_offset_helper = 2131296747;
 			
 			// aapt resource value: 0x7F0901EC
-			public const int view_tree_saved_state_registry_owner = 2131296748;
+			public const int view_tree_lifecycle_owner = 2131296748;
 			
 			// aapt resource value: 0x7F0901ED
-			public const int view_tree_view_model_store_owner = 2131296749;
+			public const int view_tree_saved_state_registry_owner = 2131296749;
 			
 			// aapt resource value: 0x7F0901EE
-			public const int visible = 2131296750;
+			public const int view_tree_view_model_store_owner = 2131296750;
 			
 			// aapt resource value: 0x7F0901EF
-			public const int visible_removing_fragment_view_tag = 2131296751;
+			public const int visible = 2131296751;
 			
 			// aapt resource value: 0x7F0901F0
-			public const int volume_item_container = 2131296752;
-			
-			// aapt resource value: 0x7F0901F2
-			public const int withinBounds = 2131296754;
+			public const int visible_removing_fragment_view_tag = 2131296752;
 			
 			// aapt resource value: 0x7F0901F1
-			public const int withText = 2131296753;
+			public const int volume_item_container = 2131296753;
 			
 			// aapt resource value: 0x7F0901F3
-			public const int wrap = 2131296755;
+			public const int withinBounds = 2131296755;
+			
+			// aapt resource value: 0x7F0901F2
+			public const int withText = 2131296754;
 			
 			// aapt resource value: 0x7F0901F4
-			public const int wrap_content = 2131296756;
+			public const int wrap = 2131296756;
 			
 			// aapt resource value: 0x7F0901F5
-			public const int zero_corner_chip = 2131296757;
+			public const int wrap_content = 2131296757;
+			
+			// aapt resource value: 0x7F0901F6
+			public const int zero_corner_chip = 2131296758;
 			
 			static Id()
 			{
@@ -24318,6 +28654,12 @@ namespace atheneum_app.Android
 			
 			// aapt resource value: 0x7F0C0093
 			public const int Toolbar = 2131493011;
+			
+			// aapt resource value: 0x7F0C0094
+			public const int zxingscanneractivitylayout = 2131493012;
+			
+			// aapt resource value: 0x7F0C0095
+			public const int zxingscannerfragmentlayout = 2131493013;
 			
 			static Layout()
 			{

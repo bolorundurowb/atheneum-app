@@ -19,6 +19,11 @@ namespace atheneum_app.Utils
         {
             Display(message, "#49ABE8");
         }
+        
+        public static void Warn(string message)
+        {
+            Display(message, "#FF7F00");
+        }
 
         private static void Display(string message, string colorHex)
         {
