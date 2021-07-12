@@ -1,5 +1,7 @@
 ﻿using System;
+using atheneum_app.Services.Interfaces;
 using atheneum_app.Utils;
+using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
 
 namespace atheneum_app.Views
@@ -30,6 +32,12 @@ namespace atheneum_app.Views
             {
                 ToastService.Error(ex.Message);
             }
+        }
+
+        protected async void Scan(object sender, TabTappedEventArgs e)
+        {
+            var scanner = DependencyService.Get<IBarcodeScanService>();
+            var result = await scanner.ScanAsync();
         }
     }
 }

@@ -108,7 +108,8 @@
 
                 <xct:TabViewItem
                     Icon="{extensions:IconSourceExtensions ic_add}"
-                    ControlTemplate="{StaticResource FabTabItemTemplate}" />
+                    ControlTemplate="{StaticResource FabTabItemTemplate}"
+                    TabTapped="Scan"/>
 
                 <xct:TabViewItem
                     Text="WishList"
