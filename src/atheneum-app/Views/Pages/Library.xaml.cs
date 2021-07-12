@@ -28,7 +28,6 @@ namespace atheneum_app.Views.Pages
         {
             const string genericErrorMessage =
                 "Sorry, an error occurred when retrieving your library. Try again later.";
-            lblNoItems.IsVisible = false;
             rfsLibrary.IsRefreshing = true;
 
             try
@@ -39,9 +38,12 @@ namespace atheneum_app.Views.Pages
                 {
                     Books = new ObservableCollection<BookViewModel>(books);
                     lstBooks.ItemsSource = Books;
+                    lblNoItems.IsVisible = false;
                 }
                 else
                 {
+                    Books.Clear();
+                    lstBooks.ItemsSource = Books;
                     lblNoItems.IsVisible = true;
                 }
             }
