@@ -26,6 +26,7 @@ namespace atheneum_app.Android
             base.OnCreate(savedInstanceState);
             
             CachedImageRenderer.Init(true);
+            Platform.Init(this, savedInstanceState);
             Forms.Init(this, savedInstanceState);
             CachedImageRenderer.InitImageViewHandler();
             UserDialogs.Init(this);
@@ -37,7 +38,6 @@ namespace atheneum_app.Android
                 var mode = Resources?.Configuration?.UiMode & UiMode.NightMask;
                 var isInDarkMode = mode == UiMode.NightYes;
                 var colourCode = isInDarkMode ? 17 : 254;
-                // var colourCode = 17;
                 var colour = new Color(colourCode, colourCode, colourCode);
                 Window?.SetNavigationBarColor(colour);
             }
