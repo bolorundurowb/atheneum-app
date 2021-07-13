@@ -14,9 +14,9 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public void Logout()
         {
-            Preferences.Clear(AuthTokenKey);
-            Preferences.Clear(AuthExpiryKey);
-            Preferences.Clear(AuthLoggedInAtKey);
+            Preferences.Remove(AuthTokenKey);
+            Preferences.Remove(AuthExpiryKey);
+            Preferences.Remove(AuthLoggedInAtKey);
         }
 
         public bool IsLoggedIn()
