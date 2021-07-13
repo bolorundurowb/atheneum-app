@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
+using atheneum_app.Views.Auth;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -141,6 +142,17 @@ namespace atheneum_app.Views.Pages
                 btnUpdatePassword.IsVisible = true;
                 prgUpdatePassword.IsVisible = false;
             }
+        }
+
+        protected async void LogOut(object sender, EventArgs e)
+        {
+            var tokenService = new TokenService();
+            tokenService.Logout();
+            
+            // route back to login
+            var parent = Parent?.Parent?.Parent?.Parent?.Parent?.Parent as ContentPage;
+            Navigation.InsertPageBefore(new Login(), parent);
+            await Navigation.PopAsync();
         }
 
         private void DisplayUser(UserViewModel user)

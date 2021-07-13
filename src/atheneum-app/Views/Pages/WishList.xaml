@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -7,22 +8,6 @@
     x:Class="atheneum_app.Views.Pages.WishList"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
-        <Style x:Key="AddBtnStyle" TargetType="Button">
-            <Setter Property="TextColor"
-                    Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
-            <Setter Property="BackgroundColor"
-                    Value="{AppThemeBinding Dark= {StaticResource DarkSecondaryAccentColour}, Light= {StaticResource SecondaryAccentColour}}" />
-            <Setter Property="BorderColor"
-                    Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
-            <Setter Property="BorderWidth" Value="2" />
-            <Setter Property="HorizontalOptions" Value="End" />
-            <Setter Property="VerticalOptions" Value="Start" />
-            <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="FontSize" Value="18" />
-            <Setter Property="TextTransform" Value="Lowercase" />
-            <Setter Property="CornerRadius" Value="10" />
-            <Setter Property="HeightRequest" Value="35" />
-        </Style>
     </ContentView.Resources>
     <ContentView.Content>
         <StackLayout
@@ -40,7 +25,7 @@
 
                 <Button
                     Text="Add"
-                    Style="{StaticResource AddBtnStyle}"
+                    Style="{StaticResource SecondaryBtnStyle}"
                     Clicked="Add" />
             </StackLayout>
 
