@@ -28,7 +28,7 @@
                     Text="Welcome to"
                     Style="{StaticResource BasePageHdrStyleStyle}" />
                 <Label
-                    Text="Athenuem"
+                    Text="Atheneum"
                     Style="{StaticResource PageHdrStyleStyle}" />
 
                 <StackLayout>
