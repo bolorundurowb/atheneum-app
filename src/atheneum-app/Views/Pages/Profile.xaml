@@ -45,7 +45,8 @@
 
                     <Button
                         Text="Log Out"
-                        Style="{StaticResource SecondaryBtnStyle}" />
+                        Style="{StaticResource SecondaryBtnStyle}"
+                        Clicked="LogOut" />
                 </StackLayout>
 
                 <ActivityIndicator

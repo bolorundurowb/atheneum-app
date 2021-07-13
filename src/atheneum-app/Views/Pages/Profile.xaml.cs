@@ -143,6 +143,12 @@ namespace atheneum_app.Views.Pages
             }
         }
 
+        protected void LogOut(object sender, EventArgs e)
+        {
+            var tokenService = new TokenService();
+            tokenService.Logout();
+        }
+
         private void DisplayUser(UserViewModel user)
         {
             lblId.Text = user.Id;
