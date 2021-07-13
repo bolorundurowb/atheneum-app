@@ -36,9 +36,17 @@
                 Orientation="Vertical"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
-                <Label
-                    Text="Profile"
-                    Style="{StaticResource PageHdrStyleStyle}" />
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand">
+                    <Label
+                        Text="Profile"
+                        Style="{StaticResource PageHdrStyleStyle}" />
+
+                    <Button
+                        Text="Log Out"
+                        Style="{StaticResource SecondaryBtnStyle}" />
+                </StackLayout>
 
                 <ActivityIndicator
                     x:Name="prgLoading"

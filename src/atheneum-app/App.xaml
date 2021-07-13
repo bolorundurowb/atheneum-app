@@ -170,6 +170,7 @@
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark={StaticResource LightPrimaryAccentColour}, Light={StaticResource PrimaryAccentColour}}" />
             <Setter Property="Margin" Value="0, -10,  0, 10" />
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
         </Style>
 
         <Style x:Key="SlimPrgStyle" BasedOn="{StaticResource BasePrgStyle}" TargetType="ActivityIndicator">
