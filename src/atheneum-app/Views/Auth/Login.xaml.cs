@@ -13,11 +13,26 @@ namespace atheneum_app.Views.Auth
     public partial class Login : ContentPage
     {
         private readonly AuthService _authClient;
+        private readonly TokenService _tokenService;
 
         public Login()
         {
             InitializeComponent();
             _authClient = new AuthService();
+            _tokenService = new TokenService();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // if user has logged in before, help autofill
+            var email = _tokenService.GetEmail();
+
+            if (!string.IsNullOrWhiteSpace(email))
+            {
+                txtEmail.Text = email;
+            }
         }
 
         protected async void AttemptLogin(object sender, EventArgs e)
@@ -80,7 +95,16 @@ namespace atheneum_app.Views.Auth
 
         protected async void GoToForgotPassword(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ForgotPassword());
+            var email = txtEmail.Text;
+
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                await Navigation.PushAsync(new ForgotPassword());
+            }
+            else
+            {
+                await Navigation.PushAsync(new ForgotPassword(email));
+            }
         }
     }
 }
