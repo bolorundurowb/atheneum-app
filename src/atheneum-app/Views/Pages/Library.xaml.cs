@@ -32,7 +32,8 @@ namespace atheneum_app.Views.Pages
 
             try
             {
-                var books = await _bookService.GetAll();
+                var response = await _bookService.GetFirstPage();
+                var books = response.ToList();
 
                 if (books.Any())
                 {
