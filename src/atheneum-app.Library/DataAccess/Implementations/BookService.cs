@@ -22,22 +22,22 @@ namespace atheneum_app.Library.DataAccess.Implementations
             });
         }
 
-        public Task<IEnumerable<BookViewModel>> GetFirstPage()
+        public Task<IEnumerable<BookViewModel>> GetFirstPage(string search)
         {
             _currentPage = 1;
-            return MakeApiCall();
+            return MakeApiCall(search);
         }
 
-        public Task<IEnumerable<BookViewModel>> GetNextPage()
+        public Task<IEnumerable<BookViewModel>> GetNextPage(string search)
         {
             _currentPage += 1;
-            return MakeApiCall();
+            return MakeApiCall(search);
         }
 
-        private Task<IEnumerable<BookViewModel>> MakeApiCall()
+        private Task<IEnumerable<BookViewModel>> MakeApiCall(string search)
         {
             var skip = (_currentPage - 1) * BooksPerPage;
-            return _bookService.GetAll(skip, BooksPerPage);
+            return _bookService.GetAll(skip, BooksPerPage, search);
         }
 
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)

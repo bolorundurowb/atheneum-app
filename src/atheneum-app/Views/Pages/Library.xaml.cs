@@ -15,9 +15,9 @@ namespace atheneum_app.Views.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Library : ContentView
     {
-        public ObservableCollection<BookViewModel> Books = new ObservableCollection<BookViewModel>();
+        private ObservableCollection<BookViewModel> _books = new ObservableCollection<BookViewModel>();
         private readonly BookService _bookService;
-        private bool IsLoadingMore;
+        private bool _isLoadingMore;
 
         public Library()
         {
@@ -38,14 +38,14 @@ namespace atheneum_app.Views.Pages
 
                 if (books.Any())
                 {
-                    Books = new ObservableCollection<BookViewModel>(books);
-                    lstBooks.ItemsSource = Books;
+                    _books = new ObservableCollection<BookViewModel>(books);
+                    lstBooks.ItemsSource = _books;
                     lblNoItems.IsVisible = false;
                 }
                 else
                 {
-                    Books.Clear();
-                    lstBooks.ItemsSource = Books;
+                    _books.Clear();
+                    lstBooks.ItemsSource = _books;
                     lblNoItems.IsVisible = true;
                 }
             }
@@ -78,19 +78,19 @@ namespace atheneum_app.Views.Pages
             try
             {
                 // ensure multiple calls are not made until the current is done
-                if (IsLoadingMore)
+                if (_isLoadingMore)
                 {
                     return;
                 }
                 
                 // check to see if the list is less than than the max items per page meaning there
                 // are no more items to get
-                if (Books.Count % BookService.BooksPerPage != 0)
+                if (_books.Count % BookService.BooksPerPage != 0)
                 {
                     return;
                 }
 
-                IsLoadingMore = true;
+                _isLoadingMore = true;
                 prgLoadingMore.IsVisible = true;
                 var response = await _bookService.GetNextPage();
                 var books = response.ToList();
@@ -99,10 +99,10 @@ namespace atheneum_app.Views.Pages
                 {
                     foreach (var book in books)
                     {
-                        Books.Add(book);
+                        _books.Add(book);
                     }
 
-                    lstBooks.ItemsSource = Books;
+                    lstBooks.ItemsSource = _books;
                 }
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
@@ -117,7 +117,7 @@ namespace atheneum_app.Views.Pages
             }
             finally
             {
-                IsLoadingMore = false;
+                _isLoadingMore = false;
                 prgLoadingMore.IsVisible = false;
             }
         }

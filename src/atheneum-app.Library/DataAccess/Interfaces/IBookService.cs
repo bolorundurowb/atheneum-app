@@ -10,7 +10,7 @@ namespace atheneum_app.Library.DataAccess.Interfaces
     {
         [Get("/books")]
         [Headers("Authorization: Bearer")]
-        Task<IEnumerable<BookViewModel>> GetAll([AliasAs("skip")] int skip, [AliasAs("limit")] int limit);
+        Task<IEnumerable<BookViewModel>> GetAll([AliasAs("skip")] int skip, [AliasAs("limit")] int limit, [AliasAs("search")] string search = "");
 
         [Post("/books/isbn")]
         [Headers("Authorization: Bearer")]
