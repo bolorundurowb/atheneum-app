@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.Json.Serialization;
-using Refit;
 
 namespace atheneum_app.Library.Models.View
 {
@@ -26,6 +27,8 @@ namespace atheneum_app.Library.Models.View
 
         public bool IsAvailable { get; set; }
 
+        public DateTime? CreatedAt { get; set; }
+
         public List<AuthorViewModel> Authors { get; set; }
 
         public PublisherViewModel Publisher { get; set; }
@@ -39,5 +42,7 @@ namespace atheneum_app.Library.Models.View
         public string Availability => IsAvailable ? "Availability" : "Lent Out";
 
         public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
+
+        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString(CultureInfo.InvariantCulture) : "N/A";
     }
 }
