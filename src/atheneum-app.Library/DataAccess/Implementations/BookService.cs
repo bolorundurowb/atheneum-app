@@ -9,6 +9,8 @@ namespace atheneum_app.Library.DataAccess.Implementations
 {
     public class BookService
     {
+        private int _currentPage;
+        public const int BooksPerPage = 30;
         private readonly IBookService _bookService;
 
         public BookService()
@@ -20,9 +22,22 @@ namespace atheneum_app.Library.DataAccess.Implementations
             });
         }
 
-        public Task<IEnumerable<BookViewModel>> GetAll()
+        public Task<IEnumerable<BookViewModel>> GetFirstPage()
         {
-            return _bookService.GetAll(0, 30);
+            _currentPage = 1;
+            return MakeApiCall();
+        }
+
+        public Task<IEnumerable<BookViewModel>> GetNextPage()
+        {
+            _currentPage += 1;
+            return MakeApiCall();
+        }
+
+        private Task<IEnumerable<BookViewModel>> MakeApiCall()
+        {
+            var skip = (_currentPage - 1) * BooksPerPage;
+            return _bookService.GetAll(skip, BooksPerPage);
         }
 
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
