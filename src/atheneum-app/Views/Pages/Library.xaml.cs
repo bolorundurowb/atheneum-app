@@ -33,7 +33,8 @@ namespace atheneum_app.Views.Pages
 
             try
             {
-                var response = await _bookService.GetFirstPage();
+                var search = GetSearchText();
+                var response = await _bookService.GetFirstPage(search);
                 var books = response.ToList();
 
                 if (books.Any())
@@ -41,12 +42,21 @@ namespace atheneum_app.Views.Pages
                     _books = new ObservableCollection<BookViewModel>(books);
                     lstBooks.ItemsSource = _books;
                     lblNoItems.IsVisible = false;
+                    lblNoSearchItems.IsVisible = false;
                 }
                 else
                 {
                     _books.Clear();
                     lstBooks.ItemsSource = _books;
-                    lblNoItems.IsVisible = true;
+
+                    if (string.IsNullOrWhiteSpace(GetSearchText()))
+                    {
+                        lblNoItems.IsVisible = true;
+                    }
+                    else
+                    {
+                        lblNoSearchItems.IsVisible = true;
+                    }
                 }
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
@@ -82,7 +92,7 @@ namespace atheneum_app.Views.Pages
                 {
                     return;
                 }
-                
+
                 // check to see if the list is less than than the max items per page meaning there
                 // are no more items to get
                 if (_books.Count % BookService.BooksPerPage != 0)
@@ -92,7 +102,8 @@ namespace atheneum_app.Views.Pages
 
                 _isLoadingMore = true;
                 prgLoadingMore.IsVisible = true;
-                var response = await _bookService.GetNextPage();
+                var search = GetSearchText();
+                var response = await _bookService.GetNextPage(search);
                 var books = response.ToList();
 
                 if (books.Any())
@@ -120,6 +131,16 @@ namespace atheneum_app.Views.Pages
                 _isLoadingMore = false;
                 prgLoadingMore.IsVisible = false;
             }
+        }
+
+        private async void OnSearch(object sender, EventArgs e)
+        {
+            await LoadData();
+        }
+
+        private string GetSearchText()
+        {
+            return (txtSearch.Text ?? string.Empty).Trim();
         }
     }
 }
