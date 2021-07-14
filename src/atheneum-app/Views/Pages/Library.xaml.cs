@@ -142,5 +142,11 @@ namespace atheneum_app.Views.Pages
         {
             return (txtSearch.Text ?? string.Empty).Trim();
         }
+
+        private async void BookSelected(object sender, SelectionChangedEventArgs e)
+        {
+            var book = lstBooks.SelectedItem as BookViewModel;
+            await Navigation.PushAsync(new BookDetails(book));
+        }
     }
 }

@@ -47,10 +47,12 @@
                 Refreshing="Refreshing">
                 <CollectionView
                     x:Name="lstBooks"
+                    SelectionMode="Single"
                     RemainingItemsThreshold="0"
                     ItemsLayout="VerticalGrid, 3"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand"
+                    SelectionChanged="BookSelected"
                     RemainingItemsThresholdReached="LoadMore">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -59,6 +61,16 @@
                                 HeightRequest="235"
                                 BackgroundColor="Transparent"
                                 HorizontalOptions="FillAndExpand">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup Name="CommonStates">
+                                        <VisualState Name="Normal" />
+                                        <VisualState Name="Selected">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="Transparent" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
                                 <Frame
                                     Padding="0"
                                     CornerRadius="10"
