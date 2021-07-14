@@ -20,6 +20,13 @@
                 VerticalOptions="Center"
                 Style="{StaticResource PageHdrStyleStyle}" />
 
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <SearchBar
+                    x:Name="txtSearch"
+                    Style="{StaticResource SearchStyle}" />
+            </Frame>
+
             <Label
                 x:Name="lblNoItems"
                 IsVisible="False"
@@ -78,7 +85,7 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </RefreshView>
-            
+
             <ActivityIndicator
                 x:Name="prgLoadingMore"
                 IsVisible="False"
