@@ -79,6 +79,10 @@
         <DependentUpon>Root.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Update="Views\Books\Details.xaml.cs">
+        <DependentUpon>BookDetails.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>

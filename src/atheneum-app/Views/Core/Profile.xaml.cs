@@ -9,7 +9,7 @@ using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Pages
+namespace atheneum_app.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Profile : ContentView

@@ -2,14 +2,14 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Pages
+namespace atheneum_app.Views.Books
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BookDetails : ContentPage
+    public partial class Details : ContentPage
     {
         private readonly BookViewModel _book;
 
-        public BookDetails(BookViewModel book)
+        public Details(BookViewModel book)
         {
             InitializeComponent();
             _book = book;

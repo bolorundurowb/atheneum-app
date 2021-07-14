@@ -3,7 +3,7 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="atheneum_app.Views.Pages.Profile"
+    x:Class="atheneum_app.Views.Core.Profile"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
         <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
