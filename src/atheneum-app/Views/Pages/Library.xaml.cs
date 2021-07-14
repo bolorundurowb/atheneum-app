@@ -77,7 +77,15 @@ namespace atheneum_app.Views.Pages
 
             try
             {
+                // ensure multiple calls are not made until the current is done
                 if (IsLoadingMore)
+                {
+                    return;
+                }
+                
+                // check to see if the list is less than than the max items per page meaning there
+                // are no more items to get
+                if (Books.Count % BookService.BooksPerPage != 0)
                 {
                     return;
                 }
