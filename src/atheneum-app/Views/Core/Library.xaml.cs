@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
+using atheneum_app.Views.Books;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Pages
+namespace atheneum_app.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Library : ContentView
@@ -141,6 +142,12 @@ namespace atheneum_app.Views.Pages
         private string GetSearchText()
         {
             return (txtSearch.Text ?? string.Empty).Trim();
+        }
+
+        private async void BookSelected(object sender, SelectionChangedEventArgs e)
+        {
+            var book = lstBooks.SelectedItem as BookViewModel;
+            await Navigation.PushAsync(new Details(book));
         }
     }
 }

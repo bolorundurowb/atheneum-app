@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    x:Class="atheneum_app.Views.Pages.Library"
+    x:Class="atheneum_app.Views.Core.WishList"
     Style="{StaticResource ViewPageStyle}">
     <ContentView.Resources>
     </ContentView.Resources>
@@ -14,44 +14,37 @@
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
-            <Label
-                Text="Library"
-                HorizontalOptions="StartAndExpand"
-                VerticalOptions="Center"
-                Style="{StaticResource PageHdrStyleStyle}" />
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Wish List"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center"
+                    Style="{StaticResource PageHdrStyleStyle}" />
 
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <SearchBar
-                    x:Name="txtSearch"
-                    Style="{StaticResource SearchStyle}"
-                    TextChanged="OnSearch"/>
-            </Frame>
+                <Button
+                    Text="Add"
+                    Style="{StaticResource SecondaryBtnStyle}"
+                    Clicked="Add" />
+            </StackLayout>
 
             <Label
                 x:Name="lblNoItems"
                 IsVisible="False"
-                Text="You have no books in your library. Feel free to add some!"
-                Style="{StaticResource NoItemsLblStyle}" />
-
-            <Label
-                x:Name="lblNoSearchItems"
-                IsVisible="False"
-                Text="You have no books in your library that match your search."
+                Text="You have no items on your wish list. Feel free to add some!"
                 Style="{StaticResource NoItemsLblStyle}" />
 
             <RefreshView
-                x:Name="rfsLibrary"
+                x:Name="rfsWishList"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
                 Refreshing="Refreshing">
                 <CollectionView
-                    x:Name="lstBooks"
-                    RemainingItemsThreshold="0"
-                    ItemsLayout="VerticalGrid, 3"
-                    VerticalOptions="FillAndExpand"
+                    x:Name="lstWishList"
                     HorizontalOptions="FillAndExpand"
-                    RemainingItemsThresholdReached="LoadMore">
+                    VerticalOptions="FillAndExpand"
+                    ItemsLayout="VerticalGrid, 3">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout
@@ -83,7 +76,7 @@
                                             Text="{Binding Title}"
                                             Style="{StaticResource BookTitleLblStyle}" />
                                         <Label
-                                            Text="{Binding PrimaryAuthorName}"
+                                            Text="{Binding AuthorName}"
                                             Style="{StaticResource BookAuthorLblStyle}" />
                                     </StackLayout>
                                 </Frame>
@@ -92,11 +85,6 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </RefreshView>
-
-            <ActivityIndicator
-                x:Name="prgLoadingMore"
-                IsVisible="False"
-                Style="{StaticResource SlimPrgStyle}" />
 
             <BoxView
                 Opacity="0"

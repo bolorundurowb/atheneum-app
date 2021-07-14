@@ -4,8 +4,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-    xmlns:pages="clr-namespace:atheneum_app.Views.Pages;assembly=atheneum-app"
     xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
+    xmlns:core="clr-namespace:atheneum_app.Views.Core;assembly=atheneum-app"
     x:Class="atheneum_app.Views.Root"
     Padding="0"
     Style="{StaticResource PageStyle}">
@@ -102,7 +102,7 @@
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
-                        <pages:Library x:Name="pageLibrary" />
+                        <core:Library x:Name="pageLibrary" />
                     </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
@@ -119,7 +119,7 @@
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
-                        <pages:WishList x:Name="pageWishList" />
+                        <core:WishList x:Name="pageWishList" />
                     </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
@@ -131,7 +131,7 @@
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
-                        <pages:Profile x:Name="pageProfile" />
+                        <core:Profile x:Name="pageProfile" />
                     </xct:TabViewItem.Content>
                 </xct:TabViewItem>
             </xct:TabView>

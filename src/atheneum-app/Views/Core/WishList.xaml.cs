@@ -12,12 +12,12 @@ using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Pages
+namespace atheneum_app.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WishList : ContentView
     {
-        public ObservableCollection<WishListViewModel> WishListItems = new ObservableCollection<WishListViewModel>();
+        private ObservableCollection<WishListViewModel> _wishListItems = new ObservableCollection<WishListViewModel>();
         private readonly WishListService _wishListService;
 
         public WishList()
@@ -34,12 +34,13 @@ namespace atheneum_app.Views.Pages
 
             try
             {
-                var wishlist = await _wishListService.GetAll();
+                var response = await _wishListService.GetAll();
+                var wishlist = response.ToList();
 
                 if (wishlist.Any())
                 {
-                    WishListItems = new ObservableCollection<WishListViewModel>(wishlist);
-                    lstWishList.ItemsSource = WishListItems;
+                    _wishListItems = new ObservableCollection<WishListViewModel>(wishlist);
+                    lstWishList.ItemsSource = _wishListItems;
                 }
                 else
                 {
@@ -77,8 +78,8 @@ namespace atheneum_app.Views.Pages
             lstWishList.IsVisible = true;
 
             // add the result in
-            WishListItems.Insert(0, result);
-            lstWishList.ItemsSource = WishListItems;
+            _wishListItems.Insert(0, result);
+            lstWishList.ItemsSource = _wishListItems;
         }
 
         protected async void Refreshing(object sender, EventArgs e)

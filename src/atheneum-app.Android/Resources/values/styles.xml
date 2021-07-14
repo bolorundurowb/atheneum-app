@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <style name="MainTheme" parent="MainTheme.Base">
-    <item name="android:windowLightStatusBar">true</item>
-    <item name="android:windowLightNavigationBar">true</item>
-    <item name="android:windowBackground">#FEFEFE</item>
-    <item name="android:colorPrimaryDark">#FEFEFE</item>
-  </style>
-  
   <!-- Base theme applied no matter what API -->
   <style name="MainTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
     <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
@@ -14,13 +7,11 @@
     <!--We will be using the toolbar so no need to show ActionBar-->
     <item name="windowActionBar">false</item>
     <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette -->
-    <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">#EFAB53</item>
     <!-- colorPrimaryDark is used for the status bar -->
     <item name="colorPrimaryDark">#FEFEFE</item>
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
-    <item name="colorAccent">#0D2738</item>
+    <item name="colorAccent">#008080</item>
     <item name="android:windowBackground">#FEFEFE</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
@@ -31,10 +22,18 @@
   </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
-    <item name="colorAccent">#2D7472</item>
+    <item name="colorAccent">#008080</item>
   </style>
   
   <style name="SplashTheme" parent="MainTheme">
     <item name="android:windowBackground">@drawable/splash_screen_light</item>
+  </style>
+
+  <style name="MainTheme" parent="MainTheme.Base">
+    <item name="android:windowLightStatusBar">true</item>
+    <item name="android:windowLightNavigationBar">true</item>
+    <item name="colorPrimary">#008080</item>
+    <item name="android:windowBackground">#FEFEFE</item>
+    <item name="android:colorPrimaryDark">#FEFEFE</item>
   </style>
 </resources>

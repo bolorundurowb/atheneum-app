@@ -1,13 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.Json.Serialization;
-using Refit;
 
 namespace atheneum_app.Library.Models.View
 {
     public class BookViewModel
     {
-        [JsonPropertyName("_id")]
+        [JsonPropertyName("_id")] 
         public string Id { get; set; }
 
         public string ExternalId { get; set; }
@@ -26,6 +27,8 @@ namespace atheneum_app.Library.Models.View
 
         public bool IsAvailable { get; set; }
 
+        public DateTime? CreatedAt { get; set; }
+
         public List<AuthorViewModel> Authors { get; set; }
 
         public PublisherViewModel Publisher { get; set; }
@@ -33,5 +36,13 @@ namespace atheneum_app.Library.Models.View
         public List<BorrowingHistoryItem> BorrowingHistory { get; set; }
 
         public string PrimaryAuthorName => Authors?.FirstOrDefault()?.Name;
+
+        public string PublisherName => Publisher?.Name;
+
+        public string Availability => IsAvailable ? "Availability" : "Lent Out";
+
+        public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
+
+        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString(CultureInfo.InvariantCulture) : "N/A";
     }
 }
