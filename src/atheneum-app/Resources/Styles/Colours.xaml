@@ -24,7 +24,7 @@
     <Color x:Key="LightInputBackgroundColour">#F9F9F9</Color>
     <Color x:Key="DarkInputBackgroundColour">#2E2E30</Color>
     <Color x:Key="LightBorderColour">#F4F4F4</Color>
-    <Color x:Key="DarkBorderColour">#040404</Color>
+    <Color x:Key="DarkBorderColour">#5F5F5F</Color>
 
     <!-- Navbar Colours -->
     <Color x:Key="LightNavbarBackgroundColour">#F9F9F9</Color>

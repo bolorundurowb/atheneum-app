@@ -7,7 +7,7 @@ namespace atheneum_app.Library.Models.View
 {
     public class BookViewModel
     {
-        [JsonPropertyName("_id")]
+        [JsonPropertyName("_id")] 
         public string Id { get; set; }
 
         public string ExternalId { get; set; }
@@ -33,5 +33,11 @@ namespace atheneum_app.Library.Models.View
         public List<BorrowingHistoryItem> BorrowingHistory { get; set; }
 
         public string PrimaryAuthorName => Authors?.FirstOrDefault()?.Name;
+
+        public string PublisherName => Publisher?.Name;
+
+        public string Availability => IsAvailable ? "Availability" : "Lent Out";
+
+        public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
     }
 }

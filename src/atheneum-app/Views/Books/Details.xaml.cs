@@ -1,4 +1,5 @@
-﻿using atheneum_app.Library.Models.View;
+﻿using System;
+using atheneum_app.Library.Models.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -19,6 +20,11 @@ namespace atheneum_app.Views.Books
         {
             base.OnAppearing();
             BindingContext = _book;
+        }
+
+        protected async void GoBack(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
         }
     }
 }
