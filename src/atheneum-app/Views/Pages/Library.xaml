@@ -33,9 +33,11 @@
                 Refreshing="Refreshing">
                 <CollectionView
                     x:Name="lstBooks"
-                    HorizontalOptions="FillAndExpand"
+                    RemainingItemsThreshold="0"
+                    ItemsLayout="VerticalGrid, 3"
                     VerticalOptions="FillAndExpand"
-                    ItemsLayout="VerticalGrid, 3">
+                    HorizontalOptions="FillAndExpand"
+                    RemainingItemsThresholdReached="LoadMore">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout
@@ -76,6 +78,11 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </RefreshView>
+            
+            <ActivityIndicator
+                x:Name="prgLoadingMore"
+                IsVisible="False"
+                Style="{StaticResource SlimPrgStyle}" />
 
             <BoxView
                 Opacity="0"

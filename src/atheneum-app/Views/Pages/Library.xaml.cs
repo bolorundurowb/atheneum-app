@@ -17,6 +17,7 @@ namespace atheneum_app.Views.Pages
     {
         public ObservableCollection<BookViewModel> Books = new ObservableCollection<BookViewModel>();
         private readonly BookService _bookService;
+        private bool IsLoadingMore;
 
         public Library()
         {
@@ -67,6 +68,50 @@ namespace atheneum_app.Views.Pages
         protected async void Refreshing(object sender, EventArgs e)
         {
             await LoadData();
+        }
+
+        private async void LoadMore(object sender, EventArgs e)
+        {
+            const string genericErrorMessage =
+                "Sorry, an error occurred when retrieving more library items. Try again later.";
+
+            try
+            {
+                if (IsLoadingMore)
+                {
+                    return;
+                }
+
+                IsLoadingMore = true;
+                prgLoadingMore.IsVisible = true;
+                var response = await _bookService.GetNextPage();
+                var books = response.ToList();
+
+                if (books.Any())
+                {
+                    foreach (var book in books)
+                    {
+                        Books.Add(book);
+                    }
+
+                    lstBooks.ItemsSource = Books;
+                }
+            }
+            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            {
+                var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
+            }
+            catch (ApiException ex)
+            {
+                var error = await ex.GetContentAsAsync<ErrorViewModel>();
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message : genericErrorMessage);
+            }
+            finally
+            {
+                IsLoadingMore = false;
+                prgLoadingMore.IsVisible = false;
+            }
         }
     }
 }

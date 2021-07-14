@@ -30,7 +30,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public Task<IEnumerable<BookViewModel>> GetNextPage()
         {
-            currentPage++;
+            currentPage += 1;
             return MakeApiCall(currentPage, booksPerPage);
         }
 
