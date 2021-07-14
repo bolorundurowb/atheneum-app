@@ -167,6 +167,17 @@
             <Setter Property="Keyboard" Value="Text" />
         </Style>
 
+        <Style x:Key="SearchStyle" TargetType="SearchBar">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkInputTextColour}, Light={StaticResource LightInputTextColour}}" />
+            <Setter Property="PlaceholderColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="Keyboard" Value="Text" />
+            <Setter Property="Placeholder" Value="search..." />
+        </Style>
+
         <Style x:Key="PageHdrStyleStyle" BasedOn="{StaticResource BasePageHdrStyleStyle}" TargetType="Label">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark={StaticResource LightPrimaryAccentColour}, Light={StaticResource PrimaryAccentColour}}" />

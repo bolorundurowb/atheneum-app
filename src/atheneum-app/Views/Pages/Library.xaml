@@ -20,10 +20,24 @@
                 VerticalOptions="Center"
                 Style="{StaticResource PageHdrStyleStyle}" />
 
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <SearchBar
+                    x:Name="txtSearch"
+                    Style="{StaticResource SearchStyle}"
+                    TextChanged="OnSearch"/>
+            </Frame>
+
             <Label
                 x:Name="lblNoItems"
                 IsVisible="False"
                 Text="You have no books in your library. Feel free to add some!"
+                Style="{StaticResource NoItemsLblStyle}" />
+
+            <Label
+                x:Name="lblNoSearchItems"
+                IsVisible="False"
+                Text="You have no books in your library that match your search."
                 Style="{StaticResource NoItemsLblStyle}" />
 
             <RefreshView
@@ -78,7 +92,7 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </RefreshView>
-            
+
             <ActivityIndicator
                 x:Name="prgLoadingMore"
                 IsVisible="False"
