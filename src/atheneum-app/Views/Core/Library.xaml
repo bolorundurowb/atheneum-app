@@ -21,7 +21,7 @@
                 Style="{StaticResource PageHdrStyleStyle}" />
 
             <Frame
-                Style="{StaticResource EntryFrameStyle}">
+                Style="{StaticResource SearchFrameStyle}">
                 <SearchBar
                     x:Name="txtSearch"
                     Style="{StaticResource SearchStyle}"
