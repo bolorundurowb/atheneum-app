@@ -29,11 +29,20 @@ namespace atheneum_app.Views.Books
 
         protected async void Remove(object sender, EventArgs e)
         {
+            var response = await DisplayAlert("Confirm Removal",
+                "Are you sure you want to remove this book. This action is irreversible.", "Proceed", "Cancel");
+
+            if (!response)
+            {
+                return;
+            }
+
             const string genericErrorMessage =
                 "Sorry, an error occurred when removing from your library. Try again later.";
 
             try
             {
+                ToastService.Success("Removing from library...");
                 await _bookService.Remove(_book.Id);
                 ToastService.Success("Book successfully removed from your library.");
                 await Navigation.PopAsync();
