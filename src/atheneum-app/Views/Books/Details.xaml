@@ -59,7 +59,8 @@
                 Text="Remove"
                 VerticalOptions="Center"
                 HorizontalOptions="EndAndExpand"
-                Style="{StaticResource SecondaryBtnStyle}" />
+                Style="{StaticResource SecondaryBtnStyle}"
+                Clicked="Remove"/>
             </StackLayout>
             
             <ScrollView
