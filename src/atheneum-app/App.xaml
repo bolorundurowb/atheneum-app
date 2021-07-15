@@ -167,6 +167,11 @@
             <Setter Property="Keyboard" Value="Text" />
         </Style>
 
+        <Style x:Key="SearchFrameStyle" BasedOn="{StaticResource EntryFrameStyle}" TargetType="Frame">
+            <Setter Property="Padding" Value="0, 5, 0, 5" />
+            <Setter Property="HeightRequest" Value="40" />
+        </Style>
+
         <Style x:Key="SearchStyle" TargetType="SearchBar">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark={StaticResource DarkInputTextColour}, Light={StaticResource LightInputTextColour}}" />

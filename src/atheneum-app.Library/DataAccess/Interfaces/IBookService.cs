@@ -20,12 +20,16 @@ namespace atheneum_app.Library.DataAccess.Interfaces
         [Headers("Authorization: Bearer")]
         Task<BookViewModel> AddManual([Body] CreateManualBookBindingModel payload);
 
-        [Get("/books/{bookId}/borrow")]
+        [Post("/books/{bookId}/borrow")]
         [Headers("Authorization: Bearer")]
         Task<BookViewModel> Borrow(string bookId, [Body] BorrowBookBindingModel payload);
 
-        [Get("/books/{bookId}/return")]
+        [Post("/books/{bookId}/return")]
         [Headers("Authorization: Bearer")]
         Task<BookViewModel> Return(string bookId);
+
+        [Delete("/books/{bookId}")]
+        [Headers("Authorization: Bearer")]
+        Task Remove(string bookId);
     }
 }

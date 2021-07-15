@@ -34,12 +34,6 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return MakeApiCall(search);
         }
 
-        private Task<IEnumerable<BookViewModel>> MakeApiCall(string search)
-        {
-            var skip = (_currentPage - 1) * BooksPerPage;
-            return _bookService.GetAll(skip, BooksPerPage, search);
-        }
-
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
         {
             return _bookService.AddByIsbn(new CreateIsbnBookBindingModel
@@ -48,6 +42,17 @@ namespace atheneum_app.Library.DataAccess.Implementations
                 Longitude = longitude,
                 Latitude = latitude
             });
+        }
+
+        public Task Remove(string bookId)
+        {
+            return _bookService.Remove(bookId);
+        }
+
+        private Task<IEnumerable<BookViewModel>> MakeApiCall(string search)
+        {
+            var skip = (_currentPage - 1) * BooksPerPage;
+            return _bookService.GetAll(skip, BooksPerPage, search);
         }
     }
 }
