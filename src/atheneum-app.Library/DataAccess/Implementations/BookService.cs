@@ -34,6 +34,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return MakeApiCall(search);
         }
 
+        public Task<IEnumerable<BookViewModel>> GetRecent()
+        {
+            return _bookService.GetRecent();
+        }
+
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
         {
             return _bookService.AddByIsbn(new CreateIsbnBookBindingModel
