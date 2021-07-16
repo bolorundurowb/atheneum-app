@@ -16,7 +16,6 @@
             VerticalOptions="FillAndExpand">
             <Label
                 Text="Library"
-                HorizontalOptions="StartAndExpand"
                 VerticalOptions="Center"
                 Style="{StaticResource PageHdrStyleStyle}" />
 

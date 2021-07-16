@@ -32,6 +32,13 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return expiresAt > DateTime.UtcNow;
         }
 
+        public (string, string) GetUserDetails()
+        {
+            var firstName = Preferences.Get(AuthFirstNameKey, string.Empty);
+            var lastName = Preferences.Get(AuthLastNameKey, string.Empty);
+            return (firstName, lastName);
+        }
+
         public string GetToken()
         {
             return Preferences.Get(AuthTokenKey, null);
@@ -55,7 +62,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
         public void SetAuth(string firstName, string lastName, string emailAddress, string token)
         {
             var expiresAt = DateTime.UtcNow.AddDays(7);
-            
+
             Preferences.Set(AuthEmailKey, emailAddress);
             Preferences.Set(AuthTokenKey, token);
             Preferences.Set(AuthExpiryKey, expiresAt);

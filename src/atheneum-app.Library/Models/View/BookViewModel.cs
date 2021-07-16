@@ -39,7 +39,7 @@ namespace atheneum_app.Library.Models.View
 
         public string PublisherName => Publisher?.Name;
 
-        public string Availability => IsAvailable ? "Availability" : "Lent Out";
+        public string Availability => IsAvailable ? "Available" : "Lent Out";
 
         public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
 

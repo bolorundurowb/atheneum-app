@@ -12,6 +12,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
         private int _currentPage;
         public const int BooksPerPage = 30;
         private readonly IBookService _bookService;
+        private static BookService _instance;
 
         public BookService()
         {
@@ -20,6 +21,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
             {
                 AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
             });
+        }
+
+        public static BookService Instance()
+        {
+            return _instance ?? (_instance = new BookService());
         }
 
         public Task<IEnumerable<BookViewModel>> GetFirstPage(string search)
