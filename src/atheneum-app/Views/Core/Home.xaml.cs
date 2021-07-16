@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,11 +6,16 @@ using Xamarin.Forms.Xaml;
 namespace atheneum_app.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : ContentPage
+    public partial class Home : ContentView
     {
         public Home()
         {
             InitializeComponent();
+        }
+
+        public async Task LoadData()
+        {
+            
         }
     }
 }

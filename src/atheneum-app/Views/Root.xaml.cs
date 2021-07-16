@@ -4,7 +4,6 @@ using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Books;
-using atheneum_app.Views.Core;
 using Refit;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
@@ -27,6 +26,9 @@ namespace atheneum_app.Views
 
             try
             {
+                // load the home page data
+                await pageHome.LoadData();
+
                 // load the library page data
                 await pageLibrary.LoadData();
 
@@ -72,11 +74,11 @@ namespace atheneum_app.Views
             {
                 // notify the user
                 ToastService.Info($"Scanned ISBN: {result}. Adding to your library...");
-                
+
                 // call the service
                 await _bookService.AddByIsbn(result);
                 ToastService.Success("Book successfully added to your library");
-                
+
                 // refresh the library
                 await pageLibrary.LoadData();
             }

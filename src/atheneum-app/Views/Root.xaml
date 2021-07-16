@@ -86,12 +86,9 @@
                     IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home_dark_active}, Light={extensions:IconSourceExtensions ic_home_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
-                    <Grid>
-                        <Label
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            Text="TabContent2" />
-                    </Grid>
+                    <xct:TabViewItem.Content>
+                        <core:Home x:Name="pageHome" />
+                    </xct:TabViewItem.Content>
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
