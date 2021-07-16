@@ -10,5 +10,9 @@ namespace atheneum_app.Library.DataAccess.Interfaces
         [Get("/authors")]
         [Headers("Authorization: Bearer")]
         Task<IEnumerable<AuthorViewModel>> GetAll();
+
+        [Get("/authors/top")]
+        [Headers("Authorization: Bearer")]
+        Task<IEnumerable<TopAuthorViewModel>> GetTop();
     }
 }
