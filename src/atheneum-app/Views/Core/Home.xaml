@@ -20,7 +20,7 @@
         <Style x:Key="SectionHdrStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
             <Setter Property="FontSize" Value="25" />
             <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="Margin" Value="0, 10, 0, 15" />
+            <Setter Property="Margin" Value="10, 7, 0, 5" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         </Style>
     </ContentView.Resources>
@@ -37,7 +37,7 @@
                 x:Name="lblName"
                 Text="There"
                 Style="{StaticResource PageHdrStyleStyle}" />
-            
+
             <ActivityIndicator
                 x:Name="prgLoading"
                 Style="{StaticResource SlimPrgStyle}" />
@@ -48,75 +48,78 @@
                 <StackLayout
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
-                <StackLayout
-                    HorizontalOptions="FillAndExpand">
-                    <Label
-                        Text="Recently Added"
-                        Style="{StaticResource SectionHdrStyle}" />
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand">
+                        <Frame
+                            CornerRadius="10"
+                            Padding="10"
+                            BackgroundColor="#FAFAFA"
+                            HeightRequest="280"
+                            HasShadow="False"
+                            HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Label
+                                    Text="Recently Added"
+                                    Style="{StaticResource SectionHdrStyle}" />
+                                
+                                <Label
+                                    x:Name="lblNoRecentBooks"
+                                    IsVisible="False"
+                                    Text="You have no books recently added to your library."
+                                    Style="{StaticResource NoItemsLblStyle}" />
 
-                    <Label
-                        x:Name="lblNoRecentBooks"
-                        IsVisible="False"
-                        Text="You have no books recently added to your library."
-                        Style="{StaticResource NoItemsLblStyle}" />
-                    
-                    <CollectionView
-                    x:Name="lstRecentBooks"
-                    SelectionMode="Single"
-                    RemainingItemsThreshold="0"
-                    ItemsLayout="VerticalGrid, 3"
-                    VerticalOptions="FillAndExpand"
-                    HorizontalOptions="FillAndExpand">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout
-                                Padding="5"
-                                HeightRequest="235"
-                                BackgroundColor="Transparent"
-                                HorizontalOptions="FillAndExpand">
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup Name="CommonStates">
-                                        <VisualState Name="Normal" />
-                                        <VisualState Name="Selected">
-                                            <VisualState.Setters>
-                                                <Setter Property="BackgroundColor" Value="Transparent" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
-                                <Frame
-                                    Padding="0"
-                                    CornerRadius="10"
-                                    HorizontalOptions="FillAndExpand"
-                                    VerticalOptions="FillAndExpand"
-                                    BackgroundColor="{AppThemeBinding Dark={StaticResource DarkNavbarBackgroundColour}, Light={StaticResource LightNavbarBackgroundColour}}">
-                                    <StackLayout>
-                                        <yummy:PancakeView
-                                            Padding="0"
-                                            IsClippedToBounds="True"
-                                            CornerRadius="5, 5, 0, 0">
-                                            <ff:CachedImage
-                                                HeightRequest="160"
-                                                HorizontalOptions="FillAndExpand"
-                                                DownsampleToViewSize="True"
-                                                Aspect="AspectFill"
-                                                RetryCount="1"
-                                                RetryDelay="1000"
-                                                Source="{Binding CoverArt}" />
-                                        </yummy:PancakeView>
-                                        <Label
-                                            Text="{Binding Title}"
-                                            Style="{StaticResource BookTitleLblStyle}" />
-                                        <Label
-                                            Text="{Binding PrimaryAuthorName}"
-                                            Style="{StaticResource BookAuthorLblStyle}" />
-                                    </StackLayout>
-                                </Frame>
+                                <CollectionView
+                                    x:Name="lstRecentBooks"
+                                    SelectionMode="Single"
+                                    RemainingItemsThreshold="0"
+                                    ItemsLayout="HorizontalList"
+                                    HorizontalOptions="StartAndExpand"
+                                    VerticalOptions="CenterAndExpand">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackLayout
+                                                Padding="10"
+                                                HeightRequest="235"
+                                                WidthRequest="140"
+                                                BackgroundColor="Transparent">
+                                                <VisualStateManager.VisualStateGroups>
+                                                    <VisualStateGroup Name="CommonStates">
+                                                        <VisualState Name="Normal" />
+                                                        <VisualState Name="Selected">
+                                                            <VisualState.Setters>
+                                                                <Setter Property="BackgroundColor" Value="Transparent" />
+                                                            </VisualState.Setters>
+                                                        </VisualState>
+                                                    </VisualStateGroup>
+                                                </VisualStateManager.VisualStateGroups>
+                                                <StackLayout>
+                                                    <yummy:PancakeView
+                                                        Padding="0"
+                                                        IsClippedToBounds="True"
+                                                        CornerRadius="5">
+                                                        <ff:CachedImage
+                                                            HeightRequest="160"
+                                                            WidthRequest="120"
+                                                            DownsampleToViewSize="True"
+                                                            Aspect="AspectFill"
+                                                            RetryCount="1"
+                                                            RetryDelay="1000"
+                                                            Source="{Binding CoverArt}" />
+                                                    </yummy:PancakeView>
+                                                    <Label
+                                                        Text="{Binding Title}"
+                                                        Style="{StaticResource BookTitleLblStyle}" />
+                                                    <Label
+                                                        Text="{Binding PrimaryAuthorName}"
+                                                        Style="{StaticResource BookAuthorLblStyle}" />
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
                             </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-                </StackLayout>
+                        </Frame>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
 
