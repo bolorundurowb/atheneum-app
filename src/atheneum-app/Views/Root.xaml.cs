@@ -3,6 +3,7 @@ using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
+using atheneum_app.Views.Books;
 using atheneum_app.Views.Core;
 using Refit;
 using Xamarin.CommunityToolkit.UI.Views;

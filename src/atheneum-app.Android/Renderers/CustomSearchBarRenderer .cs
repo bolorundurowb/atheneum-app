@@ -1,5 +1,4 @@
 using Android.Content;
-using Android.Widget;
 using atheneum_app.Android.Renderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;

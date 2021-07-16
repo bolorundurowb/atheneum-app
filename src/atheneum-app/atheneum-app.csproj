@@ -83,6 +83,10 @@
         <DependentUpon>BookDetails.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Update="Views\Books\Scanner.xaml.cs">
+        <DependentUpon>Scanner.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
