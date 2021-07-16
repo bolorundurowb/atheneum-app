@@ -17,7 +17,7 @@ namespace atheneum_app.Views
         public Root()
         {
             InitializeComponent();
-            _bookService = new BookService();
+            _bookService = BookService.Instance();
         }
 
         protected override async void OnAppearing()

@@ -12,7 +12,6 @@
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark={StaticResource DarkSubTextColour}, Light={StaticResource LightSubTextColour}}" />
             <Setter Property="FontSize" Value="25" />
-            <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="Margin" Value="0" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         </Style>
@@ -20,14 +19,15 @@
         <Style x:Key="SectionHdrStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
             <Setter Property="FontSize" Value="25" />
             <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="Margin" Value="10, 7, 0, 5" />
+            <Setter Property="Margin" Value="10, 5, 0, 5" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
         </Style>
 
         <Style x:Key="HomeLstStyle"  TargetType="CollectionView">
             <Setter Property="SelectionMode" Value="None" />
             <Setter Property="ItemsLayout" Value="HorizontalList" />
-            <Setter Property="Margin" Value="0, 7, 0, 5" />
+            <Setter Property="Margin" Value="0, 5, 0, 5" />
             <Setter Property="HorizontalOptions" Value="StartAndExpand" />
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
         </Style>
@@ -58,7 +58,7 @@
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
             <Label
-                Text="Hello"
+                Text="Hello,"
                 Style="{StaticResource IntroHdrStyle}" />
 
             <Label
@@ -81,7 +81,7 @@
                             Padding="10"
                             Margin="0, 1, 0, 10"
                             BackgroundColor="#FAFAFA"
-                            HeightRequest="280"
+                            HeightRequest="285"
                             HasShadow="False"
                             HorizontalOptions="FillAndExpand">
                             <StackLayout>

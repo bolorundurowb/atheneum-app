@@ -31,7 +31,7 @@ namespace atheneum_app.Views.Core
         {
             // set the header
             var (firstName, _) = _tokenService.GetUserDetails();
-            lblName.Text = firstName;
+            lblName.Text = firstName?.Trim() + ".";
 
             // load remote data
             const string genericErrorMessage =

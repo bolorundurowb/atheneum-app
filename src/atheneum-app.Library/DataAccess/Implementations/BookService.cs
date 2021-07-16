@@ -14,7 +14,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
         private readonly IBookService _bookService;
         private static BookService _instance;
 
-        public BookService()
+        private BookService()
         {
             var tokenClient = new TokenService();
             _bookService = RestService.For<IBookService>(Constants.V1BaseUrl, new RefitSettings

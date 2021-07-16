@@ -23,7 +23,7 @@ namespace atheneum_app.Views.Core
         public Library()
         {
             InitializeComponent();
-            _bookService = new BookService();
+            _bookService = BookService.Instance();
         }
 
         public async Task LoadData()
