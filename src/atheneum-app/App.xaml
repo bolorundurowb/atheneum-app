@@ -90,6 +90,7 @@
             <Setter Property="HorizontalOptions" Value="Center" />
             <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="FontSize" Value="18" />
+            <Setter Property="IsVisible" Value="False" />
             <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
 

@@ -23,6 +23,34 @@
             <Setter Property="Margin" Value="10, 7, 0, 5" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         </Style>
+
+        <Style x:Key="HomeLstStyle"  TargetType="CollectionView">
+            <Setter Property="SelectionMode" Value="None" />
+            <Setter Property="ItemsLayout" Value="HorizontalList" />
+            <Setter Property="Margin" Value="0, 7, 0, 5" />
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        </Style>
+
+        <Style x:Key="TopNameStyle"  TargetType="Label">
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="FontSize" Value="17" />
+            <Setter Property="MaxLines" Value="2" />
+            <Setter Property="Margin" Value="10, 10, 10, 0" />
+            <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+            <Setter Property="VerticalOptions" Value="StartAndExpand" />
+            <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
+        </Style>
+
+        <Style x:Key="TopNumStyle"  TargetType="Label">
+            <Setter Property="FontFamily" Value="ProximaBold" />
+            <Setter Property="FontSize" Value="28" />
+            <Setter Property="MaxLines" Value="2" />
+            <Setter Property="Margin" Value="0, 0, 10, 10" />
+            <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
+        </Style>
     </ContentView.Resources>
     <ContentView.Content>
         <StackLayout
@@ -48,11 +76,10 @@
                 <StackLayout
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
-                    <StackLayout
-                        HorizontalOptions="FillAndExpand">
                         <Frame
                             CornerRadius="10"
                             Padding="10"
+                            Margin="0, 1, 0, 10"
                             BackgroundColor="#FAFAFA"
                             HeightRequest="280"
                             HasShadow="False"
@@ -64,23 +91,19 @@
                                 
                                 <Label
                                     x:Name="lblNoRecentBooks"
-                                    IsVisible="False"
                                     Text="You have no books recently added to your library."
                                     Style="{StaticResource NoItemsLblStyle}" />
 
                                 <CollectionView
                                     x:Name="lstRecentBooks"
                                     SelectionMode="Single"
-                                    RemainingItemsThreshold="0"
-                                    ItemsLayout="HorizontalList"
-                                    HorizontalOptions="StartAndExpand"
-                                    VerticalOptions="CenterAndExpand">
+                                    Style="{StaticResource HomeLstStyle}">
                                     <CollectionView.ItemTemplate>
                                         <DataTemplate>
                                             <StackLayout
                                                 Padding="10"
                                                 HeightRequest="235"
-                                                WidthRequest="140"
+                                                WidthRequest="120"
                                                 BackgroundColor="Transparent">
                                                 <VisualStateManager.VisualStateGroups>
                                                     <VisualStateGroup Name="CommonStates">
@@ -99,7 +122,7 @@
                                                         CornerRadius="5">
                                                         <ff:CachedImage
                                                             HeightRequest="160"
-                                                            WidthRequest="120"
+                                                            WidthRequest="100"
                                                             DownsampleToViewSize="True"
                                                             Aspect="AspectFill"
                                                             RetryCount="1"
@@ -119,7 +142,56 @@
                                 </CollectionView>
                             </StackLayout>
                         </Frame>
-                    </StackLayout>
+                    
+                        <Frame
+                            CornerRadius="10"
+                            Padding="10"
+                            Margin="0, 1, 0, 10"
+                            BackgroundColor="#FAFAFA"
+                            HeightRequest="165"
+                            HasShadow="False"
+                            HorizontalOptions="FillAndExpand">
+                            <StackLayout>
+                                <Label
+                                    Text="Top Authors"
+                                    Style="{StaticResource SectionHdrStyle}" />
+                                
+                                <Label
+                                    x:Name="lblNoAuthors"
+                                    Text="You have no authors."
+                                    Style="{StaticResource NoItemsLblStyle}" />
+
+                                <CollectionView
+                                    x:Name="lstTopAuthors"
+                                    Style="{StaticResource HomeLstStyle}">
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackLayout
+                                                Padding="10">
+                                                    <Frame
+                                                        Padding="0"
+                                                        CornerRadius="5"
+                                                        HeightRequest="120"
+                                                        WidthRequest="150"
+                                                        HasShadow="False"
+                                                        BorderColor="{StaticResource DarkSecondaryAccentColour}"
+                                                        BackgroundColor="{StaticResource SecondaryAccentColour}">
+                                                        <StackLayout>
+                                                            <Label
+                                                                Text="{Binding Author.Name}"
+                                                                Style="{StaticResource TopNameStyle}" />
+                                                            <Label
+                                                                Text="{Binding NumOfBooks}"
+                                                                Style="{StaticResource TopNumStyle}" />
+                                                        </StackLayout>
+                                                    </Frame>
+                                                    
+                                            </StackLayout>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </StackLayout>
+                        </Frame>
                 </StackLayout>
             </ScrollView>
 

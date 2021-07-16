@@ -15,12 +15,14 @@ namespace atheneum_app.Views.Core
     {
         private readonly TokenService _tokenService;
         private readonly BookService _bookService;
+        private readonly AuthorService _authorService;
 
         public Home()
         {
             InitializeComponent();
             _tokenService = new TokenService();
             _bookService = BookService.Instance();
+            _authorService = AuthorService.Instance();
         }
 
         public async Task LoadData()
@@ -37,8 +39,8 @@ namespace atheneum_app.Views.Core
             try
             {
                 // get the most recent books
-                var response = await _bookService.GetRecent();
-                var books = response.ToList();
+                var bookResponse = await _bookService.GetRecent();
+                var books = bookResponse.ToList();
 
                 if (books.Any())
                 {
@@ -48,6 +50,20 @@ namespace atheneum_app.Views.Core
                 else
                 {
                     lblNoRecentBooks.IsVisible = true;
+                }
+                
+                // get the most top authors
+                var authorResponse = await _authorService.GetTop();
+                var authors = authorResponse.ToList();
+
+                if (authors.Any())
+                {
+                    lstTopAuthors.ItemsSource = authors;
+                    lblNoAuthors.IsVisible = false;
+                }
+                else
+                {
+                    lblNoAuthors.IsVisible = true;
                 }
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
