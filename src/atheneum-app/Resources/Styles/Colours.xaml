@@ -13,6 +13,10 @@
     <Color x:Key="DarkSecondaryAccentColour">#BCC08F</Color>
     <Color x:Key="TertiaryAccentColour">#800020</Color>
     <Color x:Key="LightTertiaryAccentColour">#b23252</Color>
+    
+    <!-- Frame Colours -->
+    <Color x:Key="LightFrameColour">#FAFAFA</Color>
+    <Color x:Key="DarkFrameColour">#1A1A1A</Color>
 
     <!-- Text Colours -->
     <Color x:Key="LightSubTextColour">#8C8C8C</Color>

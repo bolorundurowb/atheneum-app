@@ -21,7 +21,16 @@
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="Margin" Value="10, 5, 0, 5" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-            <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
+        </Style>
+
+        <Style x:Key="SectionStyle"  TargetType="Frame">
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="HasShadow" Value="False" />
+            <Setter Property="HeightRequest" Value="165" />
+            <Setter Property="Margin" Value="0, 5, 0, 5" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource DarkFrameColour}, Light={StaticResource LightFrameColour}}" />
         </Style>
 
         <Style x:Key="HomeLstStyle"  TargetType="CollectionView">
@@ -77,13 +86,8 @@
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
                         <Frame
-                            CornerRadius="10"
-                            Padding="10"
-                            Margin="0, 1, 0, 10"
-                            BackgroundColor="#FAFAFA"
                             HeightRequest="285"
-                            HasShadow="False"
-                            HorizontalOptions="FillAndExpand">
+                            Style="{StaticResource SectionStyle}">
                             <StackLayout>
                                 <Label
                                     Text="Recently Added"
@@ -144,13 +148,7 @@
                         </Frame>
                     
                         <Frame
-                            CornerRadius="10"
-                            Padding="10"
-                            Margin="0, 1, 0, 10"
-                            BackgroundColor="#FAFAFA"
-                            HeightRequest="165"
-                            HasShadow="False"
-                            HorizontalOptions="FillAndExpand">
+                            Style="{StaticResource SectionStyle}">
                             <StackLayout>
                                 <Label
                                     Text="Top Authors"
@@ -194,13 +192,7 @@
                         </Frame>
                     
                         <Frame
-                            CornerRadius="10"
-                            Padding="10"
-                            Margin="0, 1, 0, 10"
-                            BackgroundColor="#FAFAFA"
-                            HeightRequest="165"
-                            HasShadow="False"
-                            HorizontalOptions="FillAndExpand">
+                            Style="{StaticResource SectionStyle}">
                             <StackLayout>
                                 <Label
                                     Text="Top Publishers"
