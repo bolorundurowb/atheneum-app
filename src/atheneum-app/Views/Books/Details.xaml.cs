@@ -18,7 +18,7 @@ namespace atheneum_app.Views.Books
         {
             InitializeComponent();
             _book = book;
-            _bookService = new BookService();
+            _bookService = BookService.Instance();
         }
 
         protected override void OnAppearing()

@@ -12,14 +12,20 @@ namespace atheneum_app.Library.DataAccess.Implementations
         private int _currentPage;
         public const int BooksPerPage = 30;
         private readonly IBookService _bookService;
+        private static BookService _instance;
 
-        public BookService()
+        private BookService()
         {
             var tokenClient = new TokenService();
             _bookService = RestService.For<IBookService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
             });
+        }
+
+        public static BookService Instance()
+        {
+            return _instance ?? (_instance = new BookService());
         }
 
         public Task<IEnumerable<BookViewModel>> GetFirstPage(string search)
@@ -32,6 +38,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
         {
             _currentPage += 1;
             return MakeApiCall(search);
+        }
+
+        public Task<IEnumerable<BookViewModel>> GetRecent()
+        {
+            return _bookService.GetRecent();
         }
 
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)

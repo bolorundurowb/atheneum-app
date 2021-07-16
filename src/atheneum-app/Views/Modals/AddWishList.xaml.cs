@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
 using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace atheneum_app.Views.Modals
