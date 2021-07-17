@@ -4,37 +4,20 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-    x:Class="atheneum_app.Views.Modals.AddWishList"
+    x:Class="atheneum_app.Views.Modals.ManualIsbn"
+    Size="350, 250"
     Style="{StaticResource ModalStyle}">
     <Frame
         Style="{StaticResource ModalFrmStyle}">
         <StackLayout>
             <Label
-                Text="Add To Wish List"
+                Text="Add By ISBN"
                 Style="{StaticResource ModalHdrStyle}" />
             <Frame
                 Style="{StaticResource EntryFrameStyle}">
                 <Entry
-                    x:Name="txtTitle"
-                    Placeholder="book title"
-                    Keyboard="Text"
-                    IsTextPredictionEnabled="True"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
-                    x:Name="txtAuthor"
-                    Placeholder="author name"
-                    Keyboard="Text"
-                    IsTextPredictionEnabled="True"
-                    Style="{StaticResource EntryStyle}" />
-            </Frame>
-            <Frame
-                Style="{StaticResource EntryFrameStyle}">
-                <Entry
                     x:Name="txtIsbn"
-                    Placeholder="isbn"
+                    Placeholder="book isbn"
                     Keyboard="Text"
                     IsTextPredictionEnabled="True"
                     Style="{StaticResource EntryStyle}" />

@@ -10,14 +10,20 @@ namespace atheneum_app.Library.DataAccess.Implementations
     public sealed class WishListService
     {
         private readonly IWishListService _wishListService;
+        private static WishListService _instance;
 
-        public WishListService()
+        private WishListService()
         {
             var tokenClient = new TokenService();
             _wishListService = RestService.For<IWishListService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
             });
+        }
+
+        public static WishListService Instance()
+        {
+            return _instance ??= new WishListService();                          
         }
 
         public Task<IEnumerable<WishListViewModel>> GetAll()
