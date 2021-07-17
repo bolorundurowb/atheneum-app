@@ -44,15 +44,16 @@
                 x:Name="stkBtns"
                 Orientation="Horizontal">
                 <Button
-                    Text="Add To List"
-                    Margin="0, 12, 5, 0"
-                    Style="{StaticResource BaseBtnStyle}"
-                    Clicked="Add"/>
-                <Button
                     Text="Cancel"
-                    Margin="5, 12, 0, 0"
+                    Margin="0, 12, 5, 0"
                     Style="{StaticResource BaseInvBtnStyle}"
                     Clicked="Cancel"/>
+                
+                <Button
+                    Text="Add To List"
+                    Margin="5, 12, 0, 0"
+                    Style="{StaticResource BaseBtnStyle}"
+                    Clicked="Add"/>
             </StackLayout>
 
             <ActivityIndicator
