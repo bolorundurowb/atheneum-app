@@ -44,11 +44,20 @@ namespace atheneum_app.Views
             }
         }
 
-        protected async void Scan(object sender, TabTappedEventArgs e)
+        protected async void ShowOptions(object sender, TabTappedEventArgs e)
         {
-            var scanner = new Scanner();
-            scanner.Disappearing += ScannerOnDisappearing;
-            await Navigation.PushAsync(scanner);
+            var action = await DisplayActionSheet("Scan Options", "Cancel", null, "Camera Scan", "Manual ISBN");
+            switch (action)
+            {
+                case "Camera Scan":
+                    var scanner = new Scanner();
+                    scanner.Disappearing += ScannerOnDisappearing;
+                    await Navigation.PushAsync(scanner);
+                    break;
+                case "Manual ISBN":
+                    ToastService.Warn("Manual ISBN");
+                    break;
+            }
         }
 
         private async void ScannerOnDisappearing(object sender, EventArgs e)
