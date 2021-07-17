@@ -4,7 +4,9 @@ using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Books;
+using atheneum_app.Views.Modals;
 using Refit;
+using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
 
@@ -46,16 +48,25 @@ namespace atheneum_app.Views
 
         protected async void ShowOptions(object sender, TabTappedEventArgs e)
         {
-            var action = await DisplayActionSheet("Scan Options", "Cancel", null, "Camera Scan", "Manual ISBN");
+            var action = await DisplayActionSheet("Scan Options", "Cancel", null, "ISBN Barcode Scan", "Manual ISBN");
             switch (action)
             {
-                case "Camera Scan":
+                case "ISBN Barcode Scan":
                     var scanner = new Scanner();
                     scanner.Disappearing += ScannerOnDisappearing;
                     await Navigation.PushAsync(scanner);
                     break;
                 case "Manual ISBN":
-                    ToastService.Warn("Manual ISBN");
+                    var result = await Navigation.ShowPopupAsync(new ManualIsbn());
+
+                    if (result == null)
+                    {
+                        ToastService.Info("Modal dismissed.");
+                        return;
+                    }
+                    
+                    // refresh the library
+                    await pageLibrary.LoadData();
                     break;
             }
         }

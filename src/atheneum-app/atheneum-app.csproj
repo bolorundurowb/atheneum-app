@@ -87,6 +87,10 @@
         <DependentUpon>Scanner.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Update="Views\Modals\ManualIsbn.xaml.cs">
+        <DependentUpon>ManualIsbn.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>

@@ -10,32 +10,25 @@ using Xamarin.Forms.Xaml;
 namespace atheneum_app.Views.Modals
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddWishList : Popup
+    public partial class ManualIsbn : Popup
     {
-        private readonly WishListService _wishListService;
+        private readonly BookService _bookService;
         
-        public AddWishList()
+        public ManualIsbn()
         {
             InitializeComponent();
-            _wishListService = WishListService.Instance();
+            _bookService = BookService.Instance();
         }
 
         protected async void Add(object sender, EventArgs e)
         {
-            const string genericErrorMessage = "Sorry, an error occurred when adding the item. Try again later.";
-            var title = txtTitle.Text;
-            var author = txtAuthor.Text;
+            const string genericErrorMessage =
+                "Sorry, an error occurred when adding the book to your library. Try again later.";
             var isbn = txtIsbn.Text;
 
-            if (string.IsNullOrWhiteSpace(title))
+            if (string.IsNullOrWhiteSpace(isbn))
             {
-                ToastService.Error("A book title is required.");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(author))
-            {
-                ToastService.Error("An author name is required.");
+                ToastService.Error("An isbn is required.");
                 return;
             }
 
@@ -44,13 +37,13 @@ namespace atheneum_app.Views.Modals
 
             try
             {
-                var response = await _wishListService.Add(title, author, isbn);
+                 await _bookService.AddByIsbn(isbn);
                 
                 // notify user
-                ToastService.Success("Book successfully added to your wish list.");
+                ToastService.Success("Book successfully added to your library.");
                 
                 // send data back
-                Dismiss(response);
+                Dismiss("");
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

@@ -23,7 +23,7 @@ namespace atheneum_app.Views.Core
         public WishList()
         {
             InitializeComponent();
-            _wishListService = new WishListService();
+            _wishListService = WishListService.Instance();
         }
 
         public async Task LoadData()
