@@ -38,11 +38,6 @@
     <StackLayout
         VerticalOptions="FillAndExpand"
         HorizontalOptions="FillAndExpand">
-        <Label
-            Text="Hello, world!"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand" />
-
         <yummy:PancakeView
             Style="{StaticResource MainFrmStyle}">
             <StackLayout>
