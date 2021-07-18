@@ -8,6 +8,32 @@
     x:Class="atheneum_app.Views.Modals.ActionSheet"
     Color="Transparent"
     BackgroundColor="Transparent">
+    <xct:Popup.Resources>
+        <Style x:Key="MainFrmStyle" TargetType="yummy:PancakeView">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource LightColour}" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0, 0, 0, 10" />
+        </Style>
+
+        <Style x:Key="OptionBtnStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="FontFamily" Value="Proxima" />
+        </Style>
+
+        <Style x:Key="CancelBtnStyle" BasedOn="{StaticResource OptionBtnStyle}" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource LightColour}" />
+            <Setter Property="TextColor" Value="Red" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0, 0, 0, 10" />
+        </Style>
+    </xct:Popup.Resources>
     <StackLayout
         VerticalOptions="FillAndExpand"
         HorizontalOptions="FillAndExpand">
@@ -15,51 +41,32 @@
             Text="Hello, world!"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="CenterAndExpand" />
-        
+
         <yummy:PancakeView
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="End"
-            CornerRadius="5, 5, 5, 5"
-            Margin="0, 0, 0, 15"
-            BackgroundColor="White">
-           <StackLayout>
-               <Button
-                   Text="Option 1"
-                   TextColor="{StaticResource PrimaryAccentColour}"
-                   BackgroundColor="Transparent"
-                   HeightRequest="40"
-                   FontFamily="Proxima"
-                   HorizontalOptions="FillAndExpand" />
-               <Button
-                   Text="Option 2"
-                   TextColor="{StaticResource PrimaryAccentColour}"
-                   BackgroundColor="Transparent"
-                   HeightRequest="42"
-                   FontFamily="Proxima"
-                   HorizontalOptions="FillAndExpand"
-                   BorderColor="#EAEAEA"
-                   BorderWidth="0.5"/>
-               <Button
-                   Text="Option 3"
-                   TextColor="{StaticResource PrimaryAccentColour}"
-                   BackgroundColor="Transparent"
-                   HeightRequest="40"
-                   FontFamily="Proxima"
-                   HorizontalOptions="FillAndExpand" />
-           </StackLayout>
+            Style="{StaticResource MainFrmStyle}">
+            <StackLayout>
+                <Button
+                    Text="Scan Barcode"
+                    Style="{StaticResource OptionBtnStyle}"
+                    Clicked="Scan" />
+                <Button
+                    Text="Option 2"
+                    BorderWidth="0.5"
+                    HeightRequest="42"
+                    BorderColor="#EAEAEA"
+                    Style="{StaticResource OptionBtnStyle}"
+                    Clicked="Isbn" />
+                <Button
+                    Text="Option 3"
+                    Style="{StaticResource OptionBtnStyle}"
+                    Clicked="Manual" />
+            </StackLayout>
         </yummy:PancakeView>
-        
-            
+
+
         <Button
             Text="Cancel"
-            TextColor="Red"
-            BackgroundColor="White"
-            CornerRadius="5"
-            HeightRequest="40"
-            FontFamily="Proxima"
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="End"
-            Margin="0, 0, 0, 5"
-            Clicked="Button_OnClicked"/>
+            Style="{StaticResource CancelBtnStyle}"
+            Clicked="Cancel" />
     </StackLayout>
 </xct:Popup>
