@@ -24,6 +24,7 @@
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
             <Setter Property="HeightRequest" Value="40" />
             <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="TextTransform" Value="Lowercase" />
         </Style>
 
         <Style x:Key="CancelBtnStyle" BasedOn="{StaticResource OptionBtnStyle}" TargetType="Button">
@@ -50,14 +51,14 @@
                     Style="{StaticResource OptionBtnStyle}"
                     Clicked="Scan" />
                 <Button
-                    Text="Option 2"
+                    Text="Enter ISBN"
                     BorderWidth="0.5"
                     HeightRequest="42"
                     BorderColor="#EAEAEA"
                     Style="{StaticResource OptionBtnStyle}"
                     Clicked="Isbn" />
                 <Button
-                    Text="Option 3"
+                    Text="Manual Entry"
                     Style="{StaticResource OptionBtnStyle}"
                     Clicked="Manual" />
             </StackLayout>
