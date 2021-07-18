@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Enums;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Books;
@@ -48,29 +49,35 @@ namespace atheneum_app.Views
 
         protected async void ShowOptions(object sender, TabTappedEventArgs e)
         {
-            // var action = await DisplayActionSheet("Scan Options", "Cancel", null, "ISBN Barcode Scan", "Manual ISBN");
-            // switch (action)
-            // {
-            //     case "ISBN Barcode Scan":
-            //         var scanner = new Scanner();
-            //         scanner.Disappearing += ScannerOnDisappearing;
-            //         await Navigation.PushAsync(scanner);
-            //         break;
-            //     case "Manual ISBN":
-            //         var result = await Navigation.ShowPopupAsync(new ManualIsbn());
-            //
-            //         if (result == null)
-            //         {
-            //             ToastService.Info("Modal dismissed.");
-            //             return;
-            //         }
-            //         
-            //         // refresh the library
-            //         await pageLibrary.LoadData();
-            //         break;
-            // }
+            var selection = await Navigation.ShowPopupAsync(new ActionSheet()) as ActionType?;
 
-            await Navigation.ShowPopupAsync(new ActionSheet());
+            if (selection == null)
+            {
+                return;
+            }
+
+            switch (selection.Value)
+            {
+                case ActionType.Manual:
+                    ToastService.Info("Feature coming soon.");
+                    break;
+                case ActionType.ByIsbn:
+                    var result = await Navigation.ShowPopupAsync(new ManualIsbn());
+
+                    if (result == null)
+                    {
+                        return;
+                    }
+
+                    // refresh the library
+                    await pageLibrary.LoadData();
+                    break;
+                case ActionType.ByScan:
+                    var scanner = new Scanner();
+                    scanner.Disappearing += ScannerOnDisappearing;
+                    await Navigation.PushAsync(scanner);
+                    break;
+            }
         }
 
         private async void ScannerOnDisappearing(object sender, EventArgs e)
