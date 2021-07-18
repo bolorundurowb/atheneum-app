@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xct:Popup
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="atheneum_app.Views.Modals.ActionSheet"
+    Color="Transparent"
+    BackgroundColor="Transparent">
+    <StackLayout
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand">
+        <Label
+            Text="Hello, world!"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand" />
+        
+        <yummy:PancakeView
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End"
+            CornerRadius="5, 5, 5, 5"
+            Margin="0, 0, 0, 15"
+            BackgroundColor="White">
+           <StackLayout>
+               <Button
+                   Text="Option 1"
+                   TextColor="{StaticResource PrimaryAccentColour}"
+                   BackgroundColor="Transparent"
+                   HeightRequest="40"
+                   FontFamily="Proxima"
+                   HorizontalOptions="FillAndExpand" />
+               <Button
+                   Text="Option 2"
+                   TextColor="{StaticResource PrimaryAccentColour}"
+                   BackgroundColor="Transparent"
+                   HeightRequest="42"
+                   FontFamily="Proxima"
+                   HorizontalOptions="FillAndExpand"
+                   BorderColor="#EAEAEA"
+                   BorderWidth="0.5"/>
+               <Button
+                   Text="Option 3"
+                   TextColor="{StaticResource PrimaryAccentColour}"
+                   BackgroundColor="Transparent"
+                   HeightRequest="40"
+                   FontFamily="Proxima"
+                   HorizontalOptions="FillAndExpand" />
+           </StackLayout>
+        </yummy:PancakeView>
+        
+            
+        <Button
+            Text="Cancel"
+            TextColor="Red"
+            BackgroundColor="White"
+            CornerRadius="5"
+            HeightRequest="40"
+            FontFamily="Proxima"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End"
+            Margin="0, 0, 0, 5"
+            Clicked="Button_OnClicked"/>
+    </StackLayout>
+</xct:Popup>
