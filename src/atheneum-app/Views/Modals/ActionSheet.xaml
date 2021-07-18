@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<xct:Popup
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    x:Class="atheneum_app.Views.Modals.ActionSheet"
+    Color="Transparent"
+    BackgroundColor="Transparent">
+    <xct:Popup.Resources>
+        <Style x:Key="MainFrmStyle" TargetType="yummy:PancakeView">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource LightColour}" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0, 0, 0, 10" />
+        </Style>
+
+        <Style x:Key="OptionBtnStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryAccentColour}" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="TextTransform" Value="Lowercase" />
+        </Style>
+
+        <Style x:Key="CancelBtnStyle" BasedOn="{StaticResource OptionBtnStyle}" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource LightColour}" />
+            <Setter Property="TextColor" Value="Red" />
+            <Setter Property="VerticalOptions" Value="End" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Margin" Value="0, 0, 0, 10" />
+        </Style>
+    </xct:Popup.Resources>
+    <StackLayout
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand">
+        <yummy:PancakeView
+            Style="{StaticResource MainFrmStyle}">
+            <StackLayout>
+                <Button
+                    Text="Scan Barcode"
+                    Style="{StaticResource OptionBtnStyle}"
+                    Clicked="Scan" />
+                <Button
+                    Text="Enter ISBN"
+                    BorderWidth="0.5"
+                    HeightRequest="42"
+                    BorderColor="#EAEAEA"
+                    Style="{StaticResource OptionBtnStyle}"
+                    Clicked="Isbn" />
+                <Button
+                    Text="Manual Entry"
+                    Style="{StaticResource OptionBtnStyle}"
+                    Clicked="Manual" />
+            </StackLayout>
+        </yummy:PancakeView>
+
+
+        <Button
+            Text="Cancel"
+            Style="{StaticResource CancelBtnStyle}"
+            Clicked="Cancel" />
+    </StackLayout>
+</xct:Popup>
