@@ -209,9 +209,17 @@
         </Style>
 
         <Style x:Key="ModalStyle" TargetType="xct:Popup">
-            <Setter Property="Size" Value="350, 355" />
+            <Setter Property="Size" Value="350, 360" />
             <Setter Property="Color" Value="Transparent" />
             <Setter Property="BackgroundColor" Value="Transparent" />
+        </Style>
+
+        <Style x:Key="PaddingBoxStyle" TargetType="BoxView">
+            <Setter Property="Opacity" Value="0" />
+            <Setter Property="Color" Value="Transparent" />
+            <Setter Property="HeightRequest" Value="60" />
+            <Setter Property="InputTransparent" Value="True" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         </Style>
     </Application.Resources>
 </Application>

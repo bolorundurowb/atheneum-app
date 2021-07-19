@@ -86,13 +86,7 @@
                 </CollectionView>
             </RefreshView>
 
-            <BoxView
-                Opacity="0"
-                Color="Black"
-                HeightRequest="80"
-                InputTransparent="True"
-                VerticalOptions="Start"
-                HorizontalOptions="FillAndExpand" />
+            <BoxView Style="{StaticResource PaddingBoxStyle}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>

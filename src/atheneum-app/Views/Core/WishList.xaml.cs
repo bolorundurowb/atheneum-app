@@ -69,7 +69,6 @@ namespace atheneum_app.Views.Core
 
             if (result == null)
             {
-                ToastService.Info("Modal dismissed.");
                 return;
             }
 

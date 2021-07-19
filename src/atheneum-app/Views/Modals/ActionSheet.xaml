@@ -35,34 +35,55 @@
             <Setter Property="Margin" Value="0, 0, 0, 10" />
         </Style>
     </xct:Popup.Resources>
-    <StackLayout
+    <Grid
+        Padding="10"
+        HorizontalOptions="FillAndExpand"
         VerticalOptions="FillAndExpand"
-        HorizontalOptions="FillAndExpand">
-        <yummy:PancakeView
-            Style="{StaticResource MainFrmStyle}">
-            <StackLayout>
-                <Button
-                    Text="Scan Barcode"
-                    Style="{StaticResource OptionBtnStyle}"
-                    Clicked="Scan" />
-                <Button
-                    Text="Enter ISBN"
-                    BorderWidth="0.5"
-                    HeightRequest="42"
-                    BorderColor="#EAEAEA"
-                    Style="{StaticResource OptionBtnStyle}"
-                    Clicked="Isbn" />
-                <Button
-                    Text="Manual Entry"
-                    Style="{StaticResource OptionBtnStyle}"
-                    Clicked="Manual" />
-            </StackLayout>
-        </yummy:PancakeView>
+        BackgroundColor="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout
+            Grid.Row="0"
+            Orientation="Vertical"
+            VerticalOptions="FillAndExpand" />
+
+        <StackLayout
+            Grid.Row="1"
+            Orientation="Vertical"
+            VerticalOptions="Fill"
+            HorizontalOptions="FillAndExpand">
+            <yummy:PancakeView
+                Style="{StaticResource MainFrmStyle}">
+                <StackLayout>
+                    <Button
+                        Text="Scan Barcode"
+                        Style="{StaticResource OptionBtnStyle}"
+                        Clicked="Scan" />
+                    <Button
+                        Text="Enter ISBN"
+                        BorderWidth="0.5"
+                        HeightRequest="42"
+                        BorderColor="#EAEAEA"
+                        Style="{StaticResource OptionBtnStyle}"
+                        Clicked="Isbn" />
+                    <Button
+                        Text="Manual Entry"
+                        Style="{StaticResource OptionBtnStyle}"
+                        Clicked="Manual" />
+                </StackLayout>
+            </yummy:PancakeView>
 
 
-        <Button
-            Text="Cancel"
-            Style="{StaticResource CancelBtnStyle}"
-            Clicked="Cancel" />
-    </StackLayout>
+            <Button
+                Text="Cancel"
+                Style="{StaticResource CancelBtnStyle}"
+                Clicked="Cancel" />
+        </StackLayout>
+    </Grid>
 </xct:Popup>
