@@ -166,13 +166,7 @@
                         IsVisible="False"
                         Style="{StaticResource SlimPrgStyle}" />
 
-                    <BoxView
-                        Opacity="0"
-                        Color="Black"
-                        HeightRequest="80"
-                        InputTransparent="True"
-                        VerticalOptions="Start"
-                        HorizontalOptions="FillAndExpand" />
+                    <BoxView Style="{StaticResource PaddingBoxStyle}" />
                 </StackLayout>
             </ScrollView>
         </StackLayout>

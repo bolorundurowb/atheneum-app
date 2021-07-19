@@ -23,17 +23,18 @@
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         </Style>
 
-        <Style x:Key="SectionStyle"  TargetType="Frame">
+        <Style x:Key="SectionStyle" TargetType="Frame">
             <Setter Property="CornerRadius" Value="10" />
             <Setter Property="Padding" Value="10" />
             <Setter Property="HasShadow" Value="False" />
             <Setter Property="HeightRequest" Value="165" />
             <Setter Property="Margin" Value="0, 5, 0, 5" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource DarkFrameColour}, Light={StaticResource LightFrameColour}}" />
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Dark={StaticResource DarkFrameColour}, Light={StaticResource LightFrameColour}}" />
         </Style>
 
-        <Style x:Key="HomeLstStyle"  TargetType="CollectionView">
+        <Style x:Key="HomeLstStyle" TargetType="CollectionView">
             <Setter Property="SelectionMode" Value="None" />
             <Setter Property="ItemsLayout" Value="HorizontalList" />
             <Setter Property="Margin" Value="0, 5, 0, 5" />
@@ -41,7 +42,7 @@
             <Setter Property="VerticalOptions" Value="CenterAndExpand" />
         </Style>
 
-        <Style x:Key="TopNameStyle"  TargetType="Label">
+        <Style x:Key="TopNameStyle" TargetType="Label">
             <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="FontSize" Value="17" />
             <Setter Property="MaxLines" Value="2" />
@@ -51,7 +52,7 @@
             <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
         </Style>
 
-        <Style x:Key="TopNumStyle"  TargetType="Label">
+        <Style x:Key="TopNumStyle" TargetType="Label">
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="FontSize" Value="28" />
             <Setter Property="MaxLines" Value="2" />
@@ -85,165 +86,159 @@
                 <StackLayout
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="FillAndExpand">
-                        <Frame
-                            HeightRequest="285"
-                            Style="{StaticResource SectionStyle}">
-                            <StackLayout>
-                                <Label
-                                    Text="Recently Added"
-                                    Style="{StaticResource SectionHdrStyle}" />
-                                
-                                <Label
-                                    x:Name="lblNoRecentBooks"
-                                    Text="You have no books recently added to your library."
-                                    Style="{StaticResource NoItemsLblStyle}" />
+                    <Frame
+                        HeightRequest="285"
+                        Style="{StaticResource SectionStyle}">
+                        <StackLayout>
+                            <Label
+                                Text="Recently Added"
+                                Style="{StaticResource SectionHdrStyle}" />
 
-                                <CollectionView
-                                    x:Name="lstRecentBooks"
-                                    SelectionMode="Single"
-                                    Style="{StaticResource HomeLstStyle}">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackLayout
-                                                Padding="10"
-                                                HeightRequest="235"
-                                                WidthRequest="120"
-                                                BackgroundColor="Transparent">
-                                                <VisualStateManager.VisualStateGroups>
-                                                    <VisualStateGroup Name="CommonStates">
-                                                        <VisualState Name="Normal" />
-                                                        <VisualState Name="Selected">
-                                                            <VisualState.Setters>
-                                                                <Setter Property="BackgroundColor" Value="Transparent" />
-                                                            </VisualState.Setters>
-                                                        </VisualState>
-                                                    </VisualStateGroup>
-                                                </VisualStateManager.VisualStateGroups>
+                            <Label
+                                x:Name="lblNoRecentBooks"
+                                Text="You have no books recently added to your library."
+                                Style="{StaticResource NoItemsLblStyle}" />
+
+                            <CollectionView
+                                x:Name="lstRecentBooks"
+                                SelectionMode="Single"
+                                Style="{StaticResource HomeLstStyle}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout
+                                            Padding="10"
+                                            HeightRequest="235"
+                                            WidthRequest="120"
+                                            BackgroundColor="Transparent">
+                                            <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup Name="CommonStates">
+                                                    <VisualState Name="Normal" />
+                                                    <VisualState Name="Selected">
+                                                        <VisualState.Setters>
+                                                            <Setter Property="BackgroundColor" Value="Transparent" />
+                                                        </VisualState.Setters>
+                                                    </VisualState>
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                            <StackLayout>
+                                                <yummy:PancakeView
+                                                    Padding="0"
+                                                    IsClippedToBounds="True"
+                                                    CornerRadius="5">
+                                                    <ff:CachedImage
+                                                        HeightRequest="160"
+                                                        WidthRequest="100"
+                                                        DownsampleToViewSize="True"
+                                                        Aspect="AspectFill"
+                                                        RetryCount="1"
+                                                        RetryDelay="1000"
+                                                        Source="{Binding CoverArt}" />
+                                                </yummy:PancakeView>
+                                                <Label
+                                                    Text="{Binding Title}"
+                                                    Style="{StaticResource BookTitleLblStyle}" />
+                                                <Label
+                                                    Text="{Binding PrimaryAuthorName}"
+                                                    Style="{StaticResource BookAuthorLblStyle}" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame
+                        Style="{StaticResource SectionStyle}">
+                        <StackLayout>
+                            <Label
+                                Text="Top Authors"
+                                Style="{StaticResource SectionHdrStyle}" />
+
+                            <Label
+                                x:Name="lblNoAuthors"
+                                Text="You have no authors. They'll show up when you add books to your library."
+                                Style="{StaticResource NoItemsLblStyle}" />
+
+                            <CollectionView
+                                x:Name="lstTopAuthors"
+                                Style="{StaticResource HomeLstStyle}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout
+                                            Padding="10">
+                                            <Frame
+                                                Padding="0"
+                                                CornerRadius="5"
+                                                HeightRequest="120"
+                                                WidthRequest="150"
+                                                HasShadow="False"
+                                                BorderColor="{StaticResource DarkSecondaryAccentColour}"
+                                                BackgroundColor="{StaticResource SecondaryAccentColour}">
                                                 <StackLayout>
-                                                    <yummy:PancakeView
-                                                        Padding="0"
-                                                        IsClippedToBounds="True"
-                                                        CornerRadius="5">
-                                                        <ff:CachedImage
-                                                            HeightRequest="160"
-                                                            WidthRequest="100"
-                                                            DownsampleToViewSize="True"
-                                                            Aspect="AspectFill"
-                                                            RetryCount="1"
-                                                            RetryDelay="1000"
-                                                            Source="{Binding CoverArt}" />
-                                                    </yummy:PancakeView>
                                                     <Label
-                                                        Text="{Binding Title}"
-                                                        Style="{StaticResource BookTitleLblStyle}" />
+                                                        Text="{Binding Author.Name}"
+                                                        Style="{StaticResource TopNameStyle}" />
                                                     <Label
-                                                        Text="{Binding PrimaryAuthorName}"
-                                                        Style="{StaticResource BookAuthorLblStyle}" />
+                                                        Text="{Binding NumOfBooks}"
+                                                        Style="{StaticResource TopNumStyle}" />
                                                 </StackLayout>
-                                            </StackLayout>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </StackLayout>
-                        </Frame>
-                    
-                        <Frame
-                            Style="{StaticResource SectionStyle}">
-                            <StackLayout>
-                                <Label
-                                    Text="Top Authors"
-                                    Style="{StaticResource SectionHdrStyle}" />
-                                
-                                <Label
-                                    x:Name="lblNoAuthors"
-                                    Text="You have no authors. They'll show up when you add books to your library."
-                                    Style="{StaticResource NoItemsLblStyle}" />
+                                            </Frame>
 
-                                <CollectionView
-                                    x:Name="lstTopAuthors"
-                                    Style="{StaticResource HomeLstStyle}">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackLayout
-                                                Padding="10">
-                                                    <Frame
-                                                        Padding="0"
-                                                        CornerRadius="5"
-                                                        HeightRequest="120"
-                                                        WidthRequest="150"
-                                                        HasShadow="False"
-                                                        BorderColor="{StaticResource DarkSecondaryAccentColour}"
-                                                        BackgroundColor="{StaticResource SecondaryAccentColour}">
-                                                        <StackLayout>
-                                                            <Label
-                                                                Text="{Binding Author.Name}"
-                                                                Style="{StaticResource TopNameStyle}" />
-                                                            <Label
-                                                                Text="{Binding NumOfBooks}"
-                                                                Style="{StaticResource TopNumStyle}" />
-                                                        </StackLayout>
-                                                    </Frame>
-                                                    
-                                            </StackLayout>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </StackLayout>
-                        </Frame>
-                    
-                        <Frame
-                            Style="{StaticResource SectionStyle}">
-                            <StackLayout>
-                                <Label
-                                    Text="Top Publishers"
-                                    Style="{StaticResource SectionHdrStyle}" />
-                                
-                                <Label
-                                    x:Name="lblNoPublishers"
-                                    Text="You have no publishers. They'll show up when you add books to your library."
-                                    Style="{StaticResource NoItemsLblStyle}" />
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </Frame>
 
-                                <CollectionView
-                                    x:Name="lstTopPublishers"
-                                    Style="{StaticResource HomeLstStyle}">
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackLayout
-                                                Padding="10">
-                                                    <Frame
-                                                        Padding="0"
-                                                        CornerRadius="5"
-                                                        HeightRequest="120"
-                                                        WidthRequest="150"
-                                                        HasShadow="False"
-                                                        BorderColor="{StaticResource DarkSecondaryAccentColour}"
-                                                        BackgroundColor="{StaticResource SecondaryAccentColour}">
-                                                        <StackLayout>
-                                                            <Label
-                                                                Text="{Binding Publisher.Name}"
-                                                                Style="{StaticResource TopNameStyle}" />
-                                                            <Label
-                                                                Text="{Binding NumOfBooks}"
-                                                                Style="{StaticResource TopNumStyle}" />
-                                                        </StackLayout>
-                                                    </Frame>
-                                                    
-                                            </StackLayout>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </StackLayout>
-                        </Frame>
+                    <Frame
+                        Style="{StaticResource SectionStyle}">
+                        <StackLayout>
+                            <Label
+                                Text="Top Publishers"
+                                Style="{StaticResource SectionHdrStyle}" />
+
+                            <Label
+                                x:Name="lblNoPublishers"
+                                Text="You have no publishers. They'll show up when you add books to your library."
+                                Style="{StaticResource NoItemsLblStyle}" />
+
+                            <CollectionView
+                                x:Name="lstTopPublishers"
+                                Style="{StaticResource HomeLstStyle}">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout
+                                            Padding="10">
+                                            <Frame
+                                                Padding="0"
+                                                CornerRadius="5"
+                                                HeightRequest="120"
+                                                WidthRequest="150"
+                                                HasShadow="False"
+                                                BorderColor="{StaticResource DarkSecondaryAccentColour}"
+                                                BackgroundColor="{StaticResource SecondaryAccentColour}">
+                                                <StackLayout>
+                                                    <Label
+                                                        Text="{Binding Publisher.Name}"
+                                                        Style="{StaticResource TopNameStyle}" />
+                                                    <Label
+                                                        Text="{Binding NumOfBooks}"
+                                                        Style="{StaticResource TopNumStyle}" />
+                                                </StackLayout>
+                                            </Frame>
+
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </StackLayout>
+                    </Frame>
                 </StackLayout>
             </ScrollView>
 
-            <BoxView
-                Opacity="0"
-                Color="Black"
-                HeightRequest="80"
-                InputTransparent="True"
-                VerticalOptions="Start"
-                HorizontalOptions="FillAndExpand" />
+            <BoxView Style="{StaticResource PaddingBoxStyle}" />
         </StackLayout>
     </ContentView.Content>
 </ContentView>
