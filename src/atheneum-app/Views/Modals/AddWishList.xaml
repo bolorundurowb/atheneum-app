@@ -8,68 +8,58 @@
     Style="{StaticResource ModalStyle}">
     <Frame
         Style="{StaticResource ModalFrmStyle}">
-        <StackLayout
-            Orientation="Vertical">
-            <StackLayout
-                Orientation="Vertical"
-                VerticalOptions="StartAndExpand" />
+        <StackLayout>
+            <Label
+                Text="Add To Wish List"
+                Style="{StaticResource ModalHdrStyle}" />
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtTitle"
+                    Placeholder="book title"
+                    Keyboard="Text"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtAuthor"
+                    Placeholder="author name"
+                    Keyboard="Text"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
+            <Frame
+                Style="{StaticResource EntryFrameStyle}">
+                <Entry
+                    x:Name="txtIsbn"
+                    Placeholder="isbn"
+                    Keyboard="Text"
+                    IsTextPredictionEnabled="True"
+                    Style="{StaticResource EntryStyle}" />
+            </Frame>
 
             <StackLayout
-                Orientation="Vertical"
-                VerticalOptions="End"
-                HorizontalOptions="FillAndExpand">
-                <Label
-                    Text="Add To Wish List"
-                    Style="{StaticResource ModalHdrStyle}" />
-                <Frame
-                    Style="{StaticResource EntryFrameStyle}">
-                    <Entry
-                        x:Name="txtTitle"
-                        Placeholder="book title"
-                        Keyboard="Text"
-                        IsTextPredictionEnabled="True"
-                        Style="{StaticResource EntryStyle}" />
-                </Frame>
-                <Frame
-                    Style="{StaticResource EntryFrameStyle}">
-                    <Entry
-                        x:Name="txtAuthor"
-                        Placeholder="author name"
-                        Keyboard="Text"
-                        IsTextPredictionEnabled="True"
-                        Style="{StaticResource EntryStyle}" />
-                </Frame>
-                <Frame
-                    Style="{StaticResource EntryFrameStyle}">
-                    <Entry
-                        x:Name="txtIsbn"
-                        Placeholder="isbn"
-                        Keyboard="Text"
-                        IsTextPredictionEnabled="True"
-                        Style="{StaticResource EntryStyle}" />
-                </Frame>
-
-                <StackLayout
-                    x:Name="stkBtns"
-                    Orientation="Horizontal">
-                    <Button
-                        Text="Cancel"
-                        Margin="0, 12, 5, 0"
-                        Style="{StaticResource BaseInvBtnStyle}"
-                        Clicked="Cancel" />
-
-                    <Button
-                        Text="Add To List"
-                        Margin="5, 12, 0, 0"
-                        Style="{StaticResource BaseBtnStyle}"
-                        Clicked="Add" />
-                </StackLayout>
-
-                <ActivityIndicator
-                    x:Name="prgAdding"
-                    IsVisible="False"
-                    Style="{StaticResource BasePrgStyle}" />
+                x:Name="stkBtns"
+                Orientation="Horizontal">
+                <Button
+                    Text="Cancel"
+                    Margin="0, 12, 5, 0"
+                    Style="{StaticResource BaseInvBtnStyle}"
+                    Clicked="Cancel"/>
+                
+                <Button
+                    Text="Add To List"
+                    Margin="5, 12, 0, 0"
+                    Style="{StaticResource BaseBtnStyle}"
+                    Clicked="Add"/>
             </StackLayout>
+
+            <ActivityIndicator
+                x:Name="prgAdding"
+                IsVisible="False"
+                Style="{StaticResource BasePrgStyle}" />
         </StackLayout>
     </Frame>
 </xct:Popup>
