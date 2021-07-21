@@ -13,6 +13,7 @@
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
             <StackLayout
+                Orientation="Horizontal"
                 HorizontalOptions="FillAndExpand">
                 <Label
                     Text="Library"
@@ -21,10 +22,10 @@
                 
                 <Label
                     x:Name="lblBookCount"
-                    Text="0 books"
-                    FontSize="14"
+                    Text="no books"
+                    FontSize="16"
                     FontFamily="Proxima"
-                    VerticalOptions="Center"
+                    Margin="0, 7, 0, 0"
                     HorizontalOptions="End"
                     TextColor="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
             </StackLayout>

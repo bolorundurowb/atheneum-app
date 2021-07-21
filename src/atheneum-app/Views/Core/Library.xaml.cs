@@ -59,10 +59,21 @@ namespace atheneum_app.Views.Core
                         lblNoSearchItems.IsVisible = true;
                     }
                 }
-                
+
                 // pull book count
                 var count = await _bookService.GetAllCount();
-                lblBookCount.Text = $"{count} book(s)";
+                switch (count)
+                {
+                    case 0:
+                        lblBookCount.Text = "no books";
+                        break;
+                    case 1:
+                        lblBookCount.Text = "1 book";
+                        break;
+                    default:
+                        lblBookCount.Text = $"{count} books";
+                        break;
+                }
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
