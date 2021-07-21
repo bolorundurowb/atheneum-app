@@ -19,14 +19,14 @@
                     Text="Library"
                     VerticalOptions="Center"
                     Style="{StaticResource PageHdrStyleStyle}" />
-                
+
                 <Label
                     x:Name="lblBookCount"
-                    Text="no books"
                     FontSize="16"
+                    Text="no books"
                     FontFamily="Proxima"
-                    Margin="0, 7, 0, 0"
                     HorizontalOptions="End"
+                    Margin="0, 7, 0, 0"
                     TextColor="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
             </StackLayout>
 
@@ -35,7 +35,7 @@
                 <SearchBar
                     x:Name="txtSearch"
                     Style="{StaticResource SearchStyle}"
-                    TextChanged="OnSearch"/>
+                    TextChanged="OnSearch" />
             </Frame>
 
             <Label
