@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
@@ -13,7 +14,6 @@ namespace atheneum_app.Views.Core
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentView
     {
-        private readonly TokenService _tokenService;
         private readonly BookService _bookService;
         private readonly AuthorService _authorService;
         private readonly PublisherService _publisherService;
@@ -21,22 +21,22 @@ namespace atheneum_app.Views.Core
         public Home()
         {
             InitializeComponent();
-            _tokenService = new TokenService();
             _bookService = BookService.Instance();
             _authorService = AuthorService.Instance();
             _publisherService = PublisherService.Instance();
+            
+            // set the header
+            var tokenService = new TokenService();
+            var (firstName, _) = tokenService.GetUserDetails();
+            lblName.Text = firstName?.Trim() + ".";
         }
 
         public async Task LoadData()
         {
-            // set the header
-            var (firstName, _) = _tokenService.GetUserDetails();
-            lblName.Text = firstName?.Trim() + ".";
-
             // load remote data
             const string genericErrorMessage =
                 "Sorry, an error occurred when retrieving your data. Try again later.";
-            prgLoading.IsVisible = true;
+            rfsHome.IsRefreshing = true;
 
             try
             {
@@ -94,8 +94,13 @@ namespace atheneum_app.Views.Core
             }
             finally
             {
-                prgLoading.IsVisible = false;
+                rfsHome.IsRefreshing = false;
             }
+        }
+
+        private async void Refresh(object sender, EventArgs e)
+        {
+            await LoadData();
         }
     }
 }
