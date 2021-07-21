@@ -12,10 +12,22 @@
             Orientation="Vertical"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand">
-            <Label
-                Text="Library"
-                VerticalOptions="Center"
-                Style="{StaticResource PageHdrStyleStyle}" />
+            <StackLayout
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Library"
+                    VerticalOptions="Center"
+                    Style="{StaticResource PageHdrStyleStyle}" />
+                
+                <Label
+                    x:Name="lblBookCount"
+                    Text="0 books"
+                    FontSize="14"
+                    FontFamily="Proxima"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    TextColor="{AppThemeBinding Dark={StaticResource LightColour}, Light={StaticResource DarkColour}}" />
+            </StackLayout>
 
             <Frame
                 Style="{StaticResource SearchFrameStyle}">
