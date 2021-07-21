@@ -17,8 +17,9 @@
                 Style="{StaticResource EntryFrameStyle}">
                 <Entry
                     x:Name="txtIsbn"
+                    MaxLength="13"
+                    Keyboard="Numeric"
                     Placeholder="book isbn"
-                    Keyboard="Text"
                     IsTextPredictionEnabled="True"
                     Style="{StaticResource EntryStyle}" />
             </Frame>
