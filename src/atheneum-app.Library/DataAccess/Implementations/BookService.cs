@@ -25,7 +25,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public static BookService Instance()
         {
-            return _instance ?? (_instance = new BookService());
+            return _instance ??= new BookService();
         }
 
         public Task<IEnumerable<BookViewModel>> GetFirstPage(string search)
@@ -43,6 +43,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
         public Task<IEnumerable<BookViewModel>> GetRecent()
         {
             return _bookService.GetRecent();
+        }
+
+        public Task<int> GetAllCount()
+        {
+            return _bookService.GetAllCount();
         }
 
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
