@@ -6,6 +6,7 @@ using Android.Runtime;
 using FFImageLoading.Forms.Platform;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Color = Android.Graphics.Color;
 
 namespace atheneum_app.Android
@@ -40,6 +41,9 @@ namespace atheneum_app.Android
                 var colour = new Color(colourCode, colourCode, colourCode);
                 Window?.SetNavigationBarColor(colour);
             }
+
+            Xamarin.Forms.Application.Current.On<Xamarin.Forms.PlatformConfiguration.Android>()
+                .UseWindowSoftInputModeAdjust(WindowSoftInputModeAdjust.Resize);
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions,

@@ -13,6 +13,10 @@ namespace atheneum_app.Library.DataAccess.Interfaces
         Task<IEnumerable<BookViewModel>> GetAll([AliasAs("skip")] int skip, [AliasAs("limit")] int limit,
             [AliasAs("search")] string search = "");
 
+        [Get("/books/count")]
+        [Headers("Authorization: Bearer")]
+        Task<int> GetAllCount();
+
         [Get("/books/recent")]
         [Headers("Authorization: Bearer")]
         Task<IEnumerable<BookViewModel>> GetRecent();
