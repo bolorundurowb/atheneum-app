@@ -103,7 +103,8 @@
                                 <CollectionView
                                     x:Name="lstRecentBooks"
                                     SelectionMode="Single"
-                                    Style="{StaticResource HomeLstStyle}">
+                                    Style="{StaticResource HomeLstStyle}"
+                                    SelectionChanged="BookSelected">
                                     <CollectionView.ItemTemplate>
                                         <DataTemplate>
                                             <StackLayout

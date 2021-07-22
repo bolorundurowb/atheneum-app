@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
+using atheneum_app.Views.Books;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -101,6 +102,12 @@ namespace atheneum_app.Views.Core
         private async void Refresh(object sender, EventArgs e)
         {
             await LoadData();
+        }
+
+        private async void BookSelected(object sender, SelectionChangedEventArgs e)
+        {
+            var book = lstRecentBooks.SelectedItem as BookViewModel;
+            await Navigation.PushAsync(new Details(book));
         }
     }
 }
