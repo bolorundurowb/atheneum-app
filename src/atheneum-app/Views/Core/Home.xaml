@@ -103,12 +103,13 @@
                                 <CollectionView
                                     x:Name="lstRecentBooks"
                                     SelectionMode="Single"
-                                    Style="{StaticResource HomeLstStyle}">
+                                    Style="{StaticResource HomeLstStyle}"
+                                    SelectionChanged="BookSelected">
                                     <CollectionView.ItemTemplate>
                                         <DataTemplate>
                                             <StackLayout
                                                 Padding="10"
-                                                HeightRequest="235"
+                                                HeightRequest="240"
                                                 WidthRequest="120"
                                                 BackgroundColor="Transparent">
                                                 <VisualStateManager.VisualStateGroups>
@@ -137,6 +138,7 @@
                                                     </yummy:PancakeView>
                                                     <Label
                                                         Text="{Binding Title}"
+                                                        FontSize="14"
                                                         Style="{StaticResource BookTitleLblStyle}" />
                                                     <Label
                                                         Text="{Binding PrimaryAuthorName}"

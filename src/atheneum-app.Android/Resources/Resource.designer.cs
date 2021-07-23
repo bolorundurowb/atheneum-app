@@ -6225,6 +6225,7 @@ namespace atheneum_app.Android
 			global::Xamarin.Essentials.Resource.Id.text2 = global::atheneum_app.Android.Resource.Id.text2;
 			global::Xamarin.Essentials.Resource.Id.time = global::atheneum_app.Android.Resource.Id.time;
 			global::Xamarin.Essentials.Resource.Id.title = global::atheneum_app.Android.Resource.Id.title;
+			global::Xamarin.Essentials.Resource.Id.view_tree_lifecycle_owner = global::atheneum_app.Android.Resource.Id.view_tree_lifecycle_owner;
 			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::atheneum_app.Android.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::atheneum_app.Android.Resource.Layout.browser_actions_context_menu_page;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::atheneum_app.Android.Resource.Layout.browser_actions_context_menu_row;
