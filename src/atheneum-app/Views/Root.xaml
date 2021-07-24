@@ -82,8 +82,8 @@
                 <xct:TabViewItem
                     Text="Home"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{extensions:IconSourceExtensions ic_home}"
-                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_home_dark_active}, Light={extensions:IconSourceExtensions ic_home_light_active}}"
+                    Icon="{extensions:IconSourceExtensions home}"
+                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions home_dark_active}, Light={extensions:IconSourceExtensions home_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
@@ -94,8 +94,8 @@
                 <xct:TabViewItem
                     Text="Library"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{extensions:IconSourceExtensions ic_books}"
-                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_books_dark_active}, Light={extensions:IconSourceExtensions ic_books_light_active}}"
+                    Icon="{extensions:IconSourceExtensions books}"
+                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions books_dark_active}, Light={extensions:IconSourceExtensions books_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
@@ -104,15 +104,15 @@
                 </xct:TabViewItem>
 
                 <xct:TabViewItem
-                    Icon="{extensions:IconSourceExtensions ic_add}"
+                    Icon="{extensions:IconSourceExtensions add}"
                     ControlTemplate="{StaticResource FabTabItemTemplate}"
                     TabTapped="ShowOptions"/>
 
                 <xct:TabViewItem
                     Text="WishList"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{extensions:IconSourceExtensions ic_wishlist}"
-                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_wishlist_dark_active}, Light={extensions:IconSourceExtensions ic_wishlist_light_active}}"
+                    Icon="{extensions:IconSourceExtensions wishlist}"
+                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions wishlist_dark_active}, Light={extensions:IconSourceExtensions wishlist_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
@@ -123,8 +123,8 @@
                 <xct:TabViewItem
                     Text="Profile"
                     ControlTemplate="{StaticResource TabItemTemplate}"
-                    Icon="{extensions:IconSourceExtensions ic_profile}"
-                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions ic_profile_dark_active}, Light={extensions:IconSourceExtensions ic_profile_light_active}}"
+                    Icon="{extensions:IconSourceExtensions profile}"
+                    IconSelected="{AppThemeBinding Dark={extensions:IconSourceExtensions profile_dark_active}, Light={extensions:IconSourceExtensions profile_light_active}}"
                     TextColor="{AppThemeBinding Dark={StaticResource NavbarTextColour}, Light={StaticResource NavbarTextColour}}"
                     TextColorSelected="{AppThemeBinding Dark={StaticResource DarkNavbarActiveTextColour}, Light={StaticResource LightNavbarActiveTextColour}}">
                     <xct:TabViewItem.Content>
