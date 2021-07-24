@@ -39,6 +39,14 @@
       <EmbeddedResource Include="Resources\Fonts\fasolid.otf" />
       <None Remove="Resources\Icons\ic_plus.png" />
       <None Remove="Resources\Icons\ic_barcode_scan.png" />
+      <None Remove="Resources\Images\im_authors.png" />
+      <EmbeddedResource Include="Resources\Images\im_authors.png" />
+      <None Remove="Resources\Images\im_books.png" />
+      <EmbeddedResource Include="Resources\Images\im_books.png" />
+      <None Remove="Resources\Images\im_publishers.png" />
+      <EmbeddedResource Include="Resources\Images\im_publishers.png" />
+      <None Remove="Resources\Images\im_wishlist.png" />
+      <EmbeddedResource Include="Resources\Images\im_wishlist.png" />
     </ItemGroup>
 
     <ItemGroup>
