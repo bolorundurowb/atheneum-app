@@ -54,6 +54,6 @@ namespace atheneum_app.Library.Models.View
 
         public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
 
-        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString("dd MMM yy hh:mm a") : "N/A";
+        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString("dd MMM 'yy h:mmtt") : "N/A";
     }
 }
