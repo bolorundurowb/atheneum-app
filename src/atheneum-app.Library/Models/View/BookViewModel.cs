@@ -25,7 +25,11 @@ namespace atheneum_app.Library.Models.View
 
         public int? PublishYear { get; set; }
 
+        public int? PageCount { get; set; }
+
         public bool IsAvailable { get; set; }
+        
+        public string Source { get; set; }
 
         public DateTime? CreatedAt { get; set; }
 
@@ -34,15 +38,22 @@ namespace atheneum_app.Library.Models.View
         public PublisherViewModel Publisher { get; set; }
 
         public List<BorrowingHistoryItem> BorrowingHistory { get; set; }
-
+        
+        // GENERATED FIELDS
         public string PrimaryAuthorName => Authors?.FirstOrDefault()?.Name;
 
         public string PublisherName => Publisher?.Name;
+
+        public string PublisherYearValue => PublishYear.HasValue ? PublishYear.Value.ToString() : "N/A";
+
+        public string PageCountValue => PageCount.HasValue ? PageCount.Value.ToString() : "N/A";
+
+        public string SourceValue => string.IsNullOrEmpty(Source) ?  "N/A" : Source;
 
         public string Availability => IsAvailable ? "Available" : "Lent Out";
 
         public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
 
-        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString(CultureInfo.InvariantCulture) : "N/A";
+        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString("dd MMM \\'yy h:mmtt") : "N/A";
     }
 }

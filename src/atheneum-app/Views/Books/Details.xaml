@@ -121,10 +121,30 @@
                     <StackLayout
                         Orientation="Horizontal">
                         <Label
-                            Text="Year:"
+                            Text="Publish Year:"
                             Style="{StaticResource DetailHeaderLblStyle}"/>
                         <Label
-                            Text="{Binding PublishYear}"
+                            Text="{Binding PublisherYearValue}"
+                            Style="{StaticResource DetailLblStyle}"/>
+                    </StackLayout>
+                    
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            Text="Page Count:"
+                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                        <Label
+                            Text="{Binding PageCountValue}"
+                            Style="{StaticResource DetailLblStyle}"/>
+                    </StackLayout>
+                    
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <Label
+                            Text="Source:"
+                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                        <Label
+                            Text="{Binding SourceValue}"
                             Style="{StaticResource DetailLblStyle}"/>
                     </StackLayout>
                     

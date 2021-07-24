@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="atheneum_app.Views.Core.Profile"
-    Style="{StaticResource ViewPageStyle}">
+    Padding="0, 20, 0, 20">
     <ContentView.Resources>
         <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
 
@@ -34,7 +34,8 @@
             VerticalOptions="FillAndExpand">
             <StackLayout
                 Orientation="Horizontal"
-                HorizontalOptions="FillAndExpand">
+                HorizontalOptions="FillAndExpand"
+                Padding="20, 0, 20, 0">
                 <Label
                     Text="Profile"
                     Style="{StaticResource PageHdrStyleStyle}" />
@@ -48,7 +49,8 @@
             <ScrollView
                 Orientation="Vertical"
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
+                VerticalOptions="FillAndExpand"
+                Padding="20, 0, 20, 0">
                 <StackLayout
                     Orientation="Vertical"
                     HorizontalOptions="FillAndExpand"
