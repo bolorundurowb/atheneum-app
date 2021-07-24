@@ -13,7 +13,7 @@ namespace atheneum_app.Views.Modals
     public partial class AddWishList : Popup
     {
         private readonly WishListService _wishListService;
-        
+
         public AddWishList()
         {
             InitializeComponent();
@@ -45,23 +45,21 @@ namespace atheneum_app.Views.Modals
             try
             {
                 var response = await _wishListService.Add(title, author, isbn);
-                
+
                 // notify user
                 ToastService.Success("Book successfully added to your wish list.");
-                
+
                 // send data back
                 Dismiss(response);
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
-
                 ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : genericErrorMessage);
             }
             finally

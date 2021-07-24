@@ -65,6 +65,7 @@ namespace atheneum_app.Views
                     {
                         return;
                     }
+
                     break;
                 case ActionType.ByIsbn:
                     var result = await Navigation.ShowPopupAsync(new ManualIsbn());
@@ -92,15 +93,14 @@ namespace atheneum_app.Views
             var scanner = sender as Scanner;
             var result = scanner?.ScanResult;
 
+            // try disconnecting the event handler
             if (scanner != null)
             {
-                // try disconnecting the event handler
                 scanner.Disappearing -= ScannerOnDisappearing;
             }
 
             if (string.IsNullOrEmpty(result))
             {
-                ToastService.Warn("Scan did not return a result.");
                 return;
             }
 

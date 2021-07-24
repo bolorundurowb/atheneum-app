@@ -13,7 +13,7 @@ namespace atheneum_app.Views.Modals
     public partial class ManualIsbn : Popup
     {
         private readonly BookService _bookService;
-        
+
         public ManualIsbn()
         {
             InitializeComponent();
@@ -37,24 +37,22 @@ namespace atheneum_app.Views.Modals
 
             try
             {
-                 await _bookService.AddByIsbn(isbn);
-                
+                await _bookService.AddByIsbn(isbn);
+
                 // notify user
                 ToastService.Success("Book successfully added to your library.");
-                
+
                 // send data back
                 Dismiss("");
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
-
                 ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : genericErrorMessage);
             }
             finally
