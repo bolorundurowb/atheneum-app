@@ -24,11 +24,23 @@ namespace atheneum_app.Views.Modals
         {
             const string genericErrorMessage =
                 "Sorry, an error occurred when adding the book to your library. Try again later.";
+            var title = txtTitle.Text;
+            var summary = txtSummary.Text;
             var isbn = txtIsbn.Text;
+            var publishYear = txtPublishYear.Text;
+            var authors = txtAuthors.Text;
+            var publishers = txtPublisher.Text;
+            var pageCount = txtPageCount.Text;
 
-            if (string.IsNullOrWhiteSpace(isbn))
+            if (string.IsNullOrWhiteSpace(title))
             {
-                ToastService.Error("An isbn is required.");
+                ToastService.Error("A title is required.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(summary))
+            {
+                ToastService.Error("A book summary is required.");
                 return;
             }
 
