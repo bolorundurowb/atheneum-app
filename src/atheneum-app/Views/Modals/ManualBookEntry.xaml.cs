@@ -29,7 +29,7 @@ namespace atheneum_app.Views.Modals
             var isbn = txtIsbn.Text;
             var publishYear = txtPublishYear.Text;
             var authors = txtAuthors.Text;
-            var publishers = txtPublisher.Text;
+            var publisher = txtPublisher.Text;
             var pageCount = txtPageCount.Text;
 
             if (string.IsNullOrWhiteSpace(title))
@@ -49,7 +49,7 @@ namespace atheneum_app.Views.Modals
 
             try
             {
-                 await _bookService.AddByIsbn(isbn);
+                 await _bookService.AddManual(title, summary, isbn, publishYear, authors, publisher, pageCount);
                 
                 // notify user
                 ToastService.Success("Book successfully added to your library.");
@@ -60,13 +60,11 @@ namespace atheneum_app.Views.Modals
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
-
                 ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : genericErrorMessage);
             }
             finally
