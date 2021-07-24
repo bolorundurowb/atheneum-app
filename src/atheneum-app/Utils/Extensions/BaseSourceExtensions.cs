@@ -14,6 +14,8 @@ namespace atheneum_app.Utils.Extensions
 
         public abstract string ResourcePrefix { get; }
 
+        public abstract string ResourceSuffix { get; }
+
         public string Source { get; set; }
 
         protected ImageSource GetImageSource(string value)
@@ -23,7 +25,7 @@ namespace atheneum_app.Utils.Extensions
                 return null;
             }
 
-            var resourceKey = $"atheneum_app.Resources.{ResourceFolder}.{ResourcePrefix}" + value + ".png";
+            var resourceKey = $"atheneum_app.Resources.{ResourceFolder}.{ResourcePrefix}_{value}{ResourceSuffix}";
 
             if (Cache.ContainsKey(resourceKey))
             {
