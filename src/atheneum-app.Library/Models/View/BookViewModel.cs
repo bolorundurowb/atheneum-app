@@ -25,7 +25,11 @@ namespace atheneum_app.Library.Models.View
 
         public int? PublishYear { get; set; }
 
+        public int? PageCount { get; set; }
+
         public bool IsAvailable { get; set; }
+        
+        public string Source { get; set; }
 
         public DateTime? CreatedAt { get; set; }
 
@@ -34,7 +38,8 @@ namespace atheneum_app.Library.Models.View
         public PublisherViewModel Publisher { get; set; }
 
         public List<BorrowingHistoryItem> BorrowingHistory { get; set; }
-
+        
+        // GENERATED FIELDS
         public string PrimaryAuthorName => Authors?.FirstOrDefault()?.Name;
 
         public string PublisherName => Publisher?.Name;
