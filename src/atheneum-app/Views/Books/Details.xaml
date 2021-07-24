@@ -124,7 +124,7 @@
                             Text="Publish Year:"
                             Style="{StaticResource DetailHeaderLblStyle}"/>
                         <Label
-                            Text="{Binding PublishYear}"
+                            Text="{Binding PublisherYearValue}"
                             Style="{StaticResource DetailLblStyle}"/>
                     </StackLayout>
                     
@@ -134,7 +134,7 @@
                             Text="Page Count:"
                             Style="{StaticResource DetailHeaderLblStyle}"/>
                         <Label
-                            Text="{Binding PageCount}"
+                            Text="{Binding PageCountValue}"
                             Style="{StaticResource DetailLblStyle}"/>
                     </StackLayout>
                     
@@ -144,7 +144,7 @@
                             Text="Source:"
                             Style="{StaticResource DetailHeaderLblStyle}"/>
                         <Label
-                            Text="{Binding Source}"
+                            Text="{Binding SourceValue}"
                             Style="{StaticResource DetailLblStyle}"/>
                     </StackLayout>
                     

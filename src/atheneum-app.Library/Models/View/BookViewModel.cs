@@ -44,10 +44,16 @@ namespace atheneum_app.Library.Models.View
 
         public string PublisherName => Publisher?.Name;
 
+        public string PublisherYearValue => PublishYear.HasValue ? PublishYear.Value.ToString() : "N/A";
+
+        public string PageCountValue => PageCount.HasValue ? PageCount.Value.ToString() : "N/A";
+
+        public string SourceValue => string.IsNullOrEmpty(Source) ?  "N/A" : Source;
+
         public string Availability => IsAvailable ? "Available" : "Lent Out";
 
         public string AllAuthorNames => string.Join(", ", Authors?.Select(x => x.Name) ?? Enumerable.Empty<string>());
 
-        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString(CultureInfo.InvariantCulture) : "N/A";
+        public string CreatedAtText => CreatedAt.HasValue ? CreatedAt.Value.ToString("dd MMM yy hh:mm a") : "N/A";
     }
 }
