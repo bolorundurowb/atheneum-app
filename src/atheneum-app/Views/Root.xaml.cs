@@ -60,6 +60,12 @@ namespace atheneum_app.Views
             {
                 case ActionType.Manual:
                     ToastService.Info("Feature coming soon.");
+                    var manualResult = await Navigation.ShowPopupAsync(new ManualBookEntry());
+
+                    if (manualResult == null)
+                    {
+                        return;
+                    }
                     break;
                 case ActionType.ByIsbn:
                     var result = await Navigation.ShowPopupAsync(new ManualIsbn());
