@@ -91,6 +91,10 @@
         <DependentUpon>ManualIsbn.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Update="Views\Modals\ManualBookEntry.xaml.cs">
+        <DependentUpon>ManualBookEntry.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
