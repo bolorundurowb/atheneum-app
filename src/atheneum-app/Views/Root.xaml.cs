@@ -66,6 +66,9 @@ namespace atheneum_app.Views
                         return;
                     }
 
+                    // refresh the library
+                    await pageHome.LoadData();
+                    await pageLibrary.LoadData();
                     break;
                 case ActionType.ByIsbn:
                     var result = await Navigation.ShowPopupAsync(new ManualIsbn());
@@ -76,6 +79,7 @@ namespace atheneum_app.Views
                     }
 
                     // refresh the library
+                    await pageHome.LoadData();
                     await pageLibrary.LoadData();
                     break;
                 case ActionType.ByScan:
@@ -114,6 +118,7 @@ namespace atheneum_app.Views
                 ToastService.Success("Book successfully added to your library");
 
                 // refresh the library
+                await pageHome.LoadData();
                 await pageLibrary.LoadData();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
