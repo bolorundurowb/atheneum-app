@@ -18,7 +18,7 @@
         </Style>
 
         <Style x:Key="SectionHdrStyle" BasedOn="{StaticResource BaseLblStyle}" TargetType="Label">
-            <Setter Property="FontSize" Value="22" />
+            <Setter Property="FontSize" Value="18" />
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="Margin" Value="10, 5, 0, 0" />
             <Setter Property="HorizontalOptions" Value="FillAndExpand" />
