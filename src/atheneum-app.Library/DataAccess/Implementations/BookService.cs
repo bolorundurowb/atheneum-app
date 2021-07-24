@@ -45,11 +45,6 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return _bookService.GetRecent();
         }
 
-        public Task<int> GetAllCount()
-        {
-            return _bookService.GetAllCount();
-        }
-
         public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
         {
             return _bookService.AddByIsbn(new CreateIsbnBookBindingModel
