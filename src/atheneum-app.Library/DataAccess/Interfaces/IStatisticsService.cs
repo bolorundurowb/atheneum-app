@@ -8,6 +8,6 @@ namespace atheneum_app.Library.DataAccess.Interfaces
     {
         [Get("/statistics")]
         [Headers("Authorization: Bearer")]
-        Task<StatisticsViewModel> GetAll();
+        Task<StatisticsViewModel> Get();
     }
 }
