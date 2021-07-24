@@ -59,7 +59,6 @@ namespace atheneum_app.Views
             switch (selection.Value)
             {
                 case ActionType.Manual:
-                    ToastService.Info("Feature coming soon.");
                     var manualResult = await Navigation.ShowPopupAsync(new ManualBookEntry());
 
                     if (manualResult == null)
