@@ -10,32 +10,37 @@ using Xamarin.Forms.Xaml;
 namespace atheneum_app.Views.Modals
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AddWishList : Popup
+    public partial class ManualBookEntry : Popup
     {
-        private readonly WishListService _wishListService;
-
-        public AddWishList()
+        private readonly BookService _bookService;
+        
+        public ManualBookEntry()
         {
             InitializeComponent();
-            _wishListService = WishListService.Instance();
+            _bookService = BookService.Instance();
         }
 
         protected async void Add(object sender, EventArgs e)
         {
-            const string genericErrorMessage = "Sorry, an error occurred when adding the item. Try again later.";
+            const string genericErrorMessage =
+                "Sorry, an error occurred when adding the book to your library. Try again later.";
             var title = txtTitle.Text;
-            var author = txtAuthor.Text;
+            var summary = txtSummary.Text;
             var isbn = txtIsbn.Text;
+            var publishYear = txtPublishYear.Text;
+            var authors = txtAuthors.Text;
+            var publisher = txtPublisher.Text;
+            var pageCount = txtPageCount.Text;
 
             if (string.IsNullOrWhiteSpace(title))
             {
-                ToastService.Error("A book title is required.");
+                ToastService.Error("A title is required.");
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(author))
+            if (string.IsNullOrWhiteSpace(summary))
             {
-                ToastService.Error("An author name is required.");
+                ToastService.Error("A book summary is required.");
                 return;
             }
 
@@ -44,13 +49,13 @@ namespace atheneum_app.Views.Modals
 
             try
             {
-                var response = await _wishListService.Add(title, author, isbn);
-
+                 await _bookService.AddManual(title, summary, isbn, publishYear, authors, publisher, pageCount);
+                
                 // notify user
-                ToastService.Success("Book successfully added to your wish list.");
-
+                ToastService.Success("Book successfully added to your library.");
+                
                 // send data back
-                Dismiss(response);
+                Dismiss("");
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

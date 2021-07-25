@@ -59,7 +59,16 @@ namespace atheneum_app.Views
             switch (selection.Value)
             {
                 case ActionType.Manual:
-                    ToastService.Info("Feature coming soon.");
+                    var manualResult = await Navigation.ShowPopupAsync(new ManualBookEntry());
+
+                    if (manualResult == null)
+                    {
+                        return;
+                    }
+
+                    // refresh the library
+                    await pageHome.LoadData();
+                    await pageLibrary.LoadData();
                     break;
                 case ActionType.ByIsbn:
                     var result = await Navigation.ShowPopupAsync(new ManualIsbn());
@@ -70,6 +79,7 @@ namespace atheneum_app.Views
                     }
 
                     // refresh the library
+                    await pageHome.LoadData();
                     await pageLibrary.LoadData();
                     break;
                 case ActionType.ByScan:
@@ -87,15 +97,14 @@ namespace atheneum_app.Views
             var scanner = sender as Scanner;
             var result = scanner?.ScanResult;
 
+            // try disconnecting the event handler
             if (scanner != null)
             {
-                // try disconnecting the event handler
                 scanner.Disappearing -= ScannerOnDisappearing;
             }
 
             if (string.IsNullOrEmpty(result))
             {
-                ToastService.Warn("Scan did not return a result.");
                 return;
             }
 
@@ -109,6 +118,7 @@ namespace atheneum_app.Views
                 ToastService.Success("Book successfully added to your library");
 
                 // refresh the library
+                await pageHome.LoadData();
                 await pageLibrary.LoadData();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)

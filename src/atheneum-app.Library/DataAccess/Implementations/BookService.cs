@@ -45,13 +45,39 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return _bookService.GetRecent();
         }
 
-        public Task AddByIsbn(string isbn, double? longitude = null, double? latitude = null)
+        public Task AddByIsbn(string isbn)
         {
             return _bookService.AddByIsbn(new CreateIsbnBookBindingModel
             {
+                Isbn = isbn
+            });
+        }
+
+        public Task AddManual(string title, string summary, string isbn, string publishYear, string authors,
+            string publisher, string pageCount)
+        {
+            int? publishYearValue = null;
+            int? pageCountValue = null;
+
+            if (int.TryParse(publishYear, out var publishResult))
+            {
+                publishYearValue = publishResult;
+            }
+
+            if (int.TryParse(pageCount, out var pagResult))
+            {
+                pageCountValue = pagResult;
+            }
+
+            return _bookService.AddManual(new CreateManualBookBindingModel
+            {
+                Authors = authors,
                 Isbn = isbn,
-                Longitude = longitude,
-                Latitude = latitude
+                Publisher = publisher,
+                PageCount = pageCountValue,
+                PublishYear = publishYearValue,
+                Summary = summary,
+                Title = title
             });
         }
 
