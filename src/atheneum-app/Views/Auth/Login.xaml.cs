@@ -72,13 +72,11 @@ namespace atheneum_app.Views.Auth
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
-
                 ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : genericErrorMessage);
             }
             finally
