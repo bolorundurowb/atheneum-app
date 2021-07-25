@@ -98,6 +98,7 @@
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
             <Visible>false</Visible>
         </ImageAsset>
+        <InterfaceDefinition Include="SplashScreen.storyboard" />
     </ItemGroup>
     <ItemGroup>
         <Reference Include="System" />
