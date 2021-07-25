@@ -179,7 +179,7 @@
                                             Grid.Row="0"
                                             Grid.Column="0"
                                             Grid.RowSpan="2"
-                                            Source="{extensions:ImageSourceExtensions books.png}"
+                                            Source="{extensions:ImageSourceExtensions authors.png}"
                                             Style="{StaticResource StatImgStyle}" />
 
                                         <Label
@@ -216,7 +216,7 @@
                                             Grid.Row="0"
                                             Grid.Column="0"
                                             Grid.RowSpan="2"
-                                            Source="{extensions:ImageSourceExtensions books.png}"
+                                            Source="{extensions:ImageSourceExtensions publishers.png}"
                                             Style="{StaticResource StatImgStyle}" />
 
                                         <Label
@@ -250,7 +250,7 @@
                                             Grid.Row="0"
                                             Grid.Column="0"
                                             Grid.RowSpan="2"
-                                            Source="{extensions:ImageSourceExtensions books.png}"
+                                            Source="{extensions:ImageSourceExtensions wishlist.png}"
                                             Style="{StaticResource StatImgStyle}" />
 
                                         <Label
