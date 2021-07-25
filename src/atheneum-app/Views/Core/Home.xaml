@@ -45,7 +45,7 @@
 
         <Style x:Key="TopNameStyle" TargetType="Label">
             <Setter Property="FontFamily" Value="Proxima" />
-            <Setter Property="FontSize" Value="17" />
+            <Setter Property="FontSize" Value="16" />
             <Setter Property="MaxLines" Value="2" />
             <Setter Property="Margin" Value="10, 10, 10, 0" />
             <Setter Property="HorizontalOptions" Value="StartAndExpand" />
@@ -55,7 +55,7 @@
 
         <Style x:Key="TopNumStyle" TargetType="Label">
             <Setter Property="FontFamily" Value="ProximaBold" />
-            <Setter Property="FontSize" Value="28" />
+            <Setter Property="FontSize" Value="26" />
             <Setter Property="MaxLines" Value="2" />
             <Setter Property="Margin" Value="0, 0, 10, 10" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
