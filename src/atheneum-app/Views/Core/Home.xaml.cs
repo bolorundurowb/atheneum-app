@@ -87,6 +87,10 @@ namespace atheneum_app.Views.Core
                 
                 // get the stats for the books
                 var stats = await _statisticsService.Get();
+                lblBooksCount.Text = stats.Books.ToString();
+                lblAuthorsCount.Text = stats.Authors.ToString();
+                lblPublishersCount.Text = stats.Publishers.ToString();
+                lblWishlistCount.Text = stats.WishListItems.ToString();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
