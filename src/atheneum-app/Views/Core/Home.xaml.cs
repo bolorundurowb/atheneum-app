@@ -18,6 +18,7 @@ namespace atheneum_app.Views.Core
         private readonly BookService _bookService;
         private readonly AuthorService _authorService;
         private readonly PublisherService _publisherService;
+        private readonly StatisticsService _statisticsService;
 
         public Home()
         {
@@ -25,7 +26,8 @@ namespace atheneum_app.Views.Core
             _bookService = BookService.Instance();
             _authorService = AuthorService.Instance();
             _publisherService = PublisherService.Instance();
-            
+            _statisticsService = StatisticsService.Instance();
+
             // set the header
             var tokenService = new TokenService();
             var (firstName, _) = tokenService.GetUserDetails();
@@ -82,6 +84,13 @@ namespace atheneum_app.Views.Core
                 {
                     lblNoPublishers.IsVisible = true;
                 }
+                
+                // get the stats for the books
+                var stats = await _statisticsService.Get();
+                lblBooksCount.Text = stats.Books.ToString();
+                lblAuthorsCount.Text = stats.Authors.ToString();
+                lblPublishersCount.Text = stats.Publishers.ToString();
+                lblWishlistCount.Text = stats.WishListItems.ToString();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

@@ -36,4 +36,10 @@
     <Color x:Key="NavbarTextColour">#CACACA</Color>
     <Color x:Key="LightNavbarActiveTextColour">#767676</Color>
     <Color x:Key="DarkNavbarActiveTextColour">#FAFAFA</Color>
+    
+    <!-- Stat Colours -->
+    <Color x:Key="PurpleColour">#7451A2</Color>
+    <Color x:Key="OrangeColour">#FD8B47</Color>
+    <Color x:Key="GreenColour">#3B9C77</Color>
+    <Color x:Key="BlueColour">#4269D7</Color>
 </ResourceDictionary>

@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
     x:Class="atheneum_app.Views.Core.Home"
     Padding="0, 20, 0, 20">
     <ContentView.Resources>
@@ -62,6 +63,38 @@
             <Setter Property="VerticalOptions" Value="End" />
             <Setter Property="TextColor" Value="{StaticResource DarkColour}" />
         </Style>
+
+        <Style x:Key="StatImgStyle" TargetType="Image">
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="Aspect" Value="AspectFill" />
+            <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+        </Style>
+
+        <Style x:Key="StatFrmStyle" TargetType="Frame">
+            <Setter Property="HasShadow" Value="False" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+
+        <Style x:Key="StatValueStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="FontFamily" Value="ProximaBold" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="TextColor" Value="{StaticResource LightColour}" />
+        </Style>
+
+        <Style x:Key="StatSuffixStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="TextColor" Value="{StaticResource LightColour}" />
+        </Style>
     </ContentView.Resources>
     <ContentView.Content>
         <StackLayout
@@ -90,6 +123,153 @@
                     <StackLayout
                         VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand">
+                        <StackLayout
+                            Orientation="Vertical"
+                            Margin="0, 10, 0, 10">
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Frame
+                                    BackgroundColor="{StaticResource PurpleColour}"
+                                    Style="{StaticResource StatFrmStyle}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Grid.RowSpan="2"
+                                            Source="{extensions:ImageSourceExtensions books.png}"
+                                            Style="{StaticResource StatImgStyle}" />
+
+                                        <Label
+                                            x:Name="lblBooksCount"
+                                            Grid.Column="1"
+                                            Grid.Row="0"
+                                            Text="--"
+                                            Style="{StaticResource StatValueStyle}" />
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Grid.Row="1"
+                                            Text="books"
+                                            Style="{StaticResource StatSuffixStyle}" />
+                                    </Grid>
+                                </Frame>
+                                <Frame
+                                    BackgroundColor="{StaticResource OrangeColour}"
+                                    Style="{StaticResource StatFrmStyle}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Grid.RowSpan="2"
+                                            Source="{extensions:ImageSourceExtensions authors.png}"
+                                            Style="{StaticResource StatImgStyle}" />
+
+                                        <Label
+                                            x:Name="lblAuthorsCount"
+                                            Grid.Column="1"
+                                            Grid.Row="0"
+                                            Text="--"
+                                            Style="{StaticResource StatValueStyle}" />
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Grid.Row="1"
+                                            Text="authors"
+                                            Style="{StaticResource StatSuffixStyle}" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Frame
+                                    BackgroundColor="{StaticResource GreenColour}"
+                                    Style="{StaticResource StatFrmStyle}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Grid.RowSpan="2"
+                                            Source="{extensions:ImageSourceExtensions publishers.png}"
+                                            Style="{StaticResource StatImgStyle}" />
+
+                                        <Label
+                                            x:Name="lblPublishersCount"
+                                            Grid.Column="1"
+                                            Grid.Row="0"
+                                            Text="--"
+                                            Style="{StaticResource StatValueStyle}" />
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Grid.Row="1"
+                                            Text="publishers"
+                                            Style="{StaticResource StatSuffixStyle}" />
+                                    </Grid>
+                                </Frame>
+                                <Frame
+                                    BackgroundColor="{StaticResource BlueColour}"
+                                    Style="{StaticResource StatFrmStyle}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image
+                                            Grid.Row="0"
+                                            Grid.Column="0"
+                                            Grid.RowSpan="2"
+                                            Source="{extensions:ImageSourceExtensions wishlist.png}"
+                                            Style="{StaticResource StatImgStyle}" />
+
+                                        <Label
+                                            x:Name="lblWishlistCount"
+                                            Grid.Column="1"
+                                            Grid.Row="0"
+                                            Text="--"
+                                            Style="{StaticResource StatValueStyle}" />
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Grid.Row="1"
+                                            Text="wishlist items"
+                                            Style="{StaticResource StatSuffixStyle}" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+
                         <Frame
                             HeightRequest="285"
                             Style="{StaticResource SectionStyle}">
