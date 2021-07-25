@@ -71,8 +71,9 @@
                                 <Frame
                                     Padding="0"
                                     CornerRadius="10"
-                                    HorizontalOptions="FillAndExpand"
+                                    HasShadow="False"
                                     VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand"
                                     BackgroundColor="{AppThemeBinding Dark={StaticResource DarkNavbarBackgroundColour}, Light={StaticResource LightNavbarBackgroundColour}}">
                                     <StackLayout>
                                         <yummy:PancakeView

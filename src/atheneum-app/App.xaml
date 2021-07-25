@@ -130,6 +130,7 @@
             <Setter Property="NavigationPage.BackButtonTitle" Value="" />
             <Setter Property="Padding" Value="20" />
             <Setter Property="ios:Page.PrefersStatusBarHidden" Value="True" />
+            <Setter Property="ios:Page.UseSafeArea" Value="True" />
         </Style>
 
         <Style x:Key="ViewPageStyle" TargetType="ContentView">
