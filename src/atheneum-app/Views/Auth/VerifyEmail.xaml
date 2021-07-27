@@ -43,14 +43,19 @@
                     Style="{StaticResource RequestBtnStyle}"
                     Clicked="Verify" />
 
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    IsVisible="False"
+                    Style="{StaticResource BasePrgStyle}" />
+
                 <Button
                     x:Name="btnResend"
                     Text="Resend Verification Code"
                     Style="{StaticResource BaseInvBtnStyle}"
-                    Clicked="Verify" />
+                    Clicked="ResendVerification" />
 
                 <ActivityIndicator
-                    x:Name="prgLoading"
+                    x:Name="prgResending"
                     IsVisible="False"
                     Style="{StaticResource BasePrgStyle}" />
             </StackLayout>

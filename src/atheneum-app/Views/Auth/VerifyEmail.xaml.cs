@@ -51,7 +51,6 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.VerifyEmail(verificationCode);
-                
                 TokenService.SetEmailVerified(true);
 
                 ToastService.Success(response.Message);
@@ -74,6 +73,34 @@ namespace atheneum_app.Views.Auth
             {
                 btnVerify.IsVisible = true;
                 prgLoading.IsVisible = false;
+            }
+        }
+
+        protected async void ResendVerification(object sender, EventArgs e)
+        {
+            const string errorMessage = "Sorry, an error occurred when resending your verification code.";
+            btnResend.IsVisible = false;
+            prgResending.IsVisible = true;
+
+            try
+            {
+                var response = await _authClient.ResendVerificationCode();
+                ToastService.Success(response.Message);
+            }
+            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            {
+                var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : errorMessage);
+            }
+            catch (ApiException ex)
+            {
+                var error = await ex.GetContentAsAsync<ErrorViewModel>();
+                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : errorMessage);
+            }
+            finally
+            {
+                btnResend.IsVisible = true;
+                prgResending.IsVisible = false;
             }
         }
 

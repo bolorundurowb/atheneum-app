@@ -13,7 +13,10 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         private AuthService()
         {
-            _authService = RestService.For<IAuthService>(Constants.V1BaseUrl);
+            _authService = RestService.For<IAuthService>(Constants.V1BaseUrl, new RefitSettings
+            {
+                AuthorizationHeaderValueGetter = TokenService.GetAuthToken
+            });
         }
 
         public static AuthService Instance()
@@ -69,6 +72,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
                 VerificationCode = verificationCode
             };
             return _authService.VerifyEmail(bm);
+        }
+
+        public Task<MessageViewModel> ResendVerificationCode()
+        {
+            return _authService.ResendVerificationCode();
         }
     }
 }
