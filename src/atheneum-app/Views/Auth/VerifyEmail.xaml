@@ -39,8 +39,14 @@
 
                 <Button
                     x:Name="btnVerify"
-                    Text="Verify"
+                    Text="Verify Account"
                     Style="{StaticResource RequestBtnStyle}"
+                    Clicked="Verify" />
+
+                <Button
+                    x:Name="btnResend"
+                    Text="Resend Verification Code"
+                    Style="{StaticResource BaseInvBtnStyle}"
                     Clicked="Verify" />
 
                 <ActivityIndicator

@@ -20,6 +20,11 @@ namespace atheneum_app.Library.DataAccess.Interfaces
         Task<MessageViewModel> ResetPassword([Body] ResetPasswordBindingModel payload);
 
         [Post("/auth/verify-email")]
+        [Headers("Authorization: Bearer")]
         Task<MessageViewModel> VerifyEmail([Body] VerifyEmailBindingModel payload);
+
+        [Post("/auth/resend-verification-code")]
+        [Headers("Authorization: Bearer")]
+        Task<MessageViewModel> ResendVerificationCode();
     }
 }
