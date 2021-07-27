@@ -15,19 +15,11 @@ namespace atheneum_app.Views.Auth
     public partial class VerifyEmail : ContentPage
     {
         private readonly AuthService _authClient;
-        private readonly string _emailAddress;
         
         public VerifyEmail(string emailAddress)
         {
             InitializeComponent();
-            _emailAddress = emailAddress;
             _authClient = new AuthService();
-        }
-
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            txtEmail.Text = _emailAddress;
         }
 
         protected async void Reset(object sender, EventArgs e)

@@ -53,7 +53,16 @@ namespace atheneum_app.Library.DataAccess.Implementations
                 ResetCode = resetCode,
                 Password = password
             };
-            return _authService.ResettPassword(bm);
+            return _authService.ResetPassword(bm);
+        }
+
+        public Task<MessageViewModel> VerifyEmail(string verificationCode)
+        {
+            var bm = new VerifyEmailBindingModel
+            {
+                VerificationCode = verificationCode
+            };
+            return _authService.VerifyEmail(bm);
         }
     }
 }
