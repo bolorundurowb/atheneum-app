@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using atheneum_app.Library;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
@@ -59,7 +60,7 @@ namespace atheneum_app.Views.Auth
                 Application.Current.MainPage = new NavigationPage(new Root());
                 await Navigation.PopAsync();
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : errorMessage);
@@ -87,7 +88,7 @@ namespace atheneum_app.Views.Auth
                 var response = await _authClient.ResendVerificationCode();
                 ToastService.Success(response.Message);
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : errorMessage);

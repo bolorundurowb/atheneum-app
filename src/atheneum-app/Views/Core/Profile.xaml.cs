@@ -2,6 +2,7 @@
 using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Auth;
@@ -40,7 +41,7 @@ namespace atheneum_app.Views.Core
                 var user = await _userService.GetProfile();
                 DisplayUser(user);
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
@@ -76,7 +77,7 @@ namespace atheneum_app.Views.Core
                 // notify user
                 ToastService.Success("Profile updated successfully.");
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
@@ -133,7 +134,7 @@ namespace atheneum_app.Views.Core
                 var response = await _userService.UpdatePassword(currentPassword, newPassword);
                 ToastService.Success(response.Message);
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);

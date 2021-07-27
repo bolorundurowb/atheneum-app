@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
@@ -58,7 +59,6 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.Register(fullName, email, password);
-
                 TokenService.SetUserDetails(response.FirstName, response.LastName);
                 TokenService.SetEmail(email);
                 TokenService.SetEmailVerified(response.IsEmailVerified);
@@ -69,7 +69,7 @@ namespace atheneum_app.Views.Auth
                 // send to verification page
                 await Navigation.PushAsync(new VerifyEmail());
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 

@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
@@ -46,7 +47,7 @@ namespace atheneum_app.Views.Auth
                 // go 
                 await Navigation.PushAsync(new ResetPassword(email));
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 

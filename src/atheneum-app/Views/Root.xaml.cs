@@ -2,6 +2,7 @@
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Enums;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Books;
@@ -121,7 +122,7 @@ namespace atheneum_app.Views
                 await pageHome.LoadData();
                 await pageLibrary.LoadData();
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
