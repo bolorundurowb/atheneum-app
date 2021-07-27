@@ -13,13 +13,11 @@ namespace atheneum_app.Views.Auth
     public partial class Login : ContentPage
     {
         private readonly AuthService _authClient;
-        private readonly TokenService _tokenService;
 
         public Login()
         {
             InitializeComponent();
             _authClient = new AuthService();
-            _tokenService = new TokenService();
         }
 
         protected override void OnAppearing()
@@ -27,7 +25,7 @@ namespace atheneum_app.Views.Auth
             base.OnAppearing();
 
             // if user has logged in before, help autofill
-            var email = _tokenService.GetEmail();
+            var email = TokenService.GetEmail();
 
             if (!string.IsNullOrWhiteSpace(email))
             {
@@ -59,9 +57,9 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.Login(email, password);
-
-                var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
+                TokenService.SetUserDetails(response.FirstName, response.LastName);
+                TokenService.SetEmail(response.EmailAddress);
+                await TokenService.SetAuthToken(response.AuthToken);
 
                 ToastService.Success("Logged in successfully.");
 

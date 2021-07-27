@@ -12,10 +12,9 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         public UserService()
         {
-            var tokenClient = new TokenService();
             _userService = RestService.For<IUserService>(Constants.V1BaseUrl, new RefitSettings
             {
-                AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
+                AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
         }
 

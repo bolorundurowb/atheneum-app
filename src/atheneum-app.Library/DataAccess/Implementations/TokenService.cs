@@ -5,62 +5,71 @@ using Xamarin.Essentials;
 
 namespace atheneum_app.Library.DataAccess.Implementations
 {
-    public class TokenService
+    public static class TokenService
     {
         private const string DateFormat = "yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz";
+
         private const string AuthTokenKey = "Atheneum_Token";
         private const string AuthExpiryKey = "Atheneum_Expiry";
-        private const string AuthEmailKey = "Atheneum_Email";
         private const string AuthFirstNameKey = "Atheneum_FirstName";
         private const string AuthLastNameKey = "Atheneum_LastName";
+        private const string AuthEmailKey = "Atheneum_Email";
 
-        public async Task<bool> IsLoggedIn()
+        public static async Task<bool> IsLoggedIn()
         {
-            var (token, expiresAt) = await GetAuthToken();
-            ;
+            var token = await GetAuthToken();
+            var expiresAt = await GetAuthExpiry();
+            var isLoggedIn = !string.IsNullOrWhiteSpace(token) && expiresAt > DateTime.UtcNow;
 
-            if (string.IsNullOrWhiteSpace(token))
+            // expired auth, remove credentials
+            if (!isLoggedIn)
             {
-                return false;
+                ResetAuthToken();
             }
 
-            return expiresAt > DateTime.UtcNow;
+            return isLoggedIn;
         }
 
-        public (string, string) GetUserDetails()
+        public static (string, string) GetUserDetails()
         {
             var firstName = Preferences.Get(AuthFirstNameKey, string.Empty);
             var lastName = Preferences.Get(AuthLastNameKey, string.Empty);
             return (firstName, lastName);
         }
 
-        public string GetToken()
+        public static string GetToken()
         {
             return Preferences.Get(AuthTokenKey, null);
         }
 
-        public string GetEmail()
+        public static string GetEmail()
         {
             return Preferences.Get(AuthEmailKey, null);
         }
 
-        public DateTime GetExpiry()
-        {
-            return Preferences.Get(AuthExpiryKey, DateTime.MinValue);
-        }
-
-        public static async Task<(string, DateTime)> GetAuthToken()
+        public static Task<string> GetAuthToken()
         {
             try
             {
-                var token = await SecureStorage.GetAsync(AuthTokenKey);
-                var expiryString = await SecureStorage.GetAsync(AuthExpiryKey);
-                DateTime.TryParseExact(expiryString, DateFormat, null, DateTimeStyles.AssumeUniversal, out var expiry);
-                return (token, expiry);
+                return SecureStorage.GetAsync(AuthTokenKey);
             }
             catch (Exception)
             {
-                return (null, DateTime.MinValue);
+                return Task.FromResult((string) null);
+            }
+        }
+
+        public static async Task<DateTime> GetAuthExpiry()
+        {
+            try
+            {
+                var expiryString = await SecureStorage.GetAsync(AuthExpiryKey);
+                DateTime.TryParseExact(expiryString, DateFormat, null, DateTimeStyles.AssumeUniversal, out var expiry);
+                return expiry;
+            }
+            catch (Exception)
+            {
+                return DateTime.MinValue;
             }
         }
 
@@ -77,7 +86,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
             }
         }
 
-        public void ResetAuthToken()
+        public static void ResetAuthToken()
         {
             try
             {
@@ -90,10 +99,14 @@ namespace atheneum_app.Library.DataAccess.Implementations
             }
         }
 
-        public void SetUserDetails(string firstName, string lastName, string emailAddress)
+        public static void SetUserDetails(string firstName, string lastName)
         {
             Preferences.Set(AuthFirstNameKey, firstName);
             Preferences.Set(AuthLastNameKey, lastName);
+        }
+
+        public static void SetEmail(string emailAddress)
+        {
             Preferences.Set(AuthEmailKey, emailAddress);
         }
     }

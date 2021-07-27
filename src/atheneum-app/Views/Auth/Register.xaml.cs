@@ -59,8 +59,9 @@ namespace atheneum_app.Views.Auth
             {
                 var response = await _authClient.Register(fullName, email, password);
 
-                var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
+                TokenService.SetUserDetails(response.FirstName, response.LastName);
+                TokenService.SetEmail(email);
+                await TokenService.SetAuthToken(response.AuthToken);
 
                 ToastService.Success("Account created successfully.");
 

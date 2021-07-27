@@ -19,8 +19,7 @@ namespace atheneum_app
             InitializeComponent();
 
             // determine page to navigate to
-            var tokenClient = new TokenService();
-            var isLoggedIn = tokenClient.IsLoggedIn();
+            var isLoggedIn = TokenService.IsLoggedIn().Result;
 
             var page = isLoggedIn ? (ContentPage) new Root() : new Login();
             MainPage = new NavigationPage(page);

@@ -29,8 +29,7 @@ namespace atheneum_app.Views.Core
             _statisticsService = StatisticsService.Instance();
 
             // set the header
-            var tokenService = new TokenService();
-            var (firstName, _) = tokenService.GetUserDetails();
+            var (firstName, _) = TokenService.GetUserDetails();
             lblName.Text = firstName?.Trim() + ".";
         }
 

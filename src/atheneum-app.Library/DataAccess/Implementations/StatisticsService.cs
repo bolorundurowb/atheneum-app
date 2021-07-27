@@ -12,10 +12,9 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         private StatisticsService()
         {
-            var tokenClient = new TokenService();
             _statService = RestService.For<IStatisticsService>(Constants.V1BaseUrl, new RefitSettings
             {
-                AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
+                AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
         }
 
