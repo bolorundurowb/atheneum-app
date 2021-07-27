@@ -15,7 +15,7 @@ namespace atheneum_app.Views.Auth
     public partial class VerifyEmail : ContentPage
     {
         private readonly AuthService _authClient;
-        
+
         public VerifyEmail()
         {
             InitializeComponent();
@@ -24,6 +24,7 @@ namespace atheneum_app.Views.Auth
 
         protected async void Verify(object sender, EventArgs e)
         {
+            const string errorMessage = "Sorry, an error occurred when verifying your email address. Try again later.";
             var verificationCode = txtVerificationCode.Text;
 
             if (string.IsNullOrWhiteSpace(verificationCode))
@@ -49,8 +50,10 @@ namespace atheneum_app.Views.Auth
 
             try
             {
-               var response =  await _authClient.VerifyEmail(verificationCode);
-               
+                var response = await _authClient.VerifyEmail(verificationCode);
+                
+                TokenService.SetEmailVerified(true);
+
                 ToastService.Success(response.Message);
 
                 // go back to login
@@ -60,18 +63,12 @@ namespace atheneum_app.Views.Auth
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
-                ToastService.Error(error?.Message?.Length > 0
-                    ? error.Message[0]
-                    : "Sorry, an error occurred when requesting a reset code. Try again later.");
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : errorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
-
-                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message)
-                    ? error.Message
-                    : "Sorry, an error occurred when requesting a reset code. Try again later.");
+                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : errorMessage);
             }
             finally
             {

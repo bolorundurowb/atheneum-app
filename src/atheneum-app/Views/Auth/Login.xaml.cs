@@ -59,13 +59,21 @@ namespace atheneum_app.Views.Auth
                 var response = await _authClient.Login(email, password);
                 TokenService.SetUserDetails(response.FirstName, response.LastName);
                 TokenService.SetEmail(response.EmailAddress);
+                TokenService.SetEmailVerified(response.IsEmailVerified);
                 await TokenService.SetAuthToken(response.AuthToken);
 
                 ToastService.Success("Logged in successfully.");
 
-                // send to home page
-                Navigation.InsertPageBefore(new Root(), this);
-                await Navigation.PopAsync();
+                if (response.IsEmailVerified)
+                {
+                    // send to home page
+                    Navigation.InsertPageBefore(new Root(), this);
+                    await Navigation.PopAsync();
+                }
+                else
+                {
+                    await Navigation.PushAsync(new VerifyEmail());
+                }
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

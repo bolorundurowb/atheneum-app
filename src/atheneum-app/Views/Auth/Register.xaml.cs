@@ -61,13 +61,13 @@ namespace atheneum_app.Views.Auth
 
                 TokenService.SetUserDetails(response.FirstName, response.LastName);
                 TokenService.SetEmail(email);
+                TokenService.SetEmailVerified(response.IsEmailVerified);
                 await TokenService.SetAuthToken(response.AuthToken);
 
                 ToastService.Success("Account created successfully.");
 
-                // send to home page
-                Application.Current.MainPage = new NavigationPage(new Root());
-                await Navigation.PopAsync();
+                // send to verification page
+                await Navigation.PushAsync(new VerifyEmail());
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
             {

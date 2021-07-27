@@ -14,6 +14,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
         private const string AuthFirstNameKey = "Atheneum_FirstName";
         private const string AuthLastNameKey = "Atheneum_LastName";
         private const string AuthEmailKey = "Atheneum_Email";
+        private const string AuthEmailVerifiedKey = "Atheneum_IsEmailVerified";
 
         public static async Task<bool> IsLoggedIn()
         {
@@ -45,6 +46,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
         public static string GetEmail()
         {
             return Preferences.Get(AuthEmailKey, null);
+        }
+
+        public static bool GetIsEmailVerified()
+        {
+            return Preferences.Get(AuthEmailVerifiedKey, false);
         }
 
         public static Task<string> GetAuthToken()
@@ -108,6 +114,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
         public static void SetEmail(string emailAddress)
         {
             Preferences.Set(AuthEmailKey, emailAddress);
+        }
+
+        public static void SetEmailVerified( bool isEmailVerified)
+        {
+            Preferences.Set(AuthEmailVerifiedKey, isEmailVerified);
         }
     }
 }
