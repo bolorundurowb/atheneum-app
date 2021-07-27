@@ -21,7 +21,7 @@ namespace atheneum_app.Views.Auth
         {
             InitializeComponent();
             _emailAddress = emailAddress;
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
         protected override void OnAppearing()

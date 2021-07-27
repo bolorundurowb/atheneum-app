@@ -16,64 +16,45 @@ namespace atheneum_app.Views.Auth
     {
         private readonly AuthService _authClient;
         
-        public VerifyEmail(string emailAddress)
+        public VerifyEmail()
         {
             InitializeComponent();
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
-        protected async void Reset(object sender, EventArgs e)
+        protected async void Verify(object sender, EventArgs e)
         {
-            var resetCode = txtResetCode.Text;
-            var password = txtPassword.Text;
-            var confirmPassword = txtConfirmPassword.Text;
+            var verificationCode = txtVerificationCode.Text;
 
-            if (string.IsNullOrWhiteSpace(resetCode))
+            if (string.IsNullOrWhiteSpace(verificationCode))
             {
-                ToastService.Error("A reset code is required.");
+                ToastService.Error("A verification code is required.");
                 return;
             }
 
-            if (resetCode.Length != Constants.ResetCodeLength)
+            if (verificationCode.Length != Constants.VerificationCodeLength)
             {
-                ToastService.Error($"Reset code must be {Constants.ResetCodeLength} digits long.");
+                ToastService.Error($"Verification code must be {Constants.VerificationCodeLength} digits long.");
                 return;
             }
 
-            if (!resetCode.All(char.IsDigit))
+            if (!verificationCode.All(char.IsDigit))
             {
-                ToastService.Error("Reset code can only contain digits.");
+                ToastService.Error("Verification code can only contain digits.");
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(password))
-            {
-                ToastService.Error("A password is required.");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(confirmPassword))
-            {
-                ToastService.Error("A password confirmation is required.");
-                return;
-            }
-
-            if (password != confirmPassword)
-            {
-                ToastService.Error("The password and confirmation don't match.");
-                return;
-            }
-
-            btnReset.IsVisible = false;
+            btnVerify.IsVisible = false;
             prgLoading.IsVisible = true;
 
             try
             {
-                var response = await _authClient.ResetPassword(_emailAddress, resetCode, password);
+               var response =  await _authClient.VerifyEmail(verificationCode);
+               
                 ToastService.Success(response.Message);
 
                 // go back to login
-                Navigation.InsertPageBefore(new Login(), this);
+                Application.Current.MainPage = new NavigationPage(new Root());
                 await Navigation.PopAsync();
             }
             catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
@@ -94,7 +75,7 @@ namespace atheneum_app.Views.Auth
             }
             finally
             {
-                btnReset.IsVisible = true;
+                btnVerify.IsVisible = true;
                 prgLoading.IsVisible = false;
             }
         }

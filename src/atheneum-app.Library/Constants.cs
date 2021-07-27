@@ -13,5 +13,7 @@
 #endif
 
         public const int ResetCodeLength = 6;
+        
+        public const int VerificationCodeLength = 6;
     }
 }

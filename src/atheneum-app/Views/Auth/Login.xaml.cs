@@ -17,7 +17,7 @@ namespace atheneum_app.Views.Auth
         public Login()
         {
             InitializeComponent();
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
         protected override void OnAppearing()

@@ -9,10 +9,16 @@ namespace atheneum_app.Library.DataAccess.Implementations
     public sealed class AuthService
     {
         private readonly IAuthService _authService;
+        private static AuthService _instance;
 
-        public AuthService()
+        private AuthService()
         {
             _authService = RestService.For<IAuthService>(Constants.V1BaseUrl);
+        }
+
+        public static AuthService Instance()
+        {
+            return _instance ??= new AuthService();
         }
 
         public Task<AuthViewModel> Login(string emailAddress, string password)

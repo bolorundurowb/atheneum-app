@@ -17,7 +17,7 @@ namespace atheneum_app.Views.Auth
         public ForgotPassword()
         {
             InitializeComponent();
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
         public ForgotPassword(string emailAddress) : this()

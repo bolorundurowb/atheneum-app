@@ -19,53 +19,29 @@
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="FillAndExpand">
                 <Label
-                    Text="Request a"
+                    Text="Verify your"
                     Style="{StaticResource BasePageHdrStyleStyle}" />
                 <Label
-                    Text="Password reset"
+                    Text="Email address"
                     Style="{StaticResource PageHdrStyleStyle}" />
 
                 <StackLayout>
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
-                            x:Name="txtEmail"
-                            Placeholder="email address"
-                            IsReadOnly="True"
-                            Style="{StaticResource EntryStyle}" />
-                    </Frame>
-                    <Frame
-                        Style="{StaticResource EntryFrameStyle}">
-                        <Entry
-                            x:Name="txtResetCode"
-                            Placeholder="reset code"
+                            x:Name="txtVerificationCode"
+                            Placeholder="verification code"
                             MaxLength="6"
                             Keyboard="Numeric"
-                            Style="{StaticResource EntryStyle}" />
-                    </Frame>
-                    <Frame
-                        Style="{StaticResource EntryFrameStyle}">
-                        <Entry
-                            x:Name="txtPassword"
-                            Placeholder="password"
-                            IsPassword="True"
-                            Style="{StaticResource EntryStyle}" />
-                    </Frame>
-                    <Frame
-                        Style="{StaticResource EntryFrameStyle}">
-                        <Entry
-                            x:Name="txtConfirmPassword"
-                            Placeholder="confirm password"
-                            IsPassword="True"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
                 </StackLayout>
 
                 <Button
-                    x:Name="btnReset"
-                    Text="Reset Password"
+                    x:Name="btnVerify"
+                    Text="Verify"
                     Style="{StaticResource RequestBtnStyle}"
-                    Clicked="Reset" />
+                    Clicked="Verify" />
 
                 <ActivityIndicator
                     x:Name="prgLoading"

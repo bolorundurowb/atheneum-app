@@ -17,7 +17,7 @@ namespace atheneum_app.Views.Auth
         public Register()
         {
             InitializeComponent();
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
         protected async void AttemptRegister(object sender, EventArgs e)
