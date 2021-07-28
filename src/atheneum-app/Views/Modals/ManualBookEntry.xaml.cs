@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
@@ -36,12 +35,6 @@ namespace atheneum_app.Views.Modals
             if (string.IsNullOrWhiteSpace(title))
             {
                 ToastService.Error("A title is required.");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(summary))
-            {
-                ToastService.Error("A book summary is required.");
                 return;
             }
 

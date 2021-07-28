@@ -30,10 +30,17 @@
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
-                            x:Name="txtSummary"
+                            x:Name="txtAuthors"
                             Keyboard="Text"
-                            Placeholder="book summary"
-                            IsTextPredictionEnabled="True"
+                            Placeholder="book authors (separate by commas)"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtPublisher"
+                            Keyboard="Text"
+                            Placeholder="book publisher"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
                     <Frame
@@ -58,17 +65,10 @@
                     <Frame
                         Style="{StaticResource EntryFrameStyle}">
                         <Entry
-                            x:Name="txtAuthors"
+                            x:Name="txtSummary"
                             Keyboard="Text"
-                            Placeholder="book authors (separate by commas)"
-                            Style="{StaticResource EntryStyle}" />
-                    </Frame>
-                    <Frame
-                        Style="{StaticResource EntryFrameStyle}">
-                        <Entry
-                            x:Name="txtPublisher"
-                            Keyboard="Text"
-                            Placeholder="book publisher"
+                            Placeholder="book summary"
+                            IsTextPredictionEnabled="True"
                             Style="{StaticResource EntryStyle}" />
                     </Frame>
                     <Frame

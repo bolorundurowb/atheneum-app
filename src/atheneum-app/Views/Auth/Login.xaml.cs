@@ -1,5 +1,4 @@
 using System;
-using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;

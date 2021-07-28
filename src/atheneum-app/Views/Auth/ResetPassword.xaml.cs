@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Net;
 using atheneum_app.Library;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Extensions;

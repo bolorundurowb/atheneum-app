@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
 using atheneum_app.Library.Extensions;
