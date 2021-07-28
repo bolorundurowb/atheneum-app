@@ -112,7 +112,7 @@ namespace atheneum_app.Views
             try
             {
                 // notify the user
-                ToastService.Info($"Scanned ISBN: {result}. Adding to your library...");
+                ToastService.Info($"Scanned ISBN: {result}. Adding to your library.");
 
                 // call the service
                 await _bookService.AddByIsbn(result);
