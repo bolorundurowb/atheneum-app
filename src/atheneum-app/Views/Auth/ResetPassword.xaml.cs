@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using atheneum_app.Library;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
@@ -16,12 +17,12 @@ namespace atheneum_app.Views.Auth
     {
         private readonly AuthService _authClient;
         private readonly string _emailAddress;
-        
+
         public ResetPassword(string emailAddress)
         {
             InitializeComponent();
             _emailAddress = emailAddress;
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
         protected override void OnAppearing()
@@ -32,6 +33,7 @@ namespace atheneum_app.Views.Auth
 
         protected async void Reset(object sender, EventArgs e)
         {
+            const string errorMessage = "Sorry, an error occurred when requesting a reset code. Try again later.";
             var resetCode = txtResetCode.Text;
             var password = txtPassword.Text;
             var confirmPassword = txtConfirmPassword.Text;
@@ -84,21 +86,15 @@ namespace atheneum_app.Views.Auth
                 Navigation.InsertPageBefore(new Login(), this);
                 await Navigation.PopAsync();
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
-
-                ToastService.Error(error?.Message?.Length > 0
-                    ? error.Message[0]
-                    : "Sorry, an error occurred when requesting a reset code. Try again later.");
+                ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : errorMessage);
             }
             catch (ApiException ex)
             {
                 var error = await ex.GetContentAsAsync<ErrorViewModel>();
-
-                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message)
-                    ? error.Message
-                    : "Sorry, an error occurred when requesting a reset code. Try again later.");
+                ToastService.Error(!string.IsNullOrWhiteSpace(error?.Message) ? error.Message : errorMessage);
             }
             finally
             {

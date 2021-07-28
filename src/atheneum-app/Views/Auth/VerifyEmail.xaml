@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="atheneum_app.Views.Auth.VerifyEmail"
+    Style="{StaticResource PageStyle}">
+    <ContentPage.Resources>
+        <Style x:Key="RequestBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Style="{StaticResource BackBtnStyle}"
+                Clicked="GoBack" />
+
+            <StackLayout
+                Margin="0, -20, 0, 0"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Verify your"
+                    Style="{StaticResource BasePageHdrStyleStyle}" />
+                <Label
+                    Text="Email address"
+                    Style="{StaticResource PageHdrStyleStyle}" />
+
+                <StackLayout>
+                    <Frame
+                        Style="{StaticResource EntryFrameStyle}">
+                        <Entry
+                            x:Name="txtVerificationCode"
+                            Placeholder="verification code"
+                            MaxLength="6"
+                            Keyboard="Numeric"
+                            Style="{StaticResource EntryStyle}" />
+                    </Frame>
+                </StackLayout>
+
+                <Button
+                    x:Name="btnVerify"
+                    Text="Verify Account"
+                    Style="{StaticResource RequestBtnStyle}"
+                    Clicked="Verify" />
+
+                <ActivityIndicator
+                    x:Name="prgLoading"
+                    IsVisible="False"
+                    Style="{StaticResource BasePrgStyle}" />
+
+                <Button
+                    x:Name="btnResend"
+                    Text="Resend Verification Code"
+                    Style="{StaticResource BaseInvBtnStyle}"
+                    Clicked="ResendVerification" />
+
+                <ActivityIndicator
+                    x:Name="prgResending"
+                    IsVisible="False"
+                    Style="{StaticResource BasePrgStyle}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

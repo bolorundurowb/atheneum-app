@@ -8,8 +8,6 @@
     x:Class="atheneum_app.App">
     <Application.Resources>
         <ResourceDictionary Source="Resources/Styles/Colours.xaml" />
-        <!-- <ResourceDictionary Source="Resources/Styles/Buttons.xaml" /> -->
-        <!-- <ResourceDictionary Source="Resources/Styles/Labels.xaml" /> -->
 
         <Style x:Key="BaseBtnStyle" TargetType="Button">
             <Setter Property="TextColor"

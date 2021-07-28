@@ -3,6 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Books;
@@ -29,8 +30,7 @@ namespace atheneum_app.Views.Core
             _statisticsService = StatisticsService.Instance();
 
             // set the header
-            var tokenService = new TokenService();
-            var (firstName, _) = tokenService.GetUserDetails();
+            var (firstName, _) = TokenService.GetUserDetails();
             lblName.Text = firstName?.Trim() + ".";
         }
 
@@ -92,7 +92,7 @@ namespace atheneum_app.Views.Core
                 lblPublishersCount.Text = stats.Publishers.ToString();
                 lblWishlistCount.Text = stats.WishListItems.ToString();
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);

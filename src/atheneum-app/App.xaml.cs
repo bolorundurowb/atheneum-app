@@ -19,11 +19,27 @@ namespace atheneum_app
             InitializeComponent();
 
             // determine page to navigate to
-            var tokenClient = new TokenService();
-            var isLoggedIn = tokenClient.IsLoggedIn();
+            var isLoggedIn = TokenService.IsLoggedIn().Result;
 
-            var page = isLoggedIn ? (ContentPage) new Root() : new Login();
-            MainPage = new NavigationPage(page);
+            ContentPage mainPage;
+
+            if (isLoggedIn)
+            {
+                if (TokenService.GetIsEmailVerified())
+                {
+                    mainPage = new Root();
+                }
+                else
+                {
+                    mainPage = new VerifyEmail();
+                }
+            }
+            else
+            {
+                mainPage = new Login();
+            }
+
+            MainPage = new NavigationPage(mainPage);
         }
 
         protected override void OnStart()

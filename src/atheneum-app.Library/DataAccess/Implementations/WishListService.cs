@@ -14,10 +14,9 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         private WishListService()
         {
-            var tokenClient = new TokenService();
             _wishListService = RestService.For<IWishListService>(Constants.V1BaseUrl, new RefitSettings
             {
-                AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
+                AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
         }
 

@@ -1,80 +1,124 @@
 using System;
+using System.Globalization;
+using System.Threading.Tasks;
 using Xamarin.Essentials;
 
 namespace atheneum_app.Library.DataAccess.Implementations
 {
-    public class TokenService
+    public static class TokenService
     {
+        private const string DateFormat = "yyyy-MM-ddTHH\\:mm\\:ss.fffffffzzz";
+
         private const string AuthTokenKey = "Atheneum_Token";
         private const string AuthExpiryKey = "Atheneum_Expiry";
-        private const string AuthLoggedInAtKey = "Atheneum_LoggedInAt";
-        private const string AuthEmailKey = "Atheneum_Email";
         private const string AuthFirstNameKey = "Atheneum_FirstName";
         private const string AuthLastNameKey = "Atheneum_LastName";
+        private const string AuthEmailKey = "Atheneum_Email";
+        private const string AuthEmailVerifiedKey = "Atheneum_IsEmailVerified";
 
-        public void Logout()
+        public static async Task<bool> IsLoggedIn()
         {
-            Preferences.Remove(AuthTokenKey);
-            Preferences.Remove(AuthExpiryKey);
-            Preferences.Remove(AuthLoggedInAtKey);
-        }
+            var token = await GetAuthToken();
+            var expiresAt = await GetAuthExpiry();
+            var isLoggedIn = !string.IsNullOrWhiteSpace(token) && expiresAt > DateTime.UtcNow;
 
-        public bool IsLoggedIn()
-        {
-            var token = GetToken();
-            var expiresAt = Preferences.Get(AuthExpiryKey, DateTime.MinValue);
-
-            if (string.IsNullOrWhiteSpace(token))
+            // expired auth, remove credentials
+            if (!isLoggedIn)
             {
-                return false;
+                ResetAuthToken();
             }
 
-            return expiresAt > DateTime.UtcNow;
+            return isLoggedIn;
         }
 
-        public (string, string) GetUserDetails()
+        public static (string, string) GetUserDetails()
         {
             var firstName = Preferences.Get(AuthFirstNameKey, string.Empty);
             var lastName = Preferences.Get(AuthLastNameKey, string.Empty);
             return (firstName, lastName);
         }
 
-        public string GetToken()
+        public static string GetToken()
         {
             return Preferences.Get(AuthTokenKey, null);
         }
 
-        public string GetEmail()
+        public static string GetEmail()
         {
             return Preferences.Get(AuthEmailKey, null);
         }
 
-        public DateTime GetExpiry()
+        public static bool GetIsEmailVerified()
         {
-            return Preferences.Get(AuthExpiryKey, DateTime.MinValue);
+            return Preferences.Get(AuthEmailVerifiedKey, false);
         }
 
-        public DateTime GetLogin()
+        public static Task<string> GetAuthToken()
         {
-            return Preferences.Get(AuthLoggedInAtKey, DateTime.MinValue);
+            try
+            {
+                return SecureStorage.GetAsync(AuthTokenKey);
+            }
+            catch (Exception)
+            {
+                return Task.FromResult((string) null);
+            }
         }
 
-        public void SetAuth(string firstName, string lastName, string emailAddress, string token)
+        public static async Task<DateTime> GetAuthExpiry()
         {
-            var expiresAt = DateTime.UtcNow.AddDays(7);
-
-            Preferences.Set(AuthEmailKey, emailAddress);
-            Preferences.Set(AuthTokenKey, token);
-            Preferences.Set(AuthExpiryKey, expiresAt);
-            Preferences.Set(AuthLoggedInAtKey, DateTime.UtcNow);
-
-            SetUserDetails(firstName, lastName);
+            try
+            {
+                var expiryString = await SecureStorage.GetAsync(AuthExpiryKey);
+                DateTime.TryParseExact(expiryString, DateFormat, null, DateTimeStyles.AssumeUniversal, out var expiry);
+                return expiry;
+            }
+            catch (Exception)
+            {
+                return DateTime.MinValue;
+            }
         }
 
-        public void SetUserDetails(string firstName, string lastName)
+        public static async Task SetAuthToken(string token)
+        {
+            try
+            {
+                await SecureStorage.SetAsync(AuthTokenKey, token);
+                await SecureStorage.SetAsync(AuthExpiryKey, DateTime.UtcNow.AddDays(364).ToString(DateFormat));
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
+        }
+
+        public static void ResetAuthToken()
+        {
+            try
+            {
+                SecureStorage.Remove(AuthTokenKey);
+                SecureStorage.Remove(AuthExpiryKey);
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
+        }
+
+        public static void SetUserDetails(string firstName, string lastName)
         {
             Preferences.Set(AuthFirstNameKey, firstName);
             Preferences.Set(AuthLastNameKey, lastName);
+        }
+
+        public static void SetEmail(string emailAddress)
+        {
+            Preferences.Set(AuthEmailKey, emailAddress);
+        }
+
+        public static void SetEmailVerified( bool isEmailVerified)
+        {
+            Preferences.Set(AuthEmailVerifiedKey, isEmailVerified);
         }
     }
 }

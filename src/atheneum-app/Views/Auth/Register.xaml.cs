@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
@@ -17,7 +18,7 @@ namespace atheneum_app.Views.Auth
         public Register()
         {
             InitializeComponent();
-            _authClient = new AuthService();
+            _authClient = AuthService.Instance();
         }
 
         protected async void AttemptRegister(object sender, EventArgs e)
@@ -58,17 +59,17 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.Register(fullName, email, password);
-
-                var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
+                TokenService.SetUserDetails(response.FirstName, response.LastName);
+                TokenService.SetEmail(email);
+                TokenService.SetEmailVerified(response.IsEmailVerified);
+                await TokenService.SetAuthToken(response.AuthToken);
 
                 ToastService.Success("Account created successfully.");
 
-                // send to home page
-                Application.Current.MainPage = new NavigationPage(new Root());
-                await Navigation.PopAsync();
+                // send to verification page
+                await Navigation.PushAsync(new VerifyEmail());
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
 

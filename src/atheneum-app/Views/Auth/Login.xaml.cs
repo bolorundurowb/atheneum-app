@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using Refit;
@@ -13,13 +14,11 @@ namespace atheneum_app.Views.Auth
     public partial class Login : ContentPage
     {
         private readonly AuthService _authClient;
-        private readonly TokenService _tokenService;
 
         public Login()
         {
             InitializeComponent();
-            _authClient = new AuthService();
-            _tokenService = new TokenService();
+            _authClient = AuthService.Instance();
         }
 
         protected override void OnAppearing()
@@ -27,7 +26,7 @@ namespace atheneum_app.Views.Auth
             base.OnAppearing();
 
             // if user has logged in before, help autofill
-            var email = _tokenService.GetEmail();
+            var email = TokenService.GetEmail();
 
             if (!string.IsNullOrWhiteSpace(email))
             {
@@ -59,17 +58,25 @@ namespace atheneum_app.Views.Auth
             try
             {
                 var response = await _authClient.Login(email, password);
-
-                var tokenClient = new TokenService();
-                tokenClient.SetAuth(response.FirstName, response.LastName, email, response.AuthToken);
+                TokenService.SetUserDetails(response.FirstName, response.LastName);
+                TokenService.SetEmail(response.EmailAddress);
+                TokenService.SetEmailVerified(response.IsEmailVerified);
+                await TokenService.SetAuthToken(response.AuthToken);
 
                 ToastService.Success("Logged in successfully.");
 
-                // send to home page
-                Navigation.InsertPageBefore(new Root(), this);
-                await Navigation.PopAsync();
+                if (response.IsEmailVerified)
+                {
+                    // send to home page
+                    Navigation.InsertPageBefore(new Root(), this);
+                    await Navigation.PopAsync();
+                }
+                else
+                {
+                    await Navigation.PushAsync(new VerifyEmail());
+                }
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);

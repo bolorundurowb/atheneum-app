@@ -2,6 +2,7 @@
 using System.Net;
 using System.Threading.Tasks;
 using atheneum_app.Library.DataAccess.Implementations;
+using atheneum_app.Library.Extensions;
 using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Auth;
@@ -26,6 +27,13 @@ namespace atheneum_app.Views.Core
         {
             const string genericErrorMessage =
                 "Sorry, an error occurred when retrieving your information. Try again later.";
+
+            // pull local user info
+            var (firstName, lastName) = TokenService.GetUserDetails();
+            var emailAddress = TokenService.GetEmail();
+            DisplayUser(string.Empty, firstName, lastName, emailAddress);
+
+            // pull remote user data
             prgLoading.IsVisible = true;
 
             try
@@ -33,7 +41,7 @@ namespace atheneum_app.Views.Core
                 var user = await _userService.GetProfile();
                 DisplayUser(user);
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
@@ -64,13 +72,12 @@ namespace atheneum_app.Views.Core
                 var user = await _userService.UpdateProfile(firstName, lastName);
 
                 // update the details locally
-                var tokenService = new TokenService();
-                tokenService.SetUserDetails(user.FirstName, user.LastName);
+                TokenService.SetUserDetails(user.FirstName, user.LastName);
 
                 // notify user
                 ToastService.Success("Profile updated successfully.");
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
@@ -127,7 +134,7 @@ namespace atheneum_app.Views.Core
                 var response = await _userService.UpdatePassword(currentPassword, newPassword);
                 ToastService.Success(response.Message);
             }
-            catch (ApiException ex) when (ex.StatusCode is HttpStatusCode.BadRequest)
+            catch (ApiException ex) when (ex.IsValidationException())
             {
                 var error = await ex.GetContentAsAsync<ValidationErrorViewModel>();
                 ToastService.Error(error?.Message?.Length > 0 ? error.Message[0] : genericErrorMessage);
@@ -146,9 +153,8 @@ namespace atheneum_app.Views.Core
 
         protected async void LogOut(object sender, EventArgs e)
         {
-            var tokenService = new TokenService();
-            tokenService.Logout();
-            
+            TokenService.ResetAuthToken();
+
             // route back to login
             var parent = Parent?.Parent?.Parent?.Parent?.Parent?.Parent as ContentPage;
             Navigation.InsertPageBefore(new Login(), parent);
@@ -157,10 +163,15 @@ namespace atheneum_app.Views.Core
 
         private void DisplayUser(UserViewModel user)
         {
-            lblId.Text = user.Id;
-            txtFirstName.Text = user.FirstName;
-            txtLastName.Text = user.LastName;
-            txtEmail.Text = user.EmailAddress;
+            DisplayUser(user.Id, user.FirstName, user.LastName, user.EmailAddress);
+        }
+
+        private void DisplayUser(string userId, string firstName, string lastName, string emailAddress)
+        {
+            lblId.Text = userId;
+            txtFirstName.Text = firstName;
+            txtLastName.Text = lastName;
+            txtEmail.Text = emailAddress;
         }
     }
 }

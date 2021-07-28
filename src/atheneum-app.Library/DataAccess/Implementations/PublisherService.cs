@@ -13,10 +13,9 @@ namespace atheneum_app.Library.DataAccess.Implementations
 
         private PublisherService()
         {
-            var tokenClient = new TokenService();
             _publisherService = RestService.For<IPublisherService>(Constants.V1BaseUrl, new RefitSettings
             {
-                AuthorizationHeaderValueGetter = () => Task.FromResult(tokenClient.GetToken())
+                AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
         }
 

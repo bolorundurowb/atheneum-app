@@ -9,10 +9,19 @@ namespace atheneum_app.Library.DataAccess.Implementations
     public sealed class AuthService
     {
         private readonly IAuthService _authService;
+        private static AuthService _instance;
 
-        public AuthService()
+        private AuthService()
         {
-            _authService = RestService.For<IAuthService>(Constants.V1BaseUrl);
+            _authService = RestService.For<IAuthService>(Constants.V1BaseUrl, new RefitSettings
+            {
+                AuthorizationHeaderValueGetter = TokenService.GetAuthToken
+            });
+        }
+
+        public static AuthService Instance()
+        {
+            return _instance ??= new AuthService();
         }
 
         public Task<AuthViewModel> Login(string emailAddress, string password)
@@ -53,7 +62,21 @@ namespace atheneum_app.Library.DataAccess.Implementations
                 ResetCode = resetCode,
                 Password = password
             };
-            return _authService.ResettPassword(bm);
+            return _authService.ResetPassword(bm);
+        }
+
+        public Task<MessageViewModel> VerifyEmail(string verificationCode)
+        {
+            var bm = new VerifyEmailBindingModel
+            {
+                VerificationCode = verificationCode
+            };
+            return _authService.VerifyEmail(bm);
+        }
+
+        public Task<MessageViewModel> ResendVerificationCode()
+        {
+            return _authService.ResendVerificationCode();
         }
     }
 }
