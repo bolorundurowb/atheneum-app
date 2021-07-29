@@ -47,6 +47,8 @@
       <EmbeddedResource Include="Resources\Images\im_publishers.png" />
       <None Remove="Resources\Images\im_wishlist.png" />
       <EmbeddedResource Include="Resources\Images\im_wishlist.png" />
+      <None Remove="Resources\Images\im_bmac.png" />
+      <EmbeddedResource Include="Resources\Images\im_bmac.png" />
     </ItemGroup>
 
     <ItemGroup>

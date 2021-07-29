@@ -7,6 +7,7 @@ using atheneum_app.Library.Models.View;
 using atheneum_app.Utils;
 using atheneum_app.Views.Books;
 using Refit;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -55,7 +56,7 @@ namespace atheneum_app.Views.Core
                 {
                     lblNoRecentBooks.IsVisible = true;
                 }
-                
+
                 // get the top authors
                 var authorResponse = await _authorService.GetTop();
                 var authors = authorResponse.ToList();
@@ -69,7 +70,7 @@ namespace atheneum_app.Views.Core
                 {
                     lblNoAuthors.IsVisible = true;
                 }
-                
+
                 // get the top publishers
                 var publisherResponse = await _publisherService.GetTop();
                 var publishers = publisherResponse.ToList();
@@ -83,7 +84,7 @@ namespace atheneum_app.Views.Core
                 {
                     lblNoPublishers.IsVisible = true;
                 }
-                
+
                 // get the stats for the books
                 var stats = await _statisticsService.Get();
                 lblBooksCount.Text = stats.Books.ToString();
@@ -116,6 +117,45 @@ namespace atheneum_app.Views.Core
         {
             var book = lstRecentBooks.SelectedItem as BookViewModel;
             await Navigation.PushAsync(new Details(book));
+        }
+
+        private async void BuyMeACoffee(object sender, EventArgs e)
+        {
+            try
+            {
+                await Browser.OpenAsync("https://www.buymeacoffee.com/bolorundurowb",
+                    BrowserLaunchMode.SystemPreferred);
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
+        }
+
+        private async void ViewSource(object sender, EventArgs e)
+        {
+            try
+            {
+                await Browser.OpenAsync("https://github.com/bolorundurowb/atheneum-app",
+                    BrowserLaunchMode.SystemPreferred);
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
+        }
+
+        private async void GiveFeedback(object sender, EventArgs e)
+        {
+            try
+            {
+                await Browser.OpenAsync("https://github.com/bolorundurowb/atheneum-app/issues",
+                    BrowserLaunchMode.SystemPreferred);
+            }
+            catch (Exception)
+            {
+                // ignored
+            }
         }
     }
 }
