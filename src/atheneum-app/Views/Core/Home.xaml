@@ -465,7 +465,8 @@
                             Padding="0, 5, 0, 5"
                             BackgroundColor="{StaticResource BuyMeACoffeeColour}"
                             Source="{extensions:ImageSourceExtensions bmac.png}"
-                            HorizontalOptions="FillAndExpand" />
+                            HorizontalOptions="FillAndExpand"
+                            Clicked="BuyMeACoffee" />
 
                         <StackLayout
                             Margin="0, 10, 0, 0"
@@ -474,11 +475,13 @@
                             <Button
                                 Margin="0, 0, 5, 0"
                                 Text="View source code"
-                                Style="{StaticResource SourceBtnStyle}" />
+                                Style="{StaticResource SourceBtnStyle}"
+                                Clicked="ViewSource" />
                             <Button
                                 Margin="5, 0, 0, 0"
                                 Text="Feedback &amp; Feature Requests"
-                                Style="{StaticResource FeedbackBtnStyle}" />
+                                Style="{StaticResource FeedbackBtnStyle}"
+                                Clicked="GiveFeedback" />
                         </StackLayout>
                     </StackLayout>
                 </ScrollView>
