@@ -197,6 +197,7 @@
                                     </Grid>
                                 </Frame>
                             </StackLayout>
+                            
                             <StackLayout
                                 Orientation="Horizontal">
                                 <Frame
@@ -422,6 +423,16 @@
                                 </CollectionView>
                             </StackLayout>
                         </Frame>
+
+                        <Label
+                            Text="Contribute"
+                            Margin="0, 15, 0, 10"
+                            Style="{StaticResource PageHdrStyleStyle}" />
+
+                        <Label
+                            Text="This project is free and open source. Your support and feedback and support would be greatly appreciated."
+                            FontFamily="Proxima"
+                            FontSize="14" />
                     </StackLayout>
                 </ScrollView>
             </RefreshView>
