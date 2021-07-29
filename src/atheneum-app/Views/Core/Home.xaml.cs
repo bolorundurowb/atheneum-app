@@ -149,7 +149,7 @@ namespace atheneum_app.Views.Core
         {
             try
             {
-                await Browser.OpenAsync("https://github.com/bolorundurowb/atheneum-app/issues/new",
+                await Browser.OpenAsync("https://github.com/bolorundurowb/atheneum-app/issues",
                     BrowserLaunchMode.SystemPreferred);
             }
             catch (Exception)
