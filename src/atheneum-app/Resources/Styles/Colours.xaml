@@ -42,4 +42,6 @@
     <Color x:Key="OrangeColour">#FD8B47</Color>
     <Color x:Key="GreenColour">#3B9C77</Color>
     <Color x:Key="BlueColour">#4269D7</Color>
+    <Color x:Key="GithubColour">#161414</Color>
+    <Color x:Key="BuyMeACoffeeColour">#FEDB31</Color>
 </ResourceDictionary>
