@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>atheneum_app.Library</RootNamespace>
+    <RootNamespace>AtheneumApp.Library</RootNamespace>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
     <NeutralLanguage>en-NG</NeutralLanguage>

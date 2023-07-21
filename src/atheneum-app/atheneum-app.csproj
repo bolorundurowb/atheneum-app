@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace>atheneum_app</RootNamespace>
+        <RootNamespace>AtheneumApp</RootNamespace>
         <Company>bolorundurowb</Company>
         <Product>Atheneum</Product>
         <AssemblyVersion>1.0.0</AssemblyVersion>
