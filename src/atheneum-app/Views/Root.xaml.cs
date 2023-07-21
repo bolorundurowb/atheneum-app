@@ -1,17 +1,17 @@
 ﻿using System;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Enums;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
-using atheneum_app.Views.Books;
-using atheneum_app.Views.Modals;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Enums;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
+using AtheneumApp.Views.Books;
+using AtheneumApp.Views.Modals;
 using Refit;
 using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
 
-namespace atheneum_app.Views
+namespace AtheneumApp.Views
 {
     public partial class Root : ContentPage
     {

@@ -3,7 +3,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="atheneum_app.Views.Auth.Login"
+    x:Class="AtheneumApp.Views.Auth.Login"
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <Style x:Key="LoginBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />

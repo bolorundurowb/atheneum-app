@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Controls
+namespace AtheneumApp.Controls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Input : ContentView

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace atheneum_app.Utils.Extensions
+namespace AtheneumApp.Utils.Extensions
 {
     public class IconSourceExtensions : BaseSourceExtensions
     {

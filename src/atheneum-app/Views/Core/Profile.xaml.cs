@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
-using atheneum_app.Views.Auth;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
+using AtheneumApp.Views.Auth;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Core
+namespace AtheneumApp.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Profile : ContentView

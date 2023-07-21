@@ -1,9 +1,9 @@
 ﻿using System;
-using atheneum_app.Library.Enums;
+using AtheneumApp.Library.Enums;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Modals
+namespace AtheneumApp.Views.Modals
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ActionSheet : Popup

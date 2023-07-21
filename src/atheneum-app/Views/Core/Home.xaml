@@ -5,8 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
-    x:Class="atheneum_app.Views.Core.Home"
+    xmlns:extensions="clr-namespace:AtheneumApp.Utils.Extensions;assembly=atheneum-app"
+    x:Class="AtheneumApp.Views.Core.Home"
     Padding="0, 20, 0, 20">
     <ContentView.Resources>
         <Style x:Key="IntroHdrStyle" BasedOn="{StaticResource PageHdrStyleStyle}" TargetType="Label">

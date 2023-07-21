@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace atheneum_app.iOS
+namespace AtheneumApp.iOS
 {
     public class Application
     {

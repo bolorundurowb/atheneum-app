@@ -1,7 +1,7 @@
 using Acr.UserDialogs;
 using Xamarin.Forms;
 
-namespace atheneum_app.Utils
+namespace AtheneumApp.Utils
 {
     internal static class ToastService
     {

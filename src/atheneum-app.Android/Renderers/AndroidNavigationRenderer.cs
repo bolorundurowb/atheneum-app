@@ -1,12 +1,12 @@
 using Android.Content;
 using Android.Graphics;
 using AndroidX.AppCompat.Widget;
-using atheneum_app.Android.Renderers;
+using AtheneumApp.Droid.Renderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android.AppCompat;
 
 [assembly: ExportRenderer(typeof(NavigationPage), typeof(AndroidNavigationRenderer))]
-namespace atheneum_app.Android.Renderers
+namespace AtheneumApp.Droid.Renderers
 {
     public class AndroidNavigationRenderer : NavigationPageRenderer
     {

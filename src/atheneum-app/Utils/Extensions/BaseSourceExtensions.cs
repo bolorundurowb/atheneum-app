@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Utils.Extensions
+namespace AtheneumApp.Utils.Extensions
 {
     [ContentProperty(nameof(Source))]
     public abstract class BaseSourceExtensions : IMarkupExtension

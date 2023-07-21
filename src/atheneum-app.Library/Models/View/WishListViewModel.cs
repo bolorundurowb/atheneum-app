@@ -1,6 +1,6 @@
 ﻿using Refit;
 
-namespace atheneum_app.Library.Models.View
+namespace AtheneumApp.Library.Models.View
 {
     public class WishListViewModel
     {

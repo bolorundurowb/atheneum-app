@@ -3,7 +3,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="atheneum_app.Views.Auth.VerifyEmail"
+    x:Class="AtheneumApp.Views.Auth.VerifyEmail"
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>
         <Style x:Key="RequestBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />

@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
-namespace atheneum_app.Library.DataAccess.Implementations
+namespace AtheneumApp.Library.DataAccess.Implementations
 {
     public static class TokenService
     {

@@ -9,7 +9,7 @@ using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Color = Android.Graphics.Color;
 
-namespace atheneum_app.Android
+namespace AtheneumApp.Droid
 {
     [Activity(Label = "Atheneum", Icon = "@drawable/ic_app_icon", Theme = "@style/SplashTheme",
         MainLauncher = true, NoHistory = true, LaunchMode = LaunchMode.SingleTop,
@@ -18,10 +18,10 @@ namespace atheneum_app.Android
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+            TabLayoutResource = Xamarin.Forms.Platform.Android.Resource.Layout.Tabbar;
+            ToolbarResource = Xamarin.Forms.Platform.Android.Resource.Layout.Toolbar;
             
-            SetTheme(Resource.Style.MainTheme);
+            SetTheme(Xamarin.Forms.Platform.Android.Resource.Style.MainTheme);
             base.OnCreate(savedInstanceState);
             
             CachedImageRenderer.Init(true);

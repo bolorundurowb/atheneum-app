@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Interfaces;
-using atheneum_app.Library.Models.View;
+using AtheneumApp.Library.DataAccess.Interfaces;
+using AtheneumApp.Library.Models.View;
 using Refit;
 
-namespace atheneum_app.Library.DataAccess.Implementations
+namespace AtheneumApp.Library.DataAccess.Implementations
 {
     public class StatisticsService
     {

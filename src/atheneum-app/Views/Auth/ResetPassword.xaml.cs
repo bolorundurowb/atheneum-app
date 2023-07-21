@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Linq;
-using atheneum_app.Library;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
+using AtheneumApp.Library;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Auth
+namespace AtheneumApp.Views.Auth
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResetPassword : ContentPage

@@ -1,7 +1,7 @@
 using System.Net;
 using Refit;
 
-namespace atheneum_app.Library.Extensions
+namespace AtheneumApp.Library.Extensions
 {
     public static class ApiExceptionExtensions
     {
