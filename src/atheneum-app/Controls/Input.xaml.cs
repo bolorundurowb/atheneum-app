@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Controls
+namespace AtheneumApp.Controls
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Input : ContentView
@@ -69,40 +69,22 @@ namespace atheneum_app.Controls
         {
             base.OnPropertyChanged(propertyName);
 
-            if (propertyName == KeyboardProperty.PropertyName)
-            {
-                txtEntry.Keyboard = Keyboard;
-            }
+            if (propertyName == KeyboardProperty.PropertyName) txtEntry.Keyboard = Keyboard;
 
-            if (propertyName == TextProperty.PropertyName)
-            {
-                txtEntry.Text = Text;
-            }
+            if (propertyName == TextProperty.PropertyName) txtEntry.Text = Text;
 
-            if (propertyName == PlaceholderProperty.PropertyName)
-            {
-                txtEntry.Placeholder = Placeholder;
-            }
+            if (propertyName == PlaceholderProperty.PropertyName) txtEntry.Placeholder = Placeholder;
 
             if (propertyName == IsPasswordProperty.PropertyName)
             {
                 txtEntry.IsPassword = IsPassword;
 
-                if (!IsPassword)
-                {
-                    txtEntry.IsTextPredictionEnabled = true;
-                }
+                if (!IsPassword) txtEntry.IsTextPredictionEnabled = true;
             }
 
-            if (propertyName == IsReadOnlyProperty.PropertyName)
-            {
-                txtEntry.IsReadOnly = IsReadOnly;
-            }
+            if (propertyName == IsReadOnlyProperty.PropertyName) txtEntry.IsReadOnly = IsReadOnly;
 
-            if (propertyName == MaxLengthProperty.PropertyName)
-            {
-                txtEntry.MaxLength = MaxLength;
-            }
+            if (propertyName == MaxLengthProperty.PropertyName) txtEntry.MaxLength = MaxLength;
         }
 
         private void TextChanged(object sender, TextChangedEventArgs e)

@@ -3,7 +3,7 @@ using Xamarin.Forms.Xaml;
 using ZXing;
 using ZXing.Mobile;
 
-namespace atheneum_app.Views.Books
+namespace AtheneumApp.Views.Books
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Scanner : ContentPage

@@ -5,8 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
-    xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
-    x:Class="atheneum_app.Views.Core.Home"
+    xmlns:extensions="clr-namespace:AtheneumApp.Utils.Extensions;assembly=atheneum-app"
+    x:Class="AtheneumApp.Views.Core.Home"
     Padding="0, 20, 0, 20">
     <ContentView.Resources>
         <Style x:Key="IntroHdrStyle" BasedOn="{StaticResource PageHdrStyleStyle}" TargetType="Label">
@@ -107,7 +107,8 @@
             <Setter Property="TextTransform" Value="Lowercase" />
             <Setter Property="FontSize" Value="14" />
             <Setter Property="CornerRadius" Value="10" />
-            <Setter Property="HeightRequest" Value="45" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="Margin" Value="0, 5, 0, 0" />
         </Style>
 
         <Style x:Key="FeedbackBtnStyle" BasedOn="{StaticResource SourceBtnStyle}" TargetType="Button">
@@ -118,6 +119,13 @@
             <Setter Property="BorderColor"
                     Value="{AppThemeBinding Dark= {StaticResource SecondaryAccentColour}, Light= {StaticResource DarkSecondaryAccentColour}}" />
             <Setter Property="BorderWidth" Value="2" />
+        </Style>
+
+        <Style x:Key="CallToActionStyle"  TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Dark= {StaticResource DarkSubTextColour}, Light= {StaticResource LightSubTextColour}}" />
+            <Setter Property="FontFamily" Value="Proxima" />
+            <Setter Property="FontSize" Value="14" />
         </Style>
     </ContentView.Resources>
     <ContentView.Content>
@@ -440,7 +448,6 @@
                                                             Style="{StaticResource TopNumStyle}" />
                                                     </StackLayout>
                                                 </Frame>
-
                                             </StackLayout>
                                         </DataTemplate>
                                     </CollectionView.ItemTemplate>
@@ -454,35 +461,28 @@
                             Style="{StaticResource PageHdrStyleStyle}" />
 
                         <Label
-                            Text="This project is free and open source. Your support and feedback and support would be greatly appreciated."
-                            FontFamily="Proxima"
-                            FontSize="14" />
+                            Style="{StaticResource CallToActionStyle}"
+                            Text="This project is free and open source. Your feedback and support would be greatly appreciated."/>
 
                         <ImageButton
-                            CornerRadius="5"
+                            CornerRadius="10"
                             HeightRequest="50"
-                            Margin="0, 5, 0, 5"
+                            Margin="0, 10, 0, 0"
                             Padding="0, 5, 0, 5"
                             BackgroundColor="{StaticResource BuyMeACoffeeColour}"
                             Source="{extensions:ImageSourceExtensions bmac.png}"
                             HorizontalOptions="FillAndExpand"
                             Clicked="BuyMeACoffee" />
-
-                        <StackLayout
-                            Margin="0, 10, 0, 0"
-                            Orientation="Horizontal"
-                            HorizontalOptions="FillAndExpand">
-                            <Button
-                                Margin="0, 0, 5, 0"
-                                Text="View source code"
-                                Style="{StaticResource SourceBtnStyle}"
-                                Clicked="ViewSource" />
-                            <Button
-                                Margin="5, 0, 0, 0"
-                                Text="Feedback &amp; Feature Requests"
-                                Style="{StaticResource FeedbackBtnStyle}"
-                                Clicked="GiveFeedback" />
-                        </StackLayout>
+                        
+                        <Button
+                            Text="View source code"
+                            Style="{StaticResource SourceBtnStyle}"
+                            Clicked="ViewSource" />
+                        
+                        <Button
+                            Text="Feedback &amp; Feature Requests"
+                            Style="{StaticResource FeedbackBtnStyle}"
+                            Clicked="GiveFeedback" />
                     </StackLayout>
                 </ScrollView>
             </RefreshView>

@@ -2,17 +2,17 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
-using atheneum_app.Views.Modals;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
+using AtheneumApp.Views.Modals;
 using Refit;
 using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Core
+namespace AtheneumApp.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WishList : ContentView
@@ -67,10 +67,7 @@ namespace atheneum_app.Views.Core
         {
             var result = await Navigation.ShowPopupAsync(new AddWishList()) as WishListViewModel;
 
-            if (result == null)
-            {
-                return;
-            }
+            if (result == null) return;
 
             // hide the no items label if it is visible
             lblNoItems.IsVisible = false;

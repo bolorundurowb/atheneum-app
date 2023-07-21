@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-    x:Class="atheneum_app.Views.Modals.AddWishList"
+    x:Class="AtheneumApp.Views.Modals.AddWishList"
     Style="{StaticResource ModalStyle}">
     <Frame
         Style="{StaticResource ModalFrmStyle}">
@@ -37,7 +37,7 @@
                     MaxLength="13"
                     Keyboard="Numeric"
                     Placeholder="isbn"
-                    IsTextPredictionEnabled="True"
+                    IsTextPredictionEnabled="False"
                     Style="{StaticResource EntryStyle}" />
             </Frame>
 

@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Interfaces;
-using atheneum_app.Library.Models.Binding;
-using atheneum_app.Library.Models.View;
+using AtheneumApp.Library.DataAccess.Interfaces;
+using AtheneumApp.Library.Models.Binding;
+using AtheneumApp.Library.Models.View;
 using Refit;
 
-namespace atheneum_app.Library.DataAccess.Implementations
+namespace AtheneumApp.Library.DataAccess.Implementations
 {
     public class BookService
     {
@@ -14,13 +14,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
         private readonly IBookService _bookService;
         private static BookService _instance;
 
-        private BookService()
-        {
+        private BookService() =>
             _bookService = RestService.For<IBookService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
         public static BookService Instance()
         {
@@ -39,18 +37,13 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return MakeApiCall(search);
         }
 
-        public Task<IEnumerable<BookViewModel>> GetRecent()
-        {
-            return _bookService.GetRecent();
-        }
+        public Task<IEnumerable<BookViewModel>> GetRecent() => _bookService.GetRecent();
 
-        public Task AddByIsbn(string isbn)
-        {
-            return _bookService.AddByIsbn(new CreateIsbnBookBindingModel
+        public Task AddByIsbn(string isbn) =>
+            _bookService.AddByIsbn(new CreateIsbnBookBindingModel
             {
                 Isbn = isbn
             });
-        }
 
         public Task AddManual(string title, string summary, string isbn, string publishYear, string authors,
             string publisher, string pageCount)
@@ -58,15 +51,9 @@ namespace atheneum_app.Library.DataAccess.Implementations
             int? publishYearValue = null;
             int? pageCountValue = null;
 
-            if (int.TryParse(publishYear, out var publishResult))
-            {
-                publishYearValue = publishResult;
-            }
+            if (int.TryParse(publishYear, out var publishResult)) publishYearValue = publishResult;
 
-            if (int.TryParse(pageCount, out var pagResult))
-            {
-                pageCountValue = pagResult;
-            }
+            if (int.TryParse(pageCount, out var pagResult)) pageCountValue = pagResult;
 
             return _bookService.AddManual(new CreateManualBookBindingModel
             {
@@ -80,10 +67,7 @@ namespace atheneum_app.Library.DataAccess.Implementations
             });
         }
 
-        public Task Remove(string bookId)
-        {
-            return _bookService.Remove(bookId);
-        }
+        public Task Remove(string bookId) => _bookService.Remove(bookId);
 
         private Task<IEnumerable<BookViewModel>> MakeApiCall(string search)
         {

@@ -3,7 +3,7 @@
 <ContentView
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="atheneum_app.Views.Core.Profile"
+    x:Class="AtheneumApp.Views.Core.Profile"
     Padding="0, 20, 0, 20">
     <ContentView.Resources>
         <Style x:Key="UpdateBtnStyle" BasedOn="{StaticResource BaseBtnStyle}" TargetType="Button" />
@@ -23,7 +23,7 @@
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="Proxima" />
-            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontSize" Value="16" />
             <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
     </ContentView.Resources>
@@ -117,7 +117,7 @@
                         Style="{StaticResource SlimPrgStyle}" />
 
                     <Label
-                        Text="Passwords"
+                        Text="Security"
                         Margin="0, 15, 0, 0"
                         Style="{StaticResource PageHdrStyleStyle}" />
 

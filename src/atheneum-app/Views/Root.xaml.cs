@@ -1,17 +1,17 @@
 ﻿using System;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Enums;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
-using atheneum_app.Views.Books;
-using atheneum_app.Views.Modals;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Enums;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
+using AtheneumApp.Views.Books;
+using AtheneumApp.Views.Modals;
 using Refit;
 using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Forms;
 
-namespace atheneum_app.Views
+namespace AtheneumApp.Views
 {
     public partial class Root : ContentPage
     {
@@ -51,20 +51,14 @@ namespace atheneum_app.Views
         {
             var selection = await Navigation.ShowPopupAsync(new ActionSheet()) as ActionType?;
 
-            if (selection == null)
-            {
-                return;
-            }
+            if (selection == null) return;
 
             switch (selection.Value)
             {
                 case ActionType.Manual:
                     var manualResult = await Navigation.ShowPopupAsync(new ManualBookEntry());
 
-                    if (manualResult == null)
-                    {
-                        return;
-                    }
+                    if (manualResult == null) return;
 
                     // refresh the library
                     await pageHome.LoadData();
@@ -73,10 +67,7 @@ namespace atheneum_app.Views
                 case ActionType.ByIsbn:
                     var result = await Navigation.ShowPopupAsync(new ManualIsbn());
 
-                    if (result == null)
-                    {
-                        return;
-                    }
+                    if (result == null) return;
 
                     // refresh the library
                     await pageHome.LoadData();
@@ -98,15 +89,9 @@ namespace atheneum_app.Views
             var result = scanner?.ScanResult;
 
             // try disconnecting the event handler
-            if (scanner != null)
-            {
-                scanner.Disappearing -= ScannerOnDisappearing;
-            }
+            if (scanner != null) scanner.Disappearing -= ScannerOnDisappearing;
 
-            if (string.IsNullOrEmpty(result))
-            {
-                return;
-            }
+            if (string.IsNullOrEmpty(result)) return;
 
             try
             {

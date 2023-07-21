@@ -1,6 +1,6 @@
-﻿using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Views;
-using atheneum_app.Views.Auth;
+﻿using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Views;
+using AtheneumApp.Views.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 [assembly: ExportFont("fredericka.ttf", Alias = "Fredericka")]
 [assembly: ExportFont("proximabold.otf", Alias = "ProximaBold")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace atheneum_app
+namespace AtheneumApp
 {
     public partial class App : Application
     {
@@ -26,13 +26,9 @@ namespace atheneum_app
             if (isLoggedIn)
             {
                 if (TokenService.GetIsEmailVerified())
-                {
                     mainPage = new Root();
-                }
                 else
-                {
                     mainPage = new VerifyEmail();
-                }
             }
             else
             {

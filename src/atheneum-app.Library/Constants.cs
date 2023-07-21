@@ -1,4 +1,4 @@
-﻿namespace atheneum_app.Library
+﻿namespace AtheneumApp.Library
 {
     public static class Constants
     {

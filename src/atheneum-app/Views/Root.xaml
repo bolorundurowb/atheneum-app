@@ -4,9 +4,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-    xmlns:extensions="clr-namespace:atheneum_app.Utils.Extensions;assembly=atheneum-app"
-    xmlns:core="clr-namespace:atheneum_app.Views.Core;assembly=atheneum-app"
-    x:Class="atheneum_app.Views.Root"
+    xmlns:extensions="clr-namespace:AtheneumApp.Utils.Extensions;assembly=atheneum-app"
+    xmlns:core="clr-namespace:AtheneumApp.Views.Core;assembly=atheneum-app"
+    x:Class="AtheneumApp.Views.Root"
     Padding="0"
     Style="{StaticResource PageStyle}">
     <ContentPage.Resources>

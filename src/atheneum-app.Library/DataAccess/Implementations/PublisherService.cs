@@ -1,32 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Interfaces;
-using atheneum_app.Library.Models.View;
+using AtheneumApp.Library.DataAccess.Interfaces;
+using AtheneumApp.Library.Models.View;
 using Refit;
 
-namespace atheneum_app.Library.DataAccess.Implementations
+namespace AtheneumApp.Library.DataAccess.Implementations
 {
     public class PublisherService
     {
         private readonly IPublisherService _publisherService;
         private static PublisherService _instance;
 
-        private PublisherService()
-        {
+        private PublisherService() =>
             _publisherService = RestService.For<IPublisherService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
-        public static PublisherService Instance()
-        {
-            return _instance ?? (_instance = new PublisherService());
-        }
+        public static PublisherService Instance() => _instance ??= new PublisherService();
 
-        public Task<IEnumerable<TopPublisherViewModel>> GetTop()
-        {
-            return _publisherService.GetTop();
-        }
+        public Task<IEnumerable<TopPublisherViewModel>> GetTop() => _publisherService.GetTop();
     }
 }

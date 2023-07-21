@@ -1,12 +1,12 @@
 ﻿using System;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Books
+namespace AtheneumApp.Views.Books
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Details : ContentPage
@@ -32,10 +32,7 @@ namespace atheneum_app.Views.Books
             var response = await DisplayAlert("Confirm Removal",
                 "Are you sure you want to remove this book. This action is irreversible.", "Proceed", "Cancel");
 
-            if (!response)
-            {
-                return;
-            }
+            if (!response) return;
 
             const string genericErrorMessage =
                 "Sorry, an error occurred when removing from your library. Try again later.";

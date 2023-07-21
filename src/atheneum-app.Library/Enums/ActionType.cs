@@ -1,4 +1,4 @@
-﻿namespace atheneum_app.Library.Enums
+﻿namespace AtheneumApp.Library.Enums
 {
     public enum ActionType
     {

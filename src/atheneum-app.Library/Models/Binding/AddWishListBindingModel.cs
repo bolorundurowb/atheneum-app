@@ -1,4 +1,4 @@
-﻿namespace atheneum_app.Library.Models.Binding
+﻿namespace AtheneumApp.Library.Models.Binding
 {
     public class AddWishListBindingModel
     {

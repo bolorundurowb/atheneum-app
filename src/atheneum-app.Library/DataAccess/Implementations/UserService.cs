@@ -1,27 +1,22 @@
 ﻿using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Interfaces;
-using atheneum_app.Library.Models.Binding;
-using atheneum_app.Library.Models.View;
+using AtheneumApp.Library.DataAccess.Interfaces;
+using AtheneumApp.Library.Models.Binding;
+using AtheneumApp.Library.Models.View;
 using Refit;
 
-namespace atheneum_app.Library.DataAccess.Implementations
+namespace AtheneumApp.Library.DataAccess.Implementations
 {
     public sealed class UserService
     {
         private readonly IUserService _userService;
 
-        public UserService()
-        {
+        public UserService() =>
             _userService = RestService.For<IUserService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
-        public Task<UserViewModel> GetProfile()
-        {
-            return _userService.GetProfile();
-        }
+        public Task<UserViewModel> GetProfile() => _userService.GetProfile();
 
         public Task<UserViewModel> UpdateProfile(string firstName, string lastName)
         {

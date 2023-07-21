@@ -1,4 +1,4 @@
-namespace atheneum_app.Utils.Extensions
+namespace AtheneumApp.Utils.Extensions
 {
     public class ImageSourceExtensions : BaseSourceExtensions
     {

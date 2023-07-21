@@ -1,13 +1,13 @@
 using System;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Auth
+namespace AtheneumApp.Views.Auth
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
@@ -27,10 +27,7 @@ namespace atheneum_app.Views.Auth
             // if user has logged in before, help autofill
             var email = TokenService.GetEmail();
 
-            if (!string.IsNullOrWhiteSpace(email))
-            {
-                txtEmail.Text = email;
-            }
+            if (!string.IsNullOrWhiteSpace(email)) txtEmail.Text = email;
         }
 
         protected async void AttemptLogin(object sender, EventArgs e)
@@ -102,13 +99,9 @@ namespace atheneum_app.Views.Auth
             var email = txtEmail.Text;
 
             if (string.IsNullOrWhiteSpace(email))
-            {
                 await Navigation.PushAsync(new ForgotPassword());
-            }
             else
-            {
                 await Navigation.PushAsync(new ForgotPassword(email));
-            }
         }
     }
 }

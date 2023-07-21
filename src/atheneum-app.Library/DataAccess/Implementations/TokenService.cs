@@ -1,9 +1,11 @@
 using System;
 using System.Globalization;
+using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 
-namespace atheneum_app.Library.DataAccess.Implementations
+namespace AtheneumApp.Library.DataAccess.Implementations
 {
     public static class TokenService
     {
@@ -23,10 +25,8 @@ namespace atheneum_app.Library.DataAccess.Implementations
             var isLoggedIn = !string.IsNullOrWhiteSpace(token) && expiresAt > DateTime.UtcNow;
 
             // expired auth, remove credentials
-            if (!isLoggedIn)
-            {
+            if (!isLoggedIn) 
                 ResetAuthToken();
-            }
 
             return isLoggedIn;
         }
@@ -38,20 +38,11 @@ namespace atheneum_app.Library.DataAccess.Implementations
             return (firstName, lastName);
         }
 
-        public static string GetToken()
-        {
-            return Preferences.Get(AuthTokenKey, null);
-        }
+        public static string GetEmail() => Preferences.Get(AuthEmailKey, null);
 
-        public static string GetEmail()
-        {
-            return Preferences.Get(AuthEmailKey, null);
-        }
+        public static bool GetIsEmailVerified() => Preferences.Get(AuthEmailVerifiedKey, false);
 
-        public static bool GetIsEmailVerified()
-        {
-            return Preferences.Get(AuthEmailVerifiedKey, false);
-        }
+        public static Task<string> GetAuthToken(HttpRequestMessage message, CancellationToken cancellationToken) => GetAuthToken();
 
         public static Task<string> GetAuthToken()
         {

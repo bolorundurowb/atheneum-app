@@ -2,16 +2,16 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using atheneum_app.Library.DataAccess.Implementations;
-using atheneum_app.Library.Extensions;
-using atheneum_app.Library.Models.View;
-using atheneum_app.Utils;
-using atheneum_app.Views.Books;
+using AtheneumApp.Library.DataAccess.Implementations;
+using AtheneumApp.Library.Extensions;
+using AtheneumApp.Library.Models.View;
+using AtheneumApp.Utils;
+using AtheneumApp.Views.Books;
 using Refit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace atheneum_app.Views.Core
+namespace AtheneumApp.Views.Core
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Library : ContentView
@@ -51,13 +51,9 @@ namespace atheneum_app.Views.Core
                     lstBooks.ItemsSource = _books;
 
                     if (string.IsNullOrWhiteSpace(GetSearchText()))
-                    {
                         lblNoItems.IsVisible = true;
-                    }
                     else
-                    {
                         lblNoSearchItems.IsVisible = true;
-                    }
                 }
             }
             catch (ApiException ex) when (ex.IsValidationException())
@@ -89,17 +85,11 @@ namespace atheneum_app.Views.Core
             try
             {
                 // ensure multiple calls are not made until the current is done
-                if (_isLoadingMore)
-                {
-                    return;
-                }
+                if (_isLoadingMore) return;
 
                 // check to see if the list is less than than the max items per page meaning there
                 // are no more items to get
-                if (_books.Count % BookService.BooksPerPage != 0)
-                {
-                    return;
-                }
+                if (_books.Count % BookService.BooksPerPage != 0) return;
 
                 _isLoadingMore = true;
                 prgLoadingMore.IsVisible = true;
@@ -109,10 +99,7 @@ namespace atheneum_app.Views.Core
 
                 if (books.Any())
                 {
-                    foreach (var book in books)
-                    {
-                        _books.Add(book);
-                    }
+                    foreach (var book in books) _books.Add(book);
 
                     lstBooks.ItemsSource = _books;
                 }
@@ -139,10 +126,7 @@ namespace atheneum_app.Views.Core
             await LoadData();
         }
 
-        private string GetSearchText()
-        {
-            return (txtSearch.Text ?? string.Empty).Trim();
-        }
+        private string GetSearchText() => (txtSearch.Text ?? string.Empty).Trim();
 
         private async void BookSelected(object sender, SelectionChangedEventArgs e)
         {

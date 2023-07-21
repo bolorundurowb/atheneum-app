@@ -1,11 +1,11 @@
 using Android.Content;
-using atheneum_app.Android.Renderers;
+using AtheneumApp.Droid.Renderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Color = Android.Graphics.Color;
 
 [assembly: ExportRenderer(typeof(Entry), typeof(CustomEntryRenderer))]
-namespace atheneum_app.Android.Renderers
+namespace AtheneumApp.Droid.Renderers
 {
     public class CustomEntryRenderer : EntryRenderer
     {
