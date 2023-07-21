@@ -19,7 +19,7 @@
     <Color x:Key="DarkFrameColour">#1A1A1A</Color>
 
     <!-- Text Colours -->
-    <Color x:Key="LightSubTextColour">#8C8C8C</Color>
+    <Color x:Key="LightSubTextColour">#6C6C6C</Color>
     <Color x:Key="DarkSubTextColour">#C6C6C6</Color>
 
     <!-- Input Colours -->

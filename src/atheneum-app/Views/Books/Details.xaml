@@ -6,22 +6,23 @@
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     x:Class="AtheneumApp.Views.Books.Details"
-    Style="{StaticResource PageStyle}">
+    Style="{StaticResource PageStyle}"
+    Padding="0">
     <ContentPage.Resources>
         <Style x:Key="BookDetailTitleLblStyle" BasedOn="{StaticResource BookTitleLblStyle}" TargetType="Label">
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="Margin" Value="0, 15,  0, 0" />
             <Setter Property="FontSize" Value="24" />
         </Style>
-        
+
         <Style x:Key="PrimaryAuthorLblStyle" BasedOn="{StaticResource BookAuthorLblStyle}" TargetType="Label">
             <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
             <Setter Property="Margin" Value="0, 8,  0, 0" />
             <Setter Property="FontSize" Value="16" />
             <Setter Property="MaxLines" Value="2" />
         </Style>
-        
-        <Style x:Key="SummaryLblStyle"  TargetType="Label">
+
+        <Style x:Key="SummaryLblStyle" TargetType="Label">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource DarkSubTextColour}, Light= {StaticResource LightSubTextColour}}" />
             <Setter Property="HorizontalOptions" Value="StartAndExpand" />
@@ -30,8 +31,8 @@
             <Setter Property="FontFamily" Value="Proxima" />
             <Setter Property="FontSize" Value="15" />
         </Style>
-        
-        <Style x:Key="DetailHeaderLblStyle"  TargetType="Label">
+
+        <Style x:Key="DetailHeaderLblStyle" TargetType="Label">
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Dark= {StaticResource DarkSubTextColour}, Light= {StaticResource LightSubTextColour}}" />
             <Setter Property="HorizontalOptions" Value="EndAndExpand" />
@@ -39,12 +40,12 @@
             <Setter Property="FontFamily" Value="ProximaBold" />
             <Setter Property="FontSize" Value="14" />
         </Style>
-        
-        <Style x:Key="DetailLblStyle" BasedOn="{StaticResource DetailHeaderLblStyle}"  TargetType="Label">
+
+        <Style x:Key="DetailLblStyle" BasedOn="{StaticResource DetailHeaderLblStyle}" TargetType="Label">
             <Setter Property="HorizontalOptions" Value="StartAndExpand" />
             <Setter Property="FontFamily" Value="Proxima" />
         </Style>
-        
+
         <Style x:Key="DetailStackStyle" TargetType="StackLayout">
             <Setter Property="HorizontalOptions" Value="StartAndExpand" />
             <Setter Property="Orientation" Value="Horizontal" />
@@ -53,28 +54,29 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout
+                Padding="20, 20, 20, 0"
                 Orientation="Horizontal"
                 HorizontalOptions="FillAndExpand">
-            <Button
-                HorizontalOptions="StartAndExpand"
-                Style="{StaticResource BackBtnStyle}"
-                Clicked="GoBack"/>
+                <Button
+                    HorizontalOptions="StartAndExpand"
+                    Style="{StaticResource BackBtnStyle}"
+                    Clicked="GoBack" />
 
-            <Button
-                Text="Remove"
-                VerticalOptions="Center"
-                HorizontalOptions="EndAndExpand"
-                Style="{StaticResource SecondaryBtnStyle}"
-                Clicked="Remove"/>
+                <Button
+                    Text="Remove"
+                    VerticalOptions="Center"
+                    HorizontalOptions="EndAndExpand"
+                    Style="{StaticResource SecondaryBtnStyle}"
+                    Clicked="Remove" />
             </StackLayout>
-            
+
             <ScrollView
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
                 <StackLayout
-                    Margin="0, 20, 0, 0"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand">
+                    Padding="25, 0, 25, 15"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
                     <yummy:PancakeView
                         Padding="0"
                         IsClippedToBounds="True"
@@ -90,87 +92,87 @@
                             RetryDelay="1000"
                             Source="{Binding CoverArt}" />
                     </yummy:PancakeView>
-                    
+
                     <Label
                         Text="{Binding Title}"
                         Style="{StaticResource BookDetailTitleLblStyle}" />
-                    
+
                     <Label
                         Text="{Binding AllAuthorNames}"
                         Style="{StaticResource PrimaryAuthorLblStyle}" />
-                    
+
                     <Label
                         Text="{Binding Summary}"
                         Style="{StaticResource SummaryLblStyle}" />
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="Publisher:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding PublisherName}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="ISBN:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding Isbn13}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="Publish Year:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding PublisherYearValue}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="Page Count:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding PageCountValue}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="Source:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding SourceValue}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="Availability:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding Availability}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
-                    
+
                     <StackLayout
                         Style="{StaticResource DetailStackStyle}">
                         <Label
                             Text="Added At:"
-                            Style="{StaticResource DetailHeaderLblStyle}"/>
+                            Style="{StaticResource DetailHeaderLblStyle}" />
                         <Label
                             Text="{Binding CreatedAtText}"
-                            Style="{StaticResource DetailLblStyle}"/>
+                            Style="{StaticResource DetailLblStyle}" />
                     </StackLayout>
                 </StackLayout>
             </ScrollView>
