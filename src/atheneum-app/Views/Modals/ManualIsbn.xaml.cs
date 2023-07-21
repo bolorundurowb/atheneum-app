@@ -67,9 +67,6 @@ namespace AtheneumApp.Views.Modals
             Dismiss(null);
         }
 
-        protected override object GetLightDismissResult()
-        {
-            return null;
-        }
+        protected override object GetLightDismissResult() => null;
     }
 }

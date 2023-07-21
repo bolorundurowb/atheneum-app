@@ -11,22 +11,14 @@ namespace AtheneumApp.Library.DataAccess.Implementations
         private readonly IPublisherService _publisherService;
         private static PublisherService _instance;
 
-        private PublisherService()
-        {
+        private PublisherService() =>
             _publisherService = RestService.For<IPublisherService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
-        public static PublisherService Instance()
-        {
-            return _instance ?? (_instance = new PublisherService());
-        }
+        public static PublisherService Instance() => _instance ?? (_instance = new PublisherService());
 
-        public Task<IEnumerable<TopPublisherViewModel>> GetTop()
-        {
-            return _publisherService.GetTop();
-        }
+        public Task<IEnumerable<TopPublisherViewModel>> GetTop() => _publisherService.GetTop();
     }
 }

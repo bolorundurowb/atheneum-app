@@ -51,20 +51,14 @@ namespace AtheneumApp.Views
         {
             var selection = await Navigation.ShowPopupAsync(new ActionSheet()) as ActionType?;
 
-            if (selection == null)
-            {
-                return;
-            }
+            if (selection == null) return;
 
             switch (selection.Value)
             {
                 case ActionType.Manual:
                     var manualResult = await Navigation.ShowPopupAsync(new ManualBookEntry());
 
-                    if (manualResult == null)
-                    {
-                        return;
-                    }
+                    if (manualResult == null) return;
 
                     // refresh the library
                     await pageHome.LoadData();
@@ -73,10 +67,7 @@ namespace AtheneumApp.Views
                 case ActionType.ByIsbn:
                     var result = await Navigation.ShowPopupAsync(new ManualIsbn());
 
-                    if (result == null)
-                    {
-                        return;
-                    }
+                    if (result == null) return;
 
                     // refresh the library
                     await pageHome.LoadData();
@@ -98,15 +89,9 @@ namespace AtheneumApp.Views
             var result = scanner?.ScanResult;
 
             // try disconnecting the event handler
-            if (scanner != null)
-            {
-                scanner.Disappearing -= ScannerOnDisappearing;
-            }
+            if (scanner != null) scanner.Disappearing -= ScannerOnDisappearing;
 
-            if (string.IsNullOrEmpty(result))
-            {
-                return;
-            }
+            if (string.IsNullOrEmpty(result)) return;
 
             try
             {

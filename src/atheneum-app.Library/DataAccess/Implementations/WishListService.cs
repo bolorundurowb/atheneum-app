@@ -12,32 +12,25 @@ namespace AtheneumApp.Library.DataAccess.Implementations
         private readonly IWishListService _wishListService;
         private static WishListService _instance;
 
-        private WishListService()
-        {
+        private WishListService() =>
             _wishListService = RestService.For<IWishListService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
         public static WishListService Instance()
         {
             return _instance ??= new WishListService();                          
         }
 
-        public Task<IEnumerable<WishListViewModel>> GetAll()
-        {
-            return _wishListService.GetAll();
-        }
+        public Task<IEnumerable<WishListViewModel>> GetAll() => _wishListService.GetAll();
 
-        public Task<WishListViewModel> Add(string title, string author, string isbn)
-        {
-            return _wishListService.Add(new AddWishListBindingModel
+        public Task<WishListViewModel> Add(string title, string author, string isbn) =>
+            _wishListService.Add(new AddWishListBindingModel
             {
                 BookTitle = title,
                 BookAuthor = author,
                 BookIsbn = isbn
             });
-        }
     }
 }

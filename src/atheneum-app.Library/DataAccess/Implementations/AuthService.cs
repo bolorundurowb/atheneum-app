@@ -11,13 +11,11 @@ namespace AtheneumApp.Library.DataAccess.Implementations
         private readonly IAuthService _authService;
         private static AuthService _instance;
 
-        private AuthService()
-        {
+        private AuthService() =>
             _authService = RestService.For<IAuthService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
         public static AuthService Instance()
         {
@@ -74,9 +72,6 @@ namespace AtheneumApp.Library.DataAccess.Implementations
             return _authService.VerifyEmail(bm);
         }
 
-        public Task<MessageViewModel> ResendVerificationCode()
-        {
-            return _authService.ResendVerificationCode();
-        }
+        public Task<MessageViewModel> ResendVerificationCode() => _authService.ResendVerificationCode();
     }
 }

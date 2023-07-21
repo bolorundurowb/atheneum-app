@@ -37,7 +37,7 @@
                     MaxLength="13"
                     Keyboard="Numeric"
                     Placeholder="isbn"
-                    IsTextPredictionEnabled="True"
+                    IsTextPredictionEnabled="False"
                     Style="{StaticResource EntryStyle}" />
             </Frame>
 

@@ -10,22 +10,17 @@ namespace AtheneumApp.Library.DataAccess.Implementations
         private readonly IStatisticsService _statService;
         private static StatisticsService _instance;
 
-        private StatisticsService()
-        {
+        private StatisticsService() =>
             _statService = RestService.For<IStatisticsService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
         public static StatisticsService Instance()
         {
             return _instance ??= new StatisticsService();
         }
 
-        public Task<StatisticsViewModel> Get()
-        {
-            return _statService.Get();
-        }
+        public Task<StatisticsViewModel> Get() => _statService.Get();
     }
 }

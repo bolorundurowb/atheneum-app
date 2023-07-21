@@ -27,10 +27,7 @@ namespace AtheneumApp.Views.Auth
             // if user has logged in before, help autofill
             var email = TokenService.GetEmail();
 
-            if (!string.IsNullOrWhiteSpace(email))
-            {
-                txtEmail.Text = email;
-            }
+            if (!string.IsNullOrWhiteSpace(email)) txtEmail.Text = email;
         }
 
         protected async void AttemptLogin(object sender, EventArgs e)
@@ -102,13 +99,9 @@ namespace AtheneumApp.Views.Auth
             var email = txtEmail.Text;
 
             if (string.IsNullOrWhiteSpace(email))
-            {
                 await Navigation.PushAsync(new ForgotPassword());
-            }
             else
-            {
                 await Navigation.PushAsync(new ForgotPassword(email));
-            }
         }
     }
 }

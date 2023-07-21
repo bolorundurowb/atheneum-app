@@ -51,13 +51,9 @@ namespace AtheneumApp.Views.Core
                     lstBooks.ItemsSource = _books;
 
                     if (string.IsNullOrWhiteSpace(GetSearchText()))
-                    {
                         lblNoItems.IsVisible = true;
-                    }
                     else
-                    {
                         lblNoSearchItems.IsVisible = true;
-                    }
                 }
             }
             catch (ApiException ex) when (ex.IsValidationException())
@@ -89,17 +85,11 @@ namespace AtheneumApp.Views.Core
             try
             {
                 // ensure multiple calls are not made until the current is done
-                if (_isLoadingMore)
-                {
-                    return;
-                }
+                if (_isLoadingMore) return;
 
                 // check to see if the list is less than than the max items per page meaning there
                 // are no more items to get
-                if (_books.Count % BookService.BooksPerPage != 0)
-                {
-                    return;
-                }
+                if (_books.Count % BookService.BooksPerPage != 0) return;
 
                 _isLoadingMore = true;
                 prgLoadingMore.IsVisible = true;
@@ -109,10 +99,7 @@ namespace AtheneumApp.Views.Core
 
                 if (books.Any())
                 {
-                    foreach (var book in books)
-                    {
-                        _books.Add(book);
-                    }
+                    foreach (var book in books) _books.Add(book);
 
                     lstBooks.ItemsSource = _books;
                 }
@@ -139,10 +126,7 @@ namespace AtheneumApp.Views.Core
             await LoadData();
         }
 
-        private string GetSearchText()
-        {
-            return (txtSearch.Text ?? string.Empty).Trim();
-        }
+        private string GetSearchText() => (txtSearch.Text ?? string.Empty).Trim();
 
         private async void BookSelected(object sender, SelectionChangedEventArgs e)
         {

@@ -20,27 +20,19 @@ namespace AtheneumApp.Utils.Extensions
 
         protected ImageSource GetImageSource(string value)
         {
-            if (value == null)
-            {
+            if (value == null) 
                 return null;
-            }
 
-            var resourceKey = $"atheneum_app.Resources.{ResourceFolder}.{ResourcePrefix}_{value}{ResourceSuffix}";
+            var resourceKey = $"AtheneumApp.Resources.{ResourceFolder}.{ResourcePrefix}_{value}{ResourceSuffix}";
 
-            if (Cache.ContainsKey(resourceKey))
-            {
-                return Cache[resourceKey];
-            }
+            if (Cache.TryGetValue(resourceKey, out var source)) 
+                return source;
 
             var imageSource = ImageSource.FromResource(resourceKey);
             Cache.Add(resourceKey, imageSource);
-
             return imageSource;
         }
 
-        public object ProvideValue(IServiceProvider serviceProvider)
-        {
-            return Source == null ? null : GetImageSource(Source);
-        }
+        public object ProvideValue(IServiceProvider serviceProvider) => Source == null ? null : GetImageSource(Source);
     }
 }

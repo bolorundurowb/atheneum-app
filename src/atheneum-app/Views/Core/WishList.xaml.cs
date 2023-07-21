@@ -67,10 +67,7 @@ namespace AtheneumApp.Views.Core
         {
             var result = await Navigation.ShowPopupAsync(new AddWishList()) as WishListViewModel;
 
-            if (result == null)
-            {
-                return;
-            }
+            if (result == null) return;
 
             // hide the no items label if it is visible
             lblNoItems.IsVisible = false;

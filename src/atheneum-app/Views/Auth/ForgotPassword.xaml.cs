@@ -20,10 +20,7 @@ namespace AtheneumApp.Views.Auth
             _authClient = AuthService.Instance();
         }
 
-        public ForgotPassword(string emailAddress) : this()
-        {
-            txtEmail.Text = emailAddress;
-        }
+        public ForgotPassword(string emailAddress) : this() => txtEmail.Text = emailAddress;
 
         protected async void AttemptRequest(object sender, EventArgs e)
         {

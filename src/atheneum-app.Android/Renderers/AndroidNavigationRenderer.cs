@@ -19,21 +19,15 @@ namespace AtheneumApp.Droid.Renderers
             base.OnLayout(changed, l, t, r, b);
             _toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 
-            if (_toolbar == null)
-            {
-                return;
-            }
-            
+            if (_toolbar == null) return;
+
             _toolbar.ChildViewAdded += Toolbar_ChildViewAdded;
         }
 
         private void Toolbar_ChildViewAdded(object sender, ChildViewAddedEventArgs e)
         {
-            if (e.Child?.GetType() != typeof(AppCompatTextView))
-            {
-                return;
-            }
-            
+            if (e.Child?.GetType() != typeof(AppCompatTextView)) return;
+
             var textView = (AppCompatTextView) e.Child;
             textView.Typeface = Typeface.CreateFromAsset(Context?.Assets, "proxima.otf");
             _toolbar.ChildViewAdded -= Toolbar_ChildViewAdded;

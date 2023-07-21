@@ -32,10 +32,7 @@ namespace AtheneumApp.Views.Books
             var response = await DisplayAlert("Confirm Removal",
                 "Are you sure you want to remove this book. This action is irreversible.", "Proceed", "Cancel");
 
-            if (!response)
-            {
-                return;
-            }
+            if (!response) return;
 
             const string genericErrorMessage =
                 "Sorry, an error occurred when removing from your library. Try again later.";

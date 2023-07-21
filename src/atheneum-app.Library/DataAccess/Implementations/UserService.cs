@@ -10,18 +10,13 @@ namespace AtheneumApp.Library.DataAccess.Implementations
     {
         private readonly IUserService _userService;
 
-        public UserService()
-        {
+        public UserService() =>
             _userService = RestService.For<IUserService>(Constants.V1BaseUrl, new RefitSettings
             {
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
-        }
 
-        public Task<UserViewModel> GetProfile()
-        {
-            return _userService.GetProfile();
-        }
+        public Task<UserViewModel> GetProfile() => _userService.GetProfile();
 
         public Task<UserViewModel> UpdateProfile(string firstName, string lastName)
         {

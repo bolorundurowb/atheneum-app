@@ -11,19 +11,13 @@ namespace AtheneumApp.Droid.Renderers
     {
         private readonly Context _context;
 
-        public CustomSearchBarRenderer(Context context) : base(context)
-        {
-            _context = context;
-        }
+        public CustomSearchBarRenderer(Context context) : base(context) => _context = context;
 
         protected override void OnElementChanged(ElementChangedEventArgs<SearchBar> e)
         {
             base.OnElementChanged(e);
 
-            if (Control == null)
-            {
-                return;
-            }
+            if (Control == null) return;
 
             var plateId = Resources?.GetIdentifier("android:id/search_plate", null, null);
             var plate = Control.FindViewById(plateId ?? 0);

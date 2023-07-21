@@ -26,13 +26,9 @@ namespace AtheneumApp
             if (isLoggedIn)
             {
                 if (TokenService.GetIsEmailVerified())
-                {
                     mainPage = new Root();
-                }
                 else
-                {
                     mainPage = new VerifyEmail();
-                }
             }
             else
             {

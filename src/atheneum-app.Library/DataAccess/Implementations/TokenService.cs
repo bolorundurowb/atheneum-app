@@ -23,10 +23,7 @@ namespace AtheneumApp.Library.DataAccess.Implementations
             var isLoggedIn = !string.IsNullOrWhiteSpace(token) && expiresAt > DateTime.UtcNow;
 
             // expired auth, remove credentials
-            if (!isLoggedIn)
-            {
-                ResetAuthToken();
-            }
+            if (!isLoggedIn) ResetAuthToken();
 
             return isLoggedIn;
         }
@@ -38,20 +35,11 @@ namespace AtheneumApp.Library.DataAccess.Implementations
             return (firstName, lastName);
         }
 
-        public static string GetToken()
-        {
-            return Preferences.Get(AuthTokenKey, null);
-        }
+        public static string GetToken() => Preferences.Get(AuthTokenKey, null);
 
-        public static string GetEmail()
-        {
-            return Preferences.Get(AuthEmailKey, null);
-        }
+        public static string GetEmail() => Preferences.Get(AuthEmailKey, null);
 
-        public static bool GetIsEmailVerified()
-        {
-            return Preferences.Get(AuthEmailVerifiedKey, false);
-        }
+        public static bool GetIsEmailVerified() => Preferences.Get(AuthEmailVerifiedKey, false);
 
         public static Task<string> GetAuthToken()
         {
