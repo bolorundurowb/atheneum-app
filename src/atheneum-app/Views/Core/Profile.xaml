@@ -117,7 +117,7 @@
                         Style="{StaticResource SlimPrgStyle}" />
 
                     <Label
-                        Text="Passwords"
+                        Text="Security"
                         Margin="0, 15, 0, 0"
                         Style="{StaticResource PageHdrStyleStyle}" />
 

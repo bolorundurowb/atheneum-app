@@ -17,7 +17,7 @@ namespace AtheneumApp.Library.DataAccess.Implementations
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
 
-        public static AuthorService Instance() => _instance ?? (_instance = new AuthorService());
+        public static AuthorService Instance() => _instance ??= new AuthorService();
 
         public Task<IEnumerable<TopAuthorViewModel>> GetTop() => _authorService.GetTop();
     }

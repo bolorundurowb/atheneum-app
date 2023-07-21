@@ -43,9 +43,9 @@ namespace AtheneumApp.Library.Models.View
 
         public string PublisherName => Publisher?.Name;
 
-        public string PublisherYearValue => PublishYear.HasValue ? PublishYear.Value.ToString() : "N/A";
+        public string PublisherYearValue => PublishYear.HasValue && PublishYear.Value > 0 ? PublishYear.Value.ToString() : "N/A";
 
-        public string PageCountValue => PageCount.HasValue ? PageCount.Value.ToString() : "N/A";
+        public string PageCountValue => PageCount.HasValue && PageCount.Value > 0 ? PageCount.Value.ToString() : "N/A";
 
         public string SourceValue => string.IsNullOrEmpty(Source) ?  "N/A" : Source;
 

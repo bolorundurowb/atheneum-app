@@ -17,7 +17,7 @@ namespace AtheneumApp.Library.DataAccess.Implementations
                 AuthorizationHeaderValueGetter = TokenService.GetAuthToken
             });
 
-        public static PublisherService Instance() => _instance ?? (_instance = new PublisherService());
+        public static PublisherService Instance() => _instance ??= new PublisherService();
 
         public Task<IEnumerable<TopPublisherViewModel>> GetTop() => _publisherService.GetTop();
     }
