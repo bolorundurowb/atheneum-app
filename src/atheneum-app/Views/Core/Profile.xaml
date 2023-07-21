@@ -23,7 +23,7 @@
                     Value="{AppThemeBinding Dark= {StaticResource LightColour}, Light= {StaticResource DarkColour}}" />
             <Setter Property="HorizontalOptions" Value="Start" />
             <Setter Property="FontFamily" Value="Proxima" />
-            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontSize" Value="16" />
             <Setter Property="Margin" Value="5, 10, 0, 5" />
         </Style>
     </ContentView.Resources>

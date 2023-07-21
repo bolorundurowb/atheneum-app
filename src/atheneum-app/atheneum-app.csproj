@@ -15,11 +15,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
-        <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+        <PackageReference Include="Acr.UserDialogs" Version="7.2.0.564" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.6" />
         <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
         <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
-        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
         <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
         <PackageReference Include="ZXing.Net.Mobile.Forms" Version="3.0.0-beta5" />
     </ItemGroup>

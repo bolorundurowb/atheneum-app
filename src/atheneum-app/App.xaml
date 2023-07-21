@@ -151,7 +151,7 @@
             <Setter Property="CornerRadius" Value="12" />
             <Setter Property="BackgroundColor"
                     Value="{AppThemeBinding Dark= {StaticResource DarkInputBackgroundColour}, Light= {StaticResource LightInputBackgroundColour}}" />
-            <Setter Property="Margin" Value="0, 5, 0, 5" />
+            <Setter Property="Margin" Value="0, 0, 0, 5" />
             <Setter Property="Padding" Value="10, 5, 10, 5" />
             <Setter Property="HasShadow" Value="False" />
             <Setter Property="BorderColor"
