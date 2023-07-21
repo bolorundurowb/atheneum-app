@@ -448,7 +448,6 @@
                                                             Style="{StaticResource TopNumStyle}" />
                                                     </StackLayout>
                                                 </Frame>
-
                                             </StackLayout>
                                         </DataTemplate>
                                     </CollectionView.ItemTemplate>
