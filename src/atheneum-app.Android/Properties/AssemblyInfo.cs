@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("atheneum_app.Android")]
+[assembly: AssemblyTitle("AtheneumApp.Android")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CompanyName")]
-[assembly: AssemblyProduct("atheneum_app.Android")]
-[assembly: AssemblyCopyright("Copyright © CompanyName Year")]
+[assembly: AssemblyCompany("Bolorunduro Winner-Timothy")]
+[assembly: AssemblyProduct("AtheneumApp.Android")]
+[assembly: AssemblyCopyright("Copyright © Bolorunduro Winner-Timothy 2023")]
 [assembly: AssemblyTrademark("CompanyTrademark")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
