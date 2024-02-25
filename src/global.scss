@@ -24,3 +24,44 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+@font-face {
+  font-family: fab;
+  src: url("assets/fonts/fabrand.otf");
+  format: "opentype";
+}
+
+@font-face {
+  font-family: far;
+  src: url("assets/fonts/faregular.otf");
+  format: "opentype";
+}
+
+@font-face {
+  font-family: fas;
+  src: url("assets/fonts/fasolid.otf");
+  format: "opentype";
+}
+
+@font-face {
+  font-family: frederika;
+  src: url("assets/fonts/fredericka.ttf");
+  format: "truetype";
+}
+
+@font-face {
+  font-family: proxima;
+  src: url("assets/fonts/proxima.otf");
+  format: "opentype";
+}
+
+@font-face {
+  font-family: proximabold;
+  src: url("assets/fonts/proximabold.otf");
+  format: "opentype";
+}
+
+body {
+  font-family: proxima;
+}
