@@ -1,0 +1,115 @@
+name: Ionic Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Ionic App
+        run: |
+          npm run build
+
+      - name: Archive Build Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: ionic-build-artifacts
+          path: ./www
+
+  android_build:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: ionic-build-artifacts
+          path: ./www
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Cordova and Android Dependencies
+        run: |
+          npm install -g cordova
+          npm install -g @ionic/cli native-run cordova-res
+          sudo apt-get install -y openjdk-8-jdk
+          sudo update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+          echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $GITHUB_ENV
+          echo "export JAVA_HOME" >> $GITHUB_ENV
+          echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
+          echo "export ANDROID_HOME" >> $GITHUB_ENV
+          echo "export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools" >> $GITHUB_ENV
+          mkdir $HOME/android-sdk
+          wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -O /tmp/android-sdk.zip
+          unzip -d $HOME/android-sdk /tmp/android-sdk.zip
+          yes | sdkmanager --licenses
+
+      - name: Build Android APK
+        run: |
+          ionic cordova platform add android
+          ionic cordova build android --prod
+
+      - name: Upload Android APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: android-apk
+          path: platforms/android/app/build/outputs/apk/release/app-release.apk
+
+  ios_build:
+    needs: build
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: ionic-build-artifacts
+          path: ./www
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Cordova and iOS Dependencies
+        run: |
+          npm install -g cordova
+          npm install -g @ionic/cli native-run cordova-res
+          sudo gem install cocoapods
+
+      - name: Build iOS App
+        run: |
+          ionic cordova platform add ios
+          ionic cordova build ios --prod --release --device
+
+      - name: Archive iOS Build
+        uses: actions/upload-artifact@v2
+        with:
+          name: ios-build
+          path: platforms/ios/build/device/*.ipa
