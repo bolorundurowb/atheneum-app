@@ -21,15 +21,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Ionic
-        run: npm i -g @ionic/cli
-
       - name: Install Dependencies
         run: yarn install
 
       - name: Build Ionic App
         run: |
-          ionic build
+          yarn run build
 
       - name: Archive Build Artifacts
         uses: actions/upload-artifact@v2
