@@ -21,3 +21,15 @@ ion-tab-button {
 ion-label {
   font-size: 13px;
 }
+
+
+@media (prefers-color-scheme: dark) {
+  ion-tab-bar {
+    --background: #272727;
+    --color: #AAAAAA;
+  }
+
+  ion-tab-button {
+    --color-selected: #FFFFFF;
+  }
+}
