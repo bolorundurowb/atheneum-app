@@ -21,12 +21,15 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install Ionic
+        run: npm i -g @ionic/cli
+
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: Build Ionic App
         run: |
-          npm run build
+          ionic build
 
       - name: Archive Build Artifacts
         uses: actions/upload-artifact@v2
@@ -50,12 +53,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20'
 
       - name: Install Cordova and Android Dependencies
         run: |
-          npm install -g cordova
-          npm install -g @ionic/cli native-run cordova-res
+          yarn global add cordova @ionic/cli native-run cordova-res
           sudo apt-get install -y openjdk-8-jdk
           sudo update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
           echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $GITHUB_ENV
@@ -95,12 +97,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20'
 
       - name: Install Cordova and iOS Dependencies
         run: |
-          npm install -g cordova
-          npm install -g @ionic/cli native-run cordova-res
+          yarn global add cordova @ionic/cli native-run cordova-res
           sudo gem install cocoapods
 
       - name: Build iOS App
