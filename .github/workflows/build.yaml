@@ -55,9 +55,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Cordova and Android Dependencies
+      - name: Install Capacitor and Android Dependencies
         run: |
-          yarn global add cordova @ionic/cli native-run cordova-res
+          yarn global add @capacitor/cli @ionic/cli native-run
           sudo apt-get install -y openjdk-8-jdk
           sudo update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
           echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $GITHUB_ENV
@@ -70,16 +70,19 @@ jobs:
           unzip -d $HOME/android-sdk /tmp/android-sdk.zip
           yes | sdkmanager --licenses
 
+      - name: Add Android Platform
+        run: npx cap add android
+
       - name: Build Android APK
         run: |
-          ionic cordova platform add android
-          ionic cordova build android --prod
+          npx cap copy android
+          npx cap open android --release --external
 
       - name: Upload Android APK
         uses: actions/upload-artifact@v2
         with:
           name: android-apk
-          path: platforms/android/app/build/outputs/apk/release/app-release.apk
+          path: android/app/build/outputs/apk/release/app-release.apk
 
   ios_build:
     needs: build
@@ -99,18 +102,21 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Cordova and iOS Dependencies
+      - name: Install Capacitor and iOS Dependencies
         run: |
-          yarn global add cordova @ionic/cli native-run cordova-res
+          yarn global add @capacitor/cli @ionic/cli native-run
           sudo gem install cocoapods
+
+      - name: Add iOS Platform
+        run: npx cap add ios
 
       - name: Build iOS App
         run: |
-          ionic cordova platform add ios
-          ionic cordova build ios --prod --release --device
+          npx cap copy ios
+          npx cap open ios --release --external
 
       - name: Archive iOS Build
         uses: actions/upload-artifact@v2
         with:
           name: ios-build
-          path: platforms/ios/build/device/*.ipa
+          path: ios/App/App-release.ipa
