@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: '',
     component: LoginPage
   }
 ];
