@@ -9,19 +9,19 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        loadChildren: () => import('./tab-pages/home/home.module').then(m => m.HomePageModule)
+        loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
       },
       {
         path: 'library',
-        loadChildren: () => import('./tab-pages/library/library.module').then(m => m.LibraryPageModule)
+        loadChildren: () => import('./library/library.module').then(m => m.LibraryPageModule)
       },
       {
         path: 'wishlist',
-        loadChildren: () => import('./tab-pages/wishlist/wishlist.module').then(m => m.WishListPageModule)
+        loadChildren: () => import('./wishlist/wishlist.module').then(m => m.WishListPageModule)
       },
       {
         path: 'profile',
-        loadChildren: () => import('./tab-pages/profile/profile.module').then(m => m.ProfilePageModule)
+        loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
       },
       {
         path: '',
