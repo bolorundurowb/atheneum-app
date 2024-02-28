@@ -5,7 +5,7 @@ import { asPromise } from '../utils';
 
 @Injectable({ providedIn: 'root'})
 export class AuthService {
-  userKey = 'ath-user';
+  userKey = 'atheneum-user';
   private readonly baseUrl;
 
   constructor(private http: HttpClient) {
