@@ -1,0 +1,70 @@
+.container {
+  //display: flex;
+  //flex-direction: row;
+  //align-items: center;
+  padding: 15px;
+}
+
+.atheneum {
+  color: #008080;
+  margin-bottom: 15px !important;
+}
+
+ion-label {
+  font-family: frederika !important;
+  font-size: 40px !important;
+  --color: #FDFDFD;
+}
+
+ion-button {
+  --color: #FDFDFD;
+  --background: #111111;
+}
+
+.forgot-password {
+  text-align: end;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  a {
+    color: #008080;
+  }
+}
+
+.join-us {
+  margin-top: 20px;
+  text-align: center;
+
+  a {
+    color: #008080;
+  }
+}
+
+.input-field {
+  margin-top: 20px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .atheneum {
+    color: #32b2b2;
+  }
+
+  ion-button {
+    --color: #111111;
+    --background: #FDFDFD;
+  }
+
+  .forgot-password {
+    a {
+      color: #32b2b2;
+    }
+  }
+
+  .join-us {
+    a {
+      color: #32b2b2;
+    }
+  }
+}
+

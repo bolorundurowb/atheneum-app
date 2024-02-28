@@ -62,6 +62,7 @@
   format: "opentype";
 }
 
-body {
+html {
   font-family: proxima;
+  --ion-font-family: proxima;
 }

@@ -1,15 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Login One</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <div>
+      <ion-label>welcome to</ion-label>
+    </div>
+
+    <div>
+      <ion-label class="atheneum">atheneum</ion-label>
+    </div>
+
+    <div class="input-field">
+      <ion-input label="email address" fill="outline" label-placement="floating" type="email"
+                 placeholder="john@email.org"></ion-input>
+    </div>
+
+    <div class="input-field">
+      <ion-input label="password" fill="outline" label-placement="floating" type="password" placeholder=""></ion-input>
+    </div>
+
+    <div class="forgot-password">
+      <a>forgot password?</a>
+    </div>
+
+    <ion-button expand="block" mode="ios">login</ion-button>
+
+    <div class="join-us">
+      dont have an account? <a>join us</a>
+    </div>
+  </div>
 </ion-content>
