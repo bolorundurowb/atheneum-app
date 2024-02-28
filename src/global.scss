@@ -66,3 +66,11 @@ html {
   font-family: proxima;
   --ion-font-family: proxima;
 }
+
+ion-toast.success-toast {
+  --background: green;
+}
+
+ion-toast.error-toast {
+  --background: red;
+}
