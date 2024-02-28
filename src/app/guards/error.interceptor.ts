@@ -16,9 +16,6 @@ export class ErrorInterceptor implements HttpInterceptor {
       if (errorStatus === 401) {
         this.authService.logout();
         window.location.href = '/auth/login';
-      } else if (errorStatus >= 500) {
-        this.notificationService.error(errorMessage).then(() => {
-        });
       }
 
       return throwError(() => errorMessage);

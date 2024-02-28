@@ -18,7 +18,7 @@ export class NotificationService {
     const toast = await this.toastController
       .create({
         message,
-        duration: 3000,
+        duration: 3500,
         position: 'bottom',
         cssClass
       });

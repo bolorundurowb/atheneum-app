@@ -26,7 +26,6 @@ export class LoginPage {
 
       await this.router.navigate(['tabs', 'home']);
     } catch (e) {
-      console.log(e);
       await this.notificationService.error(e as string);
     } finally {
       this.isLoggingIn = false;
