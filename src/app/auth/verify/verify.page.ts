@@ -23,6 +23,7 @@ export class VerifyPage {
     this.isVerifying = true;
 
     try {
+      this.payload.verificationCode = this.payload.verificationCode?.toString();
       await this.authService.verifyEmail(this.payload);
       await this.notificationService.success('Account successfully verified');
 
