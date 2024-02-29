@@ -4,8 +4,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  templateUrl: 'login.page.html',
-  styleUrls: [ 'login.page.scss' ]
+  templateUrl: 'forgot-password.page.html',
+  styleUrls: [ 'forgot-password.page.scss' ]
 })
 export class ForgotPasswordPage {
   isLoggingIn = false;
