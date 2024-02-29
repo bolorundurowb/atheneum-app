@@ -2,33 +2,38 @@ import { Component } from '@angular/core';
 import { AuthService, NotificationService } from '../../services';
 import { Router } from '@angular/router';
 
+interface ForgotPasswordPayload {
+  emailAddress?: string;
+}
+
 @Component({
-  selector: 'app-login',
+  selector: 'app-forgot-password',
   templateUrl: 'forgot-password.page.html',
   styleUrls: [ 'forgot-password.page.scss' ]
 })
 export class ForgotPasswordPage {
-  isLoggingIn = false;
-  payload: any = {};
+  isRequesting = false;
+  payload: ForgotPasswordPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
               private router: Router) {
   }
 
-  async login() {
-    this.isLoggingIn = true;
+  async requestReset() {
+    this.isRequesting = true;
 
     try {
-      const response = await this.authService.login(this.payload);
+      await this.authService.forgotPassword(this.payload);
+      await this.notificationService.success('A reset code has been sent your email address');
+      this.payload = {};
 
-      await this.notificationService.success('Successfully logged in');
-      this.authService.persistUser(response);
-
-      await this.router.navigate(['tabs', 'home']);
+      setTimeout(async () => {
+        await this.router.navigate([ 'auth', 'reset-password' ]);
+      }, 1500);
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
-      this.isLoggingIn = false;
+      this.isRequesting = false;
     }
   }
 }
