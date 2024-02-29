@@ -6,7 +6,7 @@ export class NotificationService {
   constructor(private toastController: ToastController) {
   }
 
-  async success(message: string) {
+  success(message: string): Promise<void> {
     return this.displayToast(message, 'success-toast');
   }
 
@@ -14,13 +14,21 @@ export class NotificationService {
     return this.displayToast(message, 'error-toast');
   }
 
-  private async displayToast(message: string, cssClass: string) {
+  info(message: string): Promise<void> {
+    return this.displayToast(message, 'info-toast');
+  }
+
+  warn(message: string): Promise<void> {
+    return this.displayToast(message, 'warn-toast');
+  }
+
+  private async displayToast(message: string, cssClass: string, duration: number = 3500) {
     const toast = await this.toastController
       .create({
         message,
-        duration: 3500,
+        duration,
+        cssClass,
         position: 'bottom',
-        cssClass
       });
 
     await toast.present();

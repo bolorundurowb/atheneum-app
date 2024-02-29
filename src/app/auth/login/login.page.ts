@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { AuthService, NotificationService } from '../../services';
 import { Router } from '@angular/router';
 
+interface LoginPayload {
+  emailAddress?: string;
+  password?: string;
+}
+
 @Component({
   selector: 'app-login',
   templateUrl: 'login.page.html',
@@ -9,7 +14,7 @@ import { Router } from '@angular/router';
 })
 export class LoginPage {
   isLoggingIn = false;
-  payload: any = {};
+  payload: LoginPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
               private router: Router) {
