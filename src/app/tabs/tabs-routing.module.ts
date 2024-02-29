@@ -20,8 +20,8 @@ const routes: Routes = [
         loadChildren: () => import('./wishlist/wishlist.module').then(m => m.WishListPageModule)
       },
       {
-        path: 'profile',
-        loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
+        path: 'settings',
+        loadChildren: () => import('./settings/profile.module').then(m => m.ProfilePageModule)
       },
       {
         path: '',
