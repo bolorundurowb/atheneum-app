@@ -3,7 +3,7 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LoginPageRoutingModule } from './login-routing.module';
-import { LoginPage } from './login.page';
+import { ForgotPasswordPage } from './forgot-password.page';
 
 @NgModule({
   imports: [
@@ -12,7 +12,7 @@ import { LoginPage } from './login.page';
     FormsModule,
     LoginPageRoutingModule
   ],
-  declarations: [ LoginPage ]
+  declarations: [ ForgotPasswordPage ]
 })
 export class LoginPageModule {
 }
