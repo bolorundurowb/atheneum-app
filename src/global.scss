@@ -68,9 +68,17 @@ html {
 }
 
 ion-toast.success-toast {
-  --background: green;
+  --background: #4D9947;
 }
 
 ion-toast.error-toast {
-  --background: red;
+  --background: #AA0B0F;
+}
+
+ion-toast.info-toast {
+  --background: #49ABE8;
+}
+
+ion-toast.warn-toast {
+  --background: #FF7F00;
 }
