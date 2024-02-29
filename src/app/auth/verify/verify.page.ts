@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { AuthService, NotificationService } from '../../services';
 import { Router } from '@angular/router';
 
-interface LoginPayload {
-  emailAddress?: string;
-  password?: string;
+interface VerificationPayload {
+  verificationCode?: string;
 }
 
 @Component({
@@ -13,27 +12,25 @@ interface LoginPayload {
   styleUrls: [ 'verify.page.scss' ]
 })
 export class VerifyPage {
-  isLoggingIn = false;
-  payload: LoginPayload = {};
+  isVerifying = false;
+  payload: VerificationPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
               private router: Router) {
   }
 
-  async login() {
-    this.isLoggingIn = true;
+  async verify() {
+    this.isVerifying = true;
 
     try {
-      const response = await this.authService.login(this.payload);
+      await this.authService.verifyEmail(this.payload);
+      await this.notificationService.success('Account successfully verified');
 
-      await this.notificationService.success('Successfully logged in');
-      this.authService.persistUser(response);
-
-      await this.router.navigate(['tabs', 'home']);
+      await this.router.navigate([ 'tabs', 'home' ]);
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
-      this.isLoggingIn = false;
+      this.isVerifying = false;
     }
   }
 }

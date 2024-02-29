@@ -29,7 +29,11 @@ export class LoginPage {
       await this.notificationService.success('Successfully logged in');
       this.authService.persistUser(response);
 
-      await this.router.navigate(['tabs', 'home']);
+      if (response.isEmailVerified) {
+        await this.router.navigate([ 'tabs', 'home' ]);
+      } else {
+        await this.router.navigate([ 'auth', 'verify' ]);
+      }
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {

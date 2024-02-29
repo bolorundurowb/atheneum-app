@@ -19,27 +19,9 @@ ion-label {
 }
 
 ion-button {
+  margin-top: 20px;
   --color: #FDFDFD;
   --background: #111111;
-}
-
-.forgot-password {
-  text-align: end;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
-  a {
-    color: #008080;
-  }
-}
-
-.join-us {
-  margin-top: 20px;
-  text-align: center;
-
-  a {
-    color: #008080;
-  }
 }
 
 .input-field {
@@ -55,18 +37,6 @@ ion-button {
   ion-button {
     --color: #111111;
     --background: #FDFDFD;
-  }
-
-  .forgot-password {
-    a {
-      color: #32b2b2;
-    }
-  }
-
-  .join-us {
-    a {
-      color: #32b2b2;
-    }
   }
 }
 

@@ -3,57 +3,40 @@
     <div>
       <div>
         <ion-label>
-          welcome to
+          verify your
         </ion-label>
       </div>
 
       <div>
         <ion-label class="atheneum">
-          atheneum
+          account
         </ion-label>
       </div>
 
       <div class="input-field">
         <ion-input
-          name="email-address"
-          label="email address"
+          name="verification-code"
+          label="verification code"
           fill="outline"
           label-placement="floating"
-          type="email"
-          placeholder="john.doe@email.example"
-          [(ngModel)]="payload.emailAddress"></ion-input>
-      </div>
-
-      <div class="input-field">
-        <ion-input
-          name="password"
-          label="password"
-          fill="outline"
-          label-placement="floating"
-          type="password"
-          [(ngModel)]="payload.password"></ion-input>
-      </div>
-
-      <div class="forgot-password">
-        <a routerLink="/auth/forgot-password">forgot password?</a>
+          type="number"
+          [maxlength]="6"
+          placeholder="e.g 398472"
+          [(ngModel)]="payload.verificationCode"></ion-input>
       </div>
 
       <ion-button
         expand="block"
         mode="ios"
-        [disabled]="isLoggingIn"
-        (click)="login()">
-        <ng-container *ngIf="isLoggingIn">
+        [disabled]="isVerifying"
+        (click)="verify()">
+        <ng-container *ngIf="isVerifying">
           <ion-spinner name="lines-sharp"></ion-spinner>
         </ng-container>
-        <ng-container *ngIf="!isLoggingIn">
-          login
+        <ng-container *ngIf="!isVerifying">
+          verify account
         </ng-container>
       </ion-button>
-
-      <div class="join-us">
-        dont have an account? <a>join us</a>
-      </div>
     </div>
   </div>
 </ion-content>
