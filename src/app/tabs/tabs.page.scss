@@ -10,8 +10,12 @@ ion-tab-bar {
 }
 
 ion-button {
+  height: 55px;
+  width: 55px;
+  --color: #FFFFFF;
   --background: #800020;
   --background-activated: #800020;
+  --border-radius: 13px;
 }
 
 ion-tab-button {

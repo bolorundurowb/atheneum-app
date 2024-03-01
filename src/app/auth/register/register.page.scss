@@ -5,6 +5,11 @@
   padding: 0 20px 20px;
   height: 100vh;
   width: 100%;
+
+  .header {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .atheneum {
@@ -18,14 +23,8 @@ ion-label {
   --color: #FDFDFD;
 }
 
-.forgot-password {
-  text-align: end;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
-  a {
-    color: #008080;
-  }
+ion-button {
+  margin-top: 20px;
 }
 
 .join-us {
@@ -41,16 +40,13 @@ ion-label {
   margin-top: 20px;
 }
 
+ion-icon {
+  font-size: 64px;
+}
 
 @media (prefers-color-scheme: dark) {
   .atheneum {
     color: #32b2b2;
-  }
-
-  .forgot-password {
-    a {
-      color: #32b2b2;
-    }
   }
 
   .join-us {

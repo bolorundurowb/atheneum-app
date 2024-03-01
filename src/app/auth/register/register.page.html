@@ -1,16 +1,33 @@
 <ion-content [fullscreen]="true">
   <div class="container">
+    <div class="header">
+      <ion-button class="back-btn" (click)="goBack()">
+        <ion-icon size="large" slot="icon-only" src="assets/icons/arrow-left.svg"></ion-icon>
+      </ion-button>
+    </div>
+
     <div>
       <div>
         <ion-label>
-          welcome to
+          create your
         </ion-label>
       </div>
 
       <div>
         <ion-label class="atheneum">
-          atheneum
+          account
         </ion-label>
+      </div>
+
+      <div class="input-field">
+        <ion-input
+          name="full-name"
+          label="full name"
+          fill="outline"
+          label-placement="floating"
+          type="text"
+          placeholder="Adeyele Doe"
+          [(ngModel)]="payload.fullName"></ion-input>
       </div>
 
       <div class="input-field">
@@ -34,25 +51,31 @@
           [(ngModel)]="payload.password"></ion-input>
       </div>
 
-      <div class="forgot-password">
-        <a routerLink="/auth/forgot-password">forgot password?</a>
+      <div class="input-field">
+        <ion-input
+          name="confirm-password"
+          label="confirm password"
+          fill="outline"
+          label-placement="floating"
+          type="password"
+          [(ngModel)]="payload.confirmPassword"></ion-input>
       </div>
 
       <ion-button
         expand="block"
         mode="ios"
-        [disabled]="isLoggingIn"
-        (click)="login()">
-        <ng-container *ngIf="isLoggingIn">
+        [disabled]="isRegistering"
+        (click)="register()">
+        <ng-container *ngIf="isRegistering">
           <ion-spinner name="lines-sharp"></ion-spinner>
         </ng-container>
-        <ng-container *ngIf="!isLoggingIn">
-          login
+        <ng-container *ngIf="!isRegistering">
+          register
         </ng-container>
       </ion-button>
 
       <div class="join-us">
-        dont have an account? <a routerLink="/auth/register">join us</a>
+        already have an account? <a (click)="goBack()">login</a>
       </div>
     </div>
   </div>
