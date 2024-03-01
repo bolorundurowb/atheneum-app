@@ -19,18 +19,7 @@ ion-label {
 }
 
 ion-button {
-  --color: #FDFDFD;
-  --background: #111111;
-}
-
-.forgot-password {
-  text-align: end;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
-  a {
-    color: #008080;
-  }
+  margin-top: 20px;
 }
 
 .join-us {
@@ -50,17 +39,6 @@ ion-button {
 @media (prefers-color-scheme: dark) {
   .atheneum {
     color: #32b2b2;
-  }
-
-  ion-button {
-    --color: #111111;
-    --background: #FDFDFD;
-  }
-
-  .forgot-password {
-    a {
-      color: #32b2b2;
-    }
   }
 
   .join-us {

@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { AuthService, NotificationService } from '../../services';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 interface RegisterPayload {
+  fullName?: string;
   emailAddress?: string;
   password?: string;
+  confirmPassword?: string;
 }
 
 @Component({
@@ -17,7 +20,7 @@ export class RegisterPage {
   payload: RegisterPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
-              private router: Router) {
+              private router: Router, private location: Location) {
   }
 
   async register() {
@@ -35,5 +38,9 @@ export class RegisterPage {
     } finally {
       this.isRegistering = false;
     }
+  }
+
+  goBack() {
+    this.location.back();
   }
 }

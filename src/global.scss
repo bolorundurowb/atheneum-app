@@ -67,6 +67,10 @@ html {
   --ion-font-family: proxima;
 }
 
+a {
+  text-decoration: none;
+}
+
 ion-toast.success-toast {
   --background: #4D9947;
 }
