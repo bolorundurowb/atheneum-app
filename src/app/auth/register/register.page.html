@@ -41,12 +41,12 @@
       <ion-button
         expand="block"
         mode="ios"
-        [disabled]="isLoggingIn"
-        (click)="login()">
-        <ng-container *ngIf="isLoggingIn">
+        [disabled]="isRegistering"
+        (click)="register()">
+        <ng-container *ngIf="isRegistering">
           <ion-spinner name="lines-sharp"></ion-spinner>
         </ng-container>
-        <ng-container *ngIf="!isLoggingIn">
+        <ng-container *ngIf="!isRegistering">
           login
         </ng-container>
       </ion-button>
