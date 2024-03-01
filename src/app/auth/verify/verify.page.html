@@ -37,6 +37,24 @@
           verify account
         </ng-container>
       </ion-button>
+
+      <ion-button
+        expand="block"
+        mode="ios"
+        [disabled]="isResending || resendWaitRemaining !== 0"
+        (click)="resend()">
+        <ng-container *ngIf="isResending">
+          <ion-spinner name="lines-sharp"></ion-spinner>
+        </ng-container>
+        <ng-container *ngIf="!isResending">
+          <ng-container *ngIf="resendWaitRemaining === 0">
+            resend verification code
+          </ng-container>
+          <ng-container *ngIf="resendWaitRemaining !== 0">
+            resend code in {{resendWaitRemaining}}s ...
+          </ng-container>
+        </ng-container>
+      </ion-button>
     </div>
   </div>
 </ion-content>
