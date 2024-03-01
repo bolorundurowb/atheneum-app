@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div>
+      <div>
+        <ion-label>
+          verify your
+        </ion-label>
+      </div>
+
+      <div>
+        <ion-label class="atheneum">
+          account
+        </ion-label>
+      </div>
+
+      <div class="input-field">
+        <ion-input
+          name="verification-code"
+          label="verification code"
+          fill="outline"
+          label-placement="floating"
+          type="number"
+          max="6"
+          [maxlength]="6"
+          placeholder="e.g 398472"
+          [(ngModel)]="payload.verificationCode"></ion-input>
+      </div>
+
+      <ion-button
+        expand="block"
+        mode="ios"
+        [disabled]="isVerifying"
+        (click)="verify()">
+        <ng-container *ngIf="isVerifying">
+          <ion-spinner name="lines-sharp"></ion-spinner>
+        </ng-container>
+        <ng-container *ngIf="!isVerifying">
+          verify account
+        </ng-container>
+      </ion-button>
+
+      <ion-button
+        expand="block"
+        mode="ios"
+        class="inverted"
+        [disabled]="isResending || resendWaitRemaining !== 0"
+        (click)="resend()">
+        <ng-container *ngIf="isResending">
+          <ion-spinner name="lines-sharp"></ion-spinner>
+        </ng-container>
+        <ng-container *ngIf="!isResending">
+          <ng-container *ngIf="resendWaitRemaining === 0">
+            resend verification code
+          </ng-container>
+          <ng-container *ngIf="resendWaitRemaining !== 0">
+            resend code in {{resendWaitRemaining}}s ...
+          </ng-container>
+        </ng-container>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

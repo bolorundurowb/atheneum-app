@@ -3,7 +3,7 @@ import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { asPromise } from '../utils';
 
-@Injectable({ providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 export class AuthService {
   userKey = 'atheneum-user';
   private readonly baseUrl;
@@ -32,8 +32,8 @@ export class AuthService {
     return asPromise(this.http.post<any>(`${this.baseUrl}/verify-email`, payload));
   }
 
-  resendVerificationCode(payload: any): Promise<any> {
-    return asPromise(this.http.post<any>(`${this.baseUrl}/resend-verification-code`, payload));
+  resendVerificationCode(): Promise<any> {
+    return asPromise(this.http.post<any>(`${this.baseUrl}/resend-verification-code`, {}));
   }
 
   isLoggedIn() {

@@ -9,7 +9,12 @@ export class AuthGuard {
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     if (this.authService.isLoggedIn()) {
-      return true;
+      if (this.authService.getUser().isEmailVerified) {
+        return true;
+      }
+
+      window.location.href = '/auth/verify';
+      return false;
     }
 
     window.location.href = '/auth/login';
