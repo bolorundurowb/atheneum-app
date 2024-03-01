@@ -63,7 +63,9 @@ export class VerifyPage implements OnInit {
 
     try {
       await this.authService.resendVerificationCode();
-      await this.notificationService.success('Reset code resent');
+      await this.notificationService.success('Reset code successfully resent');
+
+      this.setupResend();
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {

@@ -82,3 +82,30 @@ ion-toast.info-toast {
 ion-toast.warn-toast {
   --background: #FF7F00;
 }
+
+ion-button {
+  --color: #FDFDFD;
+  --background: #111111;
+
+  &.inverted {
+    --color: #111111;
+    --background: #FDFDFD;
+    --border-color: #F4F4F4;
+    --border-width: 1px;
+    --border-style: solid;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  ion-button {
+    --color: #111111;
+    --background: #FDFDFD;
+
+    &.inverted {
+      --color: #FDFDFD;
+      --background: #111111;
+      --border-color: #5F5F5F;
+    }
+  }
+}

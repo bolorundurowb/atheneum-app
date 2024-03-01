@@ -20,6 +20,7 @@
           fill="outline"
           label-placement="floating"
           type="number"
+          max="6"
           [maxlength]="6"
           placeholder="e.g 398472"
           [(ngModel)]="payload.verificationCode"></ion-input>
@@ -41,6 +42,7 @@
       <ion-button
         expand="block"
         mode="ios"
+        class="inverted"
         [disabled]="isResending || resendWaitRemaining !== 0"
         (click)="resend()">
         <ng-container *ngIf="isResending">
