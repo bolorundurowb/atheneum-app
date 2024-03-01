@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div>
+      <div>
+        <ion-label>
+          welcome to
+        </ion-label>
+      </div>
+
+      <div>
+        <ion-label class="atheneum">
+          atheneum
+        </ion-label>
+      </div>
+
+      <div class="input-field">
+        <ion-input
+          name="email-address"
+          label="email address"
+          fill="outline"
+          label-placement="floating"
+          type="email"
+          placeholder="john.doe@email.example"
+          [(ngModel)]="payload.emailAddress"></ion-input>
+      </div>
+
+      <div class="input-field">
+        <ion-input
+          name="password"
+          label="password"
+          fill="outline"
+          label-placement="floating"
+          type="password"
+          [(ngModel)]="payload.password"></ion-input>
+      </div>
+
+      <div class="forgot-password">
+        <a routerLink="/auth/forgot-password">forgot password?</a>
+      </div>
+
+      <ion-button
+        expand="block"
+        mode="ios"
+        [disabled]="isLoggingIn"
+        (click)="login()">
+        <ng-container *ngIf="isLoggingIn">
+          <ion-spinner name="lines-sharp"></ion-spinner>
+        </ng-container>
+        <ng-container *ngIf="!isLoggingIn">
+          login
+        </ng-container>
+      </ion-button>
+
+      <div class="join-us">
+        dont have an account? <a>join us</a>
+      </div>
+    </div>
+  </div>
+</ion-content>
