@@ -1,0 +1,22 @@
+.page {
+  padding: 20px;
+}
+
+ion-label {
+  font-family: frederika !important;
+  font-size: 40px;
+  color: #008080;
+}
+
+ion-input {
+  margin-top: 15px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  ion-label {
+    color: #32b2b2;
+  }
+}
+
+
