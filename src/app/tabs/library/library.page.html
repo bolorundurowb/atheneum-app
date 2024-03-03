@@ -1,14 +1,10 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" scroll-y="false">
   <div class="page">
     <ion-label>
       library
     </ion-label>
 
-    <ion-input
-      type="text"
-      name="search"
-      label="search"
-      fill="outline"
-      label-placement="floating"></ion-input>
+    <ion-searchbar
+      show-clear-button="focus"></ion-searchbar>
   </div>
 </ion-content>
