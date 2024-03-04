@@ -12,7 +12,7 @@ export class BookService {
   }
 
   getAll(skip = 0, limit = 50, search = '', publisherId = '', authorId = ''): Promise<any[]> {
-    return asPromise<any[]>(this.http.get<any>(`${this.baseUrl}?skip=${skip}&limit=${limit}}&search=${search}}&publisherId=${publisherId}}&authorId=${authorId}`));
+    return asPromise<any[]>(this.http.get<any>(`${this.baseUrl}?skip=${skip}&limit=${limit}&search=${search}&publisherId=${publisherId}&authorId=${authorId}`));
   }
 
   getRecent(): Promise<any[]> {
