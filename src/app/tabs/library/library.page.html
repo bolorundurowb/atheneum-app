@@ -1,28 +1,33 @@
-<ion-content [fullscreen]="true" >
-  <div class="page">
+<ion-content [fullscreen]="true">
+  <div class="page-header">
     <ion-label>
       library
     </ion-label>
 
     <ion-searchbar
       show-clear-button="focus"></ion-searchbar>
-
-    <div class="page-loader" *ngIf="isLoading">
-      <ion-spinner name="lines-sharp"></ion-spinner>
-    </div>
-
-    <ion-content scroll-y="false">
-      <ion-refresher slot="fixed" (ionRefresh)="handlePullRefresh($event)">
-        <ion-refresher-content></ion-refresher-content>
-      </ion-refresher>
-
-      <div class="ion-content-scroll-host ion-padding">
-        <p>Pull this content down to trigger the refresh.</p>
-      </div>
-
-      <ion-infinite-scroll (ionInfinite)="handleScrollEnd($event)">
-        <ion-infinite-scroll-content loadingText="Please wait..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
-      </ion-infinite-scroll>
-    </ion-content>
   </div>
+
+  <div class="page-loader" *ngIf="isLoading">
+    <ion-spinner name="lines-sharp"></ion-spinner>
+  </div>
+
+  <ion-refresher slot="fixed" (ionRefresh)="handlePullRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="ion-content-scroll-host ion-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let book of books"
+                 size="4">
+          <div>{{ book | json }}</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-infinite-scroll (ionInfinite)="handleScrollEnd($event)">
+    <ion-infinite-scroll-content loadingSpinner="lines-sharp"></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
