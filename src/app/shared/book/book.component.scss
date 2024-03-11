@@ -1,3 +1,51 @@
 .book {
+  height: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px grey;
+  background-color: #F9F9F9;
 
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 195px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-family: proximabold !important;
+    max-lines: 1;
+    color: #111111;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+    overflow: clip;
+  }
+
+  .author {
+    font-size: 14px;
+    max-lines: 1;
+    color: #6C6C6C;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+    overflow: clip;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .book {
+    background-color: #272727;
+
+    .title {
+      color: #FDFDFD;
+    }
+
+    .author {
+      color: #C6C6C6;
+    }
+  }
 }

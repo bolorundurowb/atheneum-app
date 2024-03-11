@@ -4,11 +4,9 @@ import { Component, Input } from '@angular/core';
   selector: 'app-book',
   template: `
     <div class="book">
-      <div>
-        <img [src]="book.coverArt">
-      </div>
-      <div>{{book.title}}</div>
-      <div>{{ book.authors[0].name }}</div>
+      <img [src]="book.coverArt">
+      <div class="title">{{book.title}}</div>
+      <div class="author">{{ book.authors[0].name }}</div>
     </div>
   `,
   styleUrl: './book.component.scss'
