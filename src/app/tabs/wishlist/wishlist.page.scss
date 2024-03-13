@@ -1,0 +1,34 @@
+.page-loader {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-header {
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-label {
+  font-family: frederika !important;
+  font-size: 40px;
+  color: #008080;
+  margin-left: 15px;
+  margin-right: 20px;
+  align-self: flex-start;
+}
+
+button {
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  ion-label {
+    color: #32b2b2;
+  }
+}

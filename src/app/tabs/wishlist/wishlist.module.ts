@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { WishlistPage } from './wishlist.page';
 
 import { WishListPageRoutingModule } from './wishlist-routing.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    WishListPageRoutingModule
+    WishListPageRoutingModule,
+    SharedModule
   ],
   declarations: [ WishlistPage ]
 })

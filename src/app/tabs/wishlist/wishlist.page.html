@@ -1,15 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="page-header">
+    <ion-label>
+      wish list
+    </ion-label>
+
+    <button class="accent-btn">
+      add
+    </button>
+  </div>
+
+  <div class="page-loader" *ngIf="isLoading">
+    <ion-spinner name="lines-sharp"></ion-spinner>
+  </div>
+
+  <ion-refresher slot="fixed" (ionRefresh)="handlePullRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="ion-content-scroll-host ion-padding">
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let book of wishlist"
+                 size="4">
+          <app-book [book]="book"></app-book>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
