@@ -1,11 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NotificationService, WishlistService } from '../../services';
 
 @Component({
   selector: 'app-wishlist',
   templateUrl: 'wishlist.page.html',
   styleUrls: [ 'wishlist.page.scss' ]
 })
-export class WishlistPage {
-  constructor() {
+export class WishlistPage implements OnInit {
+  isLoading = false;
+  wishlist: any[] = [];
+
+  constructor(private wishlistService: WishlistService, private notificationService: NotificationService) {
+  }
+
+  async ngOnInit() {
+    this.isLoading = true;
+
+    try {
+      this.wishlist = await this.wishlistService.getAll();
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isLoading = false;
+    }
+  }
+
+  handlePullRefresh(event: any) {
+    console.log('Pull down refresh', event);
+
+    setTimeout(() => {
+      event.target.complete();
+    }, 3000);
   }
 }
