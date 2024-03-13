@@ -92,6 +92,25 @@ ion-button {
   }
 }
 
+button {
+  &.accent-btn {
+    font-size: 16px;
+    width: 95px;
+    height: 37px;
+    font-family: proximabold !important;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #BCC08F;
+    color: #BCC08F;
+    background: #F5F6EE;
+
+    &:hover {
+      background: #e2e5ce;
+    }
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   ion-button {
@@ -107,9 +126,17 @@ ion-button {
     &.back-btn {
       --color: #FDFDFD;
       --border-color: #5F5F5F;
+    }
+  }
 
-      button {
-        content: '&#xf060;';
+  button {
+    &.accent-btn {
+      border-color: #F5F6EE;
+      color: #F5F6EE;
+      background: #BCC08F;
+
+      &:hover {
+        background: #c3c69a;
       }
     }
   }

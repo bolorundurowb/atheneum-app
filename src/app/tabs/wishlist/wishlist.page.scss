@@ -7,6 +7,9 @@
   position: sticky;
   top: 20px;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ion-label {
@@ -15,6 +18,12 @@ ion-label {
   color: #008080;
   margin-left: 15px;
   margin-right: 20px;
+  align-self: flex-start;
+}
+
+button {
+  align-self: flex-end;
+  margin-right: 15px;
 }
 
 
