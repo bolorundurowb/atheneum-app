@@ -9,14 +9,6 @@
   z-index: 1;
 }
 
-ion-label {
-  font-family: frederika !important;
-  font-size: 40px;
-  color: #008080;
-  margin-left: 15px;
-  margin-right: 20px;
-}
-
 ion-input {
   margin-top: 15px;
 }
@@ -28,9 +20,6 @@ ion-searchbar {
 
 
 @media (prefers-color-scheme: dark) {
-  ion-label {
-    color: #32b2b2;
-  }
 }
 
 
