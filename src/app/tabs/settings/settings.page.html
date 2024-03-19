@@ -4,7 +4,7 @@
       settings
     </ion-label>
 
-    <button class="accent-btn">
+    <button id="logout-confirm" class="accent-btn">
       log out
     </button>
   </div>
@@ -30,3 +30,9 @@
     </ion-accordion>
   </ion-accordion-group>
 </ion-content>
+
+<ion-alert
+  trigger="logout-confirm"
+  header="Confirm"
+  message="Are you sure you want to log out?"
+  [buttons]="logOutButtons"></ion-alert>
