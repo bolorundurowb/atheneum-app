@@ -26,7 +26,9 @@
       <ion-item slot="header" color="light">
         <ion-label>About</ion-label>
       </ion-item>
-      <div class="ion-padding" slot="content">Third Content</div>
+      <div class="ion-padding" slot="content">
+        <span style="font-weight: bold">App Version:</span> {{appVersion || '(Not Available)'}}
+      </div>
     </ion-accordion>
   </ion-accordion-group>
 </ion-content>
