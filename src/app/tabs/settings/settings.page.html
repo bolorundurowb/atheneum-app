@@ -48,7 +48,9 @@
         <div class="input-field">
           <ion-button
             expand="block"
-            mode="ios">
+            mode="ios"
+            [disabled]="isUpdatingProfile"
+            (click)="updateProfile()">
             <ng-container *ngIf="isUpdatingProfile">
               <ion-spinner name="lines-sharp"></ion-spinner>
             </ng-container>
