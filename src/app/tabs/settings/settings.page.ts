@@ -4,12 +4,19 @@ import { Router } from '@angular/router';
 
 import { App } from '@capacitor/app';
 
+interface UpdateProfilePayload {
+  firstName?: string;
+  lastName?: string;
+  emailAddress?: string;
+}
+
 @Component({
   selector: 'app-settings',
   templateUrl: 'settings.page.html',
   styleUrls: [ 'settings.page.scss' ]
 })
 export class SettingsPage implements OnInit {
+  appVersion?: string;
   logOutButtons = [
     {
       text: 'Cancel',
@@ -27,7 +34,8 @@ export class SettingsPage implements OnInit {
     }
   ];
 
-  appVersion?: string;
+  isUpdatingProfile = false;
+  updatePayload: UpdateProfilePayload = {};
 
   constructor(private authService: AuthService, private router: Router) {
   }
