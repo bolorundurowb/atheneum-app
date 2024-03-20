@@ -14,7 +14,52 @@
       <ion-item slot="header" color="light">
         <ion-label>Profile</ion-label>
       </ion-item>
-      <div class="ion-padding" slot="content">First Content</div>
+      <div class="ion-padding" slot="content">
+        <div>
+          <ion-input
+            name="first-name"
+            label="first name"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            [(ngModel)]="updatePayload.firstName"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="last-name"
+            label="last name"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            [(ngModel)]="updatePayload.lastName"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            disabled
+            name="email-address"
+            label="email address"
+            fill="outline"
+            label-placement="floating"
+            [value]="updatePayload.emailAddress"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            [disabled]="isUpdatingProfile"
+            (click)="updateProfile()">
+            <ng-container *ngIf="isUpdatingProfile">
+              <ion-spinner name="lines-sharp"></ion-spinner>
+            </ng-container>
+            <ng-container *ngIf="!isUpdatingProfile">
+              update profile
+            </ng-container>
+          </ion-button>
+        </div>
+      </div>
     </ion-accordion>
     <ion-accordion value="second">
       <ion-item slot="header" color="light">
@@ -27,7 +72,7 @@
         <ion-label>About</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
-        <span style="font-weight: bold">App Version:</span> {{appVersion || '(Not Available)'}}
+        <span style="font-weight: bold">App Version:</span> {{ appVersion || '(Not Available)' }}
       </div>
     </ion-accordion>
   </ion-accordion-group>
