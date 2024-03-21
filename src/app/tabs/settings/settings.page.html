@@ -73,7 +73,7 @@
             fill="outline"
             label-placement="floating"
             type="password"
-            [(ngModel)]="updatePayload.firstName"></ion-input>
+            [(ngModel)]="changePayload.currentPassword"></ion-input>
         </div>
 
         <div class="input-field">
@@ -83,7 +83,7 @@
             fill="outline"
             label-placement="floating"
             type="password"
-            [(ngModel)]="updatePayload.lastName"></ion-input>
+            [(ngModel)]="changePayload.newPassword"></ion-input>
         </div>
 
         <div class="input-field">
@@ -93,19 +93,19 @@
             fill="outline"
             label-placement="floating"
             type="password"
-            [value]="updatePayload.emailAddress"></ion-input>
+            [(ngModel)]="changePayload.confirmNewPassword"></ion-input>
         </div>
 
         <div class="input-field">
           <ion-button
             expand="block"
             mode="ios"
-            [disabled]="isUpdatingProfile"
-            (click)="updateProfile()">
-            <ng-container *ngIf="isUpdatingProfile">
+            [disabled]="isChangingPassword"
+            (click)="changePassword()">
+            <ng-container *ngIf="isChangingPassword">
               <ion-spinner name="lines-sharp"></ion-spinner>
             </ng-container>
-            <ng-container *ngIf="!isUpdatingProfile">
+            <ng-container *ngIf="!isChangingPassword">
               update password
             </ng-container>
           </ion-button>
