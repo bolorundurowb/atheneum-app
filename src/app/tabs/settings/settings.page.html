@@ -65,7 +65,52 @@
       <ion-item slot="header" color="light">
         <ion-label>Security</ion-label>
       </ion-item>
-      <div class="ion-padding" slot="content">Second Content</div>
+      <div class="ion-padding" slot="content">
+        <div>
+          <ion-input
+            name="current-password"
+            label="current password"
+            fill="outline"
+            label-placement="floating"
+            type="password"
+            [(ngModel)]="updatePayload.firstName"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="new-password"
+            label="new password"
+            fill="outline"
+            label-placement="floating"
+            type="password"
+            [(ngModel)]="updatePayload.lastName"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="new-confirm-password"
+            label="confirm new password"
+            fill="outline"
+            label-placement="floating"
+            type="password"
+            [value]="updatePayload.emailAddress"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            [disabled]="isUpdatingProfile"
+            (click)="updateProfile()">
+            <ng-container *ngIf="isUpdatingProfile">
+              <ion-spinner name="lines-sharp"></ion-spinner>
+            </ng-container>
+            <ng-container *ngIf="!isUpdatingProfile">
+              update password
+            </ng-container>
+          </ion-button>
+        </div>
+      </div>
     </ion-accordion>
     <ion-accordion value="third">
       <ion-item slot="header" color="light">
