@@ -10,6 +10,12 @@ interface UpdateProfilePayload {
   emailAddress?: string;
 }
 
+interface ChangePasswordPayload {
+  currentPassword?: string;
+  newPassword?: string;
+  confirmNewPassword?: string;
+}
+
 @Component({
   selector: 'app-settings',
   templateUrl: 'settings.page.html',
@@ -36,6 +42,9 @@ export class SettingsPage implements OnInit {
 
   isUpdatingProfile = false;
   updatePayload: UpdateProfilePayload = {};
+
+  isChangingPassword = false;
+  changePayload: ChangePasswordPayload = {};
 
   constructor(private authService: AuthService, private router: Router, private userService: UserService,
               private notificationService: NotificationService) {
@@ -73,6 +82,30 @@ export class SettingsPage implements OnInit {
       await this.notificationService.error(e as string);
     } finally {
       this.isUpdatingProfile = false;
+    }
+  }
+
+  async changePassword() {
+    if (Number(this.changePayload.newPassword?.length) < 8) {
+      await this.notificationService.error('The password must be at least 8 characters');
+      return;
+    }
+
+    if (this.changePayload.confirmNewPassword !== this.changePayload.newPassword) {
+      await this.notificationService.error('The password and confirmation must match');
+      return;
+    }
+
+    this.isChangingPassword = true;
+
+    try {
+      await this.userService.updatePassword(this.changePayload);
+      await this.notificationService.success('Password changed successfully');
+      this.changePayload = {};
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isChangingPassword = false;
     }
   }
 
