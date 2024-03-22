@@ -10,12 +10,22 @@
   </div>
 
   <ion-accordion-group>
-    <ion-accordion value="first">
+    <ion-accordion value="profile">
       <ion-item slot="header" color="light">
         <ion-label>Profile</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
         <div>
+          <ion-input
+            name="account-id"
+            label="account id"
+            fill="outline"
+            label-placement="floating"
+            disabled
+            [value]="updatePayload.id"></ion-input>
+        </div>
+
+        <div class="input-field">
           <ion-input
             name="first-name"
             label="first name"
@@ -61,7 +71,7 @@
         </div>
       </div>
     </ion-accordion>
-    <ion-accordion value="second">
+    <ion-accordion value="password">
       <ion-item slot="header" color="light">
         <ion-label>Security</ion-label>
       </ion-item>
@@ -112,7 +122,15 @@
         </div>
       </div>
     </ion-accordion>
-    <ion-accordion value="third">
+    <ion-accordion value="support">
+      <ion-item slot="header" color="light">
+        <ion-label>Support</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        Support
+      </div>
+    </ion-accordion>
+    <ion-accordion value="about">
       <ion-item slot="header" color="light">
         <ion-label>About</ion-label>
       </ion-item>

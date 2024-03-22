@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { App } from '@capacitor/app';
 
 interface UpdateProfilePayload {
+  id?: string;
   firstName?: string;
   lastName?: string;
   emailAddress?: string;
@@ -110,7 +111,7 @@ export class SettingsPage implements OnInit {
   }
 
   setUser(user: any) {
-    const { firstName, lastName, emailAddress } = user;
-    this.updatePayload = { firstName, lastName, emailAddress };
+    const { _id, firstName, lastName, emailAddress } = user;
+    this.updatePayload = { id: _id, firstName, lastName, emailAddress };
   }
 }
