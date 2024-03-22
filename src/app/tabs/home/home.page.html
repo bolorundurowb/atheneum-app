@@ -8,47 +8,53 @@
     </div>
   </div>
 
-  <div class="home-page-content">
-    <div class="section">
-      <div class="header">recently address</div>
-      <div>
-        <ion-grid>
-          <ion-row>
-            <ion-col *ngFor="let book of recentBooks"
-                     size="4">
-              <app-book [book]="book"></app-book>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="header">top authors</div>
-      <div>
-        <ion-grid>
-          <ion-row>
-            <ion-col *ngFor="let author of topAuthors"
-                     size="4">
-              <div>{{ author| json }}</div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="header">top publishers</div>
-      <div>
-        <ion-grid>
-          <ion-row>
-            <ion-col *ngFor="let publisher of topPublishers"
-                     size="4">
-              <div>{{ publisher| json }}</div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
-    </div>
+  <div class="page-loader" *ngIf="isLoading">
+    <ion-spinner name="lines-sharp"></ion-spinner>
   </div>
+
+  <ng-container *ngIf="!isLoading">
+    <div class="home-page-content">
+      <div class="section">
+        <div class="header">recently address</div>
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col *ngFor="let book of recentBooks"
+                       size="4">
+                <app-book [book]="book"></app-book>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="header">top authors</div>
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col *ngFor="let author of topAuthors"
+                       size="4">
+                <div>{{ author| json }}</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="header">top publishers</div>
+        <div>
+          <ion-grid>
+            <ion-row>
+              <ion-col *ngFor="let publisher of topPublishers"
+                       size="4">
+                <div>{{ publisher| json }}</div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+    </div>
+  </ng-container>
 </ion-content>
