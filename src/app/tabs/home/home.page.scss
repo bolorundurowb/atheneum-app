@@ -1,3 +1,8 @@
+.page-loader {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .page-header {
   position: sticky;
   top: 20px;
@@ -42,9 +47,39 @@
   }
 }
 
+.stat-card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #F5F6EE;
+  border-color: #B0B474;
+  height: 120px;
+  margin-top: 5px;
+  padding: 5px;
+
+  .name {
+    text-align: end;
+    height: 80px;
+  }
+
+  .count {
+    text-align: start;
+    font-weight: bold;
+    font-size: 25px;
+
+    span {
+      font-size: 15px;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   .page-header {
+    background-color: #121212;
+
     .page-title {
       color: #32b2b2;
     }
@@ -52,6 +87,11 @@
     .page-sub-title {
       color: #C6C6C6;
     }
+  }
+
+  .stat-card {
+    background-color: #777f43;
+    border-color: #B0B474;
   }
 }
 
