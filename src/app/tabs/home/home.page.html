@@ -35,7 +35,10 @@
             <ion-row>
               <ion-col *ngFor="let author of topAuthors"
                        size="4">
-                <div>{{ author| json }}</div>
+                <div class="stat-card">
+                  <div class="name">{{author.author.name}}</div>
+                  <div class="count">{{author.numOfBooks}}<span>book{{author.numOfBooks === 1 ? '' : 's'}}</span></div>
+                </div>
               </ion-col>
             </ion-row>
           </ion-grid>
@@ -49,7 +52,10 @@
             <ion-row>
               <ion-col *ngFor="let publisher of topPublishers"
                        size="4">
-                <div>{{ publisher| json }}</div>
+                <div class="stat-card">
+                  <div class="name">{{publisher.publisher.name}}</div>
+                  <div class="count">{{publisher.numOfBooks}}<span>book{{publisher.numOfBooks === 1 ? '' : 's'}}</span></div>
+                </div>
               </ion-col>
             </ion-row>
           </ion-grid>
