@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorService, BookService, NotificationService, PublisherService } from '../../services';
+import { AuthorService, AuthService, BookService, NotificationService, PublisherService } from '../../services';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +8,20 @@ import { AuthorService, BookService, NotificationService, PublisherService } fro
 })
 export class HomePage implements OnInit {
   isLoading = false;
+  currentUser: any = {};
   recentBooks: any[] = [];
   topAuthors: any[] = [];
   topPublishers: any[] = [];
 
   constructor(private bookService: BookService, private authorService: AuthorService, private publisherService: PublisherService,
-    private notificationService: NotificationService) {
+              private authService: AuthService, private notificationService: NotificationService) {
   }
 
   async ngOnInit() {
     this.isLoading = true;
 
     try {
+      this.currentUser = this.authService.getUser();
       this.recentBooks = await this.bookService.getRecent();
       this.topAuthors = await this.authorService.getTop();
       this.topPublishers = await this.publisherService.getTop();
