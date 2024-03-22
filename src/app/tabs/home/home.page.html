@@ -1,15 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="page-header">
+    <div class="page-sub-title">
+      hello,
+    </div>
+    <div class="page-title">
+      {{ currentUser.firstName }}.
+    </div>
+  </div>
+
+  <div class="home-page-content">
+    <div class="section">
+      <div class="header">recently address</div>
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col *ngFor="let book of recentBooks"
+                     size="4">
+              <app-book [book]="book"></app-book>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="header">top authors</div>
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col *ngFor="let author of topAuthors"
+                     size="4">
+              <div>{{ author| json }}</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="header">top publishers</div>
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col *ngFor="let publisher of topPublishers"
+                     size="4">
+              <div>{{ publisher| json }}</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+  </div>
 </ion-content>
