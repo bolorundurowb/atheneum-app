@@ -3,6 +3,7 @@ import { AuthService, NotificationService, UserService } from '../../services';
 import { Router } from '@angular/router';
 
 import { App } from '@capacitor/app';
+import { Browser } from '@capacitor/browser';
 
 interface UpdateProfilePayload {
   id?: string;
@@ -111,15 +112,15 @@ export class SettingsPage implements OnInit {
   }
 
   async buyMeACoffee() {
-    await this.router.navigateByUrl('https://www.buymeacoffee.com/bolorundurowb');
+    await Browser.open({ url: 'https://www.buymeacoffee.com/bolorundurowb' });
   }
 
   async goToSourceCode() {
-    await this.router.navigateByUrl('https://github.com/bolorundurowb/atheneum-app');
+    await Browser.open({ url: 'https://github.com/bolorundurowb/atheneum-app' });
   }
 
   async giveFeedback() {
-    await this.router.navigateByUrl('https://github.com/bolorundurowb/atheneum-app/issues');
+    await Browser.open({ url: 'https://github.com/bolorundurowb/atheneum-app/issues' });
   }
 
   setUser(user: any) {
