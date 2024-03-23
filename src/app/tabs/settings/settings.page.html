@@ -127,7 +127,33 @@
         <ion-label>Support</ion-label>
       </ion-item>
       <div class="ion-padding" slot="content">
-        Support
+        <div>
+          <ion-button
+            expand="block"
+            mode="ios"
+            class="coffee"
+            (click)="buyMeACoffee()">
+            <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=bolorundurowb&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" />
+          </ion-button>
+          <a href="https://www.buymeacoffee.com/bolorundurowb"></a>
+        </div>
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            (click)="goToSourceCode()">
+            view source code
+          </ion-button>
+        </div>
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            class="feedback"
+            (click)="giveFeedback()">
+            feedback & feature requests
+          </ion-button>
+        </div>
       </div>
     </ion-accordion>
     <ion-accordion value="about">

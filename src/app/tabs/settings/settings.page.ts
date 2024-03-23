@@ -110,6 +110,18 @@ export class SettingsPage implements OnInit {
     }
   }
 
+  async buyMeACoffee() {
+    await this.router.navigateByUrl('https://www.buymeacoffee.com/bolorundurowb');
+  }
+
+  async goToSourceCode() {
+    await this.router.navigateByUrl('https://github.com/bolorundurowb/atheneum-app');
+  }
+
+  async giveFeedback() {
+    await this.router.navigateByUrl('https://github.com/bolorundurowb/atheneum-app/issues');
+  }
+
   setUser(user: any) {
     const { _id, firstName, lastName, emailAddress } = user;
     this.updatePayload = { id: _id, firstName, lastName, emailAddress };
