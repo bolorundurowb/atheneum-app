@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .body {
@@ -64,6 +65,10 @@
 
 
 @media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #121212;
+  }
+
   .body {
     .title{
       color: #FDFDFD;
