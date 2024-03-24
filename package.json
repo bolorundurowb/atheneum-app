@@ -23,6 +23,7 @@
     "@angular/router": "^17.0.2",
     "@capacitor/android": "5.7.0",
     "@capacitor/app": "5.0.7",
+    "@capacitor/browser": "^5.2.0",
     "@capacitor/core": "5.7.0",
     "@capacitor/haptics": "5.0.7",
     "@capacitor/ios": "5.7.0",
@@ -35,7 +36,7 @@
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.0",
+    "@angular-devkit/build-angular": "^15.0.5",
     "@angular-eslint/builder": "^17.0.0",
     "@angular-eslint/eslint-plugin": "^17.0.0",
     "@angular-eslint/eslint-plugin-template": "^17.0.0",

@@ -19,3 +19,26 @@ ion-accordion-group {
 .input-field {
   margin-top: 15px;
 }
+
+.feedback {
+  --border-style: solid;
+  --border-width: 2px;
+  --border-color: #BCC08F;
+  --color: #BCC08F;
+  --background: #F5F6EE;
+}
+
+.coffee {
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --background: #FFDD00;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .feedback {
+    --border-color: #F5F6EE;
+    --color: #F5F6EE;
+    --background: #BCC08F;
+  }
+}
