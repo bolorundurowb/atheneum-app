@@ -1,15 +1,19 @@
 .page-loader {
   text-align: center;
-  margin-top: 20px;
+  padding-top: 75px;
 }
 
 .page-header {
-  position: sticky;
-  top: 20px;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 ion-label {
@@ -26,6 +30,13 @@ button {
   margin-right: 15px;
 }
 
+.wish-content {
+  padding-top: 70px;
+}
+
 
 @media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #121212;
+  }
 }
