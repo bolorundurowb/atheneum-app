@@ -58,20 +58,14 @@
   padding: 5px;
 
   .name {
-    text-align: end;
+    text-align: start;
     height: 80px;
   }
 
   .count {
-    text-align: start;
+    text-align: end;
     font-weight: bold;
     font-size: 25px;
-
-    span {
-      font-size: 15px;
-      font-weight: normal;
-      font-style: italic;
-    }
   }
 }
 
@@ -90,7 +84,8 @@
   }
 
   .stat-card {
-    background-color: #777f43;
+    color: black;
+    background-color: #F5F6EE;
     border-color: #B0B474;
   }
 }
