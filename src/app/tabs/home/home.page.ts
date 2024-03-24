@@ -34,6 +34,6 @@ export class HomePage implements OnInit {
   }
 
   async goToBookDetails(book: any) {
-    await this.navCtrl.navigateForward('/details/book', { state: book });
+    await this.navCtrl.navigateForward('/details/book', { queryParams: { book: JSON.stringify(book) } });
   }
 }
