@@ -21,7 +21,7 @@
       <ion-row>
         <ion-col *ngFor="let book of books"
                  size="4">
-          <app-book [book]="book"></app-book>
+          <app-book [book]="book" (click)="goToBookDetails(book)"></app-book>
         </ion-col>
       </ion-row>
     </ion-grid>

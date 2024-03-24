@@ -6,7 +6,12 @@ const routes: Routes = [
   {
     path: '',
     component: DetailsPage,
-    children: []
+    children: [
+      {
+        path: 'book',
+        loadChildren: () => import('./book/book.module').then(m => m.BookPageModule)
+      }
+    ]
   }
 ];
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService, NotificationService } from '../../services';
-import { InfiniteScrollCustomEvent } from '@ionic/angular';
+import { InfiniteScrollCustomEvent, NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-library',
@@ -11,7 +12,8 @@ export class LibraryPage implements OnInit {
   isLoading = false;
   books: any[] = [];
 
-  constructor(private bookService: BookService, private notificationService: NotificationService) {
+  constructor(private bookService: BookService, private notificationService: NotificationService,
+              private navCtrl: NavController) {
   }
 
   async ngOnInit() {
@@ -27,7 +29,10 @@ export class LibraryPage implements OnInit {
   }
 
   async loadBookData() {
+  }
 
+  async goToBookDetails(book: any) {
+    await this.navCtrl.navigateForward('/details/book', { state: book });
   }
 
   handlePullRefresh(event: any) {
