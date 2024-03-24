@@ -1,12 +1,16 @@
 .page-loader {
   text-align: center;
-  margin-top: 20px;
+  padding-top: 135px;
 }
 
 .page-header {
-  position: sticky;
-  top: 20px;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
+  background-color: #FFFFFF;
 }
 
 ion-input {
@@ -18,8 +22,15 @@ ion-searchbar {
   margin-bottom: 5px;
 }
 
+.lib-content {
+  padding-top: 130px;
+}
+
 
 @media (prefers-color-scheme: dark) {
+  .page-header {
+    background-color: #121212;
+  }
 }
 
 

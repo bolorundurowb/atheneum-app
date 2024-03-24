@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthorService, AuthService, BookService, NotificationService, PublisherService } from '../../services';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ export class HomePage implements OnInit {
   topPublishers: any[] = [];
 
   constructor(private bookService: BookService, private authorService: AuthorService, private publisherService: PublisherService,
-              private authService: AuthService, private notificationService: NotificationService) {
+              private authService: AuthService, private notificationService: NotificationService, private navCtrl: NavController) {
   }
 
   async ngOnInit() {
@@ -30,5 +31,9 @@ export class HomePage implements OnInit {
     } finally {
       this.isLoading = false;
     }
+  }
+
+  async goToBookDetails(book: any) {
+    await this.navCtrl.navigateForward('/details/book', { queryParams: { book: JSON.stringify(book) } });
   }
 }

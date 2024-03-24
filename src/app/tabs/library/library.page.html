@@ -16,12 +16,12 @@
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
-  <div class="ion-content-scroll-host ion-padding">
+  <div class="ion-content-scroll-host ion-padding lib-content">
     <ion-grid>
       <ion-row>
         <ion-col *ngFor="let book of books"
                  size="4">
-          <app-book [book]="book"></app-book>
+          <app-book [book]="book" (click)="goToBookDetails(book)"></app-book>
         </ion-col>
       </ion-row>
     </ion-grid>

@@ -4,10 +4,13 @@
 }
 
 .page-header {
-  position: sticky;
-  top: 20px;
-  z-index: 1;
-  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
+  background-color: #FFFFFF;
 
   .page-title {
     font-family: frederika !important;
@@ -29,7 +32,7 @@
 }
 
 .home-page-content {
-  margin: 30px 10px 30px;
+  margin: 100px 10px 30px;
 
   .section {
     padding: 5px;
@@ -58,20 +61,14 @@
   padding: 5px;
 
   .name {
-    text-align: end;
+    text-align: start;
     height: 80px;
   }
 
   .count {
-    text-align: start;
+    text-align: end;
     font-weight: bold;
     font-size: 25px;
-
-    span {
-      font-size: 15px;
-      font-weight: normal;
-      font-style: italic;
-    }
   }
 }
 
@@ -90,7 +87,8 @@
   }
 
   .stat-card {
-    background-color: #777f43;
+    color: black;
+    background-color: #F5F6EE;
     border-color: #B0B474;
   }
 }

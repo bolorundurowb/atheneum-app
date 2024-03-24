@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true">
+  <div>
+    <div class="header">
+      <ion-button class="back-btn" (click)="goBack()">
+        <ion-icon size="large" slot="icon-only" src="assets/icons/arrow-left.svg"></ion-icon>
+      </ion-button>
+
+      <button id="remove-confirm" class="accent-btn">
+        remove
+      </button>
+    </div>
+
+    <div class="body">
+      <div class="cover-art">
+        <img [src]="book.coverArt"/>
+      </div>
+
+      <div class="title">{{ book.title }}</div>
+      <div class="authors">
+        <ng-container *ngFor="let author of book.authors">
+          {{ author.name }}
+        </ng-container>
+      </div>
+      <div class="summary">
+        {{ book.summary }}
+      </div>
+
+      <div class="meta-row">
+        Publisher: <span>{{ book.publisher.name }}</span>
+      </div>
+      <div class="meta-row">
+        ISBN: <span>{{ book.isbn13 ?? book.isbn }}</span>
+      </div>
+      <div class="meta-row">
+        Publish Year: <span>{{ book.publishYear ?? 'N/A' }}</span>
+      </div>
+      <div class="meta-row">
+        Page Count: <span>{{ book.pageCount }}</span>
+      </div>
+      <div class="meta-row">
+        Source: <span>{{ book.source }}</span>
+      </div>
+      <div class="meta-row">
+        Availability: <span>{{ book.isAvailable ? 'Available' : 'Borrowed' }}</span>
+      </div>
+      <div class="meta-row">
+        Added At: <span>{{ book.createdAt | date: 'dd MMM \'yy HH:mmaa' }}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-alert
+  trigger="remove-confirm"
+  header="Confirm"
+  message="Are you sure you want to remove this book? This action is permanent and cannot be undone!"
+  [buttons]="removeButtons"></ion-alert>

@@ -1,10 +1,14 @@
 .page-header {
-  position: sticky;
-  top: 20px;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 button {
@@ -34,8 +38,16 @@ ion-accordion-group {
   --background: #FFDD00;
 }
 
+ion-accordion-group {
+  padding-top: 45px;
+}
+
 
 @media (prefers-color-scheme: dark) {
+  .header {
+    background-color: #121212;
+  }
+
   .feedback {
     --border-color: #F5F6EE;
     --color: #F5F6EE;

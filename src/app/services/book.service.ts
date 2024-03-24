@@ -22,4 +22,8 @@ export class BookService {
   createByIsbn(payload: any): Promise<any> {
     return asPromise(this.http.post<any>(`${this.baseUrl}/isbn `, payload));
   }
+
+  removeBook(bookId: any): Promise<any> {
+    return asPromise(this.http.delete<any>(`${this.baseUrl}/${bookId} `));
+  }
 }
