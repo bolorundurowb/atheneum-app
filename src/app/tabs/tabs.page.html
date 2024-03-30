@@ -102,7 +102,7 @@
             label-placement="floating"
             type="numeric"
             placeholder="publish year"
-            [(ngModel)]="manualPayload.isbn"></ion-input>
+            [(ngModel)]="manualPayload.publishYear"></ion-input>
         </div>
 
         <div class="input-field">
@@ -132,7 +132,7 @@
             expand="block"
             mode="ios"
             [disabled]="isAddingBook"
-            (click)="addManual(modal)">
+            (click)="addManual()">
             <ng-container *ngIf="isAddingBook">
               <ion-spinner name="lines-sharp"></ion-spinner>
             </ng-container>
