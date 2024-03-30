@@ -11,7 +11,7 @@
     </ion-tab-button>
 
     <ion-tab-button>
-      <ion-button aria-hidden="true">
+      <ion-button aria-hidden="true" id="open-new-book-sheet">
         <ion-icon slot="icon-only" src="assets/icons/plus.svg"></ion-icon>
       </ion-button>
     </ion-tab-button>
@@ -27,3 +27,9 @@
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
+
+<ion-action-sheet
+  class="atheneum-actions"
+  trigger="open-new-book-sheet"
+  header="add to your library"
+  [buttons]="actionSheetButtons"></ion-action-sheet>
