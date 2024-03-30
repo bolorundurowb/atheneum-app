@@ -61,7 +61,6 @@ export class WishlistPage implements OnInit {
   }
 
   async canDismiss(data?: any, role?: string) {
-    console.log(role);
     return role === undefined;
   }
 }
