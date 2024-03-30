@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { BookService, NotificationService } from '../services';
+
+export interface ManualBookPayload {
+
+}
 
 @Component({
   selector: 'app-tabs',
@@ -34,6 +39,9 @@ export class TabsPage {
     },
   ];
 
-  constructor() {
+  isAddingBook: boolean = false;
+  manualPayload: ManualBookPayload = {};
+
+  constructor(private bookService: BookService, private notificationService: NotificationService) {
   }
 }
