@@ -55,8 +55,20 @@ export class TabsPage {
   constructor(private bookService: BookService, private notificationService: NotificationService) {
   }
 
-  async addManual(modalRef: any) {
+  async addManual() {
+    this.isAddingBook = true;
 
+    try {
+      await this.bookService.createManually(this.manualPayload);
+      await this.notificationService.success('Book added to library');
+
+      this.manualPayload = {};
+      this.isManualBookModalVisible = false;
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isAddingBook = false;
+    }
   }
 
   async canDismiss(data?: any, role?: string) {
