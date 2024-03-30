@@ -11,7 +11,7 @@
     </ion-tab-button>
 
     <ion-tab-button>
-      <ion-button aria-hidden="true" id="open-new-book-sheet">
+      <ion-button aria-hidden="true" id="open-new-book-sheet" class="centre">
         <ion-icon slot="icon-only" src="assets/icons/plus.svg"></ion-icon>
       </ion-button>
     </ion-tab-button>
@@ -33,3 +33,116 @@
   trigger="open-new-book-sheet"
   header="add to your library"
   [buttons]="actionSheetButtons"></ion-action-sheet>
+
+<ion-modal #modal
+           id="atheneum-modal"
+           [isOpen]="isManualBookModalVisible"
+           [canDismiss]="canDismiss">
+  <ng-template>
+    <div class="wrapper">
+      <ion-toolbar>
+        <ion-title>add book</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="modal.dismiss()">
+            <ion-icon slot="icon-only" name="close"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+
+      <form>
+        <div class="input-field">
+          <ion-input
+            name="book-title"
+            label="book title"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            placeholder="book title"
+            [(ngModel)]="manualPayload.title"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="book-author"
+            label="book authors"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            placeholder="book authors (separate by commas)"
+            [(ngModel)]="manualPayload.authors"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="book-publisher"
+            label="book publisher"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            placeholder="book publisher"
+            [(ngModel)]="manualPayload.publisher"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="book-isbn"
+            label="book isbn"
+            fill="outline"
+            label-placement="floating"
+            type="numeric"
+            placeholder="book isbn"
+            [(ngModel)]="manualPayload.isbn"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="book-year"
+            label="book publish year"
+            fill="outline"
+            label-placement="floating"
+            type="numeric"
+            placeholder="publish year"
+            [(ngModel)]="manualPayload.isbn"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-textarea
+            name="book-summary"
+            label="book summary"
+            fill="outline"
+            label-placement="floating"
+            placeholder="book summary"
+            rows="3"
+            [(ngModel)]="manualPayload.summary"></ion-textarea>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="book-page-count"
+            label="book page count"
+            fill="outline"
+            label-placement="floating"
+            type="numeric"
+            placeholder="page count"
+            [(ngModel)]="manualPayload.pageCount"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            [disabled]="isAddingBook"
+            (click)="addManual(modal)">
+            <ng-container *ngIf="isAddingBook">
+              <ion-spinner name="lines-sharp"></ion-spinner>
+            </ng-container>
+            <ng-container *ngIf="!isAddingBook">
+              add to library
+            </ng-container>
+          </ion-button>
+        </div>
+      </form>
+    </div>
+  </ng-template>
+</ion-modal>
+

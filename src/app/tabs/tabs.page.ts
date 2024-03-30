@@ -2,7 +2,13 @@ import { Component } from '@angular/core';
 import { BookService, NotificationService } from '../services';
 
 export interface ManualBookPayload {
-
+  title?: string;
+  authors?: string;
+  summary?: string;
+  isbn?: string;
+  publishYear?: number;
+  publisher?: string;
+  pageCount?: number;
 }
 
 @Component({
@@ -29,6 +35,9 @@ export class TabsPage {
       data: {
         action: 'manual-entry',
       },
+      handler: () => {
+        this.isManualBookModalVisible = true;
+      }
     },
     {
       text: 'close',
@@ -40,8 +49,17 @@ export class TabsPage {
   ];
 
   isAddingBook: boolean = false;
+  isManualBookModalVisible = false;
   manualPayload: ManualBookPayload = {};
 
   constructor(private bookService: BookService, private notificationService: NotificationService) {
+  }
+
+  async addManual(modalRef: any) {
+
+  }
+
+  async canDismiss(data?: any, role?: string) {
+    return role === undefined;
   }
 }

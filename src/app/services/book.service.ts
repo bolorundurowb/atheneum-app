@@ -23,6 +23,10 @@ export class BookService {
     return asPromise(this.http.post<any>(`${this.baseUrl}/isbn `, payload));
   }
 
+  createManually(payload: any): Promise<any> {
+    return asPromise(this.http.post<any>(`${this.baseUrl}/manual `, payload));
+  }
+
   removeBook(bookId: any): Promise<any> {
     return asPromise(this.http.delete<any>(`${this.baseUrl}/${bookId} `));
   }
