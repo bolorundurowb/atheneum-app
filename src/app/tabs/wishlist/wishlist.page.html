@@ -29,7 +29,10 @@
   </div>
 </ion-content>
 
-<ion-modal id="atheneum-modal" #modal trigger="add-wishlist-book-dialog">
+<ion-modal #modal
+           id="atheneum-modal"
+           trigger="add-wishlist-book-dialog"
+           [canDismiss]="canDismiss">
   <ng-template>
     <div class="wrapper">
       <ion-toolbar>
@@ -75,11 +78,12 @@
             [(ngModel)]="addPayload.bookIsbn"></ion-input>
         </div>
 
-        <div class="actions">
+        <div class="input-field">
           <ion-button
             expand="block"
             mode="ios"
-            [disabled]="isAdding">
+            [disabled]="isAdding"
+            (click)="addToWishlist(modal)">
             <ng-container *ngIf="isAdding">
               <ion-spinner name="lines-sharp"></ion-spinner>
             </ng-container>
