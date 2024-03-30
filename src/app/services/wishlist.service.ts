@@ -14,4 +14,8 @@ export class WishlistService {
   getAll(): Promise<any[]> {
     return asPromise<any[]>(this.http.get<any>(`${this.baseUrl}`));
   }
+
+  add(payload: any): Promise<any[]> {
+    return asPromise<any[]>(this.http.post<any>(`${this.baseUrl}`, payload));
+  }
 }

@@ -4,7 +4,7 @@
       wish list
     </ion-label>
 
-    <button class="accent-btn">
+    <button id="add-wishlist-book-dialog" class="accent-btn" expand="block">
       add
     </button>
   </div>
@@ -28,3 +28,71 @@
     </ion-grid>
   </div>
 </ion-content>
+
+<ion-modal #modal
+           id="atheneum-modal"
+           trigger="add-wishlist-book-dialog"
+           [canDismiss]="canDismiss">
+  <ng-template>
+    <div class="wrapper">
+      <ion-toolbar>
+        <ion-title>add to wishlist</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="modal.dismiss()">
+            <ion-icon slot="icon-only" name="close"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+
+      <form>
+        <div class="input-field">
+          <ion-input
+            name="book-title"
+            label="book title"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            placeholder="book title"
+            [(ngModel)]="addPayload.bookTitle"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="author-name"
+            label="author's name"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            placeholder="author name"
+            [(ngModel)]="addPayload.bookAuthor"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-input
+            name="isbn"
+            label="isbn"
+            fill="outline"
+            label-placement="floating"
+            type="numeric"
+            placeholder="1234567890123"
+            [(ngModel)]="addPayload.bookIsbn"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            [disabled]="isAdding"
+            (click)="addToWishlist(modal)">
+            <ng-container *ngIf="isAdding">
+              <ion-spinner name="lines-sharp"></ion-spinner>
+            </ng-container>
+            <ng-container *ngIf="!isAdding">
+              add to list
+            </ng-container>
+          </ion-button>
+        </div>
+      </form>
+    </div>
+  </ng-template>
+</ion-modal>
