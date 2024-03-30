@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { NotificationService, WishlistService } from '../../services';
 
+interface AddToWishlistPayload {
+  bookTitle?: string;
+  bookAuthor?: string;
+  bookIsbn?: string;
+}
+
 @Component({
   selector: 'app-wishlist',
   templateUrl: 'wishlist.page.html',
@@ -9,6 +15,9 @@ import { NotificationService, WishlistService } from '../../services';
 export class WishlistPage implements OnInit {
   isLoading = false;
   wishlist: any[] = [];
+
+  isAdding: boolean = false;
+  addPayload: AddToWishlistPayload = {};
 
   constructor(private wishlistService: WishlistService, private notificationService: NotificationService) {
   }

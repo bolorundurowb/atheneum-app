@@ -122,6 +122,28 @@ ion-label {
   }
 }
 
+ion-modal#atheneum-modal {
+  --width: fit-content;
+  --min-width: 350px;
+  --height: fit-content;
+  --border-radius: 6px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+
+  form {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    .input-field {
+      margin-top: 20px;
+    }
+
+    .actions {
+      margin-top: 20px;
+
+    }
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   ion-button {
