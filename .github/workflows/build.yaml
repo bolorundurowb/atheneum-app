@@ -1,119 +1,26 @@
-name: Ionic Build
+name: Ionic Angular Build
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Use Node.js 21
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: 21
 
-      - name: Install Dependencies
-        run: yarn install
+      - name: Install dependencies
+        run: npm install
 
-      - name: Build Ionic App
-        run: |
-          yarn run build
+      - name: Build the app
+        run: ionic build
 
-      - name: Archive Build Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: ionic-build-artifacts
-          path: ./www
-
-  android_build:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: ionic-build-artifacts
-          path: ./www
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install Capacitor and Android Dependencies
-        run: |
-          yarn global add @capacitor/cli @ionic/cli native-run
-          sudo apt-get install -y openjdk-8-jdk
-          sudo update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
-          echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $GITHUB_ENV
-          echo "export JAVA_HOME" >> $GITHUB_ENV
-          echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
-          echo "export ANDROID_HOME" >> $GITHUB_ENV
-          echo "export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools" >> $GITHUB_ENV
-          mkdir $HOME/android-sdk
-          wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -O /tmp/android-sdk.zip
-          unzip -d $HOME/android-sdk /tmp/android-sdk.zip
-          yes | sdkmanager --licenses
-
-      - name: Add Android Platform
-        run: npx cap add android
-
-      - name: Build Android APK
-        run: |
-          npx cap copy android
-          npx cap open android --release --external
-
-      - name: Upload Android APK
-        uses: actions/upload-artifact@v2
-        with:
-          name: android-apk
-          path: android/app/build/outputs/apk/release/app-release.apk
-
-  ios_build:
-    needs: build
-    runs-on: macos-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: ionic-build-artifacts
-          path: ./www
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install Capacitor and iOS Dependencies
-        run: |
-          yarn global add @capacitor/cli @ionic/cli native-run
-          sudo gem install cocoapods
-
-      - name: Add iOS Platform
-        run: npx cap add ios
-
-      - name: Build iOS App
-        run: |
-          npx cap copy ios
-          npx cap open ios --release --external
-
-      - name: Archive iOS Build
-        uses: actions/upload-artifact@v2
-        with:
-          name: ios-build
-          path: ios/App/App-release.ipa
