@@ -153,7 +153,6 @@ export class TabsPage implements OnInit {
     } finally {
       this.isAddingBook = false;
     }
-
   }
 
   async requestPermissions(): Promise<boolean> {
