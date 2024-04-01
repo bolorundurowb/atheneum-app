@@ -17,12 +17,7 @@ import { NavController } from '@ionic/angular';
 export class HomePage implements OnInit {
   isLoading = false;
   currentUser: any = {};
-  stats: any = {
-    books: 0,
-    authors: 0,
-    publishers: 0,
-    wishListItems: 0
-  };
+  stats: any = {};
   recentBooks: any[] = [];
   topAuthors: any[] = [];
   topPublishers: any[] = [];
