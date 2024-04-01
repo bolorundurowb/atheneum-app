@@ -29,6 +29,9 @@ export class TabsPage implements OnInit {
       data: {
         action: 'scan-isbn',
       },
+      handler: async () => {
+        await this.addByScannedIsbn();
+      }
     },
     {
       text: 'enter isbn',
@@ -121,10 +124,15 @@ export class TabsPage implements OnInit {
   }
 
   async addByScannedIsbn() {
+    if (!this.isBarcodeScanningSupported) {
+      await this.showMissingCamera();
+      return;
+    }
+
     const hasPermissions = await this.requestPermissions();
 
     if (!hasPermissions) {
-      await this.presentAlert();
+      await this.showMissingPermissions();
       return;
     }
 
@@ -153,10 +161,19 @@ export class TabsPage implements OnInit {
     return camera === 'granted' || camera === 'limited';
   }
 
-  async presentAlert(): Promise<void> {
+  async showMissingPermissions(): Promise<void> {
     const alert = await this.alertController.create({
       header: 'Permission denied',
-      message: 'Please grant camera permission to use the barcode scanner.',
+      message: 'Please grant camera permission to use the barcode scanner',
+      buttons: [ 'OK' ],
+    });
+    await alert.present();
+  }
+
+  async showMissingCamera(): Promise<void> {
+    const alert = await this.alertController.create({
+      header: 'Missing hardware',
+      message: 'The camera functionality is not supported',
       buttons: [ 'OK' ],
     });
     await alert.present();
