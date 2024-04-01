@@ -172,8 +172,8 @@ export class TabsPage implements OnInit {
 
   async showMissingCamera(): Promise<void> {
     const alert = await this.alertController.create({
-      header: 'Missing hardware',
-      message: 'The camera functionality is not supported',
+      header: 'Unsupported hardware',
+      message: 'Camera functionality does not appear to be supported',
       buttons: [ 'OK' ],
     });
     await alert.present();
