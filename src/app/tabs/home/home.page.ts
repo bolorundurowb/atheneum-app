@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorService, AuthService, BookService, NotificationService, PublisherService } from '../../services';
+import {
+  AuthorService,
+  AuthService,
+  BookService,
+  NotificationService,
+  PublisherService,
+  StatisticService
+} from '../../services';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -10,21 +17,24 @@ import { NavController } from '@ionic/angular';
 export class HomePage implements OnInit {
   isLoading = false;
   currentUser: any = {};
+  stats: any = {};
   recentBooks: any[] = [];
   topAuthors: any[] = [];
   topPublishers: any[] = [];
 
   constructor(private bookService: BookService, private authorService: AuthorService, private publisherService: PublisherService,
-              private authService: AuthService, private notificationService: NotificationService, private navCtrl: NavController) {
+              private authService: AuthService, private notificationService: NotificationService, private navCtrl: NavController,
+              private statService: StatisticService) {
   }
 
   async ngOnInit() {
     this.isLoading = true;
 
     try {
+      this.stats = await this.statService.get();
       this.currentUser = this.authService.getUser();
-      this.recentBooks = await this.bookService.getRecent();
       this.topAuthors = await this.authorService.getTop();
+      this.recentBooks = await this.bookService.getRecent();
       this.topPublishers = await this.publisherService.getTop();
     } catch (e) {
       await this.notificationService.error(e as string);
