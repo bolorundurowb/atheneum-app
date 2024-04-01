@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-book',
   template: `
     <div class="book">
-      <ion-img [src]="book.coverArt"></ion-img>
+      <img [src]="book.coverArt" />
       <div class="title">{{book.title}}</div>
       <div class="author">{{ book.authors ? book.authors[0]?.name : book.authorName }}</div>
     </div>
