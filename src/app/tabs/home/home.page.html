@@ -4,7 +4,7 @@
       hello,
     </div>
     <div class="page-title">
-      {{ currentUser.firstName }}.
+      {{ currentUser.firstName?.trim().toLowerCase() ?? '--' }}.
     </div>
   </div>
 
