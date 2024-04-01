@@ -2,18 +2,21 @@ import { Component } from '@angular/core';
 import { AuthService, NotificationService } from '../../services';
 import { Router } from '@angular/router';
 
-interface ForgotPasswordPayload {
+interface ResetPasswordPayload {
   emailAddress?: string;
+  resetCode?: string;
+  password?: string;
+  confirmPassword?: string;
 }
 
 @Component({
-  selector: 'app-forgot-password',
-  templateUrl: 'forgot-password.page.html',
-  styleUrls: [ 'forgot-password.page.scss' ]
+  selector: 'app-reset-password',
+  templateUrl: 'reset-password.page.html',
+  styleUrls: [ 'reset-password.page.scss' ]
 })
 export class ResetPasswordPage {
   isRequesting = false;
-  payload: ForgotPasswordPayload = {};
+  payload: ResetPasswordPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
               private router: Router) {
