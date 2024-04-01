@@ -34,9 +34,7 @@ export class ResetPasswordPage implements OnInit {
       await this.notificationService.success('Your password has been reset. You can now log in.');
       this.payload = {};
 
-      setTimeout(async () => {
-        await this.router.navigate([ 'auth', 'login' ]);
-      }, 1500);
+      await this.router.navigate([ 'auth', 'login' ]);
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
