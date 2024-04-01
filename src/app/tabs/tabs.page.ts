@@ -33,6 +33,9 @@ export class TabsPage {
       data: {
         action: 'manual-isbn',
       },
+      handler: () => {
+        this.isManualIsbnModalVisible = true;
+      }
     },
     {
       text: 'manually enter',

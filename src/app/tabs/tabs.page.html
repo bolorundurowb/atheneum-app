@@ -35,7 +35,7 @@
   [buttons]="actionSheetButtons"></ion-action-sheet>
 
 <ion-modal #modal
-           id="atheneum-modal"
+           id="manual-book-modal"
            [isOpen]="isManualBookModalVisible"
            [canDismiss]="canDismiss">
   <ng-template>
@@ -146,3 +146,48 @@
   </ng-template>
 </ion-modal>
 
+<ion-modal #modal
+           id="manual-isbn-modal"
+           [isOpen]="isManualIsbnModalVisible"
+           [canDismiss]="canDismiss">
+  <ng-template>
+    <div class="wrapper">
+      <ion-toolbar>
+        <ion-title>add book</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="modal.dismiss()">
+            <ion-icon slot="icon-only" name="close"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+
+      <form>
+        <div class="input-field">
+          <ion-input
+            name="book-isbn"
+            label="isbn"
+            fill="outline"
+            label-placement="floating"
+            type="text"
+            placeholder="book isbn"
+            [(ngModel)]="isbnPayload.isbn"></ion-input>
+        </div>
+
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            [disabled]="isAddingBook"
+            (click)="addByIsbn()">
+            <ng-container *ngIf="isAddingBook">
+              <ion-spinner name="lines-sharp"></ion-spinner>
+            </ng-container>
+            <ng-container *ngIf="!isAddingBook">
+              add to library
+            </ng-container>
+          </ion-button>
+        </div>
+      </form>
+    </div>
+  </ng-template>
+</ion-modal>
