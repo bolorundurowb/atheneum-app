@@ -34,7 +34,7 @@
   header="add to your library"
   [buttons]="actionSheetButtons"></ion-action-sheet>
 
-<ion-modal #modal
+<ion-modal #manualBookModal
            id="manual-book-modal"
            [isOpen]="isManualBookModalVisible"
            [canDismiss]="canDismiss">
@@ -43,7 +43,7 @@
       <ion-toolbar>
         <ion-title>add book</ion-title>
         <ion-buttons slot="end">
-          <ion-button (click)="modal.dismiss()">
+          <ion-button (click)="manualBookModal.dismiss()">
             <ion-icon slot="icon-only" name="close"></ion-icon>
           </ion-button>
         </ion-buttons>
@@ -146,7 +146,7 @@
   </ng-template>
 </ion-modal>
 
-<ion-modal #modal
+<ion-modal #manualIsbnModal
            id="manual-isbn-modal"
            [isOpen]="isManualIsbnModalVisible"
            [canDismiss]="canDismiss">
@@ -155,7 +155,7 @@
       <ion-toolbar>
         <ion-title>add book</ion-title>
         <ion-buttons slot="end">
-          <ion-button (click)="modal.dismiss()">
+          <ion-button (click)="manualIsbnModal.dismiss()">
             <ion-icon slot="icon-only" name="close"></ion-icon>
           </ion-button>
         </ion-buttons>
