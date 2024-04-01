@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ForgotPasswordPage } from './forgot-password.page';
+import { ResetPasswordPage } from './reset-password.page';
 import { ForgotPasswordPageRoutingModule } from './forgot-password-routing.module';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { ForgotPasswordPageRoutingModule } from './forgot-password-routing.modul
     FormsModule,
     ForgotPasswordPageRoutingModule
   ],
-  declarations: [ ForgotPasswordPage ]
+  declarations: [ ResetPasswordPage ]
 })
 export class ForgotPasswordPageModule {
 }
