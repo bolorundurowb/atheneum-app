@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component ({
   selector: 'app-empty',
   template: `
-  <div>Hello</div>
+  <div>{{message}}</div>
   `,
   styleUrl: './empty.component.scss'
 })
-export class EmptyComponent {}
+export class EmptyComponent {
+  @Input() message!: string;
+}
