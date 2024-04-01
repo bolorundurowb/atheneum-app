@@ -11,6 +11,10 @@ export interface ManualBookPayload {
   pageCount?: number;
 }
 
+export interface ManualIsbnPayload {
+  isbn?: string;
+}
+
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
@@ -29,6 +33,9 @@ export class TabsPage {
       data: {
         action: 'manual-isbn',
       },
+      handler: () => {
+        this.isManualIsbnModalVisible = true;
+      }
     },
     {
       text: 'manually enter',
@@ -49,10 +56,19 @@ export class TabsPage {
   ];
 
   isAddingBook: boolean = false;
+
   isManualBookModalVisible = false;
   manualPayload: ManualBookPayload = {};
 
+  isManualIsbnModalVisible = false;
+  isbnPayload: ManualIsbnPayload = {};
+
   constructor(private bookService: BookService, private notificationService: NotificationService) {
+  }
+
+  dismissManualBookModal() {
+    this.isManualBookModalVisible = false;
+    this.manualPayload = {};
   }
 
   async addManual() {
@@ -60,10 +76,29 @@ export class TabsPage {
 
     try {
       await this.bookService.createManually(this.manualPayload);
-      await this.notificationService.success('Book added to library');
+      await this.notificationService.success('Book successfully added to library');
 
-      this.manualPayload = {};
-      this.isManualBookModalVisible = false;
+      this.dismissManualBookModal();
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isAddingBook = false;
+    }
+  }
+
+  dismissManualIsbnModal() {
+    this.isManualIsbnModalVisible = false;
+    this.isbnPayload = {};
+  }
+
+  async addByIsbn() {
+    this.isAddingBook = true;
+
+    try {
+      await this.bookService.createByIsbn(this.isbnPayload);
+      await this.notificationService.success('Book successfully added to library');
+
+      this.dismissManualIsbnModal();
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
