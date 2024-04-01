@@ -17,7 +17,7 @@ export class ForgotPasswordPage {
   payload: ForgotPasswordPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
-              private router: Router, private navCtrl: NavController) {
+              private navCtrl: NavController) {
   }
 
   async requestReset() {
