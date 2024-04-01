@@ -11,6 +11,10 @@ export interface ManualBookPayload {
   pageCount?: number;
 }
 
+export interface ManualIsbnPayload {
+  isbn?: string;
+}
+
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
@@ -49,8 +53,12 @@ export class TabsPage {
   ];
 
   isAddingBook: boolean = false;
+
   isManualBookModalVisible = false;
   manualPayload: ManualBookPayload = {};
+
+  isManualIsbnModalVisible = false;
+  isbnPayload: ManualIsbnPayload = {};
 
   constructor(private bookService: BookService, private notificationService: NotificationService) {
   }
@@ -60,10 +68,26 @@ export class TabsPage {
 
     try {
       await this.bookService.createManually(this.manualPayload);
-      await this.notificationService.success('Book added to library');
+      await this.notificationService.success('Book successfully added to library');
 
       this.manualPayload = {};
       this.isManualBookModalVisible = false;
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isAddingBook = false;
+    }
+  }
+
+  async addByIsbn() {
+    this.isAddingBook = true;
+
+    try {
+      await this.bookService.createByIsbn(this.isbnPayload);
+      await this.notificationService.success('Book successfully added to library');
+
+      this.isbnPayload = {};
+      this.isManualIsbnModalVisible = false;
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
