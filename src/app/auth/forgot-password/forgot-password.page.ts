@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService, NotificationService } from '../../services';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 interface ForgotPasswordPayload {
   emailAddress?: string;
@@ -16,7 +17,7 @@ export class ForgotPasswordPage {
   payload: ForgotPasswordPayload = {};
 
   constructor(private authService: AuthService, private notificationService: NotificationService,
-              private router: Router) {
+              private router: Router, private navCtrl: NavController) {
   }
 
   async requestReset() {
@@ -25,10 +26,9 @@ export class ForgotPasswordPage {
     try {
       await this.authService.forgotPassword(this.payload);
       await this.notificationService.success('A reset code has been sent your email address');
-      this.payload = {};
 
       setTimeout(async () => {
-        await this.router.navigate([ 'auth', 'reset-password' ]);
+        await this.navCtrl.navigateForward('/auth/reset-password', { queryParams: { email: this.payload.emailAddress } });
       }, 1500);
     } catch (e) {
       await this.notificationService.error(e as string);
