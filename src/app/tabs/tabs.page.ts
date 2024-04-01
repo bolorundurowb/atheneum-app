@@ -145,11 +145,13 @@ export class TabsPage implements OnInit {
       }
 
       for (const barcode of barcodes) {
-        await this.bookService.createByIsbn(barcode);
+        await this.bookService.createByIsbn({ isbn: barcode.displayValue });
         await this.notificationService.success('Book successfully added to library');
       }
     } catch (e) {
-      await this.notificationService.error(e as string);
+      if (e !== undefined) {
+        await this.notificationService.error(e as string);
+      }
     } finally {
       this.isAddingBook = false;
     }
