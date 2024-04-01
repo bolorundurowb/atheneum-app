@@ -66,6 +66,11 @@ export class TabsPage {
   constructor(private bookService: BookService, private notificationService: NotificationService) {
   }
 
+  dismissManualBookModal() {
+    this.isManualBookModalVisible = false;
+    this.manualPayload = {};
+  }
+
   async addManual() {
     this.isAddingBook = true;
 
@@ -73,13 +78,17 @@ export class TabsPage {
       await this.bookService.createManually(this.manualPayload);
       await this.notificationService.success('Book successfully added to library');
 
-      this.manualPayload = {};
-      this.isManualBookModalVisible = false;
+      this.dismissManualBookModal();
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
       this.isAddingBook = false;
     }
+  }
+
+  dismissManualIsbnModal() {
+    this.isManualIsbnModalVisible = false;
+    this.isbnPayload = {};
   }
 
   async addByIsbn() {
@@ -89,8 +98,7 @@ export class TabsPage {
       await this.bookService.createByIsbn(this.isbnPayload);
       await this.notificationService.success('Book successfully added to library');
 
-      this.isbnPayload = {};
-      this.isManualIsbnModalVisible = false;
+      this.dismissManualIsbnModal();
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
