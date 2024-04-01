@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BookService, NotificationService } from '../services';
+import { BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
+import { AlertController } from '@ionic/angular';
 
 export interface ManualBookPayload {
   title?: string;
@@ -20,7 +22,7 @@ export interface ManualIsbnPayload {
   templateUrl: 'tabs.page.html',
   styleUrls: [ 'tabs.page.scss' ]
 })
-export class TabsPage {
+export class TabsPage implements OnInit {
   public actionSheetButtons = [
     {
       text: 'scan barcode',
@@ -63,7 +65,15 @@ export class TabsPage {
   isManualIsbnModalVisible = false;
   isbnPayload: ManualIsbnPayload = {};
 
-  constructor(private bookService: BookService, private notificationService: NotificationService) {
+  isBarcodeScanningSupported = false;
+
+  constructor(private bookService: BookService, private notificationService: NotificationService,
+              private alertController: AlertController) {
+  }
+
+  async ngOnInit() {
+    const result = await BarcodeScanner.isSupported();
+    this.isBarcodeScanningSupported = result.supported;
   }
 
   dismissManualBookModal() {
@@ -108,5 +118,47 @@ export class TabsPage {
 
   async canDismiss(data?: any, role?: string) {
     return role === undefined;
+  }
+
+  async addByScannedIsbn() {
+    const hasPermissions = await this.requestPermissions();
+
+    if (!hasPermissions) {
+      await this.presentAlert();
+      return;
+    }
+
+    try {
+      const { barcodes } = await BarcodeScanner.scan();
+
+      if (!barcodes.length) {
+        await this.notificationService.warn('No ISBN codes were found');
+        return;
+      }
+
+      for (const barcode of barcodes) {
+        await this.bookService.createByIsbn(barcode);
+        await this.notificationService.success('Book successfully added to library');
+      }
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isAddingBook = false;
+    }
+
+  }
+
+  async requestPermissions(): Promise<boolean> {
+    const { camera } = await BarcodeScanner.requestPermissions();
+    return camera === 'granted' || camera === 'limited';
+  }
+
+  async presentAlert(): Promise<void> {
+    const alert = await this.alertController.create({
+      header: 'Permission denied',
+      message: 'Please grant camera permission to use the barcode scanner.',
+      buttons: [ 'OK' ],
+    });
+    await alert.present();
   }
 }
