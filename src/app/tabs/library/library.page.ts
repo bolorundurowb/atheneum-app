@@ -43,16 +43,27 @@ export class LibraryPage implements OnInit {
     this.currentPage = 1;
     const skip = this.getSkip();
 
-    this.books = await this.bookService.getAll(skip, this.limit, this.search);
-    event.target.complete();
+    try {
+      this.books = await this.bookService.getAll(skip, this.limit, this.search);
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      event.target.complete();
+    }
   }
 
   async handleScrollEnd(event: any) {
-    console.log('Scroll to end', event);
-
-    setTimeout(() => {
-      (event as InfiniteScrollCustomEvent).target.complete();
-    }, 3000);
+    try {
+      // check to
+      this.currentPage += 1;
+      const skip = this.getSkip();
+      const books = await this.bookService.getAll(skip, this.limit, this.search);
+      this.books = [ ...this.books, ...books ];
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      await (event as InfiniteScrollCustomEvent).target.complete();
+    }
   }
 
   getSkip() {
