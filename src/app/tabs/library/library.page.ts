@@ -54,11 +54,15 @@ export class LibraryPage implements OnInit {
 
   async handleScrollEnd(event: any) {
     try {
-      // check to
-      this.currentPage += 1;
-      const skip = this.getSkip();
-      const books = await this.bookService.getAll(skip, this.limit, this.search);
-      this.books = [ ...this.books, ...books ];
+      // check to see if there are more books before querying
+      if ((this.books.length % this.limit) !== 0) {
+        console.log('There arent more books because the initial load did not meet the limit');
+      } else {
+        this.currentPage += 1;
+        const skip = this.getSkip();
+        const books = await this.bookService.getAll(skip, this.limit, this.search);
+        this.books = [ ...this.books, ...books ];
+      }
     } catch (e) {
       await this.notificationService.error(e as string);
     } finally {
