@@ -5,7 +5,8 @@
     </ion-label>
 
     <ion-searchbar
-      show-clear-button="focus"></ion-searchbar>
+      show-clear-button="focus"
+      [(ngModel)]="search"></ion-searchbar>
   </div>
 
   <div class="page-loader" *ngIf="isLoading">

@@ -12,6 +12,10 @@ export class LibraryPage implements OnInit {
   isLoading = false;
   books: any[] = [];
 
+  search?: string;
+  currentPage = 1;
+  limit = 50;
+
   constructor(private bookService: BookService, private notificationService: NotificationService,
               private navCtrl: NavController) {
   }
@@ -32,22 +36,26 @@ export class LibraryPage implements OnInit {
   }
 
   async goToBookDetails(book: any) {
-    await this.navCtrl.navigateForward('/details/book', { queryParams: {book: JSON.stringify(book)} });
+    await this.navCtrl.navigateForward('/details/book', { queryParams: { book: JSON.stringify(book) } });
   }
 
-  handlePullRefresh(event: any) {
-    console.log('Pull down refresh', event);
+  async handlePullRefresh(event: any) {
+    this.currentPage = 1;
+    const skip = this.getSkip();
 
-    setTimeout(() => {
-      event.target.complete();
-    }, 3000);
+    this.books = await this.bookService.getAll(skip, this.limit, this.search);
+    event.target.complete();
   }
 
-  handleScrollEnd(event: any) {
+  async handleScrollEnd(event: any) {
     console.log('Scroll to end', event);
 
     setTimeout(() => {
       (event as InfiniteScrollCustomEvent).target.complete();
     }, 3000);
+  }
+
+  getSkip() {
+    return (this.currentPage - 1) * this.limit;
   }
 }
