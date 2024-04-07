@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService, NotificationService } from '../../services';
 import { InfiniteScrollCustomEvent, NavController } from '@ionic/angular';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-library',
@@ -30,9 +29,6 @@ export class LibraryPage implements OnInit {
     } finally {
       this.isLoading = false;
     }
-  }
-
-  async loadBookData() {
   }
 
   async goToBookDetails(book: any) {
@@ -67,6 +63,23 @@ export class LibraryPage implements OnInit {
       await this.notificationService.error(e as string);
     } finally {
       await (event as InfiniteScrollCustomEvent).target.complete();
+    }
+  }
+
+  async handleSearch(event: any) {
+    console.log(event.key, this.search);
+
+    this.books = [];
+    this.isLoading = true;
+    this.currentPage = 1;
+    const skip = this.getSkip();
+
+    try {
+      this.books = await this.bookService.getAll(skip, this.limit, this.search);
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    } finally {
+      this.isLoading = false;
     }
   }
 
