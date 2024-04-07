@@ -67,50 +67,65 @@
 
       <div class="section">
         <div class="header">recently added</div>
-        <div>
-          <ion-grid>
-            <ion-row>
-              <ion-col *ngFor="let book of recentBooks"
-                       size="4">
-                <app-book [book]="book" (click)="goToBookDetails(book)"></app-book>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </div>
+        <ng-container *ngIf="!recentBooks.length">
+          <app-empty message="You have no library items, feel free to add some!"></app-empty>
+        </ng-container>
+        <ng-container *ngIf="recentBooks.length">
+          <div>
+            <ion-grid>
+              <ion-row>
+                <ion-col *ngFor="let book of recentBooks"
+                         size="4">
+                  <app-book [book]="book" (click)="goToBookDetails(book)"></app-book>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ng-container>
       </div>
 
       <div class="section">
         <div class="header">top authors</div>
-        <div>
-          <ion-grid>
-            <ion-row>
-              <ion-col *ngFor="let author of topAuthors"
-                       size="4">
-                <div class="recent-card">
-                  <div class="name">{{ author.author.name }}</div>
-                  <div class="count">{{ author.numOfBooks }}</div>
-                </div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </div>
+        <ng-container *ngIf="!topAuthors.length">
+          <app-empty message="You have no authors"></app-empty>
+        </ng-container>
+        <ng-container *ngIf="topAuthors.length">
+          <div>
+            <ion-grid>
+              <ion-row>
+                <ion-col *ngFor="let author of topAuthors"
+                         size="4">
+                  <div class="recent-card">
+                    <div class="name">{{ author.author.name }}</div>
+                    <div class="count">{{ author.numOfBooks }}</div>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ng-container>
       </div>
 
       <div class="section">
         <div class="header">top publishers</div>
-        <div>
-          <ion-grid>
-            <ion-row>
-              <ion-col *ngFor="let publisher of topPublishers"
-                       size="4">
-                <div class="recent-card">
-                  <div class="name">{{ publisher.publisher.name }}</div>
-                  <div class="count">{{ publisher.numOfBooks }}</div>
-                </div>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </div>
+        <ng-container *ngIf="!topPublishers.length">
+          <app-empty message="You have no publishers"></app-empty>
+        </ng-container>
+        <ng-container *ngIf="topPublishers.length">
+          <div>
+            <ion-grid>
+              <ion-row>
+                <ion-col *ngFor="let publisher of topPublishers"
+                         size="4">
+                  <div class="recent-card">
+                    <div class="name">{{ publisher.publisher.name }}</div>
+                    <div class="count">{{ publisher.numOfBooks }}</div>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ng-container>
       </div>
     </div>
   </ng-container>

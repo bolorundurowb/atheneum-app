@@ -5,7 +5,9 @@
     </ion-label>
 
     <ion-searchbar
-      show-clear-button="focus"></ion-searchbar>
+      show-clear-button="never"
+      [(ngModel)]="search"
+      (keyup)="handleSearch($event)"></ion-searchbar>
   </div>
 
   <div class="page-loader" *ngIf="isLoading">

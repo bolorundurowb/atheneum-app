@@ -26,9 +26,7 @@ export class WishlistPage implements OnInit {
     this.isLoading = true;
 
     try {
-      this.wishlist = await this.wishlistService.getAll();
-    } catch (e) {
-      await this.notificationService.error(e as string);
+      await this.loadData();
     } finally {
       this.isLoading = false;
     }
@@ -52,15 +50,20 @@ export class WishlistPage implements OnInit {
     }
   }
 
-  handlePullRefresh(event: any) {
-    console.log('Pull down refresh', event);
-
-    setTimeout(() => {
-      event.target.complete();
-    }, 3000);
+  async handlePullRefresh(event: any) {
+    await this.loadData();
+    event.target.complete();
   }
 
   async canDismiss(data?: any, role?: string) {
     return role === undefined;
+  }
+
+  async loadData() {
+    try {
+      this.wishlist = await this.wishlistService.getAll();
+    } catch (e) {
+      await this.notificationService.error(e as string);
+    }
   }
 }
