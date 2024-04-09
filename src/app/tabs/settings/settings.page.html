@@ -122,6 +122,21 @@
         </div>
       </div>
     </ion-accordion>
+    <ion-accordion value="account">
+      <ion-item slot="header" color="light">
+        <ion-label>Account</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <div class="input-field">
+          <ion-button
+            expand="block"
+            mode="ios"
+            (click)="goToSourceCode()">
+            view source code
+          </ion-button>
+        </div>
+      </div>
+    </ion-accordion>
     <ion-accordion value="support">
       <ion-item slot="header" color="light">
         <ion-label>Support</ion-label>
