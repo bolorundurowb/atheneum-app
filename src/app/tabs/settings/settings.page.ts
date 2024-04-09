@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService, NotificationService, UserService } from '../../services';
+import { AccountService, AuthService, NotificationService, UserService } from '../../services';
 import { Router } from '@angular/router';
 
 import { App } from '@capacitor/app';
@@ -41,6 +41,23 @@ export class SettingsPage implements OnInit {
       }
     }
   ];
+  deleteAccountButtons = [
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      handler: () => {
+      }
+    },
+    {
+      text: 'OK',
+      role: 'confirm',
+      handler: async () => {
+        await this.accountService.delete();
+        this.authService.logout();
+        await this.router.navigate([ 'auth', 'login' ]);
+      }
+    }
+  ];
 
   isUpdatingProfile = false;
   updatePayload: UpdateProfilePayload = {};
@@ -49,7 +66,7 @@ export class SettingsPage implements OnInit {
   changePayload: ChangePasswordPayload = {};
 
   constructor(private authService: AuthService, private router: Router, private userService: UserService,
-              private notificationService: NotificationService) {
+              private notificationService: NotificationService, private accountService: AccountService) {
   }
 
   async ngOnInit() {
