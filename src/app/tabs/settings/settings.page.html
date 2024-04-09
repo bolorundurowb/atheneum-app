@@ -122,6 +122,22 @@
         </div>
       </div>
     </ion-accordion>
+    <ion-accordion value="account">
+      <ion-item slot="header" color="light">
+        <ion-label>Account</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <div class="input-field">
+          <ion-button
+            id="delete-account-confirm"
+            expand="block"
+            mode="ios"
+            class="delete-account">
+            delete account
+          </ion-button>
+        </div>
+      </div>
+    </ion-accordion>
     <ion-accordion value="support">
       <ion-item slot="header" color="light">
         <ion-label>Support</ion-label>
@@ -171,3 +187,9 @@
   header="Confirm"
   message="Are you sure you want to log out?"
   [buttons]="logOutButtons"></ion-alert>
+
+<ion-alert
+  trigger="delete-account-confirm"
+  header="Confirm"
+  message="Are you sure you want to delete your account? This move is permanent and irreversible!"
+  [buttons]="deleteAccountButtons"></ion-alert>
