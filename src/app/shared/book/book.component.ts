@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { convertToHttps } from '../../utils';
 
 @Component({
   selector: 'app-book',
@@ -14,13 +15,5 @@ import { Component, Input } from '@angular/core';
 export class BookComponent {
   @Input() book: any;
 
-  convertToHttps(url: string) {
-    if (url.startsWith('http://')) {
-      return url.replace('http://', 'https://');
-    } else if (url.startsWith('https://')) {
-      return url;
-    } else {
-      return url;
-    }
-  }
+  protected readonly convertToHttps = convertToHttps;
 }
