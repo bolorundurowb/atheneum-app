@@ -15,8 +15,7 @@ export class BookPage implements OnInit {
     {
       text: 'Cancel',
       role: 'cancel',
-      handler: () => {
-      }
+      handler: () => {}
     },
     {
       text: 'Proceed',
