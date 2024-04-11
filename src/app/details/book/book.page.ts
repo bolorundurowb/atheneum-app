@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { BookService, NotificationService } from '../../services';
+import { convertToHttps } from '../../utils';
 
 @Component({
   selector: 'app-book-details',
@@ -31,6 +32,8 @@ export class BookPage implements OnInit {
       }
     }
   ];
+
+  protected readonly convertToHttps = convertToHttps;
 
   constructor(private route: ActivatedRoute, private navCtrl: NavController,
               private notificationService: NotificationService, private bookService: BookService) {
