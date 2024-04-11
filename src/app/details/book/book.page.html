@@ -12,7 +12,7 @@
 
     <div class="body">
       <div class="cover-art">
-        <img [src]="book.coverArt"/>
+        <img [src]="convertToHttps(book.coverArt)"/>
       </div>
 
       <div class="title">{{ book.title }}</div>
